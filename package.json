@@ -1,0 +1,32 @@
+{
+  "name": "mruv-pb-node",
+  "version": "1.0.0",
+  "description": "MruV Protobuf & gRPC files for MruV API",
+  "dependencies": {
+    "@grpc/proto-loader": "^0.1.0",
+    "async": "^1.5.2",
+    "google-protobuf": "^3.0.0",
+    "grpc": "^1.11.0",
+    "lodash": "^4.6.1",
+    "minimist": "^1.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mruv-RP/mruv-pb-node.git"
+  },
+  "keywords": [
+    "grpc",
+    "nodejs",
+    "mruv",
+    "api"
+  ],
+  "author": "Mrucznik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mruv-RP/mruv-pb-node/issues"
+  },
+  "homepage": "https://github.com/Mruv-RP/mruv-pb-node#readme"
+}
