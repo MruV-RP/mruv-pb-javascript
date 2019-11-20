@@ -32,7 +32,7 @@ goog.exportSymbol('proto.mruv.ItemTypeID', null, global);
  * @constructor
  */
 proto.mruv.ItemType = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.mruv.ItemType.oneofGroups_);
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mruv.ItemType, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
@@ -190,32 +190,6 @@ if (goog.DEBUG && !COMPILED) {
   proto.mruv.InsideItem.displayName = 'proto.mruv.InsideItem';
 }
 
-/**
- * Oneof group definitions for this message. Each group defines the field
- * numbers belonging to that group. When of these fields' value is set, all
- * other fields in the group are cleared. During deserialization, if multiple
- * fields are encountered for a group, only the last value seen will be kept.
- * @private {!Array<!Array<number>>}
- * @const
- */
-proto.mruv.ItemType.oneofGroups_ = [[7,8]];
-
-/**
- * @enum {number}
- */
-proto.mruv.ItemType.ModelCase = {
-  MODEL_NOT_SET: 0,
-  MODEL_NAME: 7,
-  MODEL_HASH: 8
-};
-
-/**
- * @return {proto.mruv.ItemType.ModelCase}
- */
-proto.mruv.ItemType.prototype.getModelCase = function() {
-  return /** @type {proto.mruv.ItemType.ModelCase} */(jspb.Message.computeOneofCase(this, proto.mruv.ItemType.oneofGroups_[0]));
-};
-
 
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
@@ -252,8 +226,8 @@ proto.mruv.ItemType.toObject = function(includeInstance, msg) {
     description: jspb.Message.getFieldWithDefault(msg, 3, ""),
     baseWeight: jspb.Message.getFloatingPointFieldWithDefault(msg, 4, 0.0),
     baseVolume: jspb.Message.getFloatingPointFieldWithDefault(msg, 5, 0.0),
-    modelName: jspb.Message.getFieldWithDefault(msg, 7, ""),
-    modelHash: jspb.Message.getFieldWithDefault(msg, 8, 0)
+    modelName: jspb.Message.getFieldWithDefault(msg, 6, ""),
+    modelHash: jspb.Message.getFieldWithDefault(msg, 7, 0)
   };
 
   if (includeInstance) {
@@ -310,11 +284,11 @@ proto.mruv.ItemType.deserializeBinaryFromReader = function(msg, reader) {
       var value = /** @type {number} */ (reader.readFloat());
       msg.setBaseVolume(value);
       break;
-    case 7:
+    case 6:
       var value = /** @type {string} */ (reader.readString());
       msg.setModelName(value);
       break;
-    case 8:
+    case 7:
       var value = /** @type {number} */ (reader.readInt32());
       msg.setModelHash(value);
       break;
@@ -382,17 +356,17 @@ proto.mruv.ItemType.serializeBinaryToWriter = function(message, writer) {
       f
     );
   }
-  f = /** @type {string} */ (jspb.Message.getField(message, 7));
-  if (f != null) {
+  f = message.getModelName();
+  if (f.length > 0) {
     writer.writeString(
-      7,
+      6,
       f
     );
   }
-  f = /** @type {number} */ (jspb.Message.getField(message, 8));
-  if (f != null) {
+  f = message.getModelHash();
+  if (f !== 0) {
     writer.writeInt32(
-      8,
+      7,
       f
     );
   }
@@ -475,66 +449,32 @@ proto.mruv.ItemType.prototype.setBaseVolume = function(value) {
 
 
 /**
- * optional string model_name = 7;
+ * optional string model_name = 6;
  * @return {string}
  */
 proto.mruv.ItemType.prototype.getModelName = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 7, ""));
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 6, ""));
 };
 
 
 /** @param {string} value */
 proto.mruv.ItemType.prototype.setModelName = function(value) {
-  jspb.Message.setOneofField(this, 7, proto.mruv.ItemType.oneofGroups_[0], value);
+  jspb.Message.setProto3StringField(this, 6, value);
 };
 
 
 /**
- * Clears the field making it undefined.
- */
-proto.mruv.ItemType.prototype.clearModelName = function() {
-  jspb.Message.setOneofField(this, 7, proto.mruv.ItemType.oneofGroups_[0], undefined);
-};
-
-
-/**
- * Returns whether this field is set.
- * @return {boolean}
- */
-proto.mruv.ItemType.prototype.hasModelName = function() {
-  return jspb.Message.getField(this, 7) != null;
-};
-
-
-/**
- * optional int32 model_hash = 8;
+ * optional int32 model_hash = 7;
  * @return {number}
  */
 proto.mruv.ItemType.prototype.getModelHash = function() {
-  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 8, 0));
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 7, 0));
 };
 
 
 /** @param {number} value */
 proto.mruv.ItemType.prototype.setModelHash = function(value) {
-  jspb.Message.setOneofField(this, 8, proto.mruv.ItemType.oneofGroups_[0], value);
-};
-
-
-/**
- * Clears the field making it undefined.
- */
-proto.mruv.ItemType.prototype.clearModelHash = function() {
-  jspb.Message.setOneofField(this, 8, proto.mruv.ItemType.oneofGroups_[0], undefined);
-};
-
-
-/**
- * Returns whether this field is set.
- * @return {boolean}
- */
-proto.mruv.ItemType.prototype.hasModelHash = function() {
-  return jspb.Message.getField(this, 8) != null;
+  jspb.Message.setProto3IntField(this, 7, value);
 };
 
 

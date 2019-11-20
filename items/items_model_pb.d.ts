@@ -20,17 +20,12 @@ export class ItemType extends jspb.Message {
   getBaseVolume(): number;
   setBaseVolume(value: number): void;
 
-  hasModelName(): boolean;
-  clearModelName(): void;
   getModelName(): string;
   setModelName(value: string): void;
 
-  hasModelHash(): boolean;
-  clearModelHash(): void;
   getModelHash(): number;
   setModelHash(value: number): void;
 
-  getModelCase(): ItemType.ModelCase;
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): ItemType.AsObject;
   static toObject(includeInstance: boolean, msg: ItemType): ItemType.AsObject;
@@ -50,12 +45,6 @@ export namespace ItemType {
     baseVolume: number,
     modelName: string,
     modelHash: number,
-  }
-
-  export enum ModelCase {
-    MODEL_NOT_SET = 0,
-    MODEL_NAME = 7,
-    MODEL_HASH = 8,
   }
 }
 
