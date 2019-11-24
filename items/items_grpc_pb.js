@@ -74,6 +74,17 @@ function deserialize_mruv_GetContainerTypesRequest(buffer_arg) {
   return items_items_pb.GetContainerTypesRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
+function serialize_mruv_GetContainerTypesResponse(arg) {
+  if (!(arg instanceof items_items_pb.GetContainerTypesResponse)) {
+    throw new Error('Expected argument of type mruv.GetContainerTypesResponse');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_GetContainerTypesResponse(buffer_arg) {
+  return items_items_pb.GetContainerTypesResponse.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
 function serialize_mruv_GetContainersRequest(arg) {
   if (!(arg instanceof items_items_pb.GetContainersRequest)) {
     throw new Error('Expected argument of type mruv.GetContainersRequest');
@@ -490,13 +501,13 @@ var MruVItemServiceService = exports.MruVItemServiceService = {
   getContainerTypes: {
     path: '/mruv.MruVItemService/GetContainerTypes',
     requestStream: false,
-    responseStream: true,
+    responseStream: false,
     requestType: items_items_pb.GetContainerTypesRequest,
-    responseType: items_items_model_pb.ContainerType,
+    responseType: items_items_pb.GetContainerTypesResponse,
     requestSerialize: serialize_mruv_GetContainerTypesRequest,
     requestDeserialize: deserialize_mruv_GetContainerTypesRequest,
-    responseSerialize: serialize_mruv_ContainerType,
-    responseDeserialize: deserialize_mruv_ContainerType,
+    responseSerialize: serialize_mruv_GetContainerTypesResponse,
+    responseDeserialize: deserialize_mruv_GetContainerTypesResponse,
   },
   // Container Methods
   getContainerItems: {

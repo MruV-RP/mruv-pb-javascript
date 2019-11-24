@@ -153,6 +153,28 @@ export namespace GetContainerTypesRequest {
   }
 }
 
+export class GetContainerTypesResponse extends jspb.Message {
+  clearContainerTypesList(): void;
+  getContainerTypesList(): Array<items_items_model_pb.ContainerType>;
+  setContainerTypesList(value: Array<items_items_model_pb.ContainerType>): void;
+  addContainerTypes(value?: items_items_model_pb.ContainerType, index?: number): items_items_model_pb.ContainerType;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): GetContainerTypesResponse.AsObject;
+  static toObject(includeInstance: boolean, msg: GetContainerTypesResponse): GetContainerTypesResponse.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: GetContainerTypesResponse, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): GetContainerTypesResponse;
+  static deserializeBinaryFromReader(message: GetContainerTypesResponse, reader: jspb.BinaryReader): GetContainerTypesResponse;
+}
+
+export namespace GetContainerTypesResponse {
+  export type AsObject = {
+    containerTypesList: Array<items_items_model_pb.ContainerType.AsObject>,
+  }
+}
+
 export class PutItemRequest extends jspb.Message {
   hasContainerId(): boolean;
   clearContainerId(): void;
