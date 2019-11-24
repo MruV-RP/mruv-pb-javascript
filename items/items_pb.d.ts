@@ -259,6 +259,32 @@ export namespace TakeItemResponse {
   }
 }
 
+export class GetContainerItemsRequest extends jspb.Message {
+  hasContainerId(): boolean;
+  clearContainerId(): void;
+  getContainerId(): items_items_model_pb.ContainerID | undefined;
+  setContainerId(value?: items_items_model_pb.ContainerID): void;
+
+  getLimit(): number;
+  setLimit(value: number): void;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): GetContainerItemsRequest.AsObject;
+  static toObject(includeInstance: boolean, msg: GetContainerItemsRequest): GetContainerItemsRequest.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: GetContainerItemsRequest, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): GetContainerItemsRequest;
+  static deserializeBinaryFromReader(message: GetContainerItemsRequest, reader: jspb.BinaryReader): GetContainerItemsRequest;
+}
+
+export namespace GetContainerItemsRequest {
+  export type AsObject = {
+    containerId?: items_items_model_pb.ContainerID.AsObject,
+    limit: number,
+  }
+}
+
 export class GetContainerItemsResponse extends jspb.Message {
   clearItemsList(): void;
   getItemsList(): Array<items_items_model_pb.Item>;

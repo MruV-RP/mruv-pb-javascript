@@ -25,7 +25,7 @@ interface IMruVItemServiceService extends grpc.ServiceDefinition<grpc.UntypedSer
   getContainerType: grpc.MethodDefinition<items_items_model_pb.ContainerTypeID, items_items_model_pb.ContainerType>;
   deleteContainerType: grpc.MethodDefinition<items_items_model_pb.ContainerTypeID, items_items_model_pb.ContainerTypeID>;
   getContainerTypes: grpc.MethodDefinition<items_items_pb.GetContainerTypesRequest, items_items_pb.GetContainerTypesResponse>;
-  getContainerItems: grpc.MethodDefinition<items_items_model_pb.ContainerID, items_items_pb.GetContainerItemsResponse>;
+  getContainerItems: grpc.MethodDefinition<items_items_pb.GetContainerItemsRequest, items_items_pb.GetContainerItemsResponse>;
   removeContainerItem: grpc.MethodDefinition<items_items_pb.RemoveItemRequest, items_items_model_pb.Item>;
   putItem: grpc.MethodDefinition<items_items_pb.PutItemRequest, items_items_model_pb.ItemID>;
   sortItems: grpc.MethodDefinition<items_items_pb.SortItemsRequest, items_items_pb.SortItemsResponse>;
@@ -87,9 +87,9 @@ export class MruVItemServiceClient extends grpc.Client {
   getContainerTypes(argument: items_items_pb.GetContainerTypesRequest, callback: grpc.requestCallback<items_items_pb.GetContainerTypesResponse>): grpc.ClientUnaryCall;
   getContainerTypes(argument: items_items_pb.GetContainerTypesRequest, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<items_items_pb.GetContainerTypesResponse>): grpc.ClientUnaryCall;
   getContainerTypes(argument: items_items_pb.GetContainerTypesRequest, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<items_items_pb.GetContainerTypesResponse>): grpc.ClientUnaryCall;
-  getContainerItems(argument: items_items_model_pb.ContainerID, callback: grpc.requestCallback<items_items_pb.GetContainerItemsResponse>): grpc.ClientUnaryCall;
-  getContainerItems(argument: items_items_model_pb.ContainerID, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<items_items_pb.GetContainerItemsResponse>): grpc.ClientUnaryCall;
-  getContainerItems(argument: items_items_model_pb.ContainerID, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<items_items_pb.GetContainerItemsResponse>): grpc.ClientUnaryCall;
+  getContainerItems(argument: items_items_pb.GetContainerItemsRequest, callback: grpc.requestCallback<items_items_pb.GetContainerItemsResponse>): grpc.ClientUnaryCall;
+  getContainerItems(argument: items_items_pb.GetContainerItemsRequest, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<items_items_pb.GetContainerItemsResponse>): grpc.ClientUnaryCall;
+  getContainerItems(argument: items_items_pb.GetContainerItemsRequest, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<items_items_pb.GetContainerItemsResponse>): grpc.ClientUnaryCall;
   removeContainerItem(argument: items_items_pb.RemoveItemRequest, callback: grpc.requestCallback<items_items_model_pb.Item>): grpc.ClientUnaryCall;
   removeContainerItem(argument: items_items_pb.RemoveItemRequest, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<items_items_model_pb.Item>): grpc.ClientUnaryCall;
   removeContainerItem(argument: items_items_pb.RemoveItemRequest, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<items_items_model_pb.Item>): grpc.ClientUnaryCall;
