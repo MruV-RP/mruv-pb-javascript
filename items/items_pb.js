@@ -2362,7 +2362,7 @@ proto.mruv.GetContainerItemsResponse.prototype.toObject = function(opt_includeIn
 proto.mruv.GetContainerItemsResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
     itemsList: jspb.Message.toObjectList(msg.getItemsList(),
-    items_items_model_pb.Item.toObject, includeInstance)
+    items_items_model_pb.InsideItem.toObject, includeInstance)
   };
 
   if (includeInstance) {
@@ -2400,8 +2400,8 @@ proto.mruv.GetContainerItemsResponse.deserializeBinaryFromReader = function(msg,
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new items_items_model_pb.Item;
-      reader.readMessage(value,items_items_model_pb.Item.deserializeBinaryFromReader);
+      var value = new items_items_model_pb.InsideItem;
+      reader.readMessage(value,items_items_model_pb.InsideItem.deserializeBinaryFromReader);
       msg.addItems(value);
       break;
     default:
@@ -2438,35 +2438,35 @@ proto.mruv.GetContainerItemsResponse.serializeBinaryToWriter = function(message,
     writer.writeRepeatedMessage(
       1,
       f,
-      items_items_model_pb.Item.serializeBinaryToWriter
+      items_items_model_pb.InsideItem.serializeBinaryToWriter
     );
   }
 };
 
 
 /**
- * repeated Item items = 1;
- * @return {!Array<!proto.mruv.Item>}
+ * repeated InsideItem items = 1;
+ * @return {!Array<!proto.mruv.InsideItem>}
  */
 proto.mruv.GetContainerItemsResponse.prototype.getItemsList = function() {
-  return /** @type{!Array<!proto.mruv.Item>} */ (
-    jspb.Message.getRepeatedWrapperField(this, items_items_model_pb.Item, 1));
+  return /** @type{!Array<!proto.mruv.InsideItem>} */ (
+    jspb.Message.getRepeatedWrapperField(this, items_items_model_pb.InsideItem, 1));
 };
 
 
-/** @param {!Array<!proto.mruv.Item>} value */
+/** @param {!Array<!proto.mruv.InsideItem>} value */
 proto.mruv.GetContainerItemsResponse.prototype.setItemsList = function(value) {
   jspb.Message.setRepeatedWrapperField(this, 1, value);
 };
 
 
 /**
- * @param {!proto.mruv.Item=} opt_value
+ * @param {!proto.mruv.InsideItem=} opt_value
  * @param {number=} opt_index
- * @return {!proto.mruv.Item}
+ * @return {!proto.mruv.InsideItem}
  */
 proto.mruv.GetContainerItemsResponse.prototype.addItems = function(opt_value, opt_index) {
-  return jspb.Message.addToRepeatedWrapperField(this, 1, opt_value, proto.mruv.Item, opt_index);
+  return jspb.Message.addToRepeatedWrapperField(this, 1, opt_value, proto.mruv.InsideItem, opt_index);
 };
 
 

@@ -287,9 +287,9 @@ export namespace GetContainerItemsRequest {
 
 export class GetContainerItemsResponse extends jspb.Message {
   clearItemsList(): void;
-  getItemsList(): Array<items_items_model_pb.Item>;
-  setItemsList(value: Array<items_items_model_pb.Item>): void;
-  addItems(value?: items_items_model_pb.Item, index?: number): items_items_model_pb.Item;
+  getItemsList(): Array<items_items_model_pb.InsideItem>;
+  setItemsList(value: Array<items_items_model_pb.InsideItem>): void;
+  addItems(value?: items_items_model_pb.InsideItem, index?: number): items_items_model_pb.InsideItem;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): GetContainerItemsResponse.AsObject;
@@ -303,7 +303,7 @@ export class GetContainerItemsResponse extends jspb.Message {
 
 export namespace GetContainerItemsResponse {
   export type AsObject = {
-    itemsList: Array<items_items_model_pb.Item.AsObject>,
+    itemsList: Array<items_items_model_pb.InsideItem.AsObject>,
   }
 }
 
