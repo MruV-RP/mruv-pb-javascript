@@ -201,7 +201,7 @@ if (goog.DEBUG && !COMPILED) {
  * @constructor
  */
 proto.mruv.InsideItem = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.mruv.InsideItem.oneofGroups_);
 };
 goog.inherits(proto.mruv.InsideItem, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
@@ -1767,6 +1767,32 @@ proto.mruv.ContainerID.prototype.setId = function(value) {
 
 
 
+/**
+ * Oneof group definitions for this message. Each group defines the field
+ * numbers belonging to that group. When of these fields' value is set, all
+ * other fields in the group are cleared. During deserialization, if multiple
+ * fields are encountered for a group, only the last value seen will be kept.
+ * @private {!Array<!Array<number>>}
+ * @const
+ */
+proto.mruv.InsideItem.oneofGroups_ = [[2,3]];
+
+/**
+ * @enum {number}
+ */
+proto.mruv.InsideItem.ItemOrIdCase = {
+  ITEM_OR_ID_NOT_SET: 0,
+  ITEM_ID: 2,
+  ITEM: 3
+};
+
+/**
+ * @return {proto.mruv.InsideItem.ItemOrIdCase}
+ */
+proto.mruv.InsideItem.prototype.getItemOrIdCase = function() {
+  return /** @type {proto.mruv.InsideItem.ItemOrIdCase} */(jspb.Message.computeOneofCase(this, proto.mruv.InsideItem.oneofGroups_[0]));
+};
+
 
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
@@ -1799,9 +1825,9 @@ proto.mruv.InsideItem.prototype.toObject = function(opt_includeInstance) {
 proto.mruv.InsideItem.toObject = function(includeInstance, msg) {
   var f, obj = {
     containerId: jspb.Message.getFieldWithDefault(msg, 1, 0),
-    itemId: jspb.Message.getFieldWithDefault(msg, 2, 0),
-    position: (f = msg.getPosition()) && common_spatial_pb.Position.toObject(includeInstance, f),
-    rotation: (f = msg.getRotation()) && common_spatial_pb.Rotation.toObject(includeInstance, f)
+    itemId: (f = msg.getItemId()) && proto.mruv.ItemID.toObject(includeInstance, f),
+    item: (f = msg.getItem()) && proto.mruv.Item.toObject(includeInstance, f),
+    position: jspb.Message.getFieldWithDefault(msg, 4, 0)
   };
 
   if (includeInstance) {
@@ -1843,18 +1869,18 @@ proto.mruv.InsideItem.deserializeBinaryFromReader = function(msg, reader) {
       msg.setContainerId(value);
       break;
     case 2:
-      var value = /** @type {number} */ (reader.readInt64());
+      var value = new proto.mruv.ItemID;
+      reader.readMessage(value,proto.mruv.ItemID.deserializeBinaryFromReader);
       msg.setItemId(value);
       break;
     case 3:
-      var value = new common_spatial_pb.Position;
-      reader.readMessage(value,common_spatial_pb.Position.deserializeBinaryFromReader);
-      msg.setPosition(value);
+      var value = new proto.mruv.Item;
+      reader.readMessage(value,proto.mruv.Item.deserializeBinaryFromReader);
+      msg.setItem(value);
       break;
     case 4:
-      var value = new common_spatial_pb.Rotation;
-      reader.readMessage(value,common_spatial_pb.Rotation.deserializeBinaryFromReader);
-      msg.setRotation(value);
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setPosition(value);
       break;
     default:
       reader.skipField();
@@ -1893,26 +1919,26 @@ proto.mruv.InsideItem.serializeBinaryToWriter = function(message, writer) {
     );
   }
   f = message.getItemId();
-  if (f !== 0) {
-    writer.writeInt64(
+  if (f != null) {
+    writer.writeMessage(
       2,
-      f
+      f,
+      proto.mruv.ItemID.serializeBinaryToWriter
     );
   }
-  f = message.getPosition();
+  f = message.getItem();
   if (f != null) {
     writer.writeMessage(
       3,
       f,
-      common_spatial_pb.Position.serializeBinaryToWriter
+      proto.mruv.Item.serializeBinaryToWriter
     );
   }
-  f = message.getRotation();
-  if (f != null) {
-    writer.writeMessage(
+  f = message.getPosition();
+  if (f !== 0) {
+    writer.writeInt32(
       4,
-      f,
-      common_spatial_pb.Rotation.serializeBinaryToWriter
+      f
     );
   }
 };
@@ -1934,41 +1960,26 @@ proto.mruv.InsideItem.prototype.setContainerId = function(value) {
 
 
 /**
- * optional int64 item_id = 2;
- * @return {number}
+ * optional ItemID item_id = 2;
+ * @return {?proto.mruv.ItemID}
  */
 proto.mruv.InsideItem.prototype.getItemId = function() {
-  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
+  return /** @type{?proto.mruv.ItemID} */ (
+    jspb.Message.getWrapperField(this, proto.mruv.ItemID, 2));
 };
 
 
-/** @param {number} value */
+/** @param {?proto.mruv.ItemID|undefined} value */
 proto.mruv.InsideItem.prototype.setItemId = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
-};
-
-
-/**
- * optional Position position = 3;
- * @return {?proto.mruv.Position}
- */
-proto.mruv.InsideItem.prototype.getPosition = function() {
-  return /** @type{?proto.mruv.Position} */ (
-    jspb.Message.getWrapperField(this, common_spatial_pb.Position, 3));
-};
-
-
-/** @param {?proto.mruv.Position|undefined} value */
-proto.mruv.InsideItem.prototype.setPosition = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  jspb.Message.setOneofWrapperField(this, 2, proto.mruv.InsideItem.oneofGroups_[0], value);
 };
 
 
 /**
  * Clears the message field making it undefined.
  */
-proto.mruv.InsideItem.prototype.clearPosition = function() {
-  this.setPosition(undefined);
+proto.mruv.InsideItem.prototype.clearItemId = function() {
+  this.setItemId(undefined);
 };
 
 
@@ -1976,41 +1987,56 @@ proto.mruv.InsideItem.prototype.clearPosition = function() {
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.mruv.InsideItem.prototype.hasPosition = function() {
+proto.mruv.InsideItem.prototype.hasItemId = function() {
+  return jspb.Message.getField(this, 2) != null;
+};
+
+
+/**
+ * optional Item item = 3;
+ * @return {?proto.mruv.Item}
+ */
+proto.mruv.InsideItem.prototype.getItem = function() {
+  return /** @type{?proto.mruv.Item} */ (
+    jspb.Message.getWrapperField(this, proto.mruv.Item, 3));
+};
+
+
+/** @param {?proto.mruv.Item|undefined} value */
+proto.mruv.InsideItem.prototype.setItem = function(value) {
+  jspb.Message.setOneofWrapperField(this, 3, proto.mruv.InsideItem.oneofGroups_[0], value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.mruv.InsideItem.prototype.clearItem = function() {
+  this.setItem(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.mruv.InsideItem.prototype.hasItem = function() {
   return jspb.Message.getField(this, 3) != null;
 };
 
 
 /**
- * optional Rotation rotation = 4;
- * @return {?proto.mruv.Rotation}
+ * optional int32 position = 4;
+ * @return {number}
  */
-proto.mruv.InsideItem.prototype.getRotation = function() {
-  return /** @type{?proto.mruv.Rotation} */ (
-    jspb.Message.getWrapperField(this, common_spatial_pb.Rotation, 4));
+proto.mruv.InsideItem.prototype.getPosition = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 4, 0));
 };
 
 
-/** @param {?proto.mruv.Rotation|undefined} value */
-proto.mruv.InsideItem.prototype.setRotation = function(value) {
-  jspb.Message.setWrapperField(this, 4, value);
-};
-
-
-/**
- * Clears the message field making it undefined.
- */
-proto.mruv.InsideItem.prototype.clearRotation = function() {
-  this.setRotation(undefined);
-};
-
-
-/**
- * Returns whether this field is set.
- * @return {boolean}
- */
-proto.mruv.InsideItem.prototype.hasRotation = function() {
-  return jspb.Message.getField(this, 4) != null;
+/** @param {number} value */
+proto.mruv.InsideItem.prototype.setPosition = function(value) {
+  jspb.Message.setProto3IntField(this, 4, value);
 };
 
 
