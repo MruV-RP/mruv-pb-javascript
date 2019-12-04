@@ -11,8 +11,6 @@ var jspb = require('google-protobuf');
 var goog = jspb;
 var global = Function('return this')();
 
-var common_spatial_pb = require('../common/spatial_pb.js');
-goog.object.extend(proto, common_spatial_pb);
 goog.exportSymbol('proto.mruv.Container', null, global);
 goog.exportSymbol('proto.mruv.ContainerID', null, global);
 goog.exportSymbol('proto.mruv.ContainerType', null, global);
