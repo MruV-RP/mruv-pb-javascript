@@ -55,6 +55,12 @@ export class Group extends jspb.Message {
   getId(): number;
   setId(value: number): void;
 
+  getName(): string;
+  setName(value: string): void;
+
+  getDescription(): string;
+  setDescription(value: string): void;
+
   clearPermissionsList(): void;
   getPermissionsList(): Array<Permission>;
   setPermissionsList(value: Array<Permission>): void;
@@ -78,6 +84,8 @@ export class Group extends jspb.Message {
 export namespace Group {
   export type AsObject = {
     id: number,
+    name: string,
+    description: string,
     permissionsList: Array<Permission.AsObject>,
     usersList: Array<User.AsObject>,
   }

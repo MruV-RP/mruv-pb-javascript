@@ -143,8 +143,8 @@ var MruVCharactersServiceService = exports.MruVCharactersServiceService = {
     responseDeserialize: deserialize_mruv_CharacterID,
   },
   // Deaths
-  killCharacter: {
-    path: '/mruv.MruVCharactersService/KillCharacter',
+  permanentCharacterKill: {
+    path: '/mruv.MruVCharactersService/PermanentCharacterKill',
     requestStream: false,
     responseStream: false,
     requestType: characters_characters_model_pb.CharacterID,

@@ -215,50 +215,6 @@ export namespace PutItemRequest {
   }
 }
 
-export class TakeItemRequest extends jspb.Message {
-  hasId(): boolean;
-  clearId(): void;
-  getId(): items_items_model_pb.ItemID | undefined;
-  setId(value?: items_items_model_pb.ItemID): void;
-
-  serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): TakeItemRequest.AsObject;
-  static toObject(includeInstance: boolean, msg: TakeItemRequest): TakeItemRequest.AsObject;
-  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-  static serializeBinaryToWriter(message: TakeItemRequest, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): TakeItemRequest;
-  static deserializeBinaryFromReader(message: TakeItemRequest, reader: jspb.BinaryReader): TakeItemRequest;
-}
-
-export namespace TakeItemRequest {
-  export type AsObject = {
-    id?: items_items_model_pb.ItemID.AsObject,
-  }
-}
-
-export class TakeItemResponse extends jspb.Message {
-  hasItem(): boolean;
-  clearItem(): void;
-  getItem(): items_items_model_pb.Item | undefined;
-  setItem(value?: items_items_model_pb.Item): void;
-
-  serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): TakeItemResponse.AsObject;
-  static toObject(includeInstance: boolean, msg: TakeItemResponse): TakeItemResponse.AsObject;
-  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-  static serializeBinaryToWriter(message: TakeItemResponse, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): TakeItemResponse;
-  static deserializeBinaryFromReader(message: TakeItemResponse, reader: jspb.BinaryReader): TakeItemResponse;
-}
-
-export namespace TakeItemResponse {
-  export type AsObject = {
-    item?: items_items_model_pb.Item.AsObject,
-  }
-}
-
 export class GetContainerItemsRequest extends jspb.Message {
   hasContainerId(): boolean;
   clearContainerId(): void;
@@ -307,7 +263,7 @@ export namespace GetContainerItemsResponse {
   }
 }
 
-export class RemoveItemRequest extends jspb.Message {
+export class PullItemRequest extends jspb.Message {
   hasContainerId(): boolean;
   clearContainerId(): void;
   getContainerId(): items_items_model_pb.ContainerID | undefined;
@@ -319,16 +275,16 @@ export class RemoveItemRequest extends jspb.Message {
   setItemId(value?: items_items_model_pb.ItemID): void;
 
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): RemoveItemRequest.AsObject;
-  static toObject(includeInstance: boolean, msg: RemoveItemRequest): RemoveItemRequest.AsObject;
+  toObject(includeInstance?: boolean): PullItemRequest.AsObject;
+  static toObject(includeInstance: boolean, msg: PullItemRequest): PullItemRequest.AsObject;
   static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
   static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-  static serializeBinaryToWriter(message: RemoveItemRequest, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): RemoveItemRequest;
-  static deserializeBinaryFromReader(message: RemoveItemRequest, reader: jspb.BinaryReader): RemoveItemRequest;
+  static serializeBinaryToWriter(message: PullItemRequest, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): PullItemRequest;
+  static deserializeBinaryFromReader(message: PullItemRequest, reader: jspb.BinaryReader): PullItemRequest;
 }
 
-export namespace RemoveItemRequest {
+export namespace PullItemRequest {
   export type AsObject = {
     containerId?: items_items_model_pb.ContainerID.AsObject,
     itemId?: items_items_model_pb.ItemID.AsObject,
@@ -384,15 +340,18 @@ export namespace SortItemsResponse {
 }
 
 export class GetNearestItemsRequest extends jspb.Message {
-  hasPlayerPosition(): boolean;
-  clearPlayerPosition(): void;
-  getPlayerPosition(): common_spatial_pb.Position | undefined;
-  setPlayerPosition(value?: common_spatial_pb.Position): void;
+  hasPosition(): boolean;
+  clearPosition(): void;
+  getPosition(): common_spatial_pb.Position | undefined;
+  setPosition(value?: common_spatial_pb.Position): void;
 
   hasContainerId(): boolean;
   clearContainerId(): void;
   getContainerId(): items_items_model_pb.ContainerID | undefined;
   setContainerId(value?: items_items_model_pb.ContainerID): void;
+
+  getDistanceLimit(): number;
+  setDistanceLimit(value: number): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): GetNearestItemsRequest.AsObject;
@@ -406,8 +365,9 @@ export class GetNearestItemsRequest extends jspb.Message {
 
 export namespace GetNearestItemsRequest {
   export type AsObject = {
-    playerPosition?: common_spatial_pb.Position.AsObject,
+    position?: common_spatial_pb.Position.AsObject,
     containerId?: items_items_model_pb.ContainerID.AsObject,
+    distanceLimit: number,
   }
 }
 

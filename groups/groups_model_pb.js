@@ -391,7 +391,7 @@ proto.mruv.Permission.prototype.setRole = function(value) {
  * @private {!Array<number>}
  * @const
  */
-proto.mruv.Group.repeatedFields_ = [3,4];
+proto.mruv.Group.repeatedFields_ = [5,6];
 
 
 
@@ -425,6 +425,8 @@ proto.mruv.Group.prototype.toObject = function(opt_includeInstance) {
 proto.mruv.Group.toObject = function(includeInstance, msg) {
   var f, obj = {
     id: jspb.Message.getFieldWithDefault(msg, 1, 0),
+    name: jspb.Message.getFieldWithDefault(msg, 3, ""),
+    description: jspb.Message.getFieldWithDefault(msg, 4, ""),
     permissionsList: jspb.Message.toObjectList(msg.getPermissionsList(),
     proto.mruv.Permission.toObject, includeInstance),
     usersList: jspb.Message.toObjectList(msg.getUsersList(),
@@ -470,11 +472,19 @@ proto.mruv.Group.deserializeBinaryFromReader = function(msg, reader) {
       msg.setId(value);
       break;
     case 3:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setName(value);
+      break;
+    case 4:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setDescription(value);
+      break;
+    case 5:
       var value = new proto.mruv.Permission;
       reader.readMessage(value,proto.mruv.Permission.deserializeBinaryFromReader);
       msg.addPermissions(value);
       break;
-    case 4:
+    case 6:
       var value = new proto.mruv.User;
       reader.readMessage(value,proto.mruv.User.deserializeBinaryFromReader);
       msg.addUsers(value);
@@ -515,10 +525,24 @@ proto.mruv.Group.serializeBinaryToWriter = function(message, writer) {
       f
     );
   }
+  f = message.getName();
+  if (f.length > 0) {
+    writer.writeString(
+      3,
+      f
+    );
+  }
+  f = message.getDescription();
+  if (f.length > 0) {
+    writer.writeString(
+      4,
+      f
+    );
+  }
   f = message.getPermissionsList();
   if (f.length > 0) {
     writer.writeRepeatedMessage(
-      3,
+      5,
       f,
       proto.mruv.Permission.serializeBinaryToWriter
     );
@@ -526,7 +550,7 @@ proto.mruv.Group.serializeBinaryToWriter = function(message, writer) {
   f = message.getUsersList();
   if (f.length > 0) {
     writer.writeRepeatedMessage(
-      4,
+      6,
       f,
       proto.mruv.User.serializeBinaryToWriter
     );
@@ -550,18 +574,48 @@ proto.mruv.Group.prototype.setId = function(value) {
 
 
 /**
- * repeated Permission permissions = 3;
+ * optional string name = 3;
+ * @return {string}
+ */
+proto.mruv.Group.prototype.getName = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
+};
+
+
+/** @param {string} value */
+proto.mruv.Group.prototype.setName = function(value) {
+  jspb.Message.setProto3StringField(this, 3, value);
+};
+
+
+/**
+ * optional string description = 4;
+ * @return {string}
+ */
+proto.mruv.Group.prototype.getDescription = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 4, ""));
+};
+
+
+/** @param {string} value */
+proto.mruv.Group.prototype.setDescription = function(value) {
+  jspb.Message.setProto3StringField(this, 4, value);
+};
+
+
+/**
+ * repeated Permission permissions = 5;
  * @return {!Array<!proto.mruv.Permission>}
  */
 proto.mruv.Group.prototype.getPermissionsList = function() {
   return /** @type{!Array<!proto.mruv.Permission>} */ (
-    jspb.Message.getRepeatedWrapperField(this, proto.mruv.Permission, 3));
+    jspb.Message.getRepeatedWrapperField(this, proto.mruv.Permission, 5));
 };
 
 
 /** @param {!Array<!proto.mruv.Permission>} value */
 proto.mruv.Group.prototype.setPermissionsList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 3, value);
+  jspb.Message.setRepeatedWrapperField(this, 5, value);
 };
 
 
@@ -571,7 +625,7 @@ proto.mruv.Group.prototype.setPermissionsList = function(value) {
  * @return {!proto.mruv.Permission}
  */
 proto.mruv.Group.prototype.addPermissions = function(opt_value, opt_index) {
-  return jspb.Message.addToRepeatedWrapperField(this, 3, opt_value, proto.mruv.Permission, opt_index);
+  return jspb.Message.addToRepeatedWrapperField(this, 5, opt_value, proto.mruv.Permission, opt_index);
 };
 
 
@@ -584,18 +638,18 @@ proto.mruv.Group.prototype.clearPermissionsList = function() {
 
 
 /**
- * repeated User users = 4;
+ * repeated User users = 6;
  * @return {!Array<!proto.mruv.User>}
  */
 proto.mruv.Group.prototype.getUsersList = function() {
   return /** @type{!Array<!proto.mruv.User>} */ (
-    jspb.Message.getRepeatedWrapperField(this, proto.mruv.User, 4));
+    jspb.Message.getRepeatedWrapperField(this, proto.mruv.User, 6));
 };
 
 
 /** @param {!Array<!proto.mruv.User>} value */
 proto.mruv.Group.prototype.setUsersList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 4, value);
+  jspb.Message.setRepeatedWrapperField(this, 6, value);
 };
 
 
@@ -605,7 +659,7 @@ proto.mruv.Group.prototype.setUsersList = function(value) {
  * @return {!proto.mruv.User}
  */
 proto.mruv.Group.prototype.addUsers = function(opt_value, opt_index) {
-  return jspb.Message.addToRepeatedWrapperField(this, 4, opt_value, proto.mruv.User, opt_index);
+  return jspb.Message.addToRepeatedWrapperField(this, 6, opt_value, proto.mruv.User, opt_index);
 };
 
 

@@ -2,10 +2,13 @@
 // file: items/items_model.proto
 
 import * as jspb from "google-protobuf";
+import * as validate_validate_pb from "../validate/validate_pb";
 
 export class ItemType extends jspb.Message {
-  getId(): number;
-  setId(value: number): void;
+  hasId(): boolean;
+  clearId(): void;
+  getId(): ItemTypeID | undefined;
+  setId(value?: ItemTypeID): void;
 
   getName(): string;
   setName(value: string): void;
@@ -37,7 +40,7 @@ export class ItemType extends jspb.Message {
 
 export namespace ItemType {
   export type AsObject = {
-    id: number,
+    id?: ItemTypeID.AsObject,
     name: string,
     description: string,
     baseWeight: number,
@@ -68,11 +71,15 @@ export namespace ItemTypeID {
 }
 
 export class Item extends jspb.Message {
-  getId(): number;
-  setId(value: number): void;
+  hasId(): boolean;
+  clearId(): void;
+  getId(): ItemID | undefined;
+  setId(value?: ItemID): void;
 
-  getItemTypeId(): number;
-  setItemTypeId(value: number): void;
+  hasItemTypeId(): boolean;
+  clearItemTypeId(): void;
+  getItemTypeId(): ItemTypeID | undefined;
+  setItemTypeId(value?: ItemTypeID): void;
 
   getWeight(): number;
   setWeight(value: number): void;
@@ -92,8 +99,8 @@ export class Item extends jspb.Message {
 
 export namespace Item {
   export type AsObject = {
-    id: number,
-    itemTypeId: number,
+    id?: ItemID.AsObject,
+    itemTypeId?: ItemTypeID.AsObject,
     weight: number,
     volume: number,
   }
@@ -120,11 +127,15 @@ export namespace ItemID {
 }
 
 export class ContainerType extends jspb.Message {
-  getId(): number;
-  setId(value: number): void;
+  hasId(): boolean;
+  clearId(): void;
+  getId(): ContainerTypeID | undefined;
+  setId(value?: ContainerTypeID): void;
 
-  getContainerItemTypeId(): number;
-  setContainerItemTypeId(value: number): void;
+  hasContainerItemTypeId(): boolean;
+  clearContainerItemTypeId(): void;
+  getContainerItemTypeId(): ItemTypeID | undefined;
+  setContainerItemTypeId(value?: ItemTypeID): void;
 
   getMaxNumber(): number;
   setMaxNumber(value: number): void;
@@ -136,9 +147,9 @@ export class ContainerType extends jspb.Message {
   setMaxWeight(value: number): void;
 
   clearValidItemTypesList(): void;
-  getValidItemTypesList(): Array<number>;
-  setValidItemTypesList(value: Array<number>): void;
-  addValidItemTypes(value: number, index?: number): number;
+  getValidItemTypesList(): Array<ItemTypeID>;
+  setValidItemTypesList(value: Array<ItemTypeID>): void;
+  addValidItemTypes(value?: ItemTypeID, index?: number): ItemTypeID;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): ContainerType.AsObject;
@@ -152,12 +163,12 @@ export class ContainerType extends jspb.Message {
 
 export namespace ContainerType {
   export type AsObject = {
-    id: number,
-    containerItemTypeId: number,
+    id?: ContainerTypeID.AsObject,
+    containerItemTypeId?: ItemTypeID.AsObject,
     maxNumber: number,
     maxVolume: number,
     maxWeight: number,
-    validItemTypesList: Array<number>,
+    validItemTypesList: Array<ItemTypeID.AsObject>,
   }
 }
 
@@ -182,14 +193,20 @@ export namespace ContainerTypeID {
 }
 
 export class Container extends jspb.Message {
-  getId(): number;
-  setId(value: number): void;
+  hasId(): boolean;
+  clearId(): void;
+  getId(): ContainerID | undefined;
+  setId(value?: ContainerID): void;
 
-  getTypeId(): number;
-  setTypeId(value: number): void;
+  hasTypeId(): boolean;
+  clearTypeId(): void;
+  getTypeId(): ContainerTypeID | undefined;
+  setTypeId(value?: ContainerTypeID): void;
 
-  getItemId(): number;
-  setItemId(value: number): void;
+  hasItemId(): boolean;
+  clearItemId(): void;
+  getItemId(): ItemID | undefined;
+  setItemId(value?: ItemID): void;
 
   getItemsInside(): number;
   setItemsInside(value: number): void;
@@ -211,9 +228,9 @@ export class Container extends jspb.Message {
 
 export namespace Container {
   export type AsObject = {
-    id: number,
-    typeId: number,
-    itemId: number,
+    id?: ContainerID.AsObject,
+    typeId?: ContainerTypeID.AsObject,
+    itemId?: ItemID.AsObject,
     itemsInside: number,
     itemsList: Array<InsideItem.AsObject>,
   }
@@ -240,8 +257,10 @@ export namespace ContainerID {
 }
 
 export class InsideItem extends jspb.Message {
-  getContainerId(): number;
-  setContainerId(value: number): void;
+  hasContainerId(): boolean;
+  clearContainerId(): void;
+  getContainerId(): ContainerID | undefined;
+  setContainerId(value?: ContainerID): void;
 
   hasItemId(): boolean;
   clearItemId(): void;
@@ -269,7 +288,7 @@ export class InsideItem extends jspb.Message {
 
 export namespace InsideItem {
   export type AsObject = {
-    containerId: number,
+    containerId?: ContainerID.AsObject,
     itemId?: ItemID.AsObject,
     item?: Item.AsObject,
     position: number,
