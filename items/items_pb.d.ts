@@ -215,6 +215,28 @@ export namespace PutItemRequest {
   }
 }
 
+export class PutItemResponse extends jspb.Message {
+  hasInsideItem(): boolean;
+  clearInsideItem(): void;
+  getInsideItem(): items_items_model_pb.InsideItem | undefined;
+  setInsideItem(value?: items_items_model_pb.InsideItem): void;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): PutItemResponse.AsObject;
+  static toObject(includeInstance: boolean, msg: PutItemResponse): PutItemResponse.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: PutItemResponse, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): PutItemResponse;
+  static deserializeBinaryFromReader(message: PutItemResponse, reader: jspb.BinaryReader): PutItemResponse;
+}
+
+export namespace PutItemResponse {
+  export type AsObject = {
+    insideItem?: items_items_model_pb.InsideItem.AsObject,
+  }
+}
+
 export class GetContainerItemsRequest extends jspb.Message {
   hasContainerId(): boolean;
   clearContainerId(): void;
@@ -297,8 +319,8 @@ export class SortItemsRequest extends jspb.Message {
   getContainerId(): items_items_model_pb.ContainerID | undefined;
   setContainerId(value?: items_items_model_pb.ContainerID): void;
 
-  getSortBy(): string;
-  setSortBy(value: string): void;
+  getSortBy(): items_items_model_pb.SortingModeMap[keyof items_items_model_pb.SortingModeMap];
+  setSortBy(value: items_items_model_pb.SortingModeMap[keyof items_items_model_pb.SortingModeMap]): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): SortItemsRequest.AsObject;
@@ -313,15 +335,15 @@ export class SortItemsRequest extends jspb.Message {
 export namespace SortItemsRequest {
   export type AsObject = {
     containerId?: items_items_model_pb.ContainerID.AsObject,
-    sortBy: string,
+    sortBy: items_items_model_pb.SortingModeMap[keyof items_items_model_pb.SortingModeMap],
   }
 }
 
 export class SortItemsResponse extends jspb.Message {
-  clearItemsList(): void;
-  getItemsList(): Array<items_items_model_pb.Item>;
-  setItemsList(value: Array<items_items_model_pb.Item>): void;
-  addItems(value?: items_items_model_pb.Item, index?: number): items_items_model_pb.Item;
+  hasContainer(): boolean;
+  clearContainer(): void;
+  getContainer(): items_items_model_pb.Container | undefined;
+  setContainer(value?: items_items_model_pb.Container): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): SortItemsResponse.AsObject;
@@ -335,7 +357,7 @@ export class SortItemsResponse extends jspb.Message {
 
 export namespace SortItemsResponse {
   export type AsObject = {
-    itemsList: Array<items_items_model_pb.Item.AsObject>,
+    container?: items_items_model_pb.Container.AsObject,
   }
 }
 

@@ -301,3 +301,13 @@ export namespace InsideItem {
   }
 }
 
+export interface SortingModeMap {
+  UNKNOWN: 0;
+  WEIGHT_DESC: 1;
+  WEIGHT_ASC: 2;
+  VOLUME_DESC: 3;
+  VOLUME_ASC: 4;
+}
+
+export const SortingMode: SortingModeMap;
+

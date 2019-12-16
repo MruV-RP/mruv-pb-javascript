@@ -250,6 +250,17 @@ function deserialize_mruv_PutItemRequest(buffer_arg) {
   return items_items_pb.PutItemRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
+function serialize_mruv_PutItemResponse(arg) {
+  if (!(arg instanceof items_items_pb.PutItemResponse)) {
+    throw new Error('Expected argument of type mruv.PutItemResponse');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_PutItemResponse(buffer_arg) {
+  return items_items_pb.PutItemResponse.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
 function serialize_mruv_ServiceStatusRequest(arg) {
   if (!(arg instanceof common_health_pb.ServiceStatusRequest)) {
     throw new Error('Expected argument of type mruv.ServiceStatusRequest');
@@ -563,11 +574,11 @@ var MruVItemServiceService = exports.MruVItemServiceService = {
     requestStream: false,
     responseStream: false,
     requestType: items_items_pb.PutItemRequest,
-    responseType: items_items_model_pb.ItemID,
+    responseType: items_items_pb.PutItemResponse,
     requestSerialize: serialize_mruv_PutItemRequest,
     requestDeserialize: deserialize_mruv_PutItemRequest,
-    responseSerialize: serialize_mruv_ItemID,
-    responseDeserialize: deserialize_mruv_ItemID,
+    responseSerialize: serialize_mruv_PutItemResponse,
+    responseDeserialize: deserialize_mruv_PutItemResponse,
   },
   // Sort items inside container.
   // This procedure change order of items inside container.

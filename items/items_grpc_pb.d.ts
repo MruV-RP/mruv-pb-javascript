@@ -27,7 +27,7 @@ interface IMruVItemServiceService extends grpc.ServiceDefinition<grpc.UntypedSer
   getContainerTypes: grpc.MethodDefinition<items_items_pb.GetContainerTypesRequest, items_items_pb.GetContainerTypesResponse>;
   getContainerItems: grpc.MethodDefinition<items_items_pb.GetContainerItemsRequest, items_items_pb.GetContainerItemsResponse>;
   pullItem: grpc.MethodDefinition<items_items_pb.PullItemRequest, items_items_model_pb.Item>;
-  putItem: grpc.MethodDefinition<items_items_pb.PutItemRequest, items_items_model_pb.ItemID>;
+  putItem: grpc.MethodDefinition<items_items_pb.PutItemRequest, items_items_pb.PutItemResponse>;
   sortItems: grpc.MethodDefinition<items_items_pb.SortItemsRequest, items_items_pb.SortItemsResponse>;
   getNearestItems: grpc.MethodDefinition<items_items_pb.GetNearestItemsRequest, items_items_pb.GetNearestItemsResponse>;
   useItem: grpc.MethodDefinition<items_items_pb.UseItemRequest, items_items_pb.UseItemResponse>;
@@ -93,9 +93,9 @@ export class MruVItemServiceClient extends grpc.Client {
   pullItem(argument: items_items_pb.PullItemRequest, callback: grpc.requestCallback<items_items_model_pb.Item>): grpc.ClientUnaryCall;
   pullItem(argument: items_items_pb.PullItemRequest, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<items_items_model_pb.Item>): grpc.ClientUnaryCall;
   pullItem(argument: items_items_pb.PullItemRequest, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<items_items_model_pb.Item>): grpc.ClientUnaryCall;
-  putItem(argument: items_items_pb.PutItemRequest, callback: grpc.requestCallback<items_items_model_pb.ItemID>): grpc.ClientUnaryCall;
-  putItem(argument: items_items_pb.PutItemRequest, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<items_items_model_pb.ItemID>): grpc.ClientUnaryCall;
-  putItem(argument: items_items_pb.PutItemRequest, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<items_items_model_pb.ItemID>): grpc.ClientUnaryCall;
+  putItem(argument: items_items_pb.PutItemRequest, callback: grpc.requestCallback<items_items_pb.PutItemResponse>): grpc.ClientUnaryCall;
+  putItem(argument: items_items_pb.PutItemRequest, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<items_items_pb.PutItemResponse>): grpc.ClientUnaryCall;
+  putItem(argument: items_items_pb.PutItemRequest, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<items_items_pb.PutItemResponse>): grpc.ClientUnaryCall;
   sortItems(argument: items_items_pb.SortItemsRequest, callback: grpc.requestCallback<items_items_pb.SortItemsResponse>): grpc.ClientUnaryCall;
   sortItems(argument: items_items_pb.SortItemsRequest, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<items_items_pb.SortItemsResponse>): grpc.ClientUnaryCall;
   sortItems(argument: items_items_pb.SortItemsRequest, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<items_items_pb.SortItemsResponse>): grpc.ClientUnaryCall;
