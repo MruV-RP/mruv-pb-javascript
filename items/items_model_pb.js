@@ -11,8 +11,6 @@ var jspb = require('google-protobuf');
 var goog = jspb;
 var global = Function('return this')();
 
-var validate_validate_pb = require('../validate/validate_pb.js');
-goog.object.extend(proto, validate_validate_pb);
 goog.exportSymbol('proto.mruv.Container', null, global);
 goog.exportSymbol('proto.mruv.ContainerID', null, global);
 goog.exportSymbol('proto.mruv.ContainerType', null, global);

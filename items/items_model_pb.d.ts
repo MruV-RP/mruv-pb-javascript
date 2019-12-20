@@ -2,7 +2,6 @@
 // file: items/items_model.proto
 
 import * as jspb from "google-protobuf";
-import * as validate_validate_pb from "../validate/validate_pb";
 
 export class ItemType extends jspb.Message {
   hasId(): boolean;
