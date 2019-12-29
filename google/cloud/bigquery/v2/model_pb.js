@@ -1,0 +1,7720 @@
+/**
+ * @fileoverview
+ * @enhanceable
+ * @suppress {messageConventions} JS Compiler reports an error if a variable or
+ *     field starts with 'MSG_' and isn't a translatable message.
+ * @public
+ */
+// GENERATED CODE -- DO NOT EDIT!
+
+var jspb = require('google-protobuf');
+var goog = jspb;
+var global = Function('return this')();
+
+var google_api_client_pb = require('../../../../google/api/client_pb.js');
+goog.object.extend(proto, google_api_client_pb);
+var google_api_field_behavior_pb = require('../../../../google/api/field_behavior_pb.js');
+goog.object.extend(proto, google_api_field_behavior_pb);
+var google_cloud_bigquery_v2_encryption_config_pb = require('../../../../google/cloud/bigquery/v2/encryption_config_pb.js');
+goog.object.extend(proto, google_cloud_bigquery_v2_encryption_config_pb);
+var google_cloud_bigquery_v2_model_reference_pb = require('../../../../google/cloud/bigquery/v2/model_reference_pb.js');
+goog.object.extend(proto, google_cloud_bigquery_v2_model_reference_pb);
+var google_cloud_bigquery_v2_standard_sql_pb = require('../../../../google/cloud/bigquery/v2/standard_sql_pb.js');
+goog.object.extend(proto, google_cloud_bigquery_v2_standard_sql_pb);
+var google_protobuf_empty_pb = require('google-protobuf/google/protobuf/empty_pb.js');
+goog.object.extend(proto, google_protobuf_empty_pb);
+var google_protobuf_timestamp_pb = require('google-protobuf/google/protobuf/timestamp_pb.js');
+goog.object.extend(proto, google_protobuf_timestamp_pb);
+var google_protobuf_wrappers_pb = require('google-protobuf/google/protobuf/wrappers_pb.js');
+goog.object.extend(proto, google_protobuf_wrappers_pb);
+var google_api_annotations_pb = require('../../../../google/api/annotations_pb.js');
+goog.object.extend(proto, google_api_annotations_pb);
+goog.exportSymbol('proto.google.cloud.bigquery.v2.DeleteModelRequest', null, global);
+goog.exportSymbol('proto.google.cloud.bigquery.v2.GetModelRequest', null, global);
+goog.exportSymbol('proto.google.cloud.bigquery.v2.ListModelsRequest', null, global);
+goog.exportSymbol('proto.google.cloud.bigquery.v2.ListModelsResponse', null, global);
+goog.exportSymbol('proto.google.cloud.bigquery.v2.Model', null, global);
+goog.exportSymbol('proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics', null, global);
+goog.exportSymbol('proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics', null, global);
+goog.exportSymbol('proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix', null, global);
+goog.exportSymbol('proto.google.cloud.bigquery.v2.Model.ClusteringMetrics', null, global);
+goog.exportSymbol('proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster', null, global);
+goog.exportSymbol('proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue', null, global);
+goog.exportSymbol('proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue', null, global);
+goog.exportSymbol('proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.CategoryCount', null, global);
+goog.exportSymbol('proto.google.cloud.bigquery.v2.Model.DataSplitMethod', null, global);
+goog.exportSymbol('proto.google.cloud.bigquery.v2.Model.DistanceType', null, global);
+goog.exportSymbol('proto.google.cloud.bigquery.v2.Model.EvaluationMetrics', null, global);
+goog.exportSymbol('proto.google.cloud.bigquery.v2.Model.KmeansEnums', null, global);
+goog.exportSymbol('proto.google.cloud.bigquery.v2.Model.KmeansEnums.KmeansInitializationMethod', null, global);
+goog.exportSymbol('proto.google.cloud.bigquery.v2.Model.LearnRateStrategy', null, global);
+goog.exportSymbol('proto.google.cloud.bigquery.v2.Model.LossType', null, global);
+goog.exportSymbol('proto.google.cloud.bigquery.v2.Model.ModelType', null, global);
+goog.exportSymbol('proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics', null, global);
+goog.exportSymbol('proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix', null, global);
+goog.exportSymbol('proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Entry', null, global);
+goog.exportSymbol('proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Row', null, global);
+goog.exportSymbol('proto.google.cloud.bigquery.v2.Model.OptimizationStrategy', null, global);
+goog.exportSymbol('proto.google.cloud.bigquery.v2.Model.RegressionMetrics', null, global);
+goog.exportSymbol('proto.google.cloud.bigquery.v2.Model.TrainingRun', null, global);
+goog.exportSymbol('proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult', null, global);
+goog.exportSymbol('proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.ClusterInfo', null, global);
+goog.exportSymbol('proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions', null, global);
+goog.exportSymbol('proto.google.cloud.bigquery.v2.PatchModelRequest', null, global);
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.bigquery.v2.Model = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.google.cloud.bigquery.v2.Model.repeatedFields_, null);
+};
+goog.inherits(proto.google.cloud.bigquery.v2.Model, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.bigquery.v2.Model.displayName = 'proto.google.cloud.bigquery.v2.Model';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.bigquery.v2.Model.KmeansEnums = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.cloud.bigquery.v2.Model.KmeansEnums, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.bigquery.v2.Model.KmeansEnums.displayName = 'proto.google.cloud.bigquery.v2.Model.KmeansEnums';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.bigquery.v2.Model.RegressionMetrics = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.cloud.bigquery.v2.Model.RegressionMetrics, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.bigquery.v2.Model.RegressionMetrics.displayName = 'proto.google.cloud.bigquery.v2.Model.RegressionMetrics';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.displayName = 'proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.repeatedFields_, null);
+};
+goog.inherits(proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.displayName = 'proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.displayName = 'proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.repeatedFields_, null);
+};
+goog.inherits(proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.displayName = 'proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.repeatedFields_, null);
+};
+goog.inherits(proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.displayName = 'proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Entry = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Entry, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Entry.displayName = 'proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Entry';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Row = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Row.repeatedFields_, null);
+};
+goog.inherits(proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Row, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Row.displayName = 'proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Row';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.repeatedFields_, null);
+};
+goog.inherits(proto.google.cloud.bigquery.v2.Model.ClusteringMetrics, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.displayName = 'proto.google.cloud.bigquery.v2.Model.ClusteringMetrics';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.repeatedFields_, null);
+};
+goog.inherits(proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.displayName = 'proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.oneofGroups_);
+};
+goog.inherits(proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.displayName = 'proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.repeatedFields_, null);
+};
+goog.inherits(proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.displayName = 'proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.CategoryCount = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.CategoryCount, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.CategoryCount.displayName = 'proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.CategoryCount';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.bigquery.v2.Model.EvaluationMetrics = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.google.cloud.bigquery.v2.Model.EvaluationMetrics.oneofGroups_);
+};
+goog.inherits(proto.google.cloud.bigquery.v2.Model.EvaluationMetrics, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.bigquery.v2.Model.EvaluationMetrics.displayName = 'proto.google.cloud.bigquery.v2.Model.EvaluationMetrics';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.google.cloud.bigquery.v2.Model.TrainingRun.repeatedFields_, null);
+};
+goog.inherits(proto.google.cloud.bigquery.v2.Model.TrainingRun, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.bigquery.v2.Model.TrainingRun.displayName = 'proto.google.cloud.bigquery.v2.Model.TrainingRun';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.repeatedFields_, null);
+};
+goog.inherits(proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.displayName = 'proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.repeatedFields_, null);
+};
+goog.inherits(proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.displayName = 'proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.ClusterInfo = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.ClusterInfo, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.ClusterInfo.displayName = 'proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.ClusterInfo';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.bigquery.v2.GetModelRequest = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.cloud.bigquery.v2.GetModelRequest, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.bigquery.v2.GetModelRequest.displayName = 'proto.google.cloud.bigquery.v2.GetModelRequest';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.bigquery.v2.PatchModelRequest = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.cloud.bigquery.v2.PatchModelRequest, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.bigquery.v2.PatchModelRequest.displayName = 'proto.google.cloud.bigquery.v2.PatchModelRequest';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.bigquery.v2.DeleteModelRequest = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.cloud.bigquery.v2.DeleteModelRequest, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.bigquery.v2.DeleteModelRequest.displayName = 'proto.google.cloud.bigquery.v2.DeleteModelRequest';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.bigquery.v2.ListModelsRequest = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.cloud.bigquery.v2.ListModelsRequest, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.bigquery.v2.ListModelsRequest.displayName = 'proto.google.cloud.bigquery.v2.ListModelsRequest';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.bigquery.v2.ListModelsResponse = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.google.cloud.bigquery.v2.ListModelsResponse.repeatedFields_, null);
+};
+goog.inherits(proto.google.cloud.bigquery.v2.ListModelsResponse, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.bigquery.v2.ListModelsResponse.displayName = 'proto.google.cloud.bigquery.v2.ListModelsResponse';
+}
+
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.google.cloud.bigquery.v2.Model.repeatedFields_ = [9,10,11];
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.bigquery.v2.Model.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.bigquery.v2.Model.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.bigquery.v2.Model} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.Model.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    etag: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    modelReference: (f = msg.getModelReference()) && google_cloud_bigquery_v2_model_reference_pb.ModelReference.toObject(includeInstance, f),
+    creationTime: jspb.Message.getFieldWithDefault(msg, 5, 0),
+    lastModifiedTime: jspb.Message.getFieldWithDefault(msg, 6, 0),
+    description: jspb.Message.getFieldWithDefault(msg, 12, ""),
+    friendlyName: jspb.Message.getFieldWithDefault(msg, 14, ""),
+    labelsMap: (f = msg.getLabelsMap()) ? f.toObject(includeInstance, undefined) : [],
+    expirationTime: jspb.Message.getFieldWithDefault(msg, 16, 0),
+    location: jspb.Message.getFieldWithDefault(msg, 13, ""),
+    encryptionConfiguration: (f = msg.getEncryptionConfiguration()) && google_cloud_bigquery_v2_encryption_config_pb.EncryptionConfiguration.toObject(includeInstance, f),
+    modelType: jspb.Message.getFieldWithDefault(msg, 7, 0),
+    trainingRunsList: jspb.Message.toObjectList(msg.getTrainingRunsList(),
+    proto.google.cloud.bigquery.v2.Model.TrainingRun.toObject, includeInstance),
+    featureColumnsList: jspb.Message.toObjectList(msg.getFeatureColumnsList(),
+    google_cloud_bigquery_v2_standard_sql_pb.StandardSqlField.toObject, includeInstance),
+    labelColumnsList: jspb.Message.toObjectList(msg.getLabelColumnsList(),
+    google_cloud_bigquery_v2_standard_sql_pb.StandardSqlField.toObject, includeInstance)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.bigquery.v2.Model}
+ */
+proto.google.cloud.bigquery.v2.Model.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.bigquery.v2.Model;
+  return proto.google.cloud.bigquery.v2.Model.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.bigquery.v2.Model} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.bigquery.v2.Model}
+ */
+proto.google.cloud.bigquery.v2.Model.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setEtag(value);
+      break;
+    case 2:
+      var value = new google_cloud_bigquery_v2_model_reference_pb.ModelReference;
+      reader.readMessage(value,google_cloud_bigquery_v2_model_reference_pb.ModelReference.deserializeBinaryFromReader);
+      msg.setModelReference(value);
+      break;
+    case 5:
+      var value = /** @type {number} */ (reader.readInt64());
+      msg.setCreationTime(value);
+      break;
+    case 6:
+      var value = /** @type {number} */ (reader.readInt64());
+      msg.setLastModifiedTime(value);
+      break;
+    case 12:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setDescription(value);
+      break;
+    case 14:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setFriendlyName(value);
+      break;
+    case 15:
+      var value = msg.getLabelsMap();
+      reader.readMessage(value, function(message, reader) {
+        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readString, jspb.BinaryReader.prototype.readString, null, "");
+         });
+      break;
+    case 16:
+      var value = /** @type {number} */ (reader.readInt64());
+      msg.setExpirationTime(value);
+      break;
+    case 13:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setLocation(value);
+      break;
+    case 17:
+      var value = new google_cloud_bigquery_v2_encryption_config_pb.EncryptionConfiguration;
+      reader.readMessage(value,google_cloud_bigquery_v2_encryption_config_pb.EncryptionConfiguration.deserializeBinaryFromReader);
+      msg.setEncryptionConfiguration(value);
+      break;
+    case 7:
+      var value = /** @type {!proto.google.cloud.bigquery.v2.Model.ModelType} */ (reader.readEnum());
+      msg.setModelType(value);
+      break;
+    case 9:
+      var value = new proto.google.cloud.bigquery.v2.Model.TrainingRun;
+      reader.readMessage(value,proto.google.cloud.bigquery.v2.Model.TrainingRun.deserializeBinaryFromReader);
+      msg.addTrainingRuns(value);
+      break;
+    case 10:
+      var value = new google_cloud_bigquery_v2_standard_sql_pb.StandardSqlField;
+      reader.readMessage(value,google_cloud_bigquery_v2_standard_sql_pb.StandardSqlField.deserializeBinaryFromReader);
+      msg.addFeatureColumns(value);
+      break;
+    case 11:
+      var value = new google_cloud_bigquery_v2_standard_sql_pb.StandardSqlField;
+      reader.readMessage(value,google_cloud_bigquery_v2_standard_sql_pb.StandardSqlField.deserializeBinaryFromReader);
+      msg.addLabelColumns(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.bigquery.v2.Model.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.bigquery.v2.Model.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.bigquery.v2.Model} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.Model.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getEtag();
+  if (f.length > 0) {
+    writer.writeString(
+      1,
+      f
+    );
+  }
+  f = message.getModelReference();
+  if (f != null) {
+    writer.writeMessage(
+      2,
+      f,
+      google_cloud_bigquery_v2_model_reference_pb.ModelReference.serializeBinaryToWriter
+    );
+  }
+  f = message.getCreationTime();
+  if (f !== 0) {
+    writer.writeInt64(
+      5,
+      f
+    );
+  }
+  f = message.getLastModifiedTime();
+  if (f !== 0) {
+    writer.writeInt64(
+      6,
+      f
+    );
+  }
+  f = message.getDescription();
+  if (f.length > 0) {
+    writer.writeString(
+      12,
+      f
+    );
+  }
+  f = message.getFriendlyName();
+  if (f.length > 0) {
+    writer.writeString(
+      14,
+      f
+    );
+  }
+  f = message.getLabelsMap(true);
+  if (f && f.getLength() > 0) {
+    f.serializeBinary(15, writer, jspb.BinaryWriter.prototype.writeString, jspb.BinaryWriter.prototype.writeString);
+  }
+  f = message.getExpirationTime();
+  if (f !== 0) {
+    writer.writeInt64(
+      16,
+      f
+    );
+  }
+  f = message.getLocation();
+  if (f.length > 0) {
+    writer.writeString(
+      13,
+      f
+    );
+  }
+  f = message.getEncryptionConfiguration();
+  if (f != null) {
+    writer.writeMessage(
+      17,
+      f,
+      google_cloud_bigquery_v2_encryption_config_pb.EncryptionConfiguration.serializeBinaryToWriter
+    );
+  }
+  f = message.getModelType();
+  if (f !== 0.0) {
+    writer.writeEnum(
+      7,
+      f
+    );
+  }
+  f = message.getTrainingRunsList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      9,
+      f,
+      proto.google.cloud.bigquery.v2.Model.TrainingRun.serializeBinaryToWriter
+    );
+  }
+  f = message.getFeatureColumnsList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      10,
+      f,
+      google_cloud_bigquery_v2_standard_sql_pb.StandardSqlField.serializeBinaryToWriter
+    );
+  }
+  f = message.getLabelColumnsList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      11,
+      f,
+      google_cloud_bigquery_v2_standard_sql_pb.StandardSqlField.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * @enum {number}
+ */
+proto.google.cloud.bigquery.v2.Model.ModelType = {
+  MODEL_TYPE_UNSPECIFIED: 0,
+  LINEAR_REGRESSION: 1,
+  LOGISTIC_REGRESSION: 2,
+  KMEANS: 3,
+  TENSORFLOW: 6
+};
+
+/**
+ * @enum {number}
+ */
+proto.google.cloud.bigquery.v2.Model.LossType = {
+  LOSS_TYPE_UNSPECIFIED: 0,
+  MEAN_SQUARED_LOSS: 1,
+  MEAN_LOG_LOSS: 2
+};
+
+/**
+ * @enum {number}
+ */
+proto.google.cloud.bigquery.v2.Model.DistanceType = {
+  DISTANCE_TYPE_UNSPECIFIED: 0,
+  EUCLIDEAN: 1,
+  COSINE: 2
+};
+
+/**
+ * @enum {number}
+ */
+proto.google.cloud.bigquery.v2.Model.DataSplitMethod = {
+  DATA_SPLIT_METHOD_UNSPECIFIED: 0,
+  RANDOM: 1,
+  CUSTOM: 2,
+  SEQUENTIAL: 3,
+  NO_SPLIT: 4,
+  AUTO_SPLIT: 5
+};
+
+/**
+ * @enum {number}
+ */
+proto.google.cloud.bigquery.v2.Model.LearnRateStrategy = {
+  LEARN_RATE_STRATEGY_UNSPECIFIED: 0,
+  LINE_SEARCH: 1,
+  CONSTANT: 2
+};
+
+/**
+ * @enum {number}
+ */
+proto.google.cloud.bigquery.v2.Model.OptimizationStrategy = {
+  OPTIMIZATION_STRATEGY_UNSPECIFIED: 0,
+  BATCH_GRADIENT_DESCENT: 1,
+  NORMAL_EQUATION: 2
+};
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.bigquery.v2.Model.KmeansEnums.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.bigquery.v2.Model.KmeansEnums.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.bigquery.v2.Model.KmeansEnums} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.Model.KmeansEnums.toObject = function(includeInstance, msg) {
+  var f, obj = {
+
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.bigquery.v2.Model.KmeansEnums}
+ */
+proto.google.cloud.bigquery.v2.Model.KmeansEnums.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.bigquery.v2.Model.KmeansEnums;
+  return proto.google.cloud.bigquery.v2.Model.KmeansEnums.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.bigquery.v2.Model.KmeansEnums} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.bigquery.v2.Model.KmeansEnums}
+ */
+proto.google.cloud.bigquery.v2.Model.KmeansEnums.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.bigquery.v2.Model.KmeansEnums.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.bigquery.v2.Model.KmeansEnums.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.bigquery.v2.Model.KmeansEnums} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.Model.KmeansEnums.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+};
+
+
+/**
+ * @enum {number}
+ */
+proto.google.cloud.bigquery.v2.Model.KmeansEnums.KmeansInitializationMethod = {
+  KMEANS_INITIALIZATION_METHOD_UNSPECIFIED: 0,
+  RANDOM: 1,
+  CUSTOM: 2
+};
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.bigquery.v2.Model.RegressionMetrics.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.bigquery.v2.Model.RegressionMetrics.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.bigquery.v2.Model.RegressionMetrics} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.Model.RegressionMetrics.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    meanAbsoluteError: (f = msg.getMeanAbsoluteError()) && google_protobuf_wrappers_pb.DoubleValue.toObject(includeInstance, f),
+    meanSquaredError: (f = msg.getMeanSquaredError()) && google_protobuf_wrappers_pb.DoubleValue.toObject(includeInstance, f),
+    meanSquaredLogError: (f = msg.getMeanSquaredLogError()) && google_protobuf_wrappers_pb.DoubleValue.toObject(includeInstance, f),
+    medianAbsoluteError: (f = msg.getMedianAbsoluteError()) && google_protobuf_wrappers_pb.DoubleValue.toObject(includeInstance, f),
+    rSquared: (f = msg.getRSquared()) && google_protobuf_wrappers_pb.DoubleValue.toObject(includeInstance, f)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.bigquery.v2.Model.RegressionMetrics}
+ */
+proto.google.cloud.bigquery.v2.Model.RegressionMetrics.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.bigquery.v2.Model.RegressionMetrics;
+  return proto.google.cloud.bigquery.v2.Model.RegressionMetrics.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.bigquery.v2.Model.RegressionMetrics} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.bigquery.v2.Model.RegressionMetrics}
+ */
+proto.google.cloud.bigquery.v2.Model.RegressionMetrics.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new google_protobuf_wrappers_pb.DoubleValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.DoubleValue.deserializeBinaryFromReader);
+      msg.setMeanAbsoluteError(value);
+      break;
+    case 2:
+      var value = new google_protobuf_wrappers_pb.DoubleValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.DoubleValue.deserializeBinaryFromReader);
+      msg.setMeanSquaredError(value);
+      break;
+    case 3:
+      var value = new google_protobuf_wrappers_pb.DoubleValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.DoubleValue.deserializeBinaryFromReader);
+      msg.setMeanSquaredLogError(value);
+      break;
+    case 4:
+      var value = new google_protobuf_wrappers_pb.DoubleValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.DoubleValue.deserializeBinaryFromReader);
+      msg.setMedianAbsoluteError(value);
+      break;
+    case 5:
+      var value = new google_protobuf_wrappers_pb.DoubleValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.DoubleValue.deserializeBinaryFromReader);
+      msg.setRSquared(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.bigquery.v2.Model.RegressionMetrics.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.bigquery.v2.Model.RegressionMetrics.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.bigquery.v2.Model.RegressionMetrics} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.Model.RegressionMetrics.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getMeanAbsoluteError();
+  if (f != null) {
+    writer.writeMessage(
+      1,
+      f,
+      google_protobuf_wrappers_pb.DoubleValue.serializeBinaryToWriter
+    );
+  }
+  f = message.getMeanSquaredError();
+  if (f != null) {
+    writer.writeMessage(
+      2,
+      f,
+      google_protobuf_wrappers_pb.DoubleValue.serializeBinaryToWriter
+    );
+  }
+  f = message.getMeanSquaredLogError();
+  if (f != null) {
+    writer.writeMessage(
+      3,
+      f,
+      google_protobuf_wrappers_pb.DoubleValue.serializeBinaryToWriter
+    );
+  }
+  f = message.getMedianAbsoluteError();
+  if (f != null) {
+    writer.writeMessage(
+      4,
+      f,
+      google_protobuf_wrappers_pb.DoubleValue.serializeBinaryToWriter
+    );
+  }
+  f = message.getRSquared();
+  if (f != null) {
+    writer.writeMessage(
+      5,
+      f,
+      google_protobuf_wrappers_pb.DoubleValue.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional google.protobuf.DoubleValue mean_absolute_error = 1;
+ * @return {?proto.google.protobuf.DoubleValue}
+ */
+proto.google.cloud.bigquery.v2.Model.RegressionMetrics.prototype.getMeanAbsoluteError = function() {
+  return /** @type{?proto.google.protobuf.DoubleValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.DoubleValue, 1));
+};
+
+
+/** @param {?proto.google.protobuf.DoubleValue|undefined} value */
+proto.google.cloud.bigquery.v2.Model.RegressionMetrics.prototype.setMeanAbsoluteError = function(value) {
+  jspb.Message.setWrapperField(this, 1, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.RegressionMetrics.prototype.clearMeanAbsoluteError = function() {
+  this.setMeanAbsoluteError(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.RegressionMetrics.prototype.hasMeanAbsoluteError = function() {
+  return jspb.Message.getField(this, 1) != null;
+};
+
+
+/**
+ * optional google.protobuf.DoubleValue mean_squared_error = 2;
+ * @return {?proto.google.protobuf.DoubleValue}
+ */
+proto.google.cloud.bigquery.v2.Model.RegressionMetrics.prototype.getMeanSquaredError = function() {
+  return /** @type{?proto.google.protobuf.DoubleValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.DoubleValue, 2));
+};
+
+
+/** @param {?proto.google.protobuf.DoubleValue|undefined} value */
+proto.google.cloud.bigquery.v2.Model.RegressionMetrics.prototype.setMeanSquaredError = function(value) {
+  jspb.Message.setWrapperField(this, 2, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.RegressionMetrics.prototype.clearMeanSquaredError = function() {
+  this.setMeanSquaredError(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.RegressionMetrics.prototype.hasMeanSquaredError = function() {
+  return jspb.Message.getField(this, 2) != null;
+};
+
+
+/**
+ * optional google.protobuf.DoubleValue mean_squared_log_error = 3;
+ * @return {?proto.google.protobuf.DoubleValue}
+ */
+proto.google.cloud.bigquery.v2.Model.RegressionMetrics.prototype.getMeanSquaredLogError = function() {
+  return /** @type{?proto.google.protobuf.DoubleValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.DoubleValue, 3));
+};
+
+
+/** @param {?proto.google.protobuf.DoubleValue|undefined} value */
+proto.google.cloud.bigquery.v2.Model.RegressionMetrics.prototype.setMeanSquaredLogError = function(value) {
+  jspb.Message.setWrapperField(this, 3, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.RegressionMetrics.prototype.clearMeanSquaredLogError = function() {
+  this.setMeanSquaredLogError(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.RegressionMetrics.prototype.hasMeanSquaredLogError = function() {
+  return jspb.Message.getField(this, 3) != null;
+};
+
+
+/**
+ * optional google.protobuf.DoubleValue median_absolute_error = 4;
+ * @return {?proto.google.protobuf.DoubleValue}
+ */
+proto.google.cloud.bigquery.v2.Model.RegressionMetrics.prototype.getMedianAbsoluteError = function() {
+  return /** @type{?proto.google.protobuf.DoubleValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.DoubleValue, 4));
+};
+
+
+/** @param {?proto.google.protobuf.DoubleValue|undefined} value */
+proto.google.cloud.bigquery.v2.Model.RegressionMetrics.prototype.setMedianAbsoluteError = function(value) {
+  jspb.Message.setWrapperField(this, 4, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.RegressionMetrics.prototype.clearMedianAbsoluteError = function() {
+  this.setMedianAbsoluteError(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.RegressionMetrics.prototype.hasMedianAbsoluteError = function() {
+  return jspb.Message.getField(this, 4) != null;
+};
+
+
+/**
+ * optional google.protobuf.DoubleValue r_squared = 5;
+ * @return {?proto.google.protobuf.DoubleValue}
+ */
+proto.google.cloud.bigquery.v2.Model.RegressionMetrics.prototype.getRSquared = function() {
+  return /** @type{?proto.google.protobuf.DoubleValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.DoubleValue, 5));
+};
+
+
+/** @param {?proto.google.protobuf.DoubleValue|undefined} value */
+proto.google.cloud.bigquery.v2.Model.RegressionMetrics.prototype.setRSquared = function(value) {
+  jspb.Message.setWrapperField(this, 5, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.RegressionMetrics.prototype.clearRSquared = function() {
+  this.setRSquared(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.RegressionMetrics.prototype.hasRSquared = function() {
+  return jspb.Message.getField(this, 5) != null;
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    precision: (f = msg.getPrecision()) && google_protobuf_wrappers_pb.DoubleValue.toObject(includeInstance, f),
+    recall: (f = msg.getRecall()) && google_protobuf_wrappers_pb.DoubleValue.toObject(includeInstance, f),
+    accuracy: (f = msg.getAccuracy()) && google_protobuf_wrappers_pb.DoubleValue.toObject(includeInstance, f),
+    threshold: (f = msg.getThreshold()) && google_protobuf_wrappers_pb.DoubleValue.toObject(includeInstance, f),
+    f1Score: (f = msg.getF1Score()) && google_protobuf_wrappers_pb.DoubleValue.toObject(includeInstance, f),
+    logLoss: (f = msg.getLogLoss()) && google_protobuf_wrappers_pb.DoubleValue.toObject(includeInstance, f),
+    rocAuc: (f = msg.getRocAuc()) && google_protobuf_wrappers_pb.DoubleValue.toObject(includeInstance, f)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics}
+ */
+proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics;
+  return proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics}
+ */
+proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new google_protobuf_wrappers_pb.DoubleValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.DoubleValue.deserializeBinaryFromReader);
+      msg.setPrecision(value);
+      break;
+    case 2:
+      var value = new google_protobuf_wrappers_pb.DoubleValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.DoubleValue.deserializeBinaryFromReader);
+      msg.setRecall(value);
+      break;
+    case 3:
+      var value = new google_protobuf_wrappers_pb.DoubleValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.DoubleValue.deserializeBinaryFromReader);
+      msg.setAccuracy(value);
+      break;
+    case 4:
+      var value = new google_protobuf_wrappers_pb.DoubleValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.DoubleValue.deserializeBinaryFromReader);
+      msg.setThreshold(value);
+      break;
+    case 5:
+      var value = new google_protobuf_wrappers_pb.DoubleValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.DoubleValue.deserializeBinaryFromReader);
+      msg.setF1Score(value);
+      break;
+    case 6:
+      var value = new google_protobuf_wrappers_pb.DoubleValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.DoubleValue.deserializeBinaryFromReader);
+      msg.setLogLoss(value);
+      break;
+    case 7:
+      var value = new google_protobuf_wrappers_pb.DoubleValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.DoubleValue.deserializeBinaryFromReader);
+      msg.setRocAuc(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getPrecision();
+  if (f != null) {
+    writer.writeMessage(
+      1,
+      f,
+      google_protobuf_wrappers_pb.DoubleValue.serializeBinaryToWriter
+    );
+  }
+  f = message.getRecall();
+  if (f != null) {
+    writer.writeMessage(
+      2,
+      f,
+      google_protobuf_wrappers_pb.DoubleValue.serializeBinaryToWriter
+    );
+  }
+  f = message.getAccuracy();
+  if (f != null) {
+    writer.writeMessage(
+      3,
+      f,
+      google_protobuf_wrappers_pb.DoubleValue.serializeBinaryToWriter
+    );
+  }
+  f = message.getThreshold();
+  if (f != null) {
+    writer.writeMessage(
+      4,
+      f,
+      google_protobuf_wrappers_pb.DoubleValue.serializeBinaryToWriter
+    );
+  }
+  f = message.getF1Score();
+  if (f != null) {
+    writer.writeMessage(
+      5,
+      f,
+      google_protobuf_wrappers_pb.DoubleValue.serializeBinaryToWriter
+    );
+  }
+  f = message.getLogLoss();
+  if (f != null) {
+    writer.writeMessage(
+      6,
+      f,
+      google_protobuf_wrappers_pb.DoubleValue.serializeBinaryToWriter
+    );
+  }
+  f = message.getRocAuc();
+  if (f != null) {
+    writer.writeMessage(
+      7,
+      f,
+      google_protobuf_wrappers_pb.DoubleValue.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional google.protobuf.DoubleValue precision = 1;
+ * @return {?proto.google.protobuf.DoubleValue}
+ */
+proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.prototype.getPrecision = function() {
+  return /** @type{?proto.google.protobuf.DoubleValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.DoubleValue, 1));
+};
+
+
+/** @param {?proto.google.protobuf.DoubleValue|undefined} value */
+proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.prototype.setPrecision = function(value) {
+  jspb.Message.setWrapperField(this, 1, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.prototype.clearPrecision = function() {
+  this.setPrecision(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.prototype.hasPrecision = function() {
+  return jspb.Message.getField(this, 1) != null;
+};
+
+
+/**
+ * optional google.protobuf.DoubleValue recall = 2;
+ * @return {?proto.google.protobuf.DoubleValue}
+ */
+proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.prototype.getRecall = function() {
+  return /** @type{?proto.google.protobuf.DoubleValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.DoubleValue, 2));
+};
+
+
+/** @param {?proto.google.protobuf.DoubleValue|undefined} value */
+proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.prototype.setRecall = function(value) {
+  jspb.Message.setWrapperField(this, 2, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.prototype.clearRecall = function() {
+  this.setRecall(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.prototype.hasRecall = function() {
+  return jspb.Message.getField(this, 2) != null;
+};
+
+
+/**
+ * optional google.protobuf.DoubleValue accuracy = 3;
+ * @return {?proto.google.protobuf.DoubleValue}
+ */
+proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.prototype.getAccuracy = function() {
+  return /** @type{?proto.google.protobuf.DoubleValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.DoubleValue, 3));
+};
+
+
+/** @param {?proto.google.protobuf.DoubleValue|undefined} value */
+proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.prototype.setAccuracy = function(value) {
+  jspb.Message.setWrapperField(this, 3, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.prototype.clearAccuracy = function() {
+  this.setAccuracy(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.prototype.hasAccuracy = function() {
+  return jspb.Message.getField(this, 3) != null;
+};
+
+
+/**
+ * optional google.protobuf.DoubleValue threshold = 4;
+ * @return {?proto.google.protobuf.DoubleValue}
+ */
+proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.prototype.getThreshold = function() {
+  return /** @type{?proto.google.protobuf.DoubleValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.DoubleValue, 4));
+};
+
+
+/** @param {?proto.google.protobuf.DoubleValue|undefined} value */
+proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.prototype.setThreshold = function(value) {
+  jspb.Message.setWrapperField(this, 4, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.prototype.clearThreshold = function() {
+  this.setThreshold(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.prototype.hasThreshold = function() {
+  return jspb.Message.getField(this, 4) != null;
+};
+
+
+/**
+ * optional google.protobuf.DoubleValue f1_score = 5;
+ * @return {?proto.google.protobuf.DoubleValue}
+ */
+proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.prototype.getF1Score = function() {
+  return /** @type{?proto.google.protobuf.DoubleValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.DoubleValue, 5));
+};
+
+
+/** @param {?proto.google.protobuf.DoubleValue|undefined} value */
+proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.prototype.setF1Score = function(value) {
+  jspb.Message.setWrapperField(this, 5, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.prototype.clearF1Score = function() {
+  this.setF1Score(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.prototype.hasF1Score = function() {
+  return jspb.Message.getField(this, 5) != null;
+};
+
+
+/**
+ * optional google.protobuf.DoubleValue log_loss = 6;
+ * @return {?proto.google.protobuf.DoubleValue}
+ */
+proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.prototype.getLogLoss = function() {
+  return /** @type{?proto.google.protobuf.DoubleValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.DoubleValue, 6));
+};
+
+
+/** @param {?proto.google.protobuf.DoubleValue|undefined} value */
+proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.prototype.setLogLoss = function(value) {
+  jspb.Message.setWrapperField(this, 6, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.prototype.clearLogLoss = function() {
+  this.setLogLoss(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.prototype.hasLogLoss = function() {
+  return jspb.Message.getField(this, 6) != null;
+};
+
+
+/**
+ * optional google.protobuf.DoubleValue roc_auc = 7;
+ * @return {?proto.google.protobuf.DoubleValue}
+ */
+proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.prototype.getRocAuc = function() {
+  return /** @type{?proto.google.protobuf.DoubleValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.DoubleValue, 7));
+};
+
+
+/** @param {?proto.google.protobuf.DoubleValue|undefined} value */
+proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.prototype.setRocAuc = function(value) {
+  jspb.Message.setWrapperField(this, 7, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.prototype.clearRocAuc = function() {
+  this.setRocAuc(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.prototype.hasRocAuc = function() {
+  return jspb.Message.getField(this, 7) != null;
+};
+
+
+
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.repeatedFields_ = [2];
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    aggregateClassificationMetrics: (f = msg.getAggregateClassificationMetrics()) && proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.toObject(includeInstance, f),
+    binaryConfusionMatrixListList: jspb.Message.toObjectList(msg.getBinaryConfusionMatrixListList(),
+    proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.toObject, includeInstance),
+    positiveLabel: jspb.Message.getFieldWithDefault(msg, 3, ""),
+    negativeLabel: jspb.Message.getFieldWithDefault(msg, 4, "")
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics}
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics;
+  return proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics}
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics;
+      reader.readMessage(value,proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.deserializeBinaryFromReader);
+      msg.setAggregateClassificationMetrics(value);
+      break;
+    case 2:
+      var value = new proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix;
+      reader.readMessage(value,proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.deserializeBinaryFromReader);
+      msg.addBinaryConfusionMatrixList(value);
+      break;
+    case 3:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setPositiveLabel(value);
+      break;
+    case 4:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setNegativeLabel(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getAggregateClassificationMetrics();
+  if (f != null) {
+    writer.writeMessage(
+      1,
+      f,
+      proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.serializeBinaryToWriter
+    );
+  }
+  f = message.getBinaryConfusionMatrixListList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      2,
+      f,
+      proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.serializeBinaryToWriter
+    );
+  }
+  f = message.getPositiveLabel();
+  if (f.length > 0) {
+    writer.writeString(
+      3,
+      f
+    );
+  }
+  f = message.getNegativeLabel();
+  if (f.length > 0) {
+    writer.writeString(
+      4,
+      f
+    );
+  }
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    positiveClassThreshold: (f = msg.getPositiveClassThreshold()) && google_protobuf_wrappers_pb.DoubleValue.toObject(includeInstance, f),
+    truePositives: (f = msg.getTruePositives()) && google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance, f),
+    falsePositives: (f = msg.getFalsePositives()) && google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance, f),
+    trueNegatives: (f = msg.getTrueNegatives()) && google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance, f),
+    falseNegatives: (f = msg.getFalseNegatives()) && google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance, f),
+    precision: (f = msg.getPrecision()) && google_protobuf_wrappers_pb.DoubleValue.toObject(includeInstance, f),
+    recall: (f = msg.getRecall()) && google_protobuf_wrappers_pb.DoubleValue.toObject(includeInstance, f),
+    f1Score: (f = msg.getF1Score()) && google_protobuf_wrappers_pb.DoubleValue.toObject(includeInstance, f),
+    accuracy: (f = msg.getAccuracy()) && google_protobuf_wrappers_pb.DoubleValue.toObject(includeInstance, f)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix}
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix;
+  return proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix}
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new google_protobuf_wrappers_pb.DoubleValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.DoubleValue.deserializeBinaryFromReader);
+      msg.setPositiveClassThreshold(value);
+      break;
+    case 2:
+      var value = new google_protobuf_wrappers_pb.Int64Value;
+      reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader);
+      msg.setTruePositives(value);
+      break;
+    case 3:
+      var value = new google_protobuf_wrappers_pb.Int64Value;
+      reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader);
+      msg.setFalsePositives(value);
+      break;
+    case 4:
+      var value = new google_protobuf_wrappers_pb.Int64Value;
+      reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader);
+      msg.setTrueNegatives(value);
+      break;
+    case 5:
+      var value = new google_protobuf_wrappers_pb.Int64Value;
+      reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader);
+      msg.setFalseNegatives(value);
+      break;
+    case 6:
+      var value = new google_protobuf_wrappers_pb.DoubleValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.DoubleValue.deserializeBinaryFromReader);
+      msg.setPrecision(value);
+      break;
+    case 7:
+      var value = new google_protobuf_wrappers_pb.DoubleValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.DoubleValue.deserializeBinaryFromReader);
+      msg.setRecall(value);
+      break;
+    case 8:
+      var value = new google_protobuf_wrappers_pb.DoubleValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.DoubleValue.deserializeBinaryFromReader);
+      msg.setF1Score(value);
+      break;
+    case 9:
+      var value = new google_protobuf_wrappers_pb.DoubleValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.DoubleValue.deserializeBinaryFromReader);
+      msg.setAccuracy(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getPositiveClassThreshold();
+  if (f != null) {
+    writer.writeMessage(
+      1,
+      f,
+      google_protobuf_wrappers_pb.DoubleValue.serializeBinaryToWriter
+    );
+  }
+  f = message.getTruePositives();
+  if (f != null) {
+    writer.writeMessage(
+      2,
+      f,
+      google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter
+    );
+  }
+  f = message.getFalsePositives();
+  if (f != null) {
+    writer.writeMessage(
+      3,
+      f,
+      google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter
+    );
+  }
+  f = message.getTrueNegatives();
+  if (f != null) {
+    writer.writeMessage(
+      4,
+      f,
+      google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter
+    );
+  }
+  f = message.getFalseNegatives();
+  if (f != null) {
+    writer.writeMessage(
+      5,
+      f,
+      google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter
+    );
+  }
+  f = message.getPrecision();
+  if (f != null) {
+    writer.writeMessage(
+      6,
+      f,
+      google_protobuf_wrappers_pb.DoubleValue.serializeBinaryToWriter
+    );
+  }
+  f = message.getRecall();
+  if (f != null) {
+    writer.writeMessage(
+      7,
+      f,
+      google_protobuf_wrappers_pb.DoubleValue.serializeBinaryToWriter
+    );
+  }
+  f = message.getF1Score();
+  if (f != null) {
+    writer.writeMessage(
+      8,
+      f,
+      google_protobuf_wrappers_pb.DoubleValue.serializeBinaryToWriter
+    );
+  }
+  f = message.getAccuracy();
+  if (f != null) {
+    writer.writeMessage(
+      9,
+      f,
+      google_protobuf_wrappers_pb.DoubleValue.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional google.protobuf.DoubleValue positive_class_threshold = 1;
+ * @return {?proto.google.protobuf.DoubleValue}
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.prototype.getPositiveClassThreshold = function() {
+  return /** @type{?proto.google.protobuf.DoubleValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.DoubleValue, 1));
+};
+
+
+/** @param {?proto.google.protobuf.DoubleValue|undefined} value */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.prototype.setPositiveClassThreshold = function(value) {
+  jspb.Message.setWrapperField(this, 1, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.prototype.clearPositiveClassThreshold = function() {
+  this.setPositiveClassThreshold(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.prototype.hasPositiveClassThreshold = function() {
+  return jspb.Message.getField(this, 1) != null;
+};
+
+
+/**
+ * optional google.protobuf.Int64Value true_positives = 2;
+ * @return {?proto.google.protobuf.Int64Value}
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.prototype.getTruePositives = function() {
+  return /** @type{?proto.google.protobuf.Int64Value} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.Int64Value, 2));
+};
+
+
+/** @param {?proto.google.protobuf.Int64Value|undefined} value */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.prototype.setTruePositives = function(value) {
+  jspb.Message.setWrapperField(this, 2, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.prototype.clearTruePositives = function() {
+  this.setTruePositives(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.prototype.hasTruePositives = function() {
+  return jspb.Message.getField(this, 2) != null;
+};
+
+
+/**
+ * optional google.protobuf.Int64Value false_positives = 3;
+ * @return {?proto.google.protobuf.Int64Value}
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.prototype.getFalsePositives = function() {
+  return /** @type{?proto.google.protobuf.Int64Value} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.Int64Value, 3));
+};
+
+
+/** @param {?proto.google.protobuf.Int64Value|undefined} value */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.prototype.setFalsePositives = function(value) {
+  jspb.Message.setWrapperField(this, 3, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.prototype.clearFalsePositives = function() {
+  this.setFalsePositives(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.prototype.hasFalsePositives = function() {
+  return jspb.Message.getField(this, 3) != null;
+};
+
+
+/**
+ * optional google.protobuf.Int64Value true_negatives = 4;
+ * @return {?proto.google.protobuf.Int64Value}
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.prototype.getTrueNegatives = function() {
+  return /** @type{?proto.google.protobuf.Int64Value} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.Int64Value, 4));
+};
+
+
+/** @param {?proto.google.protobuf.Int64Value|undefined} value */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.prototype.setTrueNegatives = function(value) {
+  jspb.Message.setWrapperField(this, 4, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.prototype.clearTrueNegatives = function() {
+  this.setTrueNegatives(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.prototype.hasTrueNegatives = function() {
+  return jspb.Message.getField(this, 4) != null;
+};
+
+
+/**
+ * optional google.protobuf.Int64Value false_negatives = 5;
+ * @return {?proto.google.protobuf.Int64Value}
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.prototype.getFalseNegatives = function() {
+  return /** @type{?proto.google.protobuf.Int64Value} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.Int64Value, 5));
+};
+
+
+/** @param {?proto.google.protobuf.Int64Value|undefined} value */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.prototype.setFalseNegatives = function(value) {
+  jspb.Message.setWrapperField(this, 5, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.prototype.clearFalseNegatives = function() {
+  this.setFalseNegatives(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.prototype.hasFalseNegatives = function() {
+  return jspb.Message.getField(this, 5) != null;
+};
+
+
+/**
+ * optional google.protobuf.DoubleValue precision = 6;
+ * @return {?proto.google.protobuf.DoubleValue}
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.prototype.getPrecision = function() {
+  return /** @type{?proto.google.protobuf.DoubleValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.DoubleValue, 6));
+};
+
+
+/** @param {?proto.google.protobuf.DoubleValue|undefined} value */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.prototype.setPrecision = function(value) {
+  jspb.Message.setWrapperField(this, 6, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.prototype.clearPrecision = function() {
+  this.setPrecision(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.prototype.hasPrecision = function() {
+  return jspb.Message.getField(this, 6) != null;
+};
+
+
+/**
+ * optional google.protobuf.DoubleValue recall = 7;
+ * @return {?proto.google.protobuf.DoubleValue}
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.prototype.getRecall = function() {
+  return /** @type{?proto.google.protobuf.DoubleValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.DoubleValue, 7));
+};
+
+
+/** @param {?proto.google.protobuf.DoubleValue|undefined} value */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.prototype.setRecall = function(value) {
+  jspb.Message.setWrapperField(this, 7, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.prototype.clearRecall = function() {
+  this.setRecall(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.prototype.hasRecall = function() {
+  return jspb.Message.getField(this, 7) != null;
+};
+
+
+/**
+ * optional google.protobuf.DoubleValue f1_score = 8;
+ * @return {?proto.google.protobuf.DoubleValue}
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.prototype.getF1Score = function() {
+  return /** @type{?proto.google.protobuf.DoubleValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.DoubleValue, 8));
+};
+
+
+/** @param {?proto.google.protobuf.DoubleValue|undefined} value */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.prototype.setF1Score = function(value) {
+  jspb.Message.setWrapperField(this, 8, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.prototype.clearF1Score = function() {
+  this.setF1Score(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.prototype.hasF1Score = function() {
+  return jspb.Message.getField(this, 8) != null;
+};
+
+
+/**
+ * optional google.protobuf.DoubleValue accuracy = 9;
+ * @return {?proto.google.protobuf.DoubleValue}
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.prototype.getAccuracy = function() {
+  return /** @type{?proto.google.protobuf.DoubleValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.DoubleValue, 9));
+};
+
+
+/** @param {?proto.google.protobuf.DoubleValue|undefined} value */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.prototype.setAccuracy = function(value) {
+  jspb.Message.setWrapperField(this, 9, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.prototype.clearAccuracy = function() {
+  this.setAccuracy(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix.prototype.hasAccuracy = function() {
+  return jspb.Message.getField(this, 9) != null;
+};
+
+
+/**
+ * optional AggregateClassificationMetrics aggregate_classification_metrics = 1;
+ * @return {?proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics}
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.prototype.getAggregateClassificationMetrics = function() {
+  return /** @type{?proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics} */ (
+    jspb.Message.getWrapperField(this, proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics, 1));
+};
+
+
+/** @param {?proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics|undefined} value */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.prototype.setAggregateClassificationMetrics = function(value) {
+  jspb.Message.setWrapperField(this, 1, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.prototype.clearAggregateClassificationMetrics = function() {
+  this.setAggregateClassificationMetrics(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.prototype.hasAggregateClassificationMetrics = function() {
+  return jspb.Message.getField(this, 1) != null;
+};
+
+
+/**
+ * repeated BinaryConfusionMatrix binary_confusion_matrix_list = 2;
+ * @return {!Array<!proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix>}
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.prototype.getBinaryConfusionMatrixListList = function() {
+  return /** @type{!Array<!proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix, 2));
+};
+
+
+/** @param {!Array<!proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix>} value */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.prototype.setBinaryConfusionMatrixListList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 2, value);
+};
+
+
+/**
+ * @param {!proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix}
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.prototype.addBinaryConfusionMatrixList = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 2, opt_value, proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.BinaryConfusionMatrix, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.prototype.clearBinaryConfusionMatrixListList = function() {
+  this.setBinaryConfusionMatrixListList([]);
+};
+
+
+/**
+ * optional string positive_label = 3;
+ * @return {string}
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.prototype.getPositiveLabel = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.prototype.setPositiveLabel = function(value) {
+  jspb.Message.setProto3StringField(this, 3, value);
+};
+
+
+/**
+ * optional string negative_label = 4;
+ * @return {string}
+ */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.prototype.getNegativeLabel = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 4, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.prototype.setNegativeLabel = function(value) {
+  jspb.Message.setProto3StringField(this, 4, value);
+};
+
+
+
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.repeatedFields_ = [2];
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    aggregateClassificationMetrics: (f = msg.getAggregateClassificationMetrics()) && proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.toObject(includeInstance, f),
+    confusionMatrixListList: jspb.Message.toObjectList(msg.getConfusionMatrixListList(),
+    proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.toObject, includeInstance)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics}
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics;
+  return proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics}
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics;
+      reader.readMessage(value,proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.deserializeBinaryFromReader);
+      msg.setAggregateClassificationMetrics(value);
+      break;
+    case 2:
+      var value = new proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix;
+      reader.readMessage(value,proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.deserializeBinaryFromReader);
+      msg.addConfusionMatrixList(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getAggregateClassificationMetrics();
+  if (f != null) {
+    writer.writeMessage(
+      1,
+      f,
+      proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics.serializeBinaryToWriter
+    );
+  }
+  f = message.getConfusionMatrixListList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      2,
+      f,
+      proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.serializeBinaryToWriter
+    );
+  }
+};
+
+
+
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.repeatedFields_ = [2];
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    confidenceThreshold: (f = msg.getConfidenceThreshold()) && google_protobuf_wrappers_pb.DoubleValue.toObject(includeInstance, f),
+    rowsList: jspb.Message.toObjectList(msg.getRowsList(),
+    proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Row.toObject, includeInstance)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix}
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix;
+  return proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix}
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new google_protobuf_wrappers_pb.DoubleValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.DoubleValue.deserializeBinaryFromReader);
+      msg.setConfidenceThreshold(value);
+      break;
+    case 2:
+      var value = new proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Row;
+      reader.readMessage(value,proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Row.deserializeBinaryFromReader);
+      msg.addRows(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getConfidenceThreshold();
+  if (f != null) {
+    writer.writeMessage(
+      1,
+      f,
+      google_protobuf_wrappers_pb.DoubleValue.serializeBinaryToWriter
+    );
+  }
+  f = message.getRowsList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      2,
+      f,
+      proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Row.serializeBinaryToWriter
+    );
+  }
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Entry.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Entry.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Entry} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Entry.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    predictedLabel: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    itemCount: (f = msg.getItemCount()) && google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance, f)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Entry}
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Entry.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Entry;
+  return proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Entry.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Entry} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Entry}
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Entry.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setPredictedLabel(value);
+      break;
+    case 2:
+      var value = new google_protobuf_wrappers_pb.Int64Value;
+      reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader);
+      msg.setItemCount(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Entry.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Entry.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Entry} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Entry.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getPredictedLabel();
+  if (f.length > 0) {
+    writer.writeString(
+      1,
+      f
+    );
+  }
+  f = message.getItemCount();
+  if (f != null) {
+    writer.writeMessage(
+      2,
+      f,
+      google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional string predicted_label = 1;
+ * @return {string}
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Entry.prototype.getPredictedLabel = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Entry.prototype.setPredictedLabel = function(value) {
+  jspb.Message.setProto3StringField(this, 1, value);
+};
+
+
+/**
+ * optional google.protobuf.Int64Value item_count = 2;
+ * @return {?proto.google.protobuf.Int64Value}
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Entry.prototype.getItemCount = function() {
+  return /** @type{?proto.google.protobuf.Int64Value} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.Int64Value, 2));
+};
+
+
+/** @param {?proto.google.protobuf.Int64Value|undefined} value */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Entry.prototype.setItemCount = function(value) {
+  jspb.Message.setWrapperField(this, 2, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Entry.prototype.clearItemCount = function() {
+  this.setItemCount(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Entry.prototype.hasItemCount = function() {
+  return jspb.Message.getField(this, 2) != null;
+};
+
+
+
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Row.repeatedFields_ = [2];
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Row.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Row.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Row} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Row.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    actualLabel: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    entriesList: jspb.Message.toObjectList(msg.getEntriesList(),
+    proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Entry.toObject, includeInstance)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Row}
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Row.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Row;
+  return proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Row.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Row} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Row}
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Row.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setActualLabel(value);
+      break;
+    case 2:
+      var value = new proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Entry;
+      reader.readMessage(value,proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Entry.deserializeBinaryFromReader);
+      msg.addEntries(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Row.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Row.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Row} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Row.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getActualLabel();
+  if (f.length > 0) {
+    writer.writeString(
+      1,
+      f
+    );
+  }
+  f = message.getEntriesList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      2,
+      f,
+      proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Entry.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional string actual_label = 1;
+ * @return {string}
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Row.prototype.getActualLabel = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Row.prototype.setActualLabel = function(value) {
+  jspb.Message.setProto3StringField(this, 1, value);
+};
+
+
+/**
+ * repeated Entry entries = 2;
+ * @return {!Array<!proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Entry>}
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Row.prototype.getEntriesList = function() {
+  return /** @type{!Array<!proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Entry>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Entry, 2));
+};
+
+
+/** @param {!Array<!proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Entry>} value */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Row.prototype.setEntriesList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 2, value);
+};
+
+
+/**
+ * @param {!proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Entry=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Entry}
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Row.prototype.addEntries = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 2, opt_value, proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Entry, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Row.prototype.clearEntriesList = function() {
+  this.setEntriesList([]);
+};
+
+
+/**
+ * optional google.protobuf.DoubleValue confidence_threshold = 1;
+ * @return {?proto.google.protobuf.DoubleValue}
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.prototype.getConfidenceThreshold = function() {
+  return /** @type{?proto.google.protobuf.DoubleValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.DoubleValue, 1));
+};
+
+
+/** @param {?proto.google.protobuf.DoubleValue|undefined} value */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.prototype.setConfidenceThreshold = function(value) {
+  jspb.Message.setWrapperField(this, 1, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.prototype.clearConfidenceThreshold = function() {
+  this.setConfidenceThreshold(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.prototype.hasConfidenceThreshold = function() {
+  return jspb.Message.getField(this, 1) != null;
+};
+
+
+/**
+ * repeated Row rows = 2;
+ * @return {!Array<!proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Row>}
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.prototype.getRowsList = function() {
+  return /** @type{!Array<!proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Row>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Row, 2));
+};
+
+
+/** @param {!Array<!proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Row>} value */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.prototype.setRowsList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 2, value);
+};
+
+
+/**
+ * @param {!proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Row=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Row}
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.prototype.addRows = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 2, opt_value, proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.Row, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix.prototype.clearRowsList = function() {
+  this.setRowsList([]);
+};
+
+
+/**
+ * optional AggregateClassificationMetrics aggregate_classification_metrics = 1;
+ * @return {?proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics}
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.prototype.getAggregateClassificationMetrics = function() {
+  return /** @type{?proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics} */ (
+    jspb.Message.getWrapperField(this, proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics, 1));
+};
+
+
+/** @param {?proto.google.cloud.bigquery.v2.Model.AggregateClassificationMetrics|undefined} value */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.prototype.setAggregateClassificationMetrics = function(value) {
+  jspb.Message.setWrapperField(this, 1, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.prototype.clearAggregateClassificationMetrics = function() {
+  this.setAggregateClassificationMetrics(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.prototype.hasAggregateClassificationMetrics = function() {
+  return jspb.Message.getField(this, 1) != null;
+};
+
+
+/**
+ * repeated ConfusionMatrix confusion_matrix_list = 2;
+ * @return {!Array<!proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix>}
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.prototype.getConfusionMatrixListList = function() {
+  return /** @type{!Array<!proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix, 2));
+};
+
+
+/** @param {!Array<!proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix>} value */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.prototype.setConfusionMatrixListList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 2, value);
+};
+
+
+/**
+ * @param {!proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix}
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.prototype.addConfusionMatrixList = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 2, opt_value, proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.ConfusionMatrix, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.prototype.clearConfusionMatrixListList = function() {
+  this.setConfusionMatrixListList([]);
+};
+
+
+
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.repeatedFields_ = [3];
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.bigquery.v2.Model.ClusteringMetrics} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    daviesBouldinIndex: (f = msg.getDaviesBouldinIndex()) && google_protobuf_wrappers_pb.DoubleValue.toObject(includeInstance, f),
+    meanSquaredDistance: (f = msg.getMeanSquaredDistance()) && google_protobuf_wrappers_pb.DoubleValue.toObject(includeInstance, f),
+    clustersList: jspb.Message.toObjectList(msg.getClustersList(),
+    proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.toObject, includeInstance)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.bigquery.v2.Model.ClusteringMetrics}
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.bigquery.v2.Model.ClusteringMetrics;
+  return proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.bigquery.v2.Model.ClusteringMetrics} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.bigquery.v2.Model.ClusteringMetrics}
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new google_protobuf_wrappers_pb.DoubleValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.DoubleValue.deserializeBinaryFromReader);
+      msg.setDaviesBouldinIndex(value);
+      break;
+    case 2:
+      var value = new google_protobuf_wrappers_pb.DoubleValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.DoubleValue.deserializeBinaryFromReader);
+      msg.setMeanSquaredDistance(value);
+      break;
+    case 3:
+      var value = new proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster;
+      reader.readMessage(value,proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.deserializeBinaryFromReader);
+      msg.addClusters(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.bigquery.v2.Model.ClusteringMetrics} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getDaviesBouldinIndex();
+  if (f != null) {
+    writer.writeMessage(
+      1,
+      f,
+      google_protobuf_wrappers_pb.DoubleValue.serializeBinaryToWriter
+    );
+  }
+  f = message.getMeanSquaredDistance();
+  if (f != null) {
+    writer.writeMessage(
+      2,
+      f,
+      google_protobuf_wrappers_pb.DoubleValue.serializeBinaryToWriter
+    );
+  }
+  f = message.getClustersList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      3,
+      f,
+      proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.serializeBinaryToWriter
+    );
+  }
+};
+
+
+
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.repeatedFields_ = [2];
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    centroidId: jspb.Message.getFieldWithDefault(msg, 1, 0),
+    featureValuesList: jspb.Message.toObjectList(msg.getFeatureValuesList(),
+    proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.toObject, includeInstance),
+    count: (f = msg.getCount()) && google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance, f)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster}
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster;
+  return proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster}
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {number} */ (reader.readInt64());
+      msg.setCentroidId(value);
+      break;
+    case 2:
+      var value = new proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue;
+      reader.readMessage(value,proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.deserializeBinaryFromReader);
+      msg.addFeatureValues(value);
+      break;
+    case 3:
+      var value = new google_protobuf_wrappers_pb.Int64Value;
+      reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader);
+      msg.setCount(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getCentroidId();
+  if (f !== 0) {
+    writer.writeInt64(
+      1,
+      f
+    );
+  }
+  f = message.getFeatureValuesList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      2,
+      f,
+      proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.serializeBinaryToWriter
+    );
+  }
+  f = message.getCount();
+  if (f != null) {
+    writer.writeMessage(
+      3,
+      f,
+      google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter
+    );
+  }
+};
+
+
+
+/**
+ * Oneof group definitions for this message. Each group defines the field
+ * numbers belonging to that group. When of these fields' value is set, all
+ * other fields in the group are cleared. During deserialization, if multiple
+ * fields are encountered for a group, only the last value seen will be kept.
+ * @private {!Array<!Array<number>>}
+ * @const
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.oneofGroups_ = [[2,3]];
+
+/**
+ * @enum {number}
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.ValueCase = {
+  VALUE_NOT_SET: 0,
+  NUMERICAL_VALUE: 2,
+  CATEGORICAL_VALUE: 3
+};
+
+/**
+ * @return {proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.ValueCase}
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.prototype.getValueCase = function() {
+  return /** @type {proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.ValueCase} */(jspb.Message.computeOneofCase(this, proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.oneofGroups_[0]));
+};
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    featureColumn: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    numericalValue: (f = msg.getNumericalValue()) && google_protobuf_wrappers_pb.DoubleValue.toObject(includeInstance, f),
+    categoricalValue: (f = msg.getCategoricalValue()) && proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.toObject(includeInstance, f)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue}
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue;
+  return proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue}
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setFeatureColumn(value);
+      break;
+    case 2:
+      var value = new google_protobuf_wrappers_pb.DoubleValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.DoubleValue.deserializeBinaryFromReader);
+      msg.setNumericalValue(value);
+      break;
+    case 3:
+      var value = new proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue;
+      reader.readMessage(value,proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.deserializeBinaryFromReader);
+      msg.setCategoricalValue(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getFeatureColumn();
+  if (f.length > 0) {
+    writer.writeString(
+      1,
+      f
+    );
+  }
+  f = message.getNumericalValue();
+  if (f != null) {
+    writer.writeMessage(
+      2,
+      f,
+      google_protobuf_wrappers_pb.DoubleValue.serializeBinaryToWriter
+    );
+  }
+  f = message.getCategoricalValue();
+  if (f != null) {
+    writer.writeMessage(
+      3,
+      f,
+      proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.serializeBinaryToWriter
+    );
+  }
+};
+
+
+
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.repeatedFields_ = [1];
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    categoryCountsList: jspb.Message.toObjectList(msg.getCategoryCountsList(),
+    proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.CategoryCount.toObject, includeInstance)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue}
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue;
+  return proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue}
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.CategoryCount;
+      reader.readMessage(value,proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.CategoryCount.deserializeBinaryFromReader);
+      msg.addCategoryCounts(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getCategoryCountsList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      1,
+      f,
+      proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.CategoryCount.serializeBinaryToWriter
+    );
+  }
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.CategoryCount.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.CategoryCount.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.CategoryCount} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.CategoryCount.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    category: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    count: (f = msg.getCount()) && google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance, f)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.CategoryCount}
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.CategoryCount.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.CategoryCount;
+  return proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.CategoryCount.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.CategoryCount} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.CategoryCount}
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.CategoryCount.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setCategory(value);
+      break;
+    case 2:
+      var value = new google_protobuf_wrappers_pb.Int64Value;
+      reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader);
+      msg.setCount(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.CategoryCount.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.CategoryCount.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.CategoryCount} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.CategoryCount.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getCategory();
+  if (f.length > 0) {
+    writer.writeString(
+      1,
+      f
+    );
+  }
+  f = message.getCount();
+  if (f != null) {
+    writer.writeMessage(
+      2,
+      f,
+      google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional string category = 1;
+ * @return {string}
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.CategoryCount.prototype.getCategory = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.CategoryCount.prototype.setCategory = function(value) {
+  jspb.Message.setProto3StringField(this, 1, value);
+};
+
+
+/**
+ * optional google.protobuf.Int64Value count = 2;
+ * @return {?proto.google.protobuf.Int64Value}
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.CategoryCount.prototype.getCount = function() {
+  return /** @type{?proto.google.protobuf.Int64Value} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.Int64Value, 2));
+};
+
+
+/** @param {?proto.google.protobuf.Int64Value|undefined} value */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.CategoryCount.prototype.setCount = function(value) {
+  jspb.Message.setWrapperField(this, 2, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.CategoryCount.prototype.clearCount = function() {
+  this.setCount(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.CategoryCount.prototype.hasCount = function() {
+  return jspb.Message.getField(this, 2) != null;
+};
+
+
+/**
+ * repeated CategoryCount category_counts = 1;
+ * @return {!Array<!proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.CategoryCount>}
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.prototype.getCategoryCountsList = function() {
+  return /** @type{!Array<!proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.CategoryCount>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.CategoryCount, 1));
+};
+
+
+/** @param {!Array<!proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.CategoryCount>} value */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.prototype.setCategoryCountsList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 1, value);
+};
+
+
+/**
+ * @param {!proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.CategoryCount=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.CategoryCount}
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.prototype.addCategoryCounts = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 1, opt_value, proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.CategoryCount, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue.prototype.clearCategoryCountsList = function() {
+  this.setCategoryCountsList([]);
+};
+
+
+/**
+ * optional string feature_column = 1;
+ * @return {string}
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.prototype.getFeatureColumn = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.prototype.setFeatureColumn = function(value) {
+  jspb.Message.setProto3StringField(this, 1, value);
+};
+
+
+/**
+ * optional google.protobuf.DoubleValue numerical_value = 2;
+ * @return {?proto.google.protobuf.DoubleValue}
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.prototype.getNumericalValue = function() {
+  return /** @type{?proto.google.protobuf.DoubleValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.DoubleValue, 2));
+};
+
+
+/** @param {?proto.google.protobuf.DoubleValue|undefined} value */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.prototype.setNumericalValue = function(value) {
+  jspb.Message.setOneofWrapperField(this, 2, proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.oneofGroups_[0], value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.prototype.clearNumericalValue = function() {
+  this.setNumericalValue(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.prototype.hasNumericalValue = function() {
+  return jspb.Message.getField(this, 2) != null;
+};
+
+
+/**
+ * optional CategoricalValue categorical_value = 3;
+ * @return {?proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue}
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.prototype.getCategoricalValue = function() {
+  return /** @type{?proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue} */ (
+    jspb.Message.getWrapperField(this, proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue, 3));
+};
+
+
+/** @param {?proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.CategoricalValue|undefined} value */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.prototype.setCategoricalValue = function(value) {
+  jspb.Message.setOneofWrapperField(this, 3, proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.oneofGroups_[0], value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.prototype.clearCategoricalValue = function() {
+  this.setCategoricalValue(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue.prototype.hasCategoricalValue = function() {
+  return jspb.Message.getField(this, 3) != null;
+};
+
+
+/**
+ * optional int64 centroid_id = 1;
+ * @return {number}
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.prototype.getCentroidId = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
+};
+
+
+/** @param {number} value */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.prototype.setCentroidId = function(value) {
+  jspb.Message.setProto3IntField(this, 1, value);
+};
+
+
+/**
+ * repeated FeatureValue feature_values = 2;
+ * @return {!Array<!proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue>}
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.prototype.getFeatureValuesList = function() {
+  return /** @type{!Array<!proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue, 2));
+};
+
+
+/** @param {!Array<!proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue>} value */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.prototype.setFeatureValuesList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 2, value);
+};
+
+
+/**
+ * @param {!proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue}
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.prototype.addFeatureValues = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 2, opt_value, proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.FeatureValue, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.prototype.clearFeatureValuesList = function() {
+  this.setFeatureValuesList([]);
+};
+
+
+/**
+ * optional google.protobuf.Int64Value count = 3;
+ * @return {?proto.google.protobuf.Int64Value}
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.prototype.getCount = function() {
+  return /** @type{?proto.google.protobuf.Int64Value} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.Int64Value, 3));
+};
+
+
+/** @param {?proto.google.protobuf.Int64Value|undefined} value */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.prototype.setCount = function(value) {
+  jspb.Message.setWrapperField(this, 3, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.prototype.clearCount = function() {
+  this.setCount(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster.prototype.hasCount = function() {
+  return jspb.Message.getField(this, 3) != null;
+};
+
+
+/**
+ * optional google.protobuf.DoubleValue davies_bouldin_index = 1;
+ * @return {?proto.google.protobuf.DoubleValue}
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.prototype.getDaviesBouldinIndex = function() {
+  return /** @type{?proto.google.protobuf.DoubleValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.DoubleValue, 1));
+};
+
+
+/** @param {?proto.google.protobuf.DoubleValue|undefined} value */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.prototype.setDaviesBouldinIndex = function(value) {
+  jspb.Message.setWrapperField(this, 1, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.prototype.clearDaviesBouldinIndex = function() {
+  this.setDaviesBouldinIndex(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.prototype.hasDaviesBouldinIndex = function() {
+  return jspb.Message.getField(this, 1) != null;
+};
+
+
+/**
+ * optional google.protobuf.DoubleValue mean_squared_distance = 2;
+ * @return {?proto.google.protobuf.DoubleValue}
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.prototype.getMeanSquaredDistance = function() {
+  return /** @type{?proto.google.protobuf.DoubleValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.DoubleValue, 2));
+};
+
+
+/** @param {?proto.google.protobuf.DoubleValue|undefined} value */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.prototype.setMeanSquaredDistance = function(value) {
+  jspb.Message.setWrapperField(this, 2, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.prototype.clearMeanSquaredDistance = function() {
+  this.setMeanSquaredDistance(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.prototype.hasMeanSquaredDistance = function() {
+  return jspb.Message.getField(this, 2) != null;
+};
+
+
+/**
+ * repeated Cluster clusters = 3;
+ * @return {!Array<!proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster>}
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.prototype.getClustersList = function() {
+  return /** @type{!Array<!proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster, 3));
+};
+
+
+/** @param {!Array<!proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster>} value */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.prototype.setClustersList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 3, value);
+};
+
+
+/**
+ * @param {!proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster}
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.prototype.addClusters = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 3, opt_value, proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.Cluster, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.prototype.clearClustersList = function() {
+  this.setClustersList([]);
+};
+
+
+
+/**
+ * Oneof group definitions for this message. Each group defines the field
+ * numbers belonging to that group. When of these fields' value is set, all
+ * other fields in the group are cleared. During deserialization, if multiple
+ * fields are encountered for a group, only the last value seen will be kept.
+ * @private {!Array<!Array<number>>}
+ * @const
+ */
+proto.google.cloud.bigquery.v2.Model.EvaluationMetrics.oneofGroups_ = [[1,2,3,4]];
+
+/**
+ * @enum {number}
+ */
+proto.google.cloud.bigquery.v2.Model.EvaluationMetrics.MetricsCase = {
+  METRICS_NOT_SET: 0,
+  REGRESSION_METRICS: 1,
+  BINARY_CLASSIFICATION_METRICS: 2,
+  MULTI_CLASS_CLASSIFICATION_METRICS: 3,
+  CLUSTERING_METRICS: 4
+};
+
+/**
+ * @return {proto.google.cloud.bigquery.v2.Model.EvaluationMetrics.MetricsCase}
+ */
+proto.google.cloud.bigquery.v2.Model.EvaluationMetrics.prototype.getMetricsCase = function() {
+  return /** @type {proto.google.cloud.bigquery.v2.Model.EvaluationMetrics.MetricsCase} */(jspb.Message.computeOneofCase(this, proto.google.cloud.bigquery.v2.Model.EvaluationMetrics.oneofGroups_[0]));
+};
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.bigquery.v2.Model.EvaluationMetrics.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.bigquery.v2.Model.EvaluationMetrics.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.bigquery.v2.Model.EvaluationMetrics} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.Model.EvaluationMetrics.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    regressionMetrics: (f = msg.getRegressionMetrics()) && proto.google.cloud.bigquery.v2.Model.RegressionMetrics.toObject(includeInstance, f),
+    binaryClassificationMetrics: (f = msg.getBinaryClassificationMetrics()) && proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.toObject(includeInstance, f),
+    multiClassClassificationMetrics: (f = msg.getMultiClassClassificationMetrics()) && proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.toObject(includeInstance, f),
+    clusteringMetrics: (f = msg.getClusteringMetrics()) && proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.toObject(includeInstance, f)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.bigquery.v2.Model.EvaluationMetrics}
+ */
+proto.google.cloud.bigquery.v2.Model.EvaluationMetrics.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.bigquery.v2.Model.EvaluationMetrics;
+  return proto.google.cloud.bigquery.v2.Model.EvaluationMetrics.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.bigquery.v2.Model.EvaluationMetrics} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.bigquery.v2.Model.EvaluationMetrics}
+ */
+proto.google.cloud.bigquery.v2.Model.EvaluationMetrics.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new proto.google.cloud.bigquery.v2.Model.RegressionMetrics;
+      reader.readMessage(value,proto.google.cloud.bigquery.v2.Model.RegressionMetrics.deserializeBinaryFromReader);
+      msg.setRegressionMetrics(value);
+      break;
+    case 2:
+      var value = new proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics;
+      reader.readMessage(value,proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.deserializeBinaryFromReader);
+      msg.setBinaryClassificationMetrics(value);
+      break;
+    case 3:
+      var value = new proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics;
+      reader.readMessage(value,proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.deserializeBinaryFromReader);
+      msg.setMultiClassClassificationMetrics(value);
+      break;
+    case 4:
+      var value = new proto.google.cloud.bigquery.v2.Model.ClusteringMetrics;
+      reader.readMessage(value,proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.deserializeBinaryFromReader);
+      msg.setClusteringMetrics(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.bigquery.v2.Model.EvaluationMetrics.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.bigquery.v2.Model.EvaluationMetrics.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.bigquery.v2.Model.EvaluationMetrics} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.Model.EvaluationMetrics.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getRegressionMetrics();
+  if (f != null) {
+    writer.writeMessage(
+      1,
+      f,
+      proto.google.cloud.bigquery.v2.Model.RegressionMetrics.serializeBinaryToWriter
+    );
+  }
+  f = message.getBinaryClassificationMetrics();
+  if (f != null) {
+    writer.writeMessage(
+      2,
+      f,
+      proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics.serializeBinaryToWriter
+    );
+  }
+  f = message.getMultiClassClassificationMetrics();
+  if (f != null) {
+    writer.writeMessage(
+      3,
+      f,
+      proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics.serializeBinaryToWriter
+    );
+  }
+  f = message.getClusteringMetrics();
+  if (f != null) {
+    writer.writeMessage(
+      4,
+      f,
+      proto.google.cloud.bigquery.v2.Model.ClusteringMetrics.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional RegressionMetrics regression_metrics = 1;
+ * @return {?proto.google.cloud.bigquery.v2.Model.RegressionMetrics}
+ */
+proto.google.cloud.bigquery.v2.Model.EvaluationMetrics.prototype.getRegressionMetrics = function() {
+  return /** @type{?proto.google.cloud.bigquery.v2.Model.RegressionMetrics} */ (
+    jspb.Message.getWrapperField(this, proto.google.cloud.bigquery.v2.Model.RegressionMetrics, 1));
+};
+
+
+/** @param {?proto.google.cloud.bigquery.v2.Model.RegressionMetrics|undefined} value */
+proto.google.cloud.bigquery.v2.Model.EvaluationMetrics.prototype.setRegressionMetrics = function(value) {
+  jspb.Message.setOneofWrapperField(this, 1, proto.google.cloud.bigquery.v2.Model.EvaluationMetrics.oneofGroups_[0], value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.EvaluationMetrics.prototype.clearRegressionMetrics = function() {
+  this.setRegressionMetrics(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.EvaluationMetrics.prototype.hasRegressionMetrics = function() {
+  return jspb.Message.getField(this, 1) != null;
+};
+
+
+/**
+ * optional BinaryClassificationMetrics binary_classification_metrics = 2;
+ * @return {?proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics}
+ */
+proto.google.cloud.bigquery.v2.Model.EvaluationMetrics.prototype.getBinaryClassificationMetrics = function() {
+  return /** @type{?proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics} */ (
+    jspb.Message.getWrapperField(this, proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics, 2));
+};
+
+
+/** @param {?proto.google.cloud.bigquery.v2.Model.BinaryClassificationMetrics|undefined} value */
+proto.google.cloud.bigquery.v2.Model.EvaluationMetrics.prototype.setBinaryClassificationMetrics = function(value) {
+  jspb.Message.setOneofWrapperField(this, 2, proto.google.cloud.bigquery.v2.Model.EvaluationMetrics.oneofGroups_[0], value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.EvaluationMetrics.prototype.clearBinaryClassificationMetrics = function() {
+  this.setBinaryClassificationMetrics(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.EvaluationMetrics.prototype.hasBinaryClassificationMetrics = function() {
+  return jspb.Message.getField(this, 2) != null;
+};
+
+
+/**
+ * optional MultiClassClassificationMetrics multi_class_classification_metrics = 3;
+ * @return {?proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics}
+ */
+proto.google.cloud.bigquery.v2.Model.EvaluationMetrics.prototype.getMultiClassClassificationMetrics = function() {
+  return /** @type{?proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics} */ (
+    jspb.Message.getWrapperField(this, proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics, 3));
+};
+
+
+/** @param {?proto.google.cloud.bigquery.v2.Model.MultiClassClassificationMetrics|undefined} value */
+proto.google.cloud.bigquery.v2.Model.EvaluationMetrics.prototype.setMultiClassClassificationMetrics = function(value) {
+  jspb.Message.setOneofWrapperField(this, 3, proto.google.cloud.bigquery.v2.Model.EvaluationMetrics.oneofGroups_[0], value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.EvaluationMetrics.prototype.clearMultiClassClassificationMetrics = function() {
+  this.setMultiClassClassificationMetrics(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.EvaluationMetrics.prototype.hasMultiClassClassificationMetrics = function() {
+  return jspb.Message.getField(this, 3) != null;
+};
+
+
+/**
+ * optional ClusteringMetrics clustering_metrics = 4;
+ * @return {?proto.google.cloud.bigquery.v2.Model.ClusteringMetrics}
+ */
+proto.google.cloud.bigquery.v2.Model.EvaluationMetrics.prototype.getClusteringMetrics = function() {
+  return /** @type{?proto.google.cloud.bigquery.v2.Model.ClusteringMetrics} */ (
+    jspb.Message.getWrapperField(this, proto.google.cloud.bigquery.v2.Model.ClusteringMetrics, 4));
+};
+
+
+/** @param {?proto.google.cloud.bigquery.v2.Model.ClusteringMetrics|undefined} value */
+proto.google.cloud.bigquery.v2.Model.EvaluationMetrics.prototype.setClusteringMetrics = function(value) {
+  jspb.Message.setOneofWrapperField(this, 4, proto.google.cloud.bigquery.v2.Model.EvaluationMetrics.oneofGroups_[0], value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.EvaluationMetrics.prototype.clearClusteringMetrics = function() {
+  this.setClusteringMetrics(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.EvaluationMetrics.prototype.hasClusteringMetrics = function() {
+  return jspb.Message.getField(this, 4) != null;
+};
+
+
+
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.repeatedFields_ = [6];
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.bigquery.v2.Model.TrainingRun.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.bigquery.v2.Model.TrainingRun} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    trainingOptions: (f = msg.getTrainingOptions()) && proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.toObject(includeInstance, f),
+    startTime: (f = msg.getStartTime()) && google_protobuf_timestamp_pb.Timestamp.toObject(includeInstance, f),
+    resultsList: jspb.Message.toObjectList(msg.getResultsList(),
+    proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.toObject, includeInstance),
+    evaluationMetrics: (f = msg.getEvaluationMetrics()) && proto.google.cloud.bigquery.v2.Model.EvaluationMetrics.toObject(includeInstance, f)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.bigquery.v2.Model.TrainingRun}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.bigquery.v2.Model.TrainingRun;
+  return proto.google.cloud.bigquery.v2.Model.TrainingRun.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.bigquery.v2.Model.TrainingRun} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.bigquery.v2.Model.TrainingRun}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions;
+      reader.readMessage(value,proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.deserializeBinaryFromReader);
+      msg.setTrainingOptions(value);
+      break;
+    case 8:
+      var value = new google_protobuf_timestamp_pb.Timestamp;
+      reader.readMessage(value,google_protobuf_timestamp_pb.Timestamp.deserializeBinaryFromReader);
+      msg.setStartTime(value);
+      break;
+    case 6:
+      var value = new proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult;
+      reader.readMessage(value,proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.deserializeBinaryFromReader);
+      msg.addResults(value);
+      break;
+    case 7:
+      var value = new proto.google.cloud.bigquery.v2.Model.EvaluationMetrics;
+      reader.readMessage(value,proto.google.cloud.bigquery.v2.Model.EvaluationMetrics.deserializeBinaryFromReader);
+      msg.setEvaluationMetrics(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.bigquery.v2.Model.TrainingRun.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.bigquery.v2.Model.TrainingRun} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getTrainingOptions();
+  if (f != null) {
+    writer.writeMessage(
+      1,
+      f,
+      proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.serializeBinaryToWriter
+    );
+  }
+  f = message.getStartTime();
+  if (f != null) {
+    writer.writeMessage(
+      8,
+      f,
+      google_protobuf_timestamp_pb.Timestamp.serializeBinaryToWriter
+    );
+  }
+  f = message.getResultsList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      6,
+      f,
+      proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.serializeBinaryToWriter
+    );
+  }
+  f = message.getEvaluationMetrics();
+  if (f != null) {
+    writer.writeMessage(
+      7,
+      f,
+      proto.google.cloud.bigquery.v2.Model.EvaluationMetrics.serializeBinaryToWriter
+    );
+  }
+};
+
+
+
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.repeatedFields_ = [9];
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    maxIterations: jspb.Message.getFieldWithDefault(msg, 1, 0),
+    lossType: jspb.Message.getFieldWithDefault(msg, 2, 0),
+    learnRate: jspb.Message.getFloatingPointFieldWithDefault(msg, 3, 0.0),
+    l1Regularization: (f = msg.getL1Regularization()) && google_protobuf_wrappers_pb.DoubleValue.toObject(includeInstance, f),
+    l2Regularization: (f = msg.getL2Regularization()) && google_protobuf_wrappers_pb.DoubleValue.toObject(includeInstance, f),
+    minRelativeProgress: (f = msg.getMinRelativeProgress()) && google_protobuf_wrappers_pb.DoubleValue.toObject(includeInstance, f),
+    warmStart: (f = msg.getWarmStart()) && google_protobuf_wrappers_pb.BoolValue.toObject(includeInstance, f),
+    earlyStop: (f = msg.getEarlyStop()) && google_protobuf_wrappers_pb.BoolValue.toObject(includeInstance, f),
+    inputLabelColumnsList: (f = jspb.Message.getRepeatedField(msg, 9)) == null ? undefined : f,
+    dataSplitMethod: jspb.Message.getFieldWithDefault(msg, 10, 0),
+    dataSplitEvalFraction: jspb.Message.getFloatingPointFieldWithDefault(msg, 11, 0.0),
+    dataSplitColumn: jspb.Message.getFieldWithDefault(msg, 12, ""),
+    learnRateStrategy: jspb.Message.getFieldWithDefault(msg, 13, 0),
+    initialLearnRate: jspb.Message.getFloatingPointFieldWithDefault(msg, 16, 0.0),
+    labelClassWeightsMap: (f = msg.getLabelClassWeightsMap()) ? f.toObject(includeInstance, undefined) : [],
+    distanceType: jspb.Message.getFieldWithDefault(msg, 20, 0),
+    numClusters: jspb.Message.getFieldWithDefault(msg, 21, 0),
+    modelUri: jspb.Message.getFieldWithDefault(msg, 22, ""),
+    optimizationStrategy: jspb.Message.getFieldWithDefault(msg, 23, 0),
+    kmeansInitializationMethod: jspb.Message.getFieldWithDefault(msg, 33, 0),
+    kmeansInitializationColumn: jspb.Message.getFieldWithDefault(msg, 34, "")
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions;
+  return proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {number} */ (reader.readInt64());
+      msg.setMaxIterations(value);
+      break;
+    case 2:
+      var value = /** @type {!proto.google.cloud.bigquery.v2.Model.LossType} */ (reader.readEnum());
+      msg.setLossType(value);
+      break;
+    case 3:
+      var value = /** @type {number} */ (reader.readDouble());
+      msg.setLearnRate(value);
+      break;
+    case 4:
+      var value = new google_protobuf_wrappers_pb.DoubleValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.DoubleValue.deserializeBinaryFromReader);
+      msg.setL1Regularization(value);
+      break;
+    case 5:
+      var value = new google_protobuf_wrappers_pb.DoubleValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.DoubleValue.deserializeBinaryFromReader);
+      msg.setL2Regularization(value);
+      break;
+    case 6:
+      var value = new google_protobuf_wrappers_pb.DoubleValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.DoubleValue.deserializeBinaryFromReader);
+      msg.setMinRelativeProgress(value);
+      break;
+    case 7:
+      var value = new google_protobuf_wrappers_pb.BoolValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.BoolValue.deserializeBinaryFromReader);
+      msg.setWarmStart(value);
+      break;
+    case 8:
+      var value = new google_protobuf_wrappers_pb.BoolValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.BoolValue.deserializeBinaryFromReader);
+      msg.setEarlyStop(value);
+      break;
+    case 9:
+      var value = /** @type {string} */ (reader.readString());
+      msg.addInputLabelColumns(value);
+      break;
+    case 10:
+      var value = /** @type {!proto.google.cloud.bigquery.v2.Model.DataSplitMethod} */ (reader.readEnum());
+      msg.setDataSplitMethod(value);
+      break;
+    case 11:
+      var value = /** @type {number} */ (reader.readDouble());
+      msg.setDataSplitEvalFraction(value);
+      break;
+    case 12:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setDataSplitColumn(value);
+      break;
+    case 13:
+      var value = /** @type {!proto.google.cloud.bigquery.v2.Model.LearnRateStrategy} */ (reader.readEnum());
+      msg.setLearnRateStrategy(value);
+      break;
+    case 16:
+      var value = /** @type {number} */ (reader.readDouble());
+      msg.setInitialLearnRate(value);
+      break;
+    case 17:
+      var value = msg.getLabelClassWeightsMap();
+      reader.readMessage(value, function(message, reader) {
+        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readString, jspb.BinaryReader.prototype.readDouble, null, "");
+         });
+      break;
+    case 20:
+      var value = /** @type {!proto.google.cloud.bigquery.v2.Model.DistanceType} */ (reader.readEnum());
+      msg.setDistanceType(value);
+      break;
+    case 21:
+      var value = /** @type {number} */ (reader.readInt64());
+      msg.setNumClusters(value);
+      break;
+    case 22:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setModelUri(value);
+      break;
+    case 23:
+      var value = /** @type {!proto.google.cloud.bigquery.v2.Model.OptimizationStrategy} */ (reader.readEnum());
+      msg.setOptimizationStrategy(value);
+      break;
+    case 33:
+      var value = /** @type {!proto.google.cloud.bigquery.v2.Model.KmeansEnums.KmeansInitializationMethod} */ (reader.readEnum());
+      msg.setKmeansInitializationMethod(value);
+      break;
+    case 34:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setKmeansInitializationColumn(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getMaxIterations();
+  if (f !== 0) {
+    writer.writeInt64(
+      1,
+      f
+    );
+  }
+  f = message.getLossType();
+  if (f !== 0.0) {
+    writer.writeEnum(
+      2,
+      f
+    );
+  }
+  f = message.getLearnRate();
+  if (f !== 0.0) {
+    writer.writeDouble(
+      3,
+      f
+    );
+  }
+  f = message.getL1Regularization();
+  if (f != null) {
+    writer.writeMessage(
+      4,
+      f,
+      google_protobuf_wrappers_pb.DoubleValue.serializeBinaryToWriter
+    );
+  }
+  f = message.getL2Regularization();
+  if (f != null) {
+    writer.writeMessage(
+      5,
+      f,
+      google_protobuf_wrappers_pb.DoubleValue.serializeBinaryToWriter
+    );
+  }
+  f = message.getMinRelativeProgress();
+  if (f != null) {
+    writer.writeMessage(
+      6,
+      f,
+      google_protobuf_wrappers_pb.DoubleValue.serializeBinaryToWriter
+    );
+  }
+  f = message.getWarmStart();
+  if (f != null) {
+    writer.writeMessage(
+      7,
+      f,
+      google_protobuf_wrappers_pb.BoolValue.serializeBinaryToWriter
+    );
+  }
+  f = message.getEarlyStop();
+  if (f != null) {
+    writer.writeMessage(
+      8,
+      f,
+      google_protobuf_wrappers_pb.BoolValue.serializeBinaryToWriter
+    );
+  }
+  f = message.getInputLabelColumnsList();
+  if (f.length > 0) {
+    writer.writeRepeatedString(
+      9,
+      f
+    );
+  }
+  f = message.getDataSplitMethod();
+  if (f !== 0.0) {
+    writer.writeEnum(
+      10,
+      f
+    );
+  }
+  f = message.getDataSplitEvalFraction();
+  if (f !== 0.0) {
+    writer.writeDouble(
+      11,
+      f
+    );
+  }
+  f = message.getDataSplitColumn();
+  if (f.length > 0) {
+    writer.writeString(
+      12,
+      f
+    );
+  }
+  f = message.getLearnRateStrategy();
+  if (f !== 0.0) {
+    writer.writeEnum(
+      13,
+      f
+    );
+  }
+  f = message.getInitialLearnRate();
+  if (f !== 0.0) {
+    writer.writeDouble(
+      16,
+      f
+    );
+  }
+  f = message.getLabelClassWeightsMap(true);
+  if (f && f.getLength() > 0) {
+    f.serializeBinary(17, writer, jspb.BinaryWriter.prototype.writeString, jspb.BinaryWriter.prototype.writeDouble);
+  }
+  f = message.getDistanceType();
+  if (f !== 0.0) {
+    writer.writeEnum(
+      20,
+      f
+    );
+  }
+  f = message.getNumClusters();
+  if (f !== 0) {
+    writer.writeInt64(
+      21,
+      f
+    );
+  }
+  f = message.getModelUri();
+  if (f.length > 0) {
+    writer.writeString(
+      22,
+      f
+    );
+  }
+  f = message.getOptimizationStrategy();
+  if (f !== 0.0) {
+    writer.writeEnum(
+      23,
+      f
+    );
+  }
+  f = message.getKmeansInitializationMethod();
+  if (f !== 0.0) {
+    writer.writeEnum(
+      33,
+      f
+    );
+  }
+  f = message.getKmeansInitializationColumn();
+  if (f.length > 0) {
+    writer.writeString(
+      34,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional int64 max_iterations = 1;
+ * @return {number}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.getMaxIterations = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
+};
+
+
+/** @param {number} value */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.setMaxIterations = function(value) {
+  jspb.Message.setProto3IntField(this, 1, value);
+};
+
+
+/**
+ * optional LossType loss_type = 2;
+ * @return {!proto.google.cloud.bigquery.v2.Model.LossType}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.getLossType = function() {
+  return /** @type {!proto.google.cloud.bigquery.v2.Model.LossType} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
+};
+
+
+/** @param {!proto.google.cloud.bigquery.v2.Model.LossType} value */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.setLossType = function(value) {
+  jspb.Message.setProto3EnumField(this, 2, value);
+};
+
+
+/**
+ * optional double learn_rate = 3;
+ * @return {number}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.getLearnRate = function() {
+  return /** @type {number} */ (jspb.Message.getFloatingPointFieldWithDefault(this, 3, 0.0));
+};
+
+
+/** @param {number} value */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.setLearnRate = function(value) {
+  jspb.Message.setProto3FloatField(this, 3, value);
+};
+
+
+/**
+ * optional google.protobuf.DoubleValue l1_regularization = 4;
+ * @return {?proto.google.protobuf.DoubleValue}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.getL1Regularization = function() {
+  return /** @type{?proto.google.protobuf.DoubleValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.DoubleValue, 4));
+};
+
+
+/** @param {?proto.google.protobuf.DoubleValue|undefined} value */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.setL1Regularization = function(value) {
+  jspb.Message.setWrapperField(this, 4, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.clearL1Regularization = function() {
+  this.setL1Regularization(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.hasL1Regularization = function() {
+  return jspb.Message.getField(this, 4) != null;
+};
+
+
+/**
+ * optional google.protobuf.DoubleValue l2_regularization = 5;
+ * @return {?proto.google.protobuf.DoubleValue}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.getL2Regularization = function() {
+  return /** @type{?proto.google.protobuf.DoubleValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.DoubleValue, 5));
+};
+
+
+/** @param {?proto.google.protobuf.DoubleValue|undefined} value */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.setL2Regularization = function(value) {
+  jspb.Message.setWrapperField(this, 5, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.clearL2Regularization = function() {
+  this.setL2Regularization(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.hasL2Regularization = function() {
+  return jspb.Message.getField(this, 5) != null;
+};
+
+
+/**
+ * optional google.protobuf.DoubleValue min_relative_progress = 6;
+ * @return {?proto.google.protobuf.DoubleValue}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.getMinRelativeProgress = function() {
+  return /** @type{?proto.google.protobuf.DoubleValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.DoubleValue, 6));
+};
+
+
+/** @param {?proto.google.protobuf.DoubleValue|undefined} value */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.setMinRelativeProgress = function(value) {
+  jspb.Message.setWrapperField(this, 6, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.clearMinRelativeProgress = function() {
+  this.setMinRelativeProgress(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.hasMinRelativeProgress = function() {
+  return jspb.Message.getField(this, 6) != null;
+};
+
+
+/**
+ * optional google.protobuf.BoolValue warm_start = 7;
+ * @return {?proto.google.protobuf.BoolValue}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.getWarmStart = function() {
+  return /** @type{?proto.google.protobuf.BoolValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.BoolValue, 7));
+};
+
+
+/** @param {?proto.google.protobuf.BoolValue|undefined} value */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.setWarmStart = function(value) {
+  jspb.Message.setWrapperField(this, 7, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.clearWarmStart = function() {
+  this.setWarmStart(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.hasWarmStart = function() {
+  return jspb.Message.getField(this, 7) != null;
+};
+
+
+/**
+ * optional google.protobuf.BoolValue early_stop = 8;
+ * @return {?proto.google.protobuf.BoolValue}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.getEarlyStop = function() {
+  return /** @type{?proto.google.protobuf.BoolValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.BoolValue, 8));
+};
+
+
+/** @param {?proto.google.protobuf.BoolValue|undefined} value */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.setEarlyStop = function(value) {
+  jspb.Message.setWrapperField(this, 8, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.clearEarlyStop = function() {
+  this.setEarlyStop(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.hasEarlyStop = function() {
+  return jspb.Message.getField(this, 8) != null;
+};
+
+
+/**
+ * repeated string input_label_columns = 9;
+ * @return {!Array<string>}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.getInputLabelColumnsList = function() {
+  return /** @type {!Array<string>} */ (jspb.Message.getRepeatedField(this, 9));
+};
+
+
+/** @param {!Array<string>} value */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.setInputLabelColumnsList = function(value) {
+  jspb.Message.setField(this, 9, value || []);
+};
+
+
+/**
+ * @param {string} value
+ * @param {number=} opt_index
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.addInputLabelColumns = function(value, opt_index) {
+  jspb.Message.addToRepeatedField(this, 9, value, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.clearInputLabelColumnsList = function() {
+  this.setInputLabelColumnsList([]);
+};
+
+
+/**
+ * optional DataSplitMethod data_split_method = 10;
+ * @return {!proto.google.cloud.bigquery.v2.Model.DataSplitMethod}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.getDataSplitMethod = function() {
+  return /** @type {!proto.google.cloud.bigquery.v2.Model.DataSplitMethod} */ (jspb.Message.getFieldWithDefault(this, 10, 0));
+};
+
+
+/** @param {!proto.google.cloud.bigquery.v2.Model.DataSplitMethod} value */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.setDataSplitMethod = function(value) {
+  jspb.Message.setProto3EnumField(this, 10, value);
+};
+
+
+/**
+ * optional double data_split_eval_fraction = 11;
+ * @return {number}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.getDataSplitEvalFraction = function() {
+  return /** @type {number} */ (jspb.Message.getFloatingPointFieldWithDefault(this, 11, 0.0));
+};
+
+
+/** @param {number} value */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.setDataSplitEvalFraction = function(value) {
+  jspb.Message.setProto3FloatField(this, 11, value);
+};
+
+
+/**
+ * optional string data_split_column = 12;
+ * @return {string}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.getDataSplitColumn = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 12, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.setDataSplitColumn = function(value) {
+  jspb.Message.setProto3StringField(this, 12, value);
+};
+
+
+/**
+ * optional LearnRateStrategy learn_rate_strategy = 13;
+ * @return {!proto.google.cloud.bigquery.v2.Model.LearnRateStrategy}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.getLearnRateStrategy = function() {
+  return /** @type {!proto.google.cloud.bigquery.v2.Model.LearnRateStrategy} */ (jspb.Message.getFieldWithDefault(this, 13, 0));
+};
+
+
+/** @param {!proto.google.cloud.bigquery.v2.Model.LearnRateStrategy} value */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.setLearnRateStrategy = function(value) {
+  jspb.Message.setProto3EnumField(this, 13, value);
+};
+
+
+/**
+ * optional double initial_learn_rate = 16;
+ * @return {number}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.getInitialLearnRate = function() {
+  return /** @type {number} */ (jspb.Message.getFloatingPointFieldWithDefault(this, 16, 0.0));
+};
+
+
+/** @param {number} value */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.setInitialLearnRate = function(value) {
+  jspb.Message.setProto3FloatField(this, 16, value);
+};
+
+
+/**
+ * map<string, double> label_class_weights = 17;
+ * @param {boolean=} opt_noLazyCreate Do not create the map if
+ * empty, instead returning `undefined`
+ * @return {!jspb.Map<string,number>}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.getLabelClassWeightsMap = function(opt_noLazyCreate) {
+  return /** @type {!jspb.Map<string,number>} */ (
+      jspb.Message.getMapField(this, 17, opt_noLazyCreate,
+      null));
+};
+
+
+/**
+ * Clears values from the map. The map will be non-null.
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.clearLabelClassWeightsMap = function() {
+  this.getLabelClassWeightsMap().clear();
+};
+
+
+/**
+ * optional DistanceType distance_type = 20;
+ * @return {!proto.google.cloud.bigquery.v2.Model.DistanceType}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.getDistanceType = function() {
+  return /** @type {!proto.google.cloud.bigquery.v2.Model.DistanceType} */ (jspb.Message.getFieldWithDefault(this, 20, 0));
+};
+
+
+/** @param {!proto.google.cloud.bigquery.v2.Model.DistanceType} value */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.setDistanceType = function(value) {
+  jspb.Message.setProto3EnumField(this, 20, value);
+};
+
+
+/**
+ * optional int64 num_clusters = 21;
+ * @return {number}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.getNumClusters = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 21, 0));
+};
+
+
+/** @param {number} value */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.setNumClusters = function(value) {
+  jspb.Message.setProto3IntField(this, 21, value);
+};
+
+
+/**
+ * optional string model_uri = 22;
+ * @return {string}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.getModelUri = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 22, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.setModelUri = function(value) {
+  jspb.Message.setProto3StringField(this, 22, value);
+};
+
+
+/**
+ * optional OptimizationStrategy optimization_strategy = 23;
+ * @return {!proto.google.cloud.bigquery.v2.Model.OptimizationStrategy}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.getOptimizationStrategy = function() {
+  return /** @type {!proto.google.cloud.bigquery.v2.Model.OptimizationStrategy} */ (jspb.Message.getFieldWithDefault(this, 23, 0));
+};
+
+
+/** @param {!proto.google.cloud.bigquery.v2.Model.OptimizationStrategy} value */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.setOptimizationStrategy = function(value) {
+  jspb.Message.setProto3EnumField(this, 23, value);
+};
+
+
+/**
+ * optional KmeansEnums.KmeansInitializationMethod kmeans_initialization_method = 33;
+ * @return {!proto.google.cloud.bigquery.v2.Model.KmeansEnums.KmeansInitializationMethod}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.getKmeansInitializationMethod = function() {
+  return /** @type {!proto.google.cloud.bigquery.v2.Model.KmeansEnums.KmeansInitializationMethod} */ (jspb.Message.getFieldWithDefault(this, 33, 0));
+};
+
+
+/** @param {!proto.google.cloud.bigquery.v2.Model.KmeansEnums.KmeansInitializationMethod} value */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.setKmeansInitializationMethod = function(value) {
+  jspb.Message.setProto3EnumField(this, 33, value);
+};
+
+
+/**
+ * optional string kmeans_initialization_column = 34;
+ * @return {string}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.getKmeansInitializationColumn = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 34, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions.prototype.setKmeansInitializationColumn = function(value) {
+  jspb.Message.setProto3StringField(this, 34, value);
+};
+
+
+
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.repeatedFields_ = [8];
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    index: (f = msg.getIndex()) && google_protobuf_wrappers_pb.Int32Value.toObject(includeInstance, f),
+    durationMs: (f = msg.getDurationMs()) && google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance, f),
+    trainingLoss: (f = msg.getTrainingLoss()) && google_protobuf_wrappers_pb.DoubleValue.toObject(includeInstance, f),
+    evalLoss: (f = msg.getEvalLoss()) && google_protobuf_wrappers_pb.DoubleValue.toObject(includeInstance, f),
+    learnRate: jspb.Message.getFloatingPointFieldWithDefault(msg, 7, 0.0),
+    clusterInfosList: jspb.Message.toObjectList(msg.getClusterInfosList(),
+    proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.ClusterInfo.toObject, includeInstance)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult;
+  return proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new google_protobuf_wrappers_pb.Int32Value;
+      reader.readMessage(value,google_protobuf_wrappers_pb.Int32Value.deserializeBinaryFromReader);
+      msg.setIndex(value);
+      break;
+    case 4:
+      var value = new google_protobuf_wrappers_pb.Int64Value;
+      reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader);
+      msg.setDurationMs(value);
+      break;
+    case 5:
+      var value = new google_protobuf_wrappers_pb.DoubleValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.DoubleValue.deserializeBinaryFromReader);
+      msg.setTrainingLoss(value);
+      break;
+    case 6:
+      var value = new google_protobuf_wrappers_pb.DoubleValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.DoubleValue.deserializeBinaryFromReader);
+      msg.setEvalLoss(value);
+      break;
+    case 7:
+      var value = /** @type {number} */ (reader.readDouble());
+      msg.setLearnRate(value);
+      break;
+    case 8:
+      var value = new proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.ClusterInfo;
+      reader.readMessage(value,proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.ClusterInfo.deserializeBinaryFromReader);
+      msg.addClusterInfos(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getIndex();
+  if (f != null) {
+    writer.writeMessage(
+      1,
+      f,
+      google_protobuf_wrappers_pb.Int32Value.serializeBinaryToWriter
+    );
+  }
+  f = message.getDurationMs();
+  if (f != null) {
+    writer.writeMessage(
+      4,
+      f,
+      google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter
+    );
+  }
+  f = message.getTrainingLoss();
+  if (f != null) {
+    writer.writeMessage(
+      5,
+      f,
+      google_protobuf_wrappers_pb.DoubleValue.serializeBinaryToWriter
+    );
+  }
+  f = message.getEvalLoss();
+  if (f != null) {
+    writer.writeMessage(
+      6,
+      f,
+      google_protobuf_wrappers_pb.DoubleValue.serializeBinaryToWriter
+    );
+  }
+  f = message.getLearnRate();
+  if (f !== 0.0) {
+    writer.writeDouble(
+      7,
+      f
+    );
+  }
+  f = message.getClusterInfosList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      8,
+      f,
+      proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.ClusterInfo.serializeBinaryToWriter
+    );
+  }
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.ClusterInfo.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.ClusterInfo.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.ClusterInfo} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.ClusterInfo.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    centroidId: jspb.Message.getFieldWithDefault(msg, 1, 0),
+    clusterRadius: (f = msg.getClusterRadius()) && google_protobuf_wrappers_pb.DoubleValue.toObject(includeInstance, f),
+    clusterSize: (f = msg.getClusterSize()) && google_protobuf_wrappers_pb.Int64Value.toObject(includeInstance, f)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.ClusterInfo}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.ClusterInfo.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.ClusterInfo;
+  return proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.ClusterInfo.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.ClusterInfo} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.ClusterInfo}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.ClusterInfo.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {number} */ (reader.readInt64());
+      msg.setCentroidId(value);
+      break;
+    case 2:
+      var value = new google_protobuf_wrappers_pb.DoubleValue;
+      reader.readMessage(value,google_protobuf_wrappers_pb.DoubleValue.deserializeBinaryFromReader);
+      msg.setClusterRadius(value);
+      break;
+    case 3:
+      var value = new google_protobuf_wrappers_pb.Int64Value;
+      reader.readMessage(value,google_protobuf_wrappers_pb.Int64Value.deserializeBinaryFromReader);
+      msg.setClusterSize(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.ClusterInfo.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.ClusterInfo.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.ClusterInfo} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.ClusterInfo.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getCentroidId();
+  if (f !== 0) {
+    writer.writeInt64(
+      1,
+      f
+    );
+  }
+  f = message.getClusterRadius();
+  if (f != null) {
+    writer.writeMessage(
+      2,
+      f,
+      google_protobuf_wrappers_pb.DoubleValue.serializeBinaryToWriter
+    );
+  }
+  f = message.getClusterSize();
+  if (f != null) {
+    writer.writeMessage(
+      3,
+      f,
+      google_protobuf_wrappers_pb.Int64Value.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional int64 centroid_id = 1;
+ * @return {number}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.ClusterInfo.prototype.getCentroidId = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
+};
+
+
+/** @param {number} value */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.ClusterInfo.prototype.setCentroidId = function(value) {
+  jspb.Message.setProto3IntField(this, 1, value);
+};
+
+
+/**
+ * optional google.protobuf.DoubleValue cluster_radius = 2;
+ * @return {?proto.google.protobuf.DoubleValue}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.ClusterInfo.prototype.getClusterRadius = function() {
+  return /** @type{?proto.google.protobuf.DoubleValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.DoubleValue, 2));
+};
+
+
+/** @param {?proto.google.protobuf.DoubleValue|undefined} value */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.ClusterInfo.prototype.setClusterRadius = function(value) {
+  jspb.Message.setWrapperField(this, 2, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.ClusterInfo.prototype.clearClusterRadius = function() {
+  this.setClusterRadius(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.ClusterInfo.prototype.hasClusterRadius = function() {
+  return jspb.Message.getField(this, 2) != null;
+};
+
+
+/**
+ * optional google.protobuf.Int64Value cluster_size = 3;
+ * @return {?proto.google.protobuf.Int64Value}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.ClusterInfo.prototype.getClusterSize = function() {
+  return /** @type{?proto.google.protobuf.Int64Value} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.Int64Value, 3));
+};
+
+
+/** @param {?proto.google.protobuf.Int64Value|undefined} value */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.ClusterInfo.prototype.setClusterSize = function(value) {
+  jspb.Message.setWrapperField(this, 3, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.ClusterInfo.prototype.clearClusterSize = function() {
+  this.setClusterSize(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.ClusterInfo.prototype.hasClusterSize = function() {
+  return jspb.Message.getField(this, 3) != null;
+};
+
+
+/**
+ * optional google.protobuf.Int32Value index = 1;
+ * @return {?proto.google.protobuf.Int32Value}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.prototype.getIndex = function() {
+  return /** @type{?proto.google.protobuf.Int32Value} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.Int32Value, 1));
+};
+
+
+/** @param {?proto.google.protobuf.Int32Value|undefined} value */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.prototype.setIndex = function(value) {
+  jspb.Message.setWrapperField(this, 1, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.prototype.clearIndex = function() {
+  this.setIndex(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.prototype.hasIndex = function() {
+  return jspb.Message.getField(this, 1) != null;
+};
+
+
+/**
+ * optional google.protobuf.Int64Value duration_ms = 4;
+ * @return {?proto.google.protobuf.Int64Value}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.prototype.getDurationMs = function() {
+  return /** @type{?proto.google.protobuf.Int64Value} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.Int64Value, 4));
+};
+
+
+/** @param {?proto.google.protobuf.Int64Value|undefined} value */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.prototype.setDurationMs = function(value) {
+  jspb.Message.setWrapperField(this, 4, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.prototype.clearDurationMs = function() {
+  this.setDurationMs(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.prototype.hasDurationMs = function() {
+  return jspb.Message.getField(this, 4) != null;
+};
+
+
+/**
+ * optional google.protobuf.DoubleValue training_loss = 5;
+ * @return {?proto.google.protobuf.DoubleValue}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.prototype.getTrainingLoss = function() {
+  return /** @type{?proto.google.protobuf.DoubleValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.DoubleValue, 5));
+};
+
+
+/** @param {?proto.google.protobuf.DoubleValue|undefined} value */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.prototype.setTrainingLoss = function(value) {
+  jspb.Message.setWrapperField(this, 5, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.prototype.clearTrainingLoss = function() {
+  this.setTrainingLoss(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.prototype.hasTrainingLoss = function() {
+  return jspb.Message.getField(this, 5) != null;
+};
+
+
+/**
+ * optional google.protobuf.DoubleValue eval_loss = 6;
+ * @return {?proto.google.protobuf.DoubleValue}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.prototype.getEvalLoss = function() {
+  return /** @type{?proto.google.protobuf.DoubleValue} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.DoubleValue, 6));
+};
+
+
+/** @param {?proto.google.protobuf.DoubleValue|undefined} value */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.prototype.setEvalLoss = function(value) {
+  jspb.Message.setWrapperField(this, 6, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.prototype.clearEvalLoss = function() {
+  this.setEvalLoss(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.prototype.hasEvalLoss = function() {
+  return jspb.Message.getField(this, 6) != null;
+};
+
+
+/**
+ * optional double learn_rate = 7;
+ * @return {number}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.prototype.getLearnRate = function() {
+  return /** @type {number} */ (jspb.Message.getFloatingPointFieldWithDefault(this, 7, 0.0));
+};
+
+
+/** @param {number} value */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.prototype.setLearnRate = function(value) {
+  jspb.Message.setProto3FloatField(this, 7, value);
+};
+
+
+/**
+ * repeated ClusterInfo cluster_infos = 8;
+ * @return {!Array<!proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.ClusterInfo>}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.prototype.getClusterInfosList = function() {
+  return /** @type{!Array<!proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.ClusterInfo>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.ClusterInfo, 8));
+};
+
+
+/** @param {!Array<!proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.ClusterInfo>} value */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.prototype.setClusterInfosList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 8, value);
+};
+
+
+/**
+ * @param {!proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.ClusterInfo=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.ClusterInfo}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.prototype.addClusterInfos = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 8, opt_value, proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.ClusterInfo, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult.prototype.clearClusterInfosList = function() {
+  this.setClusterInfosList([]);
+};
+
+
+/**
+ * optional TrainingOptions training_options = 1;
+ * @return {?proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.prototype.getTrainingOptions = function() {
+  return /** @type{?proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions} */ (
+    jspb.Message.getWrapperField(this, proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions, 1));
+};
+
+
+/** @param {?proto.google.cloud.bigquery.v2.Model.TrainingRun.TrainingOptions|undefined} value */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.prototype.setTrainingOptions = function(value) {
+  jspb.Message.setWrapperField(this, 1, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.prototype.clearTrainingOptions = function() {
+  this.setTrainingOptions(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.prototype.hasTrainingOptions = function() {
+  return jspb.Message.getField(this, 1) != null;
+};
+
+
+/**
+ * optional google.protobuf.Timestamp start_time = 8;
+ * @return {?proto.google.protobuf.Timestamp}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.prototype.getStartTime = function() {
+  return /** @type{?proto.google.protobuf.Timestamp} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_timestamp_pb.Timestamp, 8));
+};
+
+
+/** @param {?proto.google.protobuf.Timestamp|undefined} value */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.prototype.setStartTime = function(value) {
+  jspb.Message.setWrapperField(this, 8, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.prototype.clearStartTime = function() {
+  this.setStartTime(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.prototype.hasStartTime = function() {
+  return jspb.Message.getField(this, 8) != null;
+};
+
+
+/**
+ * repeated IterationResult results = 6;
+ * @return {!Array<!proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult>}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.prototype.getResultsList = function() {
+  return /** @type{!Array<!proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult, 6));
+};
+
+
+/** @param {!Array<!proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult>} value */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.prototype.setResultsList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 6, value);
+};
+
+
+/**
+ * @param {!proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.prototype.addResults = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 6, opt_value, proto.google.cloud.bigquery.v2.Model.TrainingRun.IterationResult, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.prototype.clearResultsList = function() {
+  this.setResultsList([]);
+};
+
+
+/**
+ * optional EvaluationMetrics evaluation_metrics = 7;
+ * @return {?proto.google.cloud.bigquery.v2.Model.EvaluationMetrics}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.prototype.getEvaluationMetrics = function() {
+  return /** @type{?proto.google.cloud.bigquery.v2.Model.EvaluationMetrics} */ (
+    jspb.Message.getWrapperField(this, proto.google.cloud.bigquery.v2.Model.EvaluationMetrics, 7));
+};
+
+
+/** @param {?proto.google.cloud.bigquery.v2.Model.EvaluationMetrics|undefined} value */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.prototype.setEvaluationMetrics = function(value) {
+  jspb.Message.setWrapperField(this, 7, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.prototype.clearEvaluationMetrics = function() {
+  this.setEvaluationMetrics(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.TrainingRun.prototype.hasEvaluationMetrics = function() {
+  return jspb.Message.getField(this, 7) != null;
+};
+
+
+/**
+ * optional string etag = 1;
+ * @return {string}
+ */
+proto.google.cloud.bigquery.v2.Model.prototype.getEtag = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.bigquery.v2.Model.prototype.setEtag = function(value) {
+  jspb.Message.setProto3StringField(this, 1, value);
+};
+
+
+/**
+ * optional ModelReference model_reference = 2;
+ * @return {?proto.google.cloud.bigquery.v2.ModelReference}
+ */
+proto.google.cloud.bigquery.v2.Model.prototype.getModelReference = function() {
+  return /** @type{?proto.google.cloud.bigquery.v2.ModelReference} */ (
+    jspb.Message.getWrapperField(this, google_cloud_bigquery_v2_model_reference_pb.ModelReference, 2));
+};
+
+
+/** @param {?proto.google.cloud.bigquery.v2.ModelReference|undefined} value */
+proto.google.cloud.bigquery.v2.Model.prototype.setModelReference = function(value) {
+  jspb.Message.setWrapperField(this, 2, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.prototype.clearModelReference = function() {
+  this.setModelReference(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.prototype.hasModelReference = function() {
+  return jspb.Message.getField(this, 2) != null;
+};
+
+
+/**
+ * optional int64 creation_time = 5;
+ * @return {number}
+ */
+proto.google.cloud.bigquery.v2.Model.prototype.getCreationTime = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 5, 0));
+};
+
+
+/** @param {number} value */
+proto.google.cloud.bigquery.v2.Model.prototype.setCreationTime = function(value) {
+  jspb.Message.setProto3IntField(this, 5, value);
+};
+
+
+/**
+ * optional int64 last_modified_time = 6;
+ * @return {number}
+ */
+proto.google.cloud.bigquery.v2.Model.prototype.getLastModifiedTime = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 6, 0));
+};
+
+
+/** @param {number} value */
+proto.google.cloud.bigquery.v2.Model.prototype.setLastModifiedTime = function(value) {
+  jspb.Message.setProto3IntField(this, 6, value);
+};
+
+
+/**
+ * optional string description = 12;
+ * @return {string}
+ */
+proto.google.cloud.bigquery.v2.Model.prototype.getDescription = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 12, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.bigquery.v2.Model.prototype.setDescription = function(value) {
+  jspb.Message.setProto3StringField(this, 12, value);
+};
+
+
+/**
+ * optional string friendly_name = 14;
+ * @return {string}
+ */
+proto.google.cloud.bigquery.v2.Model.prototype.getFriendlyName = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 14, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.bigquery.v2.Model.prototype.setFriendlyName = function(value) {
+  jspb.Message.setProto3StringField(this, 14, value);
+};
+
+
+/**
+ * map<string, string> labels = 15;
+ * @param {boolean=} opt_noLazyCreate Do not create the map if
+ * empty, instead returning `undefined`
+ * @return {!jspb.Map<string,string>}
+ */
+proto.google.cloud.bigquery.v2.Model.prototype.getLabelsMap = function(opt_noLazyCreate) {
+  return /** @type {!jspb.Map<string,string>} */ (
+      jspb.Message.getMapField(this, 15, opt_noLazyCreate,
+      null));
+};
+
+
+/**
+ * Clears values from the map. The map will be non-null.
+ */
+proto.google.cloud.bigquery.v2.Model.prototype.clearLabelsMap = function() {
+  this.getLabelsMap().clear();
+};
+
+
+/**
+ * optional int64 expiration_time = 16;
+ * @return {number}
+ */
+proto.google.cloud.bigquery.v2.Model.prototype.getExpirationTime = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 16, 0));
+};
+
+
+/** @param {number} value */
+proto.google.cloud.bigquery.v2.Model.prototype.setExpirationTime = function(value) {
+  jspb.Message.setProto3IntField(this, 16, value);
+};
+
+
+/**
+ * optional string location = 13;
+ * @return {string}
+ */
+proto.google.cloud.bigquery.v2.Model.prototype.getLocation = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 13, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.bigquery.v2.Model.prototype.setLocation = function(value) {
+  jspb.Message.setProto3StringField(this, 13, value);
+};
+
+
+/**
+ * optional EncryptionConfiguration encryption_configuration = 17;
+ * @return {?proto.google.cloud.bigquery.v2.EncryptionConfiguration}
+ */
+proto.google.cloud.bigquery.v2.Model.prototype.getEncryptionConfiguration = function() {
+  return /** @type{?proto.google.cloud.bigquery.v2.EncryptionConfiguration} */ (
+    jspb.Message.getWrapperField(this, google_cloud_bigquery_v2_encryption_config_pb.EncryptionConfiguration, 17));
+};
+
+
+/** @param {?proto.google.cloud.bigquery.v2.EncryptionConfiguration|undefined} value */
+proto.google.cloud.bigquery.v2.Model.prototype.setEncryptionConfiguration = function(value) {
+  jspb.Message.setWrapperField(this, 17, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.Model.prototype.clearEncryptionConfiguration = function() {
+  this.setEncryptionConfiguration(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.Model.prototype.hasEncryptionConfiguration = function() {
+  return jspb.Message.getField(this, 17) != null;
+};
+
+
+/**
+ * optional ModelType model_type = 7;
+ * @return {!proto.google.cloud.bigquery.v2.Model.ModelType}
+ */
+proto.google.cloud.bigquery.v2.Model.prototype.getModelType = function() {
+  return /** @type {!proto.google.cloud.bigquery.v2.Model.ModelType} */ (jspb.Message.getFieldWithDefault(this, 7, 0));
+};
+
+
+/** @param {!proto.google.cloud.bigquery.v2.Model.ModelType} value */
+proto.google.cloud.bigquery.v2.Model.prototype.setModelType = function(value) {
+  jspb.Message.setProto3EnumField(this, 7, value);
+};
+
+
+/**
+ * repeated TrainingRun training_runs = 9;
+ * @return {!Array<!proto.google.cloud.bigquery.v2.Model.TrainingRun>}
+ */
+proto.google.cloud.bigquery.v2.Model.prototype.getTrainingRunsList = function() {
+  return /** @type{!Array<!proto.google.cloud.bigquery.v2.Model.TrainingRun>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.google.cloud.bigquery.v2.Model.TrainingRun, 9));
+};
+
+
+/** @param {!Array<!proto.google.cloud.bigquery.v2.Model.TrainingRun>} value */
+proto.google.cloud.bigquery.v2.Model.prototype.setTrainingRunsList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 9, value);
+};
+
+
+/**
+ * @param {!proto.google.cloud.bigquery.v2.Model.TrainingRun=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.cloud.bigquery.v2.Model.TrainingRun}
+ */
+proto.google.cloud.bigquery.v2.Model.prototype.addTrainingRuns = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 9, opt_value, proto.google.cloud.bigquery.v2.Model.TrainingRun, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.bigquery.v2.Model.prototype.clearTrainingRunsList = function() {
+  this.setTrainingRunsList([]);
+};
+
+
+/**
+ * repeated StandardSqlField feature_columns = 10;
+ * @return {!Array<!proto.google.cloud.bigquery.v2.StandardSqlField>}
+ */
+proto.google.cloud.bigquery.v2.Model.prototype.getFeatureColumnsList = function() {
+  return /** @type{!Array<!proto.google.cloud.bigquery.v2.StandardSqlField>} */ (
+    jspb.Message.getRepeatedWrapperField(this, google_cloud_bigquery_v2_standard_sql_pb.StandardSqlField, 10));
+};
+
+
+/** @param {!Array<!proto.google.cloud.bigquery.v2.StandardSqlField>} value */
+proto.google.cloud.bigquery.v2.Model.prototype.setFeatureColumnsList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 10, value);
+};
+
+
+/**
+ * @param {!proto.google.cloud.bigquery.v2.StandardSqlField=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.cloud.bigquery.v2.StandardSqlField}
+ */
+proto.google.cloud.bigquery.v2.Model.prototype.addFeatureColumns = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 10, opt_value, proto.google.cloud.bigquery.v2.StandardSqlField, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.bigquery.v2.Model.prototype.clearFeatureColumnsList = function() {
+  this.setFeatureColumnsList([]);
+};
+
+
+/**
+ * repeated StandardSqlField label_columns = 11;
+ * @return {!Array<!proto.google.cloud.bigquery.v2.StandardSqlField>}
+ */
+proto.google.cloud.bigquery.v2.Model.prototype.getLabelColumnsList = function() {
+  return /** @type{!Array<!proto.google.cloud.bigquery.v2.StandardSqlField>} */ (
+    jspb.Message.getRepeatedWrapperField(this, google_cloud_bigquery_v2_standard_sql_pb.StandardSqlField, 11));
+};
+
+
+/** @param {!Array<!proto.google.cloud.bigquery.v2.StandardSqlField>} value */
+proto.google.cloud.bigquery.v2.Model.prototype.setLabelColumnsList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 11, value);
+};
+
+
+/**
+ * @param {!proto.google.cloud.bigquery.v2.StandardSqlField=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.cloud.bigquery.v2.StandardSqlField}
+ */
+proto.google.cloud.bigquery.v2.Model.prototype.addLabelColumns = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 11, opt_value, proto.google.cloud.bigquery.v2.StandardSqlField, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.bigquery.v2.Model.prototype.clearLabelColumnsList = function() {
+  this.setLabelColumnsList([]);
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.bigquery.v2.GetModelRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.bigquery.v2.GetModelRequest.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.bigquery.v2.GetModelRequest} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.GetModelRequest.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    projectId: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    datasetId: jspb.Message.getFieldWithDefault(msg, 2, ""),
+    modelId: jspb.Message.getFieldWithDefault(msg, 3, "")
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.bigquery.v2.GetModelRequest}
+ */
+proto.google.cloud.bigquery.v2.GetModelRequest.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.bigquery.v2.GetModelRequest;
+  return proto.google.cloud.bigquery.v2.GetModelRequest.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.bigquery.v2.GetModelRequest} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.bigquery.v2.GetModelRequest}
+ */
+proto.google.cloud.bigquery.v2.GetModelRequest.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setProjectId(value);
+      break;
+    case 2:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setDatasetId(value);
+      break;
+    case 3:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setModelId(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.bigquery.v2.GetModelRequest.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.bigquery.v2.GetModelRequest.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.bigquery.v2.GetModelRequest} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.GetModelRequest.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getProjectId();
+  if (f.length > 0) {
+    writer.writeString(
+      1,
+      f
+    );
+  }
+  f = message.getDatasetId();
+  if (f.length > 0) {
+    writer.writeString(
+      2,
+      f
+    );
+  }
+  f = message.getModelId();
+  if (f.length > 0) {
+    writer.writeString(
+      3,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional string project_id = 1;
+ * @return {string}
+ */
+proto.google.cloud.bigquery.v2.GetModelRequest.prototype.getProjectId = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.bigquery.v2.GetModelRequest.prototype.setProjectId = function(value) {
+  jspb.Message.setProto3StringField(this, 1, value);
+};
+
+
+/**
+ * optional string dataset_id = 2;
+ * @return {string}
+ */
+proto.google.cloud.bigquery.v2.GetModelRequest.prototype.getDatasetId = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.bigquery.v2.GetModelRequest.prototype.setDatasetId = function(value) {
+  jspb.Message.setProto3StringField(this, 2, value);
+};
+
+
+/**
+ * optional string model_id = 3;
+ * @return {string}
+ */
+proto.google.cloud.bigquery.v2.GetModelRequest.prototype.getModelId = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.bigquery.v2.GetModelRequest.prototype.setModelId = function(value) {
+  jspb.Message.setProto3StringField(this, 3, value);
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.bigquery.v2.PatchModelRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.bigquery.v2.PatchModelRequest.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.bigquery.v2.PatchModelRequest} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.PatchModelRequest.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    projectId: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    datasetId: jspb.Message.getFieldWithDefault(msg, 2, ""),
+    modelId: jspb.Message.getFieldWithDefault(msg, 3, ""),
+    model: (f = msg.getModel()) && proto.google.cloud.bigquery.v2.Model.toObject(includeInstance, f)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.bigquery.v2.PatchModelRequest}
+ */
+proto.google.cloud.bigquery.v2.PatchModelRequest.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.bigquery.v2.PatchModelRequest;
+  return proto.google.cloud.bigquery.v2.PatchModelRequest.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.bigquery.v2.PatchModelRequest} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.bigquery.v2.PatchModelRequest}
+ */
+proto.google.cloud.bigquery.v2.PatchModelRequest.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setProjectId(value);
+      break;
+    case 2:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setDatasetId(value);
+      break;
+    case 3:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setModelId(value);
+      break;
+    case 4:
+      var value = new proto.google.cloud.bigquery.v2.Model;
+      reader.readMessage(value,proto.google.cloud.bigquery.v2.Model.deserializeBinaryFromReader);
+      msg.setModel(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.bigquery.v2.PatchModelRequest.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.bigquery.v2.PatchModelRequest.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.bigquery.v2.PatchModelRequest} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.PatchModelRequest.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getProjectId();
+  if (f.length > 0) {
+    writer.writeString(
+      1,
+      f
+    );
+  }
+  f = message.getDatasetId();
+  if (f.length > 0) {
+    writer.writeString(
+      2,
+      f
+    );
+  }
+  f = message.getModelId();
+  if (f.length > 0) {
+    writer.writeString(
+      3,
+      f
+    );
+  }
+  f = message.getModel();
+  if (f != null) {
+    writer.writeMessage(
+      4,
+      f,
+      proto.google.cloud.bigquery.v2.Model.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional string project_id = 1;
+ * @return {string}
+ */
+proto.google.cloud.bigquery.v2.PatchModelRequest.prototype.getProjectId = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.bigquery.v2.PatchModelRequest.prototype.setProjectId = function(value) {
+  jspb.Message.setProto3StringField(this, 1, value);
+};
+
+
+/**
+ * optional string dataset_id = 2;
+ * @return {string}
+ */
+proto.google.cloud.bigquery.v2.PatchModelRequest.prototype.getDatasetId = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.bigquery.v2.PatchModelRequest.prototype.setDatasetId = function(value) {
+  jspb.Message.setProto3StringField(this, 2, value);
+};
+
+
+/**
+ * optional string model_id = 3;
+ * @return {string}
+ */
+proto.google.cloud.bigquery.v2.PatchModelRequest.prototype.getModelId = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.bigquery.v2.PatchModelRequest.prototype.setModelId = function(value) {
+  jspb.Message.setProto3StringField(this, 3, value);
+};
+
+
+/**
+ * optional Model model = 4;
+ * @return {?proto.google.cloud.bigquery.v2.Model}
+ */
+proto.google.cloud.bigquery.v2.PatchModelRequest.prototype.getModel = function() {
+  return /** @type{?proto.google.cloud.bigquery.v2.Model} */ (
+    jspb.Message.getWrapperField(this, proto.google.cloud.bigquery.v2.Model, 4));
+};
+
+
+/** @param {?proto.google.cloud.bigquery.v2.Model|undefined} value */
+proto.google.cloud.bigquery.v2.PatchModelRequest.prototype.setModel = function(value) {
+  jspb.Message.setWrapperField(this, 4, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.PatchModelRequest.prototype.clearModel = function() {
+  this.setModel(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.PatchModelRequest.prototype.hasModel = function() {
+  return jspb.Message.getField(this, 4) != null;
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.bigquery.v2.DeleteModelRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.bigquery.v2.DeleteModelRequest.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.bigquery.v2.DeleteModelRequest} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.DeleteModelRequest.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    projectId: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    datasetId: jspb.Message.getFieldWithDefault(msg, 2, ""),
+    modelId: jspb.Message.getFieldWithDefault(msg, 3, "")
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.bigquery.v2.DeleteModelRequest}
+ */
+proto.google.cloud.bigquery.v2.DeleteModelRequest.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.bigquery.v2.DeleteModelRequest;
+  return proto.google.cloud.bigquery.v2.DeleteModelRequest.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.bigquery.v2.DeleteModelRequest} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.bigquery.v2.DeleteModelRequest}
+ */
+proto.google.cloud.bigquery.v2.DeleteModelRequest.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setProjectId(value);
+      break;
+    case 2:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setDatasetId(value);
+      break;
+    case 3:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setModelId(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.bigquery.v2.DeleteModelRequest.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.bigquery.v2.DeleteModelRequest.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.bigquery.v2.DeleteModelRequest} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.DeleteModelRequest.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getProjectId();
+  if (f.length > 0) {
+    writer.writeString(
+      1,
+      f
+    );
+  }
+  f = message.getDatasetId();
+  if (f.length > 0) {
+    writer.writeString(
+      2,
+      f
+    );
+  }
+  f = message.getModelId();
+  if (f.length > 0) {
+    writer.writeString(
+      3,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional string project_id = 1;
+ * @return {string}
+ */
+proto.google.cloud.bigquery.v2.DeleteModelRequest.prototype.getProjectId = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.bigquery.v2.DeleteModelRequest.prototype.setProjectId = function(value) {
+  jspb.Message.setProto3StringField(this, 1, value);
+};
+
+
+/**
+ * optional string dataset_id = 2;
+ * @return {string}
+ */
+proto.google.cloud.bigquery.v2.DeleteModelRequest.prototype.getDatasetId = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.bigquery.v2.DeleteModelRequest.prototype.setDatasetId = function(value) {
+  jspb.Message.setProto3StringField(this, 2, value);
+};
+
+
+/**
+ * optional string model_id = 3;
+ * @return {string}
+ */
+proto.google.cloud.bigquery.v2.DeleteModelRequest.prototype.getModelId = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.bigquery.v2.DeleteModelRequest.prototype.setModelId = function(value) {
+  jspb.Message.setProto3StringField(this, 3, value);
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.bigquery.v2.ListModelsRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.bigquery.v2.ListModelsRequest.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.bigquery.v2.ListModelsRequest} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.ListModelsRequest.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    projectId: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    datasetId: jspb.Message.getFieldWithDefault(msg, 2, ""),
+    maxResults: (f = msg.getMaxResults()) && google_protobuf_wrappers_pb.UInt32Value.toObject(includeInstance, f),
+    pageToken: jspb.Message.getFieldWithDefault(msg, 4, "")
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.bigquery.v2.ListModelsRequest}
+ */
+proto.google.cloud.bigquery.v2.ListModelsRequest.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.bigquery.v2.ListModelsRequest;
+  return proto.google.cloud.bigquery.v2.ListModelsRequest.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.bigquery.v2.ListModelsRequest} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.bigquery.v2.ListModelsRequest}
+ */
+proto.google.cloud.bigquery.v2.ListModelsRequest.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setProjectId(value);
+      break;
+    case 2:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setDatasetId(value);
+      break;
+    case 3:
+      var value = new google_protobuf_wrappers_pb.UInt32Value;
+      reader.readMessage(value,google_protobuf_wrappers_pb.UInt32Value.deserializeBinaryFromReader);
+      msg.setMaxResults(value);
+      break;
+    case 4:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setPageToken(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.bigquery.v2.ListModelsRequest.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.bigquery.v2.ListModelsRequest.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.bigquery.v2.ListModelsRequest} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.ListModelsRequest.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getProjectId();
+  if (f.length > 0) {
+    writer.writeString(
+      1,
+      f
+    );
+  }
+  f = message.getDatasetId();
+  if (f.length > 0) {
+    writer.writeString(
+      2,
+      f
+    );
+  }
+  f = message.getMaxResults();
+  if (f != null) {
+    writer.writeMessage(
+      3,
+      f,
+      google_protobuf_wrappers_pb.UInt32Value.serializeBinaryToWriter
+    );
+  }
+  f = message.getPageToken();
+  if (f.length > 0) {
+    writer.writeString(
+      4,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional string project_id = 1;
+ * @return {string}
+ */
+proto.google.cloud.bigquery.v2.ListModelsRequest.prototype.getProjectId = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.bigquery.v2.ListModelsRequest.prototype.setProjectId = function(value) {
+  jspb.Message.setProto3StringField(this, 1, value);
+};
+
+
+/**
+ * optional string dataset_id = 2;
+ * @return {string}
+ */
+proto.google.cloud.bigquery.v2.ListModelsRequest.prototype.getDatasetId = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.bigquery.v2.ListModelsRequest.prototype.setDatasetId = function(value) {
+  jspb.Message.setProto3StringField(this, 2, value);
+};
+
+
+/**
+ * optional google.protobuf.UInt32Value max_results = 3;
+ * @return {?proto.google.protobuf.UInt32Value}
+ */
+proto.google.cloud.bigquery.v2.ListModelsRequest.prototype.getMaxResults = function() {
+  return /** @type{?proto.google.protobuf.UInt32Value} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_wrappers_pb.UInt32Value, 3));
+};
+
+
+/** @param {?proto.google.protobuf.UInt32Value|undefined} value */
+proto.google.cloud.bigquery.v2.ListModelsRequest.prototype.setMaxResults = function(value) {
+  jspb.Message.setWrapperField(this, 3, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.bigquery.v2.ListModelsRequest.prototype.clearMaxResults = function() {
+  this.setMaxResults(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.bigquery.v2.ListModelsRequest.prototype.hasMaxResults = function() {
+  return jspb.Message.getField(this, 3) != null;
+};
+
+
+/**
+ * optional string page_token = 4;
+ * @return {string}
+ */
+proto.google.cloud.bigquery.v2.ListModelsRequest.prototype.getPageToken = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 4, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.bigquery.v2.ListModelsRequest.prototype.setPageToken = function(value) {
+  jspb.Message.setProto3StringField(this, 4, value);
+};
+
+
+
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.google.cloud.bigquery.v2.ListModelsResponse.repeatedFields_ = [1];
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.bigquery.v2.ListModelsResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.bigquery.v2.ListModelsResponse.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.bigquery.v2.ListModelsResponse} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.ListModelsResponse.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    modelsList: jspb.Message.toObjectList(msg.getModelsList(),
+    proto.google.cloud.bigquery.v2.Model.toObject, includeInstance),
+    nextPageToken: jspb.Message.getFieldWithDefault(msg, 2, "")
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.bigquery.v2.ListModelsResponse}
+ */
+proto.google.cloud.bigquery.v2.ListModelsResponse.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.bigquery.v2.ListModelsResponse;
+  return proto.google.cloud.bigquery.v2.ListModelsResponse.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.bigquery.v2.ListModelsResponse} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.bigquery.v2.ListModelsResponse}
+ */
+proto.google.cloud.bigquery.v2.ListModelsResponse.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new proto.google.cloud.bigquery.v2.Model;
+      reader.readMessage(value,proto.google.cloud.bigquery.v2.Model.deserializeBinaryFromReader);
+      msg.addModels(value);
+      break;
+    case 2:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setNextPageToken(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.bigquery.v2.ListModelsResponse.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.bigquery.v2.ListModelsResponse.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.bigquery.v2.ListModelsResponse} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.bigquery.v2.ListModelsResponse.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getModelsList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      1,
+      f,
+      proto.google.cloud.bigquery.v2.Model.serializeBinaryToWriter
+    );
+  }
+  f = message.getNextPageToken();
+  if (f.length > 0) {
+    writer.writeString(
+      2,
+      f
+    );
+  }
+};
+
+
+/**
+ * repeated Model models = 1;
+ * @return {!Array<!proto.google.cloud.bigquery.v2.Model>}
+ */
+proto.google.cloud.bigquery.v2.ListModelsResponse.prototype.getModelsList = function() {
+  return /** @type{!Array<!proto.google.cloud.bigquery.v2.Model>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.google.cloud.bigquery.v2.Model, 1));
+};
+
+
+/** @param {!Array<!proto.google.cloud.bigquery.v2.Model>} value */
+proto.google.cloud.bigquery.v2.ListModelsResponse.prototype.setModelsList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 1, value);
+};
+
+
+/**
+ * @param {!proto.google.cloud.bigquery.v2.Model=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.cloud.bigquery.v2.Model}
+ */
+proto.google.cloud.bigquery.v2.ListModelsResponse.prototype.addModels = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 1, opt_value, proto.google.cloud.bigquery.v2.Model, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.bigquery.v2.ListModelsResponse.prototype.clearModelsList = function() {
+  this.setModelsList([]);
+};
+
+
+/**
+ * optional string next_page_token = 2;
+ * @return {string}
+ */
+proto.google.cloud.bigquery.v2.ListModelsResponse.prototype.getNextPageToken = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.bigquery.v2.ListModelsResponse.prototype.setNextPageToken = function(value) {
+  jspb.Message.setProto3StringField(this, 2, value);
+};
+
+
+goog.object.extend(exports, proto.google.cloud.bigquery.v2);

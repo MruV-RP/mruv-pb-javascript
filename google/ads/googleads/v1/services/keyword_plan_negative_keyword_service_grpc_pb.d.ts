@@ -1,0 +1,25 @@
+// GENERATED CODE -- DO NOT EDIT!
+
+// package: google.ads.googleads.v1.services
+// file: google/ads/googleads/v1/services/keyword_plan_negative_keyword_service.proto
+
+import * as google_ads_googleads_v1_services_keyword_plan_negative_keyword_service_pb from "../../../../../google/ads/googleads/v1/services/keyword_plan_negative_keyword_service_pb";
+import * as google_ads_googleads_v1_resources_keyword_plan_negative_keyword_pb from "../../../../../google/ads/googleads/v1/resources/keyword_plan_negative_keyword_pb";
+import * as grpc from "grpc";
+
+interface IKeywordPlanNegativeKeywordServiceService extends grpc.ServiceDefinition<grpc.UntypedServiceImplementation> {
+  getKeywordPlanNegativeKeyword: grpc.MethodDefinition<google_ads_googleads_v1_services_keyword_plan_negative_keyword_service_pb.GetKeywordPlanNegativeKeywordRequest, google_ads_googleads_v1_resources_keyword_plan_negative_keyword_pb.KeywordPlanNegativeKeyword>;
+  mutateKeywordPlanNegativeKeywords: grpc.MethodDefinition<google_ads_googleads_v1_services_keyword_plan_negative_keyword_service_pb.MutateKeywordPlanNegativeKeywordsRequest, google_ads_googleads_v1_services_keyword_plan_negative_keyword_service_pb.MutateKeywordPlanNegativeKeywordsResponse>;
+}
+
+export const KeywordPlanNegativeKeywordServiceService: IKeywordPlanNegativeKeywordServiceService;
+
+export class KeywordPlanNegativeKeywordServiceClient extends grpc.Client {
+  constructor(address: string, credentials: grpc.ChannelCredentials, options?: object);
+  getKeywordPlanNegativeKeyword(argument: google_ads_googleads_v1_services_keyword_plan_negative_keyword_service_pb.GetKeywordPlanNegativeKeywordRequest, callback: grpc.requestCallback<google_ads_googleads_v1_resources_keyword_plan_negative_keyword_pb.KeywordPlanNegativeKeyword>): grpc.ClientUnaryCall;
+  getKeywordPlanNegativeKeyword(argument: google_ads_googleads_v1_services_keyword_plan_negative_keyword_service_pb.GetKeywordPlanNegativeKeywordRequest, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<google_ads_googleads_v1_resources_keyword_plan_negative_keyword_pb.KeywordPlanNegativeKeyword>): grpc.ClientUnaryCall;
+  getKeywordPlanNegativeKeyword(argument: google_ads_googleads_v1_services_keyword_plan_negative_keyword_service_pb.GetKeywordPlanNegativeKeywordRequest, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<google_ads_googleads_v1_resources_keyword_plan_negative_keyword_pb.KeywordPlanNegativeKeyword>): grpc.ClientUnaryCall;
+  mutateKeywordPlanNegativeKeywords(argument: google_ads_googleads_v1_services_keyword_plan_negative_keyword_service_pb.MutateKeywordPlanNegativeKeywordsRequest, callback: grpc.requestCallback<google_ads_googleads_v1_services_keyword_plan_negative_keyword_service_pb.MutateKeywordPlanNegativeKeywordsResponse>): grpc.ClientUnaryCall;
+  mutateKeywordPlanNegativeKeywords(argument: google_ads_googleads_v1_services_keyword_plan_negative_keyword_service_pb.MutateKeywordPlanNegativeKeywordsRequest, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<google_ads_googleads_v1_services_keyword_plan_negative_keyword_service_pb.MutateKeywordPlanNegativeKeywordsResponse>): grpc.ClientUnaryCall;
+  mutateKeywordPlanNegativeKeywords(argument: google_ads_googleads_v1_services_keyword_plan_negative_keyword_service_pb.MutateKeywordPlanNegativeKeywordsRequest, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<google_ads_googleads_v1_services_keyword_plan_negative_keyword_service_pb.MutateKeywordPlanNegativeKeywordsResponse>): grpc.ClientUnaryCall;
+}

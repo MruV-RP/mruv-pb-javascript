@@ -1,0 +1,102 @@
+// GENERATED CODE -- DO NOT EDIT!
+
+// Original file comments:
+// Copyright 2019 Google LLC.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+//
+//
+'use strict';
+var grpc = require('grpc');
+var google_cloud_recaptchaenterprise_v1beta1_recaptchaenterprise_pb = require('../../../../google/cloud/recaptchaenterprise/v1beta1/recaptchaenterprise_pb.js');
+var google_api_annotations_pb = require('../../../../google/api/annotations_pb.js');
+var google_api_client_pb = require('../../../../google/api/client_pb.js');
+var google_api_field_behavior_pb = require('../../../../google/api/field_behavior_pb.js');
+var google_api_resource_pb = require('../../../../google/api/resource_pb.js');
+var google_protobuf_timestamp_pb = require('google-protobuf/google/protobuf/timestamp_pb.js');
+
+function serialize_google_cloud_recaptchaenterprise_v1beta1_AnnotateAssessmentRequest(arg) {
+  if (!(arg instanceof google_cloud_recaptchaenterprise_v1beta1_recaptchaenterprise_pb.AnnotateAssessmentRequest)) {
+    throw new Error('Expected argument of type google.cloud.recaptchaenterprise.v1beta1.AnnotateAssessmentRequest');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_google_cloud_recaptchaenterprise_v1beta1_AnnotateAssessmentRequest(buffer_arg) {
+  return google_cloud_recaptchaenterprise_v1beta1_recaptchaenterprise_pb.AnnotateAssessmentRequest.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_google_cloud_recaptchaenterprise_v1beta1_AnnotateAssessmentResponse(arg) {
+  if (!(arg instanceof google_cloud_recaptchaenterprise_v1beta1_recaptchaenterprise_pb.AnnotateAssessmentResponse)) {
+    throw new Error('Expected argument of type google.cloud.recaptchaenterprise.v1beta1.AnnotateAssessmentResponse');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_google_cloud_recaptchaenterprise_v1beta1_AnnotateAssessmentResponse(buffer_arg) {
+  return google_cloud_recaptchaenterprise_v1beta1_recaptchaenterprise_pb.AnnotateAssessmentResponse.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_google_cloud_recaptchaenterprise_v1beta1_Assessment(arg) {
+  if (!(arg instanceof google_cloud_recaptchaenterprise_v1beta1_recaptchaenterprise_pb.Assessment)) {
+    throw new Error('Expected argument of type google.cloud.recaptchaenterprise.v1beta1.Assessment');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_google_cloud_recaptchaenterprise_v1beta1_Assessment(buffer_arg) {
+  return google_cloud_recaptchaenterprise_v1beta1_recaptchaenterprise_pb.Assessment.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_google_cloud_recaptchaenterprise_v1beta1_CreateAssessmentRequest(arg) {
+  if (!(arg instanceof google_cloud_recaptchaenterprise_v1beta1_recaptchaenterprise_pb.CreateAssessmentRequest)) {
+    throw new Error('Expected argument of type google.cloud.recaptchaenterprise.v1beta1.CreateAssessmentRequest');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_google_cloud_recaptchaenterprise_v1beta1_CreateAssessmentRequest(buffer_arg) {
+  return google_cloud_recaptchaenterprise_v1beta1_recaptchaenterprise_pb.CreateAssessmentRequest.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+
+// Service to determine the likelihood an event is legitimate.
+var RecaptchaEnterpriseServiceV1Beta1Service = exports.RecaptchaEnterpriseServiceV1Beta1Service = {
+  // Creates an Assessment of the likelihood an event is legitimate.
+  createAssessment: {
+    path: '/google.cloud.recaptchaenterprise.v1beta1.RecaptchaEnterpriseServiceV1Beta1/CreateAssessment',
+    requestStream: false,
+    responseStream: false,
+    requestType: google_cloud_recaptchaenterprise_v1beta1_recaptchaenterprise_pb.CreateAssessmentRequest,
+    responseType: google_cloud_recaptchaenterprise_v1beta1_recaptchaenterprise_pb.Assessment,
+    requestSerialize: serialize_google_cloud_recaptchaenterprise_v1beta1_CreateAssessmentRequest,
+    requestDeserialize: deserialize_google_cloud_recaptchaenterprise_v1beta1_CreateAssessmentRequest,
+    responseSerialize: serialize_google_cloud_recaptchaenterprise_v1beta1_Assessment,
+    responseDeserialize: deserialize_google_cloud_recaptchaenterprise_v1beta1_Assessment,
+  },
+  // Annotates a previously created Assessment to provide additional information
+  // on whether the event turned out to be authentic or fradulent.
+  annotateAssessment: {
+    path: '/google.cloud.recaptchaenterprise.v1beta1.RecaptchaEnterpriseServiceV1Beta1/AnnotateAssessment',
+    requestStream: false,
+    responseStream: false,
+    requestType: google_cloud_recaptchaenterprise_v1beta1_recaptchaenterprise_pb.AnnotateAssessmentRequest,
+    responseType: google_cloud_recaptchaenterprise_v1beta1_recaptchaenterprise_pb.AnnotateAssessmentResponse,
+    requestSerialize: serialize_google_cloud_recaptchaenterprise_v1beta1_AnnotateAssessmentRequest,
+    requestDeserialize: deserialize_google_cloud_recaptchaenterprise_v1beta1_AnnotateAssessmentRequest,
+    responseSerialize: serialize_google_cloud_recaptchaenterprise_v1beta1_AnnotateAssessmentResponse,
+    responseDeserialize: deserialize_google_cloud_recaptchaenterprise_v1beta1_AnnotateAssessmentResponse,
+  },
+};
+
+exports.RecaptchaEnterpriseServiceV1Beta1Client = grpc.makeGenericClientConstructor(RecaptchaEnterpriseServiceV1Beta1Service);

@@ -1,0 +1,8833 @@
+/**
+ * @fileoverview
+ * @enhanceable
+ * @suppress {messageConventions} JS Compiler reports an error if a variable or
+ *     field starts with 'MSG_' and isn't a translatable message.
+ * @public
+ */
+// GENERATED CODE -- DO NOT EDIT!
+
+var jspb = require('google-protobuf');
+var goog = jspb;
+var global = Function('return this')();
+
+var google_api_annotations_pb = require('../../../../google/api/annotations_pb.js');
+goog.object.extend(proto, google_api_annotations_pb);
+var google_api_client_pb = require('../../../../google/api/client_pb.js');
+goog.object.extend(proto, google_api_client_pb);
+var google_api_field_behavior_pb = require('../../../../google/api/field_behavior_pb.js');
+goog.object.extend(proto, google_api_field_behavior_pb);
+var google_longrunning_operations_pb = require('../../../../google/longrunning/operations_pb.js');
+goog.object.extend(proto, google_longrunning_operations_pb);
+var google_protobuf_duration_pb = require('google-protobuf/google/protobuf/duration_pb.js');
+goog.object.extend(proto, google_protobuf_duration_pb);
+var google_protobuf_timestamp_pb = require('google-protobuf/google/protobuf/timestamp_pb.js');
+goog.object.extend(proto, google_protobuf_timestamp_pb);
+var google_rpc_status_pb = require('../../../../google/rpc/status_pb.js');
+goog.object.extend(proto, google_rpc_status_pb);
+goog.exportSymbol('proto.google.cloud.videointelligence.v1.AnnotateVideoProgress', null, global);
+goog.exportSymbol('proto.google.cloud.videointelligence.v1.AnnotateVideoRequest', null, global);
+goog.exportSymbol('proto.google.cloud.videointelligence.v1.AnnotateVideoResponse', null, global);
+goog.exportSymbol('proto.google.cloud.videointelligence.v1.Entity', null, global);
+goog.exportSymbol('proto.google.cloud.videointelligence.v1.ExplicitContentAnnotation', null, global);
+goog.exportSymbol('proto.google.cloud.videointelligence.v1.ExplicitContentDetectionConfig', null, global);
+goog.exportSymbol('proto.google.cloud.videointelligence.v1.ExplicitContentFrame', null, global);
+goog.exportSymbol('proto.google.cloud.videointelligence.v1.FaceAnnotation', null, global);
+goog.exportSymbol('proto.google.cloud.videointelligence.v1.FaceDetectionConfig', null, global);
+goog.exportSymbol('proto.google.cloud.videointelligence.v1.FaceFrame', null, global);
+goog.exportSymbol('proto.google.cloud.videointelligence.v1.FaceSegment', null, global);
+goog.exportSymbol('proto.google.cloud.videointelligence.v1.Feature', null, global);
+goog.exportSymbol('proto.google.cloud.videointelligence.v1.LabelAnnotation', null, global);
+goog.exportSymbol('proto.google.cloud.videointelligence.v1.LabelDetectionConfig', null, global);
+goog.exportSymbol('proto.google.cloud.videointelligence.v1.LabelDetectionMode', null, global);
+goog.exportSymbol('proto.google.cloud.videointelligence.v1.LabelFrame', null, global);
+goog.exportSymbol('proto.google.cloud.videointelligence.v1.LabelSegment', null, global);
+goog.exportSymbol('proto.google.cloud.videointelligence.v1.Likelihood', null, global);
+goog.exportSymbol('proto.google.cloud.videointelligence.v1.NormalizedBoundingBox', null, global);
+goog.exportSymbol('proto.google.cloud.videointelligence.v1.NormalizedBoundingPoly', null, global);
+goog.exportSymbol('proto.google.cloud.videointelligence.v1.NormalizedVertex', null, global);
+goog.exportSymbol('proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation', null, global);
+goog.exportSymbol('proto.google.cloud.videointelligence.v1.ObjectTrackingConfig', null, global);
+goog.exportSymbol('proto.google.cloud.videointelligence.v1.ObjectTrackingFrame', null, global);
+goog.exportSymbol('proto.google.cloud.videointelligence.v1.ShotChangeDetectionConfig', null, global);
+goog.exportSymbol('proto.google.cloud.videointelligence.v1.SpeechContext', null, global);
+goog.exportSymbol('proto.google.cloud.videointelligence.v1.SpeechRecognitionAlternative', null, global);
+goog.exportSymbol('proto.google.cloud.videointelligence.v1.SpeechTranscription', null, global);
+goog.exportSymbol('proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig', null, global);
+goog.exportSymbol('proto.google.cloud.videointelligence.v1.TextAnnotation', null, global);
+goog.exportSymbol('proto.google.cloud.videointelligence.v1.TextDetectionConfig', null, global);
+goog.exportSymbol('proto.google.cloud.videointelligence.v1.TextFrame', null, global);
+goog.exportSymbol('proto.google.cloud.videointelligence.v1.TextSegment', null, global);
+goog.exportSymbol('proto.google.cloud.videointelligence.v1.VideoAnnotationProgress', null, global);
+goog.exportSymbol('proto.google.cloud.videointelligence.v1.VideoAnnotationResults', null, global);
+goog.exportSymbol('proto.google.cloud.videointelligence.v1.VideoContext', null, global);
+goog.exportSymbol('proto.google.cloud.videointelligence.v1.VideoSegment', null, global);
+goog.exportSymbol('proto.google.cloud.videointelligence.v1.WordInfo', null, global);
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.videointelligence.v1.AnnotateVideoRequest = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.google.cloud.videointelligence.v1.AnnotateVideoRequest.repeatedFields_, null);
+};
+goog.inherits(proto.google.cloud.videointelligence.v1.AnnotateVideoRequest, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.videointelligence.v1.AnnotateVideoRequest.displayName = 'proto.google.cloud.videointelligence.v1.AnnotateVideoRequest';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.videointelligence.v1.VideoContext = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.google.cloud.videointelligence.v1.VideoContext.repeatedFields_, null);
+};
+goog.inherits(proto.google.cloud.videointelligence.v1.VideoContext, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.videointelligence.v1.VideoContext.displayName = 'proto.google.cloud.videointelligence.v1.VideoContext';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.videointelligence.v1.LabelDetectionConfig = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.cloud.videointelligence.v1.LabelDetectionConfig, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.videointelligence.v1.LabelDetectionConfig.displayName = 'proto.google.cloud.videointelligence.v1.LabelDetectionConfig';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.videointelligence.v1.ShotChangeDetectionConfig = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.cloud.videointelligence.v1.ShotChangeDetectionConfig, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.videointelligence.v1.ShotChangeDetectionConfig.displayName = 'proto.google.cloud.videointelligence.v1.ShotChangeDetectionConfig';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingConfig = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.cloud.videointelligence.v1.ObjectTrackingConfig, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.videointelligence.v1.ObjectTrackingConfig.displayName = 'proto.google.cloud.videointelligence.v1.ObjectTrackingConfig';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.videointelligence.v1.FaceDetectionConfig = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.cloud.videointelligence.v1.FaceDetectionConfig, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.videointelligence.v1.FaceDetectionConfig.displayName = 'proto.google.cloud.videointelligence.v1.FaceDetectionConfig';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.videointelligence.v1.ExplicitContentDetectionConfig = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.cloud.videointelligence.v1.ExplicitContentDetectionConfig, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.videointelligence.v1.ExplicitContentDetectionConfig.displayName = 'proto.google.cloud.videointelligence.v1.ExplicitContentDetectionConfig';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.videointelligence.v1.TextDetectionConfig = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.google.cloud.videointelligence.v1.TextDetectionConfig.repeatedFields_, null);
+};
+goog.inherits(proto.google.cloud.videointelligence.v1.TextDetectionConfig, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.videointelligence.v1.TextDetectionConfig.displayName = 'proto.google.cloud.videointelligence.v1.TextDetectionConfig';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.videointelligence.v1.VideoSegment = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.cloud.videointelligence.v1.VideoSegment, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.videointelligence.v1.VideoSegment.displayName = 'proto.google.cloud.videointelligence.v1.VideoSegment';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.videointelligence.v1.LabelSegment = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.cloud.videointelligence.v1.LabelSegment, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.videointelligence.v1.LabelSegment.displayName = 'proto.google.cloud.videointelligence.v1.LabelSegment';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.videointelligence.v1.LabelFrame = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.cloud.videointelligence.v1.LabelFrame, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.videointelligence.v1.LabelFrame.displayName = 'proto.google.cloud.videointelligence.v1.LabelFrame';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.videointelligence.v1.Entity = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.cloud.videointelligence.v1.Entity, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.videointelligence.v1.Entity.displayName = 'proto.google.cloud.videointelligence.v1.Entity';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.videointelligence.v1.LabelAnnotation = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.google.cloud.videointelligence.v1.LabelAnnotation.repeatedFields_, null);
+};
+goog.inherits(proto.google.cloud.videointelligence.v1.LabelAnnotation, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.videointelligence.v1.LabelAnnotation.displayName = 'proto.google.cloud.videointelligence.v1.LabelAnnotation';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.videointelligence.v1.ExplicitContentFrame = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.cloud.videointelligence.v1.ExplicitContentFrame, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.videointelligence.v1.ExplicitContentFrame.displayName = 'proto.google.cloud.videointelligence.v1.ExplicitContentFrame';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.videointelligence.v1.ExplicitContentAnnotation = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.google.cloud.videointelligence.v1.ExplicitContentAnnotation.repeatedFields_, null);
+};
+goog.inherits(proto.google.cloud.videointelligence.v1.ExplicitContentAnnotation, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.videointelligence.v1.ExplicitContentAnnotation.displayName = 'proto.google.cloud.videointelligence.v1.ExplicitContentAnnotation';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.videointelligence.v1.NormalizedBoundingBox = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.cloud.videointelligence.v1.NormalizedBoundingBox, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.videointelligence.v1.NormalizedBoundingBox.displayName = 'proto.google.cloud.videointelligence.v1.NormalizedBoundingBox';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.videointelligence.v1.FaceSegment = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.cloud.videointelligence.v1.FaceSegment, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.videointelligence.v1.FaceSegment.displayName = 'proto.google.cloud.videointelligence.v1.FaceSegment';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.videointelligence.v1.FaceFrame = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.google.cloud.videointelligence.v1.FaceFrame.repeatedFields_, null);
+};
+goog.inherits(proto.google.cloud.videointelligence.v1.FaceFrame, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.videointelligence.v1.FaceFrame.displayName = 'proto.google.cloud.videointelligence.v1.FaceFrame';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.videointelligence.v1.FaceAnnotation = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.google.cloud.videointelligence.v1.FaceAnnotation.repeatedFields_, null);
+};
+goog.inherits(proto.google.cloud.videointelligence.v1.FaceAnnotation, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.videointelligence.v1.FaceAnnotation.displayName = 'proto.google.cloud.videointelligence.v1.FaceAnnotation';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.google.cloud.videointelligence.v1.VideoAnnotationResults.repeatedFields_, null);
+};
+goog.inherits(proto.google.cloud.videointelligence.v1.VideoAnnotationResults, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.videointelligence.v1.VideoAnnotationResults.displayName = 'proto.google.cloud.videointelligence.v1.VideoAnnotationResults';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.videointelligence.v1.AnnotateVideoResponse = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.google.cloud.videointelligence.v1.AnnotateVideoResponse.repeatedFields_, null);
+};
+goog.inherits(proto.google.cloud.videointelligence.v1.AnnotateVideoResponse, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.videointelligence.v1.AnnotateVideoResponse.displayName = 'proto.google.cloud.videointelligence.v1.AnnotateVideoResponse';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationProgress = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.cloud.videointelligence.v1.VideoAnnotationProgress, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.videointelligence.v1.VideoAnnotationProgress.displayName = 'proto.google.cloud.videointelligence.v1.VideoAnnotationProgress';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.videointelligence.v1.AnnotateVideoProgress = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.google.cloud.videointelligence.v1.AnnotateVideoProgress.repeatedFields_, null);
+};
+goog.inherits(proto.google.cloud.videointelligence.v1.AnnotateVideoProgress, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.videointelligence.v1.AnnotateVideoProgress.displayName = 'proto.google.cloud.videointelligence.v1.AnnotateVideoProgress';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig.repeatedFields_, null);
+};
+goog.inherits(proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig.displayName = 'proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.videointelligence.v1.SpeechContext = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.google.cloud.videointelligence.v1.SpeechContext.repeatedFields_, null);
+};
+goog.inherits(proto.google.cloud.videointelligence.v1.SpeechContext, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.videointelligence.v1.SpeechContext.displayName = 'proto.google.cloud.videointelligence.v1.SpeechContext';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.videointelligence.v1.SpeechTranscription = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.google.cloud.videointelligence.v1.SpeechTranscription.repeatedFields_, null);
+};
+goog.inherits(proto.google.cloud.videointelligence.v1.SpeechTranscription, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.videointelligence.v1.SpeechTranscription.displayName = 'proto.google.cloud.videointelligence.v1.SpeechTranscription';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.videointelligence.v1.SpeechRecognitionAlternative = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.google.cloud.videointelligence.v1.SpeechRecognitionAlternative.repeatedFields_, null);
+};
+goog.inherits(proto.google.cloud.videointelligence.v1.SpeechRecognitionAlternative, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.videointelligence.v1.SpeechRecognitionAlternative.displayName = 'proto.google.cloud.videointelligence.v1.SpeechRecognitionAlternative';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.videointelligence.v1.WordInfo = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.cloud.videointelligence.v1.WordInfo, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.videointelligence.v1.WordInfo.displayName = 'proto.google.cloud.videointelligence.v1.WordInfo';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.videointelligence.v1.NormalizedVertex = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.cloud.videointelligence.v1.NormalizedVertex, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.videointelligence.v1.NormalizedVertex.displayName = 'proto.google.cloud.videointelligence.v1.NormalizedVertex';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.videointelligence.v1.NormalizedBoundingPoly = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.google.cloud.videointelligence.v1.NormalizedBoundingPoly.repeatedFields_, null);
+};
+goog.inherits(proto.google.cloud.videointelligence.v1.NormalizedBoundingPoly, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.videointelligence.v1.NormalizedBoundingPoly.displayName = 'proto.google.cloud.videointelligence.v1.NormalizedBoundingPoly';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.videointelligence.v1.TextSegment = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.google.cloud.videointelligence.v1.TextSegment.repeatedFields_, null);
+};
+goog.inherits(proto.google.cloud.videointelligence.v1.TextSegment, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.videointelligence.v1.TextSegment.displayName = 'proto.google.cloud.videointelligence.v1.TextSegment';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.videointelligence.v1.TextFrame = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.cloud.videointelligence.v1.TextFrame, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.videointelligence.v1.TextFrame.displayName = 'proto.google.cloud.videointelligence.v1.TextFrame';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.videointelligence.v1.TextAnnotation = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.google.cloud.videointelligence.v1.TextAnnotation.repeatedFields_, null);
+};
+goog.inherits(proto.google.cloud.videointelligence.v1.TextAnnotation, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.videointelligence.v1.TextAnnotation.displayName = 'proto.google.cloud.videointelligence.v1.TextAnnotation';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingFrame = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.google.cloud.videointelligence.v1.ObjectTrackingFrame, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.videointelligence.v1.ObjectTrackingFrame.displayName = 'proto.google.cloud.videointelligence.v1.ObjectTrackingFrame';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation.repeatedFields_, proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation.oneofGroups_);
+};
+goog.inherits(proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation.displayName = 'proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation';
+}
+
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.google.cloud.videointelligence.v1.AnnotateVideoRequest.repeatedFields_ = [2];
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.videointelligence.v1.AnnotateVideoRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.videointelligence.v1.AnnotateVideoRequest.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.videointelligence.v1.AnnotateVideoRequest} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.AnnotateVideoRequest.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    inputUri: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    inputContent: msg.getInputContent_asB64(),
+    featuresList: (f = jspb.Message.getRepeatedField(msg, 2)) == null ? undefined : f,
+    videoContext: (f = msg.getVideoContext()) && proto.google.cloud.videointelligence.v1.VideoContext.toObject(includeInstance, f),
+    outputUri: jspb.Message.getFieldWithDefault(msg, 4, ""),
+    locationId: jspb.Message.getFieldWithDefault(msg, 5, "")
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.videointelligence.v1.AnnotateVideoRequest}
+ */
+proto.google.cloud.videointelligence.v1.AnnotateVideoRequest.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.videointelligence.v1.AnnotateVideoRequest;
+  return proto.google.cloud.videointelligence.v1.AnnotateVideoRequest.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.videointelligence.v1.AnnotateVideoRequest} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.videointelligence.v1.AnnotateVideoRequest}
+ */
+proto.google.cloud.videointelligence.v1.AnnotateVideoRequest.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setInputUri(value);
+      break;
+    case 6:
+      var value = /** @type {!Uint8Array} */ (reader.readBytes());
+      msg.setInputContent(value);
+      break;
+    case 2:
+      var value = /** @type {!Array<!proto.google.cloud.videointelligence.v1.Feature>} */ (reader.readPackedEnum());
+      msg.setFeaturesList(value);
+      break;
+    case 3:
+      var value = new proto.google.cloud.videointelligence.v1.VideoContext;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.VideoContext.deserializeBinaryFromReader);
+      msg.setVideoContext(value);
+      break;
+    case 4:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setOutputUri(value);
+      break;
+    case 5:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setLocationId(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.videointelligence.v1.AnnotateVideoRequest.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.videointelligence.v1.AnnotateVideoRequest.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.videointelligence.v1.AnnotateVideoRequest} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.AnnotateVideoRequest.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getInputUri();
+  if (f.length > 0) {
+    writer.writeString(
+      1,
+      f
+    );
+  }
+  f = message.getInputContent_asU8();
+  if (f.length > 0) {
+    writer.writeBytes(
+      6,
+      f
+    );
+  }
+  f = message.getFeaturesList();
+  if (f.length > 0) {
+    writer.writePackedEnum(
+      2,
+      f
+    );
+  }
+  f = message.getVideoContext();
+  if (f != null) {
+    writer.writeMessage(
+      3,
+      f,
+      proto.google.cloud.videointelligence.v1.VideoContext.serializeBinaryToWriter
+    );
+  }
+  f = message.getOutputUri();
+  if (f.length > 0) {
+    writer.writeString(
+      4,
+      f
+    );
+  }
+  f = message.getLocationId();
+  if (f.length > 0) {
+    writer.writeString(
+      5,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional string input_uri = 1;
+ * @return {string}
+ */
+proto.google.cloud.videointelligence.v1.AnnotateVideoRequest.prototype.getInputUri = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.videointelligence.v1.AnnotateVideoRequest.prototype.setInputUri = function(value) {
+  jspb.Message.setProto3StringField(this, 1, value);
+};
+
+
+/**
+ * optional bytes input_content = 6;
+ * @return {!(string|Uint8Array)}
+ */
+proto.google.cloud.videointelligence.v1.AnnotateVideoRequest.prototype.getInputContent = function() {
+  return /** @type {!(string|Uint8Array)} */ (jspb.Message.getFieldWithDefault(this, 6, ""));
+};
+
+
+/**
+ * optional bytes input_content = 6;
+ * This is a type-conversion wrapper around `getInputContent()`
+ * @return {string}
+ */
+proto.google.cloud.videointelligence.v1.AnnotateVideoRequest.prototype.getInputContent_asB64 = function() {
+  return /** @type {string} */ (jspb.Message.bytesAsB64(
+      this.getInputContent()));
+};
+
+
+/**
+ * optional bytes input_content = 6;
+ * Note that Uint8Array is not supported on all browsers.
+ * @see http://caniuse.com/Uint8Array
+ * This is a type-conversion wrapper around `getInputContent()`
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.videointelligence.v1.AnnotateVideoRequest.prototype.getInputContent_asU8 = function() {
+  return /** @type {!Uint8Array} */ (jspb.Message.bytesAsU8(
+      this.getInputContent()));
+};
+
+
+/** @param {!(string|Uint8Array)} value */
+proto.google.cloud.videointelligence.v1.AnnotateVideoRequest.prototype.setInputContent = function(value) {
+  jspb.Message.setProto3BytesField(this, 6, value);
+};
+
+
+/**
+ * repeated Feature features = 2;
+ * @return {!Array<!proto.google.cloud.videointelligence.v1.Feature>}
+ */
+proto.google.cloud.videointelligence.v1.AnnotateVideoRequest.prototype.getFeaturesList = function() {
+  return /** @type {!Array<!proto.google.cloud.videointelligence.v1.Feature>} */ (jspb.Message.getRepeatedField(this, 2));
+};
+
+
+/** @param {!Array<!proto.google.cloud.videointelligence.v1.Feature>} value */
+proto.google.cloud.videointelligence.v1.AnnotateVideoRequest.prototype.setFeaturesList = function(value) {
+  jspb.Message.setField(this, 2, value || []);
+};
+
+
+/**
+ * @param {!proto.google.cloud.videointelligence.v1.Feature} value
+ * @param {number=} opt_index
+ */
+proto.google.cloud.videointelligence.v1.AnnotateVideoRequest.prototype.addFeatures = function(value, opt_index) {
+  jspb.Message.addToRepeatedField(this, 2, value, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.videointelligence.v1.AnnotateVideoRequest.prototype.clearFeaturesList = function() {
+  this.setFeaturesList([]);
+};
+
+
+/**
+ * optional VideoContext video_context = 3;
+ * @return {?proto.google.cloud.videointelligence.v1.VideoContext}
+ */
+proto.google.cloud.videointelligence.v1.AnnotateVideoRequest.prototype.getVideoContext = function() {
+  return /** @type{?proto.google.cloud.videointelligence.v1.VideoContext} */ (
+    jspb.Message.getWrapperField(this, proto.google.cloud.videointelligence.v1.VideoContext, 3));
+};
+
+
+/** @param {?proto.google.cloud.videointelligence.v1.VideoContext|undefined} value */
+proto.google.cloud.videointelligence.v1.AnnotateVideoRequest.prototype.setVideoContext = function(value) {
+  jspb.Message.setWrapperField(this, 3, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.videointelligence.v1.AnnotateVideoRequest.prototype.clearVideoContext = function() {
+  this.setVideoContext(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.videointelligence.v1.AnnotateVideoRequest.prototype.hasVideoContext = function() {
+  return jspb.Message.getField(this, 3) != null;
+};
+
+
+/**
+ * optional string output_uri = 4;
+ * @return {string}
+ */
+proto.google.cloud.videointelligence.v1.AnnotateVideoRequest.prototype.getOutputUri = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 4, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.videointelligence.v1.AnnotateVideoRequest.prototype.setOutputUri = function(value) {
+  jspb.Message.setProto3StringField(this, 4, value);
+};
+
+
+/**
+ * optional string location_id = 5;
+ * @return {string}
+ */
+proto.google.cloud.videointelligence.v1.AnnotateVideoRequest.prototype.getLocationId = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 5, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.videointelligence.v1.AnnotateVideoRequest.prototype.setLocationId = function(value) {
+  jspb.Message.setProto3StringField(this, 5, value);
+};
+
+
+
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.google.cloud.videointelligence.v1.VideoContext.repeatedFields_ = [1];
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.videointelligence.v1.VideoContext.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.videointelligence.v1.VideoContext.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.videointelligence.v1.VideoContext} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.VideoContext.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    segmentsList: jspb.Message.toObjectList(msg.getSegmentsList(),
+    proto.google.cloud.videointelligence.v1.VideoSegment.toObject, includeInstance),
+    labelDetectionConfig: (f = msg.getLabelDetectionConfig()) && proto.google.cloud.videointelligence.v1.LabelDetectionConfig.toObject(includeInstance, f),
+    shotChangeDetectionConfig: (f = msg.getShotChangeDetectionConfig()) && proto.google.cloud.videointelligence.v1.ShotChangeDetectionConfig.toObject(includeInstance, f),
+    explicitContentDetectionConfig: (f = msg.getExplicitContentDetectionConfig()) && proto.google.cloud.videointelligence.v1.ExplicitContentDetectionConfig.toObject(includeInstance, f),
+    faceDetectionConfig: (f = msg.getFaceDetectionConfig()) && proto.google.cloud.videointelligence.v1.FaceDetectionConfig.toObject(includeInstance, f),
+    speechTranscriptionConfig: (f = msg.getSpeechTranscriptionConfig()) && proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig.toObject(includeInstance, f),
+    textDetectionConfig: (f = msg.getTextDetectionConfig()) && proto.google.cloud.videointelligence.v1.TextDetectionConfig.toObject(includeInstance, f),
+    objectTrackingConfig: (f = msg.getObjectTrackingConfig()) && proto.google.cloud.videointelligence.v1.ObjectTrackingConfig.toObject(includeInstance, f)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.videointelligence.v1.VideoContext}
+ */
+proto.google.cloud.videointelligence.v1.VideoContext.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.videointelligence.v1.VideoContext;
+  return proto.google.cloud.videointelligence.v1.VideoContext.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.videointelligence.v1.VideoContext} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.videointelligence.v1.VideoContext}
+ */
+proto.google.cloud.videointelligence.v1.VideoContext.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new proto.google.cloud.videointelligence.v1.VideoSegment;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.VideoSegment.deserializeBinaryFromReader);
+      msg.addSegments(value);
+      break;
+    case 2:
+      var value = new proto.google.cloud.videointelligence.v1.LabelDetectionConfig;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.LabelDetectionConfig.deserializeBinaryFromReader);
+      msg.setLabelDetectionConfig(value);
+      break;
+    case 3:
+      var value = new proto.google.cloud.videointelligence.v1.ShotChangeDetectionConfig;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.ShotChangeDetectionConfig.deserializeBinaryFromReader);
+      msg.setShotChangeDetectionConfig(value);
+      break;
+    case 4:
+      var value = new proto.google.cloud.videointelligence.v1.ExplicitContentDetectionConfig;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.ExplicitContentDetectionConfig.deserializeBinaryFromReader);
+      msg.setExplicitContentDetectionConfig(value);
+      break;
+    case 5:
+      var value = new proto.google.cloud.videointelligence.v1.FaceDetectionConfig;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.FaceDetectionConfig.deserializeBinaryFromReader);
+      msg.setFaceDetectionConfig(value);
+      break;
+    case 6:
+      var value = new proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig.deserializeBinaryFromReader);
+      msg.setSpeechTranscriptionConfig(value);
+      break;
+    case 8:
+      var value = new proto.google.cloud.videointelligence.v1.TextDetectionConfig;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.TextDetectionConfig.deserializeBinaryFromReader);
+      msg.setTextDetectionConfig(value);
+      break;
+    case 13:
+      var value = new proto.google.cloud.videointelligence.v1.ObjectTrackingConfig;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.ObjectTrackingConfig.deserializeBinaryFromReader);
+      msg.setObjectTrackingConfig(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.videointelligence.v1.VideoContext.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.videointelligence.v1.VideoContext.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.videointelligence.v1.VideoContext} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.VideoContext.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getSegmentsList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      1,
+      f,
+      proto.google.cloud.videointelligence.v1.VideoSegment.serializeBinaryToWriter
+    );
+  }
+  f = message.getLabelDetectionConfig();
+  if (f != null) {
+    writer.writeMessage(
+      2,
+      f,
+      proto.google.cloud.videointelligence.v1.LabelDetectionConfig.serializeBinaryToWriter
+    );
+  }
+  f = message.getShotChangeDetectionConfig();
+  if (f != null) {
+    writer.writeMessage(
+      3,
+      f,
+      proto.google.cloud.videointelligence.v1.ShotChangeDetectionConfig.serializeBinaryToWriter
+    );
+  }
+  f = message.getExplicitContentDetectionConfig();
+  if (f != null) {
+    writer.writeMessage(
+      4,
+      f,
+      proto.google.cloud.videointelligence.v1.ExplicitContentDetectionConfig.serializeBinaryToWriter
+    );
+  }
+  f = message.getFaceDetectionConfig();
+  if (f != null) {
+    writer.writeMessage(
+      5,
+      f,
+      proto.google.cloud.videointelligence.v1.FaceDetectionConfig.serializeBinaryToWriter
+    );
+  }
+  f = message.getSpeechTranscriptionConfig();
+  if (f != null) {
+    writer.writeMessage(
+      6,
+      f,
+      proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig.serializeBinaryToWriter
+    );
+  }
+  f = message.getTextDetectionConfig();
+  if (f != null) {
+    writer.writeMessage(
+      8,
+      f,
+      proto.google.cloud.videointelligence.v1.TextDetectionConfig.serializeBinaryToWriter
+    );
+  }
+  f = message.getObjectTrackingConfig();
+  if (f != null) {
+    writer.writeMessage(
+      13,
+      f,
+      proto.google.cloud.videointelligence.v1.ObjectTrackingConfig.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * repeated VideoSegment segments = 1;
+ * @return {!Array<!proto.google.cloud.videointelligence.v1.VideoSegment>}
+ */
+proto.google.cloud.videointelligence.v1.VideoContext.prototype.getSegmentsList = function() {
+  return /** @type{!Array<!proto.google.cloud.videointelligence.v1.VideoSegment>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.google.cloud.videointelligence.v1.VideoSegment, 1));
+};
+
+
+/** @param {!Array<!proto.google.cloud.videointelligence.v1.VideoSegment>} value */
+proto.google.cloud.videointelligence.v1.VideoContext.prototype.setSegmentsList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 1, value);
+};
+
+
+/**
+ * @param {!proto.google.cloud.videointelligence.v1.VideoSegment=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.cloud.videointelligence.v1.VideoSegment}
+ */
+proto.google.cloud.videointelligence.v1.VideoContext.prototype.addSegments = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 1, opt_value, proto.google.cloud.videointelligence.v1.VideoSegment, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.videointelligence.v1.VideoContext.prototype.clearSegmentsList = function() {
+  this.setSegmentsList([]);
+};
+
+
+/**
+ * optional LabelDetectionConfig label_detection_config = 2;
+ * @return {?proto.google.cloud.videointelligence.v1.LabelDetectionConfig}
+ */
+proto.google.cloud.videointelligence.v1.VideoContext.prototype.getLabelDetectionConfig = function() {
+  return /** @type{?proto.google.cloud.videointelligence.v1.LabelDetectionConfig} */ (
+    jspb.Message.getWrapperField(this, proto.google.cloud.videointelligence.v1.LabelDetectionConfig, 2));
+};
+
+
+/** @param {?proto.google.cloud.videointelligence.v1.LabelDetectionConfig|undefined} value */
+proto.google.cloud.videointelligence.v1.VideoContext.prototype.setLabelDetectionConfig = function(value) {
+  jspb.Message.setWrapperField(this, 2, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.videointelligence.v1.VideoContext.prototype.clearLabelDetectionConfig = function() {
+  this.setLabelDetectionConfig(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.videointelligence.v1.VideoContext.prototype.hasLabelDetectionConfig = function() {
+  return jspb.Message.getField(this, 2) != null;
+};
+
+
+/**
+ * optional ShotChangeDetectionConfig shot_change_detection_config = 3;
+ * @return {?proto.google.cloud.videointelligence.v1.ShotChangeDetectionConfig}
+ */
+proto.google.cloud.videointelligence.v1.VideoContext.prototype.getShotChangeDetectionConfig = function() {
+  return /** @type{?proto.google.cloud.videointelligence.v1.ShotChangeDetectionConfig} */ (
+    jspb.Message.getWrapperField(this, proto.google.cloud.videointelligence.v1.ShotChangeDetectionConfig, 3));
+};
+
+
+/** @param {?proto.google.cloud.videointelligence.v1.ShotChangeDetectionConfig|undefined} value */
+proto.google.cloud.videointelligence.v1.VideoContext.prototype.setShotChangeDetectionConfig = function(value) {
+  jspb.Message.setWrapperField(this, 3, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.videointelligence.v1.VideoContext.prototype.clearShotChangeDetectionConfig = function() {
+  this.setShotChangeDetectionConfig(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.videointelligence.v1.VideoContext.prototype.hasShotChangeDetectionConfig = function() {
+  return jspb.Message.getField(this, 3) != null;
+};
+
+
+/**
+ * optional ExplicitContentDetectionConfig explicit_content_detection_config = 4;
+ * @return {?proto.google.cloud.videointelligence.v1.ExplicitContentDetectionConfig}
+ */
+proto.google.cloud.videointelligence.v1.VideoContext.prototype.getExplicitContentDetectionConfig = function() {
+  return /** @type{?proto.google.cloud.videointelligence.v1.ExplicitContentDetectionConfig} */ (
+    jspb.Message.getWrapperField(this, proto.google.cloud.videointelligence.v1.ExplicitContentDetectionConfig, 4));
+};
+
+
+/** @param {?proto.google.cloud.videointelligence.v1.ExplicitContentDetectionConfig|undefined} value */
+proto.google.cloud.videointelligence.v1.VideoContext.prototype.setExplicitContentDetectionConfig = function(value) {
+  jspb.Message.setWrapperField(this, 4, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.videointelligence.v1.VideoContext.prototype.clearExplicitContentDetectionConfig = function() {
+  this.setExplicitContentDetectionConfig(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.videointelligence.v1.VideoContext.prototype.hasExplicitContentDetectionConfig = function() {
+  return jspb.Message.getField(this, 4) != null;
+};
+
+
+/**
+ * optional FaceDetectionConfig face_detection_config = 5;
+ * @return {?proto.google.cloud.videointelligence.v1.FaceDetectionConfig}
+ */
+proto.google.cloud.videointelligence.v1.VideoContext.prototype.getFaceDetectionConfig = function() {
+  return /** @type{?proto.google.cloud.videointelligence.v1.FaceDetectionConfig} */ (
+    jspb.Message.getWrapperField(this, proto.google.cloud.videointelligence.v1.FaceDetectionConfig, 5));
+};
+
+
+/** @param {?proto.google.cloud.videointelligence.v1.FaceDetectionConfig|undefined} value */
+proto.google.cloud.videointelligence.v1.VideoContext.prototype.setFaceDetectionConfig = function(value) {
+  jspb.Message.setWrapperField(this, 5, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.videointelligence.v1.VideoContext.prototype.clearFaceDetectionConfig = function() {
+  this.setFaceDetectionConfig(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.videointelligence.v1.VideoContext.prototype.hasFaceDetectionConfig = function() {
+  return jspb.Message.getField(this, 5) != null;
+};
+
+
+/**
+ * optional SpeechTranscriptionConfig speech_transcription_config = 6;
+ * @return {?proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig}
+ */
+proto.google.cloud.videointelligence.v1.VideoContext.prototype.getSpeechTranscriptionConfig = function() {
+  return /** @type{?proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig} */ (
+    jspb.Message.getWrapperField(this, proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig, 6));
+};
+
+
+/** @param {?proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig|undefined} value */
+proto.google.cloud.videointelligence.v1.VideoContext.prototype.setSpeechTranscriptionConfig = function(value) {
+  jspb.Message.setWrapperField(this, 6, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.videointelligence.v1.VideoContext.prototype.clearSpeechTranscriptionConfig = function() {
+  this.setSpeechTranscriptionConfig(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.videointelligence.v1.VideoContext.prototype.hasSpeechTranscriptionConfig = function() {
+  return jspb.Message.getField(this, 6) != null;
+};
+
+
+/**
+ * optional TextDetectionConfig text_detection_config = 8;
+ * @return {?proto.google.cloud.videointelligence.v1.TextDetectionConfig}
+ */
+proto.google.cloud.videointelligence.v1.VideoContext.prototype.getTextDetectionConfig = function() {
+  return /** @type{?proto.google.cloud.videointelligence.v1.TextDetectionConfig} */ (
+    jspb.Message.getWrapperField(this, proto.google.cloud.videointelligence.v1.TextDetectionConfig, 8));
+};
+
+
+/** @param {?proto.google.cloud.videointelligence.v1.TextDetectionConfig|undefined} value */
+proto.google.cloud.videointelligence.v1.VideoContext.prototype.setTextDetectionConfig = function(value) {
+  jspb.Message.setWrapperField(this, 8, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.videointelligence.v1.VideoContext.prototype.clearTextDetectionConfig = function() {
+  this.setTextDetectionConfig(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.videointelligence.v1.VideoContext.prototype.hasTextDetectionConfig = function() {
+  return jspb.Message.getField(this, 8) != null;
+};
+
+
+/**
+ * optional ObjectTrackingConfig object_tracking_config = 13;
+ * @return {?proto.google.cloud.videointelligence.v1.ObjectTrackingConfig}
+ */
+proto.google.cloud.videointelligence.v1.VideoContext.prototype.getObjectTrackingConfig = function() {
+  return /** @type{?proto.google.cloud.videointelligence.v1.ObjectTrackingConfig} */ (
+    jspb.Message.getWrapperField(this, proto.google.cloud.videointelligence.v1.ObjectTrackingConfig, 13));
+};
+
+
+/** @param {?proto.google.cloud.videointelligence.v1.ObjectTrackingConfig|undefined} value */
+proto.google.cloud.videointelligence.v1.VideoContext.prototype.setObjectTrackingConfig = function(value) {
+  jspb.Message.setWrapperField(this, 13, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.videointelligence.v1.VideoContext.prototype.clearObjectTrackingConfig = function() {
+  this.setObjectTrackingConfig(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.videointelligence.v1.VideoContext.prototype.hasObjectTrackingConfig = function() {
+  return jspb.Message.getField(this, 13) != null;
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.videointelligence.v1.LabelDetectionConfig.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.videointelligence.v1.LabelDetectionConfig.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.videointelligence.v1.LabelDetectionConfig} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.LabelDetectionConfig.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    labelDetectionMode: jspb.Message.getFieldWithDefault(msg, 1, 0),
+    stationaryCamera: jspb.Message.getBooleanFieldWithDefault(msg, 2, false),
+    model: jspb.Message.getFieldWithDefault(msg, 3, ""),
+    frameConfidenceThreshold: jspb.Message.getFloatingPointFieldWithDefault(msg, 4, 0.0),
+    videoConfidenceThreshold: jspb.Message.getFloatingPointFieldWithDefault(msg, 5, 0.0)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.videointelligence.v1.LabelDetectionConfig}
+ */
+proto.google.cloud.videointelligence.v1.LabelDetectionConfig.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.videointelligence.v1.LabelDetectionConfig;
+  return proto.google.cloud.videointelligence.v1.LabelDetectionConfig.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.videointelligence.v1.LabelDetectionConfig} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.videointelligence.v1.LabelDetectionConfig}
+ */
+proto.google.cloud.videointelligence.v1.LabelDetectionConfig.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {!proto.google.cloud.videointelligence.v1.LabelDetectionMode} */ (reader.readEnum());
+      msg.setLabelDetectionMode(value);
+      break;
+    case 2:
+      var value = /** @type {boolean} */ (reader.readBool());
+      msg.setStationaryCamera(value);
+      break;
+    case 3:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setModel(value);
+      break;
+    case 4:
+      var value = /** @type {number} */ (reader.readFloat());
+      msg.setFrameConfidenceThreshold(value);
+      break;
+    case 5:
+      var value = /** @type {number} */ (reader.readFloat());
+      msg.setVideoConfidenceThreshold(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.videointelligence.v1.LabelDetectionConfig.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.videointelligence.v1.LabelDetectionConfig.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.videointelligence.v1.LabelDetectionConfig} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.LabelDetectionConfig.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getLabelDetectionMode();
+  if (f !== 0.0) {
+    writer.writeEnum(
+      1,
+      f
+    );
+  }
+  f = message.getStationaryCamera();
+  if (f) {
+    writer.writeBool(
+      2,
+      f
+    );
+  }
+  f = message.getModel();
+  if (f.length > 0) {
+    writer.writeString(
+      3,
+      f
+    );
+  }
+  f = message.getFrameConfidenceThreshold();
+  if (f !== 0.0) {
+    writer.writeFloat(
+      4,
+      f
+    );
+  }
+  f = message.getVideoConfidenceThreshold();
+  if (f !== 0.0) {
+    writer.writeFloat(
+      5,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional LabelDetectionMode label_detection_mode = 1;
+ * @return {!proto.google.cloud.videointelligence.v1.LabelDetectionMode}
+ */
+proto.google.cloud.videointelligence.v1.LabelDetectionConfig.prototype.getLabelDetectionMode = function() {
+  return /** @type {!proto.google.cloud.videointelligence.v1.LabelDetectionMode} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
+};
+
+
+/** @param {!proto.google.cloud.videointelligence.v1.LabelDetectionMode} value */
+proto.google.cloud.videointelligence.v1.LabelDetectionConfig.prototype.setLabelDetectionMode = function(value) {
+  jspb.Message.setProto3EnumField(this, 1, value);
+};
+
+
+/**
+ * optional bool stationary_camera = 2;
+ * @return {boolean}
+ */
+proto.google.cloud.videointelligence.v1.LabelDetectionConfig.prototype.getStationaryCamera = function() {
+  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 2, false));
+};
+
+
+/** @param {boolean} value */
+proto.google.cloud.videointelligence.v1.LabelDetectionConfig.prototype.setStationaryCamera = function(value) {
+  jspb.Message.setProto3BooleanField(this, 2, value);
+};
+
+
+/**
+ * optional string model = 3;
+ * @return {string}
+ */
+proto.google.cloud.videointelligence.v1.LabelDetectionConfig.prototype.getModel = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.videointelligence.v1.LabelDetectionConfig.prototype.setModel = function(value) {
+  jspb.Message.setProto3StringField(this, 3, value);
+};
+
+
+/**
+ * optional float frame_confidence_threshold = 4;
+ * @return {number}
+ */
+proto.google.cloud.videointelligence.v1.LabelDetectionConfig.prototype.getFrameConfidenceThreshold = function() {
+  return /** @type {number} */ (jspb.Message.getFloatingPointFieldWithDefault(this, 4, 0.0));
+};
+
+
+/** @param {number} value */
+proto.google.cloud.videointelligence.v1.LabelDetectionConfig.prototype.setFrameConfidenceThreshold = function(value) {
+  jspb.Message.setProto3FloatField(this, 4, value);
+};
+
+
+/**
+ * optional float video_confidence_threshold = 5;
+ * @return {number}
+ */
+proto.google.cloud.videointelligence.v1.LabelDetectionConfig.prototype.getVideoConfidenceThreshold = function() {
+  return /** @type {number} */ (jspb.Message.getFloatingPointFieldWithDefault(this, 5, 0.0));
+};
+
+
+/** @param {number} value */
+proto.google.cloud.videointelligence.v1.LabelDetectionConfig.prototype.setVideoConfidenceThreshold = function(value) {
+  jspb.Message.setProto3FloatField(this, 5, value);
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.videointelligence.v1.ShotChangeDetectionConfig.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.videointelligence.v1.ShotChangeDetectionConfig.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.videointelligence.v1.ShotChangeDetectionConfig} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.ShotChangeDetectionConfig.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    model: jspb.Message.getFieldWithDefault(msg, 1, "")
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.videointelligence.v1.ShotChangeDetectionConfig}
+ */
+proto.google.cloud.videointelligence.v1.ShotChangeDetectionConfig.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.videointelligence.v1.ShotChangeDetectionConfig;
+  return proto.google.cloud.videointelligence.v1.ShotChangeDetectionConfig.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.videointelligence.v1.ShotChangeDetectionConfig} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.videointelligence.v1.ShotChangeDetectionConfig}
+ */
+proto.google.cloud.videointelligence.v1.ShotChangeDetectionConfig.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setModel(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.videointelligence.v1.ShotChangeDetectionConfig.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.videointelligence.v1.ShotChangeDetectionConfig.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.videointelligence.v1.ShotChangeDetectionConfig} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.ShotChangeDetectionConfig.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getModel();
+  if (f.length > 0) {
+    writer.writeString(
+      1,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional string model = 1;
+ * @return {string}
+ */
+proto.google.cloud.videointelligence.v1.ShotChangeDetectionConfig.prototype.getModel = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.videointelligence.v1.ShotChangeDetectionConfig.prototype.setModel = function(value) {
+  jspb.Message.setProto3StringField(this, 1, value);
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingConfig.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.videointelligence.v1.ObjectTrackingConfig.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.videointelligence.v1.ObjectTrackingConfig} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingConfig.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    model: jspb.Message.getFieldWithDefault(msg, 1, "")
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.videointelligence.v1.ObjectTrackingConfig}
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingConfig.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.videointelligence.v1.ObjectTrackingConfig;
+  return proto.google.cloud.videointelligence.v1.ObjectTrackingConfig.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.videointelligence.v1.ObjectTrackingConfig} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.videointelligence.v1.ObjectTrackingConfig}
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingConfig.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setModel(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingConfig.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.videointelligence.v1.ObjectTrackingConfig.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.videointelligence.v1.ObjectTrackingConfig} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingConfig.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getModel();
+  if (f.length > 0) {
+    writer.writeString(
+      1,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional string model = 1;
+ * @return {string}
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingConfig.prototype.getModel = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.videointelligence.v1.ObjectTrackingConfig.prototype.setModel = function(value) {
+  jspb.Message.setProto3StringField(this, 1, value);
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.videointelligence.v1.FaceDetectionConfig.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.videointelligence.v1.FaceDetectionConfig.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.videointelligence.v1.FaceDetectionConfig} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.FaceDetectionConfig.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    model: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    includeBoundingBoxes: jspb.Message.getBooleanFieldWithDefault(msg, 2, false)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.videointelligence.v1.FaceDetectionConfig}
+ */
+proto.google.cloud.videointelligence.v1.FaceDetectionConfig.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.videointelligence.v1.FaceDetectionConfig;
+  return proto.google.cloud.videointelligence.v1.FaceDetectionConfig.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.videointelligence.v1.FaceDetectionConfig} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.videointelligence.v1.FaceDetectionConfig}
+ */
+proto.google.cloud.videointelligence.v1.FaceDetectionConfig.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setModel(value);
+      break;
+    case 2:
+      var value = /** @type {boolean} */ (reader.readBool());
+      msg.setIncludeBoundingBoxes(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.videointelligence.v1.FaceDetectionConfig.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.videointelligence.v1.FaceDetectionConfig.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.videointelligence.v1.FaceDetectionConfig} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.FaceDetectionConfig.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getModel();
+  if (f.length > 0) {
+    writer.writeString(
+      1,
+      f
+    );
+  }
+  f = message.getIncludeBoundingBoxes();
+  if (f) {
+    writer.writeBool(
+      2,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional string model = 1;
+ * @return {string}
+ */
+proto.google.cloud.videointelligence.v1.FaceDetectionConfig.prototype.getModel = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.videointelligence.v1.FaceDetectionConfig.prototype.setModel = function(value) {
+  jspb.Message.setProto3StringField(this, 1, value);
+};
+
+
+/**
+ * optional bool include_bounding_boxes = 2;
+ * @return {boolean}
+ */
+proto.google.cloud.videointelligence.v1.FaceDetectionConfig.prototype.getIncludeBoundingBoxes = function() {
+  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 2, false));
+};
+
+
+/** @param {boolean} value */
+proto.google.cloud.videointelligence.v1.FaceDetectionConfig.prototype.setIncludeBoundingBoxes = function(value) {
+  jspb.Message.setProto3BooleanField(this, 2, value);
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.videointelligence.v1.ExplicitContentDetectionConfig.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.videointelligence.v1.ExplicitContentDetectionConfig.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.videointelligence.v1.ExplicitContentDetectionConfig} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.ExplicitContentDetectionConfig.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    model: jspb.Message.getFieldWithDefault(msg, 1, "")
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.videointelligence.v1.ExplicitContentDetectionConfig}
+ */
+proto.google.cloud.videointelligence.v1.ExplicitContentDetectionConfig.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.videointelligence.v1.ExplicitContentDetectionConfig;
+  return proto.google.cloud.videointelligence.v1.ExplicitContentDetectionConfig.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.videointelligence.v1.ExplicitContentDetectionConfig} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.videointelligence.v1.ExplicitContentDetectionConfig}
+ */
+proto.google.cloud.videointelligence.v1.ExplicitContentDetectionConfig.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setModel(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.videointelligence.v1.ExplicitContentDetectionConfig.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.videointelligence.v1.ExplicitContentDetectionConfig.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.videointelligence.v1.ExplicitContentDetectionConfig} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.ExplicitContentDetectionConfig.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getModel();
+  if (f.length > 0) {
+    writer.writeString(
+      1,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional string model = 1;
+ * @return {string}
+ */
+proto.google.cloud.videointelligence.v1.ExplicitContentDetectionConfig.prototype.getModel = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.videointelligence.v1.ExplicitContentDetectionConfig.prototype.setModel = function(value) {
+  jspb.Message.setProto3StringField(this, 1, value);
+};
+
+
+
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.google.cloud.videointelligence.v1.TextDetectionConfig.repeatedFields_ = [1];
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.videointelligence.v1.TextDetectionConfig.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.videointelligence.v1.TextDetectionConfig.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.videointelligence.v1.TextDetectionConfig} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.TextDetectionConfig.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    languageHintsList: (f = jspb.Message.getRepeatedField(msg, 1)) == null ? undefined : f,
+    model: jspb.Message.getFieldWithDefault(msg, 2, "")
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.videointelligence.v1.TextDetectionConfig}
+ */
+proto.google.cloud.videointelligence.v1.TextDetectionConfig.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.videointelligence.v1.TextDetectionConfig;
+  return proto.google.cloud.videointelligence.v1.TextDetectionConfig.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.videointelligence.v1.TextDetectionConfig} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.videointelligence.v1.TextDetectionConfig}
+ */
+proto.google.cloud.videointelligence.v1.TextDetectionConfig.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.addLanguageHints(value);
+      break;
+    case 2:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setModel(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.videointelligence.v1.TextDetectionConfig.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.videointelligence.v1.TextDetectionConfig.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.videointelligence.v1.TextDetectionConfig} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.TextDetectionConfig.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getLanguageHintsList();
+  if (f.length > 0) {
+    writer.writeRepeatedString(
+      1,
+      f
+    );
+  }
+  f = message.getModel();
+  if (f.length > 0) {
+    writer.writeString(
+      2,
+      f
+    );
+  }
+};
+
+
+/**
+ * repeated string language_hints = 1;
+ * @return {!Array<string>}
+ */
+proto.google.cloud.videointelligence.v1.TextDetectionConfig.prototype.getLanguageHintsList = function() {
+  return /** @type {!Array<string>} */ (jspb.Message.getRepeatedField(this, 1));
+};
+
+
+/** @param {!Array<string>} value */
+proto.google.cloud.videointelligence.v1.TextDetectionConfig.prototype.setLanguageHintsList = function(value) {
+  jspb.Message.setField(this, 1, value || []);
+};
+
+
+/**
+ * @param {string} value
+ * @param {number=} opt_index
+ */
+proto.google.cloud.videointelligence.v1.TextDetectionConfig.prototype.addLanguageHints = function(value, opt_index) {
+  jspb.Message.addToRepeatedField(this, 1, value, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.videointelligence.v1.TextDetectionConfig.prototype.clearLanguageHintsList = function() {
+  this.setLanguageHintsList([]);
+};
+
+
+/**
+ * optional string model = 2;
+ * @return {string}
+ */
+proto.google.cloud.videointelligence.v1.TextDetectionConfig.prototype.getModel = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.videointelligence.v1.TextDetectionConfig.prototype.setModel = function(value) {
+  jspb.Message.setProto3StringField(this, 2, value);
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.videointelligence.v1.VideoSegment.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.videointelligence.v1.VideoSegment.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.videointelligence.v1.VideoSegment} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.VideoSegment.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    startTimeOffset: (f = msg.getStartTimeOffset()) && google_protobuf_duration_pb.Duration.toObject(includeInstance, f),
+    endTimeOffset: (f = msg.getEndTimeOffset()) && google_protobuf_duration_pb.Duration.toObject(includeInstance, f)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.videointelligence.v1.VideoSegment}
+ */
+proto.google.cloud.videointelligence.v1.VideoSegment.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.videointelligence.v1.VideoSegment;
+  return proto.google.cloud.videointelligence.v1.VideoSegment.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.videointelligence.v1.VideoSegment} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.videointelligence.v1.VideoSegment}
+ */
+proto.google.cloud.videointelligence.v1.VideoSegment.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new google_protobuf_duration_pb.Duration;
+      reader.readMessage(value,google_protobuf_duration_pb.Duration.deserializeBinaryFromReader);
+      msg.setStartTimeOffset(value);
+      break;
+    case 2:
+      var value = new google_protobuf_duration_pb.Duration;
+      reader.readMessage(value,google_protobuf_duration_pb.Duration.deserializeBinaryFromReader);
+      msg.setEndTimeOffset(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.videointelligence.v1.VideoSegment.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.videointelligence.v1.VideoSegment.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.videointelligence.v1.VideoSegment} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.VideoSegment.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getStartTimeOffset();
+  if (f != null) {
+    writer.writeMessage(
+      1,
+      f,
+      google_protobuf_duration_pb.Duration.serializeBinaryToWriter
+    );
+  }
+  f = message.getEndTimeOffset();
+  if (f != null) {
+    writer.writeMessage(
+      2,
+      f,
+      google_protobuf_duration_pb.Duration.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional google.protobuf.Duration start_time_offset = 1;
+ * @return {?proto.google.protobuf.Duration}
+ */
+proto.google.cloud.videointelligence.v1.VideoSegment.prototype.getStartTimeOffset = function() {
+  return /** @type{?proto.google.protobuf.Duration} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_duration_pb.Duration, 1));
+};
+
+
+/** @param {?proto.google.protobuf.Duration|undefined} value */
+proto.google.cloud.videointelligence.v1.VideoSegment.prototype.setStartTimeOffset = function(value) {
+  jspb.Message.setWrapperField(this, 1, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.videointelligence.v1.VideoSegment.prototype.clearStartTimeOffset = function() {
+  this.setStartTimeOffset(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.videointelligence.v1.VideoSegment.prototype.hasStartTimeOffset = function() {
+  return jspb.Message.getField(this, 1) != null;
+};
+
+
+/**
+ * optional google.protobuf.Duration end_time_offset = 2;
+ * @return {?proto.google.protobuf.Duration}
+ */
+proto.google.cloud.videointelligence.v1.VideoSegment.prototype.getEndTimeOffset = function() {
+  return /** @type{?proto.google.protobuf.Duration} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_duration_pb.Duration, 2));
+};
+
+
+/** @param {?proto.google.protobuf.Duration|undefined} value */
+proto.google.cloud.videointelligence.v1.VideoSegment.prototype.setEndTimeOffset = function(value) {
+  jspb.Message.setWrapperField(this, 2, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.videointelligence.v1.VideoSegment.prototype.clearEndTimeOffset = function() {
+  this.setEndTimeOffset(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.videointelligence.v1.VideoSegment.prototype.hasEndTimeOffset = function() {
+  return jspb.Message.getField(this, 2) != null;
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.videointelligence.v1.LabelSegment.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.videointelligence.v1.LabelSegment.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.videointelligence.v1.LabelSegment} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.LabelSegment.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    segment: (f = msg.getSegment()) && proto.google.cloud.videointelligence.v1.VideoSegment.toObject(includeInstance, f),
+    confidence: jspb.Message.getFloatingPointFieldWithDefault(msg, 2, 0.0)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.videointelligence.v1.LabelSegment}
+ */
+proto.google.cloud.videointelligence.v1.LabelSegment.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.videointelligence.v1.LabelSegment;
+  return proto.google.cloud.videointelligence.v1.LabelSegment.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.videointelligence.v1.LabelSegment} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.videointelligence.v1.LabelSegment}
+ */
+proto.google.cloud.videointelligence.v1.LabelSegment.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new proto.google.cloud.videointelligence.v1.VideoSegment;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.VideoSegment.deserializeBinaryFromReader);
+      msg.setSegment(value);
+      break;
+    case 2:
+      var value = /** @type {number} */ (reader.readFloat());
+      msg.setConfidence(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.videointelligence.v1.LabelSegment.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.videointelligence.v1.LabelSegment.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.videointelligence.v1.LabelSegment} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.LabelSegment.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getSegment();
+  if (f != null) {
+    writer.writeMessage(
+      1,
+      f,
+      proto.google.cloud.videointelligence.v1.VideoSegment.serializeBinaryToWriter
+    );
+  }
+  f = message.getConfidence();
+  if (f !== 0.0) {
+    writer.writeFloat(
+      2,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional VideoSegment segment = 1;
+ * @return {?proto.google.cloud.videointelligence.v1.VideoSegment}
+ */
+proto.google.cloud.videointelligence.v1.LabelSegment.prototype.getSegment = function() {
+  return /** @type{?proto.google.cloud.videointelligence.v1.VideoSegment} */ (
+    jspb.Message.getWrapperField(this, proto.google.cloud.videointelligence.v1.VideoSegment, 1));
+};
+
+
+/** @param {?proto.google.cloud.videointelligence.v1.VideoSegment|undefined} value */
+proto.google.cloud.videointelligence.v1.LabelSegment.prototype.setSegment = function(value) {
+  jspb.Message.setWrapperField(this, 1, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.videointelligence.v1.LabelSegment.prototype.clearSegment = function() {
+  this.setSegment(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.videointelligence.v1.LabelSegment.prototype.hasSegment = function() {
+  return jspb.Message.getField(this, 1) != null;
+};
+
+
+/**
+ * optional float confidence = 2;
+ * @return {number}
+ */
+proto.google.cloud.videointelligence.v1.LabelSegment.prototype.getConfidence = function() {
+  return /** @type {number} */ (jspb.Message.getFloatingPointFieldWithDefault(this, 2, 0.0));
+};
+
+
+/** @param {number} value */
+proto.google.cloud.videointelligence.v1.LabelSegment.prototype.setConfidence = function(value) {
+  jspb.Message.setProto3FloatField(this, 2, value);
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.videointelligence.v1.LabelFrame.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.videointelligence.v1.LabelFrame.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.videointelligence.v1.LabelFrame} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.LabelFrame.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    timeOffset: (f = msg.getTimeOffset()) && google_protobuf_duration_pb.Duration.toObject(includeInstance, f),
+    confidence: jspb.Message.getFloatingPointFieldWithDefault(msg, 2, 0.0)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.videointelligence.v1.LabelFrame}
+ */
+proto.google.cloud.videointelligence.v1.LabelFrame.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.videointelligence.v1.LabelFrame;
+  return proto.google.cloud.videointelligence.v1.LabelFrame.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.videointelligence.v1.LabelFrame} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.videointelligence.v1.LabelFrame}
+ */
+proto.google.cloud.videointelligence.v1.LabelFrame.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new google_protobuf_duration_pb.Duration;
+      reader.readMessage(value,google_protobuf_duration_pb.Duration.deserializeBinaryFromReader);
+      msg.setTimeOffset(value);
+      break;
+    case 2:
+      var value = /** @type {number} */ (reader.readFloat());
+      msg.setConfidence(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.videointelligence.v1.LabelFrame.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.videointelligence.v1.LabelFrame.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.videointelligence.v1.LabelFrame} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.LabelFrame.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getTimeOffset();
+  if (f != null) {
+    writer.writeMessage(
+      1,
+      f,
+      google_protobuf_duration_pb.Duration.serializeBinaryToWriter
+    );
+  }
+  f = message.getConfidence();
+  if (f !== 0.0) {
+    writer.writeFloat(
+      2,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional google.protobuf.Duration time_offset = 1;
+ * @return {?proto.google.protobuf.Duration}
+ */
+proto.google.cloud.videointelligence.v1.LabelFrame.prototype.getTimeOffset = function() {
+  return /** @type{?proto.google.protobuf.Duration} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_duration_pb.Duration, 1));
+};
+
+
+/** @param {?proto.google.protobuf.Duration|undefined} value */
+proto.google.cloud.videointelligence.v1.LabelFrame.prototype.setTimeOffset = function(value) {
+  jspb.Message.setWrapperField(this, 1, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.videointelligence.v1.LabelFrame.prototype.clearTimeOffset = function() {
+  this.setTimeOffset(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.videointelligence.v1.LabelFrame.prototype.hasTimeOffset = function() {
+  return jspb.Message.getField(this, 1) != null;
+};
+
+
+/**
+ * optional float confidence = 2;
+ * @return {number}
+ */
+proto.google.cloud.videointelligence.v1.LabelFrame.prototype.getConfidence = function() {
+  return /** @type {number} */ (jspb.Message.getFloatingPointFieldWithDefault(this, 2, 0.0));
+};
+
+
+/** @param {number} value */
+proto.google.cloud.videointelligence.v1.LabelFrame.prototype.setConfidence = function(value) {
+  jspb.Message.setProto3FloatField(this, 2, value);
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.videointelligence.v1.Entity.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.videointelligence.v1.Entity.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.videointelligence.v1.Entity} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.Entity.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    entityId: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    description: jspb.Message.getFieldWithDefault(msg, 2, ""),
+    languageCode: jspb.Message.getFieldWithDefault(msg, 3, "")
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.videointelligence.v1.Entity}
+ */
+proto.google.cloud.videointelligence.v1.Entity.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.videointelligence.v1.Entity;
+  return proto.google.cloud.videointelligence.v1.Entity.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.videointelligence.v1.Entity} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.videointelligence.v1.Entity}
+ */
+proto.google.cloud.videointelligence.v1.Entity.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setEntityId(value);
+      break;
+    case 2:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setDescription(value);
+      break;
+    case 3:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setLanguageCode(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.videointelligence.v1.Entity.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.videointelligence.v1.Entity.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.videointelligence.v1.Entity} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.Entity.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getEntityId();
+  if (f.length > 0) {
+    writer.writeString(
+      1,
+      f
+    );
+  }
+  f = message.getDescription();
+  if (f.length > 0) {
+    writer.writeString(
+      2,
+      f
+    );
+  }
+  f = message.getLanguageCode();
+  if (f.length > 0) {
+    writer.writeString(
+      3,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional string entity_id = 1;
+ * @return {string}
+ */
+proto.google.cloud.videointelligence.v1.Entity.prototype.getEntityId = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.videointelligence.v1.Entity.prototype.setEntityId = function(value) {
+  jspb.Message.setProto3StringField(this, 1, value);
+};
+
+
+/**
+ * optional string description = 2;
+ * @return {string}
+ */
+proto.google.cloud.videointelligence.v1.Entity.prototype.getDescription = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.videointelligence.v1.Entity.prototype.setDescription = function(value) {
+  jspb.Message.setProto3StringField(this, 2, value);
+};
+
+
+/**
+ * optional string language_code = 3;
+ * @return {string}
+ */
+proto.google.cloud.videointelligence.v1.Entity.prototype.getLanguageCode = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.videointelligence.v1.Entity.prototype.setLanguageCode = function(value) {
+  jspb.Message.setProto3StringField(this, 3, value);
+};
+
+
+
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.google.cloud.videointelligence.v1.LabelAnnotation.repeatedFields_ = [2,3,4];
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.videointelligence.v1.LabelAnnotation.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.videointelligence.v1.LabelAnnotation.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.videointelligence.v1.LabelAnnotation} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.LabelAnnotation.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    entity: (f = msg.getEntity()) && proto.google.cloud.videointelligence.v1.Entity.toObject(includeInstance, f),
+    categoryEntitiesList: jspb.Message.toObjectList(msg.getCategoryEntitiesList(),
+    proto.google.cloud.videointelligence.v1.Entity.toObject, includeInstance),
+    segmentsList: jspb.Message.toObjectList(msg.getSegmentsList(),
+    proto.google.cloud.videointelligence.v1.LabelSegment.toObject, includeInstance),
+    framesList: jspb.Message.toObjectList(msg.getFramesList(),
+    proto.google.cloud.videointelligence.v1.LabelFrame.toObject, includeInstance)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.videointelligence.v1.LabelAnnotation}
+ */
+proto.google.cloud.videointelligence.v1.LabelAnnotation.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.videointelligence.v1.LabelAnnotation;
+  return proto.google.cloud.videointelligence.v1.LabelAnnotation.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.videointelligence.v1.LabelAnnotation} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.videointelligence.v1.LabelAnnotation}
+ */
+proto.google.cloud.videointelligence.v1.LabelAnnotation.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new proto.google.cloud.videointelligence.v1.Entity;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.Entity.deserializeBinaryFromReader);
+      msg.setEntity(value);
+      break;
+    case 2:
+      var value = new proto.google.cloud.videointelligence.v1.Entity;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.Entity.deserializeBinaryFromReader);
+      msg.addCategoryEntities(value);
+      break;
+    case 3:
+      var value = new proto.google.cloud.videointelligence.v1.LabelSegment;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.LabelSegment.deserializeBinaryFromReader);
+      msg.addSegments(value);
+      break;
+    case 4:
+      var value = new proto.google.cloud.videointelligence.v1.LabelFrame;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.LabelFrame.deserializeBinaryFromReader);
+      msg.addFrames(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.videointelligence.v1.LabelAnnotation.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.videointelligence.v1.LabelAnnotation.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.videointelligence.v1.LabelAnnotation} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.LabelAnnotation.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getEntity();
+  if (f != null) {
+    writer.writeMessage(
+      1,
+      f,
+      proto.google.cloud.videointelligence.v1.Entity.serializeBinaryToWriter
+    );
+  }
+  f = message.getCategoryEntitiesList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      2,
+      f,
+      proto.google.cloud.videointelligence.v1.Entity.serializeBinaryToWriter
+    );
+  }
+  f = message.getSegmentsList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      3,
+      f,
+      proto.google.cloud.videointelligence.v1.LabelSegment.serializeBinaryToWriter
+    );
+  }
+  f = message.getFramesList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      4,
+      f,
+      proto.google.cloud.videointelligence.v1.LabelFrame.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional Entity entity = 1;
+ * @return {?proto.google.cloud.videointelligence.v1.Entity}
+ */
+proto.google.cloud.videointelligence.v1.LabelAnnotation.prototype.getEntity = function() {
+  return /** @type{?proto.google.cloud.videointelligence.v1.Entity} */ (
+    jspb.Message.getWrapperField(this, proto.google.cloud.videointelligence.v1.Entity, 1));
+};
+
+
+/** @param {?proto.google.cloud.videointelligence.v1.Entity|undefined} value */
+proto.google.cloud.videointelligence.v1.LabelAnnotation.prototype.setEntity = function(value) {
+  jspb.Message.setWrapperField(this, 1, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.videointelligence.v1.LabelAnnotation.prototype.clearEntity = function() {
+  this.setEntity(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.videointelligence.v1.LabelAnnotation.prototype.hasEntity = function() {
+  return jspb.Message.getField(this, 1) != null;
+};
+
+
+/**
+ * repeated Entity category_entities = 2;
+ * @return {!Array<!proto.google.cloud.videointelligence.v1.Entity>}
+ */
+proto.google.cloud.videointelligence.v1.LabelAnnotation.prototype.getCategoryEntitiesList = function() {
+  return /** @type{!Array<!proto.google.cloud.videointelligence.v1.Entity>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.google.cloud.videointelligence.v1.Entity, 2));
+};
+
+
+/** @param {!Array<!proto.google.cloud.videointelligence.v1.Entity>} value */
+proto.google.cloud.videointelligence.v1.LabelAnnotation.prototype.setCategoryEntitiesList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 2, value);
+};
+
+
+/**
+ * @param {!proto.google.cloud.videointelligence.v1.Entity=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.cloud.videointelligence.v1.Entity}
+ */
+proto.google.cloud.videointelligence.v1.LabelAnnotation.prototype.addCategoryEntities = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 2, opt_value, proto.google.cloud.videointelligence.v1.Entity, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.videointelligence.v1.LabelAnnotation.prototype.clearCategoryEntitiesList = function() {
+  this.setCategoryEntitiesList([]);
+};
+
+
+/**
+ * repeated LabelSegment segments = 3;
+ * @return {!Array<!proto.google.cloud.videointelligence.v1.LabelSegment>}
+ */
+proto.google.cloud.videointelligence.v1.LabelAnnotation.prototype.getSegmentsList = function() {
+  return /** @type{!Array<!proto.google.cloud.videointelligence.v1.LabelSegment>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.google.cloud.videointelligence.v1.LabelSegment, 3));
+};
+
+
+/** @param {!Array<!proto.google.cloud.videointelligence.v1.LabelSegment>} value */
+proto.google.cloud.videointelligence.v1.LabelAnnotation.prototype.setSegmentsList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 3, value);
+};
+
+
+/**
+ * @param {!proto.google.cloud.videointelligence.v1.LabelSegment=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.cloud.videointelligence.v1.LabelSegment}
+ */
+proto.google.cloud.videointelligence.v1.LabelAnnotation.prototype.addSegments = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 3, opt_value, proto.google.cloud.videointelligence.v1.LabelSegment, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.videointelligence.v1.LabelAnnotation.prototype.clearSegmentsList = function() {
+  this.setSegmentsList([]);
+};
+
+
+/**
+ * repeated LabelFrame frames = 4;
+ * @return {!Array<!proto.google.cloud.videointelligence.v1.LabelFrame>}
+ */
+proto.google.cloud.videointelligence.v1.LabelAnnotation.prototype.getFramesList = function() {
+  return /** @type{!Array<!proto.google.cloud.videointelligence.v1.LabelFrame>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.google.cloud.videointelligence.v1.LabelFrame, 4));
+};
+
+
+/** @param {!Array<!proto.google.cloud.videointelligence.v1.LabelFrame>} value */
+proto.google.cloud.videointelligence.v1.LabelAnnotation.prototype.setFramesList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 4, value);
+};
+
+
+/**
+ * @param {!proto.google.cloud.videointelligence.v1.LabelFrame=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.cloud.videointelligence.v1.LabelFrame}
+ */
+proto.google.cloud.videointelligence.v1.LabelAnnotation.prototype.addFrames = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 4, opt_value, proto.google.cloud.videointelligence.v1.LabelFrame, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.videointelligence.v1.LabelAnnotation.prototype.clearFramesList = function() {
+  this.setFramesList([]);
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.videointelligence.v1.ExplicitContentFrame.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.videointelligence.v1.ExplicitContentFrame.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.videointelligence.v1.ExplicitContentFrame} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.ExplicitContentFrame.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    timeOffset: (f = msg.getTimeOffset()) && google_protobuf_duration_pb.Duration.toObject(includeInstance, f),
+    pornographyLikelihood: jspb.Message.getFieldWithDefault(msg, 2, 0)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.videointelligence.v1.ExplicitContentFrame}
+ */
+proto.google.cloud.videointelligence.v1.ExplicitContentFrame.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.videointelligence.v1.ExplicitContentFrame;
+  return proto.google.cloud.videointelligence.v1.ExplicitContentFrame.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.videointelligence.v1.ExplicitContentFrame} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.videointelligence.v1.ExplicitContentFrame}
+ */
+proto.google.cloud.videointelligence.v1.ExplicitContentFrame.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new google_protobuf_duration_pb.Duration;
+      reader.readMessage(value,google_protobuf_duration_pb.Duration.deserializeBinaryFromReader);
+      msg.setTimeOffset(value);
+      break;
+    case 2:
+      var value = /** @type {!proto.google.cloud.videointelligence.v1.Likelihood} */ (reader.readEnum());
+      msg.setPornographyLikelihood(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.videointelligence.v1.ExplicitContentFrame.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.videointelligence.v1.ExplicitContentFrame.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.videointelligence.v1.ExplicitContentFrame} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.ExplicitContentFrame.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getTimeOffset();
+  if (f != null) {
+    writer.writeMessage(
+      1,
+      f,
+      google_protobuf_duration_pb.Duration.serializeBinaryToWriter
+    );
+  }
+  f = message.getPornographyLikelihood();
+  if (f !== 0.0) {
+    writer.writeEnum(
+      2,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional google.protobuf.Duration time_offset = 1;
+ * @return {?proto.google.protobuf.Duration}
+ */
+proto.google.cloud.videointelligence.v1.ExplicitContentFrame.prototype.getTimeOffset = function() {
+  return /** @type{?proto.google.protobuf.Duration} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_duration_pb.Duration, 1));
+};
+
+
+/** @param {?proto.google.protobuf.Duration|undefined} value */
+proto.google.cloud.videointelligence.v1.ExplicitContentFrame.prototype.setTimeOffset = function(value) {
+  jspb.Message.setWrapperField(this, 1, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.videointelligence.v1.ExplicitContentFrame.prototype.clearTimeOffset = function() {
+  this.setTimeOffset(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.videointelligence.v1.ExplicitContentFrame.prototype.hasTimeOffset = function() {
+  return jspb.Message.getField(this, 1) != null;
+};
+
+
+/**
+ * optional Likelihood pornography_likelihood = 2;
+ * @return {!proto.google.cloud.videointelligence.v1.Likelihood}
+ */
+proto.google.cloud.videointelligence.v1.ExplicitContentFrame.prototype.getPornographyLikelihood = function() {
+  return /** @type {!proto.google.cloud.videointelligence.v1.Likelihood} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
+};
+
+
+/** @param {!proto.google.cloud.videointelligence.v1.Likelihood} value */
+proto.google.cloud.videointelligence.v1.ExplicitContentFrame.prototype.setPornographyLikelihood = function(value) {
+  jspb.Message.setProto3EnumField(this, 2, value);
+};
+
+
+
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.google.cloud.videointelligence.v1.ExplicitContentAnnotation.repeatedFields_ = [1];
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.videointelligence.v1.ExplicitContentAnnotation.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.videointelligence.v1.ExplicitContentAnnotation.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.videointelligence.v1.ExplicitContentAnnotation} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.ExplicitContentAnnotation.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    framesList: jspb.Message.toObjectList(msg.getFramesList(),
+    proto.google.cloud.videointelligence.v1.ExplicitContentFrame.toObject, includeInstance)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.videointelligence.v1.ExplicitContentAnnotation}
+ */
+proto.google.cloud.videointelligence.v1.ExplicitContentAnnotation.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.videointelligence.v1.ExplicitContentAnnotation;
+  return proto.google.cloud.videointelligence.v1.ExplicitContentAnnotation.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.videointelligence.v1.ExplicitContentAnnotation} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.videointelligence.v1.ExplicitContentAnnotation}
+ */
+proto.google.cloud.videointelligence.v1.ExplicitContentAnnotation.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new proto.google.cloud.videointelligence.v1.ExplicitContentFrame;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.ExplicitContentFrame.deserializeBinaryFromReader);
+      msg.addFrames(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.videointelligence.v1.ExplicitContentAnnotation.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.videointelligence.v1.ExplicitContentAnnotation.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.videointelligence.v1.ExplicitContentAnnotation} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.ExplicitContentAnnotation.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getFramesList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      1,
+      f,
+      proto.google.cloud.videointelligence.v1.ExplicitContentFrame.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * repeated ExplicitContentFrame frames = 1;
+ * @return {!Array<!proto.google.cloud.videointelligence.v1.ExplicitContentFrame>}
+ */
+proto.google.cloud.videointelligence.v1.ExplicitContentAnnotation.prototype.getFramesList = function() {
+  return /** @type{!Array<!proto.google.cloud.videointelligence.v1.ExplicitContentFrame>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.google.cloud.videointelligence.v1.ExplicitContentFrame, 1));
+};
+
+
+/** @param {!Array<!proto.google.cloud.videointelligence.v1.ExplicitContentFrame>} value */
+proto.google.cloud.videointelligence.v1.ExplicitContentAnnotation.prototype.setFramesList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 1, value);
+};
+
+
+/**
+ * @param {!proto.google.cloud.videointelligence.v1.ExplicitContentFrame=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.cloud.videointelligence.v1.ExplicitContentFrame}
+ */
+proto.google.cloud.videointelligence.v1.ExplicitContentAnnotation.prototype.addFrames = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 1, opt_value, proto.google.cloud.videointelligence.v1.ExplicitContentFrame, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.videointelligence.v1.ExplicitContentAnnotation.prototype.clearFramesList = function() {
+  this.setFramesList([]);
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.videointelligence.v1.NormalizedBoundingBox.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.videointelligence.v1.NormalizedBoundingBox.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.videointelligence.v1.NormalizedBoundingBox} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.NormalizedBoundingBox.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    left: jspb.Message.getFloatingPointFieldWithDefault(msg, 1, 0.0),
+    top: jspb.Message.getFloatingPointFieldWithDefault(msg, 2, 0.0),
+    right: jspb.Message.getFloatingPointFieldWithDefault(msg, 3, 0.0),
+    bottom: jspb.Message.getFloatingPointFieldWithDefault(msg, 4, 0.0)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.videointelligence.v1.NormalizedBoundingBox}
+ */
+proto.google.cloud.videointelligence.v1.NormalizedBoundingBox.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.videointelligence.v1.NormalizedBoundingBox;
+  return proto.google.cloud.videointelligence.v1.NormalizedBoundingBox.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.videointelligence.v1.NormalizedBoundingBox} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.videointelligence.v1.NormalizedBoundingBox}
+ */
+proto.google.cloud.videointelligence.v1.NormalizedBoundingBox.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {number} */ (reader.readFloat());
+      msg.setLeft(value);
+      break;
+    case 2:
+      var value = /** @type {number} */ (reader.readFloat());
+      msg.setTop(value);
+      break;
+    case 3:
+      var value = /** @type {number} */ (reader.readFloat());
+      msg.setRight(value);
+      break;
+    case 4:
+      var value = /** @type {number} */ (reader.readFloat());
+      msg.setBottom(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.videointelligence.v1.NormalizedBoundingBox.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.videointelligence.v1.NormalizedBoundingBox.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.videointelligence.v1.NormalizedBoundingBox} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.NormalizedBoundingBox.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getLeft();
+  if (f !== 0.0) {
+    writer.writeFloat(
+      1,
+      f
+    );
+  }
+  f = message.getTop();
+  if (f !== 0.0) {
+    writer.writeFloat(
+      2,
+      f
+    );
+  }
+  f = message.getRight();
+  if (f !== 0.0) {
+    writer.writeFloat(
+      3,
+      f
+    );
+  }
+  f = message.getBottom();
+  if (f !== 0.0) {
+    writer.writeFloat(
+      4,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional float left = 1;
+ * @return {number}
+ */
+proto.google.cloud.videointelligence.v1.NormalizedBoundingBox.prototype.getLeft = function() {
+  return /** @type {number} */ (jspb.Message.getFloatingPointFieldWithDefault(this, 1, 0.0));
+};
+
+
+/** @param {number} value */
+proto.google.cloud.videointelligence.v1.NormalizedBoundingBox.prototype.setLeft = function(value) {
+  jspb.Message.setProto3FloatField(this, 1, value);
+};
+
+
+/**
+ * optional float top = 2;
+ * @return {number}
+ */
+proto.google.cloud.videointelligence.v1.NormalizedBoundingBox.prototype.getTop = function() {
+  return /** @type {number} */ (jspb.Message.getFloatingPointFieldWithDefault(this, 2, 0.0));
+};
+
+
+/** @param {number} value */
+proto.google.cloud.videointelligence.v1.NormalizedBoundingBox.prototype.setTop = function(value) {
+  jspb.Message.setProto3FloatField(this, 2, value);
+};
+
+
+/**
+ * optional float right = 3;
+ * @return {number}
+ */
+proto.google.cloud.videointelligence.v1.NormalizedBoundingBox.prototype.getRight = function() {
+  return /** @type {number} */ (jspb.Message.getFloatingPointFieldWithDefault(this, 3, 0.0));
+};
+
+
+/** @param {number} value */
+proto.google.cloud.videointelligence.v1.NormalizedBoundingBox.prototype.setRight = function(value) {
+  jspb.Message.setProto3FloatField(this, 3, value);
+};
+
+
+/**
+ * optional float bottom = 4;
+ * @return {number}
+ */
+proto.google.cloud.videointelligence.v1.NormalizedBoundingBox.prototype.getBottom = function() {
+  return /** @type {number} */ (jspb.Message.getFloatingPointFieldWithDefault(this, 4, 0.0));
+};
+
+
+/** @param {number} value */
+proto.google.cloud.videointelligence.v1.NormalizedBoundingBox.prototype.setBottom = function(value) {
+  jspb.Message.setProto3FloatField(this, 4, value);
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.videointelligence.v1.FaceSegment.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.videointelligence.v1.FaceSegment.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.videointelligence.v1.FaceSegment} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.FaceSegment.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    segment: (f = msg.getSegment()) && proto.google.cloud.videointelligence.v1.VideoSegment.toObject(includeInstance, f)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.videointelligence.v1.FaceSegment}
+ */
+proto.google.cloud.videointelligence.v1.FaceSegment.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.videointelligence.v1.FaceSegment;
+  return proto.google.cloud.videointelligence.v1.FaceSegment.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.videointelligence.v1.FaceSegment} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.videointelligence.v1.FaceSegment}
+ */
+proto.google.cloud.videointelligence.v1.FaceSegment.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new proto.google.cloud.videointelligence.v1.VideoSegment;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.VideoSegment.deserializeBinaryFromReader);
+      msg.setSegment(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.videointelligence.v1.FaceSegment.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.videointelligence.v1.FaceSegment.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.videointelligence.v1.FaceSegment} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.FaceSegment.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getSegment();
+  if (f != null) {
+    writer.writeMessage(
+      1,
+      f,
+      proto.google.cloud.videointelligence.v1.VideoSegment.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional VideoSegment segment = 1;
+ * @return {?proto.google.cloud.videointelligence.v1.VideoSegment}
+ */
+proto.google.cloud.videointelligence.v1.FaceSegment.prototype.getSegment = function() {
+  return /** @type{?proto.google.cloud.videointelligence.v1.VideoSegment} */ (
+    jspb.Message.getWrapperField(this, proto.google.cloud.videointelligence.v1.VideoSegment, 1));
+};
+
+
+/** @param {?proto.google.cloud.videointelligence.v1.VideoSegment|undefined} value */
+proto.google.cloud.videointelligence.v1.FaceSegment.prototype.setSegment = function(value) {
+  jspb.Message.setWrapperField(this, 1, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.videointelligence.v1.FaceSegment.prototype.clearSegment = function() {
+  this.setSegment(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.videointelligence.v1.FaceSegment.prototype.hasSegment = function() {
+  return jspb.Message.getField(this, 1) != null;
+};
+
+
+
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.google.cloud.videointelligence.v1.FaceFrame.repeatedFields_ = [1];
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.videointelligence.v1.FaceFrame.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.videointelligence.v1.FaceFrame.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.videointelligence.v1.FaceFrame} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.FaceFrame.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    normalizedBoundingBoxesList: jspb.Message.toObjectList(msg.getNormalizedBoundingBoxesList(),
+    proto.google.cloud.videointelligence.v1.NormalizedBoundingBox.toObject, includeInstance),
+    timeOffset: (f = msg.getTimeOffset()) && google_protobuf_duration_pb.Duration.toObject(includeInstance, f)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.videointelligence.v1.FaceFrame}
+ */
+proto.google.cloud.videointelligence.v1.FaceFrame.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.videointelligence.v1.FaceFrame;
+  return proto.google.cloud.videointelligence.v1.FaceFrame.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.videointelligence.v1.FaceFrame} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.videointelligence.v1.FaceFrame}
+ */
+proto.google.cloud.videointelligence.v1.FaceFrame.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new proto.google.cloud.videointelligence.v1.NormalizedBoundingBox;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.NormalizedBoundingBox.deserializeBinaryFromReader);
+      msg.addNormalizedBoundingBoxes(value);
+      break;
+    case 2:
+      var value = new google_protobuf_duration_pb.Duration;
+      reader.readMessage(value,google_protobuf_duration_pb.Duration.deserializeBinaryFromReader);
+      msg.setTimeOffset(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.videointelligence.v1.FaceFrame.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.videointelligence.v1.FaceFrame.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.videointelligence.v1.FaceFrame} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.FaceFrame.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getNormalizedBoundingBoxesList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      1,
+      f,
+      proto.google.cloud.videointelligence.v1.NormalizedBoundingBox.serializeBinaryToWriter
+    );
+  }
+  f = message.getTimeOffset();
+  if (f != null) {
+    writer.writeMessage(
+      2,
+      f,
+      google_protobuf_duration_pb.Duration.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * repeated NormalizedBoundingBox normalized_bounding_boxes = 1;
+ * @return {!Array<!proto.google.cloud.videointelligence.v1.NormalizedBoundingBox>}
+ */
+proto.google.cloud.videointelligence.v1.FaceFrame.prototype.getNormalizedBoundingBoxesList = function() {
+  return /** @type{!Array<!proto.google.cloud.videointelligence.v1.NormalizedBoundingBox>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.google.cloud.videointelligence.v1.NormalizedBoundingBox, 1));
+};
+
+
+/** @param {!Array<!proto.google.cloud.videointelligence.v1.NormalizedBoundingBox>} value */
+proto.google.cloud.videointelligence.v1.FaceFrame.prototype.setNormalizedBoundingBoxesList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 1, value);
+};
+
+
+/**
+ * @param {!proto.google.cloud.videointelligence.v1.NormalizedBoundingBox=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.cloud.videointelligence.v1.NormalizedBoundingBox}
+ */
+proto.google.cloud.videointelligence.v1.FaceFrame.prototype.addNormalizedBoundingBoxes = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 1, opt_value, proto.google.cloud.videointelligence.v1.NormalizedBoundingBox, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.videointelligence.v1.FaceFrame.prototype.clearNormalizedBoundingBoxesList = function() {
+  this.setNormalizedBoundingBoxesList([]);
+};
+
+
+/**
+ * optional google.protobuf.Duration time_offset = 2;
+ * @return {?proto.google.protobuf.Duration}
+ */
+proto.google.cloud.videointelligence.v1.FaceFrame.prototype.getTimeOffset = function() {
+  return /** @type{?proto.google.protobuf.Duration} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_duration_pb.Duration, 2));
+};
+
+
+/** @param {?proto.google.protobuf.Duration|undefined} value */
+proto.google.cloud.videointelligence.v1.FaceFrame.prototype.setTimeOffset = function(value) {
+  jspb.Message.setWrapperField(this, 2, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.videointelligence.v1.FaceFrame.prototype.clearTimeOffset = function() {
+  this.setTimeOffset(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.videointelligence.v1.FaceFrame.prototype.hasTimeOffset = function() {
+  return jspb.Message.getField(this, 2) != null;
+};
+
+
+
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.google.cloud.videointelligence.v1.FaceAnnotation.repeatedFields_ = [2,3];
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.videointelligence.v1.FaceAnnotation.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.videointelligence.v1.FaceAnnotation.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.videointelligence.v1.FaceAnnotation} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.FaceAnnotation.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    thumbnail: msg.getThumbnail_asB64(),
+    segmentsList: jspb.Message.toObjectList(msg.getSegmentsList(),
+    proto.google.cloud.videointelligence.v1.FaceSegment.toObject, includeInstance),
+    framesList: jspb.Message.toObjectList(msg.getFramesList(),
+    proto.google.cloud.videointelligence.v1.FaceFrame.toObject, includeInstance)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.videointelligence.v1.FaceAnnotation}
+ */
+proto.google.cloud.videointelligence.v1.FaceAnnotation.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.videointelligence.v1.FaceAnnotation;
+  return proto.google.cloud.videointelligence.v1.FaceAnnotation.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.videointelligence.v1.FaceAnnotation} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.videointelligence.v1.FaceAnnotation}
+ */
+proto.google.cloud.videointelligence.v1.FaceAnnotation.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {!Uint8Array} */ (reader.readBytes());
+      msg.setThumbnail(value);
+      break;
+    case 2:
+      var value = new proto.google.cloud.videointelligence.v1.FaceSegment;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.FaceSegment.deserializeBinaryFromReader);
+      msg.addSegments(value);
+      break;
+    case 3:
+      var value = new proto.google.cloud.videointelligence.v1.FaceFrame;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.FaceFrame.deserializeBinaryFromReader);
+      msg.addFrames(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.videointelligence.v1.FaceAnnotation.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.videointelligence.v1.FaceAnnotation.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.videointelligence.v1.FaceAnnotation} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.FaceAnnotation.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getThumbnail_asU8();
+  if (f.length > 0) {
+    writer.writeBytes(
+      1,
+      f
+    );
+  }
+  f = message.getSegmentsList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      2,
+      f,
+      proto.google.cloud.videointelligence.v1.FaceSegment.serializeBinaryToWriter
+    );
+  }
+  f = message.getFramesList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      3,
+      f,
+      proto.google.cloud.videointelligence.v1.FaceFrame.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional bytes thumbnail = 1;
+ * @return {!(string|Uint8Array)}
+ */
+proto.google.cloud.videointelligence.v1.FaceAnnotation.prototype.getThumbnail = function() {
+  return /** @type {!(string|Uint8Array)} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+};
+
+
+/**
+ * optional bytes thumbnail = 1;
+ * This is a type-conversion wrapper around `getThumbnail()`
+ * @return {string}
+ */
+proto.google.cloud.videointelligence.v1.FaceAnnotation.prototype.getThumbnail_asB64 = function() {
+  return /** @type {string} */ (jspb.Message.bytesAsB64(
+      this.getThumbnail()));
+};
+
+
+/**
+ * optional bytes thumbnail = 1;
+ * Note that Uint8Array is not supported on all browsers.
+ * @see http://caniuse.com/Uint8Array
+ * This is a type-conversion wrapper around `getThumbnail()`
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.videointelligence.v1.FaceAnnotation.prototype.getThumbnail_asU8 = function() {
+  return /** @type {!Uint8Array} */ (jspb.Message.bytesAsU8(
+      this.getThumbnail()));
+};
+
+
+/** @param {!(string|Uint8Array)} value */
+proto.google.cloud.videointelligence.v1.FaceAnnotation.prototype.setThumbnail = function(value) {
+  jspb.Message.setProto3BytesField(this, 1, value);
+};
+
+
+/**
+ * repeated FaceSegment segments = 2;
+ * @return {!Array<!proto.google.cloud.videointelligence.v1.FaceSegment>}
+ */
+proto.google.cloud.videointelligence.v1.FaceAnnotation.prototype.getSegmentsList = function() {
+  return /** @type{!Array<!proto.google.cloud.videointelligence.v1.FaceSegment>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.google.cloud.videointelligence.v1.FaceSegment, 2));
+};
+
+
+/** @param {!Array<!proto.google.cloud.videointelligence.v1.FaceSegment>} value */
+proto.google.cloud.videointelligence.v1.FaceAnnotation.prototype.setSegmentsList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 2, value);
+};
+
+
+/**
+ * @param {!proto.google.cloud.videointelligence.v1.FaceSegment=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.cloud.videointelligence.v1.FaceSegment}
+ */
+proto.google.cloud.videointelligence.v1.FaceAnnotation.prototype.addSegments = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 2, opt_value, proto.google.cloud.videointelligence.v1.FaceSegment, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.videointelligence.v1.FaceAnnotation.prototype.clearSegmentsList = function() {
+  this.setSegmentsList([]);
+};
+
+
+/**
+ * repeated FaceFrame frames = 3;
+ * @return {!Array<!proto.google.cloud.videointelligence.v1.FaceFrame>}
+ */
+proto.google.cloud.videointelligence.v1.FaceAnnotation.prototype.getFramesList = function() {
+  return /** @type{!Array<!proto.google.cloud.videointelligence.v1.FaceFrame>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.google.cloud.videointelligence.v1.FaceFrame, 3));
+};
+
+
+/** @param {!Array<!proto.google.cloud.videointelligence.v1.FaceFrame>} value */
+proto.google.cloud.videointelligence.v1.FaceAnnotation.prototype.setFramesList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 3, value);
+};
+
+
+/**
+ * @param {!proto.google.cloud.videointelligence.v1.FaceFrame=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.cloud.videointelligence.v1.FaceFrame}
+ */
+proto.google.cloud.videointelligence.v1.FaceAnnotation.prototype.addFrames = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 3, opt_value, proto.google.cloud.videointelligence.v1.FaceFrame, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.videointelligence.v1.FaceAnnotation.prototype.clearFramesList = function() {
+  this.setFramesList([]);
+};
+
+
+
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.repeatedFields_ = [2,23,3,24,4,5,6,11,12,14];
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.videointelligence.v1.VideoAnnotationResults.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.videointelligence.v1.VideoAnnotationResults} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    inputUri: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    segment: (f = msg.getSegment()) && proto.google.cloud.videointelligence.v1.VideoSegment.toObject(includeInstance, f),
+    segmentLabelAnnotationsList: jspb.Message.toObjectList(msg.getSegmentLabelAnnotationsList(),
+    proto.google.cloud.videointelligence.v1.LabelAnnotation.toObject, includeInstance),
+    segmentPresenceLabelAnnotationsList: jspb.Message.toObjectList(msg.getSegmentPresenceLabelAnnotationsList(),
+    proto.google.cloud.videointelligence.v1.LabelAnnotation.toObject, includeInstance),
+    shotLabelAnnotationsList: jspb.Message.toObjectList(msg.getShotLabelAnnotationsList(),
+    proto.google.cloud.videointelligence.v1.LabelAnnotation.toObject, includeInstance),
+    shotPresenceLabelAnnotationsList: jspb.Message.toObjectList(msg.getShotPresenceLabelAnnotationsList(),
+    proto.google.cloud.videointelligence.v1.LabelAnnotation.toObject, includeInstance),
+    frameLabelAnnotationsList: jspb.Message.toObjectList(msg.getFrameLabelAnnotationsList(),
+    proto.google.cloud.videointelligence.v1.LabelAnnotation.toObject, includeInstance),
+    faceAnnotationsList: jspb.Message.toObjectList(msg.getFaceAnnotationsList(),
+    proto.google.cloud.videointelligence.v1.FaceAnnotation.toObject, includeInstance),
+    shotAnnotationsList: jspb.Message.toObjectList(msg.getShotAnnotationsList(),
+    proto.google.cloud.videointelligence.v1.VideoSegment.toObject, includeInstance),
+    explicitAnnotation: (f = msg.getExplicitAnnotation()) && proto.google.cloud.videointelligence.v1.ExplicitContentAnnotation.toObject(includeInstance, f),
+    speechTranscriptionsList: jspb.Message.toObjectList(msg.getSpeechTranscriptionsList(),
+    proto.google.cloud.videointelligence.v1.SpeechTranscription.toObject, includeInstance),
+    textAnnotationsList: jspb.Message.toObjectList(msg.getTextAnnotationsList(),
+    proto.google.cloud.videointelligence.v1.TextAnnotation.toObject, includeInstance),
+    objectAnnotationsList: jspb.Message.toObjectList(msg.getObjectAnnotationsList(),
+    proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation.toObject, includeInstance),
+    error: (f = msg.getError()) && google_rpc_status_pb.Status.toObject(includeInstance, f)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.videointelligence.v1.VideoAnnotationResults}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.videointelligence.v1.VideoAnnotationResults;
+  return proto.google.cloud.videointelligence.v1.VideoAnnotationResults.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.videointelligence.v1.VideoAnnotationResults} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.videointelligence.v1.VideoAnnotationResults}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setInputUri(value);
+      break;
+    case 10:
+      var value = new proto.google.cloud.videointelligence.v1.VideoSegment;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.VideoSegment.deserializeBinaryFromReader);
+      msg.setSegment(value);
+      break;
+    case 2:
+      var value = new proto.google.cloud.videointelligence.v1.LabelAnnotation;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.LabelAnnotation.deserializeBinaryFromReader);
+      msg.addSegmentLabelAnnotations(value);
+      break;
+    case 23:
+      var value = new proto.google.cloud.videointelligence.v1.LabelAnnotation;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.LabelAnnotation.deserializeBinaryFromReader);
+      msg.addSegmentPresenceLabelAnnotations(value);
+      break;
+    case 3:
+      var value = new proto.google.cloud.videointelligence.v1.LabelAnnotation;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.LabelAnnotation.deserializeBinaryFromReader);
+      msg.addShotLabelAnnotations(value);
+      break;
+    case 24:
+      var value = new proto.google.cloud.videointelligence.v1.LabelAnnotation;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.LabelAnnotation.deserializeBinaryFromReader);
+      msg.addShotPresenceLabelAnnotations(value);
+      break;
+    case 4:
+      var value = new proto.google.cloud.videointelligence.v1.LabelAnnotation;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.LabelAnnotation.deserializeBinaryFromReader);
+      msg.addFrameLabelAnnotations(value);
+      break;
+    case 5:
+      var value = new proto.google.cloud.videointelligence.v1.FaceAnnotation;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.FaceAnnotation.deserializeBinaryFromReader);
+      msg.addFaceAnnotations(value);
+      break;
+    case 6:
+      var value = new proto.google.cloud.videointelligence.v1.VideoSegment;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.VideoSegment.deserializeBinaryFromReader);
+      msg.addShotAnnotations(value);
+      break;
+    case 7:
+      var value = new proto.google.cloud.videointelligence.v1.ExplicitContentAnnotation;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.ExplicitContentAnnotation.deserializeBinaryFromReader);
+      msg.setExplicitAnnotation(value);
+      break;
+    case 11:
+      var value = new proto.google.cloud.videointelligence.v1.SpeechTranscription;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.SpeechTranscription.deserializeBinaryFromReader);
+      msg.addSpeechTranscriptions(value);
+      break;
+    case 12:
+      var value = new proto.google.cloud.videointelligence.v1.TextAnnotation;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.TextAnnotation.deserializeBinaryFromReader);
+      msg.addTextAnnotations(value);
+      break;
+    case 14:
+      var value = new proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation.deserializeBinaryFromReader);
+      msg.addObjectAnnotations(value);
+      break;
+    case 9:
+      var value = new google_rpc_status_pb.Status;
+      reader.readMessage(value,google_rpc_status_pb.Status.deserializeBinaryFromReader);
+      msg.setError(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.videointelligence.v1.VideoAnnotationResults.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.videointelligence.v1.VideoAnnotationResults} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getInputUri();
+  if (f.length > 0) {
+    writer.writeString(
+      1,
+      f
+    );
+  }
+  f = message.getSegment();
+  if (f != null) {
+    writer.writeMessage(
+      10,
+      f,
+      proto.google.cloud.videointelligence.v1.VideoSegment.serializeBinaryToWriter
+    );
+  }
+  f = message.getSegmentLabelAnnotationsList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      2,
+      f,
+      proto.google.cloud.videointelligence.v1.LabelAnnotation.serializeBinaryToWriter
+    );
+  }
+  f = message.getSegmentPresenceLabelAnnotationsList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      23,
+      f,
+      proto.google.cloud.videointelligence.v1.LabelAnnotation.serializeBinaryToWriter
+    );
+  }
+  f = message.getShotLabelAnnotationsList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      3,
+      f,
+      proto.google.cloud.videointelligence.v1.LabelAnnotation.serializeBinaryToWriter
+    );
+  }
+  f = message.getShotPresenceLabelAnnotationsList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      24,
+      f,
+      proto.google.cloud.videointelligence.v1.LabelAnnotation.serializeBinaryToWriter
+    );
+  }
+  f = message.getFrameLabelAnnotationsList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      4,
+      f,
+      proto.google.cloud.videointelligence.v1.LabelAnnotation.serializeBinaryToWriter
+    );
+  }
+  f = message.getFaceAnnotationsList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      5,
+      f,
+      proto.google.cloud.videointelligence.v1.FaceAnnotation.serializeBinaryToWriter
+    );
+  }
+  f = message.getShotAnnotationsList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      6,
+      f,
+      proto.google.cloud.videointelligence.v1.VideoSegment.serializeBinaryToWriter
+    );
+  }
+  f = message.getExplicitAnnotation();
+  if (f != null) {
+    writer.writeMessage(
+      7,
+      f,
+      proto.google.cloud.videointelligence.v1.ExplicitContentAnnotation.serializeBinaryToWriter
+    );
+  }
+  f = message.getSpeechTranscriptionsList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      11,
+      f,
+      proto.google.cloud.videointelligence.v1.SpeechTranscription.serializeBinaryToWriter
+    );
+  }
+  f = message.getTextAnnotationsList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      12,
+      f,
+      proto.google.cloud.videointelligence.v1.TextAnnotation.serializeBinaryToWriter
+    );
+  }
+  f = message.getObjectAnnotationsList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      14,
+      f,
+      proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation.serializeBinaryToWriter
+    );
+  }
+  f = message.getError();
+  if (f != null) {
+    writer.writeMessage(
+      9,
+      f,
+      google_rpc_status_pb.Status.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional string input_uri = 1;
+ * @return {string}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.getInputUri = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.setInputUri = function(value) {
+  jspb.Message.setProto3StringField(this, 1, value);
+};
+
+
+/**
+ * optional VideoSegment segment = 10;
+ * @return {?proto.google.cloud.videointelligence.v1.VideoSegment}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.getSegment = function() {
+  return /** @type{?proto.google.cloud.videointelligence.v1.VideoSegment} */ (
+    jspb.Message.getWrapperField(this, proto.google.cloud.videointelligence.v1.VideoSegment, 10));
+};
+
+
+/** @param {?proto.google.cloud.videointelligence.v1.VideoSegment|undefined} value */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.setSegment = function(value) {
+  jspb.Message.setWrapperField(this, 10, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.clearSegment = function() {
+  this.setSegment(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.hasSegment = function() {
+  return jspb.Message.getField(this, 10) != null;
+};
+
+
+/**
+ * repeated LabelAnnotation segment_label_annotations = 2;
+ * @return {!Array<!proto.google.cloud.videointelligence.v1.LabelAnnotation>}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.getSegmentLabelAnnotationsList = function() {
+  return /** @type{!Array<!proto.google.cloud.videointelligence.v1.LabelAnnotation>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.google.cloud.videointelligence.v1.LabelAnnotation, 2));
+};
+
+
+/** @param {!Array<!proto.google.cloud.videointelligence.v1.LabelAnnotation>} value */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.setSegmentLabelAnnotationsList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 2, value);
+};
+
+
+/**
+ * @param {!proto.google.cloud.videointelligence.v1.LabelAnnotation=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.cloud.videointelligence.v1.LabelAnnotation}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.addSegmentLabelAnnotations = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 2, opt_value, proto.google.cloud.videointelligence.v1.LabelAnnotation, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.clearSegmentLabelAnnotationsList = function() {
+  this.setSegmentLabelAnnotationsList([]);
+};
+
+
+/**
+ * repeated LabelAnnotation segment_presence_label_annotations = 23;
+ * @return {!Array<!proto.google.cloud.videointelligence.v1.LabelAnnotation>}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.getSegmentPresenceLabelAnnotationsList = function() {
+  return /** @type{!Array<!proto.google.cloud.videointelligence.v1.LabelAnnotation>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.google.cloud.videointelligence.v1.LabelAnnotation, 23));
+};
+
+
+/** @param {!Array<!proto.google.cloud.videointelligence.v1.LabelAnnotation>} value */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.setSegmentPresenceLabelAnnotationsList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 23, value);
+};
+
+
+/**
+ * @param {!proto.google.cloud.videointelligence.v1.LabelAnnotation=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.cloud.videointelligence.v1.LabelAnnotation}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.addSegmentPresenceLabelAnnotations = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 23, opt_value, proto.google.cloud.videointelligence.v1.LabelAnnotation, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.clearSegmentPresenceLabelAnnotationsList = function() {
+  this.setSegmentPresenceLabelAnnotationsList([]);
+};
+
+
+/**
+ * repeated LabelAnnotation shot_label_annotations = 3;
+ * @return {!Array<!proto.google.cloud.videointelligence.v1.LabelAnnotation>}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.getShotLabelAnnotationsList = function() {
+  return /** @type{!Array<!proto.google.cloud.videointelligence.v1.LabelAnnotation>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.google.cloud.videointelligence.v1.LabelAnnotation, 3));
+};
+
+
+/** @param {!Array<!proto.google.cloud.videointelligence.v1.LabelAnnotation>} value */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.setShotLabelAnnotationsList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 3, value);
+};
+
+
+/**
+ * @param {!proto.google.cloud.videointelligence.v1.LabelAnnotation=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.cloud.videointelligence.v1.LabelAnnotation}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.addShotLabelAnnotations = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 3, opt_value, proto.google.cloud.videointelligence.v1.LabelAnnotation, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.clearShotLabelAnnotationsList = function() {
+  this.setShotLabelAnnotationsList([]);
+};
+
+
+/**
+ * repeated LabelAnnotation shot_presence_label_annotations = 24;
+ * @return {!Array<!proto.google.cloud.videointelligence.v1.LabelAnnotation>}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.getShotPresenceLabelAnnotationsList = function() {
+  return /** @type{!Array<!proto.google.cloud.videointelligence.v1.LabelAnnotation>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.google.cloud.videointelligence.v1.LabelAnnotation, 24));
+};
+
+
+/** @param {!Array<!proto.google.cloud.videointelligence.v1.LabelAnnotation>} value */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.setShotPresenceLabelAnnotationsList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 24, value);
+};
+
+
+/**
+ * @param {!proto.google.cloud.videointelligence.v1.LabelAnnotation=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.cloud.videointelligence.v1.LabelAnnotation}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.addShotPresenceLabelAnnotations = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 24, opt_value, proto.google.cloud.videointelligence.v1.LabelAnnotation, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.clearShotPresenceLabelAnnotationsList = function() {
+  this.setShotPresenceLabelAnnotationsList([]);
+};
+
+
+/**
+ * repeated LabelAnnotation frame_label_annotations = 4;
+ * @return {!Array<!proto.google.cloud.videointelligence.v1.LabelAnnotation>}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.getFrameLabelAnnotationsList = function() {
+  return /** @type{!Array<!proto.google.cloud.videointelligence.v1.LabelAnnotation>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.google.cloud.videointelligence.v1.LabelAnnotation, 4));
+};
+
+
+/** @param {!Array<!proto.google.cloud.videointelligence.v1.LabelAnnotation>} value */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.setFrameLabelAnnotationsList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 4, value);
+};
+
+
+/**
+ * @param {!proto.google.cloud.videointelligence.v1.LabelAnnotation=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.cloud.videointelligence.v1.LabelAnnotation}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.addFrameLabelAnnotations = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 4, opt_value, proto.google.cloud.videointelligence.v1.LabelAnnotation, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.clearFrameLabelAnnotationsList = function() {
+  this.setFrameLabelAnnotationsList([]);
+};
+
+
+/**
+ * repeated FaceAnnotation face_annotations = 5;
+ * @return {!Array<!proto.google.cloud.videointelligence.v1.FaceAnnotation>}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.getFaceAnnotationsList = function() {
+  return /** @type{!Array<!proto.google.cloud.videointelligence.v1.FaceAnnotation>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.google.cloud.videointelligence.v1.FaceAnnotation, 5));
+};
+
+
+/** @param {!Array<!proto.google.cloud.videointelligence.v1.FaceAnnotation>} value */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.setFaceAnnotationsList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 5, value);
+};
+
+
+/**
+ * @param {!proto.google.cloud.videointelligence.v1.FaceAnnotation=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.cloud.videointelligence.v1.FaceAnnotation}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.addFaceAnnotations = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 5, opt_value, proto.google.cloud.videointelligence.v1.FaceAnnotation, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.clearFaceAnnotationsList = function() {
+  this.setFaceAnnotationsList([]);
+};
+
+
+/**
+ * repeated VideoSegment shot_annotations = 6;
+ * @return {!Array<!proto.google.cloud.videointelligence.v1.VideoSegment>}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.getShotAnnotationsList = function() {
+  return /** @type{!Array<!proto.google.cloud.videointelligence.v1.VideoSegment>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.google.cloud.videointelligence.v1.VideoSegment, 6));
+};
+
+
+/** @param {!Array<!proto.google.cloud.videointelligence.v1.VideoSegment>} value */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.setShotAnnotationsList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 6, value);
+};
+
+
+/**
+ * @param {!proto.google.cloud.videointelligence.v1.VideoSegment=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.cloud.videointelligence.v1.VideoSegment}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.addShotAnnotations = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 6, opt_value, proto.google.cloud.videointelligence.v1.VideoSegment, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.clearShotAnnotationsList = function() {
+  this.setShotAnnotationsList([]);
+};
+
+
+/**
+ * optional ExplicitContentAnnotation explicit_annotation = 7;
+ * @return {?proto.google.cloud.videointelligence.v1.ExplicitContentAnnotation}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.getExplicitAnnotation = function() {
+  return /** @type{?proto.google.cloud.videointelligence.v1.ExplicitContentAnnotation} */ (
+    jspb.Message.getWrapperField(this, proto.google.cloud.videointelligence.v1.ExplicitContentAnnotation, 7));
+};
+
+
+/** @param {?proto.google.cloud.videointelligence.v1.ExplicitContentAnnotation|undefined} value */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.setExplicitAnnotation = function(value) {
+  jspb.Message.setWrapperField(this, 7, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.clearExplicitAnnotation = function() {
+  this.setExplicitAnnotation(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.hasExplicitAnnotation = function() {
+  return jspb.Message.getField(this, 7) != null;
+};
+
+
+/**
+ * repeated SpeechTranscription speech_transcriptions = 11;
+ * @return {!Array<!proto.google.cloud.videointelligence.v1.SpeechTranscription>}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.getSpeechTranscriptionsList = function() {
+  return /** @type{!Array<!proto.google.cloud.videointelligence.v1.SpeechTranscription>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.google.cloud.videointelligence.v1.SpeechTranscription, 11));
+};
+
+
+/** @param {!Array<!proto.google.cloud.videointelligence.v1.SpeechTranscription>} value */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.setSpeechTranscriptionsList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 11, value);
+};
+
+
+/**
+ * @param {!proto.google.cloud.videointelligence.v1.SpeechTranscription=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.cloud.videointelligence.v1.SpeechTranscription}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.addSpeechTranscriptions = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 11, opt_value, proto.google.cloud.videointelligence.v1.SpeechTranscription, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.clearSpeechTranscriptionsList = function() {
+  this.setSpeechTranscriptionsList([]);
+};
+
+
+/**
+ * repeated TextAnnotation text_annotations = 12;
+ * @return {!Array<!proto.google.cloud.videointelligence.v1.TextAnnotation>}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.getTextAnnotationsList = function() {
+  return /** @type{!Array<!proto.google.cloud.videointelligence.v1.TextAnnotation>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.google.cloud.videointelligence.v1.TextAnnotation, 12));
+};
+
+
+/** @param {!Array<!proto.google.cloud.videointelligence.v1.TextAnnotation>} value */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.setTextAnnotationsList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 12, value);
+};
+
+
+/**
+ * @param {!proto.google.cloud.videointelligence.v1.TextAnnotation=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.cloud.videointelligence.v1.TextAnnotation}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.addTextAnnotations = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 12, opt_value, proto.google.cloud.videointelligence.v1.TextAnnotation, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.clearTextAnnotationsList = function() {
+  this.setTextAnnotationsList([]);
+};
+
+
+/**
+ * repeated ObjectTrackingAnnotation object_annotations = 14;
+ * @return {!Array<!proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation>}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.getObjectAnnotationsList = function() {
+  return /** @type{!Array<!proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation, 14));
+};
+
+
+/** @param {!Array<!proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation>} value */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.setObjectAnnotationsList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 14, value);
+};
+
+
+/**
+ * @param {!proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.addObjectAnnotations = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 14, opt_value, proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.clearObjectAnnotationsList = function() {
+  this.setObjectAnnotationsList([]);
+};
+
+
+/**
+ * optional google.rpc.Status error = 9;
+ * @return {?proto.google.rpc.Status}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.getError = function() {
+  return /** @type{?proto.google.rpc.Status} */ (
+    jspb.Message.getWrapperField(this, google_rpc_status_pb.Status, 9));
+};
+
+
+/** @param {?proto.google.rpc.Status|undefined} value */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.setError = function(value) {
+  jspb.Message.setWrapperField(this, 9, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.clearError = function() {
+  this.setError(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationResults.prototype.hasError = function() {
+  return jspb.Message.getField(this, 9) != null;
+};
+
+
+
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.google.cloud.videointelligence.v1.AnnotateVideoResponse.repeatedFields_ = [1];
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.videointelligence.v1.AnnotateVideoResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.videointelligence.v1.AnnotateVideoResponse.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.videointelligence.v1.AnnotateVideoResponse} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.AnnotateVideoResponse.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    annotationResultsList: jspb.Message.toObjectList(msg.getAnnotationResultsList(),
+    proto.google.cloud.videointelligence.v1.VideoAnnotationResults.toObject, includeInstance)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.videointelligence.v1.AnnotateVideoResponse}
+ */
+proto.google.cloud.videointelligence.v1.AnnotateVideoResponse.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.videointelligence.v1.AnnotateVideoResponse;
+  return proto.google.cloud.videointelligence.v1.AnnotateVideoResponse.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.videointelligence.v1.AnnotateVideoResponse} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.videointelligence.v1.AnnotateVideoResponse}
+ */
+proto.google.cloud.videointelligence.v1.AnnotateVideoResponse.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new proto.google.cloud.videointelligence.v1.VideoAnnotationResults;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.VideoAnnotationResults.deserializeBinaryFromReader);
+      msg.addAnnotationResults(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.videointelligence.v1.AnnotateVideoResponse.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.videointelligence.v1.AnnotateVideoResponse.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.videointelligence.v1.AnnotateVideoResponse} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.AnnotateVideoResponse.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getAnnotationResultsList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      1,
+      f,
+      proto.google.cloud.videointelligence.v1.VideoAnnotationResults.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * repeated VideoAnnotationResults annotation_results = 1;
+ * @return {!Array<!proto.google.cloud.videointelligence.v1.VideoAnnotationResults>}
+ */
+proto.google.cloud.videointelligence.v1.AnnotateVideoResponse.prototype.getAnnotationResultsList = function() {
+  return /** @type{!Array<!proto.google.cloud.videointelligence.v1.VideoAnnotationResults>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.google.cloud.videointelligence.v1.VideoAnnotationResults, 1));
+};
+
+
+/** @param {!Array<!proto.google.cloud.videointelligence.v1.VideoAnnotationResults>} value */
+proto.google.cloud.videointelligence.v1.AnnotateVideoResponse.prototype.setAnnotationResultsList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 1, value);
+};
+
+
+/**
+ * @param {!proto.google.cloud.videointelligence.v1.VideoAnnotationResults=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.cloud.videointelligence.v1.VideoAnnotationResults}
+ */
+proto.google.cloud.videointelligence.v1.AnnotateVideoResponse.prototype.addAnnotationResults = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 1, opt_value, proto.google.cloud.videointelligence.v1.VideoAnnotationResults, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.videointelligence.v1.AnnotateVideoResponse.prototype.clearAnnotationResultsList = function() {
+  this.setAnnotationResultsList([]);
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationProgress.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.videointelligence.v1.VideoAnnotationProgress.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.videointelligence.v1.VideoAnnotationProgress} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationProgress.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    inputUri: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    progressPercent: jspb.Message.getFieldWithDefault(msg, 2, 0),
+    startTime: (f = msg.getStartTime()) && google_protobuf_timestamp_pb.Timestamp.toObject(includeInstance, f),
+    updateTime: (f = msg.getUpdateTime()) && google_protobuf_timestamp_pb.Timestamp.toObject(includeInstance, f),
+    feature: jspb.Message.getFieldWithDefault(msg, 5, 0),
+    segment: (f = msg.getSegment()) && proto.google.cloud.videointelligence.v1.VideoSegment.toObject(includeInstance, f)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.videointelligence.v1.VideoAnnotationProgress}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationProgress.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.videointelligence.v1.VideoAnnotationProgress;
+  return proto.google.cloud.videointelligence.v1.VideoAnnotationProgress.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.videointelligence.v1.VideoAnnotationProgress} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.videointelligence.v1.VideoAnnotationProgress}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationProgress.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setInputUri(value);
+      break;
+    case 2:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setProgressPercent(value);
+      break;
+    case 3:
+      var value = new google_protobuf_timestamp_pb.Timestamp;
+      reader.readMessage(value,google_protobuf_timestamp_pb.Timestamp.deserializeBinaryFromReader);
+      msg.setStartTime(value);
+      break;
+    case 4:
+      var value = new google_protobuf_timestamp_pb.Timestamp;
+      reader.readMessage(value,google_protobuf_timestamp_pb.Timestamp.deserializeBinaryFromReader);
+      msg.setUpdateTime(value);
+      break;
+    case 5:
+      var value = /** @type {!proto.google.cloud.videointelligence.v1.Feature} */ (reader.readEnum());
+      msg.setFeature(value);
+      break;
+    case 6:
+      var value = new proto.google.cloud.videointelligence.v1.VideoSegment;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.VideoSegment.deserializeBinaryFromReader);
+      msg.setSegment(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationProgress.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.videointelligence.v1.VideoAnnotationProgress.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.videointelligence.v1.VideoAnnotationProgress} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationProgress.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getInputUri();
+  if (f.length > 0) {
+    writer.writeString(
+      1,
+      f
+    );
+  }
+  f = message.getProgressPercent();
+  if (f !== 0) {
+    writer.writeInt32(
+      2,
+      f
+    );
+  }
+  f = message.getStartTime();
+  if (f != null) {
+    writer.writeMessage(
+      3,
+      f,
+      google_protobuf_timestamp_pb.Timestamp.serializeBinaryToWriter
+    );
+  }
+  f = message.getUpdateTime();
+  if (f != null) {
+    writer.writeMessage(
+      4,
+      f,
+      google_protobuf_timestamp_pb.Timestamp.serializeBinaryToWriter
+    );
+  }
+  f = message.getFeature();
+  if (f !== 0.0) {
+    writer.writeEnum(
+      5,
+      f
+    );
+  }
+  f = message.getSegment();
+  if (f != null) {
+    writer.writeMessage(
+      6,
+      f,
+      proto.google.cloud.videointelligence.v1.VideoSegment.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional string input_uri = 1;
+ * @return {string}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationProgress.prototype.getInputUri = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.videointelligence.v1.VideoAnnotationProgress.prototype.setInputUri = function(value) {
+  jspb.Message.setProto3StringField(this, 1, value);
+};
+
+
+/**
+ * optional int32 progress_percent = 2;
+ * @return {number}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationProgress.prototype.getProgressPercent = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
+};
+
+
+/** @param {number} value */
+proto.google.cloud.videointelligence.v1.VideoAnnotationProgress.prototype.setProgressPercent = function(value) {
+  jspb.Message.setProto3IntField(this, 2, value);
+};
+
+
+/**
+ * optional google.protobuf.Timestamp start_time = 3;
+ * @return {?proto.google.protobuf.Timestamp}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationProgress.prototype.getStartTime = function() {
+  return /** @type{?proto.google.protobuf.Timestamp} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_timestamp_pb.Timestamp, 3));
+};
+
+
+/** @param {?proto.google.protobuf.Timestamp|undefined} value */
+proto.google.cloud.videointelligence.v1.VideoAnnotationProgress.prototype.setStartTime = function(value) {
+  jspb.Message.setWrapperField(this, 3, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationProgress.prototype.clearStartTime = function() {
+  this.setStartTime(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationProgress.prototype.hasStartTime = function() {
+  return jspb.Message.getField(this, 3) != null;
+};
+
+
+/**
+ * optional google.protobuf.Timestamp update_time = 4;
+ * @return {?proto.google.protobuf.Timestamp}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationProgress.prototype.getUpdateTime = function() {
+  return /** @type{?proto.google.protobuf.Timestamp} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_timestamp_pb.Timestamp, 4));
+};
+
+
+/** @param {?proto.google.protobuf.Timestamp|undefined} value */
+proto.google.cloud.videointelligence.v1.VideoAnnotationProgress.prototype.setUpdateTime = function(value) {
+  jspb.Message.setWrapperField(this, 4, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationProgress.prototype.clearUpdateTime = function() {
+  this.setUpdateTime(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationProgress.prototype.hasUpdateTime = function() {
+  return jspb.Message.getField(this, 4) != null;
+};
+
+
+/**
+ * optional Feature feature = 5;
+ * @return {!proto.google.cloud.videointelligence.v1.Feature}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationProgress.prototype.getFeature = function() {
+  return /** @type {!proto.google.cloud.videointelligence.v1.Feature} */ (jspb.Message.getFieldWithDefault(this, 5, 0));
+};
+
+
+/** @param {!proto.google.cloud.videointelligence.v1.Feature} value */
+proto.google.cloud.videointelligence.v1.VideoAnnotationProgress.prototype.setFeature = function(value) {
+  jspb.Message.setProto3EnumField(this, 5, value);
+};
+
+
+/**
+ * optional VideoSegment segment = 6;
+ * @return {?proto.google.cloud.videointelligence.v1.VideoSegment}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationProgress.prototype.getSegment = function() {
+  return /** @type{?proto.google.cloud.videointelligence.v1.VideoSegment} */ (
+    jspb.Message.getWrapperField(this, proto.google.cloud.videointelligence.v1.VideoSegment, 6));
+};
+
+
+/** @param {?proto.google.cloud.videointelligence.v1.VideoSegment|undefined} value */
+proto.google.cloud.videointelligence.v1.VideoAnnotationProgress.prototype.setSegment = function(value) {
+  jspb.Message.setWrapperField(this, 6, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationProgress.prototype.clearSegment = function() {
+  this.setSegment(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.videointelligence.v1.VideoAnnotationProgress.prototype.hasSegment = function() {
+  return jspb.Message.getField(this, 6) != null;
+};
+
+
+
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.google.cloud.videointelligence.v1.AnnotateVideoProgress.repeatedFields_ = [1];
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.videointelligence.v1.AnnotateVideoProgress.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.videointelligence.v1.AnnotateVideoProgress.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.videointelligence.v1.AnnotateVideoProgress} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.AnnotateVideoProgress.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    annotationProgressList: jspb.Message.toObjectList(msg.getAnnotationProgressList(),
+    proto.google.cloud.videointelligence.v1.VideoAnnotationProgress.toObject, includeInstance)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.videointelligence.v1.AnnotateVideoProgress}
+ */
+proto.google.cloud.videointelligence.v1.AnnotateVideoProgress.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.videointelligence.v1.AnnotateVideoProgress;
+  return proto.google.cloud.videointelligence.v1.AnnotateVideoProgress.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.videointelligence.v1.AnnotateVideoProgress} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.videointelligence.v1.AnnotateVideoProgress}
+ */
+proto.google.cloud.videointelligence.v1.AnnotateVideoProgress.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new proto.google.cloud.videointelligence.v1.VideoAnnotationProgress;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.VideoAnnotationProgress.deserializeBinaryFromReader);
+      msg.addAnnotationProgress(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.videointelligence.v1.AnnotateVideoProgress.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.videointelligence.v1.AnnotateVideoProgress.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.videointelligence.v1.AnnotateVideoProgress} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.AnnotateVideoProgress.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getAnnotationProgressList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      1,
+      f,
+      proto.google.cloud.videointelligence.v1.VideoAnnotationProgress.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * repeated VideoAnnotationProgress annotation_progress = 1;
+ * @return {!Array<!proto.google.cloud.videointelligence.v1.VideoAnnotationProgress>}
+ */
+proto.google.cloud.videointelligence.v1.AnnotateVideoProgress.prototype.getAnnotationProgressList = function() {
+  return /** @type{!Array<!proto.google.cloud.videointelligence.v1.VideoAnnotationProgress>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.google.cloud.videointelligence.v1.VideoAnnotationProgress, 1));
+};
+
+
+/** @param {!Array<!proto.google.cloud.videointelligence.v1.VideoAnnotationProgress>} value */
+proto.google.cloud.videointelligence.v1.AnnotateVideoProgress.prototype.setAnnotationProgressList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 1, value);
+};
+
+
+/**
+ * @param {!proto.google.cloud.videointelligence.v1.VideoAnnotationProgress=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.cloud.videointelligence.v1.VideoAnnotationProgress}
+ */
+proto.google.cloud.videointelligence.v1.AnnotateVideoProgress.prototype.addAnnotationProgress = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 1, opt_value, proto.google.cloud.videointelligence.v1.VideoAnnotationProgress, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.videointelligence.v1.AnnotateVideoProgress.prototype.clearAnnotationProgressList = function() {
+  this.setAnnotationProgressList([]);
+};
+
+
+
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig.repeatedFields_ = [4,6];
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    languageCode: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    maxAlternatives: jspb.Message.getFieldWithDefault(msg, 2, 0),
+    filterProfanity: jspb.Message.getBooleanFieldWithDefault(msg, 3, false),
+    speechContextsList: jspb.Message.toObjectList(msg.getSpeechContextsList(),
+    proto.google.cloud.videointelligence.v1.SpeechContext.toObject, includeInstance),
+    enableAutomaticPunctuation: jspb.Message.getBooleanFieldWithDefault(msg, 5, false),
+    audioTracksList: (f = jspb.Message.getRepeatedField(msg, 6)) == null ? undefined : f,
+    enableSpeakerDiarization: jspb.Message.getBooleanFieldWithDefault(msg, 7, false),
+    diarizationSpeakerCount: jspb.Message.getFieldWithDefault(msg, 8, 0),
+    enableWordConfidence: jspb.Message.getBooleanFieldWithDefault(msg, 9, false)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig}
+ */
+proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig;
+  return proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig}
+ */
+proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setLanguageCode(value);
+      break;
+    case 2:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setMaxAlternatives(value);
+      break;
+    case 3:
+      var value = /** @type {boolean} */ (reader.readBool());
+      msg.setFilterProfanity(value);
+      break;
+    case 4:
+      var value = new proto.google.cloud.videointelligence.v1.SpeechContext;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.SpeechContext.deserializeBinaryFromReader);
+      msg.addSpeechContexts(value);
+      break;
+    case 5:
+      var value = /** @type {boolean} */ (reader.readBool());
+      msg.setEnableAutomaticPunctuation(value);
+      break;
+    case 6:
+      var value = /** @type {!Array<number>} */ (reader.readPackedInt32());
+      msg.setAudioTracksList(value);
+      break;
+    case 7:
+      var value = /** @type {boolean} */ (reader.readBool());
+      msg.setEnableSpeakerDiarization(value);
+      break;
+    case 8:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setDiarizationSpeakerCount(value);
+      break;
+    case 9:
+      var value = /** @type {boolean} */ (reader.readBool());
+      msg.setEnableWordConfidence(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getLanguageCode();
+  if (f.length > 0) {
+    writer.writeString(
+      1,
+      f
+    );
+  }
+  f = message.getMaxAlternatives();
+  if (f !== 0) {
+    writer.writeInt32(
+      2,
+      f
+    );
+  }
+  f = message.getFilterProfanity();
+  if (f) {
+    writer.writeBool(
+      3,
+      f
+    );
+  }
+  f = message.getSpeechContextsList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      4,
+      f,
+      proto.google.cloud.videointelligence.v1.SpeechContext.serializeBinaryToWriter
+    );
+  }
+  f = message.getEnableAutomaticPunctuation();
+  if (f) {
+    writer.writeBool(
+      5,
+      f
+    );
+  }
+  f = message.getAudioTracksList();
+  if (f.length > 0) {
+    writer.writePackedInt32(
+      6,
+      f
+    );
+  }
+  f = message.getEnableSpeakerDiarization();
+  if (f) {
+    writer.writeBool(
+      7,
+      f
+    );
+  }
+  f = message.getDiarizationSpeakerCount();
+  if (f !== 0) {
+    writer.writeInt32(
+      8,
+      f
+    );
+  }
+  f = message.getEnableWordConfidence();
+  if (f) {
+    writer.writeBool(
+      9,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional string language_code = 1;
+ * @return {string}
+ */
+proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig.prototype.getLanguageCode = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig.prototype.setLanguageCode = function(value) {
+  jspb.Message.setProto3StringField(this, 1, value);
+};
+
+
+/**
+ * optional int32 max_alternatives = 2;
+ * @return {number}
+ */
+proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig.prototype.getMaxAlternatives = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
+};
+
+
+/** @param {number} value */
+proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig.prototype.setMaxAlternatives = function(value) {
+  jspb.Message.setProto3IntField(this, 2, value);
+};
+
+
+/**
+ * optional bool filter_profanity = 3;
+ * @return {boolean}
+ */
+proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig.prototype.getFilterProfanity = function() {
+  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 3, false));
+};
+
+
+/** @param {boolean} value */
+proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig.prototype.setFilterProfanity = function(value) {
+  jspb.Message.setProto3BooleanField(this, 3, value);
+};
+
+
+/**
+ * repeated SpeechContext speech_contexts = 4;
+ * @return {!Array<!proto.google.cloud.videointelligence.v1.SpeechContext>}
+ */
+proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig.prototype.getSpeechContextsList = function() {
+  return /** @type{!Array<!proto.google.cloud.videointelligence.v1.SpeechContext>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.google.cloud.videointelligence.v1.SpeechContext, 4));
+};
+
+
+/** @param {!Array<!proto.google.cloud.videointelligence.v1.SpeechContext>} value */
+proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig.prototype.setSpeechContextsList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 4, value);
+};
+
+
+/**
+ * @param {!proto.google.cloud.videointelligence.v1.SpeechContext=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.cloud.videointelligence.v1.SpeechContext}
+ */
+proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig.prototype.addSpeechContexts = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 4, opt_value, proto.google.cloud.videointelligence.v1.SpeechContext, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig.prototype.clearSpeechContextsList = function() {
+  this.setSpeechContextsList([]);
+};
+
+
+/**
+ * optional bool enable_automatic_punctuation = 5;
+ * @return {boolean}
+ */
+proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig.prototype.getEnableAutomaticPunctuation = function() {
+  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 5, false));
+};
+
+
+/** @param {boolean} value */
+proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig.prototype.setEnableAutomaticPunctuation = function(value) {
+  jspb.Message.setProto3BooleanField(this, 5, value);
+};
+
+
+/**
+ * repeated int32 audio_tracks = 6;
+ * @return {!Array<number>}
+ */
+proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig.prototype.getAudioTracksList = function() {
+  return /** @type {!Array<number>} */ (jspb.Message.getRepeatedField(this, 6));
+};
+
+
+/** @param {!Array<number>} value */
+proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig.prototype.setAudioTracksList = function(value) {
+  jspb.Message.setField(this, 6, value || []);
+};
+
+
+/**
+ * @param {number} value
+ * @param {number=} opt_index
+ */
+proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig.prototype.addAudioTracks = function(value, opt_index) {
+  jspb.Message.addToRepeatedField(this, 6, value, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig.prototype.clearAudioTracksList = function() {
+  this.setAudioTracksList([]);
+};
+
+
+/**
+ * optional bool enable_speaker_diarization = 7;
+ * @return {boolean}
+ */
+proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig.prototype.getEnableSpeakerDiarization = function() {
+  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 7, false));
+};
+
+
+/** @param {boolean} value */
+proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig.prototype.setEnableSpeakerDiarization = function(value) {
+  jspb.Message.setProto3BooleanField(this, 7, value);
+};
+
+
+/**
+ * optional int32 diarization_speaker_count = 8;
+ * @return {number}
+ */
+proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig.prototype.getDiarizationSpeakerCount = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 8, 0));
+};
+
+
+/** @param {number} value */
+proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig.prototype.setDiarizationSpeakerCount = function(value) {
+  jspb.Message.setProto3IntField(this, 8, value);
+};
+
+
+/**
+ * optional bool enable_word_confidence = 9;
+ * @return {boolean}
+ */
+proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig.prototype.getEnableWordConfidence = function() {
+  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 9, false));
+};
+
+
+/** @param {boolean} value */
+proto.google.cloud.videointelligence.v1.SpeechTranscriptionConfig.prototype.setEnableWordConfidence = function(value) {
+  jspb.Message.setProto3BooleanField(this, 9, value);
+};
+
+
+
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.google.cloud.videointelligence.v1.SpeechContext.repeatedFields_ = [1];
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.videointelligence.v1.SpeechContext.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.videointelligence.v1.SpeechContext.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.videointelligence.v1.SpeechContext} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.SpeechContext.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    phrasesList: (f = jspb.Message.getRepeatedField(msg, 1)) == null ? undefined : f
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.videointelligence.v1.SpeechContext}
+ */
+proto.google.cloud.videointelligence.v1.SpeechContext.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.videointelligence.v1.SpeechContext;
+  return proto.google.cloud.videointelligence.v1.SpeechContext.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.videointelligence.v1.SpeechContext} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.videointelligence.v1.SpeechContext}
+ */
+proto.google.cloud.videointelligence.v1.SpeechContext.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.addPhrases(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.videointelligence.v1.SpeechContext.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.videointelligence.v1.SpeechContext.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.videointelligence.v1.SpeechContext} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.SpeechContext.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getPhrasesList();
+  if (f.length > 0) {
+    writer.writeRepeatedString(
+      1,
+      f
+    );
+  }
+};
+
+
+/**
+ * repeated string phrases = 1;
+ * @return {!Array<string>}
+ */
+proto.google.cloud.videointelligence.v1.SpeechContext.prototype.getPhrasesList = function() {
+  return /** @type {!Array<string>} */ (jspb.Message.getRepeatedField(this, 1));
+};
+
+
+/** @param {!Array<string>} value */
+proto.google.cloud.videointelligence.v1.SpeechContext.prototype.setPhrasesList = function(value) {
+  jspb.Message.setField(this, 1, value || []);
+};
+
+
+/**
+ * @param {string} value
+ * @param {number=} opt_index
+ */
+proto.google.cloud.videointelligence.v1.SpeechContext.prototype.addPhrases = function(value, opt_index) {
+  jspb.Message.addToRepeatedField(this, 1, value, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.videointelligence.v1.SpeechContext.prototype.clearPhrasesList = function() {
+  this.setPhrasesList([]);
+};
+
+
+
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.google.cloud.videointelligence.v1.SpeechTranscription.repeatedFields_ = [1];
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.videointelligence.v1.SpeechTranscription.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.videointelligence.v1.SpeechTranscription.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.videointelligence.v1.SpeechTranscription} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.SpeechTranscription.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    alternativesList: jspb.Message.toObjectList(msg.getAlternativesList(),
+    proto.google.cloud.videointelligence.v1.SpeechRecognitionAlternative.toObject, includeInstance),
+    languageCode: jspb.Message.getFieldWithDefault(msg, 2, "")
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.videointelligence.v1.SpeechTranscription}
+ */
+proto.google.cloud.videointelligence.v1.SpeechTranscription.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.videointelligence.v1.SpeechTranscription;
+  return proto.google.cloud.videointelligence.v1.SpeechTranscription.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.videointelligence.v1.SpeechTranscription} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.videointelligence.v1.SpeechTranscription}
+ */
+proto.google.cloud.videointelligence.v1.SpeechTranscription.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new proto.google.cloud.videointelligence.v1.SpeechRecognitionAlternative;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.SpeechRecognitionAlternative.deserializeBinaryFromReader);
+      msg.addAlternatives(value);
+      break;
+    case 2:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setLanguageCode(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.videointelligence.v1.SpeechTranscription.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.videointelligence.v1.SpeechTranscription.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.videointelligence.v1.SpeechTranscription} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.SpeechTranscription.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getAlternativesList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      1,
+      f,
+      proto.google.cloud.videointelligence.v1.SpeechRecognitionAlternative.serializeBinaryToWriter
+    );
+  }
+  f = message.getLanguageCode();
+  if (f.length > 0) {
+    writer.writeString(
+      2,
+      f
+    );
+  }
+};
+
+
+/**
+ * repeated SpeechRecognitionAlternative alternatives = 1;
+ * @return {!Array<!proto.google.cloud.videointelligence.v1.SpeechRecognitionAlternative>}
+ */
+proto.google.cloud.videointelligence.v1.SpeechTranscription.prototype.getAlternativesList = function() {
+  return /** @type{!Array<!proto.google.cloud.videointelligence.v1.SpeechRecognitionAlternative>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.google.cloud.videointelligence.v1.SpeechRecognitionAlternative, 1));
+};
+
+
+/** @param {!Array<!proto.google.cloud.videointelligence.v1.SpeechRecognitionAlternative>} value */
+proto.google.cloud.videointelligence.v1.SpeechTranscription.prototype.setAlternativesList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 1, value);
+};
+
+
+/**
+ * @param {!proto.google.cloud.videointelligence.v1.SpeechRecognitionAlternative=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.cloud.videointelligence.v1.SpeechRecognitionAlternative}
+ */
+proto.google.cloud.videointelligence.v1.SpeechTranscription.prototype.addAlternatives = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 1, opt_value, proto.google.cloud.videointelligence.v1.SpeechRecognitionAlternative, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.videointelligence.v1.SpeechTranscription.prototype.clearAlternativesList = function() {
+  this.setAlternativesList([]);
+};
+
+
+/**
+ * optional string language_code = 2;
+ * @return {string}
+ */
+proto.google.cloud.videointelligence.v1.SpeechTranscription.prototype.getLanguageCode = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.videointelligence.v1.SpeechTranscription.prototype.setLanguageCode = function(value) {
+  jspb.Message.setProto3StringField(this, 2, value);
+};
+
+
+
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.google.cloud.videointelligence.v1.SpeechRecognitionAlternative.repeatedFields_ = [3];
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.videointelligence.v1.SpeechRecognitionAlternative.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.videointelligence.v1.SpeechRecognitionAlternative.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.videointelligence.v1.SpeechRecognitionAlternative} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.SpeechRecognitionAlternative.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    transcript: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    confidence: jspb.Message.getFloatingPointFieldWithDefault(msg, 2, 0.0),
+    wordsList: jspb.Message.toObjectList(msg.getWordsList(),
+    proto.google.cloud.videointelligence.v1.WordInfo.toObject, includeInstance)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.videointelligence.v1.SpeechRecognitionAlternative}
+ */
+proto.google.cloud.videointelligence.v1.SpeechRecognitionAlternative.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.videointelligence.v1.SpeechRecognitionAlternative;
+  return proto.google.cloud.videointelligence.v1.SpeechRecognitionAlternative.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.videointelligence.v1.SpeechRecognitionAlternative} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.videointelligence.v1.SpeechRecognitionAlternative}
+ */
+proto.google.cloud.videointelligence.v1.SpeechRecognitionAlternative.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setTranscript(value);
+      break;
+    case 2:
+      var value = /** @type {number} */ (reader.readFloat());
+      msg.setConfidence(value);
+      break;
+    case 3:
+      var value = new proto.google.cloud.videointelligence.v1.WordInfo;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.WordInfo.deserializeBinaryFromReader);
+      msg.addWords(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.videointelligence.v1.SpeechRecognitionAlternative.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.videointelligence.v1.SpeechRecognitionAlternative.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.videointelligence.v1.SpeechRecognitionAlternative} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.SpeechRecognitionAlternative.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getTranscript();
+  if (f.length > 0) {
+    writer.writeString(
+      1,
+      f
+    );
+  }
+  f = message.getConfidence();
+  if (f !== 0.0) {
+    writer.writeFloat(
+      2,
+      f
+    );
+  }
+  f = message.getWordsList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      3,
+      f,
+      proto.google.cloud.videointelligence.v1.WordInfo.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional string transcript = 1;
+ * @return {string}
+ */
+proto.google.cloud.videointelligence.v1.SpeechRecognitionAlternative.prototype.getTranscript = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.videointelligence.v1.SpeechRecognitionAlternative.prototype.setTranscript = function(value) {
+  jspb.Message.setProto3StringField(this, 1, value);
+};
+
+
+/**
+ * optional float confidence = 2;
+ * @return {number}
+ */
+proto.google.cloud.videointelligence.v1.SpeechRecognitionAlternative.prototype.getConfidence = function() {
+  return /** @type {number} */ (jspb.Message.getFloatingPointFieldWithDefault(this, 2, 0.0));
+};
+
+
+/** @param {number} value */
+proto.google.cloud.videointelligence.v1.SpeechRecognitionAlternative.prototype.setConfidence = function(value) {
+  jspb.Message.setProto3FloatField(this, 2, value);
+};
+
+
+/**
+ * repeated WordInfo words = 3;
+ * @return {!Array<!proto.google.cloud.videointelligence.v1.WordInfo>}
+ */
+proto.google.cloud.videointelligence.v1.SpeechRecognitionAlternative.prototype.getWordsList = function() {
+  return /** @type{!Array<!proto.google.cloud.videointelligence.v1.WordInfo>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.google.cloud.videointelligence.v1.WordInfo, 3));
+};
+
+
+/** @param {!Array<!proto.google.cloud.videointelligence.v1.WordInfo>} value */
+proto.google.cloud.videointelligence.v1.SpeechRecognitionAlternative.prototype.setWordsList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 3, value);
+};
+
+
+/**
+ * @param {!proto.google.cloud.videointelligence.v1.WordInfo=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.cloud.videointelligence.v1.WordInfo}
+ */
+proto.google.cloud.videointelligence.v1.SpeechRecognitionAlternative.prototype.addWords = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 3, opt_value, proto.google.cloud.videointelligence.v1.WordInfo, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.videointelligence.v1.SpeechRecognitionAlternative.prototype.clearWordsList = function() {
+  this.setWordsList([]);
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.videointelligence.v1.WordInfo.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.videointelligence.v1.WordInfo.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.videointelligence.v1.WordInfo} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.WordInfo.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    startTime: (f = msg.getStartTime()) && google_protobuf_duration_pb.Duration.toObject(includeInstance, f),
+    endTime: (f = msg.getEndTime()) && google_protobuf_duration_pb.Duration.toObject(includeInstance, f),
+    word: jspb.Message.getFieldWithDefault(msg, 3, ""),
+    confidence: jspb.Message.getFloatingPointFieldWithDefault(msg, 4, 0.0),
+    speakerTag: jspb.Message.getFieldWithDefault(msg, 5, 0)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.videointelligence.v1.WordInfo}
+ */
+proto.google.cloud.videointelligence.v1.WordInfo.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.videointelligence.v1.WordInfo;
+  return proto.google.cloud.videointelligence.v1.WordInfo.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.videointelligence.v1.WordInfo} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.videointelligence.v1.WordInfo}
+ */
+proto.google.cloud.videointelligence.v1.WordInfo.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new google_protobuf_duration_pb.Duration;
+      reader.readMessage(value,google_protobuf_duration_pb.Duration.deserializeBinaryFromReader);
+      msg.setStartTime(value);
+      break;
+    case 2:
+      var value = new google_protobuf_duration_pb.Duration;
+      reader.readMessage(value,google_protobuf_duration_pb.Duration.deserializeBinaryFromReader);
+      msg.setEndTime(value);
+      break;
+    case 3:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setWord(value);
+      break;
+    case 4:
+      var value = /** @type {number} */ (reader.readFloat());
+      msg.setConfidence(value);
+      break;
+    case 5:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setSpeakerTag(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.videointelligence.v1.WordInfo.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.videointelligence.v1.WordInfo.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.videointelligence.v1.WordInfo} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.WordInfo.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getStartTime();
+  if (f != null) {
+    writer.writeMessage(
+      1,
+      f,
+      google_protobuf_duration_pb.Duration.serializeBinaryToWriter
+    );
+  }
+  f = message.getEndTime();
+  if (f != null) {
+    writer.writeMessage(
+      2,
+      f,
+      google_protobuf_duration_pb.Duration.serializeBinaryToWriter
+    );
+  }
+  f = message.getWord();
+  if (f.length > 0) {
+    writer.writeString(
+      3,
+      f
+    );
+  }
+  f = message.getConfidence();
+  if (f !== 0.0) {
+    writer.writeFloat(
+      4,
+      f
+    );
+  }
+  f = message.getSpeakerTag();
+  if (f !== 0) {
+    writer.writeInt32(
+      5,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional google.protobuf.Duration start_time = 1;
+ * @return {?proto.google.protobuf.Duration}
+ */
+proto.google.cloud.videointelligence.v1.WordInfo.prototype.getStartTime = function() {
+  return /** @type{?proto.google.protobuf.Duration} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_duration_pb.Duration, 1));
+};
+
+
+/** @param {?proto.google.protobuf.Duration|undefined} value */
+proto.google.cloud.videointelligence.v1.WordInfo.prototype.setStartTime = function(value) {
+  jspb.Message.setWrapperField(this, 1, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.videointelligence.v1.WordInfo.prototype.clearStartTime = function() {
+  this.setStartTime(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.videointelligence.v1.WordInfo.prototype.hasStartTime = function() {
+  return jspb.Message.getField(this, 1) != null;
+};
+
+
+/**
+ * optional google.protobuf.Duration end_time = 2;
+ * @return {?proto.google.protobuf.Duration}
+ */
+proto.google.cloud.videointelligence.v1.WordInfo.prototype.getEndTime = function() {
+  return /** @type{?proto.google.protobuf.Duration} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_duration_pb.Duration, 2));
+};
+
+
+/** @param {?proto.google.protobuf.Duration|undefined} value */
+proto.google.cloud.videointelligence.v1.WordInfo.prototype.setEndTime = function(value) {
+  jspb.Message.setWrapperField(this, 2, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.videointelligence.v1.WordInfo.prototype.clearEndTime = function() {
+  this.setEndTime(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.videointelligence.v1.WordInfo.prototype.hasEndTime = function() {
+  return jspb.Message.getField(this, 2) != null;
+};
+
+
+/**
+ * optional string word = 3;
+ * @return {string}
+ */
+proto.google.cloud.videointelligence.v1.WordInfo.prototype.getWord = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.videointelligence.v1.WordInfo.prototype.setWord = function(value) {
+  jspb.Message.setProto3StringField(this, 3, value);
+};
+
+
+/**
+ * optional float confidence = 4;
+ * @return {number}
+ */
+proto.google.cloud.videointelligence.v1.WordInfo.prototype.getConfidence = function() {
+  return /** @type {number} */ (jspb.Message.getFloatingPointFieldWithDefault(this, 4, 0.0));
+};
+
+
+/** @param {number} value */
+proto.google.cloud.videointelligence.v1.WordInfo.prototype.setConfidence = function(value) {
+  jspb.Message.setProto3FloatField(this, 4, value);
+};
+
+
+/**
+ * optional int32 speaker_tag = 5;
+ * @return {number}
+ */
+proto.google.cloud.videointelligence.v1.WordInfo.prototype.getSpeakerTag = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 5, 0));
+};
+
+
+/** @param {number} value */
+proto.google.cloud.videointelligence.v1.WordInfo.prototype.setSpeakerTag = function(value) {
+  jspb.Message.setProto3IntField(this, 5, value);
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.videointelligence.v1.NormalizedVertex.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.videointelligence.v1.NormalizedVertex.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.videointelligence.v1.NormalizedVertex} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.NormalizedVertex.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    x: jspb.Message.getFloatingPointFieldWithDefault(msg, 1, 0.0),
+    y: jspb.Message.getFloatingPointFieldWithDefault(msg, 2, 0.0)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.videointelligence.v1.NormalizedVertex}
+ */
+proto.google.cloud.videointelligence.v1.NormalizedVertex.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.videointelligence.v1.NormalizedVertex;
+  return proto.google.cloud.videointelligence.v1.NormalizedVertex.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.videointelligence.v1.NormalizedVertex} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.videointelligence.v1.NormalizedVertex}
+ */
+proto.google.cloud.videointelligence.v1.NormalizedVertex.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {number} */ (reader.readFloat());
+      msg.setX(value);
+      break;
+    case 2:
+      var value = /** @type {number} */ (reader.readFloat());
+      msg.setY(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.videointelligence.v1.NormalizedVertex.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.videointelligence.v1.NormalizedVertex.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.videointelligence.v1.NormalizedVertex} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.NormalizedVertex.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getX();
+  if (f !== 0.0) {
+    writer.writeFloat(
+      1,
+      f
+    );
+  }
+  f = message.getY();
+  if (f !== 0.0) {
+    writer.writeFloat(
+      2,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional float x = 1;
+ * @return {number}
+ */
+proto.google.cloud.videointelligence.v1.NormalizedVertex.prototype.getX = function() {
+  return /** @type {number} */ (jspb.Message.getFloatingPointFieldWithDefault(this, 1, 0.0));
+};
+
+
+/** @param {number} value */
+proto.google.cloud.videointelligence.v1.NormalizedVertex.prototype.setX = function(value) {
+  jspb.Message.setProto3FloatField(this, 1, value);
+};
+
+
+/**
+ * optional float y = 2;
+ * @return {number}
+ */
+proto.google.cloud.videointelligence.v1.NormalizedVertex.prototype.getY = function() {
+  return /** @type {number} */ (jspb.Message.getFloatingPointFieldWithDefault(this, 2, 0.0));
+};
+
+
+/** @param {number} value */
+proto.google.cloud.videointelligence.v1.NormalizedVertex.prototype.setY = function(value) {
+  jspb.Message.setProto3FloatField(this, 2, value);
+};
+
+
+
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.google.cloud.videointelligence.v1.NormalizedBoundingPoly.repeatedFields_ = [1];
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.videointelligence.v1.NormalizedBoundingPoly.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.videointelligence.v1.NormalizedBoundingPoly.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.videointelligence.v1.NormalizedBoundingPoly} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.NormalizedBoundingPoly.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    verticesList: jspb.Message.toObjectList(msg.getVerticesList(),
+    proto.google.cloud.videointelligence.v1.NormalizedVertex.toObject, includeInstance)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.videointelligence.v1.NormalizedBoundingPoly}
+ */
+proto.google.cloud.videointelligence.v1.NormalizedBoundingPoly.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.videointelligence.v1.NormalizedBoundingPoly;
+  return proto.google.cloud.videointelligence.v1.NormalizedBoundingPoly.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.videointelligence.v1.NormalizedBoundingPoly} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.videointelligence.v1.NormalizedBoundingPoly}
+ */
+proto.google.cloud.videointelligence.v1.NormalizedBoundingPoly.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new proto.google.cloud.videointelligence.v1.NormalizedVertex;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.NormalizedVertex.deserializeBinaryFromReader);
+      msg.addVertices(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.videointelligence.v1.NormalizedBoundingPoly.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.videointelligence.v1.NormalizedBoundingPoly.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.videointelligence.v1.NormalizedBoundingPoly} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.NormalizedBoundingPoly.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getVerticesList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      1,
+      f,
+      proto.google.cloud.videointelligence.v1.NormalizedVertex.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * repeated NormalizedVertex vertices = 1;
+ * @return {!Array<!proto.google.cloud.videointelligence.v1.NormalizedVertex>}
+ */
+proto.google.cloud.videointelligence.v1.NormalizedBoundingPoly.prototype.getVerticesList = function() {
+  return /** @type{!Array<!proto.google.cloud.videointelligence.v1.NormalizedVertex>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.google.cloud.videointelligence.v1.NormalizedVertex, 1));
+};
+
+
+/** @param {!Array<!proto.google.cloud.videointelligence.v1.NormalizedVertex>} value */
+proto.google.cloud.videointelligence.v1.NormalizedBoundingPoly.prototype.setVerticesList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 1, value);
+};
+
+
+/**
+ * @param {!proto.google.cloud.videointelligence.v1.NormalizedVertex=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.cloud.videointelligence.v1.NormalizedVertex}
+ */
+proto.google.cloud.videointelligence.v1.NormalizedBoundingPoly.prototype.addVertices = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 1, opt_value, proto.google.cloud.videointelligence.v1.NormalizedVertex, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.videointelligence.v1.NormalizedBoundingPoly.prototype.clearVerticesList = function() {
+  this.setVerticesList([]);
+};
+
+
+
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.google.cloud.videointelligence.v1.TextSegment.repeatedFields_ = [3];
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.videointelligence.v1.TextSegment.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.videointelligence.v1.TextSegment.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.videointelligence.v1.TextSegment} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.TextSegment.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    segment: (f = msg.getSegment()) && proto.google.cloud.videointelligence.v1.VideoSegment.toObject(includeInstance, f),
+    confidence: jspb.Message.getFloatingPointFieldWithDefault(msg, 2, 0.0),
+    framesList: jspb.Message.toObjectList(msg.getFramesList(),
+    proto.google.cloud.videointelligence.v1.TextFrame.toObject, includeInstance)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.videointelligence.v1.TextSegment}
+ */
+proto.google.cloud.videointelligence.v1.TextSegment.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.videointelligence.v1.TextSegment;
+  return proto.google.cloud.videointelligence.v1.TextSegment.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.videointelligence.v1.TextSegment} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.videointelligence.v1.TextSegment}
+ */
+proto.google.cloud.videointelligence.v1.TextSegment.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new proto.google.cloud.videointelligence.v1.VideoSegment;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.VideoSegment.deserializeBinaryFromReader);
+      msg.setSegment(value);
+      break;
+    case 2:
+      var value = /** @type {number} */ (reader.readFloat());
+      msg.setConfidence(value);
+      break;
+    case 3:
+      var value = new proto.google.cloud.videointelligence.v1.TextFrame;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.TextFrame.deserializeBinaryFromReader);
+      msg.addFrames(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.videointelligence.v1.TextSegment.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.videointelligence.v1.TextSegment.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.videointelligence.v1.TextSegment} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.TextSegment.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getSegment();
+  if (f != null) {
+    writer.writeMessage(
+      1,
+      f,
+      proto.google.cloud.videointelligence.v1.VideoSegment.serializeBinaryToWriter
+    );
+  }
+  f = message.getConfidence();
+  if (f !== 0.0) {
+    writer.writeFloat(
+      2,
+      f
+    );
+  }
+  f = message.getFramesList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      3,
+      f,
+      proto.google.cloud.videointelligence.v1.TextFrame.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional VideoSegment segment = 1;
+ * @return {?proto.google.cloud.videointelligence.v1.VideoSegment}
+ */
+proto.google.cloud.videointelligence.v1.TextSegment.prototype.getSegment = function() {
+  return /** @type{?proto.google.cloud.videointelligence.v1.VideoSegment} */ (
+    jspb.Message.getWrapperField(this, proto.google.cloud.videointelligence.v1.VideoSegment, 1));
+};
+
+
+/** @param {?proto.google.cloud.videointelligence.v1.VideoSegment|undefined} value */
+proto.google.cloud.videointelligence.v1.TextSegment.prototype.setSegment = function(value) {
+  jspb.Message.setWrapperField(this, 1, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.videointelligence.v1.TextSegment.prototype.clearSegment = function() {
+  this.setSegment(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.videointelligence.v1.TextSegment.prototype.hasSegment = function() {
+  return jspb.Message.getField(this, 1) != null;
+};
+
+
+/**
+ * optional float confidence = 2;
+ * @return {number}
+ */
+proto.google.cloud.videointelligence.v1.TextSegment.prototype.getConfidence = function() {
+  return /** @type {number} */ (jspb.Message.getFloatingPointFieldWithDefault(this, 2, 0.0));
+};
+
+
+/** @param {number} value */
+proto.google.cloud.videointelligence.v1.TextSegment.prototype.setConfidence = function(value) {
+  jspb.Message.setProto3FloatField(this, 2, value);
+};
+
+
+/**
+ * repeated TextFrame frames = 3;
+ * @return {!Array<!proto.google.cloud.videointelligence.v1.TextFrame>}
+ */
+proto.google.cloud.videointelligence.v1.TextSegment.prototype.getFramesList = function() {
+  return /** @type{!Array<!proto.google.cloud.videointelligence.v1.TextFrame>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.google.cloud.videointelligence.v1.TextFrame, 3));
+};
+
+
+/** @param {!Array<!proto.google.cloud.videointelligence.v1.TextFrame>} value */
+proto.google.cloud.videointelligence.v1.TextSegment.prototype.setFramesList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 3, value);
+};
+
+
+/**
+ * @param {!proto.google.cloud.videointelligence.v1.TextFrame=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.cloud.videointelligence.v1.TextFrame}
+ */
+proto.google.cloud.videointelligence.v1.TextSegment.prototype.addFrames = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 3, opt_value, proto.google.cloud.videointelligence.v1.TextFrame, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.videointelligence.v1.TextSegment.prototype.clearFramesList = function() {
+  this.setFramesList([]);
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.videointelligence.v1.TextFrame.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.videointelligence.v1.TextFrame.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.videointelligence.v1.TextFrame} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.TextFrame.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    rotatedBoundingBox: (f = msg.getRotatedBoundingBox()) && proto.google.cloud.videointelligence.v1.NormalizedBoundingPoly.toObject(includeInstance, f),
+    timeOffset: (f = msg.getTimeOffset()) && google_protobuf_duration_pb.Duration.toObject(includeInstance, f)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.videointelligence.v1.TextFrame}
+ */
+proto.google.cloud.videointelligence.v1.TextFrame.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.videointelligence.v1.TextFrame;
+  return proto.google.cloud.videointelligence.v1.TextFrame.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.videointelligence.v1.TextFrame} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.videointelligence.v1.TextFrame}
+ */
+proto.google.cloud.videointelligence.v1.TextFrame.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new proto.google.cloud.videointelligence.v1.NormalizedBoundingPoly;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.NormalizedBoundingPoly.deserializeBinaryFromReader);
+      msg.setRotatedBoundingBox(value);
+      break;
+    case 2:
+      var value = new google_protobuf_duration_pb.Duration;
+      reader.readMessage(value,google_protobuf_duration_pb.Duration.deserializeBinaryFromReader);
+      msg.setTimeOffset(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.videointelligence.v1.TextFrame.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.videointelligence.v1.TextFrame.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.videointelligence.v1.TextFrame} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.TextFrame.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getRotatedBoundingBox();
+  if (f != null) {
+    writer.writeMessage(
+      1,
+      f,
+      proto.google.cloud.videointelligence.v1.NormalizedBoundingPoly.serializeBinaryToWriter
+    );
+  }
+  f = message.getTimeOffset();
+  if (f != null) {
+    writer.writeMessage(
+      2,
+      f,
+      google_protobuf_duration_pb.Duration.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional NormalizedBoundingPoly rotated_bounding_box = 1;
+ * @return {?proto.google.cloud.videointelligence.v1.NormalizedBoundingPoly}
+ */
+proto.google.cloud.videointelligence.v1.TextFrame.prototype.getRotatedBoundingBox = function() {
+  return /** @type{?proto.google.cloud.videointelligence.v1.NormalizedBoundingPoly} */ (
+    jspb.Message.getWrapperField(this, proto.google.cloud.videointelligence.v1.NormalizedBoundingPoly, 1));
+};
+
+
+/** @param {?proto.google.cloud.videointelligence.v1.NormalizedBoundingPoly|undefined} value */
+proto.google.cloud.videointelligence.v1.TextFrame.prototype.setRotatedBoundingBox = function(value) {
+  jspb.Message.setWrapperField(this, 1, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.videointelligence.v1.TextFrame.prototype.clearRotatedBoundingBox = function() {
+  this.setRotatedBoundingBox(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.videointelligence.v1.TextFrame.prototype.hasRotatedBoundingBox = function() {
+  return jspb.Message.getField(this, 1) != null;
+};
+
+
+/**
+ * optional google.protobuf.Duration time_offset = 2;
+ * @return {?proto.google.protobuf.Duration}
+ */
+proto.google.cloud.videointelligence.v1.TextFrame.prototype.getTimeOffset = function() {
+  return /** @type{?proto.google.protobuf.Duration} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_duration_pb.Duration, 2));
+};
+
+
+/** @param {?proto.google.protobuf.Duration|undefined} value */
+proto.google.cloud.videointelligence.v1.TextFrame.prototype.setTimeOffset = function(value) {
+  jspb.Message.setWrapperField(this, 2, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.videointelligence.v1.TextFrame.prototype.clearTimeOffset = function() {
+  this.setTimeOffset(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.videointelligence.v1.TextFrame.prototype.hasTimeOffset = function() {
+  return jspb.Message.getField(this, 2) != null;
+};
+
+
+
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.google.cloud.videointelligence.v1.TextAnnotation.repeatedFields_ = [2];
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.videointelligence.v1.TextAnnotation.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.videointelligence.v1.TextAnnotation.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.videointelligence.v1.TextAnnotation} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.TextAnnotation.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    text: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    segmentsList: jspb.Message.toObjectList(msg.getSegmentsList(),
+    proto.google.cloud.videointelligence.v1.TextSegment.toObject, includeInstance)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.videointelligence.v1.TextAnnotation}
+ */
+proto.google.cloud.videointelligence.v1.TextAnnotation.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.videointelligence.v1.TextAnnotation;
+  return proto.google.cloud.videointelligence.v1.TextAnnotation.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.videointelligence.v1.TextAnnotation} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.videointelligence.v1.TextAnnotation}
+ */
+proto.google.cloud.videointelligence.v1.TextAnnotation.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setText(value);
+      break;
+    case 2:
+      var value = new proto.google.cloud.videointelligence.v1.TextSegment;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.TextSegment.deserializeBinaryFromReader);
+      msg.addSegments(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.videointelligence.v1.TextAnnotation.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.videointelligence.v1.TextAnnotation.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.videointelligence.v1.TextAnnotation} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.TextAnnotation.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getText();
+  if (f.length > 0) {
+    writer.writeString(
+      1,
+      f
+    );
+  }
+  f = message.getSegmentsList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      2,
+      f,
+      proto.google.cloud.videointelligence.v1.TextSegment.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional string text = 1;
+ * @return {string}
+ */
+proto.google.cloud.videointelligence.v1.TextAnnotation.prototype.getText = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+};
+
+
+/** @param {string} value */
+proto.google.cloud.videointelligence.v1.TextAnnotation.prototype.setText = function(value) {
+  jspb.Message.setProto3StringField(this, 1, value);
+};
+
+
+/**
+ * repeated TextSegment segments = 2;
+ * @return {!Array<!proto.google.cloud.videointelligence.v1.TextSegment>}
+ */
+proto.google.cloud.videointelligence.v1.TextAnnotation.prototype.getSegmentsList = function() {
+  return /** @type{!Array<!proto.google.cloud.videointelligence.v1.TextSegment>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.google.cloud.videointelligence.v1.TextSegment, 2));
+};
+
+
+/** @param {!Array<!proto.google.cloud.videointelligence.v1.TextSegment>} value */
+proto.google.cloud.videointelligence.v1.TextAnnotation.prototype.setSegmentsList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 2, value);
+};
+
+
+/**
+ * @param {!proto.google.cloud.videointelligence.v1.TextSegment=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.cloud.videointelligence.v1.TextSegment}
+ */
+proto.google.cloud.videointelligence.v1.TextAnnotation.prototype.addSegments = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 2, opt_value, proto.google.cloud.videointelligence.v1.TextSegment, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.videointelligence.v1.TextAnnotation.prototype.clearSegmentsList = function() {
+  this.setSegmentsList([]);
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingFrame.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.videointelligence.v1.ObjectTrackingFrame.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.videointelligence.v1.ObjectTrackingFrame} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingFrame.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    normalizedBoundingBox: (f = msg.getNormalizedBoundingBox()) && proto.google.cloud.videointelligence.v1.NormalizedBoundingBox.toObject(includeInstance, f),
+    timeOffset: (f = msg.getTimeOffset()) && google_protobuf_duration_pb.Duration.toObject(includeInstance, f)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.videointelligence.v1.ObjectTrackingFrame}
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingFrame.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.videointelligence.v1.ObjectTrackingFrame;
+  return proto.google.cloud.videointelligence.v1.ObjectTrackingFrame.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.videointelligence.v1.ObjectTrackingFrame} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.videointelligence.v1.ObjectTrackingFrame}
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingFrame.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new proto.google.cloud.videointelligence.v1.NormalizedBoundingBox;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.NormalizedBoundingBox.deserializeBinaryFromReader);
+      msg.setNormalizedBoundingBox(value);
+      break;
+    case 2:
+      var value = new google_protobuf_duration_pb.Duration;
+      reader.readMessage(value,google_protobuf_duration_pb.Duration.deserializeBinaryFromReader);
+      msg.setTimeOffset(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingFrame.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.videointelligence.v1.ObjectTrackingFrame.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.videointelligence.v1.ObjectTrackingFrame} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingFrame.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getNormalizedBoundingBox();
+  if (f != null) {
+    writer.writeMessage(
+      1,
+      f,
+      proto.google.cloud.videointelligence.v1.NormalizedBoundingBox.serializeBinaryToWriter
+    );
+  }
+  f = message.getTimeOffset();
+  if (f != null) {
+    writer.writeMessage(
+      2,
+      f,
+      google_protobuf_duration_pb.Duration.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional NormalizedBoundingBox normalized_bounding_box = 1;
+ * @return {?proto.google.cloud.videointelligence.v1.NormalizedBoundingBox}
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingFrame.prototype.getNormalizedBoundingBox = function() {
+  return /** @type{?proto.google.cloud.videointelligence.v1.NormalizedBoundingBox} */ (
+    jspb.Message.getWrapperField(this, proto.google.cloud.videointelligence.v1.NormalizedBoundingBox, 1));
+};
+
+
+/** @param {?proto.google.cloud.videointelligence.v1.NormalizedBoundingBox|undefined} value */
+proto.google.cloud.videointelligence.v1.ObjectTrackingFrame.prototype.setNormalizedBoundingBox = function(value) {
+  jspb.Message.setWrapperField(this, 1, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingFrame.prototype.clearNormalizedBoundingBox = function() {
+  this.setNormalizedBoundingBox(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingFrame.prototype.hasNormalizedBoundingBox = function() {
+  return jspb.Message.getField(this, 1) != null;
+};
+
+
+/**
+ * optional google.protobuf.Duration time_offset = 2;
+ * @return {?proto.google.protobuf.Duration}
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingFrame.prototype.getTimeOffset = function() {
+  return /** @type{?proto.google.protobuf.Duration} */ (
+    jspb.Message.getWrapperField(this, google_protobuf_duration_pb.Duration, 2));
+};
+
+
+/** @param {?proto.google.protobuf.Duration|undefined} value */
+proto.google.cloud.videointelligence.v1.ObjectTrackingFrame.prototype.setTimeOffset = function(value) {
+  jspb.Message.setWrapperField(this, 2, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingFrame.prototype.clearTimeOffset = function() {
+  this.setTimeOffset(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingFrame.prototype.hasTimeOffset = function() {
+  return jspb.Message.getField(this, 2) != null;
+};
+
+
+
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation.repeatedFields_ = [2];
+
+/**
+ * Oneof group definitions for this message. Each group defines the field
+ * numbers belonging to that group. When of these fields' value is set, all
+ * other fields in the group are cleared. During deserialization, if multiple
+ * fields are encountered for a group, only the last value seen will be kept.
+ * @private {!Array<!Array<number>>}
+ * @const
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation.oneofGroups_ = [[3,5]];
+
+/**
+ * @enum {number}
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation.TrackInfoCase = {
+  TRACK_INFO_NOT_SET: 0,
+  SEGMENT: 3,
+  TRACK_ID: 5
+};
+
+/**
+ * @return {proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation.TrackInfoCase}
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation.prototype.getTrackInfoCase = function() {
+  return /** @type {proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation.TrackInfoCase} */(jspb.Message.computeOneofCase(this, proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation.oneofGroups_[0]));
+};
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation.prototype.toObject = function(opt_includeInstance) {
+  return proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    segment: (f = msg.getSegment()) && proto.google.cloud.videointelligence.v1.VideoSegment.toObject(includeInstance, f),
+    trackId: jspb.Message.getFieldWithDefault(msg, 5, 0),
+    entity: (f = msg.getEntity()) && proto.google.cloud.videointelligence.v1.Entity.toObject(includeInstance, f),
+    confidence: jspb.Message.getFloatingPointFieldWithDefault(msg, 4, 0.0),
+    framesList: jspb.Message.toObjectList(msg.getFramesList(),
+    proto.google.cloud.videointelligence.v1.ObjectTrackingFrame.toObject, includeInstance)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation}
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation;
+  return proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation}
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 3:
+      var value = new proto.google.cloud.videointelligence.v1.VideoSegment;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.VideoSegment.deserializeBinaryFromReader);
+      msg.setSegment(value);
+      break;
+    case 5:
+      var value = /** @type {number} */ (reader.readInt64());
+      msg.setTrackId(value);
+      break;
+    case 1:
+      var value = new proto.google.cloud.videointelligence.v1.Entity;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.Entity.deserializeBinaryFromReader);
+      msg.setEntity(value);
+      break;
+    case 4:
+      var value = /** @type {number} */ (reader.readFloat());
+      msg.setConfidence(value);
+      break;
+    case 2:
+      var value = new proto.google.cloud.videointelligence.v1.ObjectTrackingFrame;
+      reader.readMessage(value,proto.google.cloud.videointelligence.v1.ObjectTrackingFrame.deserializeBinaryFromReader);
+      msg.addFrames(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getSegment();
+  if (f != null) {
+    writer.writeMessage(
+      3,
+      f,
+      proto.google.cloud.videointelligence.v1.VideoSegment.serializeBinaryToWriter
+    );
+  }
+  f = /** @type {number} */ (jspb.Message.getField(message, 5));
+  if (f != null) {
+    writer.writeInt64(
+      5,
+      f
+    );
+  }
+  f = message.getEntity();
+  if (f != null) {
+    writer.writeMessage(
+      1,
+      f,
+      proto.google.cloud.videointelligence.v1.Entity.serializeBinaryToWriter
+    );
+  }
+  f = message.getConfidence();
+  if (f !== 0.0) {
+    writer.writeFloat(
+      4,
+      f
+    );
+  }
+  f = message.getFramesList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      2,
+      f,
+      proto.google.cloud.videointelligence.v1.ObjectTrackingFrame.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional VideoSegment segment = 3;
+ * @return {?proto.google.cloud.videointelligence.v1.VideoSegment}
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation.prototype.getSegment = function() {
+  return /** @type{?proto.google.cloud.videointelligence.v1.VideoSegment} */ (
+    jspb.Message.getWrapperField(this, proto.google.cloud.videointelligence.v1.VideoSegment, 3));
+};
+
+
+/** @param {?proto.google.cloud.videointelligence.v1.VideoSegment|undefined} value */
+proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation.prototype.setSegment = function(value) {
+  jspb.Message.setOneofWrapperField(this, 3, proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation.oneofGroups_[0], value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation.prototype.clearSegment = function() {
+  this.setSegment(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation.prototype.hasSegment = function() {
+  return jspb.Message.getField(this, 3) != null;
+};
+
+
+/**
+ * optional int64 track_id = 5;
+ * @return {number}
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation.prototype.getTrackId = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 5, 0));
+};
+
+
+/** @param {number} value */
+proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation.prototype.setTrackId = function(value) {
+  jspb.Message.setOneofField(this, 5, proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation.oneofGroups_[0], value);
+};
+
+
+/**
+ * Clears the field making it undefined.
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation.prototype.clearTrackId = function() {
+  jspb.Message.setOneofField(this, 5, proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation.oneofGroups_[0], undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation.prototype.hasTrackId = function() {
+  return jspb.Message.getField(this, 5) != null;
+};
+
+
+/**
+ * optional Entity entity = 1;
+ * @return {?proto.google.cloud.videointelligence.v1.Entity}
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation.prototype.getEntity = function() {
+  return /** @type{?proto.google.cloud.videointelligence.v1.Entity} */ (
+    jspb.Message.getWrapperField(this, proto.google.cloud.videointelligence.v1.Entity, 1));
+};
+
+
+/** @param {?proto.google.cloud.videointelligence.v1.Entity|undefined} value */
+proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation.prototype.setEntity = function(value) {
+  jspb.Message.setWrapperField(this, 1, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation.prototype.clearEntity = function() {
+  this.setEntity(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation.prototype.hasEntity = function() {
+  return jspb.Message.getField(this, 1) != null;
+};
+
+
+/**
+ * optional float confidence = 4;
+ * @return {number}
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation.prototype.getConfidence = function() {
+  return /** @type {number} */ (jspb.Message.getFloatingPointFieldWithDefault(this, 4, 0.0));
+};
+
+
+/** @param {number} value */
+proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation.prototype.setConfidence = function(value) {
+  jspb.Message.setProto3FloatField(this, 4, value);
+};
+
+
+/**
+ * repeated ObjectTrackingFrame frames = 2;
+ * @return {!Array<!proto.google.cloud.videointelligence.v1.ObjectTrackingFrame>}
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation.prototype.getFramesList = function() {
+  return /** @type{!Array<!proto.google.cloud.videointelligence.v1.ObjectTrackingFrame>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.google.cloud.videointelligence.v1.ObjectTrackingFrame, 2));
+};
+
+
+/** @param {!Array<!proto.google.cloud.videointelligence.v1.ObjectTrackingFrame>} value */
+proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation.prototype.setFramesList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 2, value);
+};
+
+
+/**
+ * @param {!proto.google.cloud.videointelligence.v1.ObjectTrackingFrame=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.google.cloud.videointelligence.v1.ObjectTrackingFrame}
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation.prototype.addFrames = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 2, opt_value, proto.google.cloud.videointelligence.v1.ObjectTrackingFrame, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.google.cloud.videointelligence.v1.ObjectTrackingAnnotation.prototype.clearFramesList = function() {
+  this.setFramesList([]);
+};
+
+
+/**
+ * @enum {number}
+ */
+proto.google.cloud.videointelligence.v1.Feature = {
+  FEATURE_UNSPECIFIED: 0,
+  LABEL_DETECTION: 1,
+  SHOT_CHANGE_DETECTION: 2,
+  EXPLICIT_CONTENT_DETECTION: 3,
+  FACE_DETECTION: 4,
+  SPEECH_TRANSCRIPTION: 6,
+  TEXT_DETECTION: 7,
+  OBJECT_TRACKING: 9
+};
+
+/**
+ * @enum {number}
+ */
+proto.google.cloud.videointelligence.v1.LabelDetectionMode = {
+  LABEL_DETECTION_MODE_UNSPECIFIED: 0,
+  SHOT_MODE: 1,
+  FRAME_MODE: 2,
+  SHOT_AND_FRAME_MODE: 3
+};
+
+/**
+ * @enum {number}
+ */
+proto.google.cloud.videointelligence.v1.Likelihood = {
+  LIKELIHOOD_UNSPECIFIED: 0,
+  VERY_UNLIKELY: 1,
+  UNLIKELY: 2,
+  POSSIBLE: 3,
+  LIKELY: 4,
+  VERY_LIKELY: 5
+};
+
+goog.object.extend(exports, proto.google.cloud.videointelligence.v1);
