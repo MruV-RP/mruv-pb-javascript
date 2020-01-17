@@ -11,6 +11,10 @@ var jspb = require('google-protobuf');
 var goog = jspb;
 var global = Function('return this')();
 
+var accounts_accounts_model_pb = require('../accounts/accounts_model_pb.js');
+goog.object.extend(proto, accounts_accounts_model_pb);
+var common_spatial_pb = require('../common/spatial_pb.js');
+goog.object.extend(proto, common_spatial_pb);
 goog.exportSymbol('proto.mruv.Character', null, global);
 goog.exportSymbol('proto.mruv.CharacterID', null, global);
 goog.exportSymbol('proto.mruv.DeathType', null, global);
@@ -88,11 +92,13 @@ proto.mruv.Character.prototype.toObject = function(opt_includeInstance) {
  */
 proto.mruv.Character.toObject = function(includeInstance, msg) {
   var f, obj = {
-    id: jspb.Message.getFieldWithDefault(msg, 1, 0),
-    firstName: jspb.Message.getFieldWithDefault(msg, 2, ""),
-    secondName: jspb.Message.getFieldWithDefault(msg, 3, ""),
-    age: jspb.Message.getFieldWithDefault(msg, 4, 0),
-    sex: jspb.Message.getFieldWithDefault(msg, 5, 0)
+    id: (f = msg.getId()) && proto.mruv.CharacterID.toObject(includeInstance, f),
+    ownerId: (f = msg.getOwnerId()) && accounts_accounts_model_pb.AccountID.toObject(includeInstance, f),
+    firstName: jspb.Message.getFieldWithDefault(msg, 3, ""),
+    secondName: jspb.Message.getFieldWithDefault(msg, 4, ""),
+    age: jspb.Message.getFieldWithDefault(msg, 5, 0),
+    sex: jspb.Message.getFieldWithDefault(msg, 6, 0),
+    position: (f = msg.getPosition()) && common_spatial_pb.Position.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -130,24 +136,35 @@ proto.mruv.Character.deserializeBinaryFromReader = function(msg, reader) {
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = /** @type {number} */ (reader.readInt32());
+      var value = new proto.mruv.CharacterID;
+      reader.readMessage(value,proto.mruv.CharacterID.deserializeBinaryFromReader);
       msg.setId(value);
       break;
     case 2:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setFirstName(value);
+      var value = new accounts_accounts_model_pb.AccountID;
+      reader.readMessage(value,accounts_accounts_model_pb.AccountID.deserializeBinaryFromReader);
+      msg.setOwnerId(value);
       break;
     case 3:
       var value = /** @type {string} */ (reader.readString());
-      msg.setSecondName(value);
+      msg.setFirstName(value);
       break;
     case 4:
-      var value = /** @type {number} */ (reader.readUint32());
-      msg.setAge(value);
+      var value = /** @type {string} */ (reader.readString());
+      msg.setSecondName(value);
       break;
     case 5:
       var value = /** @type {number} */ (reader.readUint32());
+      msg.setAge(value);
+      break;
+    case 6:
+      var value = /** @type {number} */ (reader.readUint32());
       msg.setSex(value);
+      break;
+    case 7:
+      var value = new common_spatial_pb.Position;
+      reader.readMessage(value,common_spatial_pb.Position.deserializeBinaryFromReader);
+      msg.setPosition(value);
       break;
     default:
       reader.skipField();
@@ -179,115 +196,216 @@ proto.mruv.Character.prototype.serializeBinary = function() {
 proto.mruv.Character.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getId();
-  if (f !== 0) {
-    writer.writeInt32(
+  if (f != null) {
+    writer.writeMessage(
       1,
-      f
+      f,
+      proto.mruv.CharacterID.serializeBinaryToWriter
+    );
+  }
+  f = message.getOwnerId();
+  if (f != null) {
+    writer.writeMessage(
+      2,
+      f,
+      accounts_accounts_model_pb.AccountID.serializeBinaryToWriter
     );
   }
   f = message.getFirstName();
-  if (f.length > 0) {
-    writer.writeString(
-      2,
-      f
-    );
-  }
-  f = message.getSecondName();
   if (f.length > 0) {
     writer.writeString(
       3,
       f
     );
   }
-  f = message.getAge();
-  if (f !== 0) {
-    writer.writeUint32(
+  f = message.getSecondName();
+  if (f.length > 0) {
+    writer.writeString(
       4,
       f
     );
   }
-  f = message.getSex();
+  f = message.getAge();
   if (f !== 0) {
     writer.writeUint32(
       5,
       f
     );
   }
+  f = message.getSex();
+  if (f !== 0) {
+    writer.writeUint32(
+      6,
+      f
+    );
+  }
+  f = message.getPosition();
+  if (f != null) {
+    writer.writeMessage(
+      7,
+      f,
+      common_spatial_pb.Position.serializeBinaryToWriter
+    );
+  }
 };
 
 
 /**
- * optional int32 id = 1;
- * @return {number}
+ * optional CharacterID id = 1;
+ * @return {?proto.mruv.CharacterID}
  */
 proto.mruv.Character.prototype.getId = function() {
-  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
+  return /** @type{?proto.mruv.CharacterID} */ (
+    jspb.Message.getWrapperField(this, proto.mruv.CharacterID, 1));
 };
 
 
-/** @param {number} value */
+/** @param {?proto.mruv.CharacterID|undefined} value */
 proto.mruv.Character.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
- * optional string first_name = 2;
+ * Clears the message field making it undefined.
+ */
+proto.mruv.Character.prototype.clearId = function() {
+  this.setId(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.mruv.Character.prototype.hasId = function() {
+  return jspb.Message.getField(this, 1) != null;
+};
+
+
+/**
+ * optional AccountID owner_id = 2;
+ * @return {?proto.mruv.AccountID}
+ */
+proto.mruv.Character.prototype.getOwnerId = function() {
+  return /** @type{?proto.mruv.AccountID} */ (
+    jspb.Message.getWrapperField(this, accounts_accounts_model_pb.AccountID, 2));
+};
+
+
+/** @param {?proto.mruv.AccountID|undefined} value */
+proto.mruv.Character.prototype.setOwnerId = function(value) {
+  jspb.Message.setWrapperField(this, 2, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.mruv.Character.prototype.clearOwnerId = function() {
+  this.setOwnerId(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.mruv.Character.prototype.hasOwnerId = function() {
+  return jspb.Message.getField(this, 2) != null;
+};
+
+
+/**
+ * optional string first_name = 3;
  * @return {string}
  */
 proto.mruv.Character.prototype.getFirstName = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
-};
-
-
-/** @param {string} value */
-proto.mruv.Character.prototype.setFirstName = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
-};
-
-
-/**
- * optional string second_name = 3;
- * @return {string}
- */
-proto.mruv.Character.prototype.getSecondName = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
 };
 
 
 /** @param {string} value */
-proto.mruv.Character.prototype.setSecondName = function(value) {
+proto.mruv.Character.prototype.setFirstName = function(value) {
   jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
 /**
- * optional uint32 age = 4;
- * @return {number}
+ * optional string second_name = 4;
+ * @return {string}
  */
-proto.mruv.Character.prototype.getAge = function() {
-  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 4, 0));
+proto.mruv.Character.prototype.getSecondName = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 4, ""));
 };
 
 
-/** @param {number} value */
-proto.mruv.Character.prototype.setAge = function(value) {
-  jspb.Message.setProto3IntField(this, 4, value);
+/** @param {string} value */
+proto.mruv.Character.prototype.setSecondName = function(value) {
+  jspb.Message.setProto3StringField(this, 4, value);
 };
 
 
 /**
- * optional uint32 sex = 5;
+ * optional uint32 age = 5;
  * @return {number}
  */
-proto.mruv.Character.prototype.getSex = function() {
+proto.mruv.Character.prototype.getAge = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 5, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.Character.prototype.setSex = function(value) {
+proto.mruv.Character.prototype.setAge = function(value) {
   jspb.Message.setProto3IntField(this, 5, value);
+};
+
+
+/**
+ * optional uint32 sex = 6;
+ * @return {number}
+ */
+proto.mruv.Character.prototype.getSex = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 6, 0));
+};
+
+
+/** @param {number} value */
+proto.mruv.Character.prototype.setSex = function(value) {
+  jspb.Message.setProto3IntField(this, 6, value);
+};
+
+
+/**
+ * optional Position position = 7;
+ * @return {?proto.mruv.Position}
+ */
+proto.mruv.Character.prototype.getPosition = function() {
+  return /** @type{?proto.mruv.Position} */ (
+    jspb.Message.getWrapperField(this, common_spatial_pb.Position, 7));
+};
+
+
+/** @param {?proto.mruv.Position|undefined} value */
+proto.mruv.Character.prototype.setPosition = function(value) {
+  jspb.Message.setWrapperField(this, 7, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.mruv.Character.prototype.clearPosition = function() {
+  this.setPosition(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.mruv.Character.prototype.hasPosition = function() {
+  return jspb.Message.getField(this, 7) != null;
 };
 
 
@@ -361,7 +479,7 @@ proto.mruv.CharacterID.deserializeBinaryFromReader = function(msg, reader) {
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = /** @type {number} */ (reader.readInt32());
+      var value = /** @type {number} */ (reader.readInt64());
       msg.setId(value);
       break;
     default:
@@ -395,7 +513,7 @@ proto.mruv.CharacterID.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getId();
   if (f !== 0) {
-    writer.writeInt32(
+    writer.writeInt64(
       1,
       f
     );
@@ -404,7 +522,7 @@ proto.mruv.CharacterID.serializeBinaryToWriter = function(message, writer) {
 
 
 /**
- * optional int32 id = 1;
+ * optional int64 id = 1;
  * @return {number}
  */
 proto.mruv.CharacterID.prototype.getId = function() {

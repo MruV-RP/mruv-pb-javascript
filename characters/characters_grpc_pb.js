@@ -98,8 +98,8 @@ function deserialize_mruv_VersionResponse(buffer_arg) {
 
 var MruVCharactersServiceService = exports.MruVCharactersServiceService = {
   // CRUD
-  create: {
-    path: '/mruv.MruVCharactersService/Create',
+  createCharacter: {
+    path: '/mruv.MruVCharactersService/CreateCharacter',
     requestStream: false,
     responseStream: false,
     requestType: characters_characters_model_pb.Character,
@@ -109,8 +109,8 @@ var MruVCharactersServiceService = exports.MruVCharactersServiceService = {
     responseSerialize: serialize_mruv_CharacterID,
     responseDeserialize: deserialize_mruv_CharacterID,
   },
-  get: {
-    path: '/mruv.MruVCharactersService/Get',
+  getCharacter: {
+    path: '/mruv.MruVCharactersService/GetCharacter',
     requestStream: false,
     responseStream: false,
     requestType: characters_characters_model_pb.CharacterID,
@@ -120,19 +120,8 @@ var MruVCharactersServiceService = exports.MruVCharactersServiceService = {
     responseSerialize: serialize_mruv_Character,
     responseDeserialize: deserialize_mruv_Character,
   },
-  update: {
-    path: '/mruv.MruVCharactersService/Update',
-    requestStream: false,
-    responseStream: false,
-    requestType: characters_characters_model_pb.Character,
-    responseType: characters_characters_model_pb.CharacterID,
-    requestSerialize: serialize_mruv_Character,
-    requestDeserialize: deserialize_mruv_Character,
-    responseSerialize: serialize_mruv_CharacterID,
-    responseDeserialize: deserialize_mruv_CharacterID,
-  },
-  remove: {
-    path: '/mruv.MruVCharactersService/Remove',
+  removeCharacter: {
+    path: '/mruv.MruVCharactersService/RemoveCharacter',
     requestStream: false,
     responseStream: false,
     requestType: characters_characters_model_pb.CharacterID,

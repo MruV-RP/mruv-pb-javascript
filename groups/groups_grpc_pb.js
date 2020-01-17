@@ -41,14 +41,14 @@ function deserialize_mruv_Group(buffer_arg) {
 }
 
 function serialize_mruv_GroupID(arg) {
-  if (!(arg instanceof groups_groups_pb.GroupID)) {
+  if (!(arg instanceof groups_groups_model_pb.GroupID)) {
     throw new Error('Expected argument of type mruv.GroupID');
   }
   return new Buffer(arg.serializeBinary());
 }
 
 function deserialize_mruv_GroupID(buffer_arg) {
-  return groups_groups_pb.GroupID.deserializeBinary(new Uint8Array(buffer_arg));
+  return groups_groups_model_pb.GroupID.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_mruv_ServiceStatusRequest(arg) {
@@ -97,13 +97,13 @@ function deserialize_mruv_VersionResponse(buffer_arg) {
 
 
 var MruVGroupsServiceService = exports.MruVGroupsServiceService = {
-  // CRUD items
+  // CRUD
   createGroup: {
     path: '/mruv.MruVGroupsService/CreateGroup',
     requestStream: false,
     responseStream: false,
     requestType: groups_groups_model_pb.Group,
-    responseType: groups_groups_pb.GroupID,
+    responseType: groups_groups_model_pb.GroupID,
     requestSerialize: serialize_mruv_Group,
     requestDeserialize: deserialize_mruv_Group,
     responseSerialize: serialize_mruv_GroupID,
@@ -113,7 +113,7 @@ var MruVGroupsServiceService = exports.MruVGroupsServiceService = {
     path: '/mruv.MruVGroupsService/GetGroup',
     requestStream: false,
     responseStream: false,
-    requestType: groups_groups_pb.GroupID,
+    requestType: groups_groups_model_pb.GroupID,
     responseType: groups_groups_model_pb.Group,
     requestSerialize: serialize_mruv_GroupID,
     requestDeserialize: deserialize_mruv_GroupID,
@@ -125,7 +125,7 @@ var MruVGroupsServiceService = exports.MruVGroupsServiceService = {
     requestStream: false,
     responseStream: false,
     requestType: groups_groups_model_pb.Group,
-    responseType: groups_groups_pb.GroupID,
+    responseType: groups_groups_model_pb.GroupID,
     requestSerialize: serialize_mruv_Group,
     requestDeserialize: deserialize_mruv_Group,
     responseSerialize: serialize_mruv_GroupID,
@@ -135,8 +135,8 @@ var MruVGroupsServiceService = exports.MruVGroupsServiceService = {
     path: '/mruv.MruVGroupsService/DeleteGroup',
     requestStream: false,
     responseStream: false,
-    requestType: groups_groups_pb.GroupID,
-    responseType: groups_groups_pb.GroupID,
+    requestType: groups_groups_model_pb.GroupID,
+    responseType: groups_groups_model_pb.GroupID,
     requestSerialize: serialize_mruv_GroupID,
     requestDeserialize: deserialize_mruv_GroupID,
     responseSerialize: serialize_mruv_GroupID,
