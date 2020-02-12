@@ -5,6 +5,7 @@ var grpc = require('grpc');
 var accounts_accounts_pb = require('../accounts/accounts_pb.js');
 var google_api_annotations_pb = require('../google/api/annotations_pb.js');
 var accounts_accounts_model_pb = require('../accounts/accounts_model_pb.js');
+var characters_characters_model_pb = require('../characters/characters_model_pb.js');
 
 function serialize_mruv_Account(arg) {
   if (!(arg instanceof accounts_accounts_model_pb.Account)) {
@@ -26,6 +27,17 @@ function serialize_mruv_AccountID(arg) {
 
 function deserialize_mruv_AccountID(buffer_arg) {
   return accounts_accounts_model_pb.AccountID.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_GetAccountCharactersResponse(arg) {
+  if (!(arg instanceof accounts_accounts_pb.GetAccountCharactersResponse)) {
+    throw new Error('Expected argument of type mruv.GetAccountCharactersResponse');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_GetAccountCharactersResponse(buffer_arg) {
+  return accounts_accounts_pb.GetAccountCharactersResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_mruv_LogInRequest(arg) {
@@ -106,6 +118,17 @@ var MruVAccountsServiceService = exports.MruVAccountsServiceService = {
     requestDeserialize: deserialize_mruv_AccountID,
     responseSerialize: serialize_mruv_Account,
     responseDeserialize: deserialize_mruv_Account,
+  },
+  getAccountCharacters: {
+    path: '/mruv.MruVAccountsService/GetAccountCharacters',
+    requestStream: false,
+    responseStream: false,
+    requestType: accounts_accounts_model_pb.AccountID,
+    responseType: accounts_accounts_pb.GetAccountCharactersResponse,
+    requestSerialize: serialize_mruv_AccountID,
+    requestDeserialize: deserialize_mruv_AccountID,
+    responseSerialize: serialize_mruv_GetAccountCharactersResponse,
+    responseDeserialize: deserialize_mruv_GetAccountCharactersResponse,
   },
 };
 

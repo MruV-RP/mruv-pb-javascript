@@ -4,6 +4,7 @@
 import * as jspb from "google-protobuf";
 import * as google_api_annotations_pb from "../google/api/annotations_pb";
 import * as accounts_accounts_model_pb from "../accounts/accounts_model_pb";
+import * as characters_characters_model_pb from "../characters/characters_model_pb";
 
 export class RegisterAccountRequest extends jspb.Message {
   hasAccount(): boolean;
@@ -104,6 +105,28 @@ export namespace LogInResponse {
   export type AsObject = {
     success: boolean,
     id?: accounts_accounts_model_pb.AccountID.AsObject,
+  }
+}
+
+export class GetAccountCharactersResponse extends jspb.Message {
+  clearCharactersList(): void;
+  getCharactersList(): Array<characters_characters_model_pb.Character>;
+  setCharactersList(value: Array<characters_characters_model_pb.Character>): void;
+  addCharacters(value?: characters_characters_model_pb.Character, index?: number): characters_characters_model_pb.Character;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): GetAccountCharactersResponse.AsObject;
+  static toObject(includeInstance: boolean, msg: GetAccountCharactersResponse): GetAccountCharactersResponse.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: GetAccountCharactersResponse, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): GetAccountCharactersResponse;
+  static deserializeBinaryFromReader(message: GetAccountCharactersResponse, reader: jspb.BinaryReader): GetAccountCharactersResponse;
+}
+
+export namespace GetAccountCharactersResponse {
+  export type AsObject = {
+    charactersList: Array<characters_characters_model_pb.Character.AsObject>,
   }
 }
 

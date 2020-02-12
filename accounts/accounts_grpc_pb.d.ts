@@ -11,6 +11,7 @@ interface IMruVAccountsServiceService extends grpc.ServiceDefinition<grpc.Untype
   registerAccount: grpc.MethodDefinition<accounts_accounts_pb.RegisterAccountRequest, accounts_accounts_pb.RegisterAccountResponse>;
   logIn: grpc.MethodDefinition<accounts_accounts_pb.LogInRequest, accounts_accounts_pb.LogInResponse>;
   getAccount: grpc.MethodDefinition<accounts_accounts_model_pb.AccountID, accounts_accounts_model_pb.Account>;
+  getAccountCharacters: grpc.MethodDefinition<accounts_accounts_model_pb.AccountID, accounts_accounts_pb.GetAccountCharactersResponse>;
 }
 
 export const MruVAccountsServiceService: IMruVAccountsServiceService;
@@ -26,4 +27,7 @@ export class MruVAccountsServiceClient extends grpc.Client {
   getAccount(argument: accounts_accounts_model_pb.AccountID, callback: grpc.requestCallback<accounts_accounts_model_pb.Account>): grpc.ClientUnaryCall;
   getAccount(argument: accounts_accounts_model_pb.AccountID, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<accounts_accounts_model_pb.Account>): grpc.ClientUnaryCall;
   getAccount(argument: accounts_accounts_model_pb.AccountID, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<accounts_accounts_model_pb.Account>): grpc.ClientUnaryCall;
+  getAccountCharacters(argument: accounts_accounts_model_pb.AccountID, callback: grpc.requestCallback<accounts_accounts_pb.GetAccountCharactersResponse>): grpc.ClientUnaryCall;
+  getAccountCharacters(argument: accounts_accounts_model_pb.AccountID, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<accounts_accounts_pb.GetAccountCharactersResponse>): grpc.ClientUnaryCall;
+  getAccountCharacters(argument: accounts_accounts_model_pb.AccountID, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<accounts_accounts_pb.GetAccountCharactersResponse>): grpc.ClientUnaryCall;
 }
