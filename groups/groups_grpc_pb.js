@@ -7,6 +7,28 @@ var google_api_annotations_pb = require('../google/api/annotations_pb.js');
 var common_health_pb = require('../common/health_pb.js');
 var groups_groups_model_pb = require('../groups/groups_model_pb.js');
 
+function serialize_mruv_AddGroupMemberRequest(arg) {
+  if (!(arg instanceof groups_groups_pb.AddGroupMemberRequest)) {
+    throw new Error('Expected argument of type mruv.AddGroupMemberRequest');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_AddGroupMemberRequest(buffer_arg) {
+  return groups_groups_pb.AddGroupMemberRequest.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_AddGroupMemberResponse(arg) {
+  if (!(arg instanceof groups_groups_pb.AddGroupMemberResponse)) {
+    throw new Error('Expected argument of type mruv.AddGroupMemberResponse');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_AddGroupMemberResponse(buffer_arg) {
+  return groups_groups_pb.AddGroupMemberResponse.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
 function serialize_mruv_GetGroupsRequest(arg) {
   if (!(arg instanceof groups_groups_pb.GetGroupsRequest)) {
     throw new Error('Expected argument of type mruv.GetGroupsRequest');
@@ -49,6 +71,28 @@ function serialize_mruv_GroupID(arg) {
 
 function deserialize_mruv_GroupID(buffer_arg) {
   return groups_groups_model_pb.GroupID.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_RemoveGroupMemberRequest(arg) {
+  if (!(arg instanceof groups_groups_pb.RemoveGroupMemberRequest)) {
+    throw new Error('Expected argument of type mruv.RemoveGroupMemberRequest');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_RemoveGroupMemberRequest(buffer_arg) {
+  return groups_groups_pb.RemoveGroupMemberRequest.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_RemoveGroupMemberResponse(arg) {
+  if (!(arg instanceof groups_groups_pb.RemoveGroupMemberResponse)) {
+    throw new Error('Expected argument of type mruv.RemoveGroupMemberResponse');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_RemoveGroupMemberResponse(buffer_arg) {
+  return groups_groups_pb.RemoveGroupMemberResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_mruv_ServiceStatusRequest(arg) {
@@ -120,17 +164,6 @@ var MruVGroupsServiceService = exports.MruVGroupsServiceService = {
     responseSerialize: serialize_mruv_Group,
     responseDeserialize: deserialize_mruv_Group,
   },
-  updateGroup: {
-    path: '/mruv.MruVGroupsService/UpdateGroup',
-    requestStream: false,
-    responseStream: false,
-    requestType: groups_groups_model_pb.Group,
-    responseType: groups_groups_model_pb.GroupID,
-    requestSerialize: serialize_mruv_Group,
-    requestDeserialize: deserialize_mruv_Group,
-    responseSerialize: serialize_mruv_GroupID,
-    responseDeserialize: deserialize_mruv_GroupID,
-  },
   deleteGroup: {
     path: '/mruv.MruVGroupsService/DeleteGroup',
     requestStream: false,
@@ -152,6 +185,28 @@ var MruVGroupsServiceService = exports.MruVGroupsServiceService = {
     requestDeserialize: deserialize_mruv_GetGroupsRequest,
     responseSerialize: serialize_mruv_GetGroupsResponse,
     responseDeserialize: deserialize_mruv_GetGroupsResponse,
+  },
+  addGroupMember: {
+    path: '/mruv.MruVGroupsService/AddGroupMember',
+    requestStream: false,
+    responseStream: false,
+    requestType: groups_groups_pb.AddGroupMemberRequest,
+    responseType: groups_groups_pb.AddGroupMemberResponse,
+    requestSerialize: serialize_mruv_AddGroupMemberRequest,
+    requestDeserialize: deserialize_mruv_AddGroupMemberRequest,
+    responseSerialize: serialize_mruv_AddGroupMemberResponse,
+    responseDeserialize: deserialize_mruv_AddGroupMemberResponse,
+  },
+  removeGroupMember: {
+    path: '/mruv.MruVGroupsService/RemoveGroupMember',
+    requestStream: false,
+    responseStream: false,
+    requestType: groups_groups_pb.RemoveGroupMemberRequest,
+    responseType: groups_groups_pb.RemoveGroupMemberResponse,
+    requestSerialize: serialize_mruv_RemoveGroupMemberRequest,
+    requestDeserialize: deserialize_mruv_RemoveGroupMemberRequest,
+    responseSerialize: serialize_mruv_RemoveGroupMemberResponse,
+    responseDeserialize: deserialize_mruv_RemoveGroupMemberResponse,
   },
   // Service status
   getServiceStatus: {
