@@ -1626,8 +1626,8 @@ proto.mruv.PutItemRequest.prototype.toObject = function(opt_includeInstance) {
  */
 proto.mruv.PutItemRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
-    containerId: (f = msg.getContainerId()) && items_items_model_pb.ContainerID.toObject(includeInstance, f),
-    itemId: (f = msg.getItemId()) && items_items_model_pb.ItemID.toObject(includeInstance, f),
+    containerId: jspb.Message.getFieldWithDefault(msg, 1, 0),
+    itemId: jspb.Message.getFieldWithDefault(msg, 2, 0),
     slot: jspb.Message.getFieldWithDefault(msg, 3, 0)
   };
 
@@ -1666,13 +1666,11 @@ proto.mruv.PutItemRequest.deserializeBinaryFromReader = function(msg, reader) {
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new items_items_model_pb.ContainerID;
-      reader.readMessage(value,items_items_model_pb.ContainerID.deserializeBinaryFromReader);
+      var value = /** @type {number} */ (reader.readUint32());
       msg.setContainerId(value);
       break;
     case 2:
-      var value = new items_items_model_pb.ItemID;
-      reader.readMessage(value,items_items_model_pb.ItemID.deserializeBinaryFromReader);
+      var value = /** @type {number} */ (reader.readUint32());
       msg.setItemId(value);
       break;
     case 3:
@@ -1709,19 +1707,17 @@ proto.mruv.PutItemRequest.prototype.serializeBinary = function() {
 proto.mruv.PutItemRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getContainerId();
-  if (f != null) {
-    writer.writeMessage(
+  if (f !== 0) {
+    writer.writeUint32(
       1,
-      f,
-      items_items_model_pb.ContainerID.serializeBinaryToWriter
+      f
     );
   }
   f = message.getItemId();
-  if (f != null) {
-    writer.writeMessage(
+  if (f !== 0) {
+    writer.writeUint32(
       2,
-      f,
-      items_items_model_pb.ItemID.serializeBinaryToWriter
+      f
     );
   }
   f = /** @type {number} */ (jspb.Message.getField(message, 3));
@@ -1735,68 +1731,32 @@ proto.mruv.PutItemRequest.serializeBinaryToWriter = function(message, writer) {
 
 
 /**
- * optional ContainerID container_id = 1;
- * @return {?proto.mruv.ContainerID}
+ * optional uint32 container_id = 1;
+ * @return {number}
  */
 proto.mruv.PutItemRequest.prototype.getContainerId = function() {
-  return /** @type{?proto.mruv.ContainerID} */ (
-    jspb.Message.getWrapperField(this, items_items_model_pb.ContainerID, 1));
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
-/** @param {?proto.mruv.ContainerID|undefined} value */
+/** @param {number} value */
 proto.mruv.PutItemRequest.prototype.setContainerId = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
 /**
- * Clears the message field making it undefined.
- */
-proto.mruv.PutItemRequest.prototype.clearContainerId = function() {
-  this.setContainerId(undefined);
-};
-
-
-/**
- * Returns whether this field is set.
- * @return {boolean}
- */
-proto.mruv.PutItemRequest.prototype.hasContainerId = function() {
-  return jspb.Message.getField(this, 1) != null;
-};
-
-
-/**
- * optional ItemID item_id = 2;
- * @return {?proto.mruv.ItemID}
+ * optional uint32 item_id = 2;
+ * @return {number}
  */
 proto.mruv.PutItemRequest.prototype.getItemId = function() {
-  return /** @type{?proto.mruv.ItemID} */ (
-    jspb.Message.getWrapperField(this, items_items_model_pb.ItemID, 2));
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
-/** @param {?proto.mruv.ItemID|undefined} value */
+/** @param {number} value */
 proto.mruv.PutItemRequest.prototype.setItemId = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
-};
-
-
-/**
- * Clears the message field making it undefined.
- */
-proto.mruv.PutItemRequest.prototype.clearItemId = function() {
-  this.setItemId(undefined);
-};
-
-
-/**
- * Returns whether this field is set.
- * @return {boolean}
- */
-proto.mruv.PutItemRequest.prototype.hasItemId = function() {
-  return jspb.Message.getField(this, 2) != null;
+  jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -2011,7 +1971,7 @@ proto.mruv.GetContainerItemsRequest.prototype.toObject = function(opt_includeIns
  */
 proto.mruv.GetContainerItemsRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
-    containerId: (f = msg.getContainerId()) && items_items_model_pb.ContainerID.toObject(includeInstance, f),
+    containerId: jspb.Message.getFieldWithDefault(msg, 1, 0),
     limit: jspb.Message.getFieldWithDefault(msg, 2, 0)
   };
 
@@ -2050,8 +2010,7 @@ proto.mruv.GetContainerItemsRequest.deserializeBinaryFromReader = function(msg, 
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new items_items_model_pb.ContainerID;
-      reader.readMessage(value,items_items_model_pb.ContainerID.deserializeBinaryFromReader);
+      var value = /** @type {number} */ (reader.readUint32());
       msg.setContainerId(value);
       break;
     case 2:
@@ -2088,11 +2047,10 @@ proto.mruv.GetContainerItemsRequest.prototype.serializeBinary = function() {
 proto.mruv.GetContainerItemsRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getContainerId();
-  if (f != null) {
-    writer.writeMessage(
+  if (f !== 0) {
+    writer.writeUint32(
       1,
-      f,
-      items_items_model_pb.ContainerID.serializeBinaryToWriter
+      f
     );
   }
   f = message.getLimit();
@@ -2106,35 +2064,17 @@ proto.mruv.GetContainerItemsRequest.serializeBinaryToWriter = function(message, 
 
 
 /**
- * optional ContainerID container_id = 1;
- * @return {?proto.mruv.ContainerID}
+ * optional uint32 container_id = 1;
+ * @return {number}
  */
 proto.mruv.GetContainerItemsRequest.prototype.getContainerId = function() {
-  return /** @type{?proto.mruv.ContainerID} */ (
-    jspb.Message.getWrapperField(this, items_items_model_pb.ContainerID, 1));
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
-/** @param {?proto.mruv.ContainerID|undefined} value */
+/** @param {number} value */
 proto.mruv.GetContainerItemsRequest.prototype.setContainerId = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
-};
-
-
-/**
- * Clears the message field making it undefined.
- */
-proto.mruv.GetContainerItemsRequest.prototype.clearContainerId = function() {
-  this.setContainerId(undefined);
-};
-
-
-/**
- * Returns whether this field is set.
- * @return {boolean}
- */
-proto.mruv.GetContainerItemsRequest.prototype.hasContainerId = function() {
-  return jspb.Message.getField(this, 1) != null;
+  jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2341,8 +2281,8 @@ proto.mruv.PullItemRequest.prototype.toObject = function(opt_includeInstance) {
  */
 proto.mruv.PullItemRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
-    containerId: (f = msg.getContainerId()) && items_items_model_pb.ContainerID.toObject(includeInstance, f),
-    itemId: (f = msg.getItemId()) && items_items_model_pb.ItemID.toObject(includeInstance, f)
+    containerId: jspb.Message.getFieldWithDefault(msg, 1, 0),
+    itemId: jspb.Message.getFieldWithDefault(msg, 2, 0)
   };
 
   if (includeInstance) {
@@ -2380,13 +2320,11 @@ proto.mruv.PullItemRequest.deserializeBinaryFromReader = function(msg, reader) {
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new items_items_model_pb.ContainerID;
-      reader.readMessage(value,items_items_model_pb.ContainerID.deserializeBinaryFromReader);
+      var value = /** @type {number} */ (reader.readUint32());
       msg.setContainerId(value);
       break;
     case 2:
-      var value = new items_items_model_pb.ItemID;
-      reader.readMessage(value,items_items_model_pb.ItemID.deserializeBinaryFromReader);
+      var value = /** @type {number} */ (reader.readUint32());
       msg.setItemId(value);
       break;
     default:
@@ -2419,87 +2357,49 @@ proto.mruv.PullItemRequest.prototype.serializeBinary = function() {
 proto.mruv.PullItemRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getContainerId();
-  if (f != null) {
-    writer.writeMessage(
+  if (f !== 0) {
+    writer.writeUint32(
       1,
-      f,
-      items_items_model_pb.ContainerID.serializeBinaryToWriter
+      f
     );
   }
   f = message.getItemId();
-  if (f != null) {
-    writer.writeMessage(
+  if (f !== 0) {
+    writer.writeUint32(
       2,
-      f,
-      items_items_model_pb.ItemID.serializeBinaryToWriter
+      f
     );
   }
 };
 
 
 /**
- * optional ContainerID container_id = 1;
- * @return {?proto.mruv.ContainerID}
+ * optional uint32 container_id = 1;
+ * @return {number}
  */
 proto.mruv.PullItemRequest.prototype.getContainerId = function() {
-  return /** @type{?proto.mruv.ContainerID} */ (
-    jspb.Message.getWrapperField(this, items_items_model_pb.ContainerID, 1));
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
-/** @param {?proto.mruv.ContainerID|undefined} value */
+/** @param {number} value */
 proto.mruv.PullItemRequest.prototype.setContainerId = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
 /**
- * Clears the message field making it undefined.
- */
-proto.mruv.PullItemRequest.prototype.clearContainerId = function() {
-  this.setContainerId(undefined);
-};
-
-
-/**
- * Returns whether this field is set.
- * @return {boolean}
- */
-proto.mruv.PullItemRequest.prototype.hasContainerId = function() {
-  return jspb.Message.getField(this, 1) != null;
-};
-
-
-/**
- * optional ItemID item_id = 2;
- * @return {?proto.mruv.ItemID}
+ * optional uint32 item_id = 2;
+ * @return {number}
  */
 proto.mruv.PullItemRequest.prototype.getItemId = function() {
-  return /** @type{?proto.mruv.ItemID} */ (
-    jspb.Message.getWrapperField(this, items_items_model_pb.ItemID, 2));
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
-/** @param {?proto.mruv.ItemID|undefined} value */
+/** @param {number} value */
 proto.mruv.PullItemRequest.prototype.setItemId = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
-};
-
-
-/**
- * Clears the message field making it undefined.
- */
-proto.mruv.PullItemRequest.prototype.clearItemId = function() {
-  this.setItemId(undefined);
-};
-
-
-/**
- * Returns whether this field is set.
- * @return {boolean}
- */
-proto.mruv.PullItemRequest.prototype.hasItemId = function() {
-  return jspb.Message.getField(this, 2) != null;
+  jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -2535,7 +2435,7 @@ proto.mruv.SortItemsRequest.prototype.toObject = function(opt_includeInstance) {
  */
 proto.mruv.SortItemsRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
-    containerId: (f = msg.getContainerId()) && items_items_model_pb.ContainerID.toObject(includeInstance, f),
+    containerId: jspb.Message.getFieldWithDefault(msg, 1, 0),
     sortBy: jspb.Message.getFieldWithDefault(msg, 2, 0)
   };
 
@@ -2574,8 +2474,7 @@ proto.mruv.SortItemsRequest.deserializeBinaryFromReader = function(msg, reader) 
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new items_items_model_pb.ContainerID;
-      reader.readMessage(value,items_items_model_pb.ContainerID.deserializeBinaryFromReader);
+      var value = /** @type {number} */ (reader.readUint32());
       msg.setContainerId(value);
       break;
     case 2:
@@ -2612,11 +2511,10 @@ proto.mruv.SortItemsRequest.prototype.serializeBinary = function() {
 proto.mruv.SortItemsRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getContainerId();
-  if (f != null) {
-    writer.writeMessage(
+  if (f !== 0) {
+    writer.writeUint32(
       1,
-      f,
-      items_items_model_pb.ContainerID.serializeBinaryToWriter
+      f
     );
   }
   f = message.getSortBy();
@@ -2630,35 +2528,17 @@ proto.mruv.SortItemsRequest.serializeBinaryToWriter = function(message, writer) 
 
 
 /**
- * optional ContainerID container_id = 1;
- * @return {?proto.mruv.ContainerID}
+ * optional uint32 container_id = 1;
+ * @return {number}
  */
 proto.mruv.SortItemsRequest.prototype.getContainerId = function() {
-  return /** @type{?proto.mruv.ContainerID} */ (
-    jspb.Message.getWrapperField(this, items_items_model_pb.ContainerID, 1));
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
-/** @param {?proto.mruv.ContainerID|undefined} value */
+/** @param {number} value */
 proto.mruv.SortItemsRequest.prototype.setContainerId = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
-};
-
-
-/**
- * Clears the message field making it undefined.
- */
-proto.mruv.SortItemsRequest.prototype.clearContainerId = function() {
-  this.setContainerId(undefined);
-};
-
-
-/**
- * Returns whether this field is set.
- * @return {boolean}
- */
-proto.mruv.SortItemsRequest.prototype.hasContainerId = function() {
-  return jspb.Message.getField(this, 1) != null;
+  jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2857,7 +2737,7 @@ proto.mruv.GetNearestItemsRequest.prototype.toObject = function(opt_includeInsta
 proto.mruv.GetNearestItemsRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     position: (f = msg.getPosition()) && common_spatial_pb.Position.toObject(includeInstance, f),
-    containerId: (f = msg.getContainerId()) && items_items_model_pb.ContainerID.toObject(includeInstance, f),
+    containerId: jspb.Message.getFieldWithDefault(msg, 2, 0),
     distanceLimit: jspb.Message.getFloatingPointFieldWithDefault(msg, 3, 0.0)
   };
 
@@ -2901,8 +2781,7 @@ proto.mruv.GetNearestItemsRequest.deserializeBinaryFromReader = function(msg, re
       msg.setPosition(value);
       break;
     case 2:
-      var value = new items_items_model_pb.ContainerID;
-      reader.readMessage(value,items_items_model_pb.ContainerID.deserializeBinaryFromReader);
+      var value = /** @type {number} */ (reader.readUint32());
       msg.setContainerId(value);
       break;
     case 3:
@@ -2947,11 +2826,10 @@ proto.mruv.GetNearestItemsRequest.serializeBinaryToWriter = function(message, wr
     );
   }
   f = message.getContainerId();
-  if (f != null) {
-    writer.writeMessage(
+  if (f !== 0) {
+    writer.writeUint32(
       2,
-      f,
-      items_items_model_pb.ContainerID.serializeBinaryToWriter
+      f
     );
   }
   f = message.getDistanceLimit();
@@ -2998,35 +2876,17 @@ proto.mruv.GetNearestItemsRequest.prototype.hasPosition = function() {
 
 
 /**
- * optional ContainerID container_id = 2;
- * @return {?proto.mruv.ContainerID}
+ * optional uint32 container_id = 2;
+ * @return {number}
  */
 proto.mruv.GetNearestItemsRequest.prototype.getContainerId = function() {
-  return /** @type{?proto.mruv.ContainerID} */ (
-    jspb.Message.getWrapperField(this, items_items_model_pb.ContainerID, 2));
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
-/** @param {?proto.mruv.ContainerID|undefined} value */
+/** @param {number} value */
 proto.mruv.GetNearestItemsRequest.prototype.setContainerId = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
-};
-
-
-/**
- * Clears the message field making it undefined.
- */
-proto.mruv.GetNearestItemsRequest.prototype.clearContainerId = function() {
-  this.setContainerId(undefined);
-};
-
-
-/**
- * Returns whether this field is set.
- * @return {boolean}
- */
-proto.mruv.GetNearestItemsRequest.prototype.hasContainerId = function() {
-  return jspb.Message.getField(this, 2) != null;
+  jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -3233,7 +3093,7 @@ proto.mruv.UseItemRequest.prototype.toObject = function(opt_includeInstance) {
  */
 proto.mruv.UseItemRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
-    itemId: (f = msg.getItemId()) && items_items_model_pb.ItemID.toObject(includeInstance, f)
+    itemId: jspb.Message.getFieldWithDefault(msg, 1, 0)
   };
 
   if (includeInstance) {
@@ -3271,8 +3131,7 @@ proto.mruv.UseItemRequest.deserializeBinaryFromReader = function(msg, reader) {
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new items_items_model_pb.ItemID;
-      reader.readMessage(value,items_items_model_pb.ItemID.deserializeBinaryFromReader);
+      var value = /** @type {number} */ (reader.readUint32());
       msg.setItemId(value);
       break;
     default:
@@ -3305,46 +3164,27 @@ proto.mruv.UseItemRequest.prototype.serializeBinary = function() {
 proto.mruv.UseItemRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getItemId();
-  if (f != null) {
-    writer.writeMessage(
+  if (f !== 0) {
+    writer.writeUint32(
       1,
-      f,
-      items_items_model_pb.ItemID.serializeBinaryToWriter
+      f
     );
   }
 };
 
 
 /**
- * optional ItemID item_id = 1;
- * @return {?proto.mruv.ItemID}
+ * optional uint32 item_id = 1;
+ * @return {number}
  */
 proto.mruv.UseItemRequest.prototype.getItemId = function() {
-  return /** @type{?proto.mruv.ItemID} */ (
-    jspb.Message.getWrapperField(this, items_items_model_pb.ItemID, 1));
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
-/** @param {?proto.mruv.ItemID|undefined} value */
+/** @param {number} value */
 proto.mruv.UseItemRequest.prototype.setItemId = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
-};
-
-
-/**
- * Clears the message field making it undefined.
- */
-proto.mruv.UseItemRequest.prototype.clearItemId = function() {
-  this.setItemId(undefined);
-};
-
-
-/**
- * Returns whether this field is set.
- * @return {boolean}
- */
-proto.mruv.UseItemRequest.prototype.hasItemId = function() {
-  return jspb.Message.getField(this, 1) != null;
+  jspb.Message.setProto3IntField(this, 1, value);
 };
 
 

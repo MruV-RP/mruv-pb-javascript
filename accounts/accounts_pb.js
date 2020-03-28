@@ -334,7 +334,7 @@ proto.mruv.RegisterAccountResponse.prototype.toObject = function(opt_includeInst
 proto.mruv.RegisterAccountResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
     success: jspb.Message.getBooleanFieldWithDefault(msg, 1, false),
-    id: (f = msg.getId()) && accounts_accounts_model_pb.AccountID.toObject(includeInstance, f)
+    accountId: jspb.Message.getFieldWithDefault(msg, 2, 0)
   };
 
   if (includeInstance) {
@@ -376,9 +376,8 @@ proto.mruv.RegisterAccountResponse.deserializeBinaryFromReader = function(msg, r
       msg.setSuccess(value);
       break;
     case 2:
-      var value = new accounts_accounts_model_pb.AccountID;
-      reader.readMessage(value,accounts_accounts_model_pb.AccountID.deserializeBinaryFromReader);
-      msg.setId(value);
+      var value = /** @type {number} */ (reader.readUint32());
+      msg.setAccountId(value);
       break;
     default:
       reader.skipField();
@@ -416,12 +415,11 @@ proto.mruv.RegisterAccountResponse.serializeBinaryToWriter = function(message, w
       f
     );
   }
-  f = message.getId();
-  if (f != null) {
-    writer.writeMessage(
+  f = message.getAccountId();
+  if (f !== 0) {
+    writer.writeUint32(
       2,
-      f,
-      accounts_accounts_model_pb.AccountID.serializeBinaryToWriter
+      f
     );
   }
 };
@@ -443,35 +441,17 @@ proto.mruv.RegisterAccountResponse.prototype.setSuccess = function(value) {
 
 
 /**
- * optional AccountID id = 2;
- * @return {?proto.mruv.AccountID}
+ * optional uint32 account_id = 2;
+ * @return {number}
  */
-proto.mruv.RegisterAccountResponse.prototype.getId = function() {
-  return /** @type{?proto.mruv.AccountID} */ (
-    jspb.Message.getWrapperField(this, accounts_accounts_model_pb.AccountID, 2));
+proto.mruv.RegisterAccountResponse.prototype.getAccountId = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
-/** @param {?proto.mruv.AccountID|undefined} value */
-proto.mruv.RegisterAccountResponse.prototype.setId = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
-};
-
-
-/**
- * Clears the message field making it undefined.
- */
-proto.mruv.RegisterAccountResponse.prototype.clearId = function() {
-  this.setId(undefined);
-};
-
-
-/**
- * Returns whether this field is set.
- * @return {boolean}
- */
-proto.mruv.RegisterAccountResponse.prototype.hasId = function() {
-  return jspb.Message.getField(this, 2) != null;
+/** @param {number} value */
+proto.mruv.RegisterAccountResponse.prototype.setAccountId = function(value) {
+  jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -662,7 +642,7 @@ proto.mruv.LogInResponse.prototype.toObject = function(opt_includeInstance) {
 proto.mruv.LogInResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
     success: jspb.Message.getBooleanFieldWithDefault(msg, 1, false),
-    id: (f = msg.getId()) && accounts_accounts_model_pb.AccountID.toObject(includeInstance, f)
+    accountId: jspb.Message.getFieldWithDefault(msg, 2, 0)
   };
 
   if (includeInstance) {
@@ -704,9 +684,8 @@ proto.mruv.LogInResponse.deserializeBinaryFromReader = function(msg, reader) {
       msg.setSuccess(value);
       break;
     case 2:
-      var value = new accounts_accounts_model_pb.AccountID;
-      reader.readMessage(value,accounts_accounts_model_pb.AccountID.deserializeBinaryFromReader);
-      msg.setId(value);
+      var value = /** @type {number} */ (reader.readUint32());
+      msg.setAccountId(value);
       break;
     default:
       reader.skipField();
@@ -744,12 +723,11 @@ proto.mruv.LogInResponse.serializeBinaryToWriter = function(message, writer) {
       f
     );
   }
-  f = message.getId();
-  if (f != null) {
-    writer.writeMessage(
+  f = message.getAccountId();
+  if (f !== 0) {
+    writer.writeUint32(
       2,
-      f,
-      accounts_accounts_model_pb.AccountID.serializeBinaryToWriter
+      f
     );
   }
 };
@@ -771,35 +749,17 @@ proto.mruv.LogInResponse.prototype.setSuccess = function(value) {
 
 
 /**
- * optional AccountID id = 2;
- * @return {?proto.mruv.AccountID}
+ * optional uint32 account_id = 2;
+ * @return {number}
  */
-proto.mruv.LogInResponse.prototype.getId = function() {
-  return /** @type{?proto.mruv.AccountID} */ (
-    jspb.Message.getWrapperField(this, accounts_accounts_model_pb.AccountID, 2));
+proto.mruv.LogInResponse.prototype.getAccountId = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
-/** @param {?proto.mruv.AccountID|undefined} value */
-proto.mruv.LogInResponse.prototype.setId = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
-};
-
-
-/**
- * Clears the message field making it undefined.
- */
-proto.mruv.LogInResponse.prototype.clearId = function() {
-  this.setId(undefined);
-};
-
-
-/**
- * Returns whether this field is set.
- * @return {boolean}
- */
-proto.mruv.LogInResponse.prototype.hasId = function() {
-  return jspb.Message.getField(this, 2) != null;
+/** @param {number} value */
+proto.mruv.LogInResponse.prototype.setAccountId = function(value) {
+  jspb.Message.setProto3IntField(this, 2, value);
 };
 
 

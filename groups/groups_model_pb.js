@@ -11,8 +11,6 @@ var jspb = require('google-protobuf');
 var goog = jspb;
 var global = Function('return this')();
 
-var accounts_accounts_model_pb = require('../accounts/accounts_model_pb.js');
-goog.object.extend(proto, accounts_accounts_model_pb);
 goog.exportSymbol('proto.mruv.Group', null, global);
 goog.exportSymbol('proto.mruv.GroupID', null, global);
 goog.exportSymbol('proto.mruv.Permission', null, global);
@@ -171,7 +169,7 @@ proto.mruv.PermissionID.deserializeBinaryFromReader = function(msg, reader) {
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = /** @type {number} */ (reader.readInt64());
+      var value = /** @type {number} */ (reader.readUint32());
       msg.setId(value);
       break;
     default:
@@ -205,7 +203,7 @@ proto.mruv.PermissionID.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getId();
   if (f !== 0) {
-    writer.writeInt64(
+    writer.writeUint32(
       1,
       f
     );
@@ -214,7 +212,7 @@ proto.mruv.PermissionID.serializeBinaryToWriter = function(message, writer) {
 
 
 /**
- * optional int64 id = 1;
+ * optional uint32 id = 1;
  * @return {number}
  */
 proto.mruv.PermissionID.prototype.getId = function() {
@@ -260,7 +258,7 @@ proto.mruv.Permission.prototype.toObject = function(opt_includeInstance) {
  */
 proto.mruv.Permission.toObject = function(includeInstance, msg) {
   var f, obj = {
-    id: (f = msg.getId()) && proto.mruv.PermissionID.toObject(includeInstance, f),
+    id: jspb.Message.getFieldWithDefault(msg, 1, 0),
     name: jspb.Message.getFieldWithDefault(msg, 2, ""),
     role: jspb.Message.getFieldWithDefault(msg, 3, "")
   };
@@ -300,8 +298,7 @@ proto.mruv.Permission.deserializeBinaryFromReader = function(msg, reader) {
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new proto.mruv.PermissionID;
-      reader.readMessage(value,proto.mruv.PermissionID.deserializeBinaryFromReader);
+      var value = /** @type {number} */ (reader.readUint32());
       msg.setId(value);
       break;
     case 2:
@@ -342,11 +339,10 @@ proto.mruv.Permission.prototype.serializeBinary = function() {
 proto.mruv.Permission.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getId();
-  if (f != null) {
-    writer.writeMessage(
+  if (f !== 0) {
+    writer.writeUint32(
       1,
-      f,
-      proto.mruv.PermissionID.serializeBinaryToWriter
+      f
     );
   }
   f = message.getName();
@@ -367,35 +363,17 @@ proto.mruv.Permission.serializeBinaryToWriter = function(message, writer) {
 
 
 /**
- * optional PermissionID id = 1;
- * @return {?proto.mruv.PermissionID}
+ * optional uint32 id = 1;
+ * @return {number}
  */
 proto.mruv.Permission.prototype.getId = function() {
-  return /** @type{?proto.mruv.PermissionID} */ (
-    jspb.Message.getWrapperField(this, proto.mruv.PermissionID, 1));
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
-/** @param {?proto.mruv.PermissionID|undefined} value */
+/** @param {number} value */
 proto.mruv.Permission.prototype.setId = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
-};
-
-
-/**
- * Clears the message field making it undefined.
- */
-proto.mruv.Permission.prototype.clearId = function() {
-  this.setId(undefined);
-};
-
-
-/**
- * Returns whether this field is set.
- * @return {boolean}
- */
-proto.mruv.Permission.prototype.hasId = function() {
-  return jspb.Message.getField(this, 1) != null;
+  jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -499,7 +477,7 @@ proto.mruv.GroupID.deserializeBinaryFromReader = function(msg, reader) {
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = /** @type {number} */ (reader.readInt32());
+      var value = /** @type {number} */ (reader.readUint32());
       msg.setId(value);
       break;
     default:
@@ -533,7 +511,7 @@ proto.mruv.GroupID.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getId();
   if (f !== 0) {
-    writer.writeInt32(
+    writer.writeUint32(
       1,
       f
     );
@@ -542,7 +520,7 @@ proto.mruv.GroupID.serializeBinaryToWriter = function(message, writer) {
 
 
 /**
- * optional int32 id = 1;
+ * optional uint32 id = 1;
  * @return {number}
  */
 proto.mruv.GroupID.prototype.getId = function() {
@@ -595,13 +573,12 @@ proto.mruv.Group.prototype.toObject = function(opt_includeInstance) {
  */
 proto.mruv.Group.toObject = function(includeInstance, msg) {
   var f, obj = {
-    id: (f = msg.getId()) && proto.mruv.GroupID.toObject(includeInstance, f),
+    id: jspb.Message.getFieldWithDefault(msg, 1, 0),
     name: jspb.Message.getFieldWithDefault(msg, 3, ""),
     description: jspb.Message.getFieldWithDefault(msg, 4, ""),
     permissionsList: jspb.Message.toObjectList(msg.getPermissionsList(),
     proto.mruv.Permission.toObject, includeInstance),
-    membersList: jspb.Message.toObjectList(msg.getMembersList(),
-    accounts_accounts_model_pb.AccountID.toObject, includeInstance)
+    membersList: (f = jspb.Message.getRepeatedField(msg, 6)) == null ? undefined : f
   };
 
   if (includeInstance) {
@@ -639,8 +616,7 @@ proto.mruv.Group.deserializeBinaryFromReader = function(msg, reader) {
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new proto.mruv.GroupID;
-      reader.readMessage(value,proto.mruv.GroupID.deserializeBinaryFromReader);
+      var value = /** @type {number} */ (reader.readUint32());
       msg.setId(value);
       break;
     case 3:
@@ -657,9 +633,8 @@ proto.mruv.Group.deserializeBinaryFromReader = function(msg, reader) {
       msg.addPermissions(value);
       break;
     case 6:
-      var value = new accounts_accounts_model_pb.AccountID;
-      reader.readMessage(value,accounts_accounts_model_pb.AccountID.deserializeBinaryFromReader);
-      msg.addMembers(value);
+      var value = /** @type {!Array<number>} */ (reader.readPackedUint32());
+      msg.setMembersList(value);
       break;
     default:
       reader.skipField();
@@ -691,11 +666,10 @@ proto.mruv.Group.prototype.serializeBinary = function() {
 proto.mruv.Group.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getId();
-  if (f != null) {
-    writer.writeMessage(
+  if (f !== 0) {
+    writer.writeUint32(
       1,
-      f,
-      proto.mruv.GroupID.serializeBinaryToWriter
+      f
     );
   }
   f = message.getName();
@@ -722,45 +696,26 @@ proto.mruv.Group.serializeBinaryToWriter = function(message, writer) {
   }
   f = message.getMembersList();
   if (f.length > 0) {
-    writer.writeRepeatedMessage(
+    writer.writePackedUint32(
       6,
-      f,
-      accounts_accounts_model_pb.AccountID.serializeBinaryToWriter
+      f
     );
   }
 };
 
 
 /**
- * optional GroupID id = 1;
- * @return {?proto.mruv.GroupID}
+ * optional uint32 id = 1;
+ * @return {number}
  */
 proto.mruv.Group.prototype.getId = function() {
-  return /** @type{?proto.mruv.GroupID} */ (
-    jspb.Message.getWrapperField(this, proto.mruv.GroupID, 1));
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
-/** @param {?proto.mruv.GroupID|undefined} value */
+/** @param {number} value */
 proto.mruv.Group.prototype.setId = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
-};
-
-
-/**
- * Clears the message field making it undefined.
- */
-proto.mruv.Group.prototype.clearId = function() {
-  this.setId(undefined);
-};
-
-
-/**
- * Returns whether this field is set.
- * @return {boolean}
- */
-proto.mruv.Group.prototype.hasId = function() {
-  return jspb.Message.getField(this, 1) != null;
+  jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -829,28 +784,26 @@ proto.mruv.Group.prototype.clearPermissionsList = function() {
 
 
 /**
- * repeated AccountID members = 6;
- * @return {!Array<!proto.mruv.AccountID>}
+ * repeated uint32 members = 6;
+ * @return {!Array<number>}
  */
 proto.mruv.Group.prototype.getMembersList = function() {
-  return /** @type{!Array<!proto.mruv.AccountID>} */ (
-    jspb.Message.getRepeatedWrapperField(this, accounts_accounts_model_pb.AccountID, 6));
+  return /** @type {!Array<number>} */ (jspb.Message.getRepeatedField(this, 6));
 };
 
 
-/** @param {!Array<!proto.mruv.AccountID>} value */
+/** @param {!Array<number>} value */
 proto.mruv.Group.prototype.setMembersList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 6, value);
+  jspb.Message.setField(this, 6, value || []);
 };
 
 
 /**
- * @param {!proto.mruv.AccountID=} opt_value
+ * @param {number} value
  * @param {number=} opt_index
- * @return {!proto.mruv.AccountID}
  */
-proto.mruv.Group.prototype.addMembers = function(opt_value, opt_index) {
-  return jspb.Message.addToRepeatedWrapperField(this, 6, opt_value, proto.mruv.AccountID, opt_index);
+proto.mruv.Group.prototype.addMembers = function(value, opt_index) {
+  jspb.Message.addToRepeatedField(this, 6, value, opt_index);
 };
 
 

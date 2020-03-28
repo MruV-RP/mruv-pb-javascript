@@ -242,7 +242,7 @@ proto.mruv.ItemType.prototype.toObject = function(opt_includeInstance) {
  */
 proto.mruv.ItemType.toObject = function(includeInstance, msg) {
   var f, obj = {
-    id: (f = msg.getId()) && proto.mruv.ItemTypeID.toObject(includeInstance, f),
+    id: jspb.Message.getFieldWithDefault(msg, 1, 0),
     name: jspb.Message.getFieldWithDefault(msg, 2, ""),
     description: jspb.Message.getFieldWithDefault(msg, 3, ""),
     baseWeight: jspb.Message.getFloatingPointFieldWithDefault(msg, 4, 0.0),
@@ -286,8 +286,7 @@ proto.mruv.ItemType.deserializeBinaryFromReader = function(msg, reader) {
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new proto.mruv.ItemTypeID;
-      reader.readMessage(value,proto.mruv.ItemTypeID.deserializeBinaryFromReader);
+      var value = /** @type {number} */ (reader.readUint32());
       msg.setId(value);
       break;
     case 2:
@@ -344,11 +343,10 @@ proto.mruv.ItemType.prototype.serializeBinary = function() {
 proto.mruv.ItemType.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getId();
-  if (f != null) {
-    writer.writeMessage(
+  if (f !== 0) {
+    writer.writeUint32(
       1,
-      f,
-      proto.mruv.ItemTypeID.serializeBinaryToWriter
+      f
     );
   }
   f = message.getName();
@@ -397,35 +395,17 @@ proto.mruv.ItemType.serializeBinaryToWriter = function(message, writer) {
 
 
 /**
- * optional ItemTypeID id = 1;
- * @return {?proto.mruv.ItemTypeID}
+ * optional uint32 id = 1;
+ * @return {number}
  */
 proto.mruv.ItemType.prototype.getId = function() {
-  return /** @type{?proto.mruv.ItemTypeID} */ (
-    jspb.Message.getWrapperField(this, proto.mruv.ItemTypeID, 1));
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
-/** @param {?proto.mruv.ItemTypeID|undefined} value */
+/** @param {number} value */
 proto.mruv.ItemType.prototype.setId = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
-};
-
-
-/**
- * Clears the message field making it undefined.
- */
-proto.mruv.ItemType.prototype.clearId = function() {
-  this.setId(undefined);
-};
-
-
-/**
- * Returns whether this field is set.
- * @return {boolean}
- */
-proto.mruv.ItemType.prototype.hasId = function() {
-  return jspb.Message.getField(this, 1) != null;
+  jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -678,8 +658,8 @@ proto.mruv.Item.prototype.toObject = function(opt_includeInstance) {
  */
 proto.mruv.Item.toObject = function(includeInstance, msg) {
   var f, obj = {
-    id: (f = msg.getId()) && proto.mruv.ItemID.toObject(includeInstance, f),
-    itemTypeId: (f = msg.getItemTypeId()) && proto.mruv.ItemTypeID.toObject(includeInstance, f),
+    id: jspb.Message.getFieldWithDefault(msg, 1, 0),
+    itemTypeId: jspb.Message.getFieldWithDefault(msg, 2, 0),
     weight: jspb.Message.getFloatingPointFieldWithDefault(msg, 3, 0.0),
     volume: jspb.Message.getFloatingPointFieldWithDefault(msg, 4, 0.0)
   };
@@ -719,13 +699,11 @@ proto.mruv.Item.deserializeBinaryFromReader = function(msg, reader) {
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new proto.mruv.ItemID;
-      reader.readMessage(value,proto.mruv.ItemID.deserializeBinaryFromReader);
+      var value = /** @type {number} */ (reader.readUint32());
       msg.setId(value);
       break;
     case 2:
-      var value = new proto.mruv.ItemTypeID;
-      reader.readMessage(value,proto.mruv.ItemTypeID.deserializeBinaryFromReader);
+      var value = /** @type {number} */ (reader.readUint32());
       msg.setItemTypeId(value);
       break;
     case 3:
@@ -766,19 +744,17 @@ proto.mruv.Item.prototype.serializeBinary = function() {
 proto.mruv.Item.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getId();
-  if (f != null) {
-    writer.writeMessage(
+  if (f !== 0) {
+    writer.writeUint32(
       1,
-      f,
-      proto.mruv.ItemID.serializeBinaryToWriter
+      f
     );
   }
   f = message.getItemTypeId();
-  if (f != null) {
-    writer.writeMessage(
+  if (f !== 0) {
+    writer.writeUint32(
       2,
-      f,
-      proto.mruv.ItemTypeID.serializeBinaryToWriter
+      f
     );
   }
   f = message.getWeight();
@@ -799,68 +775,32 @@ proto.mruv.Item.serializeBinaryToWriter = function(message, writer) {
 
 
 /**
- * optional ItemID id = 1;
- * @return {?proto.mruv.ItemID}
+ * optional uint32 id = 1;
+ * @return {number}
  */
 proto.mruv.Item.prototype.getId = function() {
-  return /** @type{?proto.mruv.ItemID} */ (
-    jspb.Message.getWrapperField(this, proto.mruv.ItemID, 1));
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
-/** @param {?proto.mruv.ItemID|undefined} value */
+/** @param {number} value */
 proto.mruv.Item.prototype.setId = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
 /**
- * Clears the message field making it undefined.
- */
-proto.mruv.Item.prototype.clearId = function() {
-  this.setId(undefined);
-};
-
-
-/**
- * Returns whether this field is set.
- * @return {boolean}
- */
-proto.mruv.Item.prototype.hasId = function() {
-  return jspb.Message.getField(this, 1) != null;
-};
-
-
-/**
- * optional ItemTypeID item_type_id = 2;
- * @return {?proto.mruv.ItemTypeID}
+ * optional uint32 item_type_id = 2;
+ * @return {number}
  */
 proto.mruv.Item.prototype.getItemTypeId = function() {
-  return /** @type{?proto.mruv.ItemTypeID} */ (
-    jspb.Message.getWrapperField(this, proto.mruv.ItemTypeID, 2));
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
-/** @param {?proto.mruv.ItemTypeID|undefined} value */
+/** @param {number} value */
 proto.mruv.Item.prototype.setItemTypeId = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
-};
-
-
-/**
- * Clears the message field making it undefined.
- */
-proto.mruv.Item.prototype.clearItemTypeId = function() {
-  this.setItemTypeId(undefined);
-};
-
-
-/**
- * Returns whether this field is set.
- * @return {boolean}
- */
-proto.mruv.Item.prototype.hasItemTypeId = function() {
-  return jspb.Message.getField(this, 2) != null;
+  jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -964,7 +904,7 @@ proto.mruv.ItemID.deserializeBinaryFromReader = function(msg, reader) {
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = /** @type {number} */ (reader.readUint64());
+      var value = /** @type {number} */ (reader.readUint32());
       msg.setId(value);
       break;
     default:
@@ -998,7 +938,7 @@ proto.mruv.ItemID.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getId();
   if (f !== 0) {
-    writer.writeUint64(
+    writer.writeUint32(
       1,
       f
     );
@@ -1007,7 +947,7 @@ proto.mruv.ItemID.serializeBinaryToWriter = function(message, writer) {
 
 
 /**
- * optional uint64 id = 1;
+ * optional uint32 id = 1;
  * @return {number}
  */
 proto.mruv.ItemID.prototype.getId = function() {
@@ -1060,13 +1000,12 @@ proto.mruv.ContainerType.prototype.toObject = function(opt_includeInstance) {
  */
 proto.mruv.ContainerType.toObject = function(includeInstance, msg) {
   var f, obj = {
-    id: (f = msg.getId()) && proto.mruv.ContainerTypeID.toObject(includeInstance, f),
-    containerItemTypeId: (f = msg.getContainerItemTypeId()) && proto.mruv.ItemTypeID.toObject(includeInstance, f),
+    id: jspb.Message.getFieldWithDefault(msg, 1, 0),
+    containerItemTypeId: jspb.Message.getFieldWithDefault(msg, 2, 0),
     maxNumber: jspb.Message.getFieldWithDefault(msg, 3, 0),
     maxVolume: jspb.Message.getFloatingPointFieldWithDefault(msg, 4, 0.0),
     maxWeight: jspb.Message.getFloatingPointFieldWithDefault(msg, 5, 0.0),
-    validItemTypesList: jspb.Message.toObjectList(msg.getValidItemTypesList(),
-    proto.mruv.ItemTypeID.toObject, includeInstance)
+    validItemTypesList: (f = jspb.Message.getRepeatedField(msg, 8)) == null ? undefined : f
   };
 
   if (includeInstance) {
@@ -1104,13 +1043,11 @@ proto.mruv.ContainerType.deserializeBinaryFromReader = function(msg, reader) {
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new proto.mruv.ContainerTypeID;
-      reader.readMessage(value,proto.mruv.ContainerTypeID.deserializeBinaryFromReader);
+      var value = /** @type {number} */ (reader.readUint32());
       msg.setId(value);
       break;
     case 2:
-      var value = new proto.mruv.ItemTypeID;
-      reader.readMessage(value,proto.mruv.ItemTypeID.deserializeBinaryFromReader);
+      var value = /** @type {number} */ (reader.readUint32());
       msg.setContainerItemTypeId(value);
       break;
     case 3:
@@ -1126,9 +1063,8 @@ proto.mruv.ContainerType.deserializeBinaryFromReader = function(msg, reader) {
       msg.setMaxWeight(value);
       break;
     case 8:
-      var value = new proto.mruv.ItemTypeID;
-      reader.readMessage(value,proto.mruv.ItemTypeID.deserializeBinaryFromReader);
-      msg.addValidItemTypes(value);
+      var value = /** @type {!Array<number>} */ (reader.readPackedInt64());
+      msg.setValidItemTypesList(value);
       break;
     default:
       reader.skipField();
@@ -1160,19 +1096,17 @@ proto.mruv.ContainerType.prototype.serializeBinary = function() {
 proto.mruv.ContainerType.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getId();
-  if (f != null) {
-    writer.writeMessage(
+  if (f !== 0) {
+    writer.writeUint32(
       1,
-      f,
-      proto.mruv.ContainerTypeID.serializeBinaryToWriter
+      f
     );
   }
   f = message.getContainerItemTypeId();
-  if (f != null) {
-    writer.writeMessage(
+  if (f !== 0) {
+    writer.writeUint32(
       2,
-      f,
-      proto.mruv.ItemTypeID.serializeBinaryToWriter
+      f
     );
   }
   f = message.getMaxNumber();
@@ -1198,78 +1132,41 @@ proto.mruv.ContainerType.serializeBinaryToWriter = function(message, writer) {
   }
   f = message.getValidItemTypesList();
   if (f.length > 0) {
-    writer.writeRepeatedMessage(
+    writer.writePackedInt64(
       8,
-      f,
-      proto.mruv.ItemTypeID.serializeBinaryToWriter
+      f
     );
   }
 };
 
 
 /**
- * optional ContainerTypeID id = 1;
- * @return {?proto.mruv.ContainerTypeID}
+ * optional uint32 id = 1;
+ * @return {number}
  */
 proto.mruv.ContainerType.prototype.getId = function() {
-  return /** @type{?proto.mruv.ContainerTypeID} */ (
-    jspb.Message.getWrapperField(this, proto.mruv.ContainerTypeID, 1));
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
-/** @param {?proto.mruv.ContainerTypeID|undefined} value */
+/** @param {number} value */
 proto.mruv.ContainerType.prototype.setId = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
 /**
- * Clears the message field making it undefined.
- */
-proto.mruv.ContainerType.prototype.clearId = function() {
-  this.setId(undefined);
-};
-
-
-/**
- * Returns whether this field is set.
- * @return {boolean}
- */
-proto.mruv.ContainerType.prototype.hasId = function() {
-  return jspb.Message.getField(this, 1) != null;
-};
-
-
-/**
- * optional ItemTypeID container_item_type_id = 2;
- * @return {?proto.mruv.ItemTypeID}
+ * optional uint32 container_item_type_id = 2;
+ * @return {number}
  */
 proto.mruv.ContainerType.prototype.getContainerItemTypeId = function() {
-  return /** @type{?proto.mruv.ItemTypeID} */ (
-    jspb.Message.getWrapperField(this, proto.mruv.ItemTypeID, 2));
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
-/** @param {?proto.mruv.ItemTypeID|undefined} value */
+/** @param {number} value */
 proto.mruv.ContainerType.prototype.setContainerItemTypeId = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
-};
-
-
-/**
- * Clears the message field making it undefined.
- */
-proto.mruv.ContainerType.prototype.clearContainerItemTypeId = function() {
-  this.setContainerItemTypeId(undefined);
-};
-
-
-/**
- * Returns whether this field is set.
- * @return {boolean}
- */
-proto.mruv.ContainerType.prototype.hasContainerItemTypeId = function() {
-  return jspb.Message.getField(this, 2) != null;
+  jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -1319,28 +1216,26 @@ proto.mruv.ContainerType.prototype.setMaxWeight = function(value) {
 
 
 /**
- * repeated ItemTypeID valid_item_types = 8;
- * @return {!Array<!proto.mruv.ItemTypeID>}
+ * repeated int64 valid_item_types = 8;
+ * @return {!Array<number>}
  */
 proto.mruv.ContainerType.prototype.getValidItemTypesList = function() {
-  return /** @type{!Array<!proto.mruv.ItemTypeID>} */ (
-    jspb.Message.getRepeatedWrapperField(this, proto.mruv.ItemTypeID, 8));
+  return /** @type {!Array<number>} */ (jspb.Message.getRepeatedField(this, 8));
 };
 
 
-/** @param {!Array<!proto.mruv.ItemTypeID>} value */
+/** @param {!Array<number>} value */
 proto.mruv.ContainerType.prototype.setValidItemTypesList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 8, value);
+  jspb.Message.setField(this, 8, value || []);
 };
 
 
 /**
- * @param {!proto.mruv.ItemTypeID=} opt_value
+ * @param {number} value
  * @param {number=} opt_index
- * @return {!proto.mruv.ItemTypeID}
  */
-proto.mruv.ContainerType.prototype.addValidItemTypes = function(opt_value, opt_index) {
-  return jspb.Message.addToRepeatedWrapperField(this, 8, opt_value, proto.mruv.ItemTypeID, opt_index);
+proto.mruv.ContainerType.prototype.addValidItemTypes = function(value, opt_index) {
+  jspb.Message.addToRepeatedField(this, 8, value, opt_index);
 };
 
 
@@ -1518,9 +1413,9 @@ proto.mruv.Container.prototype.toObject = function(opt_includeInstance) {
  */
 proto.mruv.Container.toObject = function(includeInstance, msg) {
   var f, obj = {
-    id: (f = msg.getId()) && proto.mruv.ContainerID.toObject(includeInstance, f),
-    typeId: (f = msg.getTypeId()) && proto.mruv.ContainerTypeID.toObject(includeInstance, f),
-    itemId: (f = msg.getItemId()) && proto.mruv.ItemID.toObject(includeInstance, f),
+    id: jspb.Message.getFieldWithDefault(msg, 1, 0),
+    typeId: jspb.Message.getFieldWithDefault(msg, 2, 0),
+    itemId: jspb.Message.getFieldWithDefault(msg, 3, 0),
     itemsInside: jspb.Message.getFieldWithDefault(msg, 4, 0),
     itemsList: jspb.Message.toObjectList(msg.getItemsList(),
     proto.mruv.InsideItem.toObject, includeInstance)
@@ -1561,18 +1456,15 @@ proto.mruv.Container.deserializeBinaryFromReader = function(msg, reader) {
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new proto.mruv.ContainerID;
-      reader.readMessage(value,proto.mruv.ContainerID.deserializeBinaryFromReader);
+      var value = /** @type {number} */ (reader.readUint32());
       msg.setId(value);
       break;
     case 2:
-      var value = new proto.mruv.ContainerTypeID;
-      reader.readMessage(value,proto.mruv.ContainerTypeID.deserializeBinaryFromReader);
+      var value = /** @type {number} */ (reader.readUint32());
       msg.setTypeId(value);
       break;
     case 3:
-      var value = new proto.mruv.ItemID;
-      reader.readMessage(value,proto.mruv.ItemID.deserializeBinaryFromReader);
+      var value = /** @type {number} */ (reader.readUint32());
       msg.setItemId(value);
       break;
     case 4:
@@ -1614,27 +1506,24 @@ proto.mruv.Container.prototype.serializeBinary = function() {
 proto.mruv.Container.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getId();
-  if (f != null) {
-    writer.writeMessage(
+  if (f !== 0) {
+    writer.writeUint32(
       1,
-      f,
-      proto.mruv.ContainerID.serializeBinaryToWriter
+      f
     );
   }
   f = message.getTypeId();
-  if (f != null) {
-    writer.writeMessage(
+  if (f !== 0) {
+    writer.writeUint32(
       2,
-      f,
-      proto.mruv.ContainerTypeID.serializeBinaryToWriter
+      f
     );
   }
   f = message.getItemId();
-  if (f != null) {
-    writer.writeMessage(
+  if (f !== 0) {
+    writer.writeUint32(
       3,
-      f,
-      proto.mruv.ItemID.serializeBinaryToWriter
+      f
     );
   }
   f = message.getItemsInside();
@@ -1656,101 +1545,47 @@ proto.mruv.Container.serializeBinaryToWriter = function(message, writer) {
 
 
 /**
- * optional ContainerID id = 1;
- * @return {?proto.mruv.ContainerID}
+ * optional uint32 id = 1;
+ * @return {number}
  */
 proto.mruv.Container.prototype.getId = function() {
-  return /** @type{?proto.mruv.ContainerID} */ (
-    jspb.Message.getWrapperField(this, proto.mruv.ContainerID, 1));
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
-/** @param {?proto.mruv.ContainerID|undefined} value */
+/** @param {number} value */
 proto.mruv.Container.prototype.setId = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
 /**
- * Clears the message field making it undefined.
- */
-proto.mruv.Container.prototype.clearId = function() {
-  this.setId(undefined);
-};
-
-
-/**
- * Returns whether this field is set.
- * @return {boolean}
- */
-proto.mruv.Container.prototype.hasId = function() {
-  return jspb.Message.getField(this, 1) != null;
-};
-
-
-/**
- * optional ContainerTypeID type_id = 2;
- * @return {?proto.mruv.ContainerTypeID}
+ * optional uint32 type_id = 2;
+ * @return {number}
  */
 proto.mruv.Container.prototype.getTypeId = function() {
-  return /** @type{?proto.mruv.ContainerTypeID} */ (
-    jspb.Message.getWrapperField(this, proto.mruv.ContainerTypeID, 2));
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
-/** @param {?proto.mruv.ContainerTypeID|undefined} value */
+/** @param {number} value */
 proto.mruv.Container.prototype.setTypeId = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
 /**
- * Clears the message field making it undefined.
- */
-proto.mruv.Container.prototype.clearTypeId = function() {
-  this.setTypeId(undefined);
-};
-
-
-/**
- * Returns whether this field is set.
- * @return {boolean}
- */
-proto.mruv.Container.prototype.hasTypeId = function() {
-  return jspb.Message.getField(this, 2) != null;
-};
-
-
-/**
- * optional ItemID item_id = 3;
- * @return {?proto.mruv.ItemID}
+ * optional uint32 item_id = 3;
+ * @return {number}
  */
 proto.mruv.Container.prototype.getItemId = function() {
-  return /** @type{?proto.mruv.ItemID} */ (
-    jspb.Message.getWrapperField(this, proto.mruv.ItemID, 3));
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
 };
 
 
-/** @param {?proto.mruv.ItemID|undefined} value */
+/** @param {number} value */
 proto.mruv.Container.prototype.setItemId = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
-};
-
-
-/**
- * Clears the message field making it undefined.
- */
-proto.mruv.Container.prototype.clearItemId = function() {
-  this.setItemId(undefined);
-};
-
-
-/**
- * Returns whether this field is set.
- * @return {boolean}
- */
-proto.mruv.Container.prototype.hasItemId = function() {
-  return jspb.Message.getField(this, 3) != null;
+  jspb.Message.setProto3IntField(this, 3, value);
 };
 
 
@@ -1988,8 +1823,8 @@ proto.mruv.InsideItem.prototype.toObject = function(opt_includeInstance) {
  */
 proto.mruv.InsideItem.toObject = function(includeInstance, msg) {
   var f, obj = {
-    containerId: (f = msg.getContainerId()) && proto.mruv.ContainerID.toObject(includeInstance, f),
-    itemId: (f = msg.getItemId()) && proto.mruv.ItemID.toObject(includeInstance, f),
+    containerId: jspb.Message.getFieldWithDefault(msg, 1, 0),
+    itemId: jspb.Message.getFieldWithDefault(msg, 2, 0),
     item: (f = msg.getItem()) && proto.mruv.Item.toObject(includeInstance, f),
     position: jspb.Message.getFieldWithDefault(msg, 4, 0)
   };
@@ -2029,13 +1864,11 @@ proto.mruv.InsideItem.deserializeBinaryFromReader = function(msg, reader) {
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new proto.mruv.ContainerID;
-      reader.readMessage(value,proto.mruv.ContainerID.deserializeBinaryFromReader);
+      var value = /** @type {number} */ (reader.readUint32());
       msg.setContainerId(value);
       break;
     case 2:
-      var value = new proto.mruv.ItemID;
-      reader.readMessage(value,proto.mruv.ItemID.deserializeBinaryFromReader);
+      var value = /** @type {number} */ (reader.readInt64());
       msg.setItemId(value);
       break;
     case 3:
@@ -2077,19 +1910,17 @@ proto.mruv.InsideItem.prototype.serializeBinary = function() {
 proto.mruv.InsideItem.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getContainerId();
-  if (f != null) {
-    writer.writeMessage(
+  if (f !== 0) {
+    writer.writeUint32(
       1,
-      f,
-      proto.mruv.ContainerID.serializeBinaryToWriter
+      f
     );
   }
-  f = message.getItemId();
+  f = /** @type {number} */ (jspb.Message.getField(message, 2));
   if (f != null) {
-    writer.writeMessage(
+    writer.writeInt64(
       2,
-      f,
-      proto.mruv.ItemID.serializeBinaryToWriter
+      f
     );
   }
   f = message.getItem();
@@ -2111,59 +1942,40 @@ proto.mruv.InsideItem.serializeBinaryToWriter = function(message, writer) {
 
 
 /**
- * optional ContainerID container_id = 1;
- * @return {?proto.mruv.ContainerID}
+ * optional uint32 container_id = 1;
+ * @return {number}
  */
 proto.mruv.InsideItem.prototype.getContainerId = function() {
-  return /** @type{?proto.mruv.ContainerID} */ (
-    jspb.Message.getWrapperField(this, proto.mruv.ContainerID, 1));
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
-/** @param {?proto.mruv.ContainerID|undefined} value */
+/** @param {number} value */
 proto.mruv.InsideItem.prototype.setContainerId = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
 /**
- * Clears the message field making it undefined.
- */
-proto.mruv.InsideItem.prototype.clearContainerId = function() {
-  this.setContainerId(undefined);
-};
-
-
-/**
- * Returns whether this field is set.
- * @return {boolean}
- */
-proto.mruv.InsideItem.prototype.hasContainerId = function() {
-  return jspb.Message.getField(this, 1) != null;
-};
-
-
-/**
- * optional ItemID item_id = 2;
- * @return {?proto.mruv.ItemID}
+ * optional int64 item_id = 2;
+ * @return {number}
  */
 proto.mruv.InsideItem.prototype.getItemId = function() {
-  return /** @type{?proto.mruv.ItemID} */ (
-    jspb.Message.getWrapperField(this, proto.mruv.ItemID, 2));
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
-/** @param {?proto.mruv.ItemID|undefined} value */
+/** @param {number} value */
 proto.mruv.InsideItem.prototype.setItemId = function(value) {
-  jspb.Message.setOneofWrapperField(this, 2, proto.mruv.InsideItem.oneofGroups_[0], value);
+  jspb.Message.setOneofField(this, 2, proto.mruv.InsideItem.oneofGroups_[0], value);
 };
 
 
 /**
- * Clears the message field making it undefined.
+ * Clears the field making it undefined.
  */
 proto.mruv.InsideItem.prototype.clearItemId = function() {
-  this.setItemId(undefined);
+  jspb.Message.setOneofField(this, 2, proto.mruv.InsideItem.oneofGroups_[0], undefined);
 };
 
 

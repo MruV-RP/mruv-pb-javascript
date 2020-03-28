@@ -11,8 +11,6 @@ var jspb = require('google-protobuf');
 var goog = jspb;
 var global = Function('return this')();
 
-var accounts_accounts_model_pb = require('../accounts/accounts_model_pb.js');
-goog.object.extend(proto, accounts_accounts_model_pb);
 var common_spatial_pb = require('../common/spatial_pb.js');
 goog.object.extend(proto, common_spatial_pb);
 goog.exportSymbol('proto.mruv.Character', null, global);
@@ -92,8 +90,8 @@ proto.mruv.Character.prototype.toObject = function(opt_includeInstance) {
  */
 proto.mruv.Character.toObject = function(includeInstance, msg) {
   var f, obj = {
-    id: (f = msg.getId()) && proto.mruv.CharacterID.toObject(includeInstance, f),
-    ownerId: (f = msg.getOwnerId()) && accounts_accounts_model_pb.AccountID.toObject(includeInstance, f),
+    id: jspb.Message.getFieldWithDefault(msg, 1, 0),
+    ownerId: jspb.Message.getFieldWithDefault(msg, 2, 0),
     firstName: jspb.Message.getFieldWithDefault(msg, 3, ""),
     secondName: jspb.Message.getFieldWithDefault(msg, 4, ""),
     age: jspb.Message.getFieldWithDefault(msg, 5, 0),
@@ -136,13 +134,11 @@ proto.mruv.Character.deserializeBinaryFromReader = function(msg, reader) {
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new proto.mruv.CharacterID;
-      reader.readMessage(value,proto.mruv.CharacterID.deserializeBinaryFromReader);
+      var value = /** @type {number} */ (reader.readUint32());
       msg.setId(value);
       break;
     case 2:
-      var value = new accounts_accounts_model_pb.AccountID;
-      reader.readMessage(value,accounts_accounts_model_pb.AccountID.deserializeBinaryFromReader);
+      var value = /** @type {number} */ (reader.readUint32());
       msg.setOwnerId(value);
       break;
     case 3:
@@ -196,19 +192,17 @@ proto.mruv.Character.prototype.serializeBinary = function() {
 proto.mruv.Character.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getId();
-  if (f != null) {
-    writer.writeMessage(
+  if (f !== 0) {
+    writer.writeUint32(
       1,
-      f,
-      proto.mruv.CharacterID.serializeBinaryToWriter
+      f
     );
   }
   f = message.getOwnerId();
-  if (f != null) {
-    writer.writeMessage(
+  if (f !== 0) {
+    writer.writeUint32(
       2,
-      f,
-      accounts_accounts_model_pb.AccountID.serializeBinaryToWriter
+      f
     );
   }
   f = message.getFirstName();
@@ -251,68 +245,32 @@ proto.mruv.Character.serializeBinaryToWriter = function(message, writer) {
 
 
 /**
- * optional CharacterID id = 1;
- * @return {?proto.mruv.CharacterID}
+ * optional uint32 id = 1;
+ * @return {number}
  */
 proto.mruv.Character.prototype.getId = function() {
-  return /** @type{?proto.mruv.CharacterID} */ (
-    jspb.Message.getWrapperField(this, proto.mruv.CharacterID, 1));
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
-/** @param {?proto.mruv.CharacterID|undefined} value */
+/** @param {number} value */
 proto.mruv.Character.prototype.setId = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
 /**
- * Clears the message field making it undefined.
- */
-proto.mruv.Character.prototype.clearId = function() {
-  this.setId(undefined);
-};
-
-
-/**
- * Returns whether this field is set.
- * @return {boolean}
- */
-proto.mruv.Character.prototype.hasId = function() {
-  return jspb.Message.getField(this, 1) != null;
-};
-
-
-/**
- * optional AccountID owner_id = 2;
- * @return {?proto.mruv.AccountID}
+ * optional uint32 owner_id = 2;
+ * @return {number}
  */
 proto.mruv.Character.prototype.getOwnerId = function() {
-  return /** @type{?proto.mruv.AccountID} */ (
-    jspb.Message.getWrapperField(this, accounts_accounts_model_pb.AccountID, 2));
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
-/** @param {?proto.mruv.AccountID|undefined} value */
+/** @param {number} value */
 proto.mruv.Character.prototype.setOwnerId = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
-};
-
-
-/**
- * Clears the message field making it undefined.
- */
-proto.mruv.Character.prototype.clearOwnerId = function() {
-  this.setOwnerId(undefined);
-};
-
-
-/**
- * Returns whether this field is set.
- * @return {boolean}
- */
-proto.mruv.Character.prototype.hasOwnerId = function() {
-  return jspb.Message.getField(this, 2) != null;
+  jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -479,7 +437,7 @@ proto.mruv.CharacterID.deserializeBinaryFromReader = function(msg, reader) {
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = /** @type {number} */ (reader.readInt64());
+      var value = /** @type {number} */ (reader.readUint32());
       msg.setId(value);
       break;
     default:
@@ -513,7 +471,7 @@ proto.mruv.CharacterID.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getId();
   if (f !== 0) {
-    writer.writeInt64(
+    writer.writeUint32(
       1,
       f
     );
@@ -522,7 +480,7 @@ proto.mruv.CharacterID.serializeBinaryToWriter = function(message, writer) {
 
 
 /**
- * optional int64 id = 1;
+ * optional uint32 id = 1;
  * @return {number}
  */
 proto.mruv.CharacterID.prototype.getId = function() {

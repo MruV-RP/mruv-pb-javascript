@@ -125,7 +125,7 @@ proto.mruv.AccountID.deserializeBinaryFromReader = function(msg, reader) {
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = /** @type {number} */ (reader.readInt64());
+      var value = /** @type {number} */ (reader.readUint32());
       msg.setId(value);
       break;
     default:
@@ -159,7 +159,7 @@ proto.mruv.AccountID.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getId();
   if (f !== 0) {
-    writer.writeInt64(
+    writer.writeUint32(
       1,
       f
     );
@@ -168,7 +168,7 @@ proto.mruv.AccountID.serializeBinaryToWriter = function(message, writer) {
 
 
 /**
- * optional int64 id = 1;
+ * optional uint32 id = 1;
  * @return {number}
  */
 proto.mruv.AccountID.prototype.getId = function() {
@@ -214,7 +214,7 @@ proto.mruv.Account.prototype.toObject = function(opt_includeInstance) {
  */
 proto.mruv.Account.toObject = function(includeInstance, msg) {
   var f, obj = {
-    id: (f = msg.getId()) && proto.mruv.AccountID.toObject(includeInstance, f),
+    id: jspb.Message.getFieldWithDefault(msg, 1, 0),
     login: jspb.Message.getFieldWithDefault(msg, 2, ""),
     nick: jspb.Message.getFieldWithDefault(msg, 3, ""),
     email: jspb.Message.getFieldWithDefault(msg, 4, "")
@@ -255,8 +255,7 @@ proto.mruv.Account.deserializeBinaryFromReader = function(msg, reader) {
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new proto.mruv.AccountID;
-      reader.readMessage(value,proto.mruv.AccountID.deserializeBinaryFromReader);
+      var value = /** @type {number} */ (reader.readUint32());
       msg.setId(value);
       break;
     case 2:
@@ -301,11 +300,10 @@ proto.mruv.Account.prototype.serializeBinary = function() {
 proto.mruv.Account.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getId();
-  if (f != null) {
-    writer.writeMessage(
+  if (f !== 0) {
+    writer.writeUint32(
       1,
-      f,
-      proto.mruv.AccountID.serializeBinaryToWriter
+      f
     );
   }
   f = message.getLogin();
@@ -333,35 +331,17 @@ proto.mruv.Account.serializeBinaryToWriter = function(message, writer) {
 
 
 /**
- * optional AccountID id = 1;
- * @return {?proto.mruv.AccountID}
+ * optional uint32 id = 1;
+ * @return {number}
  */
 proto.mruv.Account.prototype.getId = function() {
-  return /** @type{?proto.mruv.AccountID} */ (
-    jspb.Message.getWrapperField(this, proto.mruv.AccountID, 1));
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
-/** @param {?proto.mruv.AccountID|undefined} value */
+/** @param {number} value */
 proto.mruv.Account.prototype.setId = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
-};
-
-
-/**
- * Clears the message field making it undefined.
- */
-proto.mruv.Account.prototype.clearId = function() {
-  this.setId(undefined);
-};
-
-
-/**
- * Returns whether this field is set.
- * @return {boolean}
- */
-proto.mruv.Account.prototype.hasId = function() {
-  return jspb.Message.getField(this, 1) != null;
+  jspb.Message.setProto3IntField(this, 1, value);
 };
 
 

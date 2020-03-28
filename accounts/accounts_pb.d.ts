@@ -36,10 +36,8 @@ export class RegisterAccountResponse extends jspb.Message {
   getSuccess(): boolean;
   setSuccess(value: boolean): void;
 
-  hasId(): boolean;
-  clearId(): void;
-  getId(): accounts_accounts_model_pb.AccountID | undefined;
-  setId(value?: accounts_accounts_model_pb.AccountID): void;
+  getAccountId(): number;
+  setAccountId(value: number): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): RegisterAccountResponse.AsObject;
@@ -54,7 +52,7 @@ export class RegisterAccountResponse extends jspb.Message {
 export namespace RegisterAccountResponse {
   export type AsObject = {
     success: boolean,
-    id?: accounts_accounts_model_pb.AccountID.AsObject,
+    accountId: number,
   }
 }
 
@@ -86,10 +84,8 @@ export class LogInResponse extends jspb.Message {
   getSuccess(): boolean;
   setSuccess(value: boolean): void;
 
-  hasId(): boolean;
-  clearId(): void;
-  getId(): accounts_accounts_model_pb.AccountID | undefined;
-  setId(value?: accounts_accounts_model_pb.AccountID): void;
+  getAccountId(): number;
+  setAccountId(value: number): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): LogInResponse.AsObject;
@@ -104,7 +100,7 @@ export class LogInResponse extends jspb.Message {
 export namespace LogInResponse {
   export type AsObject = {
     success: boolean,
-    id?: accounts_accounts_model_pb.AccountID.AsObject,
+    accountId: number,
   }
 }
 

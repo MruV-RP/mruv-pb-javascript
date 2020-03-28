@@ -768,7 +768,7 @@ proto.mruv.devtools.Player.deserializeBinaryFromReader = function(msg, reader) {
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = /** @type {number} */ (reader.readInt32());
+      var value = /** @type {number} */ (reader.readUint32());
       msg.setId(value);
       break;
     case 2:
@@ -810,7 +810,7 @@ proto.mruv.devtools.Player.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getId();
   if (f !== 0) {
-    writer.writeInt32(
+    writer.writeUint32(
       1,
       f
     );
@@ -833,7 +833,7 @@ proto.mruv.devtools.Player.serializeBinaryToWriter = function(message, writer) {
 
 
 /**
- * optional int32 id = 1;
+ * optional uint32 id = 1;
  * @return {number}
  */
 proto.mruv.devtools.Player.prototype.getId = function() {
