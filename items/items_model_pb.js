@@ -1868,7 +1868,7 @@ proto.mruv.InsideItem.deserializeBinaryFromReader = function(msg, reader) {
       msg.setContainerId(value);
       break;
     case 2:
-      var value = /** @type {number} */ (reader.readInt64());
+      var value = /** @type {number} */ (reader.readUint32());
       msg.setItemId(value);
       break;
     case 3:
@@ -1918,7 +1918,7 @@ proto.mruv.InsideItem.serializeBinaryToWriter = function(message, writer) {
   }
   f = /** @type {number} */ (jspb.Message.getField(message, 2));
   if (f != null) {
-    writer.writeInt64(
+    writer.writeUint32(
       2,
       f
     );
@@ -1957,7 +1957,7 @@ proto.mruv.InsideItem.prototype.setContainerId = function(value) {
 
 
 /**
- * optional int64 item_id = 2;
+ * optional uint32 item_id = 2;
  * @return {number}
  */
 proto.mruv.InsideItem.prototype.getItemId = function() {
