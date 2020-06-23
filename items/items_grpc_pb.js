@@ -496,7 +496,7 @@ var MruVItemServiceService = exports.MruVItemServiceService = {
     responseSerialize: serialize_mruv_GetContainersResponse,
     responseDeserialize: deserialize_mruv_GetContainersResponse,
   },
-  // Create container type.
+  // Create a container type.
   createContainerType: {
     path: '/mruv.MruVItemService/CreateContainerType',
     requestStream: false,
@@ -508,7 +508,7 @@ var MruVItemServiceService = exports.MruVItemServiceService = {
     responseSerialize: serialize_mruv_ContainerTypeID,
     responseDeserialize: deserialize_mruv_ContainerTypeID,
   },
-  // Get container type by id.
+  // Get a container type by id.
   getContainerType: {
     path: '/mruv.MruVItemService/GetContainerType',
     requestStream: false,
@@ -520,7 +520,7 @@ var MruVItemServiceService = exports.MruVItemServiceService = {
     responseSerialize: serialize_mruv_ContainerType,
     responseDeserialize: deserialize_mruv_ContainerType,
   },
-  // Detele container type by id.
+  // Delete a container type by id.
   deleteContainerType: {
     path: '/mruv.MruVItemService/DeleteContainerType',
     requestStream: false,
@@ -556,7 +556,7 @@ var MruVItemServiceService = exports.MruVItemServiceService = {
     responseSerialize: serialize_mruv_GetContainerItemsResponse,
     responseDeserialize: deserialize_mruv_GetContainerItemsResponse,
   },
-  // Pull item from container.
+  // Pull an item from container.
   pullItem: {
     path: '/mruv.MruVItemService/PullItem',
     requestStream: false,
@@ -568,7 +568,7 @@ var MruVItemServiceService = exports.MruVItemServiceService = {
     responseSerialize: serialize_mruv_Item,
     responseDeserialize: deserialize_mruv_Item,
   },
-  // Put item into container.
+  // Put an item into container.
   putItem: {
     path: '/mruv.MruVItemService/PutItem',
     requestStream: false,

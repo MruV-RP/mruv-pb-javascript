@@ -477,7 +477,7 @@ proto.mruv.server.UpdateServerStatusRequest.deserializeBinaryFromReader = functi
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = /** @type {number} */ (reader.readInt64());
+      var value = /** @type {number} */ (reader.readUint32());
       msg.setId(value);
       break;
     case 2:
@@ -485,7 +485,7 @@ proto.mruv.server.UpdateServerStatusRequest.deserializeBinaryFromReader = functi
       msg.setStatus(value);
       break;
     case 3:
-      var value = /** @type {number} */ (reader.readInt32());
+      var value = /** @type {number} */ (reader.readUint32());
       msg.setPlayers(value);
       break;
     default:
@@ -519,7 +519,7 @@ proto.mruv.server.UpdateServerStatusRequest.serializeBinaryToWriter = function(m
   var f = undefined;
   f = message.getId();
   if (f !== 0) {
-    writer.writeInt64(
+    writer.writeUint32(
       1,
       f
     );
@@ -533,7 +533,7 @@ proto.mruv.server.UpdateServerStatusRequest.serializeBinaryToWriter = function(m
   }
   f = message.getPlayers();
   if (f !== 0) {
-    writer.writeInt32(
+    writer.writeUint32(
       3,
       f
     );
@@ -542,7 +542,7 @@ proto.mruv.server.UpdateServerStatusRequest.serializeBinaryToWriter = function(m
 
 
 /**
- * optional int64 id = 1;
+ * optional uint32 id = 1;
  * @return {number}
  */
 proto.mruv.server.UpdateServerStatusRequest.prototype.getId = function() {
@@ -572,7 +572,7 @@ proto.mruv.server.UpdateServerStatusRequest.prototype.setStatus = function(value
 
 
 /**
- * optional int32 players = 3;
+ * optional uint32 players = 3;
  * @return {number}
  */
 proto.mruv.server.UpdateServerStatusRequest.prototype.getPlayers = function() {
@@ -757,7 +757,7 @@ proto.mruv.server.ServerEventsStreamRequest.deserializeBinaryFromReader = functi
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = /** @type {number} */ (reader.readInt64());
+      var value = /** @type {number} */ (reader.readUint32());
       msg.setId(value);
       break;
     default:
@@ -791,7 +791,7 @@ proto.mruv.server.ServerEventsStreamRequest.serializeBinaryToWriter = function(m
   var f = undefined;
   f = message.getId();
   if (f !== 0) {
-    writer.writeInt64(
+    writer.writeUint32(
       1,
       f
     );
@@ -800,7 +800,7 @@ proto.mruv.server.ServerEventsStreamRequest.serializeBinaryToWriter = function(m
 
 
 /**
- * optional int64 id = 1;
+ * optional uint32 id = 1;
  * @return {number}
  */
 proto.mruv.server.ServerEventsStreamRequest.prototype.getId = function() {

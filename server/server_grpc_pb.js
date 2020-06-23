@@ -146,6 +146,7 @@ var MruVServerServiceService = exports.MruVServerServiceService = {
     responseDeserialize: deserialize_mruv_server_UpdateServerStatusResponse,
   },
   // Stream of server events. Events are streamed back in real-time for chosen server.
+  // TODO: Change name to: SubscribeServerEvents
   serverEventsStream: {
     path: '/mruv.server.MruVServerService/ServerEventsStream',
     requestStream: false,

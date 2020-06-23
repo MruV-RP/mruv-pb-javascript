@@ -4,29 +4,28 @@
 var grpc = require('grpc');
 var accounts_accounts_pb = require('../accounts/accounts_pb.js');
 var google_api_annotations_pb = require('../google/api/annotations_pb.js');
-var accounts_accounts_model_pb = require('../accounts/accounts_model_pb.js');
-var characters_characters_model_pb = require('../characters/characters_model_pb.js');
+var characters_characters_pb = require('../characters/characters_pb.js');
 
 function serialize_mruv_Account(arg) {
-  if (!(arg instanceof accounts_accounts_model_pb.Account)) {
+  if (!(arg instanceof accounts_accounts_pb.Account)) {
     throw new Error('Expected argument of type mruv.Account');
   }
   return new Buffer(arg.serializeBinary());
 }
 
 function deserialize_mruv_Account(buffer_arg) {
-  return accounts_accounts_model_pb.Account.deserializeBinary(new Uint8Array(buffer_arg));
+  return accounts_accounts_pb.Account.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_mruv_AccountID(arg) {
-  if (!(arg instanceof accounts_accounts_model_pb.AccountID)) {
+  if (!(arg instanceof accounts_accounts_pb.AccountID)) {
     throw new Error('Expected argument of type mruv.AccountID');
   }
   return new Buffer(arg.serializeBinary());
 }
 
 function deserialize_mruv_AccountID(buffer_arg) {
-  return accounts_accounts_model_pb.AccountID.deserializeBinary(new Uint8Array(buffer_arg));
+  return accounts_accounts_pb.AccountID.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_mruv_GetAccountCharactersResponse(arg) {
@@ -85,6 +84,8 @@ function deserialize_mruv_RegisterAccountResponse(buffer_arg) {
 }
 
 
+// The MruV accounts service provides procedures for managing players accounts.
+// This service is an additional/intermediary service between the ORY Kratos & ORY Hydra service.
 var MruVAccountsServiceService = exports.MruVAccountsServiceService = {
   registerAccount: {
     path: '/mruv.MruVAccountsService/RegisterAccount',
@@ -112,8 +113,8 @@ var MruVAccountsServiceService = exports.MruVAccountsServiceService = {
     path: '/mruv.MruVAccountsService/GetAccount',
     requestStream: false,
     responseStream: false,
-    requestType: accounts_accounts_model_pb.AccountID,
-    responseType: accounts_accounts_model_pb.Account,
+    requestType: accounts_accounts_pb.AccountID,
+    responseType: accounts_accounts_pb.Account,
     requestSerialize: serialize_mruv_AccountID,
     requestDeserialize: deserialize_mruv_AccountID,
     responseSerialize: serialize_mruv_Account,
@@ -123,7 +124,7 @@ var MruVAccountsServiceService = exports.MruVAccountsServiceService = {
     path: '/mruv.MruVAccountsService/GetAccountCharacters',
     requestStream: false,
     responseStream: false,
-    requestType: accounts_accounts_model_pb.AccountID,
+    requestType: accounts_accounts_pb.AccountID,
     responseType: accounts_accounts_pb.GetAccountCharactersResponse,
     requestSerialize: serialize_mruv_AccountID,
     requestDeserialize: deserialize_mruv_AccountID,

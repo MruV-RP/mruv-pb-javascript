@@ -3,14 +3,65 @@
 
 import * as jspb from "google-protobuf";
 import * as google_api_annotations_pb from "../google/api/annotations_pb";
-import * as accounts_accounts_model_pb from "../accounts/accounts_model_pb";
-import * as characters_characters_model_pb from "../characters/characters_model_pb";
+import * as characters_characters_pb from "../characters/characters_pb";
+
+export class AccountID extends jspb.Message {
+  getId(): number;
+  setId(value: number): void;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): AccountID.AsObject;
+  static toObject(includeInstance: boolean, msg: AccountID): AccountID.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: AccountID, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): AccountID;
+  static deserializeBinaryFromReader(message: AccountID, reader: jspb.BinaryReader): AccountID;
+}
+
+export namespace AccountID {
+  export type AsObject = {
+    id: number,
+  }
+}
+
+export class Account extends jspb.Message {
+  getId(): number;
+  setId(value: number): void;
+
+  getLogin(): string;
+  setLogin(value: string): void;
+
+  getNick(): string;
+  setNick(value: string): void;
+
+  getEmail(): string;
+  setEmail(value: string): void;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): Account.AsObject;
+  static toObject(includeInstance: boolean, msg: Account): Account.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: Account, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): Account;
+  static deserializeBinaryFromReader(message: Account, reader: jspb.BinaryReader): Account;
+}
+
+export namespace Account {
+  export type AsObject = {
+    id: number,
+    login: string,
+    nick: string,
+    email: string,
+  }
+}
 
 export class RegisterAccountRequest extends jspb.Message {
   hasAccount(): boolean;
   clearAccount(): void;
-  getAccount(): accounts_accounts_model_pb.Account | undefined;
-  setAccount(value?: accounts_accounts_model_pb.Account): void;
+  getAccount(): Account | undefined;
+  setAccount(value?: Account): void;
 
   getPassword(): string;
   setPassword(value: string): void;
@@ -27,7 +78,7 @@ export class RegisterAccountRequest extends jspb.Message {
 
 export namespace RegisterAccountRequest {
   export type AsObject = {
-    account?: accounts_accounts_model_pb.Account.AsObject,
+    account?: Account.AsObject,
     password: string,
   }
 }
@@ -106,9 +157,9 @@ export namespace LogInResponse {
 
 export class GetAccountCharactersResponse extends jspb.Message {
   clearCharactersList(): void;
-  getCharactersList(): Array<characters_characters_model_pb.Character>;
-  setCharactersList(value: Array<characters_characters_model_pb.Character>): void;
-  addCharacters(value?: characters_characters_model_pb.Character, index?: number): characters_characters_model_pb.Character;
+  getCharactersList(): Array<characters_characters_pb.Character>;
+  setCharactersList(value: Array<characters_characters_pb.Character>): void;
+  addCharacters(value?: characters_characters_pb.Character, index?: number): characters_characters_pb.Character;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): GetAccountCharactersResponse.AsObject;
@@ -122,7 +173,7 @@ export class GetAccountCharactersResponse extends jspb.Message {
 
 export namespace GetAccountCharactersResponse {
   export type AsObject = {
-    charactersList: Array<characters_characters_model_pb.Character.AsObject>,
+    charactersList: Array<characters_characters_pb.Character.AsObject>,
   }
 }
 

@@ -5,7 +5,6 @@ var grpc = require('grpc');
 var groups_groups_pb = require('../groups/groups_pb.js');
 var google_api_annotations_pb = require('../google/api/annotations_pb.js');
 var common_health_pb = require('../common/health_pb.js');
-var groups_groups_model_pb = require('../groups/groups_model_pb.js');
 
 function serialize_mruv_AddGroupMemberRequest(arg) {
   if (!(arg instanceof groups_groups_pb.AddGroupMemberRequest)) {
@@ -52,25 +51,25 @@ function deserialize_mruv_GetGroupsResponse(buffer_arg) {
 }
 
 function serialize_mruv_Group(arg) {
-  if (!(arg instanceof groups_groups_model_pb.Group)) {
+  if (!(arg instanceof groups_groups_pb.Group)) {
     throw new Error('Expected argument of type mruv.Group');
   }
   return new Buffer(arg.serializeBinary());
 }
 
 function deserialize_mruv_Group(buffer_arg) {
-  return groups_groups_model_pb.Group.deserializeBinary(new Uint8Array(buffer_arg));
+  return groups_groups_pb.Group.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_mruv_GroupID(arg) {
-  if (!(arg instanceof groups_groups_model_pb.GroupID)) {
+  if (!(arg instanceof groups_groups_pb.GroupID)) {
     throw new Error('Expected argument of type mruv.GroupID');
   }
   return new Buffer(arg.serializeBinary());
 }
 
 function deserialize_mruv_GroupID(buffer_arg) {
-  return groups_groups_model_pb.GroupID.deserializeBinary(new Uint8Array(buffer_arg));
+  return groups_groups_pb.GroupID.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_mruv_RemoveGroupMemberRequest(arg) {
@@ -140,14 +139,15 @@ function deserialize_mruv_VersionResponse(buffer_arg) {
 }
 
 
+// The MruV groups service provides procedures for managing groups.
 var MruVGroupsServiceService = exports.MruVGroupsServiceService = {
   // CRUD
   createGroup: {
     path: '/mruv.MruVGroupsService/CreateGroup',
     requestStream: false,
     responseStream: false,
-    requestType: groups_groups_model_pb.Group,
-    responseType: groups_groups_model_pb.GroupID,
+    requestType: groups_groups_pb.Group,
+    responseType: groups_groups_pb.GroupID,
     requestSerialize: serialize_mruv_Group,
     requestDeserialize: deserialize_mruv_Group,
     responseSerialize: serialize_mruv_GroupID,
@@ -157,8 +157,8 @@ var MruVGroupsServiceService = exports.MruVGroupsServiceService = {
     path: '/mruv.MruVGroupsService/GetGroup',
     requestStream: false,
     responseStream: false,
-    requestType: groups_groups_model_pb.GroupID,
-    responseType: groups_groups_model_pb.Group,
+    requestType: groups_groups_pb.GroupID,
+    responseType: groups_groups_pb.Group,
     requestSerialize: serialize_mruv_GroupID,
     requestDeserialize: deserialize_mruv_GroupID,
     responseSerialize: serialize_mruv_Group,
@@ -168,8 +168,8 @@ var MruVGroupsServiceService = exports.MruVGroupsServiceService = {
     path: '/mruv.MruVGroupsService/DeleteGroup',
     requestStream: false,
     responseStream: false,
-    requestType: groups_groups_model_pb.GroupID,
-    responseType: groups_groups_model_pb.GroupID,
+    requestType: groups_groups_pb.GroupID,
+    responseType: groups_groups_pb.GroupID,
     requestSerialize: serialize_mruv_GroupID,
     requestDeserialize: deserialize_mruv_GroupID,
     responseSerialize: serialize_mruv_GroupID,

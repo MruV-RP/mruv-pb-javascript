@@ -5,28 +5,39 @@ var grpc = require('grpc');
 var characters_characters_pb = require('../characters/characters_pb.js');
 var google_api_annotations_pb = require('../google/api/annotations_pb.js');
 var common_health_pb = require('../common/health_pb.js');
-var characters_characters_model_pb = require('../characters/characters_model_pb.js');
-
-function serialize_mruv_Character(arg) {
-  if (!(arg instanceof characters_characters_model_pb.Character)) {
-    throw new Error('Expected argument of type mruv.Character');
-  }
-  return new Buffer(arg.serializeBinary());
-}
-
-function deserialize_mruv_Character(buffer_arg) {
-  return characters_characters_model_pb.Character.deserializeBinary(new Uint8Array(buffer_arg));
-}
+var common_spatial_pb = require('../common/spatial_pb.js');
 
 function serialize_mruv_CharacterID(arg) {
-  if (!(arg instanceof characters_characters_model_pb.CharacterID)) {
+  if (!(arg instanceof characters_characters_pb.CharacterID)) {
     throw new Error('Expected argument of type mruv.CharacterID');
   }
   return new Buffer(arg.serializeBinary());
 }
 
 function deserialize_mruv_CharacterID(buffer_arg) {
-  return characters_characters_model_pb.CharacterID.deserializeBinary(new Uint8Array(buffer_arg));
+  return characters_characters_pb.CharacterID.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_CreateCharacterRequest(arg) {
+  if (!(arg instanceof characters_characters_pb.CreateCharacterRequest)) {
+    throw new Error('Expected argument of type mruv.CreateCharacterRequest');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_CreateCharacterRequest(buffer_arg) {
+  return characters_characters_pb.CreateCharacterRequest.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_CreateCharacterResponse(arg) {
+  if (!(arg instanceof characters_characters_pb.CreateCharacterResponse)) {
+    throw new Error('Expected argument of type mruv.CreateCharacterResponse');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_CreateCharacterResponse(buffer_arg) {
+  return characters_characters_pb.CreateCharacterResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_mruv_DeathStreamRequest(arg) {
@@ -51,6 +62,50 @@ function deserialize_mruv_DeathStreamResponse(buffer_arg) {
   return characters_characters_pb.DeathStreamResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
+function serialize_mruv_DeleteCharacterRequest(arg) {
+  if (!(arg instanceof characters_characters_pb.DeleteCharacterRequest)) {
+    throw new Error('Expected argument of type mruv.DeleteCharacterRequest');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_DeleteCharacterRequest(buffer_arg) {
+  return characters_characters_pb.DeleteCharacterRequest.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_DeleteCharacterResponse(arg) {
+  if (!(arg instanceof characters_characters_pb.DeleteCharacterResponse)) {
+    throw new Error('Expected argument of type mruv.DeleteCharacterResponse');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_DeleteCharacterResponse(buffer_arg) {
+  return characters_characters_pb.DeleteCharacterResponse.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_GetCharacterRequest(arg) {
+  if (!(arg instanceof characters_characters_pb.GetCharacterRequest)) {
+    throw new Error('Expected argument of type mruv.GetCharacterRequest');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_GetCharacterRequest(buffer_arg) {
+  return characters_characters_pb.GetCharacterRequest.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_GetCharacterResponse(arg) {
+  if (!(arg instanceof characters_characters_pb.GetCharacterResponse)) {
+    throw new Error('Expected argument of type mruv.GetCharacterResponse');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_GetCharacterResponse(buffer_arg) {
+  return characters_characters_pb.GetCharacterResponse.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
 function serialize_mruv_ServiceStatusRequest(arg) {
   if (!(arg instanceof common_health_pb.ServiceStatusRequest)) {
     throw new Error('Expected argument of type mruv.ServiceStatusRequest');
@@ -71,6 +126,28 @@ function serialize_mruv_ServiceStatusResponse(arg) {
 
 function deserialize_mruv_ServiceStatusResponse(buffer_arg) {
   return common_health_pb.ServiceStatusResponse.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_UpdateCharacterRequest(arg) {
+  if (!(arg instanceof characters_characters_pb.UpdateCharacterRequest)) {
+    throw new Error('Expected argument of type mruv.UpdateCharacterRequest');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_UpdateCharacterRequest(buffer_arg) {
+  return characters_characters_pb.UpdateCharacterRequest.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_UpdateCharacterResponse(arg) {
+  if (!(arg instanceof characters_characters_pb.UpdateCharacterResponse)) {
+    throw new Error('Expected argument of type mruv.UpdateCharacterResponse');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_UpdateCharacterResponse(buffer_arg) {
+  return characters_characters_pb.UpdateCharacterResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_mruv_VersionRequest(arg) {
@@ -97,52 +174,67 @@ function deserialize_mruv_VersionResponse(buffer_arg) {
 
 
 var MruVCharactersServiceService = exports.MruVCharactersServiceService = {
-  // CRUD
+  // Create a character.
   createCharacter: {
     path: '/mruv.MruVCharactersService/CreateCharacter',
     requestStream: false,
     responseStream: false,
-    requestType: characters_characters_model_pb.Character,
-    responseType: characters_characters_model_pb.CharacterID,
-    requestSerialize: serialize_mruv_Character,
-    requestDeserialize: deserialize_mruv_Character,
-    responseSerialize: serialize_mruv_CharacterID,
-    responseDeserialize: deserialize_mruv_CharacterID,
+    requestType: characters_characters_pb.CreateCharacterRequest,
+    responseType: characters_characters_pb.CreateCharacterResponse,
+    requestSerialize: serialize_mruv_CreateCharacterRequest,
+    requestDeserialize: deserialize_mruv_CreateCharacterRequest,
+    responseSerialize: serialize_mruv_CreateCharacterResponse,
+    responseDeserialize: deserialize_mruv_CreateCharacterResponse,
   },
+  // Get a character.
   getCharacter: {
     path: '/mruv.MruVCharactersService/GetCharacter',
     requestStream: false,
     responseStream: false,
-    requestType: characters_characters_model_pb.CharacterID,
-    responseType: characters_characters_model_pb.Character,
-    requestSerialize: serialize_mruv_CharacterID,
-    requestDeserialize: deserialize_mruv_CharacterID,
-    responseSerialize: serialize_mruv_Character,
-    responseDeserialize: deserialize_mruv_Character,
+    requestType: characters_characters_pb.GetCharacterRequest,
+    responseType: characters_characters_pb.GetCharacterResponse,
+    requestSerialize: serialize_mruv_GetCharacterRequest,
+    requestDeserialize: deserialize_mruv_GetCharacterRequest,
+    responseSerialize: serialize_mruv_GetCharacterResponse,
+    responseDeserialize: deserialize_mruv_GetCharacterResponse,
   },
-  removeCharacter: {
-    path: '/mruv.MruVCharactersService/RemoveCharacter',
+  // Update a character.
+  updateCharacter: {
+    path: '/mruv.MruVCharactersService/UpdateCharacter',
     requestStream: false,
     responseStream: false,
-    requestType: characters_characters_model_pb.CharacterID,
-    responseType: characters_characters_model_pb.CharacterID,
-    requestSerialize: serialize_mruv_CharacterID,
-    requestDeserialize: deserialize_mruv_CharacterID,
-    responseSerialize: serialize_mruv_CharacterID,
-    responseDeserialize: deserialize_mruv_CharacterID,
+    requestType: characters_characters_pb.UpdateCharacterRequest,
+    responseType: characters_characters_pb.UpdateCharacterResponse,
+    requestSerialize: serialize_mruv_UpdateCharacterRequest,
+    requestDeserialize: deserialize_mruv_UpdateCharacterRequest,
+    responseSerialize: serialize_mruv_UpdateCharacterResponse,
+    responseDeserialize: deserialize_mruv_UpdateCharacterResponse,
   },
-  // Deaths
+  // Delete a character.
+  deleteCharacter: {
+    path: '/mruv.MruVCharactersService/DeleteCharacter',
+    requestStream: false,
+    responseStream: false,
+    requestType: characters_characters_pb.DeleteCharacterRequest,
+    responseType: characters_characters_pb.DeleteCharacterResponse,
+    requestSerialize: serialize_mruv_DeleteCharacterRequest,
+    requestDeserialize: deserialize_mruv_DeleteCharacterRequest,
+    responseSerialize: serialize_mruv_DeleteCharacterResponse,
+    responseDeserialize: deserialize_mruv_DeleteCharacterResponse,
+  },
+  // Kill a character. A character that is killed cannot be played anymore.
   permanentCharacterKill: {
     path: '/mruv.MruVCharactersService/PermanentCharacterKill',
     requestStream: false,
     responseStream: false,
-    requestType: characters_characters_model_pb.CharacterID,
-    responseType: characters_characters_model_pb.CharacterID,
+    requestType: characters_characters_pb.CharacterID,
+    responseType: characters_characters_pb.CharacterID,
     requestSerialize: serialize_mruv_CharacterID,
     requestDeserialize: deserialize_mruv_CharacterID,
     responseSerialize: serialize_mruv_CharacterID,
     responseDeserialize: deserialize_mruv_CharacterID,
   },
+  // Stream of deaths.
   deathsStream: {
     path: '/mruv.MruVCharactersService/DeathsStream',
     requestStream: false,
