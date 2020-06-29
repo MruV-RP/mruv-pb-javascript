@@ -39,6 +39,28 @@ function deserialize_mruv_GetAccountCharactersResponse(buffer_arg) {
   return accounts_accounts_pb.GetAccountCharactersResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
+function serialize_mruv_IsAccountExistsRequest(arg) {
+  if (!(arg instanceof accounts_accounts_pb.IsAccountExistsRequest)) {
+    throw new Error('Expected argument of type mruv.IsAccountExistsRequest');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_IsAccountExistsRequest(buffer_arg) {
+  return accounts_accounts_pb.IsAccountExistsRequest.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_IsAccountExistsResponse(arg) {
+  if (!(arg instanceof accounts_accounts_pb.IsAccountExistsResponse)) {
+    throw new Error('Expected argument of type mruv.IsAccountExistsResponse');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_IsAccountExistsResponse(buffer_arg) {
+  return accounts_accounts_pb.IsAccountExistsResponse.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
 function serialize_mruv_LogInRequest(arg) {
   if (!(arg instanceof accounts_accounts_pb.LogInRequest)) {
     throw new Error('Expected argument of type mruv.LogInRequest');
@@ -108,6 +130,18 @@ var MruVAccountsServiceService = exports.MruVAccountsServiceService = {
     requestDeserialize: deserialize_mruv_LogInRequest,
     responseSerialize: serialize_mruv_LogInResponse,
     responseDeserialize: deserialize_mruv_LogInResponse,
+  },
+  // Check, is account with specified login exists. If yes, it returns account id.
+  isAccountExists: {
+    path: '/mruv.MruVAccountsService/IsAccountExists',
+    requestStream: false,
+    responseStream: false,
+    requestType: accounts_accounts_pb.IsAccountExistsRequest,
+    responseType: accounts_accounts_pb.IsAccountExistsResponse,
+    requestSerialize: serialize_mruv_IsAccountExistsRequest,
+    requestDeserialize: deserialize_mruv_IsAccountExistsRequest,
+    responseSerialize: serialize_mruv_IsAccountExistsResponse,
+    responseDeserialize: deserialize_mruv_IsAccountExistsResponse,
   },
   getAccount: {
     path: '/mruv.MruVAccountsService/GetAccount',

@@ -177,3 +177,47 @@ export namespace GetAccountCharactersResponse {
   }
 }
 
+export class IsAccountExistsRequest extends jspb.Message {
+  getLogin(): string;
+  setLogin(value: string): void;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): IsAccountExistsRequest.AsObject;
+  static toObject(includeInstance: boolean, msg: IsAccountExistsRequest): IsAccountExistsRequest.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: IsAccountExistsRequest, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): IsAccountExistsRequest;
+  static deserializeBinaryFromReader(message: IsAccountExistsRequest, reader: jspb.BinaryReader): IsAccountExistsRequest;
+}
+
+export namespace IsAccountExistsRequest {
+  export type AsObject = {
+    login: string,
+  }
+}
+
+export class IsAccountExistsResponse extends jspb.Message {
+  getExists(): boolean;
+  setExists(value: boolean): void;
+
+  getId(): number;
+  setId(value: number): void;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): IsAccountExistsResponse.AsObject;
+  static toObject(includeInstance: boolean, msg: IsAccountExistsResponse): IsAccountExistsResponse.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: IsAccountExistsResponse, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): IsAccountExistsResponse;
+  static deserializeBinaryFromReader(message: IsAccountExistsResponse, reader: jspb.BinaryReader): IsAccountExistsResponse;
+}
+
+export namespace IsAccountExistsResponse {
+  export type AsObject = {
+    exists: boolean,
+    id: number,
+  }
+}
+

@@ -9,6 +9,7 @@ import * as grpc from "grpc";
 interface IMruVAccountsServiceService extends grpc.ServiceDefinition<grpc.UntypedServiceImplementation> {
   registerAccount: grpc.MethodDefinition<accounts_accounts_pb.RegisterAccountRequest, accounts_accounts_pb.RegisterAccountResponse>;
   logIn: grpc.MethodDefinition<accounts_accounts_pb.LogInRequest, accounts_accounts_pb.LogInResponse>;
+  isAccountExists: grpc.MethodDefinition<accounts_accounts_pb.IsAccountExistsRequest, accounts_accounts_pb.IsAccountExistsResponse>;
   getAccount: grpc.MethodDefinition<accounts_accounts_pb.AccountID, accounts_accounts_pb.Account>;
   getAccountCharacters: grpc.MethodDefinition<accounts_accounts_pb.AccountID, accounts_accounts_pb.GetAccountCharactersResponse>;
 }
@@ -23,6 +24,9 @@ export class MruVAccountsServiceClient extends grpc.Client {
   logIn(argument: accounts_accounts_pb.LogInRequest, callback: grpc.requestCallback<accounts_accounts_pb.LogInResponse>): grpc.ClientUnaryCall;
   logIn(argument: accounts_accounts_pb.LogInRequest, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<accounts_accounts_pb.LogInResponse>): grpc.ClientUnaryCall;
   logIn(argument: accounts_accounts_pb.LogInRequest, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<accounts_accounts_pb.LogInResponse>): grpc.ClientUnaryCall;
+  isAccountExists(argument: accounts_accounts_pb.IsAccountExistsRequest, callback: grpc.requestCallback<accounts_accounts_pb.IsAccountExistsResponse>): grpc.ClientUnaryCall;
+  isAccountExists(argument: accounts_accounts_pb.IsAccountExistsRequest, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<accounts_accounts_pb.IsAccountExistsResponse>): grpc.ClientUnaryCall;
+  isAccountExists(argument: accounts_accounts_pb.IsAccountExistsRequest, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<accounts_accounts_pb.IsAccountExistsResponse>): grpc.ClientUnaryCall;
   getAccount(argument: accounts_accounts_pb.AccountID, callback: grpc.requestCallback<accounts_accounts_pb.Account>): grpc.ClientUnaryCall;
   getAccount(argument: accounts_accounts_pb.AccountID, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<accounts_accounts_pb.Account>): grpc.ClientUnaryCall;
   getAccount(argument: accounts_accounts_pb.AccountID, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<accounts_accounts_pb.Account>): grpc.ClientUnaryCall;
