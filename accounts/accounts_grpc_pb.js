@@ -4,28 +4,16 @@
 var grpc = require('grpc');
 var accounts_accounts_pb = require('../accounts/accounts_pb.js');
 var google_api_annotations_pb = require('../google/api/annotations_pb.js');
-var characters_characters_pb = require('../characters/characters_pb.js');
 
-function serialize_mruv_Account(arg) {
-  if (!(arg instanceof accounts_accounts_pb.Account)) {
-    throw new Error('Expected argument of type mruv.Account');
+function serialize_mruv_GetAccountCharactersRequest(arg) {
+  if (!(arg instanceof accounts_accounts_pb.GetAccountCharactersRequest)) {
+    throw new Error('Expected argument of type mruv.GetAccountCharactersRequest');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_Account(buffer_arg) {
-  return accounts_accounts_pb.Account.deserializeBinary(new Uint8Array(buffer_arg));
-}
-
-function serialize_mruv_AccountID(arg) {
-  if (!(arg instanceof accounts_accounts_pb.AccountID)) {
-    throw new Error('Expected argument of type mruv.AccountID');
-  }
-  return new Buffer(arg.serializeBinary());
-}
-
-function deserialize_mruv_AccountID(buffer_arg) {
-  return accounts_accounts_pb.AccountID.deserializeBinary(new Uint8Array(buffer_arg));
+function deserialize_mruv_GetAccountCharactersRequest(buffer_arg) {
+  return accounts_accounts_pb.GetAccountCharactersRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_mruv_GetAccountCharactersResponse(arg) {
@@ -39,26 +27,48 @@ function deserialize_mruv_GetAccountCharactersResponse(buffer_arg) {
   return accounts_accounts_pb.GetAccountCharactersResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_IsAccountExistsRequest(arg) {
-  if (!(arg instanceof accounts_accounts_pb.IsAccountExistsRequest)) {
-    throw new Error('Expected argument of type mruv.IsAccountExistsRequest');
+function serialize_mruv_GetAccountRequest(arg) {
+  if (!(arg instanceof accounts_accounts_pb.GetAccountRequest)) {
+    throw new Error('Expected argument of type mruv.GetAccountRequest');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_IsAccountExistsRequest(buffer_arg) {
-  return accounts_accounts_pb.IsAccountExistsRequest.deserializeBinary(new Uint8Array(buffer_arg));
+function deserialize_mruv_GetAccountRequest(buffer_arg) {
+  return accounts_accounts_pb.GetAccountRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_IsAccountExistsResponse(arg) {
-  if (!(arg instanceof accounts_accounts_pb.IsAccountExistsResponse)) {
-    throw new Error('Expected argument of type mruv.IsAccountExistsResponse');
+function serialize_mruv_GetAccountResponse(arg) {
+  if (!(arg instanceof accounts_accounts_pb.GetAccountResponse)) {
+    throw new Error('Expected argument of type mruv.GetAccountResponse');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_IsAccountExistsResponse(buffer_arg) {
-  return accounts_accounts_pb.IsAccountExistsResponse.deserializeBinary(new Uint8Array(buffer_arg));
+function deserialize_mruv_GetAccountResponse(buffer_arg) {
+  return accounts_accounts_pb.GetAccountResponse.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_IsAccountExistRequest(arg) {
+  if (!(arg instanceof accounts_accounts_pb.IsAccountExistRequest)) {
+    throw new Error('Expected argument of type mruv.IsAccountExistRequest');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_IsAccountExistRequest(buffer_arg) {
+  return accounts_accounts_pb.IsAccountExistRequest.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_IsAccountExistResponse(arg) {
+  if (!(arg instanceof accounts_accounts_pb.IsAccountExistResponse)) {
+    throw new Error('Expected argument of type mruv.IsAccountExistResponse');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_IsAccountExistResponse(buffer_arg) {
+  return accounts_accounts_pb.IsAccountExistResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_mruv_LogInRequest(arg) {
@@ -109,6 +119,7 @@ function deserialize_mruv_RegisterAccountResponse(buffer_arg) {
 // The MruV accounts service provides procedures for managing players accounts.
 // This service is an additional/intermediary service between the ORY Kratos & ORY Hydra service.
 var MruVAccountsServiceService = exports.MruVAccountsServiceService = {
+  // Register a new account.
   registerAccount: {
     path: '/mruv.MruVAccountsService/RegisterAccount',
     requestStream: false,
@@ -120,6 +131,7 @@ var MruVAccountsServiceService = exports.MruVAccountsServiceService = {
     responseSerialize: serialize_mruv_RegisterAccountResponse,
     responseDeserialize: deserialize_mruv_RegisterAccountResponse,
   },
+  // Sign into an existing account.
   logIn: {
     path: '/mruv.MruVAccountsService/LogIn',
     requestStream: false,
@@ -131,37 +143,39 @@ var MruVAccountsServiceService = exports.MruVAccountsServiceService = {
     responseSerialize: serialize_mruv_LogInResponse,
     responseDeserialize: deserialize_mruv_LogInResponse,
   },
-  // Check, is account with specified login exists. If yes, it returns account id.
-  isAccountExists: {
-    path: '/mruv.MruVAccountsService/IsAccountExists',
+  // Check, is account with specified login exist. If yes, it returns account id.
+  isAccountExist: {
+    path: '/mruv.MruVAccountsService/IsAccountExist',
     requestStream: false,
     responseStream: false,
-    requestType: accounts_accounts_pb.IsAccountExistsRequest,
-    responseType: accounts_accounts_pb.IsAccountExistsResponse,
-    requestSerialize: serialize_mruv_IsAccountExistsRequest,
-    requestDeserialize: deserialize_mruv_IsAccountExistsRequest,
-    responseSerialize: serialize_mruv_IsAccountExistsResponse,
-    responseDeserialize: deserialize_mruv_IsAccountExistsResponse,
+    requestType: accounts_accounts_pb.IsAccountExistRequest,
+    responseType: accounts_accounts_pb.IsAccountExistResponse,
+    requestSerialize: serialize_mruv_IsAccountExistRequest,
+    requestDeserialize: deserialize_mruv_IsAccountExistRequest,
+    responseSerialize: serialize_mruv_IsAccountExistResponse,
+    responseDeserialize: deserialize_mruv_IsAccountExistResponse,
   },
+  // Get an account.
   getAccount: {
     path: '/mruv.MruVAccountsService/GetAccount',
     requestStream: false,
     responseStream: false,
-    requestType: accounts_accounts_pb.AccountID,
-    responseType: accounts_accounts_pb.Account,
-    requestSerialize: serialize_mruv_AccountID,
-    requestDeserialize: deserialize_mruv_AccountID,
-    responseSerialize: serialize_mruv_Account,
-    responseDeserialize: deserialize_mruv_Account,
+    requestType: accounts_accounts_pb.GetAccountRequest,
+    responseType: accounts_accounts_pb.GetAccountResponse,
+    requestSerialize: serialize_mruv_GetAccountRequest,
+    requestDeserialize: deserialize_mruv_GetAccountRequest,
+    responseSerialize: serialize_mruv_GetAccountResponse,
+    responseDeserialize: deserialize_mruv_GetAccountResponse,
   },
+  // Get an account characters.
   getAccountCharacters: {
     path: '/mruv.MruVAccountsService/GetAccountCharacters',
     requestStream: false,
     responseStream: false,
-    requestType: accounts_accounts_pb.AccountID,
+    requestType: accounts_accounts_pb.GetAccountCharactersRequest,
     responseType: accounts_accounts_pb.GetAccountCharactersResponse,
-    requestSerialize: serialize_mruv_AccountID,
-    requestDeserialize: deserialize_mruv_AccountID,
+    requestSerialize: serialize_mruv_GetAccountCharactersRequest,
+    requestDeserialize: deserialize_mruv_GetAccountCharactersRequest,
     responseSerialize: serialize_mruv_GetAccountCharactersResponse,
     responseDeserialize: deserialize_mruv_GetAccountCharactersResponse,
   },
