@@ -9,6 +9,9 @@ export class CreateGroupRequest extends jspb.Message {
   getName(): string;
   setName(value: string): void;
 
+  getDescription(): string;
+  setDescription(value: string): void;
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): CreateGroupRequest.AsObject;
   static toObject(includeInstance: boolean, msg: CreateGroupRequest): CreateGroupRequest.AsObject;
@@ -22,6 +25,7 @@ export class CreateGroupRequest extends jspb.Message {
 export namespace CreateGroupRequest {
   export type AsObject = {
     name: string,
+    description: string,
   }
 }
 
@@ -69,6 +73,9 @@ export class GetGroupResponse extends jspb.Message {
   getName(): string;
   setName(value: string): void;
 
+  getDescription(): string;
+  setDescription(value: string): void;
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): GetGroupResponse.AsObject;
   static toObject(includeInstance: boolean, msg: GetGroupResponse): GetGroupResponse.AsObject;
@@ -82,6 +89,7 @@ export class GetGroupResponse extends jspb.Message {
 export namespace GetGroupResponse {
   export type AsObject = {
     name: string,
+    description: string,
   }
 }
 
@@ -91,6 +99,9 @@ export class UpdateGroupRequest extends jspb.Message {
 
   getName(): string;
   setName(value: string): void;
+
+  getDescription(): string;
+  setDescription(value: string): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): UpdateGroupRequest.AsObject;
@@ -106,6 +117,7 @@ export namespace UpdateGroupRequest {
   export type AsObject = {
     groupId: number,
     name: string,
+    description: string,
   }
 }
 
@@ -162,6 +174,12 @@ export namespace DeleteGroupResponse {
 }
 
 export class GetGroupsRequest extends jspb.Message {
+  getLimit(): number;
+  setLimit(value: number): void;
+
+  getBeginFrom(): number;
+  setBeginFrom(value: number): void;
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): GetGroupsRequest.AsObject;
   static toObject(includeInstance: boolean, msg: GetGroupsRequest): GetGroupsRequest.AsObject;
@@ -174,14 +192,16 @@ export class GetGroupsRequest extends jspb.Message {
 
 export namespace GetGroupsRequest {
   export type AsObject = {
+    limit: number,
+    beginFrom: number,
   }
 }
 
 export class GetGroupsResponse extends jspb.Message {
   clearGroupsList(): void;
-  getGroupsList(): Array<GetGroupResponse>;
-  setGroupsList(value: Array<GetGroupResponse>): void;
-  addGroups(value?: GetGroupResponse, index?: number): GetGroupResponse;
+  getGroupsList(): Array<GetGroupsResponse.Group>;
+  setGroupsList(value: Array<GetGroupsResponse.Group>): void;
+  addGroups(value?: GetGroupsResponse.Group, index?: number): GetGroupsResponse.Group;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): GetGroupsResponse.AsObject;
@@ -195,7 +215,35 @@ export class GetGroupsResponse extends jspb.Message {
 
 export namespace GetGroupsResponse {
   export type AsObject = {
-    groupsList: Array<GetGroupResponse.AsObject>,
+    groupsList: Array<GetGroupsResponse.Group.AsObject>,
+  }
+
+  export class Group extends jspb.Message {
+    getId(): number;
+    setId(value: number): void;
+
+    getName(): string;
+    setName(value: string): void;
+
+    getDescription(): string;
+    setDescription(value: string): void;
+
+    serializeBinary(): Uint8Array;
+    toObject(includeInstance?: boolean): Group.AsObject;
+    static toObject(includeInstance: boolean, msg: Group): Group.AsObject;
+    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+    static serializeBinaryToWriter(message: Group, writer: jspb.BinaryWriter): void;
+    static deserializeBinary(bytes: Uint8Array): Group;
+    static deserializeBinaryFromReader(message: Group, reader: jspb.BinaryReader): Group;
+  }
+
+  export namespace Group {
+    export type AsObject = {
+      id: number,
+      name: string,
+      description: string,
+    }
   }
 }
 
