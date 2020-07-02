@@ -13,6 +13,7 @@ interface IMruVCharactersServiceService extends grpc.ServiceDefinition<grpc.Unty
   updateCharacter: grpc.MethodDefinition<characters_characters_pb.UpdateCharacterRequest, characters_characters_pb.UpdateCharacterResponse>;
   deleteCharacter: grpc.MethodDefinition<characters_characters_pb.DeleteCharacterRequest, characters_characters_pb.DeleteCharacterResponse>;
   permanentCharacterKill: grpc.MethodDefinition<characters_characters_pb.CharacterID, characters_characters_pb.CharacterID>;
+  changeClothes: grpc.MethodDefinition<characters_characters_pb.ChangeClothesRequest, characters_characters_pb.ChangeClothesResponse>;
   deathsStream: grpc.MethodDefinition<characters_characters_pb.DeathStreamRequest, characters_characters_pb.DeathStreamResponse>;
   getServiceStatus: grpc.MethodDefinition<common_health_pb.ServiceStatusRequest, common_health_pb.ServiceStatusResponse>;
   getServiceVersion: grpc.MethodDefinition<common_health_pb.VersionRequest, common_health_pb.VersionResponse>;
@@ -37,6 +38,9 @@ export class MruVCharactersServiceClient extends grpc.Client {
   permanentCharacterKill(argument: characters_characters_pb.CharacterID, callback: grpc.requestCallback<characters_characters_pb.CharacterID>): grpc.ClientUnaryCall;
   permanentCharacterKill(argument: characters_characters_pb.CharacterID, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<characters_characters_pb.CharacterID>): grpc.ClientUnaryCall;
   permanentCharacterKill(argument: characters_characters_pb.CharacterID, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<characters_characters_pb.CharacterID>): grpc.ClientUnaryCall;
+  changeClothes(argument: characters_characters_pb.ChangeClothesRequest, callback: grpc.requestCallback<characters_characters_pb.ChangeClothesResponse>): grpc.ClientUnaryCall;
+  changeClothes(argument: characters_characters_pb.ChangeClothesRequest, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<characters_characters_pb.ChangeClothesResponse>): grpc.ClientUnaryCall;
+  changeClothes(argument: characters_characters_pb.ChangeClothesRequest, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<characters_characters_pb.ChangeClothesResponse>): grpc.ClientUnaryCall;
   deathsStream(argument: characters_characters_pb.DeathStreamRequest, metadataOrOptions?: grpc.Metadata | grpc.CallOptions | null): grpc.ClientReadableStream<characters_characters_pb.DeathStreamResponse>;
   deathsStream(argument: characters_characters_pb.DeathStreamRequest, metadata?: grpc.Metadata | null, options?: grpc.CallOptions | null): grpc.ClientReadableStream<characters_characters_pb.DeathStreamResponse>;
   getServiceStatus(argument: common_health_pb.ServiceStatusRequest, callback: grpc.requestCallback<common_health_pb.ServiceStatusResponse>): grpc.ClientUnaryCall;

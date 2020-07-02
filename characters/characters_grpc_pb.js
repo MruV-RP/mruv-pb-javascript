@@ -5,7 +5,28 @@ var grpc = require('grpc');
 var characters_characters_pb = require('../characters/characters_pb.js');
 var google_api_annotations_pb = require('../google/api/annotations_pb.js');
 var common_health_pb = require('../common/health_pb.js');
-var common_spatial_pb = require('../common/spatial_pb.js');
+
+function serialize_mruv_ChangeClothesRequest(arg) {
+  if (!(arg instanceof characters_characters_pb.ChangeClothesRequest)) {
+    throw new Error('Expected argument of type mruv.ChangeClothesRequest');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_ChangeClothesRequest(buffer_arg) {
+  return characters_characters_pb.ChangeClothesRequest.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_ChangeClothesResponse(arg) {
+  if (!(arg instanceof characters_characters_pb.ChangeClothesResponse)) {
+    throw new Error('Expected argument of type mruv.ChangeClothesResponse');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_ChangeClothesResponse(buffer_arg) {
+  return characters_characters_pb.ChangeClothesResponse.deserializeBinary(new Uint8Array(buffer_arg));
+}
 
 function serialize_mruv_CharacterID(arg) {
   if (!(arg instanceof characters_characters_pb.CharacterID)) {
@@ -233,6 +254,18 @@ var MruVCharactersServiceService = exports.MruVCharactersServiceService = {
     requestDeserialize: deserialize_mruv_CharacterID,
     responseSerialize: serialize_mruv_CharacterID,
     responseDeserialize: deserialize_mruv_CharacterID,
+  },
+  // Change player clothes.
+  changeClothes: {
+    path: '/mruv.MruVCharactersService/ChangeClothes',
+    requestStream: false,
+    responseStream: false,
+    requestType: characters_characters_pb.ChangeClothesRequest,
+    responseType: characters_characters_pb.ChangeClothesResponse,
+    requestSerialize: serialize_mruv_ChangeClothesRequest,
+    requestDeserialize: deserialize_mruv_ChangeClothesRequest,
+    responseSerialize: serialize_mruv_ChangeClothesResponse,
+    responseDeserialize: deserialize_mruv_ChangeClothesResponse,
   },
   // Stream of deaths.
   deathsStream: {

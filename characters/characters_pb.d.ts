@@ -4,7 +4,6 @@
 import * as jspb from "google-protobuf";
 import * as google_api_annotations_pb from "../google/api/annotations_pb";
 import * as common_health_pb from "../common/health_pb";
-import * as common_spatial_pb from "../common/spatial_pb";
 
 export class Character extends jspb.Message {
   getId(): number;
@@ -25,10 +24,17 @@ export class Character extends jspb.Message {
   getSex(): number;
   setSex(value: number): void;
 
-  hasPosition(): boolean;
-  clearPosition(): void;
-  getPosition(): common_spatial_pb.Position | undefined;
-  setPosition(value?: common_spatial_pb.Position): void;
+  getClothesId(): number;
+  setClothesId(value: number): void;
+
+  getX(): number;
+  setX(value: number): void;
+
+  getY(): number;
+  setY(value: number): void;
+
+  getZ(): number;
+  setZ(value: number): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): Character.AsObject;
@@ -48,7 +54,10 @@ export namespace Character {
     secondName: string,
     age: number,
     sex: number,
-    position?: common_spatial_pb.Position.AsObject,
+    clothesId: number,
+    x: number,
+    y: number,
+    z: number,
   }
 }
 
@@ -171,10 +180,17 @@ export class GetCharacterResponse extends jspb.Message {
   getSex(): number;
   setSex(value: number): void;
 
-  hasPosition(): boolean;
-  clearPosition(): void;
-  getPosition(): common_spatial_pb.Position | undefined;
-  setPosition(value?: common_spatial_pb.Position): void;
+  getClothesId(): number;
+  setClothesId(value: number): void;
+
+  getX(): number;
+  setX(value: number): void;
+
+  getY(): number;
+  setY(value: number): void;
+
+  getZ(): number;
+  setZ(value: number): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): GetCharacterResponse.AsObject;
@@ -194,7 +210,10 @@ export namespace GetCharacterResponse {
     secondName: string,
     age: number,
     sex: number,
-    position?: common_spatial_pb.Position.AsObject,
+    clothesId: number,
+    x: number,
+    y: number,
+    z: number,
   }
 }
 
@@ -266,6 +285,46 @@ export class DeleteCharacterResponse extends jspb.Message {
 }
 
 export namespace DeleteCharacterResponse {
+  export type AsObject = {
+  }
+}
+
+export class ChangeClothesRequest extends jspb.Message {
+  getId(): number;
+  setId(value: number): void;
+
+  getClothesId(): number;
+  setClothesId(value: number): void;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): ChangeClothesRequest.AsObject;
+  static toObject(includeInstance: boolean, msg: ChangeClothesRequest): ChangeClothesRequest.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: ChangeClothesRequest, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): ChangeClothesRequest;
+  static deserializeBinaryFromReader(message: ChangeClothesRequest, reader: jspb.BinaryReader): ChangeClothesRequest;
+}
+
+export namespace ChangeClothesRequest {
+  export type AsObject = {
+    id: number,
+    clothesId: number,
+  }
+}
+
+export class ChangeClothesResponse extends jspb.Message {
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): ChangeClothesResponse.AsObject;
+  static toObject(includeInstance: boolean, msg: ChangeClothesResponse): ChangeClothesResponse.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: ChangeClothesResponse, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): ChangeClothesResponse;
+  static deserializeBinaryFromReader(message: ChangeClothesResponse, reader: jspb.BinaryReader): ChangeClothesResponse;
+}
+
+export namespace ChangeClothesResponse {
   export type AsObject = {
   }
 }
