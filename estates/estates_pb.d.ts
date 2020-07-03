@@ -29,6 +29,9 @@ export class Estate extends jspb.Message {
   setRoomsList(value: Array<number>): void;
   addRooms(value: number, index?: number): number;
 
+  getProductId(): number;
+  setProductId(value: number): void;
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): Estate.AsObject;
   static toObject(includeInstance: boolean, msg: Estate): Estate.AsObject;
@@ -47,6 +50,7 @@ export namespace Estate {
     entrancesList: Array<number>,
     gatesList: Array<number>,
     roomsList: Array<number>,
+    productId: number,
   }
 }
 

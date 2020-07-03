@@ -1059,7 +1059,7 @@ proto.mruv.entrances.CreateEntranceRequest.prototype.toObject = function(opt_inc
  */
 proto.mruv.entrances.CreateEntranceRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
-
+    entrance: (f = msg.getEntrance()) && proto.mruv.entrances.Entrance.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -1096,6 +1096,11 @@ proto.mruv.entrances.CreateEntranceRequest.deserializeBinaryFromReader = functio
     }
     var field = reader.getFieldNumber();
     switch (field) {
+    case 1:
+      var value = new proto.mruv.entrances.Entrance;
+      reader.readMessage(value,proto.mruv.entrances.Entrance.deserializeBinaryFromReader);
+      msg.setEntrance(value);
+      break;
     default:
       reader.skipField();
       break;
@@ -1125,6 +1130,47 @@ proto.mruv.entrances.CreateEntranceRequest.prototype.serializeBinary = function(
  */
 proto.mruv.entrances.CreateEntranceRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
+  f = message.getEntrance();
+  if (f != null) {
+    writer.writeMessage(
+      1,
+      f,
+      proto.mruv.entrances.Entrance.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional Entrance entrance = 1;
+ * @return {?proto.mruv.entrances.Entrance}
+ */
+proto.mruv.entrances.CreateEntranceRequest.prototype.getEntrance = function() {
+  return /** @type{?proto.mruv.entrances.Entrance} */ (
+    jspb.Message.getWrapperField(this, proto.mruv.entrances.Entrance, 1));
+};
+
+
+/** @param {?proto.mruv.entrances.Entrance|undefined} value */
+proto.mruv.entrances.CreateEntranceRequest.prototype.setEntrance = function(value) {
+  jspb.Message.setWrapperField(this, 1, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.mruv.entrances.CreateEntranceRequest.prototype.clearEntrance = function() {
+  this.setEntrance(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.mruv.entrances.CreateEntranceRequest.prototype.hasEntrance = function() {
+  return jspb.Message.getField(this, 1) != null;
 };
 
 

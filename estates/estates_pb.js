@@ -541,7 +541,8 @@ proto.mruv.estates.Estate.toObject = function(includeInstance, msg) {
     description: jspb.Message.getFieldWithDefault(msg, 3, ""),
     entrancesList: (f = jspb.Message.getRepeatedField(msg, 4)) == null ? undefined : f,
     gatesList: (f = jspb.Message.getRepeatedField(msg, 5)) == null ? undefined : f,
-    roomsList: (f = jspb.Message.getRepeatedField(msg, 6)) == null ? undefined : f
+    roomsList: (f = jspb.Message.getRepeatedField(msg, 6)) == null ? undefined : f,
+    productId: jspb.Message.getFieldWithDefault(msg, 7, 0)
   };
 
   if (includeInstance) {
@@ -601,6 +602,10 @@ proto.mruv.estates.Estate.deserializeBinaryFromReader = function(msg, reader) {
     case 6:
       var value = /** @type {!Array<number>} */ (reader.readPackedUint32());
       msg.setRoomsList(value);
+      break;
+    case 7:
+      var value = /** @type {number} */ (reader.readUint32());
+      msg.setProductId(value);
       break;
     default:
       reader.skipField();
@@ -670,6 +675,13 @@ proto.mruv.estates.Estate.serializeBinaryToWriter = function(message, writer) {
   if (f.length > 0) {
     writer.writePackedUint32(
       6,
+      f
+    );
+  }
+  f = message.getProductId();
+  if (f !== 0) {
+    writer.writeUint32(
+      7,
       f
     );
   }
@@ -814,6 +826,21 @@ proto.mruv.estates.Estate.prototype.addRooms = function(value, opt_index) {
  */
 proto.mruv.estates.Estate.prototype.clearRoomsList = function() {
   this.setRoomsList([]);
+};
+
+
+/**
+ * optional uint32 product_id = 7;
+ * @return {number}
+ */
+proto.mruv.estates.Estate.prototype.getProductId = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 7, 0));
+};
+
+
+/** @param {number} value */
+proto.mruv.estates.Estate.prototype.setProductId = function(value) {
+  jspb.Message.setProto3IntField(this, 7, value);
 };
 
 
