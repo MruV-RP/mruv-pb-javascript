@@ -3,6 +3,8 @@
 
 import * as jspb from "google-protobuf";
 import * as google_api_annotations_pb from "../google/api/annotations_pb";
+import * as entrances_entrances_pb from "../entrances/entrances_pb";
+import * as gates_gates_pb from "../gates/gates_pb";
 
 export class Estate extends jspb.Message {
   getId(): number;
@@ -223,6 +225,11 @@ export namespace GetEstatesRequest {
 }
 
 export class GetEstatesResponse extends jspb.Message {
+  clearEstatesList(): void;
+  getEstatesList(): Array<Estate>;
+  setEstatesList(value: Array<Estate>): void;
+  addEstates(value?: Estate, index?: number): Estate;
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): GetEstatesResponse.AsObject;
   static toObject(includeInstance: boolean, msg: GetEstatesResponse): GetEstatesResponse.AsObject;
@@ -235,6 +242,7 @@ export class GetEstatesResponse extends jspb.Message {
 
 export namespace GetEstatesResponse {
   export type AsObject = {
+    estatesList: Array<Estate.AsObject>,
   }
 }
 
@@ -263,9 +271,6 @@ export namespace AddGateRequest {
 }
 
 export class AddGateResponse extends jspb.Message {
-  getGateCount(): number;
-  setGateCount(value: number): void;
-
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): AddGateResponse.AsObject;
   static toObject(includeInstance: boolean, msg: AddGateResponse): AddGateResponse.AsObject;
@@ -278,11 +283,10 @@ export class AddGateResponse extends jspb.Message {
 
 export namespace AddGateResponse {
   export type AsObject = {
-    gateCount: number,
   }
 }
 
-export class DeleteGateRequest extends jspb.Message {
+export class RemoveGateRequest extends jspb.Message {
   getEstateId(): number;
   setEstateId(value: number): void;
 
@@ -290,39 +294,35 @@ export class DeleteGateRequest extends jspb.Message {
   setGateId(value: number): void;
 
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): DeleteGateRequest.AsObject;
-  static toObject(includeInstance: boolean, msg: DeleteGateRequest): DeleteGateRequest.AsObject;
+  toObject(includeInstance?: boolean): RemoveGateRequest.AsObject;
+  static toObject(includeInstance: boolean, msg: RemoveGateRequest): RemoveGateRequest.AsObject;
   static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
   static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-  static serializeBinaryToWriter(message: DeleteGateRequest, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): DeleteGateRequest;
-  static deserializeBinaryFromReader(message: DeleteGateRequest, reader: jspb.BinaryReader): DeleteGateRequest;
+  static serializeBinaryToWriter(message: RemoveGateRequest, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): RemoveGateRequest;
+  static deserializeBinaryFromReader(message: RemoveGateRequest, reader: jspb.BinaryReader): RemoveGateRequest;
 }
 
-export namespace DeleteGateRequest {
+export namespace RemoveGateRequest {
   export type AsObject = {
     estateId: number,
     gateId: number,
   }
 }
 
-export class DeleteGateResponse extends jspb.Message {
-  getGateCount(): number;
-  setGateCount(value: number): void;
-
+export class RemoveGateResponse extends jspb.Message {
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): DeleteGateResponse.AsObject;
-  static toObject(includeInstance: boolean, msg: DeleteGateResponse): DeleteGateResponse.AsObject;
+  toObject(includeInstance?: boolean): RemoveGateResponse.AsObject;
+  static toObject(includeInstance: boolean, msg: RemoveGateResponse): RemoveGateResponse.AsObject;
   static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
   static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-  static serializeBinaryToWriter(message: DeleteGateResponse, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): DeleteGateResponse;
-  static deserializeBinaryFromReader(message: DeleteGateResponse, reader: jspb.BinaryReader): DeleteGateResponse;
+  static serializeBinaryToWriter(message: RemoveGateResponse, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): RemoveGateResponse;
+  static deserializeBinaryFromReader(message: RemoveGateResponse, reader: jspb.BinaryReader): RemoveGateResponse;
 }
 
-export namespace DeleteGateResponse {
+export namespace RemoveGateResponse {
   export type AsObject = {
-    gateCount: number,
   }
 }
 
@@ -347,10 +347,10 @@ export namespace GetEstateGatesRequest {
 }
 
 export class GetEstateGatesResponse extends jspb.Message {
-  clearEstatesList(): void;
-  getEstatesList(): Array<Estate>;
-  setEstatesList(value: Array<Estate>): void;
-  addEstates(value?: Estate, index?: number): Estate;
+  clearGatesList(): void;
+  getGatesList(): Array<gates_gates_pb.Gate>;
+  setGatesList(value: Array<gates_gates_pb.Gate>): void;
+  addGates(value?: gates_gates_pb.Gate, index?: number): gates_gates_pb.Gate;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): GetEstateGatesResponse.AsObject;
@@ -364,7 +364,7 @@ export class GetEstateGatesResponse extends jspb.Message {
 
 export namespace GetEstateGatesResponse {
   export type AsObject = {
-    estatesList: Array<Estate.AsObject>,
+    gatesList: Array<gates_gates_pb.Gate.AsObject>,
   }
 }
 
@@ -393,9 +393,6 @@ export namespace AddEntranceRequest {
 }
 
 export class AddEntranceResponse extends jspb.Message {
-  getEntranceCount(): number;
-  setEntranceCount(value: number): void;
-
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): AddEntranceResponse.AsObject;
   static toObject(includeInstance: boolean, msg: AddEntranceResponse): AddEntranceResponse.AsObject;
@@ -408,7 +405,6 @@ export class AddEntranceResponse extends jspb.Message {
 
 export namespace AddEntranceResponse {
   export type AsObject = {
-    entranceCount: number,
   }
 }
 
@@ -437,9 +433,6 @@ export namespace RemoveEntranceRequest {
 }
 
 export class RemoveEntranceResponse extends jspb.Message {
-  getEntranceCount(): number;
-  setEntranceCount(value: number): void;
-
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): RemoveEntranceResponse.AsObject;
   static toObject(includeInstance: boolean, msg: RemoveEntranceResponse): RemoveEntranceResponse.AsObject;
@@ -452,7 +445,6 @@ export class RemoveEntranceResponse extends jspb.Message {
 
 export namespace RemoveEntranceResponse {
   export type AsObject = {
-    entranceCount: number,
   }
 }
 
@@ -477,6 +469,11 @@ export namespace GetEstateEntrancesRequest {
 }
 
 export class GetEstateEntrancesResponse extends jspb.Message {
+  clearEntrancesList(): void;
+  getEntrancesList(): Array<entrances_entrances_pb.Entrance>;
+  setEntrancesList(value: Array<entrances_entrances_pb.Entrance>): void;
+  addEntrances(value?: entrances_entrances_pb.Entrance, index?: number): entrances_entrances_pb.Entrance;
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): GetEstateEntrancesResponse.AsObject;
   static toObject(includeInstance: boolean, msg: GetEstateEntrancesResponse): GetEstateEntrancesResponse.AsObject;
@@ -489,6 +486,7 @@ export class GetEstateEntrancesResponse extends jspb.Message {
 
 export namespace GetEstateEntrancesResponse {
   export type AsObject = {
+    entrancesList: Array<entrances_entrances_pb.Entrance.AsObject>,
   }
 }
 

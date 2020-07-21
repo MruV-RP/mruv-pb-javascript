@@ -4,6 +4,8 @@
 var grpc = require('grpc');
 var estates_estates_pb = require('../estates/estates_pb.js');
 var google_api_annotations_pb = require('../google/api/annotations_pb.js');
+var entrances_entrances_pb = require('../entrances/entrances_pb.js');
+var gates_gates_pb = require('../gates/gates_pb.js');
 
 function serialize_mruv_estates_AddEntranceRequest(arg) {
   if (!(arg instanceof estates_estates_pb.AddEntranceRequest)) {
@@ -91,28 +93,6 @@ function serialize_mruv_estates_DeleteEstateResponse(arg) {
 
 function deserialize_mruv_estates_DeleteEstateResponse(buffer_arg) {
   return estates_estates_pb.DeleteEstateResponse.deserializeBinary(new Uint8Array(buffer_arg));
-}
-
-function serialize_mruv_estates_DeleteGateRequest(arg) {
-  if (!(arg instanceof estates_estates_pb.DeleteGateRequest)) {
-    throw new Error('Expected argument of type mruv.estates.DeleteGateRequest');
-  }
-  return new Buffer(arg.serializeBinary());
-}
-
-function deserialize_mruv_estates_DeleteGateRequest(buffer_arg) {
-  return estates_estates_pb.DeleteGateRequest.deserializeBinary(new Uint8Array(buffer_arg));
-}
-
-function serialize_mruv_estates_DeleteGateResponse(arg) {
-  if (!(arg instanceof estates_estates_pb.DeleteGateResponse)) {
-    throw new Error('Expected argument of type mruv.estates.DeleteGateResponse');
-  }
-  return new Buffer(arg.serializeBinary());
-}
-
-function deserialize_mruv_estates_DeleteGateResponse(buffer_arg) {
-  return estates_estates_pb.DeleteGateResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_mruv_estates_Estate(arg) {
@@ -225,6 +205,28 @@ function deserialize_mruv_estates_RemoveEntranceResponse(buffer_arg) {
   return estates_estates_pb.RemoveEntranceResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
+function serialize_mruv_estates_RemoveGateRequest(arg) {
+  if (!(arg instanceof estates_estates_pb.RemoveGateRequest)) {
+    throw new Error('Expected argument of type mruv.estates.RemoveGateRequest');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_estates_RemoveGateRequest(buffer_arg) {
+  return estates_estates_pb.RemoveGateRequest.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_estates_RemoveGateResponse(arg) {
+  if (!(arg instanceof estates_estates_pb.RemoveGateResponse)) {
+    throw new Error('Expected argument of type mruv.estates.RemoveGateResponse');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_estates_RemoveGateResponse(buffer_arg) {
+  return estates_estates_pb.RemoveGateResponse.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
 function serialize_mruv_estates_UpdateEstateRequest(arg) {
   if (!(arg instanceof estates_estates_pb.UpdateEstateRequest)) {
     throw new Error('Expected argument of type mruv.estates.UpdateEstateRequest');
@@ -323,16 +325,16 @@ var MruVEstateServiceService = exports.MruVEstateServiceService = {
     responseDeserialize: deserialize_mruv_estates_AddGateResponse,
   },
   // Delete a gate from estate.
-  deleteGate: {
-    path: '/mruv.estates.MruVEstateService/DeleteGate',
+  removeGate: {
+    path: '/mruv.estates.MruVEstateService/RemoveGate',
     requestStream: false,
     responseStream: false,
-    requestType: estates_estates_pb.DeleteGateRequest,
-    responseType: estates_estates_pb.DeleteGateResponse,
-    requestSerialize: serialize_mruv_estates_DeleteGateRequest,
-    requestDeserialize: deserialize_mruv_estates_DeleteGateRequest,
-    responseSerialize: serialize_mruv_estates_DeleteGateResponse,
-    responseDeserialize: deserialize_mruv_estates_DeleteGateResponse,
+    requestType: estates_estates_pb.RemoveGateRequest,
+    responseType: estates_estates_pb.RemoveGateResponse,
+    requestSerialize: serialize_mruv_estates_RemoveGateRequest,
+    requestDeserialize: deserialize_mruv_estates_RemoveGateRequest,
+    responseSerialize: serialize_mruv_estates_RemoveGateResponse,
+    responseDeserialize: deserialize_mruv_estates_RemoveGateResponse,
   },
   // Get all estate gates.
   getEstateGates: {

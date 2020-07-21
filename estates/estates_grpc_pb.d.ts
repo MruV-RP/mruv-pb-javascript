@@ -13,7 +13,7 @@ interface IMruVEstateServiceService extends grpc.ServiceDefinition<grpc.UntypedS
   deleteEstate: grpc.MethodDefinition<estates_estates_pb.DeleteEstateRequest, estates_estates_pb.DeleteEstateResponse>;
   getEstates: grpc.MethodDefinition<estates_estates_pb.GetEstatesRequest, estates_estates_pb.GetEstatesResponse>;
   addGate: grpc.MethodDefinition<estates_estates_pb.AddGateRequest, estates_estates_pb.AddGateResponse>;
-  deleteGate: grpc.MethodDefinition<estates_estates_pb.DeleteGateRequest, estates_estates_pb.DeleteGateResponse>;
+  removeGate: grpc.MethodDefinition<estates_estates_pb.RemoveGateRequest, estates_estates_pb.RemoveGateResponse>;
   getEstateGates: grpc.MethodDefinition<estates_estates_pb.GetEstateGatesRequest, estates_estates_pb.GetEstateGatesResponse>;
   addEntrance: grpc.MethodDefinition<estates_estates_pb.AddEntranceRequest, estates_estates_pb.AddEntranceResponse>;
   removeEntrance: grpc.MethodDefinition<estates_estates_pb.RemoveEntranceRequest, estates_estates_pb.RemoveEntranceResponse>;
@@ -42,9 +42,9 @@ export class MruVEstateServiceClient extends grpc.Client {
   addGate(argument: estates_estates_pb.AddGateRequest, callback: grpc.requestCallback<estates_estates_pb.AddGateResponse>): grpc.ClientUnaryCall;
   addGate(argument: estates_estates_pb.AddGateRequest, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<estates_estates_pb.AddGateResponse>): grpc.ClientUnaryCall;
   addGate(argument: estates_estates_pb.AddGateRequest, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<estates_estates_pb.AddGateResponse>): grpc.ClientUnaryCall;
-  deleteGate(argument: estates_estates_pb.DeleteGateRequest, callback: grpc.requestCallback<estates_estates_pb.DeleteGateResponse>): grpc.ClientUnaryCall;
-  deleteGate(argument: estates_estates_pb.DeleteGateRequest, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<estates_estates_pb.DeleteGateResponse>): grpc.ClientUnaryCall;
-  deleteGate(argument: estates_estates_pb.DeleteGateRequest, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<estates_estates_pb.DeleteGateResponse>): grpc.ClientUnaryCall;
+  removeGate(argument: estates_estates_pb.RemoveGateRequest, callback: grpc.requestCallback<estates_estates_pb.RemoveGateResponse>): grpc.ClientUnaryCall;
+  removeGate(argument: estates_estates_pb.RemoveGateRequest, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<estates_estates_pb.RemoveGateResponse>): grpc.ClientUnaryCall;
+  removeGate(argument: estates_estates_pb.RemoveGateRequest, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<estates_estates_pb.RemoveGateResponse>): grpc.ClientUnaryCall;
   getEstateGates(argument: estates_estates_pb.GetEstateGatesRequest, callback: grpc.requestCallback<estates_estates_pb.GetEstateGatesResponse>): grpc.ClientUnaryCall;
   getEstateGates(argument: estates_estates_pb.GetEstateGatesRequest, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<estates_estates_pb.GetEstateGatesResponse>): grpc.ClientUnaryCall;
   getEstateGates(argument: estates_estates_pb.GetEstateGatesRequest, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<estates_estates_pb.GetEstateGatesResponse>): grpc.ClientUnaryCall;

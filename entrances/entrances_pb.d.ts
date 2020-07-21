@@ -5,6 +5,38 @@ import * as jspb from "google-protobuf";
 import * as google_api_annotations_pb from "../google/api/annotations_pb";
 import * as spots_spots_pb from "../spots/spots_pb";
 
+export class Entrance extends jspb.Message {
+  getName(): string;
+  setName(value: string): void;
+
+  hasOut(): boolean;
+  clearOut(): void;
+  getOut(): spots_spots_pb.Spot | undefined;
+  setOut(value?: spots_spots_pb.Spot): void;
+
+  hasIn(): boolean;
+  clearIn(): void;
+  getIn(): spots_spots_pb.Spot | undefined;
+  setIn(value?: spots_spots_pb.Spot): void;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): Entrance.AsObject;
+  static toObject(includeInstance: boolean, msg: Entrance): Entrance.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: Entrance, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): Entrance;
+  static deserializeBinaryFromReader(message: Entrance, reader: jspb.BinaryReader): Entrance;
+}
+
+export namespace Entrance {
+  export type AsObject = {
+    name: string,
+    out?: spots_spots_pb.Spot.AsObject,
+    pb_in?: spots_spots_pb.Spot.AsObject,
+  }
+}
+
 export class CreateEntranceRequest extends jspb.Message {
   getName(): string;
   setName(value: string): void;
@@ -81,11 +113,15 @@ export class GetEntranceResponse extends jspb.Message {
   getName(): string;
   setName(value: string): void;
 
-  getInSpotId(): number;
-  setInSpotId(value: number): void;
+  hasInSpot(): boolean;
+  clearInSpot(): void;
+  getInSpot(): spots_spots_pb.Spot | undefined;
+  setInSpot(value?: spots_spots_pb.Spot): void;
 
-  getOutSpotId(): number;
-  setOutSpotId(value: number): void;
+  hasOutSpot(): boolean;
+  clearOutSpot(): void;
+  getOutSpot(): spots_spots_pb.Spot | undefined;
+  setOutSpot(value?: spots_spots_pb.Spot): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): GetEntranceResponse.AsObject;
@@ -100,8 +136,8 @@ export class GetEntranceResponse extends jspb.Message {
 export namespace GetEntranceResponse {
   export type AsObject = {
     name: string,
-    inSpotId: number,
-    outSpotId: number,
+    inSpot?: spots_spots_pb.Spot.AsObject,
+    outSpot?: spots_spots_pb.Spot.AsObject,
   }
 }
 
