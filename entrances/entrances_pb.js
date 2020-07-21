@@ -1206,7 +1206,7 @@ proto.mruv.entrances.CreateEntranceResponse.prototype.toObject = function(opt_in
  */
 proto.mruv.entrances.CreateEntranceResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
-
+    id: jspb.Message.getFieldWithDefault(msg, 1, 0)
   };
 
   if (includeInstance) {
@@ -1243,6 +1243,10 @@ proto.mruv.entrances.CreateEntranceResponse.deserializeBinaryFromReader = functi
     }
     var field = reader.getFieldNumber();
     switch (field) {
+    case 1:
+      var value = /** @type {number} */ (reader.readUint32());
+      msg.setId(value);
+      break;
     default:
       reader.skipField();
       break;
@@ -1272,6 +1276,28 @@ proto.mruv.entrances.CreateEntranceResponse.prototype.serializeBinary = function
  */
 proto.mruv.entrances.CreateEntranceResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
+  f = message.getId();
+  if (f !== 0) {
+    writer.writeUint32(
+      1,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional uint32 id = 1;
+ * @return {number}
+ */
+proto.mruv.entrances.CreateEntranceResponse.prototype.getId = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
+};
+
+
+/** @param {number} value */
+proto.mruv.entrances.CreateEntranceResponse.prototype.setId = function(value) {
+  jspb.Message.setProto3IntField(this, 1, value);
 };
 
 

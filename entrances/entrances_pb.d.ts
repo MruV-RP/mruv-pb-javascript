@@ -119,6 +119,9 @@ export namespace CreateEntranceRequest {
 }
 
 export class CreateEntranceResponse extends jspb.Message {
+  getId(): number;
+  setId(value: number): void;
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): CreateEntranceResponse.AsObject;
   static toObject(includeInstance: boolean, msg: CreateEntranceResponse): CreateEntranceResponse.AsObject;
@@ -131,6 +134,7 @@ export class CreateEntranceResponse extends jspb.Message {
 
 export namespace CreateEntranceResponse {
   export type AsObject = {
+    id: number,
   }
 }
 

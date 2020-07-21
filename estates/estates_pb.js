@@ -361,7 +361,7 @@ if (goog.DEBUG && !COMPILED) {
  * @constructor
  */
 proto.mruv.estates.GetEstateGatesResponse = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.mruv.estates.GetEstateGatesResponse.repeatedFields_, null);
 };
 goog.inherits(proto.mruv.estates.GetEstateGatesResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
@@ -1794,7 +1794,8 @@ proto.mruv.estates.GetEstatesRequest.prototype.toObject = function(opt_includeIn
  */
 proto.mruv.estates.GetEstatesRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
-    id: jspb.Message.getFieldWithDefault(msg, 1, 0)
+    from: jspb.Message.getFieldWithDefault(msg, 1, 0),
+    limit: jspb.Message.getFieldWithDefault(msg, 2, 0)
   };
 
   if (includeInstance) {
@@ -1833,7 +1834,11 @@ proto.mruv.estates.GetEstatesRequest.deserializeBinaryFromReader = function(msg,
     switch (field) {
     case 1:
       var value = /** @type {number} */ (reader.readUint32());
-      msg.setId(value);
+      msg.setFrom(value);
+      break;
+    case 2:
+      var value = /** @type {number} */ (reader.readUint32());
+      msg.setLimit(value);
       break;
     default:
       reader.skipField();
@@ -1864,10 +1869,17 @@ proto.mruv.estates.GetEstatesRequest.prototype.serializeBinary = function() {
  */
 proto.mruv.estates.GetEstatesRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
-  f = message.getId();
+  f = message.getFrom();
   if (f !== 0) {
     writer.writeUint32(
       1,
+      f
+    );
+  }
+  f = message.getLimit();
+  if (f !== 0) {
+    writer.writeUint32(
+      2,
       f
     );
   }
@@ -1875,17 +1887,32 @@ proto.mruv.estates.GetEstatesRequest.serializeBinaryToWriter = function(message,
 
 
 /**
- * optional uint32 id = 1;
+ * optional uint32 from = 1;
  * @return {number}
  */
-proto.mruv.estates.GetEstatesRequest.prototype.getId = function() {
+proto.mruv.estates.GetEstatesRequest.prototype.getFrom = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.estates.GetEstatesRequest.prototype.setId = function(value) {
+proto.mruv.estates.GetEstatesRequest.prototype.setFrom = function(value) {
   jspb.Message.setProto3IntField(this, 1, value);
+};
+
+
+/**
+ * optional uint32 limit = 2;
+ * @return {number}
+ */
+proto.mruv.estates.GetEstatesRequest.prototype.getLimit = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
+};
+
+
+/** @param {number} value */
+proto.mruv.estates.GetEstatesRequest.prototype.setLimit = function(value) {
+  jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -2680,6 +2707,13 @@ proto.mruv.estates.GetEstateGatesRequest.prototype.setEstateId = function(value)
 
 
 
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.mruv.estates.GetEstateGatesResponse.repeatedFields_ = [1];
+
 
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
@@ -2711,7 +2745,8 @@ proto.mruv.estates.GetEstateGatesResponse.prototype.toObject = function(opt_incl
  */
 proto.mruv.estates.GetEstateGatesResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
-
+    estatesList: jspb.Message.toObjectList(msg.getEstatesList(),
+    proto.mruv.estates.Estate.toObject, includeInstance)
   };
 
   if (includeInstance) {
@@ -2748,6 +2783,11 @@ proto.mruv.estates.GetEstateGatesResponse.deserializeBinaryFromReader = function
     }
     var field = reader.getFieldNumber();
     switch (field) {
+    case 1:
+      var value = new proto.mruv.estates.Estate;
+      reader.readMessage(value,proto.mruv.estates.Estate.deserializeBinaryFromReader);
+      msg.addEstates(value);
+      break;
     default:
       reader.skipField();
       break;
@@ -2777,6 +2817,48 @@ proto.mruv.estates.GetEstateGatesResponse.prototype.serializeBinary = function()
  */
 proto.mruv.estates.GetEstateGatesResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
+  f = message.getEstatesList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      1,
+      f,
+      proto.mruv.estates.Estate.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * repeated Estate estates = 1;
+ * @return {!Array<!proto.mruv.estates.Estate>}
+ */
+proto.mruv.estates.GetEstateGatesResponse.prototype.getEstatesList = function() {
+  return /** @type{!Array<!proto.mruv.estates.Estate>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.mruv.estates.Estate, 1));
+};
+
+
+/** @param {!Array<!proto.mruv.estates.Estate>} value */
+proto.mruv.estates.GetEstateGatesResponse.prototype.setEstatesList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 1, value);
+};
+
+
+/**
+ * @param {!proto.mruv.estates.Estate=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.mruv.estates.Estate}
+ */
+proto.mruv.estates.GetEstateGatesResponse.prototype.addEstates = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 1, opt_value, proto.mruv.estates.Estate, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.mruv.estates.GetEstateGatesResponse.prototype.clearEstatesList = function() {
+  this.setEstatesList([]);
 };
 
 
