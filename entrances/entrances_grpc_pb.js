@@ -4,6 +4,7 @@
 var grpc = require('grpc');
 var entrances_entrances_pb = require('../entrances/entrances_pb.js');
 var google_api_annotations_pb = require('../google/api/annotations_pb.js');
+var spots_spots_pb = require('../spots/spots_pb.js');
 
 function serialize_mruv_entrances_CreateEntranceRequest(arg) {
   if (!(arg instanceof entrances_entrances_pb.CreateEntranceRequest)) {

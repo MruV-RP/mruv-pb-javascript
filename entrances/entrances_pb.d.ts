@@ -3,104 +3,21 @@
 
 import * as jspb from "google-protobuf";
 import * as google_api_annotations_pb from "../google/api/annotations_pb";
+import * as spots_spots_pb from "../spots/spots_pb";
 
-export class Entrance extends jspb.Message {
-  getId(): number;
-  setId(value: number): void;
-
-  getEstateId(): number;
-  setEstateId(value: number): void;
+export class CreateEntranceRequest extends jspb.Message {
+  getName(): string;
+  setName(value: string): void;
 
   hasOut(): boolean;
   clearOut(): void;
-  getOut(): Entrance.EntranceDoor | undefined;
-  setOut(value?: Entrance.EntranceDoor): void;
+  getOut(): spots_spots_pb.Spot | undefined;
+  setOut(value?: spots_spots_pb.Spot): void;
 
   hasIn(): boolean;
   clearIn(): void;
-  getIn(): Entrance.EntranceDoor | undefined;
-  setIn(value?: Entrance.EntranceDoor): void;
-
-  serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): Entrance.AsObject;
-  static toObject(includeInstance: boolean, msg: Entrance): Entrance.AsObject;
-  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-  static serializeBinaryToWriter(message: Entrance, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): Entrance;
-  static deserializeBinaryFromReader(message: Entrance, reader: jspb.BinaryReader): Entrance;
-}
-
-export namespace Entrance {
-  export type AsObject = {
-    id: number,
-    estateId: number,
-    out?: Entrance.EntranceDoor.AsObject,
-    pb_in?: Entrance.EntranceDoor.AsObject,
-  }
-
-  export class EntranceDoor extends jspb.Message {
-    getName(): string;
-    setName(value: string): void;
-
-    getMessage(): string;
-    setMessage(value: string): void;
-
-    getIcon(): number;
-    setIcon(value: number): void;
-
-    getMarker(): number;
-    setMarker(value: number): void;
-
-    getX(): number;
-    setX(value: number): void;
-
-    getY(): number;
-    setY(value: number): void;
-
-    getZ(): number;
-    setZ(value: number): void;
-
-    getVw(): number;
-    setVw(value: number): void;
-
-    getInt(): number;
-    setInt(value: number): void;
-
-    getEstateId(): number;
-    setEstateId(value: number): void;
-
-    serializeBinary(): Uint8Array;
-    toObject(includeInstance?: boolean): EntranceDoor.AsObject;
-    static toObject(includeInstance: boolean, msg: EntranceDoor): EntranceDoor.AsObject;
-    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-    static serializeBinaryToWriter(message: EntranceDoor, writer: jspb.BinaryWriter): void;
-    static deserializeBinary(bytes: Uint8Array): EntranceDoor;
-    static deserializeBinaryFromReader(message: EntranceDoor, reader: jspb.BinaryReader): EntranceDoor;
-  }
-
-  export namespace EntranceDoor {
-    export type AsObject = {
-      name: string,
-      message: string,
-      icon: number,
-      marker: number,
-      x: number,
-      y: number,
-      z: number,
-      vw: number,
-      pb_int: number,
-      estateId: number,
-    }
-  }
-}
-
-export class CreateEntranceRequest extends jspb.Message {
-  hasEntrance(): boolean;
-  clearEntrance(): void;
-  getEntrance(): Entrance | undefined;
-  setEntrance(value?: Entrance): void;
+  getIn(): spots_spots_pb.Spot | undefined;
+  setIn(value?: spots_spots_pb.Spot): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): CreateEntranceRequest.AsObject;
@@ -114,7 +31,9 @@ export class CreateEntranceRequest extends jspb.Message {
 
 export namespace CreateEntranceRequest {
   export type AsObject = {
-    entrance?: Entrance.AsObject,
+    name: string,
+    out?: spots_spots_pb.Spot.AsObject,
+    pb_in?: spots_spots_pb.Spot.AsObject,
   }
 }
 
@@ -159,6 +78,15 @@ export namespace GetEntranceRequest {
 }
 
 export class GetEntranceResponse extends jspb.Message {
+  getName(): string;
+  setName(value: string): void;
+
+  getInSpotId(): number;
+  setInSpotId(value: number): void;
+
+  getOutSpotId(): number;
+  setOutSpotId(value: number): void;
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): GetEntranceResponse.AsObject;
   static toObject(includeInstance: boolean, msg: GetEntranceResponse): GetEntranceResponse.AsObject;
@@ -171,12 +99,21 @@ export class GetEntranceResponse extends jspb.Message {
 
 export namespace GetEntranceResponse {
   export type AsObject = {
+    name: string,
+    inSpotId: number,
+    outSpotId: number,
   }
 }
 
 export class UpdateEntranceRequest extends jspb.Message {
   getId(): number;
   setId(value: number): void;
+
+  getInSpotId(): number;
+  setInSpotId(value: number): void;
+
+  getOutSpotId(): number;
+  setOutSpotId(value: number): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): UpdateEntranceRequest.AsObject;
@@ -191,6 +128,8 @@ export class UpdateEntranceRequest extends jspb.Message {
 export namespace UpdateEntranceRequest {
   export type AsObject = {
     id: number,
+    inSpotId: number,
+    outSpotId: number,
   }
 }
 
