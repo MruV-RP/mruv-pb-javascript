@@ -405,7 +405,8 @@ proto.mruv.objects.State.toObject = function(includeInstance, msg) {
     z: jspb.Message.getFloatingPointFieldWithDefault(msg, 4, 0.0),
     rx: jspb.Message.getFloatingPointFieldWithDefault(msg, 5, 0.0),
     ry: jspb.Message.getFloatingPointFieldWithDefault(msg, 6, 0.0),
-    rz: jspb.Message.getFloatingPointFieldWithDefault(msg, 7, 0.0)
+    rz: jspb.Message.getFloatingPointFieldWithDefault(msg, 7, 0.0),
+    transitionSpeed: jspb.Message.getFloatingPointFieldWithDefault(msg, 8, 0.0)
   };
 
   if (includeInstance) {
@@ -469,6 +470,10 @@ proto.mruv.objects.State.deserializeBinaryFromReader = function(msg, reader) {
     case 7:
       var value = /** @type {number} */ (reader.readFloat());
       msg.setRz(value);
+      break;
+    case 8:
+      var value = /** @type {number} */ (reader.readFloat());
+      msg.setTransitionSpeed(value);
       break;
     default:
       reader.skipField();
@@ -545,6 +550,13 @@ proto.mruv.objects.State.serializeBinaryToWriter = function(message, writer) {
   if (f !== 0.0) {
     writer.writeFloat(
       7,
+      f
+    );
+  }
+  f = message.getTransitionSpeed();
+  if (f !== 0.0) {
+    writer.writeFloat(
+      8,
       f
     );
   }
@@ -653,6 +665,21 @@ proto.mruv.objects.State.prototype.getRz = function() {
 /** @param {number} value */
 proto.mruv.objects.State.prototype.setRz = function(value) {
   jspb.Message.setProto3FloatField(this, 7, value);
+};
+
+
+/**
+ * optional float transition_speed = 8;
+ * @return {number}
+ */
+proto.mruv.objects.State.prototype.getTransitionSpeed = function() {
+  return /** @type {number} */ (jspb.Message.getFloatingPointFieldWithDefault(this, 8, 0.0));
+};
+
+
+/** @param {number} value */
+proto.mruv.objects.State.prototype.setTransitionSpeed = function(value) {
+  jspb.Message.setProto3FloatField(this, 8, value);
 };
 
 
