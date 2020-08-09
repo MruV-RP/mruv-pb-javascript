@@ -1,4 +1,4 @@
-// package: mruv.gates
+// package: mruv.objects
 // file: objects/objects.proto
 
 import * as jspb from "google-protobuf";

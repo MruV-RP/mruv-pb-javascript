@@ -13,6 +13,8 @@ var global = Function('return this')();
 
 var google_api_annotations_pb = require('../google/api/annotations_pb.js');
 goog.object.extend(proto, google_api_annotations_pb);
+var objects_movable_pb = require('../objects/movable_pb.js');
+goog.object.extend(proto, objects_movable_pb);
 goog.exportSymbol('proto.mruv.gates.CloseRequest', null, global);
 goog.exportSymbol('proto.mruv.gates.CloseResponse', null, global);
 goog.exportSymbol('proto.mruv.gates.CreateGateRequest', null, global);
@@ -64,7 +66,7 @@ if (goog.DEBUG && !COMPILED) {
  * @constructor
  */
 proto.mruv.gates.CreateGateRequest = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.mruv.gates.CreateGateRequest.repeatedFields_, null);
 };
 goog.inherits(proto.mruv.gates.CreateGateRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
@@ -127,7 +129,7 @@ if (goog.DEBUG && !COMPILED) {
  * @constructor
  */
 proto.mruv.gates.GetGateResponse = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.mruv.gates.GetGateResponse.repeatedFields_, null);
 };
 goog.inherits(proto.mruv.gates.GetGateResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
@@ -463,8 +465,7 @@ proto.mruv.gates.Gate.prototype.toObject = function(opt_includeInstance) {
  */
 proto.mruv.gates.Gate.toObject = function(includeInstance, msg) {
   var f, obj = {
-    id: jspb.Message.getFieldWithDefault(msg, 1, 0),
-    estateId: jspb.Message.getFieldWithDefault(msg, 2, 0)
+
   };
 
   if (includeInstance) {
@@ -501,14 +502,6 @@ proto.mruv.gates.Gate.deserializeBinaryFromReader = function(msg, reader) {
     }
     var field = reader.getFieldNumber();
     switch (field) {
-    case 1:
-      var value = /** @type {number} */ (reader.readUint32());
-      msg.setId(value);
-      break;
-    case 2:
-      var value = /** @type {number} */ (reader.readUint32());
-      msg.setEstateId(value);
-      break;
     default:
       reader.skipField();
       break;
@@ -538,53 +531,16 @@ proto.mruv.gates.Gate.prototype.serializeBinary = function() {
  */
 proto.mruv.gates.Gate.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
-  f = message.getId();
-  if (f !== 0) {
-    writer.writeUint32(
-      1,
-      f
-    );
-  }
-  f = message.getEstateId();
-  if (f !== 0) {
-    writer.writeUint32(
-      2,
-      f
-    );
-  }
 };
+
 
 
 /**
- * optional uint32 id = 1;
- * @return {number}
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
  */
-proto.mruv.gates.Gate.prototype.getId = function() {
-  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
-};
-
-
-/** @param {number} value */
-proto.mruv.gates.Gate.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
-};
-
-
-/**
- * optional uint32 estate_id = 2;
- * @return {number}
- */
-proto.mruv.gates.Gate.prototype.getEstateId = function() {
-  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
-};
-
-
-/** @param {number} value */
-proto.mruv.gates.Gate.prototype.setEstateId = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
-};
-
-
+proto.mruv.gates.CreateGateRequest.repeatedFields_ = [2];
 
 
 
@@ -617,7 +573,9 @@ proto.mruv.gates.CreateGateRequest.prototype.toObject = function(opt_includeInst
  */
 proto.mruv.gates.CreateGateRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
-
+    name: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    gateObjectsList: jspb.Message.toObjectList(msg.getGateObjectsList(),
+    objects_movable_pb.MovableObject.toObject, includeInstance)
   };
 
   if (includeInstance) {
@@ -654,6 +612,15 @@ proto.mruv.gates.CreateGateRequest.deserializeBinaryFromReader = function(msg, r
     }
     var field = reader.getFieldNumber();
     switch (field) {
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setName(value);
+      break;
+    case 2:
+      var value = new objects_movable_pb.MovableObject;
+      reader.readMessage(value,objects_movable_pb.MovableObject.deserializeBinaryFromReader);
+      msg.addGateObjects(value);
+      break;
     default:
       reader.skipField();
       break;
@@ -683,6 +650,70 @@ proto.mruv.gates.CreateGateRequest.prototype.serializeBinary = function() {
  */
 proto.mruv.gates.CreateGateRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
+  f = message.getName();
+  if (f.length > 0) {
+    writer.writeString(
+      1,
+      f
+    );
+  }
+  f = message.getGateObjectsList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      2,
+      f,
+      objects_movable_pb.MovableObject.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional string name = 1;
+ * @return {string}
+ */
+proto.mruv.gates.CreateGateRequest.prototype.getName = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+};
+
+
+/** @param {string} value */
+proto.mruv.gates.CreateGateRequest.prototype.setName = function(value) {
+  jspb.Message.setProto3StringField(this, 1, value);
+};
+
+
+/**
+ * repeated mruv.objects.MovableObject gate_objects = 2;
+ * @return {!Array<!proto.mruv.objects.MovableObject>}
+ */
+proto.mruv.gates.CreateGateRequest.prototype.getGateObjectsList = function() {
+  return /** @type{!Array<!proto.mruv.objects.MovableObject>} */ (
+    jspb.Message.getRepeatedWrapperField(this, objects_movable_pb.MovableObject, 2));
+};
+
+
+/** @param {!Array<!proto.mruv.objects.MovableObject>} value */
+proto.mruv.gates.CreateGateRequest.prototype.setGateObjectsList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 2, value);
+};
+
+
+/**
+ * @param {!proto.mruv.objects.MovableObject=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.mruv.objects.MovableObject}
+ */
+proto.mruv.gates.CreateGateRequest.prototype.addGateObjects = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 2, opt_value, proto.mruv.objects.MovableObject, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.mruv.gates.CreateGateRequest.prototype.clearGateObjectsList = function() {
+  this.setGateObjectsList([]);
 };
 
 
@@ -718,7 +749,7 @@ proto.mruv.gates.CreateGateResponse.prototype.toObject = function(opt_includeIns
  */
 proto.mruv.gates.CreateGateResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
-
+    id: jspb.Message.getFieldWithDefault(msg, 1, 0)
   };
 
   if (includeInstance) {
@@ -755,6 +786,10 @@ proto.mruv.gates.CreateGateResponse.deserializeBinaryFromReader = function(msg, 
     }
     var field = reader.getFieldNumber();
     switch (field) {
+    case 1:
+      var value = /** @type {number} */ (reader.readUint32());
+      msg.setId(value);
+      break;
     default:
       reader.skipField();
       break;
@@ -784,6 +819,28 @@ proto.mruv.gates.CreateGateResponse.prototype.serializeBinary = function() {
  */
 proto.mruv.gates.CreateGateResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
+  f = message.getId();
+  if (f !== 0) {
+    writer.writeUint32(
+      1,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional uint32 id = 1;
+ * @return {number}
+ */
+proto.mruv.gates.CreateGateResponse.prototype.getId = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
+};
+
+
+/** @param {number} value */
+proto.mruv.gates.CreateGateResponse.prototype.setId = function(value) {
+  jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -915,6 +972,13 @@ proto.mruv.gates.GetGateRequest.prototype.setId = function(value) {
 
 
 
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.mruv.gates.GetGateResponse.repeatedFields_ = [2];
+
 
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
@@ -946,7 +1010,11 @@ proto.mruv.gates.GetGateResponse.prototype.toObject = function(opt_includeInstan
  */
 proto.mruv.gates.GetGateResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
-    id: jspb.Message.getFieldWithDefault(msg, 1, 0)
+    name: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    gateObjectsList: jspb.Message.toObjectList(msg.getGateObjectsList(),
+    objects_movable_pb.MovableObject.toObject, includeInstance),
+    opened: jspb.Message.getBooleanFieldWithDefault(msg, 3, false),
+    locked: jspb.Message.getBooleanFieldWithDefault(msg, 4, false)
   };
 
   if (includeInstance) {
@@ -984,8 +1052,21 @@ proto.mruv.gates.GetGateResponse.deserializeBinaryFromReader = function(msg, rea
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = /** @type {number} */ (reader.readUint32());
-      msg.setId(value);
+      var value = /** @type {string} */ (reader.readString());
+      msg.setName(value);
+      break;
+    case 2:
+      var value = new objects_movable_pb.MovableObject;
+      reader.readMessage(value,objects_movable_pb.MovableObject.deserializeBinaryFromReader);
+      msg.addGateObjects(value);
+      break;
+    case 3:
+      var value = /** @type {boolean} */ (reader.readBool());
+      msg.setOpened(value);
+      break;
+    case 4:
+      var value = /** @type {boolean} */ (reader.readBool());
+      msg.setLocked(value);
       break;
     default:
       reader.skipField();
@@ -1016,10 +1097,32 @@ proto.mruv.gates.GetGateResponse.prototype.serializeBinary = function() {
  */
 proto.mruv.gates.GetGateResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
-  f = message.getId();
-  if (f !== 0) {
-    writer.writeUint32(
+  f = message.getName();
+  if (f.length > 0) {
+    writer.writeString(
       1,
+      f
+    );
+  }
+  f = message.getGateObjectsList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      2,
+      f,
+      objects_movable_pb.MovableObject.serializeBinaryToWriter
+    );
+  }
+  f = message.getOpened();
+  if (f) {
+    writer.writeBool(
+      3,
+      f
+    );
+  }
+  f = message.getLocked();
+  if (f) {
+    writer.writeBool(
+      4,
       f
     );
   }
@@ -1027,17 +1130,81 @@ proto.mruv.gates.GetGateResponse.serializeBinaryToWriter = function(message, wri
 
 
 /**
- * optional uint32 id = 1;
- * @return {number}
+ * optional string name = 1;
+ * @return {string}
  */
-proto.mruv.gates.GetGateResponse.prototype.getId = function() {
-  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
+proto.mruv.gates.GetGateResponse.prototype.getName = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
 
 
-/** @param {number} value */
-proto.mruv.gates.GetGateResponse.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+/** @param {string} value */
+proto.mruv.gates.GetGateResponse.prototype.setName = function(value) {
+  jspb.Message.setProto3StringField(this, 1, value);
+};
+
+
+/**
+ * repeated mruv.objects.MovableObject gate_objects = 2;
+ * @return {!Array<!proto.mruv.objects.MovableObject>}
+ */
+proto.mruv.gates.GetGateResponse.prototype.getGateObjectsList = function() {
+  return /** @type{!Array<!proto.mruv.objects.MovableObject>} */ (
+    jspb.Message.getRepeatedWrapperField(this, objects_movable_pb.MovableObject, 2));
+};
+
+
+/** @param {!Array<!proto.mruv.objects.MovableObject>} value */
+proto.mruv.gates.GetGateResponse.prototype.setGateObjectsList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 2, value);
+};
+
+
+/**
+ * @param {!proto.mruv.objects.MovableObject=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.mruv.objects.MovableObject}
+ */
+proto.mruv.gates.GetGateResponse.prototype.addGateObjects = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 2, opt_value, proto.mruv.objects.MovableObject, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.mruv.gates.GetGateResponse.prototype.clearGateObjectsList = function() {
+  this.setGateObjectsList([]);
+};
+
+
+/**
+ * optional bool opened = 3;
+ * @return {boolean}
+ */
+proto.mruv.gates.GetGateResponse.prototype.getOpened = function() {
+  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 3, false));
+};
+
+
+/** @param {boolean} value */
+proto.mruv.gates.GetGateResponse.prototype.setOpened = function(value) {
+  jspb.Message.setProto3BooleanField(this, 3, value);
+};
+
+
+/**
+ * optional bool locked = 4;
+ * @return {boolean}
+ */
+proto.mruv.gates.GetGateResponse.prototype.getLocked = function() {
+  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 4, false));
+};
+
+
+/** @param {boolean} value */
+proto.mruv.gates.GetGateResponse.prototype.setLocked = function(value) {
+  jspb.Message.setProto3BooleanField(this, 4, value);
 };
 
 
@@ -1073,7 +1240,8 @@ proto.mruv.gates.UpdateGateRequest.prototype.toObject = function(opt_includeInst
  */
 proto.mruv.gates.UpdateGateRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
-    id: jspb.Message.getFieldWithDefault(msg, 1, 0)
+    id: jspb.Message.getFieldWithDefault(msg, 1, 0),
+    name: jspb.Message.getFieldWithDefault(msg, 2, "")
   };
 
   if (includeInstance) {
@@ -1114,6 +1282,10 @@ proto.mruv.gates.UpdateGateRequest.deserializeBinaryFromReader = function(msg, r
       var value = /** @type {number} */ (reader.readUint32());
       msg.setId(value);
       break;
+    case 2:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setName(value);
+      break;
     default:
       reader.skipField();
       break;
@@ -1150,6 +1322,13 @@ proto.mruv.gates.UpdateGateRequest.serializeBinaryToWriter = function(message, w
       f
     );
   }
+  f = message.getName();
+  if (f.length > 0) {
+    writer.writeString(
+      2,
+      f
+    );
+  }
 };
 
 
@@ -1165,6 +1344,21 @@ proto.mruv.gates.UpdateGateRequest.prototype.getId = function() {
 /** @param {number} value */
 proto.mruv.gates.UpdateGateRequest.prototype.setId = function(value) {
   jspb.Message.setProto3IntField(this, 1, value);
+};
+
+
+/**
+ * optional string name = 2;
+ * @return {string}
+ */
+proto.mruv.gates.UpdateGateRequest.prototype.getName = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
+};
+
+
+/** @param {string} value */
+proto.mruv.gates.UpdateGateRequest.prototype.setName = function(value) {
+  jspb.Message.setProto3StringField(this, 2, value);
 };
 
 

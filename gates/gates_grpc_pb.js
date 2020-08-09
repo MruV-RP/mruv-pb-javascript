@@ -4,6 +4,7 @@
 var grpc = require('grpc');
 var gates_gates_pb = require('../gates/gates_pb.js');
 var google_api_annotations_pb = require('../google/api/annotations_pb.js');
+var objects_movable_pb = require('../objects/movable_pb.js');
 
 function serialize_mruv_gates_CloseRequest(arg) {
   if (!(arg instanceof gates_gates_pb.CloseRequest)) {

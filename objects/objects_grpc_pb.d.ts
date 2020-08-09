@@ -1,6 +1,6 @@
 // GENERATED CODE -- DO NOT EDIT!
 
-// package: mruv.gates
+// package: mruv.objects
 // file: objects/objects.proto
 
 import * as objects_objects_pb from "../objects/objects_pb";
