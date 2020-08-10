@@ -87,6 +87,9 @@ export class GetPlotResponse extends jspb.Message {
   setPointsList(value: Array<common_spatial_pb.Position>): void;
   addPoints(value?: common_spatial_pb.Position, index?: number): common_spatial_pb.Position;
 
+  getArea(): number;
+  setArea(value: number): void;
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): GetPlotResponse.AsObject;
   static toObject(includeInstance: boolean, msg: GetPlotResponse): GetPlotResponse.AsObject;
@@ -102,6 +105,7 @@ export namespace GetPlotResponse {
     name: string,
     description: string,
     pointsList: Array<common_spatial_pb.Position.AsObject>,
+    area: number,
   }
 }
 

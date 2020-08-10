@@ -15,6 +15,8 @@ var google_api_annotations_pb = require('../google/api/annotations_pb.js');
 goog.object.extend(proto, google_api_annotations_pb);
 var objects_movable_pb = require('../objects/movable_pb.js');
 goog.object.extend(proto, objects_movable_pb);
+var spots_spots_pb = require('../spots/spots_pb.js');
+goog.object.extend(proto, spots_spots_pb);
 goog.exportSymbol('proto.mruv.gates.CloseRequest', null, global);
 goog.exportSymbol('proto.mruv.gates.CloseResponse', null, global);
 goog.exportSymbol('proto.mruv.gates.CreateGateRequest', null, global);
@@ -45,7 +47,7 @@ goog.exportSymbol('proto.mruv.gates.UpdateGateResponse', null, global);
  * @constructor
  */
 proto.mruv.gates.Gate = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.mruv.gates.Gate.repeatedFields_, null);
 };
 goog.inherits(proto.mruv.gates.Gate, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
@@ -150,7 +152,7 @@ if (goog.DEBUG && !COMPILED) {
  * @constructor
  */
 proto.mruv.gates.UpdateGateRequest = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.mruv.gates.UpdateGateRequest.repeatedFields_, null);
 };
 goog.inherits(proto.mruv.gates.UpdateGateRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
@@ -434,6 +436,13 @@ if (goog.DEBUG && !COMPILED) {
   proto.mruv.gates.FindNearestGateResponse.displayName = 'proto.mruv.gates.FindNearestGateResponse';
 }
 
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.mruv.gates.Gate.repeatedFields_ = [2];
+
 
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
@@ -465,7 +474,12 @@ proto.mruv.gates.Gate.prototype.toObject = function(opt_includeInstance) {
  */
 proto.mruv.gates.Gate.toObject = function(includeInstance, msg) {
   var f, obj = {
-
+    name: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    gateObjectsList: jspb.Message.toObjectList(msg.getGateObjectsList(),
+    objects_movable_pb.MovableObject.toObject, includeInstance),
+    spot: (f = msg.getSpot()) && spots_spots_pb.Spot.toObject(includeInstance, f),
+    opened: jspb.Message.getBooleanFieldWithDefault(msg, 4, false),
+    locked: jspb.Message.getBooleanFieldWithDefault(msg, 5, false)
   };
 
   if (includeInstance) {
@@ -502,6 +516,28 @@ proto.mruv.gates.Gate.deserializeBinaryFromReader = function(msg, reader) {
     }
     var field = reader.getFieldNumber();
     switch (field) {
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setName(value);
+      break;
+    case 2:
+      var value = new objects_movable_pb.MovableObject;
+      reader.readMessage(value,objects_movable_pb.MovableObject.deserializeBinaryFromReader);
+      msg.addGateObjects(value);
+      break;
+    case 3:
+      var value = new spots_spots_pb.Spot;
+      reader.readMessage(value,spots_spots_pb.Spot.deserializeBinaryFromReader);
+      msg.setSpot(value);
+      break;
+    case 4:
+      var value = /** @type {boolean} */ (reader.readBool());
+      msg.setOpened(value);
+      break;
+    case 5:
+      var value = /** @type {boolean} */ (reader.readBool());
+      msg.setLocked(value);
+      break;
     default:
       reader.skipField();
       break;
@@ -531,6 +567,155 @@ proto.mruv.gates.Gate.prototype.serializeBinary = function() {
  */
 proto.mruv.gates.Gate.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
+  f = message.getName();
+  if (f.length > 0) {
+    writer.writeString(
+      1,
+      f
+    );
+  }
+  f = message.getGateObjectsList();
+  if (f.length > 0) {
+    writer.writeRepeatedMessage(
+      2,
+      f,
+      objects_movable_pb.MovableObject.serializeBinaryToWriter
+    );
+  }
+  f = message.getSpot();
+  if (f != null) {
+    writer.writeMessage(
+      3,
+      f,
+      spots_spots_pb.Spot.serializeBinaryToWriter
+    );
+  }
+  f = message.getOpened();
+  if (f) {
+    writer.writeBool(
+      4,
+      f
+    );
+  }
+  f = message.getLocked();
+  if (f) {
+    writer.writeBool(
+      5,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional string name = 1;
+ * @return {string}
+ */
+proto.mruv.gates.Gate.prototype.getName = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
+};
+
+
+/** @param {string} value */
+proto.mruv.gates.Gate.prototype.setName = function(value) {
+  jspb.Message.setProto3StringField(this, 1, value);
+};
+
+
+/**
+ * repeated mruv.objects.MovableObject gate_objects = 2;
+ * @return {!Array<!proto.mruv.objects.MovableObject>}
+ */
+proto.mruv.gates.Gate.prototype.getGateObjectsList = function() {
+  return /** @type{!Array<!proto.mruv.objects.MovableObject>} */ (
+    jspb.Message.getRepeatedWrapperField(this, objects_movable_pb.MovableObject, 2));
+};
+
+
+/** @param {!Array<!proto.mruv.objects.MovableObject>} value */
+proto.mruv.gates.Gate.prototype.setGateObjectsList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 2, value);
+};
+
+
+/**
+ * @param {!proto.mruv.objects.MovableObject=} opt_value
+ * @param {number=} opt_index
+ * @return {!proto.mruv.objects.MovableObject}
+ */
+proto.mruv.gates.Gate.prototype.addGateObjects = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 2, opt_value, proto.mruv.objects.MovableObject, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.mruv.gates.Gate.prototype.clearGateObjectsList = function() {
+  this.setGateObjectsList([]);
+};
+
+
+/**
+ * optional mruv.spots.Spot spot = 3;
+ * @return {?proto.mruv.spots.Spot}
+ */
+proto.mruv.gates.Gate.prototype.getSpot = function() {
+  return /** @type{?proto.mruv.spots.Spot} */ (
+    jspb.Message.getWrapperField(this, spots_spots_pb.Spot, 3));
+};
+
+
+/** @param {?proto.mruv.spots.Spot|undefined} value */
+proto.mruv.gates.Gate.prototype.setSpot = function(value) {
+  jspb.Message.setWrapperField(this, 3, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.mruv.gates.Gate.prototype.clearSpot = function() {
+  this.setSpot(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.mruv.gates.Gate.prototype.hasSpot = function() {
+  return jspb.Message.getField(this, 3) != null;
+};
+
+
+/**
+ * optional bool opened = 4;
+ * @return {boolean}
+ */
+proto.mruv.gates.Gate.prototype.getOpened = function() {
+  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 4, false));
+};
+
+
+/** @param {boolean} value */
+proto.mruv.gates.Gate.prototype.setOpened = function(value) {
+  jspb.Message.setProto3BooleanField(this, 4, value);
+};
+
+
+/**
+ * optional bool locked = 5;
+ * @return {boolean}
+ */
+proto.mruv.gates.Gate.prototype.getLocked = function() {
+  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 5, false));
+};
+
+
+/** @param {boolean} value */
+proto.mruv.gates.Gate.prototype.setLocked = function(value) {
+  jspb.Message.setProto3BooleanField(this, 5, value);
 };
 
 
@@ -575,7 +760,8 @@ proto.mruv.gates.CreateGateRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     name: jspb.Message.getFieldWithDefault(msg, 1, ""),
     gateObjectsList: jspb.Message.toObjectList(msg.getGateObjectsList(),
-    objects_movable_pb.MovableObject.toObject, includeInstance)
+    objects_movable_pb.MovableObject.toObject, includeInstance),
+    spot: (f = msg.getSpot()) && spots_spots_pb.Spot.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -621,6 +807,11 @@ proto.mruv.gates.CreateGateRequest.deserializeBinaryFromReader = function(msg, r
       reader.readMessage(value,objects_movable_pb.MovableObject.deserializeBinaryFromReader);
       msg.addGateObjects(value);
       break;
+    case 3:
+      var value = new spots_spots_pb.Spot;
+      reader.readMessage(value,spots_spots_pb.Spot.deserializeBinaryFromReader);
+      msg.setSpot(value);
+      break;
     default:
       reader.skipField();
       break;
@@ -663,6 +854,14 @@ proto.mruv.gates.CreateGateRequest.serializeBinaryToWriter = function(message, w
       2,
       f,
       objects_movable_pb.MovableObject.serializeBinaryToWriter
+    );
+  }
+  f = message.getSpot();
+  if (f != null) {
+    writer.writeMessage(
+      3,
+      f,
+      spots_spots_pb.Spot.serializeBinaryToWriter
     );
   }
 };
@@ -714,6 +913,39 @@ proto.mruv.gates.CreateGateRequest.prototype.addGateObjects = function(opt_value
  */
 proto.mruv.gates.CreateGateRequest.prototype.clearGateObjectsList = function() {
   this.setGateObjectsList([]);
+};
+
+
+/**
+ * optional mruv.spots.Spot spot = 3;
+ * @return {?proto.mruv.spots.Spot}
+ */
+proto.mruv.gates.CreateGateRequest.prototype.getSpot = function() {
+  return /** @type{?proto.mruv.spots.Spot} */ (
+    jspb.Message.getWrapperField(this, spots_spots_pb.Spot, 3));
+};
+
+
+/** @param {?proto.mruv.spots.Spot|undefined} value */
+proto.mruv.gates.CreateGateRequest.prototype.setSpot = function(value) {
+  jspb.Message.setWrapperField(this, 3, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.mruv.gates.CreateGateRequest.prototype.clearSpot = function() {
+  this.setSpot(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.mruv.gates.CreateGateRequest.prototype.hasSpot = function() {
+  return jspb.Message.getField(this, 3) != null;
 };
 
 
@@ -1011,10 +1243,10 @@ proto.mruv.gates.GetGateResponse.prototype.toObject = function(opt_includeInstan
 proto.mruv.gates.GetGateResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
     name: jspb.Message.getFieldWithDefault(msg, 1, ""),
-    gateObjectsList: jspb.Message.toObjectList(msg.getGateObjectsList(),
-    objects_movable_pb.MovableObject.toObject, includeInstance),
-    opened: jspb.Message.getBooleanFieldWithDefault(msg, 3, false),
-    locked: jspb.Message.getBooleanFieldWithDefault(msg, 4, false)
+    gateMovableObjectsList: (f = jspb.Message.getRepeatedField(msg, 2)) == null ? undefined : f,
+    spot: (f = msg.getSpot()) && spots_spots_pb.Spot.toObject(includeInstance, f),
+    opened: jspb.Message.getBooleanFieldWithDefault(msg, 4, false),
+    locked: jspb.Message.getBooleanFieldWithDefault(msg, 5, false)
   };
 
   if (includeInstance) {
@@ -1056,15 +1288,19 @@ proto.mruv.gates.GetGateResponse.deserializeBinaryFromReader = function(msg, rea
       msg.setName(value);
       break;
     case 2:
-      var value = new objects_movable_pb.MovableObject;
-      reader.readMessage(value,objects_movable_pb.MovableObject.deserializeBinaryFromReader);
-      msg.addGateObjects(value);
+      var value = /** @type {!Array<number>} */ (reader.readPackedUint32());
+      msg.setGateMovableObjectsList(value);
       break;
     case 3:
+      var value = new spots_spots_pb.Spot;
+      reader.readMessage(value,spots_spots_pb.Spot.deserializeBinaryFromReader);
+      msg.setSpot(value);
+      break;
+    case 4:
       var value = /** @type {boolean} */ (reader.readBool());
       msg.setOpened(value);
       break;
-    case 4:
+    case 5:
       var value = /** @type {boolean} */ (reader.readBool());
       msg.setLocked(value);
       break;
@@ -1104,25 +1340,32 @@ proto.mruv.gates.GetGateResponse.serializeBinaryToWriter = function(message, wri
       f
     );
   }
-  f = message.getGateObjectsList();
+  f = message.getGateMovableObjectsList();
   if (f.length > 0) {
-    writer.writeRepeatedMessage(
+    writer.writePackedUint32(
       2,
+      f
+    );
+  }
+  f = message.getSpot();
+  if (f != null) {
+    writer.writeMessage(
+      3,
       f,
-      objects_movable_pb.MovableObject.serializeBinaryToWriter
+      spots_spots_pb.Spot.serializeBinaryToWriter
     );
   }
   f = message.getOpened();
   if (f) {
     writer.writeBool(
-      3,
+      4,
       f
     );
   }
   f = message.getLocked();
   if (f) {
     writer.writeBool(
-      4,
+      5,
       f
     );
   }
@@ -1145,69 +1388,107 @@ proto.mruv.gates.GetGateResponse.prototype.setName = function(value) {
 
 
 /**
- * repeated mruv.objects.MovableObject gate_objects = 2;
- * @return {!Array<!proto.mruv.objects.MovableObject>}
+ * repeated uint32 gate_movable_objects = 2;
+ * @return {!Array<number>}
  */
-proto.mruv.gates.GetGateResponse.prototype.getGateObjectsList = function() {
-  return /** @type{!Array<!proto.mruv.objects.MovableObject>} */ (
-    jspb.Message.getRepeatedWrapperField(this, objects_movable_pb.MovableObject, 2));
+proto.mruv.gates.GetGateResponse.prototype.getGateMovableObjectsList = function() {
+  return /** @type {!Array<number>} */ (jspb.Message.getRepeatedField(this, 2));
 };
 
 
-/** @param {!Array<!proto.mruv.objects.MovableObject>} value */
-proto.mruv.gates.GetGateResponse.prototype.setGateObjectsList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 2, value);
+/** @param {!Array<number>} value */
+proto.mruv.gates.GetGateResponse.prototype.setGateMovableObjectsList = function(value) {
+  jspb.Message.setField(this, 2, value || []);
 };
 
 
 /**
- * @param {!proto.mruv.objects.MovableObject=} opt_value
+ * @param {number} value
  * @param {number=} opt_index
- * @return {!proto.mruv.objects.MovableObject}
  */
-proto.mruv.gates.GetGateResponse.prototype.addGateObjects = function(opt_value, opt_index) {
-  return jspb.Message.addToRepeatedWrapperField(this, 2, opt_value, proto.mruv.objects.MovableObject, opt_index);
+proto.mruv.gates.GetGateResponse.prototype.addGateMovableObjects = function(value, opt_index) {
+  jspb.Message.addToRepeatedField(this, 2, value, opt_index);
 };
 
 
 /**
  * Clears the list making it empty but non-null.
  */
-proto.mruv.gates.GetGateResponse.prototype.clearGateObjectsList = function() {
-  this.setGateObjectsList([]);
+proto.mruv.gates.GetGateResponse.prototype.clearGateMovableObjectsList = function() {
+  this.setGateMovableObjectsList([]);
 };
 
 
 /**
- * optional bool opened = 3;
+ * optional mruv.spots.Spot spot = 3;
+ * @return {?proto.mruv.spots.Spot}
+ */
+proto.mruv.gates.GetGateResponse.prototype.getSpot = function() {
+  return /** @type{?proto.mruv.spots.Spot} */ (
+    jspb.Message.getWrapperField(this, spots_spots_pb.Spot, 3));
+};
+
+
+/** @param {?proto.mruv.spots.Spot|undefined} value */
+proto.mruv.gates.GetGateResponse.prototype.setSpot = function(value) {
+  jspb.Message.setWrapperField(this, 3, value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.mruv.gates.GetGateResponse.prototype.clearSpot = function() {
+  this.setSpot(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.mruv.gates.GetGateResponse.prototype.hasSpot = function() {
+  return jspb.Message.getField(this, 3) != null;
+};
+
+
+/**
+ * optional bool opened = 4;
  * @return {boolean}
  */
 proto.mruv.gates.GetGateResponse.prototype.getOpened = function() {
-  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 3, false));
-};
-
-
-/** @param {boolean} value */
-proto.mruv.gates.GetGateResponse.prototype.setOpened = function(value) {
-  jspb.Message.setProto3BooleanField(this, 3, value);
-};
-
-
-/**
- * optional bool locked = 4;
- * @return {boolean}
- */
-proto.mruv.gates.GetGateResponse.prototype.getLocked = function() {
   return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 4, false));
 };
 
 
 /** @param {boolean} value */
-proto.mruv.gates.GetGateResponse.prototype.setLocked = function(value) {
+proto.mruv.gates.GetGateResponse.prototype.setOpened = function(value) {
   jspb.Message.setProto3BooleanField(this, 4, value);
 };
 
 
+/**
+ * optional bool locked = 5;
+ * @return {boolean}
+ */
+proto.mruv.gates.GetGateResponse.prototype.getLocked = function() {
+  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 5, false));
+};
+
+
+/** @param {boolean} value */
+proto.mruv.gates.GetGateResponse.prototype.setLocked = function(value) {
+  jspb.Message.setProto3BooleanField(this, 5, value);
+};
+
+
+
+/**
+ * List of repeated fields within this message type.
+ * @private {!Array<number>}
+ * @const
+ */
+proto.mruv.gates.UpdateGateRequest.repeatedFields_ = [4];
 
 
 
@@ -1241,7 +1522,9 @@ proto.mruv.gates.UpdateGateRequest.prototype.toObject = function(opt_includeInst
 proto.mruv.gates.UpdateGateRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     id: jspb.Message.getFieldWithDefault(msg, 1, 0),
-    name: jspb.Message.getFieldWithDefault(msg, 2, "")
+    name: jspb.Message.getFieldWithDefault(msg, 2, ""),
+    spotId: jspb.Message.getFieldWithDefault(msg, 3, 0),
+    gateMovableObjectsList: (f = jspb.Message.getRepeatedField(msg, 4)) == null ? undefined : f
   };
 
   if (includeInstance) {
@@ -1286,6 +1569,14 @@ proto.mruv.gates.UpdateGateRequest.deserializeBinaryFromReader = function(msg, r
       var value = /** @type {string} */ (reader.readString());
       msg.setName(value);
       break;
+    case 3:
+      var value = /** @type {number} */ (reader.readUint32());
+      msg.setSpotId(value);
+      break;
+    case 4:
+      var value = /** @type {!Array<number>} */ (reader.readPackedUint32());
+      msg.setGateMovableObjectsList(value);
+      break;
     default:
       reader.skipField();
       break;
@@ -1329,6 +1620,20 @@ proto.mruv.gates.UpdateGateRequest.serializeBinaryToWriter = function(message, w
       f
     );
   }
+  f = message.getSpotId();
+  if (f !== 0) {
+    writer.writeUint32(
+      3,
+      f
+    );
+  }
+  f = message.getGateMovableObjectsList();
+  if (f.length > 0) {
+    writer.writePackedUint32(
+      4,
+      f
+    );
+  }
 };
 
 
@@ -1359,6 +1664,53 @@ proto.mruv.gates.UpdateGateRequest.prototype.getName = function() {
 /** @param {string} value */
 proto.mruv.gates.UpdateGateRequest.prototype.setName = function(value) {
   jspb.Message.setProto3StringField(this, 2, value);
+};
+
+
+/**
+ * optional uint32 spot_id = 3;
+ * @return {number}
+ */
+proto.mruv.gates.UpdateGateRequest.prototype.getSpotId = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
+};
+
+
+/** @param {number} value */
+proto.mruv.gates.UpdateGateRequest.prototype.setSpotId = function(value) {
+  jspb.Message.setProto3IntField(this, 3, value);
+};
+
+
+/**
+ * repeated uint32 gate_movable_objects = 4;
+ * @return {!Array<number>}
+ */
+proto.mruv.gates.UpdateGateRequest.prototype.getGateMovableObjectsList = function() {
+  return /** @type {!Array<number>} */ (jspb.Message.getRepeatedField(this, 4));
+};
+
+
+/** @param {!Array<number>} value */
+proto.mruv.gates.UpdateGateRequest.prototype.setGateMovableObjectsList = function(value) {
+  jspb.Message.setField(this, 4, value || []);
+};
+
+
+/**
+ * @param {number} value
+ * @param {number=} opt_index
+ */
+proto.mruv.gates.UpdateGateRequest.prototype.addGateMovableObjects = function(value, opt_index) {
+  jspb.Message.addToRepeatedField(this, 4, value, opt_index);
+};
+
+
+/**
+ * Clears the list making it empty but non-null.
+ */
+proto.mruv.gates.UpdateGateRequest.prototype.clearGateMovableObjectsList = function() {
+  this.setGateMovableObjectsList([]);
 };
 
 

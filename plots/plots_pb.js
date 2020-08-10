@@ -697,7 +697,8 @@ proto.mruv.plots.GetPlotResponse.toObject = function(includeInstance, msg) {
     name: jspb.Message.getFieldWithDefault(msg, 1, ""),
     description: jspb.Message.getFieldWithDefault(msg, 2, ""),
     pointsList: jspb.Message.toObjectList(msg.getPointsList(),
-    common_spatial_pb.Position.toObject, includeInstance)
+    common_spatial_pb.Position.toObject, includeInstance),
+    area: jspb.Message.getFloatingPointFieldWithDefault(msg, 4, 0.0)
   };
 
   if (includeInstance) {
@@ -746,6 +747,10 @@ proto.mruv.plots.GetPlotResponse.deserializeBinaryFromReader = function(msg, rea
       var value = new common_spatial_pb.Position;
       reader.readMessage(value,common_spatial_pb.Position.deserializeBinaryFromReader);
       msg.addPoints(value);
+      break;
+    case 4:
+      var value = /** @type {number} */ (reader.readDouble());
+      msg.setArea(value);
       break;
     default:
       reader.skipField();
@@ -796,6 +801,13 @@ proto.mruv.plots.GetPlotResponse.serializeBinaryToWriter = function(message, wri
       3,
       f,
       common_spatial_pb.Position.serializeBinaryToWriter
+    );
+  }
+  f = message.getArea();
+  if (f !== 0.0) {
+    writer.writeDouble(
+      4,
+      f
     );
   }
 };
@@ -862,6 +874,21 @@ proto.mruv.plots.GetPlotResponse.prototype.addPoints = function(opt_value, opt_i
  */
 proto.mruv.plots.GetPlotResponse.prototype.clearPointsList = function() {
   this.setPointsList([]);
+};
+
+
+/**
+ * optional double area = 4;
+ * @return {number}
+ */
+proto.mruv.plots.GetPlotResponse.prototype.getArea = function() {
+  return /** @type {number} */ (jspb.Message.getFloatingPointFieldWithDefault(this, 4, 0.0));
+};
+
+
+/** @param {number} value */
+proto.mruv.plots.GetPlotResponse.prototype.setArea = function(value) {
+  jspb.Message.setProto3FloatField(this, 4, value);
 };
 
 

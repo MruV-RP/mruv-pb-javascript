@@ -4,8 +4,28 @@
 import * as jspb from "google-protobuf";
 import * as google_api_annotations_pb from "../google/api/annotations_pb";
 import * as objects_movable_pb from "../objects/movable_pb";
+import * as spots_spots_pb from "../spots/spots_pb";
 
 export class Gate extends jspb.Message {
+  getName(): string;
+  setName(value: string): void;
+
+  clearGateObjectsList(): void;
+  getGateObjectsList(): Array<objects_movable_pb.MovableObject>;
+  setGateObjectsList(value: Array<objects_movable_pb.MovableObject>): void;
+  addGateObjects(value?: objects_movable_pb.MovableObject, index?: number): objects_movable_pb.MovableObject;
+
+  hasSpot(): boolean;
+  clearSpot(): void;
+  getSpot(): spots_spots_pb.Spot | undefined;
+  setSpot(value?: spots_spots_pb.Spot): void;
+
+  getOpened(): boolean;
+  setOpened(value: boolean): void;
+
+  getLocked(): boolean;
+  setLocked(value: boolean): void;
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): Gate.AsObject;
   static toObject(includeInstance: boolean, msg: Gate): Gate.AsObject;
@@ -18,6 +38,11 @@ export class Gate extends jspb.Message {
 
 export namespace Gate {
   export type AsObject = {
+    name: string,
+    gateObjectsList: Array<objects_movable_pb.MovableObject.AsObject>,
+    spot?: spots_spots_pb.Spot.AsObject,
+    opened: boolean,
+    locked: boolean,
   }
 }
 
@@ -29,6 +54,11 @@ export class CreateGateRequest extends jspb.Message {
   getGateObjectsList(): Array<objects_movable_pb.MovableObject>;
   setGateObjectsList(value: Array<objects_movable_pb.MovableObject>): void;
   addGateObjects(value?: objects_movable_pb.MovableObject, index?: number): objects_movable_pb.MovableObject;
+
+  hasSpot(): boolean;
+  clearSpot(): void;
+  getSpot(): spots_spots_pb.Spot | undefined;
+  setSpot(value?: spots_spots_pb.Spot): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): CreateGateRequest.AsObject;
@@ -44,6 +74,7 @@ export namespace CreateGateRequest {
   export type AsObject = {
     name: string,
     gateObjectsList: Array<objects_movable_pb.MovableObject.AsObject>,
+    spot?: spots_spots_pb.Spot.AsObject,
   }
 }
 
@@ -91,10 +122,15 @@ export class GetGateResponse extends jspb.Message {
   getName(): string;
   setName(value: string): void;
 
-  clearGateObjectsList(): void;
-  getGateObjectsList(): Array<objects_movable_pb.MovableObject>;
-  setGateObjectsList(value: Array<objects_movable_pb.MovableObject>): void;
-  addGateObjects(value?: objects_movable_pb.MovableObject, index?: number): objects_movable_pb.MovableObject;
+  clearGateMovableObjectsList(): void;
+  getGateMovableObjectsList(): Array<number>;
+  setGateMovableObjectsList(value: Array<number>): void;
+  addGateMovableObjects(value: number, index?: number): number;
+
+  hasSpot(): boolean;
+  clearSpot(): void;
+  getSpot(): spots_spots_pb.Spot | undefined;
+  setSpot(value?: spots_spots_pb.Spot): void;
 
   getOpened(): boolean;
   setOpened(value: boolean): void;
@@ -115,7 +151,8 @@ export class GetGateResponse extends jspb.Message {
 export namespace GetGateResponse {
   export type AsObject = {
     name: string,
-    gateObjectsList: Array<objects_movable_pb.MovableObject.AsObject>,
+    gateMovableObjectsList: Array<number>,
+    spot?: spots_spots_pb.Spot.AsObject,
     opened: boolean,
     locked: boolean,
   }
@@ -127,6 +164,14 @@ export class UpdateGateRequest extends jspb.Message {
 
   getName(): string;
   setName(value: string): void;
+
+  getSpotId(): number;
+  setSpotId(value: number): void;
+
+  clearGateMovableObjectsList(): void;
+  getGateMovableObjectsList(): Array<number>;
+  setGateMovableObjectsList(value: Array<number>): void;
+  addGateMovableObjects(value: number, index?: number): number;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): UpdateGateRequest.AsObject;
@@ -142,6 +187,8 @@ export namespace UpdateGateRequest {
   export type AsObject = {
     id: number,
     name: string,
+    spotId: number,
+    gateMovableObjectsList: Array<number>,
   }
 }
 
