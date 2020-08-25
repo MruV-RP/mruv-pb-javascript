@@ -72,6 +72,28 @@ function deserialize_mruv_entrances_EnterResponse(buffer_arg) {
   return entrances_entrances_pb.EnterResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
+function serialize_mruv_entrances_ExitRequest(arg) {
+  if (!(arg instanceof entrances_entrances_pb.ExitRequest)) {
+    throw new Error('Expected argument of type mruv.entrances.ExitRequest');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_entrances_ExitRequest(buffer_arg) {
+  return entrances_entrances_pb.ExitRequest.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_entrances_ExitResponse(arg) {
+  if (!(arg instanceof entrances_entrances_pb.ExitResponse)) {
+    throw new Error('Expected argument of type mruv.entrances.ExitResponse');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_entrances_ExitResponse(buffer_arg) {
+  return entrances_entrances_pb.ExitResponse.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
 function serialize_mruv_entrances_FindNearestEntranceRequest(arg) {
   if (!(arg instanceof entrances_entrances_pb.FindNearestEntranceRequest)) {
     throw new Error('Expected argument of type mruv.entrances.FindNearestEntranceRequest');
@@ -269,7 +291,7 @@ var MruVEntrancesServiceService = exports.MruVEntrancesServiceService = {
     responseSerialize: serialize_mruv_entrances_FindNearestEntranceResponse,
     responseDeserialize: deserialize_mruv_entrances_FindNearestEntranceResponse,
   },
-  // Enter an entrance
+  // Enter an entrance (player teleport from in spot position to out spot position).
   enter: {
     path: '/mruv.entrances.MruVEntrancesService/Enter',
     requestStream: false,
@@ -280,6 +302,18 @@ var MruVEntrancesServiceService = exports.MruVEntrancesServiceService = {
     requestDeserialize: deserialize_mruv_entrances_EnterRequest,
     responseSerialize: serialize_mruv_entrances_EnterResponse,
     responseDeserialize: deserialize_mruv_entrances_EnterResponse,
+  },
+  // Exit from entrance (player teleport from out spot position to in spot position).
+  exit: {
+    path: '/mruv.entrances.MruVEntrancesService/Exit',
+    requestStream: false,
+    responseStream: false,
+    requestType: entrances_entrances_pb.ExitRequest,
+    responseType: entrances_entrances_pb.ExitResponse,
+    requestSerialize: serialize_mruv_entrances_ExitRequest,
+    requestDeserialize: deserialize_mruv_entrances_ExitRequest,
+    responseSerialize: serialize_mruv_entrances_ExitResponse,
+    responseDeserialize: deserialize_mruv_entrances_ExitResponse,
   },
 };
 

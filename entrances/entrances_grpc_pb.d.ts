@@ -15,6 +15,7 @@ interface IMruVEntrancesServiceService extends grpc.ServiceDefinition<grpc.Untyp
   unlock: grpc.MethodDefinition<entrances_entrances_pb.UnlockRequest, entrances_entrances_pb.UnlockResponse>;
   findNearestEntrance: grpc.MethodDefinition<entrances_entrances_pb.FindNearestEntranceRequest, entrances_entrances_pb.FindNearestEntranceResponse>;
   enter: grpc.MethodDefinition<entrances_entrances_pb.EnterRequest, entrances_entrances_pb.EnterResponse>;
+  exit: grpc.MethodDefinition<entrances_entrances_pb.ExitRequest, entrances_entrances_pb.ExitResponse>;
 }
 
 export const MruVEntrancesServiceService: IMruVEntrancesServiceService;
@@ -45,4 +46,7 @@ export class MruVEntrancesServiceClient extends grpc.Client {
   enter(argument: entrances_entrances_pb.EnterRequest, callback: grpc.requestCallback<entrances_entrances_pb.EnterResponse>): grpc.ClientUnaryCall;
   enter(argument: entrances_entrances_pb.EnterRequest, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<entrances_entrances_pb.EnterResponse>): grpc.ClientUnaryCall;
   enter(argument: entrances_entrances_pb.EnterRequest, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<entrances_entrances_pb.EnterResponse>): grpc.ClientUnaryCall;
+  exit(argument: entrances_entrances_pb.ExitRequest, callback: grpc.requestCallback<entrances_entrances_pb.ExitResponse>): grpc.ClientUnaryCall;
+  exit(argument: entrances_entrances_pb.ExitRequest, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<entrances_entrances_pb.ExitResponse>): grpc.ClientUnaryCall;
+  exit(argument: entrances_entrances_pb.ExitRequest, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<entrances_entrances_pb.ExitResponse>): grpc.ClientUnaryCall;
 }

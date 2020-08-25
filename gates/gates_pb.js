@@ -1243,7 +1243,8 @@ proto.mruv.gates.GetGateResponse.prototype.toObject = function(opt_includeInstan
 proto.mruv.gates.GetGateResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
     name: jspb.Message.getFieldWithDefault(msg, 1, ""),
-    gateMovableObjectsList: (f = jspb.Message.getRepeatedField(msg, 2)) == null ? undefined : f,
+    movableObjectsList: jspb.Message.toObjectList(msg.getMovableObjectsList(),
+    objects_movable_pb.MovableObject.toObject, includeInstance),
     spot: (f = msg.getSpot()) && spots_spots_pb.Spot.toObject(includeInstance, f),
     opened: jspb.Message.getBooleanFieldWithDefault(msg, 4, false),
     locked: jspb.Message.getBooleanFieldWithDefault(msg, 5, false)
@@ -1288,8 +1289,9 @@ proto.mruv.gates.GetGateResponse.deserializeBinaryFromReader = function(msg, rea
       msg.setName(value);
       break;
     case 2:
-      var value = /** @type {!Array<number>} */ (reader.readPackedUint32());
-      msg.setGateMovableObjectsList(value);
+      var value = new objects_movable_pb.MovableObject;
+      reader.readMessage(value,objects_movable_pb.MovableObject.deserializeBinaryFromReader);
+      msg.addMovableObjects(value);
       break;
     case 3:
       var value = new spots_spots_pb.Spot;
@@ -1340,11 +1342,12 @@ proto.mruv.gates.GetGateResponse.serializeBinaryToWriter = function(message, wri
       f
     );
   }
-  f = message.getGateMovableObjectsList();
+  f = message.getMovableObjectsList();
   if (f.length > 0) {
-    writer.writePackedUint32(
+    writer.writeRepeatedMessage(
       2,
-      f
+      f,
+      objects_movable_pb.MovableObject.serializeBinaryToWriter
     );
   }
   f = message.getSpot();
@@ -1388,34 +1391,36 @@ proto.mruv.gates.GetGateResponse.prototype.setName = function(value) {
 
 
 /**
- * repeated uint32 gate_movable_objects = 2;
- * @return {!Array<number>}
+ * repeated mruv.objects.MovableObject movable_objects = 2;
+ * @return {!Array<!proto.mruv.objects.MovableObject>}
  */
-proto.mruv.gates.GetGateResponse.prototype.getGateMovableObjectsList = function() {
-  return /** @type {!Array<number>} */ (jspb.Message.getRepeatedField(this, 2));
+proto.mruv.gates.GetGateResponse.prototype.getMovableObjectsList = function() {
+  return /** @type{!Array<!proto.mruv.objects.MovableObject>} */ (
+    jspb.Message.getRepeatedWrapperField(this, objects_movable_pb.MovableObject, 2));
 };
 
 
-/** @param {!Array<number>} value */
-proto.mruv.gates.GetGateResponse.prototype.setGateMovableObjectsList = function(value) {
-  jspb.Message.setField(this, 2, value || []);
+/** @param {!Array<!proto.mruv.objects.MovableObject>} value */
+proto.mruv.gates.GetGateResponse.prototype.setMovableObjectsList = function(value) {
+  jspb.Message.setRepeatedWrapperField(this, 2, value);
 };
 
 
 /**
- * @param {number} value
+ * @param {!proto.mruv.objects.MovableObject=} opt_value
  * @param {number=} opt_index
+ * @return {!proto.mruv.objects.MovableObject}
  */
-proto.mruv.gates.GetGateResponse.prototype.addGateMovableObjects = function(value, opt_index) {
-  jspb.Message.addToRepeatedField(this, 2, value, opt_index);
+proto.mruv.gates.GetGateResponse.prototype.addMovableObjects = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 2, opt_value, proto.mruv.objects.MovableObject, opt_index);
 };
 
 
 /**
  * Clears the list making it empty but non-null.
  */
-proto.mruv.gates.GetGateResponse.prototype.clearGateMovableObjectsList = function() {
-  this.setGateMovableObjectsList([]);
+proto.mruv.gates.GetGateResponse.prototype.clearMovableObjectsList = function() {
+  this.setMovableObjectsList([]);
 };
 
 

@@ -332,6 +332,9 @@ export class FindNearestEntranceResponse extends jspb.Message {
   getDistance(): number;
   setDistance(value: number): void;
 
+  getInside(): boolean;
+  setInside(value: boolean): void;
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): FindNearestEntranceResponse.AsObject;
   static toObject(includeInstance: boolean, msg: FindNearestEntranceResponse): FindNearestEntranceResponse.AsObject;
@@ -346,6 +349,7 @@ export namespace FindNearestEntranceResponse {
   export type AsObject = {
     id: number,
     distance: number,
+    inside: boolean,
   }
 }
 
@@ -381,6 +385,42 @@ export class EnterResponse extends jspb.Message {
 }
 
 export namespace EnterResponse {
+  export type AsObject = {
+  }
+}
+
+export class ExitRequest extends jspb.Message {
+  getId(): number;
+  setId(value: number): void;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): ExitRequest.AsObject;
+  static toObject(includeInstance: boolean, msg: ExitRequest): ExitRequest.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: ExitRequest, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): ExitRequest;
+  static deserializeBinaryFromReader(message: ExitRequest, reader: jspb.BinaryReader): ExitRequest;
+}
+
+export namespace ExitRequest {
+  export type AsObject = {
+    id: number,
+  }
+}
+
+export class ExitResponse extends jspb.Message {
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): ExitResponse.AsObject;
+  static toObject(includeInstance: boolean, msg: ExitResponse): ExitResponse.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: ExitResponse, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): ExitResponse;
+  static deserializeBinaryFromReader(message: ExitResponse, reader: jspb.BinaryReader): ExitResponse;
+}
+
+export namespace ExitResponse {
   export type AsObject = {
   }
 }
