@@ -256,7 +256,8 @@ proto.mruv.objects.Object.toObject = function(includeInstance, msg) {
     areaId: jspb.Message.getFieldWithDefault(msg, 11, 0),
     streamDistance: jspb.Message.getFloatingPointFieldWithDefault(msg, 12, 0.0),
     drawDistance: jspb.Message.getFloatingPointFieldWithDefault(msg, 13, 0.0),
-    priority: jspb.Message.getFieldWithDefault(msg, 15, 0)
+    priority: jspb.Message.getFieldWithDefault(msg, 15, 0),
+    estateId: jspb.Message.getFieldWithDefault(msg, 16, 0)
   };
 
   if (includeInstance) {
@@ -348,6 +349,10 @@ proto.mruv.objects.Object.deserializeBinaryFromReader = function(msg, reader) {
     case 15:
       var value = /** @type {number} */ (reader.readInt32());
       msg.setPriority(value);
+      break;
+    case 16:
+      var value = /** @type {number} */ (reader.readUint32());
+      msg.setEstateId(value);
       break;
     default:
       reader.skipField();
@@ -473,6 +478,13 @@ proto.mruv.objects.Object.serializeBinaryToWriter = function(message, writer) {
   if (f !== 0) {
     writer.writeInt32(
       15,
+      f
+    );
+  }
+  f = message.getEstateId();
+  if (f !== 0) {
+    writer.writeUint32(
+      16,
       f
     );
   }
@@ -686,6 +698,21 @@ proto.mruv.objects.Object.prototype.getPriority = function() {
 /** @param {number} value */
 proto.mruv.objects.Object.prototype.setPriority = function(value) {
   jspb.Message.setProto3IntField(this, 15, value);
+};
+
+
+/**
+ * optional uint32 estate_id = 16;
+ * @return {number}
+ */
+proto.mruv.objects.Object.prototype.getEstateId = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 16, 0));
+};
+
+
+/** @param {number} value */
+proto.mruv.objects.Object.prototype.setEstateId = function(value) {
+  jspb.Message.setProto3IntField(this, 16, value);
 };
 
 

@@ -368,6 +368,28 @@ function deserialize_mruv_economy_UnBlockMessage(buffer_arg) {
   return punishments_punishments_pb.UnBlockMessage.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
+function serialize_mruv_economy_UnBlockRequest(arg) {
+  if (!(arg instanceof punishments_punishments_pb.UnBlockRequest)) {
+    throw new Error('Expected argument of type mruv.economy.UnBlockRequest');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_economy_UnBlockRequest(buffer_arg) {
+  return punishments_punishments_pb.UnBlockRequest.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_economy_UnBlockResponse(arg) {
+  if (!(arg instanceof punishments_punishments_pb.UnBlockResponse)) {
+    throw new Error('Expected argument of type mruv.economy.UnBlockResponse');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_economy_UnBlockResponse(buffer_arg) {
+  return punishments_punishments_pb.UnBlockResponse.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
 function serialize_mruv_economy_UnMuteGlobalChatsRequest(arg) {
   if (!(arg instanceof punishments_punishments_pb.UnMuteGlobalChatsRequest)) {
     throw new Error('Expected argument of type mruv.economy.UnMuteGlobalChatsRequest');
@@ -686,6 +708,18 @@ var MruVPunishmentsServiceService = exports.MruVPunishmentsServiceService = {
     requestDeserialize: deserialize_mruv_economy_UnBanRequest,
     responseSerialize: serialize_mruv_economy_UnBanResponse,
     responseDeserialize: deserialize_mruv_economy_UnBanResponse,
+  },
+  // Deactivate a character block.
+  unBlock: {
+    path: '/mruv.economy.MruVPunishmentsService/UnBlock',
+    requestStream: false,
+    responseStream: false,
+    requestType: punishments_punishments_pb.UnBlockRequest,
+    responseType: punishments_punishments_pb.UnBlockResponse,
+    requestSerialize: serialize_mruv_economy_UnBlockRequest,
+    requestDeserialize: deserialize_mruv_economy_UnBlockRequest,
+    responseSerialize: serialize_mruv_economy_UnBlockResponse,
+    responseDeserialize: deserialize_mruv_economy_UnBlockResponse,
   },
   // Deactivate a specific player warning. If a player was banned by reaching the warning limit, a player will be unbanned.
   unWarn: {

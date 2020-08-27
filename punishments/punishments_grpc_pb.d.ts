@@ -13,6 +13,7 @@ interface IMruVPunishmentsServiceService extends grpc.ServiceDefinition<grpc.Unt
   adminJail: grpc.MethodDefinition<punishments_punishments_pb.AdminJailRequest, punishments_punishments_pb.AdminJailResponse>;
   muteGlobalChats: grpc.MethodDefinition<punishments_punishments_pb.MuteGlobalChatsRequest, punishments_punishments_pb.MuteGlobalChatsResponse>;
   unBan: grpc.MethodDefinition<punishments_punishments_pb.UnBanRequest, punishments_punishments_pb.UnBanResponse>;
+  unBlock: grpc.MethodDefinition<punishments_punishments_pb.UnBlockRequest, punishments_punishments_pb.UnBlockResponse>;
   unWarn: grpc.MethodDefinition<punishments_punishments_pb.UnWarnRequest, punishments_punishments_pb.UnWarnResponse>;
   unAdminJail: grpc.MethodDefinition<punishments_punishments_pb.UnAdminJailRequest, punishments_punishments_pb.UnAdminJailResponse>;
   unMuteGlobalChats: grpc.MethodDefinition<punishments_punishments_pb.UnMuteGlobalChatsRequest, punishments_punishments_pb.UnMuteGlobalChatsResponse>;
@@ -60,6 +61,9 @@ export class MruVPunishmentsServiceClient extends grpc.Client {
   unBan(argument: punishments_punishments_pb.UnBanRequest, callback: grpc.requestCallback<punishments_punishments_pb.UnBanResponse>): grpc.ClientUnaryCall;
   unBan(argument: punishments_punishments_pb.UnBanRequest, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<punishments_punishments_pb.UnBanResponse>): grpc.ClientUnaryCall;
   unBan(argument: punishments_punishments_pb.UnBanRequest, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<punishments_punishments_pb.UnBanResponse>): grpc.ClientUnaryCall;
+  unBlock(argument: punishments_punishments_pb.UnBlockRequest, callback: grpc.requestCallback<punishments_punishments_pb.UnBlockResponse>): grpc.ClientUnaryCall;
+  unBlock(argument: punishments_punishments_pb.UnBlockRequest, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<punishments_punishments_pb.UnBlockResponse>): grpc.ClientUnaryCall;
+  unBlock(argument: punishments_punishments_pb.UnBlockRequest, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<punishments_punishments_pb.UnBlockResponse>): grpc.ClientUnaryCall;
   unWarn(argument: punishments_punishments_pb.UnWarnRequest, callback: grpc.requestCallback<punishments_punishments_pb.UnWarnResponse>): grpc.ClientUnaryCall;
   unWarn(argument: punishments_punishments_pb.UnWarnRequest, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<punishments_punishments_pb.UnWarnResponse>): grpc.ClientUnaryCall;
   unWarn(argument: punishments_punishments_pb.UnWarnRequest, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<punishments_punishments_pb.UnWarnResponse>): grpc.ClientUnaryCall;

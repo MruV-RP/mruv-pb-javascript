@@ -548,6 +548,9 @@ export class UnBanRequest extends jspb.Message {
   getBanId(): number;
   setBanId(value: number): void;
 
+  getReason(): string;
+  setReason(value: string): void;
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): UnBanRequest.AsObject;
   static toObject(includeInstance: boolean, msg: UnBanRequest): UnBanRequest.AsObject;
@@ -561,6 +564,7 @@ export class UnBanRequest extends jspb.Message {
 export namespace UnBanRequest {
   export type AsObject = {
     banId: number,
+    reason: string,
   }
 }
 
@@ -580,9 +584,52 @@ export namespace UnBanResponse {
   }
 }
 
+export class UnBlockRequest extends jspb.Message {
+  getBlockId(): number;
+  setBlockId(value: number): void;
+
+  getReason(): string;
+  setReason(value: string): void;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): UnBlockRequest.AsObject;
+  static toObject(includeInstance: boolean, msg: UnBlockRequest): UnBlockRequest.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: UnBlockRequest, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): UnBlockRequest;
+  static deserializeBinaryFromReader(message: UnBlockRequest, reader: jspb.BinaryReader): UnBlockRequest;
+}
+
+export namespace UnBlockRequest {
+  export type AsObject = {
+    blockId: number,
+    reason: string,
+  }
+}
+
+export class UnBlockResponse extends jspb.Message {
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): UnBlockResponse.AsObject;
+  static toObject(includeInstance: boolean, msg: UnBlockResponse): UnBlockResponse.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: UnBlockResponse, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): UnBlockResponse;
+  static deserializeBinaryFromReader(message: UnBlockResponse, reader: jspb.BinaryReader): UnBlockResponse;
+}
+
+export namespace UnBlockResponse {
+  export type AsObject = {
+  }
+}
+
 export class UnWarnRequest extends jspb.Message {
   getWarnId(): number;
   setWarnId(value: number): void;
+
+  getReason(): string;
+  setReason(value: string): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): UnWarnRequest.AsObject;
@@ -597,6 +644,7 @@ export class UnWarnRequest extends jspb.Message {
 export namespace UnWarnRequest {
   export type AsObject = {
     warnId: number,
+    reason: string,
   }
 }
 
