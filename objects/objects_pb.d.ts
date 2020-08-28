@@ -50,6 +50,10 @@ export class Object extends jspb.Message {
   getEstateId(): number;
   setEstateId(value: number): void;
 
+  getMaterialsMap(): jspb.Map<number, Material>;
+  clearMaterialsMap(): void;
+  getMaterialTextsMap(): jspb.Map<number, MaterialText>;
+  clearMaterialTextsMap(): void;
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): Object.AsObject;
   static toObject(includeInstance: boolean, msg: Object): Object.AsObject;
@@ -77,6 +81,88 @@ export namespace Object {
     drawDistance: number,
     priority: number,
     estateId: number,
+    materialsMap: Array<[number, Material.AsObject]>,
+    materialTextsMap: Array<[number, MaterialText.AsObject]>,
+  }
+}
+
+export class Material extends jspb.Message {
+  getModelId(): number;
+  setModelId(value: number): void;
+
+  getTxdName(): string;
+  setTxdName(value: string): void;
+
+  getTextureName(): string;
+  setTextureName(value: string): void;
+
+  getMaterialColor(): number;
+  setMaterialColor(value: number): void;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): Material.AsObject;
+  static toObject(includeInstance: boolean, msg: Material): Material.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: Material, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): Material;
+  static deserializeBinaryFromReader(message: Material, reader: jspb.BinaryReader): Material;
+}
+
+export namespace Material {
+  export type AsObject = {
+    modelId: number,
+    txdName: string,
+    textureName: string,
+    materialColor: number,
+  }
+}
+
+export class MaterialText extends jspb.Message {
+  getText(): string;
+  setText(value: string): void;
+
+  getMaterialSize(): MaterialSizeMap[keyof MaterialSizeMap];
+  setMaterialSize(value: MaterialSizeMap[keyof MaterialSizeMap]): void;
+
+  getFontFace(): string;
+  setFontFace(value: string): void;
+
+  getFontSize(): number;
+  setFontSize(value: number): void;
+
+  getBold(): boolean;
+  setBold(value: boolean): void;
+
+  getFontColor(): number;
+  setFontColor(value: number): void;
+
+  getBackColor(): number;
+  setBackColor(value: number): void;
+
+  getTextAlignment(): number;
+  setTextAlignment(value: number): void;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): MaterialText.AsObject;
+  static toObject(includeInstance: boolean, msg: MaterialText): MaterialText.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: MaterialText, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): MaterialText;
+  static deserializeBinaryFromReader(message: MaterialText, reader: jspb.BinaryReader): MaterialText;
+}
+
+export namespace MaterialText {
+  export type AsObject = {
+    text: string,
+    materialSize: MaterialSizeMap[keyof MaterialSizeMap],
+    fontFace: string,
+    fontSize: number,
+    bold: boolean,
+    fontColor: number,
+    backColor: number,
+    textAlignment: number,
   }
 }
 
@@ -241,4 +327,312 @@ export namespace DeleteObjectResponse {
   export type AsObject = {
   }
 }
+
+export class AddObjectMaterialRequest extends jspb.Message {
+  getObjectId(): number;
+  setObjectId(value: number): void;
+
+  getIndex(): number;
+  setIndex(value: number): void;
+
+  hasMaterial(): boolean;
+  clearMaterial(): void;
+  getMaterial(): Material | undefined;
+  setMaterial(value?: Material): void;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): AddObjectMaterialRequest.AsObject;
+  static toObject(includeInstance: boolean, msg: AddObjectMaterialRequest): AddObjectMaterialRequest.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: AddObjectMaterialRequest, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): AddObjectMaterialRequest;
+  static deserializeBinaryFromReader(message: AddObjectMaterialRequest, reader: jspb.BinaryReader): AddObjectMaterialRequest;
+}
+
+export namespace AddObjectMaterialRequest {
+  export type AsObject = {
+    objectId: number,
+    index: number,
+    material?: Material.AsObject,
+  }
+}
+
+export class AddObjectMaterialResponse extends jspb.Message {
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): AddObjectMaterialResponse.AsObject;
+  static toObject(includeInstance: boolean, msg: AddObjectMaterialResponse): AddObjectMaterialResponse.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: AddObjectMaterialResponse, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): AddObjectMaterialResponse;
+  static deserializeBinaryFromReader(message: AddObjectMaterialResponse, reader: jspb.BinaryReader): AddObjectMaterialResponse;
+}
+
+export namespace AddObjectMaterialResponse {
+  export type AsObject = {
+  }
+}
+
+export class GetObjectMaterialsRequest extends jspb.Message {
+  getObjectId(): number;
+  setObjectId(value: number): void;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): GetObjectMaterialsRequest.AsObject;
+  static toObject(includeInstance: boolean, msg: GetObjectMaterialsRequest): GetObjectMaterialsRequest.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: GetObjectMaterialsRequest, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): GetObjectMaterialsRequest;
+  static deserializeBinaryFromReader(message: GetObjectMaterialsRequest, reader: jspb.BinaryReader): GetObjectMaterialsRequest;
+}
+
+export namespace GetObjectMaterialsRequest {
+  export type AsObject = {
+    objectId: number,
+  }
+}
+
+export class GetObjectMaterialsResponse extends jspb.Message {
+  getMaterialsMap(): jspb.Map<number, Material>;
+  clearMaterialsMap(): void;
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): GetObjectMaterialsResponse.AsObject;
+  static toObject(includeInstance: boolean, msg: GetObjectMaterialsResponse): GetObjectMaterialsResponse.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: GetObjectMaterialsResponse, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): GetObjectMaterialsResponse;
+  static deserializeBinaryFromReader(message: GetObjectMaterialsResponse, reader: jspb.BinaryReader): GetObjectMaterialsResponse;
+}
+
+export namespace GetObjectMaterialsResponse {
+  export type AsObject = {
+    materialsMap: Array<[number, Material.AsObject]>,
+  }
+}
+
+export class DeleteObjectMaterialRequest extends jspb.Message {
+  getObjectId(): number;
+  setObjectId(value: number): void;
+
+  getIndex(): number;
+  setIndex(value: number): void;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): DeleteObjectMaterialRequest.AsObject;
+  static toObject(includeInstance: boolean, msg: DeleteObjectMaterialRequest): DeleteObjectMaterialRequest.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: DeleteObjectMaterialRequest, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): DeleteObjectMaterialRequest;
+  static deserializeBinaryFromReader(message: DeleteObjectMaterialRequest, reader: jspb.BinaryReader): DeleteObjectMaterialRequest;
+}
+
+export namespace DeleteObjectMaterialRequest {
+  export type AsObject = {
+    objectId: number,
+    index: number,
+  }
+}
+
+export class DeleteObjectMaterialResponse extends jspb.Message {
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): DeleteObjectMaterialResponse.AsObject;
+  static toObject(includeInstance: boolean, msg: DeleteObjectMaterialResponse): DeleteObjectMaterialResponse.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: DeleteObjectMaterialResponse, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): DeleteObjectMaterialResponse;
+  static deserializeBinaryFromReader(message: DeleteObjectMaterialResponse, reader: jspb.BinaryReader): DeleteObjectMaterialResponse;
+}
+
+export namespace DeleteObjectMaterialResponse {
+  export type AsObject = {
+  }
+}
+
+export class AddObjectMaterialTextRequest extends jspb.Message {
+  getObjectId(): number;
+  setObjectId(value: number): void;
+
+  getIndex(): number;
+  setIndex(value: number): void;
+
+  hasMaterialText(): boolean;
+  clearMaterialText(): void;
+  getMaterialText(): MaterialText | undefined;
+  setMaterialText(value?: MaterialText): void;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): AddObjectMaterialTextRequest.AsObject;
+  static toObject(includeInstance: boolean, msg: AddObjectMaterialTextRequest): AddObjectMaterialTextRequest.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: AddObjectMaterialTextRequest, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): AddObjectMaterialTextRequest;
+  static deserializeBinaryFromReader(message: AddObjectMaterialTextRequest, reader: jspb.BinaryReader): AddObjectMaterialTextRequest;
+}
+
+export namespace AddObjectMaterialTextRequest {
+  export type AsObject = {
+    objectId: number,
+    index: number,
+    materialText?: MaterialText.AsObject,
+  }
+}
+
+export class AddObjectMaterialTextResponse extends jspb.Message {
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): AddObjectMaterialTextResponse.AsObject;
+  static toObject(includeInstance: boolean, msg: AddObjectMaterialTextResponse): AddObjectMaterialTextResponse.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: AddObjectMaterialTextResponse, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): AddObjectMaterialTextResponse;
+  static deserializeBinaryFromReader(message: AddObjectMaterialTextResponse, reader: jspb.BinaryReader): AddObjectMaterialTextResponse;
+}
+
+export namespace AddObjectMaterialTextResponse {
+  export type AsObject = {
+  }
+}
+
+export class GetObjectMaterialTextsRequest extends jspb.Message {
+  getObjectId(): number;
+  setObjectId(value: number): void;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): GetObjectMaterialTextsRequest.AsObject;
+  static toObject(includeInstance: boolean, msg: GetObjectMaterialTextsRequest): GetObjectMaterialTextsRequest.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: GetObjectMaterialTextsRequest, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): GetObjectMaterialTextsRequest;
+  static deserializeBinaryFromReader(message: GetObjectMaterialTextsRequest, reader: jspb.BinaryReader): GetObjectMaterialTextsRequest;
+}
+
+export namespace GetObjectMaterialTextsRequest {
+  export type AsObject = {
+    objectId: number,
+  }
+}
+
+export class GetObjectMaterialTextsResponse extends jspb.Message {
+  getMaterialTextsMap(): jspb.Map<number, MaterialText>;
+  clearMaterialTextsMap(): void;
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): GetObjectMaterialTextsResponse.AsObject;
+  static toObject(includeInstance: boolean, msg: GetObjectMaterialTextsResponse): GetObjectMaterialTextsResponse.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: GetObjectMaterialTextsResponse, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): GetObjectMaterialTextsResponse;
+  static deserializeBinaryFromReader(message: GetObjectMaterialTextsResponse, reader: jspb.BinaryReader): GetObjectMaterialTextsResponse;
+}
+
+export namespace GetObjectMaterialTextsResponse {
+  export type AsObject = {
+    materialTextsMap: Array<[number, MaterialText.AsObject]>,
+  }
+}
+
+export class DeleteObjectMaterialTextRequest extends jspb.Message {
+  getObjectId(): number;
+  setObjectId(value: number): void;
+
+  getIndex(): number;
+  setIndex(value: number): void;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): DeleteObjectMaterialTextRequest.AsObject;
+  static toObject(includeInstance: boolean, msg: DeleteObjectMaterialTextRequest): DeleteObjectMaterialTextRequest.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: DeleteObjectMaterialTextRequest, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): DeleteObjectMaterialTextRequest;
+  static deserializeBinaryFromReader(message: DeleteObjectMaterialTextRequest, reader: jspb.BinaryReader): DeleteObjectMaterialTextRequest;
+}
+
+export namespace DeleteObjectMaterialTextRequest {
+  export type AsObject = {
+    objectId: number,
+    index: number,
+  }
+}
+
+export class DeleteObjectMaterialTextResponse extends jspb.Message {
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): DeleteObjectMaterialTextResponse.AsObject;
+  static toObject(includeInstance: boolean, msg: DeleteObjectMaterialTextResponse): DeleteObjectMaterialTextResponse.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: DeleteObjectMaterialTextResponse, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): DeleteObjectMaterialTextResponse;
+  static deserializeBinaryFromReader(message: DeleteObjectMaterialTextResponse, reader: jspb.BinaryReader): DeleteObjectMaterialTextResponse;
+}
+
+export namespace DeleteObjectMaterialTextResponse {
+  export type AsObject = {
+  }
+}
+
+export class FetchAllRequest extends jspb.Message {
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): FetchAllRequest.AsObject;
+  static toObject(includeInstance: boolean, msg: FetchAllRequest): FetchAllRequest.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: FetchAllRequest, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): FetchAllRequest;
+  static deserializeBinaryFromReader(message: FetchAllRequest, reader: jspb.BinaryReader): FetchAllRequest;
+}
+
+export namespace FetchAllRequest {
+  export type AsObject = {
+  }
+}
+
+export class FetchAllResponse extends jspb.Message {
+  clearObjectsList(): void;
+  getObjectsList(): Array<Object>;
+  setObjectsList(value: Array<Object>): void;
+  addObjects(value?: Object, index?: number): Object;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): FetchAllResponse.AsObject;
+  static toObject(includeInstance: boolean, msg: FetchAllResponse): FetchAllResponse.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: FetchAllResponse, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): FetchAllResponse;
+  static deserializeBinaryFromReader(message: FetchAllResponse, reader: jspb.BinaryReader): FetchAllResponse;
+}
+
+export namespace FetchAllResponse {
+  export type AsObject = {
+    objectsList: Array<Object.AsObject>,
+  }
+}
+
+export interface MaterialSizeMap {
+  OBJECT_MATERIAL_SIZE_0: 0;
+  OBJECT_MATERIAL_SIZE_32X32: 10;
+  OBJECT_MATERIAL_SIZE_64X32: 20;
+  OBJECT_MATERIAL_SIZE_64X64: 30;
+  OBJECT_MATERIAL_SIZE_128X32: 40;
+  OBJECT_MATERIAL_SIZE_128X64: 50;
+  OBJECT_MATERIAL_SIZE_128X128: 60;
+  OBJECT_MATERIAL_SIZE_256X32: 70;
+  OBJECT_MATERIAL_SIZE_256X64: 80;
+  OBJECT_MATERIAL_SIZE_256X128: 90;
+  OBJECT_MATERIAL_SIZE_256X256: 100;
+  OBJECT_MATERIAL_SIZE_512X64: 110;
+  OBJECT_MATERIAL_SIZE_512X128: 120;
+  OBJECT_MATERIAL_SIZE_512X256: 130;
+  OBJECT_MATERIAL_SIZE_512X512: 140;
+}
+
+export const MaterialSize: MaterialSizeMap;
 

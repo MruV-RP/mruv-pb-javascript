@@ -11,6 +11,13 @@ interface IMruVObjectsServiceService extends grpc.ServiceDefinition<grpc.Untyped
   getObject: grpc.MethodDefinition<objects_objects_pb.GetObjectRequest, objects_objects_pb.GetObjectResponse>;
   updateObject: grpc.MethodDefinition<objects_objects_pb.UpdateObjectRequest, objects_objects_pb.UpdateObjectResponse>;
   deleteObject: grpc.MethodDefinition<objects_objects_pb.DeleteObjectRequest, objects_objects_pb.DeleteObjectResponse>;
+  addObjectMaterial: grpc.MethodDefinition<objects_objects_pb.AddObjectMaterialRequest, objects_objects_pb.AddObjectMaterialResponse>;
+  getObjectMaterials: grpc.MethodDefinition<objects_objects_pb.GetObjectMaterialsRequest, objects_objects_pb.GetObjectMaterialsResponse>;
+  deleteObjectMaterial: grpc.MethodDefinition<objects_objects_pb.DeleteObjectMaterialRequest, objects_objects_pb.DeleteObjectMaterialResponse>;
+  addObjectMaterialText: grpc.MethodDefinition<objects_objects_pb.AddObjectMaterialTextRequest, objects_objects_pb.AddObjectMaterialTextResponse>;
+  getObjectMaterialTexts: grpc.MethodDefinition<objects_objects_pb.GetObjectMaterialTextsRequest, objects_objects_pb.GetObjectMaterialTextsResponse>;
+  deleteObjectMaterialText: grpc.MethodDefinition<objects_objects_pb.DeleteObjectMaterialTextRequest, objects_objects_pb.DeleteObjectMaterialTextResponse>;
+  fetchAll: grpc.MethodDefinition<objects_objects_pb.FetchAllRequest, objects_objects_pb.FetchAllResponse>;
 }
 
 export const MruVObjectsServiceService: IMruVObjectsServiceService;
@@ -29,4 +36,25 @@ export class MruVObjectsServiceClient extends grpc.Client {
   deleteObject(argument: objects_objects_pb.DeleteObjectRequest, callback: grpc.requestCallback<objects_objects_pb.DeleteObjectResponse>): grpc.ClientUnaryCall;
   deleteObject(argument: objects_objects_pb.DeleteObjectRequest, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<objects_objects_pb.DeleteObjectResponse>): grpc.ClientUnaryCall;
   deleteObject(argument: objects_objects_pb.DeleteObjectRequest, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<objects_objects_pb.DeleteObjectResponse>): grpc.ClientUnaryCall;
+  addObjectMaterial(argument: objects_objects_pb.AddObjectMaterialRequest, callback: grpc.requestCallback<objects_objects_pb.AddObjectMaterialResponse>): grpc.ClientUnaryCall;
+  addObjectMaterial(argument: objects_objects_pb.AddObjectMaterialRequest, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<objects_objects_pb.AddObjectMaterialResponse>): grpc.ClientUnaryCall;
+  addObjectMaterial(argument: objects_objects_pb.AddObjectMaterialRequest, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<objects_objects_pb.AddObjectMaterialResponse>): grpc.ClientUnaryCall;
+  getObjectMaterials(argument: objects_objects_pb.GetObjectMaterialsRequest, callback: grpc.requestCallback<objects_objects_pb.GetObjectMaterialsResponse>): grpc.ClientUnaryCall;
+  getObjectMaterials(argument: objects_objects_pb.GetObjectMaterialsRequest, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<objects_objects_pb.GetObjectMaterialsResponse>): grpc.ClientUnaryCall;
+  getObjectMaterials(argument: objects_objects_pb.GetObjectMaterialsRequest, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<objects_objects_pb.GetObjectMaterialsResponse>): grpc.ClientUnaryCall;
+  deleteObjectMaterial(argument: objects_objects_pb.DeleteObjectMaterialRequest, callback: grpc.requestCallback<objects_objects_pb.DeleteObjectMaterialResponse>): grpc.ClientUnaryCall;
+  deleteObjectMaterial(argument: objects_objects_pb.DeleteObjectMaterialRequest, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<objects_objects_pb.DeleteObjectMaterialResponse>): grpc.ClientUnaryCall;
+  deleteObjectMaterial(argument: objects_objects_pb.DeleteObjectMaterialRequest, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<objects_objects_pb.DeleteObjectMaterialResponse>): grpc.ClientUnaryCall;
+  addObjectMaterialText(argument: objects_objects_pb.AddObjectMaterialTextRequest, callback: grpc.requestCallback<objects_objects_pb.AddObjectMaterialTextResponse>): grpc.ClientUnaryCall;
+  addObjectMaterialText(argument: objects_objects_pb.AddObjectMaterialTextRequest, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<objects_objects_pb.AddObjectMaterialTextResponse>): grpc.ClientUnaryCall;
+  addObjectMaterialText(argument: objects_objects_pb.AddObjectMaterialTextRequest, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<objects_objects_pb.AddObjectMaterialTextResponse>): grpc.ClientUnaryCall;
+  getObjectMaterialTexts(argument: objects_objects_pb.GetObjectMaterialTextsRequest, callback: grpc.requestCallback<objects_objects_pb.GetObjectMaterialTextsResponse>): grpc.ClientUnaryCall;
+  getObjectMaterialTexts(argument: objects_objects_pb.GetObjectMaterialTextsRequest, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<objects_objects_pb.GetObjectMaterialTextsResponse>): grpc.ClientUnaryCall;
+  getObjectMaterialTexts(argument: objects_objects_pb.GetObjectMaterialTextsRequest, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<objects_objects_pb.GetObjectMaterialTextsResponse>): grpc.ClientUnaryCall;
+  deleteObjectMaterialText(argument: objects_objects_pb.DeleteObjectMaterialTextRequest, callback: grpc.requestCallback<objects_objects_pb.DeleteObjectMaterialTextResponse>): grpc.ClientUnaryCall;
+  deleteObjectMaterialText(argument: objects_objects_pb.DeleteObjectMaterialTextRequest, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<objects_objects_pb.DeleteObjectMaterialTextResponse>): grpc.ClientUnaryCall;
+  deleteObjectMaterialText(argument: objects_objects_pb.DeleteObjectMaterialTextRequest, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<objects_objects_pb.DeleteObjectMaterialTextResponse>): grpc.ClientUnaryCall;
+  fetchAll(argument: objects_objects_pb.FetchAllRequest, callback: grpc.requestCallback<objects_objects_pb.FetchAllResponse>): grpc.ClientUnaryCall;
+  fetchAll(argument: objects_objects_pb.FetchAllRequest, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<objects_objects_pb.FetchAllResponse>): grpc.ClientUnaryCall;
+  fetchAll(argument: objects_objects_pb.FetchAllRequest, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<objects_objects_pb.FetchAllResponse>): grpc.ClientUnaryCall;
 }
