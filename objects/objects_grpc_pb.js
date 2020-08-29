@@ -49,6 +49,28 @@ function deserialize_mruv_objects_AddObjectMaterialTextResponse(buffer_arg) {
   return objects_objects_pb.AddObjectMaterialTextResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
+function serialize_mruv_objects_AddRemoveBuildingRequest(arg) {
+  if (!(arg instanceof objects_objects_pb.AddRemoveBuildingRequest)) {
+    throw new Error('Expected argument of type mruv.objects.AddRemoveBuildingRequest');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_objects_AddRemoveBuildingRequest(buffer_arg) {
+  return objects_objects_pb.AddRemoveBuildingRequest.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_objects_AddRemoveBuildingResponse(arg) {
+  if (!(arg instanceof objects_objects_pb.AddRemoveBuildingResponse)) {
+    throw new Error('Expected argument of type mruv.objects.AddRemoveBuildingResponse');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_objects_AddRemoveBuildingResponse(buffer_arg) {
+  return objects_objects_pb.AddRemoveBuildingResponse.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
 function serialize_mruv_objects_CreateObjectRequest(arg) {
   if (!(arg instanceof objects_objects_pb.CreateObjectRequest)) {
     throw new Error('Expected argument of type mruv.objects.CreateObjectRequest');
@@ -137,6 +159,28 @@ function deserialize_mruv_objects_DeleteObjectResponse(buffer_arg) {
   return objects_objects_pb.DeleteObjectResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
+function serialize_mruv_objects_DeleteRemoveBuildingRequest(arg) {
+  if (!(arg instanceof objects_objects_pb.DeleteRemoveBuildingRequest)) {
+    throw new Error('Expected argument of type mruv.objects.DeleteRemoveBuildingRequest');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_objects_DeleteRemoveBuildingRequest(buffer_arg) {
+  return objects_objects_pb.DeleteRemoveBuildingRequest.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_objects_DeleteRemoveBuildingResponse(arg) {
+  if (!(arg instanceof objects_objects_pb.DeleteRemoveBuildingResponse)) {
+    throw new Error('Expected argument of type mruv.objects.DeleteRemoveBuildingResponse');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_objects_DeleteRemoveBuildingResponse(buffer_arg) {
+  return objects_objects_pb.DeleteRemoveBuildingResponse.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
 function serialize_mruv_objects_FetchAllRequest(arg) {
   if (!(arg instanceof objects_objects_pb.FetchAllRequest)) {
     throw new Error('Expected argument of type mruv.objects.FetchAllRequest');
@@ -223,6 +267,28 @@ function serialize_mruv_objects_GetObjectResponse(arg) {
 
 function deserialize_mruv_objects_GetObjectResponse(buffer_arg) {
   return objects_objects_pb.GetObjectResponse.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_objects_GetRemovedBuildingsRequest(arg) {
+  if (!(arg instanceof objects_objects_pb.GetRemovedBuildingsRequest)) {
+    throw new Error('Expected argument of type mruv.objects.GetRemovedBuildingsRequest');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_objects_GetRemovedBuildingsRequest(buffer_arg) {
+  return objects_objects_pb.GetRemovedBuildingsRequest.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_objects_GetRemovedBuildingsResponse(arg) {
+  if (!(arg instanceof objects_objects_pb.GetRemovedBuildingsResponse)) {
+    throw new Error('Expected argument of type mruv.objects.GetRemovedBuildingsResponse');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_objects_GetRemovedBuildingsResponse(buffer_arg) {
+  return objects_objects_pb.GetRemovedBuildingsResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_mruv_objects_UpdateObjectRequest(arg) {
@@ -369,6 +435,42 @@ var MruVObjectsServiceService = exports.MruVObjectsServiceService = {
     requestDeserialize: deserialize_mruv_objects_DeleteObjectMaterialTextRequest,
     responseSerialize: serialize_mruv_objects_DeleteObjectMaterialTextResponse,
     responseDeserialize: deserialize_mruv_objects_DeleteObjectMaterialTextResponse,
+  },
+  // Removes a object from GTA SA map.
+  addRemoveBuilding: {
+    path: '/mruv.objects.MruVObjectsService/AddRemoveBuilding',
+    requestStream: false,
+    responseStream: false,
+    requestType: objects_objects_pb.AddRemoveBuildingRequest,
+    responseType: objects_objects_pb.AddRemoveBuildingResponse,
+    requestSerialize: serialize_mruv_objects_AddRemoveBuildingRequest,
+    requestDeserialize: deserialize_mruv_objects_AddRemoveBuildingRequest,
+    responseSerialize: serialize_mruv_objects_AddRemoveBuildingResponse,
+    responseDeserialize: deserialize_mruv_objects_AddRemoveBuildingResponse,
+  },
+  // Get all removed objects.
+  getRemovedBuildings: {
+    path: '/mruv.objects.MruVObjectsService/GetRemovedBuildings',
+    requestStream: false,
+    responseStream: false,
+    requestType: objects_objects_pb.GetRemovedBuildingsRequest,
+    responseType: objects_objects_pb.GetRemovedBuildingsResponse,
+    requestSerialize: serialize_mruv_objects_GetRemovedBuildingsRequest,
+    requestDeserialize: deserialize_mruv_objects_GetRemovedBuildingsRequest,
+    responseSerialize: serialize_mruv_objects_GetRemovedBuildingsResponse,
+    responseDeserialize: deserialize_mruv_objects_GetRemovedBuildingsResponse,
+  },
+  // Delete removed buildings.
+  deleteRemoveBuilding: {
+    path: '/mruv.objects.MruVObjectsService/DeleteRemoveBuilding',
+    requestStream: false,
+    responseStream: false,
+    requestType: objects_objects_pb.DeleteRemoveBuildingRequest,
+    responseType: objects_objects_pb.DeleteRemoveBuildingResponse,
+    requestSerialize: serialize_mruv_objects_DeleteRemoveBuildingRequest,
+    requestDeserialize: deserialize_mruv_objects_DeleteRemoveBuildingRequest,
+    responseSerialize: serialize_mruv_objects_DeleteRemoveBuildingResponse,
+    responseDeserialize: deserialize_mruv_objects_DeleteRemoveBuildingResponse,
   },
   // Fetch all existing objects.
   fetchAll: {
