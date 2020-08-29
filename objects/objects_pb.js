@@ -1322,8 +1322,7 @@ proto.mruv.objects.Material.toObject = function(includeInstance, msg) {
     modelId: jspb.Message.getFieldWithDefault(msg, 1, 0),
     txdName: jspb.Message.getFieldWithDefault(msg, 2, ""),
     textureName: jspb.Message.getFieldWithDefault(msg, 3, ""),
-    materialColor: jspb.Message.getFieldWithDefault(msg, 4, 0),
-    estateId: jspb.Message.getFieldWithDefault(msg, 5, 0)
+    materialColor: jspb.Message.getFieldWithDefault(msg, 4, 0)
   };
 
   if (includeInstance) {
@@ -1375,10 +1374,6 @@ proto.mruv.objects.Material.deserializeBinaryFromReader = function(msg, reader) 
     case 4:
       var value = /** @type {number} */ (reader.readInt32());
       msg.setMaterialColor(value);
-      break;
-    case 5:
-      var value = /** @type {number} */ (reader.readUint32());
-      msg.setEstateId(value);
       break;
     default:
       reader.skipField();
@@ -1434,13 +1429,6 @@ proto.mruv.objects.Material.serializeBinaryToWriter = function(message, writer) 
   if (f !== 0) {
     writer.writeInt32(
       4,
-      f
-    );
-  }
-  f = message.getEstateId();
-  if (f !== 0) {
-    writer.writeUint32(
-      5,
       f
     );
   }
@@ -1504,21 +1492,6 @@ proto.mruv.objects.Material.prototype.getMaterialColor = function() {
 /** @param {number} value */
 proto.mruv.objects.Material.prototype.setMaterialColor = function(value) {
   jspb.Message.setProto3IntField(this, 4, value);
-};
-
-
-/**
- * optional uint32 estate_id = 5;
- * @return {number}
- */
-proto.mruv.objects.Material.prototype.getEstateId = function() {
-  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 5, 0));
-};
-
-
-/** @param {number} value */
-proto.mruv.objects.Material.prototype.setEstateId = function(value) {
-  jspb.Message.setProto3IntField(this, 5, value);
 };
 
 
@@ -1874,7 +1847,8 @@ proto.mruv.objects.RemovedBuilding.toObject = function(includeInstance, msg) {
     x: jspb.Message.getFloatingPointFieldWithDefault(msg, 2, 0.0),
     y: jspb.Message.getFloatingPointFieldWithDefault(msg, 3, 0.0),
     z: jspb.Message.getFloatingPointFieldWithDefault(msg, 4, 0.0),
-    radius: jspb.Message.getFloatingPointFieldWithDefault(msg, 5, 0.0)
+    radius: jspb.Message.getFloatingPointFieldWithDefault(msg, 5, 0.0),
+    estateId: jspb.Message.getFieldWithDefault(msg, 6, 0)
   };
 
   if (includeInstance) {
@@ -1930,6 +1904,10 @@ proto.mruv.objects.RemovedBuilding.deserializeBinaryFromReader = function(msg, r
     case 5:
       var value = /** @type {number} */ (reader.readFloat());
       msg.setRadius(value);
+      break;
+    case 6:
+      var value = /** @type {number} */ (reader.readUint32());
+      msg.setEstateId(value);
       break;
     default:
       reader.skipField();
@@ -1992,6 +1970,13 @@ proto.mruv.objects.RemovedBuilding.serializeBinaryToWriter = function(message, w
   if (f !== 0.0) {
     writer.writeFloat(
       5,
+      f
+    );
+  }
+  f = message.getEstateId();
+  if (f !== 0) {
+    writer.writeUint32(
+      6,
       f
     );
   }
@@ -2070,6 +2055,21 @@ proto.mruv.objects.RemovedBuilding.prototype.getRadius = function() {
 /** @param {number} value */
 proto.mruv.objects.RemovedBuilding.prototype.setRadius = function(value) {
   jspb.Message.setProto3FloatField(this, 5, value);
+};
+
+
+/**
+ * optional uint32 estate_id = 6;
+ * @return {number}
+ */
+proto.mruv.objects.RemovedBuilding.prototype.getEstateId = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 6, 0));
+};
+
+
+/** @param {number} value */
+proto.mruv.objects.RemovedBuilding.prototype.setEstateId = function(value) {
+  jspb.Message.setProto3IntField(this, 6, value);
 };
 
 

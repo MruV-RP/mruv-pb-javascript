@@ -99,9 +99,6 @@ export class Material extends jspb.Message {
   getMaterialColor(): number;
   setMaterialColor(value: number): void;
 
-  getEstateId(): number;
-  setEstateId(value: number): void;
-
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): Material.AsObject;
   static toObject(includeInstance: boolean, msg: Material): Material.AsObject;
@@ -118,7 +115,6 @@ export namespace Material {
     txdName: string,
     textureName: string,
     materialColor: number,
-    estateId: number,
   }
 }
 
@@ -186,6 +182,9 @@ export class RemovedBuilding extends jspb.Message {
   getRadius(): number;
   setRadius(value: number): void;
 
+  getEstateId(): number;
+  setEstateId(value: number): void;
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): RemovedBuilding.AsObject;
   static toObject(includeInstance: boolean, msg: RemovedBuilding): RemovedBuilding.AsObject;
@@ -203,6 +202,7 @@ export namespace RemovedBuilding {
     y: number,
     z: number,
     radius: number,
+    estateId: number,
   }
 }
 
