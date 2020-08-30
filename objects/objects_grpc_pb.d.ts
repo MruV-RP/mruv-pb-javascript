@@ -66,7 +66,6 @@ export class MruVObjectsServiceClient extends grpc.Client {
   deleteRemoveBuilding(argument: objects_objects_pb.DeleteRemoveBuildingRequest, callback: grpc.requestCallback<objects_objects_pb.DeleteRemoveBuildingResponse>): grpc.ClientUnaryCall;
   deleteRemoveBuilding(argument: objects_objects_pb.DeleteRemoveBuildingRequest, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<objects_objects_pb.DeleteRemoveBuildingResponse>): grpc.ClientUnaryCall;
   deleteRemoveBuilding(argument: objects_objects_pb.DeleteRemoveBuildingRequest, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<objects_objects_pb.DeleteRemoveBuildingResponse>): grpc.ClientUnaryCall;
-  fetchAll(argument: objects_objects_pb.FetchAllRequest, callback: grpc.requestCallback<objects_objects_pb.FetchAllResponse>): grpc.ClientUnaryCall;
-  fetchAll(argument: objects_objects_pb.FetchAllRequest, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<objects_objects_pb.FetchAllResponse>): grpc.ClientUnaryCall;
-  fetchAll(argument: objects_objects_pb.FetchAllRequest, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<objects_objects_pb.FetchAllResponse>): grpc.ClientUnaryCall;
+  fetchAll(argument: objects_objects_pb.FetchAllRequest, metadataOrOptions?: grpc.Metadata | grpc.CallOptions | null): grpc.ClientReadableStream<objects_objects_pb.FetchAllResponse>;
+  fetchAll(argument: objects_objects_pb.FetchAllRequest, metadata?: grpc.Metadata | null, options?: grpc.CallOptions | null): grpc.ClientReadableStream<objects_objects_pb.FetchAllResponse>;
 }

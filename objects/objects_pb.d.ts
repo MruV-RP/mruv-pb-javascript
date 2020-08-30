@@ -739,6 +739,9 @@ export namespace DeleteRemoveBuildingResponse {
 }
 
 export class FetchAllRequest extends jspb.Message {
+  getChunkSize(): number;
+  setChunkSize(value: number): void;
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): FetchAllRequest.AsObject;
   static toObject(includeInstance: boolean, msg: FetchAllRequest): FetchAllRequest.AsObject;
@@ -751,15 +754,13 @@ export class FetchAllRequest extends jspb.Message {
 
 export namespace FetchAllRequest {
   export type AsObject = {
+    chunkSize: number,
   }
 }
 
 export class FetchAllResponse extends jspb.Message {
-  clearObjectsList(): void;
-  getObjectsList(): Array<Object>;
-  setObjectsList(value: Array<Object>): void;
-  addObjects(value?: Object, index?: number): Object;
-
+  getObjectsMap(): jspb.Map<number, Object>;
+  clearObjectsMap(): void;
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): FetchAllResponse.AsObject;
   static toObject(includeInstance: boolean, msg: FetchAllResponse): FetchAllResponse.AsObject;
@@ -772,7 +773,7 @@ export class FetchAllResponse extends jspb.Message {
 
 export namespace FetchAllResponse {
   export type AsObject = {
-    objectsList: Array<Object.AsObject>,
+    objectsMap: Array<[number, Object.AsObject]>,
   }
 }
 

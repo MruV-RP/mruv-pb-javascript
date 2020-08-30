@@ -708,7 +708,7 @@ if (goog.DEBUG && !COMPILED) {
  * @constructor
  */
 proto.mruv.objects.FetchAllResponse = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, proto.mruv.objects.FetchAllResponse.repeatedFields_, null);
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mruv.objects.FetchAllResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
@@ -5573,7 +5573,7 @@ proto.mruv.objects.FetchAllRequest.prototype.toObject = function(opt_includeInst
  */
 proto.mruv.objects.FetchAllRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
-
+    chunkSize: jspb.Message.getFieldWithDefault(msg, 1, 0)
   };
 
   if (includeInstance) {
@@ -5610,6 +5610,10 @@ proto.mruv.objects.FetchAllRequest.deserializeBinaryFromReader = function(msg, r
     }
     var field = reader.getFieldNumber();
     switch (field) {
+    case 1:
+      var value = /** @type {number} */ (reader.readUint32());
+      msg.setChunkSize(value);
+      break;
     default:
       reader.skipField();
       break;
@@ -5639,16 +5643,31 @@ proto.mruv.objects.FetchAllRequest.prototype.serializeBinary = function() {
  */
 proto.mruv.objects.FetchAllRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
+  f = message.getChunkSize();
+  if (f !== 0) {
+    writer.writeUint32(
+      1,
+      f
+    );
+  }
 };
 
 
-
 /**
- * List of repeated fields within this message type.
- * @private {!Array<number>}
- * @const
+ * optional uint32 chunk_size = 1;
+ * @return {number}
  */
-proto.mruv.objects.FetchAllResponse.repeatedFields_ = [1];
+proto.mruv.objects.FetchAllRequest.prototype.getChunkSize = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
+};
+
+
+/** @param {number} value */
+proto.mruv.objects.FetchAllRequest.prototype.setChunkSize = function(value) {
+  jspb.Message.setProto3IntField(this, 1, value);
+};
+
+
 
 
 
@@ -5681,8 +5700,7 @@ proto.mruv.objects.FetchAllResponse.prototype.toObject = function(opt_includeIns
  */
 proto.mruv.objects.FetchAllResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
-    objectsList: jspb.Message.toObjectList(msg.getObjectsList(),
-    proto.mruv.objects.Object.toObject, includeInstance)
+    objectsMap: (f = msg.getObjectsMap()) ? f.toObject(includeInstance, proto.mruv.objects.Object.toObject) : []
   };
 
   if (includeInstance) {
@@ -5720,9 +5738,10 @@ proto.mruv.objects.FetchAllResponse.deserializeBinaryFromReader = function(msg, 
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new proto.mruv.objects.Object;
-      reader.readMessage(value,proto.mruv.objects.Object.deserializeBinaryFromReader);
-      msg.addObjects(value);
+      var value = msg.getObjectsMap();
+      reader.readMessage(value, function(message, reader) {
+        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readInt32, jspb.BinaryReader.prototype.readMessage, proto.mruv.objects.Object.deserializeBinaryFromReader, 0);
+         });
       break;
     default:
       reader.skipField();
@@ -5753,48 +5772,31 @@ proto.mruv.objects.FetchAllResponse.prototype.serializeBinary = function() {
  */
 proto.mruv.objects.FetchAllResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
-  f = message.getObjectsList();
-  if (f.length > 0) {
-    writer.writeRepeatedMessage(
-      1,
-      f,
-      proto.mruv.objects.Object.serializeBinaryToWriter
-    );
+  f = message.getObjectsMap(true);
+  if (f && f.getLength() > 0) {
+    f.serializeBinary(1, writer, jspb.BinaryWriter.prototype.writeInt32, jspb.BinaryWriter.prototype.writeMessage, proto.mruv.objects.Object.serializeBinaryToWriter);
   }
 };
 
 
 /**
- * repeated Object objects = 1;
- * @return {!Array<!proto.mruv.objects.Object>}
+ * map<int32, Object> objects = 1;
+ * @param {boolean=} opt_noLazyCreate Do not create the map if
+ * empty, instead returning `undefined`
+ * @return {!jspb.Map<number,!proto.mruv.objects.Object>}
  */
-proto.mruv.objects.FetchAllResponse.prototype.getObjectsList = function() {
-  return /** @type{!Array<!proto.mruv.objects.Object>} */ (
-    jspb.Message.getRepeatedWrapperField(this, proto.mruv.objects.Object, 1));
-};
-
-
-/** @param {!Array<!proto.mruv.objects.Object>} value */
-proto.mruv.objects.FetchAllResponse.prototype.setObjectsList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 1, value);
-};
-
-
-/**
- * @param {!proto.mruv.objects.Object=} opt_value
- * @param {number=} opt_index
- * @return {!proto.mruv.objects.Object}
- */
-proto.mruv.objects.FetchAllResponse.prototype.addObjects = function(opt_value, opt_index) {
-  return jspb.Message.addToRepeatedWrapperField(this, 1, opt_value, proto.mruv.objects.Object, opt_index);
+proto.mruv.objects.FetchAllResponse.prototype.getObjectsMap = function(opt_noLazyCreate) {
+  return /** @type {!jspb.Map<number,!proto.mruv.objects.Object>} */ (
+      jspb.Message.getMapField(this, 1, opt_noLazyCreate,
+      proto.mruv.objects.Object));
 };
 
 
 /**
- * Clears the list making it empty but non-null.
+ * Clears values from the map. The map will be non-null.
  */
-proto.mruv.objects.FetchAllResponse.prototype.clearObjectsList = function() {
-  this.setObjectsList([]);
+proto.mruv.objects.FetchAllResponse.prototype.clearObjectsMap = function() {
+  this.getObjectsMap().clear();
 };
 
 

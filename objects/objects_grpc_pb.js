@@ -476,7 +476,7 @@ var MruVObjectsServiceService = exports.MruVObjectsServiceService = {
   fetchAll: {
     path: '/mruv.objects.MruVObjectsService/FetchAll',
     requestStream: false,
-    responseStream: false,
+    responseStream: true,
     requestType: objects_objects_pb.FetchAllRequest,
     responseType: objects_objects_pb.FetchAllResponse,
     requestSerialize: serialize_mruv_objects_FetchAllRequest,
