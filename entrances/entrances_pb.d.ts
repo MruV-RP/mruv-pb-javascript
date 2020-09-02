@@ -425,3 +425,42 @@ export namespace ExitResponse {
   }
 }
 
+export class FetchAllEntrancesRequest extends jspb.Message {
+  getChunkSize(): number;
+  setChunkSize(value: number): void;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): FetchAllEntrancesRequest.AsObject;
+  static toObject(includeInstance: boolean, msg: FetchAllEntrancesRequest): FetchAllEntrancesRequest.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: FetchAllEntrancesRequest, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): FetchAllEntrancesRequest;
+  static deserializeBinaryFromReader(message: FetchAllEntrancesRequest, reader: jspb.BinaryReader): FetchAllEntrancesRequest;
+}
+
+export namespace FetchAllEntrancesRequest {
+  export type AsObject = {
+    chunkSize: number,
+  }
+}
+
+export class FetchAllEntrancesResponse extends jspb.Message {
+  getEntrancesMap(): jspb.Map<number, Entrance>;
+  clearEntrancesMap(): void;
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): FetchAllEntrancesResponse.AsObject;
+  static toObject(includeInstance: boolean, msg: FetchAllEntrancesResponse): FetchAllEntrancesResponse.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: FetchAllEntrancesResponse, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): FetchAllEntrancesResponse;
+  static deserializeBinaryFromReader(message: FetchAllEntrancesResponse, reader: jspb.BinaryReader): FetchAllEntrancesResponse;
+}
+
+export namespace FetchAllEntrancesResponse {
+  export type AsObject = {
+    entrancesMap: Array<[number, Entrance.AsObject]>,
+  }
+}
+

@@ -444,3 +444,42 @@ export namespace FindNearestGateResponse {
   }
 }
 
+export class FetchAllGatesRequest extends jspb.Message {
+  getChunkSize(): number;
+  setChunkSize(value: number): void;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): FetchAllGatesRequest.AsObject;
+  static toObject(includeInstance: boolean, msg: FetchAllGatesRequest): FetchAllGatesRequest.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: FetchAllGatesRequest, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): FetchAllGatesRequest;
+  static deserializeBinaryFromReader(message: FetchAllGatesRequest, reader: jspb.BinaryReader): FetchAllGatesRequest;
+}
+
+export namespace FetchAllGatesRequest {
+  export type AsObject = {
+    chunkSize: number,
+  }
+}
+
+export class FetchAllGatesResponse extends jspb.Message {
+  getGatesMap(): jspb.Map<number, Gate>;
+  clearGatesMap(): void;
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): FetchAllGatesResponse.AsObject;
+  static toObject(includeInstance: boolean, msg: FetchAllGatesResponse): FetchAllGatesResponse.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: FetchAllGatesResponse, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): FetchAllGatesResponse;
+  static deserializeBinaryFromReader(message: FetchAllGatesResponse, reader: jspb.BinaryReader): FetchAllGatesResponse;
+}
+
+export namespace FetchAllGatesResponse {
+  export type AsObject = {
+    gatesMap: Array<[number, Gate.AsObject]>,
+  }
+}
+

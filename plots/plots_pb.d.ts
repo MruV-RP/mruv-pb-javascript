@@ -5,6 +5,36 @@ import * as jspb from "google-protobuf";
 import * as google_api_annotations_pb from "../google/api/annotations_pb";
 import * as common_spatial_pb from "../common/spatial_pb";
 
+export class Plot extends jspb.Message {
+  getName(): string;
+  setName(value: string): void;
+
+  getDescription(): string;
+  setDescription(value: string): void;
+
+  clearPointsList(): void;
+  getPointsList(): Array<common_spatial_pb.Position>;
+  setPointsList(value: Array<common_spatial_pb.Position>): void;
+  addPoints(value?: common_spatial_pb.Position, index?: number): common_spatial_pb.Position;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): Plot.AsObject;
+  static toObject(includeInstance: boolean, msg: Plot): Plot.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: Plot, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): Plot;
+  static deserializeBinaryFromReader(message: Plot, reader: jspb.BinaryReader): Plot;
+}
+
+export namespace Plot {
+  export type AsObject = {
+    name: string,
+    description: string,
+    pointsList: Array<common_spatial_pb.Position.AsObject>,
+  }
+}
+
 export class CreatePlotRequest extends jspb.Message {
   getName(): string;
   setName(value: string): void;

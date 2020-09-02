@@ -3,6 +3,7 @@
 
 import * as jspb from "google-protobuf";
 import * as google_api_annotations_pb from "../google/api/annotations_pb";
+import * as objects_objects_pb from "../objects/objects_pb";
 import * as entrances_entrances_pb from "../entrances/entrances_pb";
 import * as gates_gates_pb from "../gates/gates_pb";
 
@@ -53,6 +54,46 @@ export namespace Estate {
     gatesList: Array<number>,
     roomsList: Array<number>,
     productId: number,
+  }
+}
+
+export class FullEstate extends jspb.Message {
+  getId(): number;
+  setId(value: number): void;
+
+  getName(): string;
+  setName(value: string): void;
+
+  getDescription(): string;
+  setDescription(value: string): void;
+
+  getObjectsMap(): jspb.Map<number, objects_objects_pb.Object>;
+  clearObjectsMap(): void;
+  getRemovedBuildingsMap(): jspb.Map<number, objects_objects_pb.RemovedBuilding>;
+  clearRemovedBuildingsMap(): void;
+  getEntrancesMap(): jspb.Map<number, entrances_entrances_pb.Entrance>;
+  clearEntrancesMap(): void;
+  getGatesMap(): jspb.Map<number, gates_gates_pb.Gate>;
+  clearGatesMap(): void;
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): FullEstate.AsObject;
+  static toObject(includeInstance: boolean, msg: FullEstate): FullEstate.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: FullEstate, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): FullEstate;
+  static deserializeBinaryFromReader(message: FullEstate, reader: jspb.BinaryReader): FullEstate;
+}
+
+export namespace FullEstate {
+  export type AsObject = {
+    id: number,
+    name: string,
+    description: string,
+    objectsMap: Array<[number, objects_objects_pb.Object.AsObject]>,
+    removedBuildingsMap: Array<[number, objects_objects_pb.RemovedBuilding.AsObject]>,
+    entrancesMap: Array<[number, entrances_entrances_pb.Entrance.AsObject]>,
+    gatesMap: Array<[number, gates_gates_pb.Gate.AsObject]>,
   }
 }
 
@@ -487,6 +528,48 @@ export class GetEstateEntrancesResponse extends jspb.Message {
 export namespace GetEstateEntrancesResponse {
   export type AsObject = {
     entrancesList: Array<entrances_entrances_pb.Entrance.AsObject>,
+  }
+}
+
+export class FetchAllEstatesRequest extends jspb.Message {
+  getChunkSize(): number;
+  setChunkSize(value: number): void;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): FetchAllEstatesRequest.AsObject;
+  static toObject(includeInstance: boolean, msg: FetchAllEstatesRequest): FetchAllEstatesRequest.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: FetchAllEstatesRequest, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): FetchAllEstatesRequest;
+  static deserializeBinaryFromReader(message: FetchAllEstatesRequest, reader: jspb.BinaryReader): FetchAllEstatesRequest;
+}
+
+export namespace FetchAllEstatesRequest {
+  export type AsObject = {
+    chunkSize: number,
+  }
+}
+
+export class FetchAllEstatesResponse extends jspb.Message {
+  clearEstatesList(): void;
+  getEstatesList(): Array<FullEstate>;
+  setEstatesList(value: Array<FullEstate>): void;
+  addEstates(value?: FullEstate, index?: number): FullEstate;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): FetchAllEstatesResponse.AsObject;
+  static toObject(includeInstance: boolean, msg: FetchAllEstatesResponse): FetchAllEstatesResponse.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: FetchAllEstatesResponse, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): FetchAllEstatesResponse;
+  static deserializeBinaryFromReader(message: FetchAllEstatesResponse, reader: jspb.BinaryReader): FetchAllEstatesResponse;
+}
+
+export namespace FetchAllEstatesResponse {
+  export type AsObject = {
+    estatesList: Array<FullEstate.AsObject>,
   }
 }
 

@@ -18,6 +18,7 @@ interface IMruVEstateServiceService extends grpc.ServiceDefinition<grpc.UntypedS
   addEntrance: grpc.MethodDefinition<estates_estates_pb.AddEntranceRequest, estates_estates_pb.AddEntranceResponse>;
   removeEntrance: grpc.MethodDefinition<estates_estates_pb.RemoveEntranceRequest, estates_estates_pb.RemoveEntranceResponse>;
   getEstateEntrances: grpc.MethodDefinition<estates_estates_pb.GetEstateEntrancesRequest, estates_estates_pb.GetEstateEntrancesResponse>;
+  fetchAll: grpc.MethodDefinition<estates_estates_pb.FetchAllEstatesRequest, estates_estates_pb.FetchAllEstatesResponse>;
 }
 
 export const MruVEstateServiceService: IMruVEstateServiceService;
@@ -57,4 +58,6 @@ export class MruVEstateServiceClient extends grpc.Client {
   getEstateEntrances(argument: estates_estates_pb.GetEstateEntrancesRequest, callback: grpc.requestCallback<estates_estates_pb.GetEstateEntrancesResponse>): grpc.ClientUnaryCall;
   getEstateEntrances(argument: estates_estates_pb.GetEstateEntrancesRequest, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<estates_estates_pb.GetEstateEntrancesResponse>): grpc.ClientUnaryCall;
   getEstateEntrances(argument: estates_estates_pb.GetEstateEntrancesRequest, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<estates_estates_pb.GetEstateEntrancesResponse>): grpc.ClientUnaryCall;
+  fetchAll(argument: estates_estates_pb.FetchAllEstatesRequest, metadataOrOptions?: grpc.Metadata | grpc.CallOptions | null): grpc.ClientReadableStream<estates_estates_pb.FetchAllEstatesResponse>;
+  fetchAll(argument: estates_estates_pb.FetchAllEstatesRequest, metadata?: grpc.Metadata | null, options?: grpc.CallOptions | null): grpc.ClientReadableStream<estates_estates_pb.FetchAllEstatesResponse>;
 }

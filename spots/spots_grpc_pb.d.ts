@@ -11,6 +11,7 @@ interface IMruVSpotsServiceService extends grpc.ServiceDefinition<grpc.UntypedSe
   getSpot: grpc.MethodDefinition<spots_spots_pb.GetSpotRequest, spots_spots_pb.GetSpotResponse>;
   updateSpot: grpc.MethodDefinition<spots_spots_pb.UpdateSpotRequest, spots_spots_pb.UpdateSpotResponse>;
   deleteSpot: grpc.MethodDefinition<spots_spots_pb.DeleteSpotRequest, spots_spots_pb.DeleteSpotResponse>;
+  fetchAll: grpc.MethodDefinition<spots_spots_pb.FetchAllSpotsRequest, spots_spots_pb.FetchAllSpotsResponse>;
 }
 
 export const MruVSpotsServiceService: IMruVSpotsServiceService;
@@ -29,4 +30,6 @@ export class MruVSpotsServiceClient extends grpc.Client {
   deleteSpot(argument: spots_spots_pb.DeleteSpotRequest, callback: grpc.requestCallback<spots_spots_pb.DeleteSpotResponse>): grpc.ClientUnaryCall;
   deleteSpot(argument: spots_spots_pb.DeleteSpotRequest, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<spots_spots_pb.DeleteSpotResponse>): grpc.ClientUnaryCall;
   deleteSpot(argument: spots_spots_pb.DeleteSpotRequest, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<spots_spots_pb.DeleteSpotResponse>): grpc.ClientUnaryCall;
+  fetchAll(argument: spots_spots_pb.FetchAllSpotsRequest, metadataOrOptions?: grpc.Metadata | grpc.CallOptions | null): grpc.ClientReadableStream<spots_spots_pb.FetchAllSpotsResponse>;
+  fetchAll(argument: spots_spots_pb.FetchAllSpotsRequest, metadata?: grpc.Metadata | null, options?: grpc.CallOptions | null): grpc.ClientReadableStream<spots_spots_pb.FetchAllSpotsResponse>;
 }

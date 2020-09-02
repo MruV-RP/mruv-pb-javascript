@@ -14,6 +14,7 @@ interface IMruVMovableObjectsServiceService extends grpc.ServiceDefinition<grpc.
   moveObject: grpc.MethodDefinition<objects_movable_pb.MoveObjectRequest, objects_movable_pb.MoveObjectResponse>;
   moveObjectNext: grpc.MethodDefinition<objects_movable_pb.MoveObjectNextRequest, objects_movable_pb.MoveObjectNextResponse>;
   moveObjectPrevious: grpc.MethodDefinition<objects_movable_pb.MoveObjectPreviousRequest, objects_movable_pb.MoveObjectPreviousResponse>;
+  fetchAll: grpc.MethodDefinition<objects_movable_pb.FetchAllMovableObjectsRequest, objects_movable_pb.FetchAllMovableObjectsResponse>;
 }
 
 export const MruVMovableObjectsServiceService: IMruVMovableObjectsServiceService;
@@ -41,4 +42,6 @@ export class MruVMovableObjectsServiceClient extends grpc.Client {
   moveObjectPrevious(argument: objects_movable_pb.MoveObjectPreviousRequest, callback: grpc.requestCallback<objects_movable_pb.MoveObjectPreviousResponse>): grpc.ClientUnaryCall;
   moveObjectPrevious(argument: objects_movable_pb.MoveObjectPreviousRequest, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<objects_movable_pb.MoveObjectPreviousResponse>): grpc.ClientUnaryCall;
   moveObjectPrevious(argument: objects_movable_pb.MoveObjectPreviousRequest, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<objects_movable_pb.MoveObjectPreviousResponse>): grpc.ClientUnaryCall;
+  fetchAll(argument: objects_movable_pb.FetchAllMovableObjectsRequest, metadataOrOptions?: grpc.Metadata | grpc.CallOptions | null): grpc.ClientReadableStream<objects_movable_pb.FetchAllMovableObjectsResponse>;
+  fetchAll(argument: objects_movable_pb.FetchAllMovableObjectsRequest, metadata?: grpc.Metadata | null, options?: grpc.CallOptions | null): grpc.ClientReadableStream<objects_movable_pb.FetchAllMovableObjectsResponse>;
 }

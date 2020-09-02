@@ -49,6 +49,28 @@ function deserialize_mruv_spots_DeleteSpotResponse(buffer_arg) {
   return spots_spots_pb.DeleteSpotResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
+function serialize_mruv_spots_FetchAllSpotsRequest(arg) {
+  if (!(arg instanceof spots_spots_pb.FetchAllSpotsRequest)) {
+    throw new Error('Expected argument of type mruv.spots.FetchAllSpotsRequest');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_spots_FetchAllSpotsRequest(buffer_arg) {
+  return spots_spots_pb.FetchAllSpotsRequest.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_spots_FetchAllSpotsResponse(arg) {
+  if (!(arg instanceof spots_spots_pb.FetchAllSpotsResponse)) {
+    throw new Error('Expected argument of type mruv.spots.FetchAllSpotsResponse');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_spots_FetchAllSpotsResponse(buffer_arg) {
+  return spots_spots_pb.FetchAllSpotsResponse.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
 function serialize_mruv_spots_GetSpotRequest(arg) {
   if (!(arg instanceof spots_spots_pb.GetSpotRequest)) {
     throw new Error('Expected argument of type mruv.spots.GetSpotRequest');
@@ -143,6 +165,18 @@ var MruVSpotsServiceService = exports.MruVSpotsServiceService = {
     requestDeserialize: deserialize_mruv_spots_DeleteSpotRequest,
     responseSerialize: serialize_mruv_spots_DeleteSpotResponse,
     responseDeserialize: deserialize_mruv_spots_DeleteSpotResponse,
+  },
+  // Fetch all spots.
+  fetchAll: {
+    path: '/mruv.spots.MruVSpotsService/FetchAll',
+    requestStream: false,
+    responseStream: true,
+    requestType: spots_spots_pb.FetchAllSpotsRequest,
+    responseType: spots_spots_pb.FetchAllSpotsResponse,
+    requestSerialize: serialize_mruv_spots_FetchAllSpotsRequest,
+    requestDeserialize: deserialize_mruv_spots_FetchAllSpotsRequest,
+    responseSerialize: serialize_mruv_spots_FetchAllSpotsResponse,
+    responseDeserialize: deserialize_mruv_spots_FetchAllSpotsResponse,
   },
 };
 

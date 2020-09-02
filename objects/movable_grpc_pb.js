@@ -50,6 +50,28 @@ function deserialize_mruv_objects_DeleteMovableObjectResponse(buffer_arg) {
   return objects_movable_pb.DeleteMovableObjectResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
+function serialize_mruv_objects_FetchAllMovableObjectsRequest(arg) {
+  if (!(arg instanceof objects_movable_pb.FetchAllMovableObjectsRequest)) {
+    throw new Error('Expected argument of type mruv.objects.FetchAllMovableObjectsRequest');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_objects_FetchAllMovableObjectsRequest(buffer_arg) {
+  return objects_movable_pb.FetchAllMovableObjectsRequest.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_objects_FetchAllMovableObjectsResponse(arg) {
+  if (!(arg instanceof objects_movable_pb.FetchAllMovableObjectsResponse)) {
+    throw new Error('Expected argument of type mruv.objects.FetchAllMovableObjectsResponse');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_objects_FetchAllMovableObjectsResponse(buffer_arg) {
+  return objects_movable_pb.FetchAllMovableObjectsResponse.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
 function serialize_mruv_objects_GetMovableObjectRequest(arg) {
   if (!(arg instanceof objects_movable_pb.GetMovableObjectRequest)) {
     throw new Error('Expected argument of type mruv.objects.GetMovableObjectRequest');
@@ -246,6 +268,18 @@ var MruVMovableObjectsServiceService = exports.MruVMovableObjectsServiceService 
     requestDeserialize: deserialize_mruv_objects_MoveObjectPreviousRequest,
     responseSerialize: serialize_mruv_objects_MoveObjectPreviousResponse,
     responseDeserialize: deserialize_mruv_objects_MoveObjectPreviousResponse,
+  },
+  //
+  fetchAll: {
+    path: '/mruv.objects.MruVMovableObjectsService/FetchAll',
+    requestStream: false,
+    responseStream: true,
+    requestType: objects_movable_pb.FetchAllMovableObjectsRequest,
+    responseType: objects_movable_pb.FetchAllMovableObjectsResponse,
+    requestSerialize: serialize_mruv_objects_FetchAllMovableObjectsRequest,
+    requestDeserialize: deserialize_mruv_objects_FetchAllMovableObjectsRequest,
+    responseSerialize: serialize_mruv_objects_FetchAllMovableObjectsResponse,
+    responseDeserialize: deserialize_mruv_objects_FetchAllMovableObjectsResponse,
   },
 };
 

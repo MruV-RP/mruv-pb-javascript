@@ -16,6 +16,7 @@ interface IMruVGatesServiceService extends grpc.ServiceDefinition<grpc.UntypedSe
   open: grpc.MethodDefinition<gates_gates_pb.OpenRequest, gates_gates_pb.OpenResponse>;
   close: grpc.MethodDefinition<gates_gates_pb.CloseRequest, gates_gates_pb.CloseResponse>;
   findNearestGate: grpc.MethodDefinition<gates_gates_pb.FindNearestGateRequest, gates_gates_pb.FindNearestGateResponse>;
+  fetchAll: grpc.MethodDefinition<gates_gates_pb.FetchAllGatesRequest, gates_gates_pb.FetchAllGatesResponse>;
 }
 
 export const MruVGatesServiceService: IMruVGatesServiceService;
@@ -49,4 +50,6 @@ export class MruVGatesServiceClient extends grpc.Client {
   findNearestGate(argument: gates_gates_pb.FindNearestGateRequest, callback: grpc.requestCallback<gates_gates_pb.FindNearestGateResponse>): grpc.ClientUnaryCall;
   findNearestGate(argument: gates_gates_pb.FindNearestGateRequest, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<gates_gates_pb.FindNearestGateResponse>): grpc.ClientUnaryCall;
   findNearestGate(argument: gates_gates_pb.FindNearestGateRequest, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<gates_gates_pb.FindNearestGateResponse>): grpc.ClientUnaryCall;
+  fetchAll(argument: gates_gates_pb.FetchAllGatesRequest, metadataOrOptions?: grpc.Metadata | grpc.CallOptions | null): grpc.ClientReadableStream<gates_gates_pb.FetchAllGatesResponse>;
+  fetchAll(argument: gates_gates_pb.FetchAllGatesRequest, metadata?: grpc.Metadata | null, options?: grpc.CallOptions | null): grpc.ClientReadableStream<gates_gates_pb.FetchAllGatesResponse>;
 }

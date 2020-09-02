@@ -94,6 +94,28 @@ function deserialize_mruv_entrances_ExitResponse(buffer_arg) {
   return entrances_entrances_pb.ExitResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
+function serialize_mruv_entrances_FetchAllEntrancesRequest(arg) {
+  if (!(arg instanceof entrances_entrances_pb.FetchAllEntrancesRequest)) {
+    throw new Error('Expected argument of type mruv.entrances.FetchAllEntrancesRequest');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_entrances_FetchAllEntrancesRequest(buffer_arg) {
+  return entrances_entrances_pb.FetchAllEntrancesRequest.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_entrances_FetchAllEntrancesResponse(arg) {
+  if (!(arg instanceof entrances_entrances_pb.FetchAllEntrancesResponse)) {
+    throw new Error('Expected argument of type mruv.entrances.FetchAllEntrancesResponse');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_entrances_FetchAllEntrancesResponse(buffer_arg) {
+  return entrances_entrances_pb.FetchAllEntrancesResponse.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
 function serialize_mruv_entrances_FindNearestEntranceRequest(arg) {
   if (!(arg instanceof entrances_entrances_pb.FindNearestEntranceRequest)) {
     throw new Error('Expected argument of type mruv.entrances.FindNearestEntranceRequest');
@@ -314,6 +336,18 @@ var MruVEntrancesServiceService = exports.MruVEntrancesServiceService = {
     requestDeserialize: deserialize_mruv_entrances_ExitRequest,
     responseSerialize: serialize_mruv_entrances_ExitResponse,
     responseDeserialize: deserialize_mruv_entrances_ExitResponse,
+  },
+  //
+  fetchAll: {
+    path: '/mruv.entrances.MruVEntrancesService/FetchAll',
+    requestStream: false,
+    responseStream: true,
+    requestType: entrances_entrances_pb.FetchAllEntrancesRequest,
+    responseType: entrances_entrances_pb.FetchAllEntrancesResponse,
+    requestSerialize: serialize_mruv_entrances_FetchAllEntrancesRequest,
+    requestDeserialize: deserialize_mruv_entrances_FetchAllEntrancesRequest,
+    responseSerialize: serialize_mruv_entrances_FetchAllEntrancesResponse,
+    responseDeserialize: deserialize_mruv_entrances_FetchAllEntrancesResponse,
   },
 };
 

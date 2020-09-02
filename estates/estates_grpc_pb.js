@@ -4,6 +4,7 @@
 var grpc = require('grpc');
 var estates_estates_pb = require('../estates/estates_pb.js');
 var google_api_annotations_pb = require('../google/api/annotations_pb.js');
+var objects_objects_pb = require('../objects/objects_pb.js');
 var entrances_entrances_pb = require('../entrances/entrances_pb.js');
 var gates_gates_pb = require('../gates/gates_pb.js');
 
@@ -104,6 +105,28 @@ function serialize_mruv_estates_Estate(arg) {
 
 function deserialize_mruv_estates_Estate(buffer_arg) {
   return estates_estates_pb.Estate.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_estates_FetchAllEstatesRequest(arg) {
+  if (!(arg instanceof estates_estates_pb.FetchAllEstatesRequest)) {
+    throw new Error('Expected argument of type mruv.estates.FetchAllEstatesRequest');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_estates_FetchAllEstatesRequest(buffer_arg) {
+  return estates_estates_pb.FetchAllEstatesRequest.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_estates_FetchAllEstatesResponse(arg) {
+  if (!(arg instanceof estates_estates_pb.FetchAllEstatesResponse)) {
+    throw new Error('Expected argument of type mruv.estates.FetchAllEstatesResponse');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_estates_FetchAllEstatesResponse(buffer_arg) {
+  return estates_estates_pb.FetchAllEstatesResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_mruv_estates_GetEstateEntrancesRequest(arg) {
@@ -383,6 +406,18 @@ var MruVEstateServiceService = exports.MruVEstateServiceService = {
     requestDeserialize: deserialize_mruv_estates_GetEstateEntrancesRequest,
     responseSerialize: serialize_mruv_estates_GetEstateEntrancesResponse,
     responseDeserialize: deserialize_mruv_estates_GetEstateEntrancesResponse,
+  },
+  // Get full estates data
+  fetchAll: {
+    path: '/mruv.estates.MruVEstateService/FetchAll',
+    requestStream: false,
+    responseStream: true,
+    requestType: estates_estates_pb.FetchAllEstatesRequest,
+    responseType: estates_estates_pb.FetchAllEstatesResponse,
+    requestSerialize: serialize_mruv_estates_FetchAllEstatesRequest,
+    requestDeserialize: deserialize_mruv_estates_FetchAllEstatesRequest,
+    responseSerialize: serialize_mruv_estates_FetchAllEstatesResponse,
+    responseDeserialize: deserialize_mruv_estates_FetchAllEstatesResponse,
   },
 };
 

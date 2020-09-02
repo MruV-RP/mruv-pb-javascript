@@ -73,6 +73,28 @@ function deserialize_mruv_gates_DeleteGateResponse(buffer_arg) {
   return gates_gates_pb.DeleteGateResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
+function serialize_mruv_gates_FetchAllGatesRequest(arg) {
+  if (!(arg instanceof gates_gates_pb.FetchAllGatesRequest)) {
+    throw new Error('Expected argument of type mruv.gates.FetchAllGatesRequest');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_gates_FetchAllGatesRequest(buffer_arg) {
+  return gates_gates_pb.FetchAllGatesRequest.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_gates_FetchAllGatesResponse(arg) {
+  if (!(arg instanceof gates_gates_pb.FetchAllGatesResponse)) {
+    throw new Error('Expected argument of type mruv.gates.FetchAllGatesResponse');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_gates_FetchAllGatesResponse(buffer_arg) {
+  return gates_gates_pb.FetchAllGatesResponse.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
 function serialize_mruv_gates_FindNearestGateRequest(arg) {
   if (!(arg instanceof gates_gates_pb.FindNearestGateRequest)) {
     throw new Error('Expected argument of type mruv.gates.FindNearestGateRequest');
@@ -315,6 +337,18 @@ var MruVGatesServiceService = exports.MruVGatesServiceService = {
     requestDeserialize: deserialize_mruv_gates_FindNearestGateRequest,
     responseSerialize: serialize_mruv_gates_FindNearestGateResponse,
     responseDeserialize: deserialize_mruv_gates_FindNearestGateResponse,
+  },
+  //
+  fetchAll: {
+    path: '/mruv.gates.MruVGatesService/FetchAll',
+    requestStream: false,
+    responseStream: true,
+    requestType: gates_gates_pb.FetchAllGatesRequest,
+    responseType: gates_gates_pb.FetchAllGatesResponse,
+    requestSerialize: serialize_mruv_gates_FetchAllGatesRequest,
+    requestDeserialize: deserialize_mruv_gates_FetchAllGatesRequest,
+    responseSerialize: serialize_mruv_gates_FetchAllGatesResponse,
+    responseDeserialize: deserialize_mruv_gates_FetchAllGatesResponse,
   },
 };
 

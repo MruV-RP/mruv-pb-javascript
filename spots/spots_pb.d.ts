@@ -218,3 +218,42 @@ export namespace DeleteSpotResponse {
   }
 }
 
+export class FetchAllSpotsRequest extends jspb.Message {
+  getChunkSize(): number;
+  setChunkSize(value: number): void;
+
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): FetchAllSpotsRequest.AsObject;
+  static toObject(includeInstance: boolean, msg: FetchAllSpotsRequest): FetchAllSpotsRequest.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: FetchAllSpotsRequest, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): FetchAllSpotsRequest;
+  static deserializeBinaryFromReader(message: FetchAllSpotsRequest, reader: jspb.BinaryReader): FetchAllSpotsRequest;
+}
+
+export namespace FetchAllSpotsRequest {
+  export type AsObject = {
+    chunkSize: number,
+  }
+}
+
+export class FetchAllSpotsResponse extends jspb.Message {
+  getSpotsMap(): jspb.Map<number, Spot>;
+  clearSpotsMap(): void;
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): FetchAllSpotsResponse.AsObject;
+  static toObject(includeInstance: boolean, msg: FetchAllSpotsResponse): FetchAllSpotsResponse.AsObject;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: FetchAllSpotsResponse, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): FetchAllSpotsResponse;
+  static deserializeBinaryFromReader(message: FetchAllSpotsResponse, reader: jspb.BinaryReader): FetchAllSpotsResponse;
+}
+
+export namespace FetchAllSpotsResponse {
+  export type AsObject = {
+    spotsMap: Array<[number, Spot.AsObject]>,
+  }
+}
+

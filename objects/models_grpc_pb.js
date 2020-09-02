@@ -49,6 +49,28 @@ function deserialize_mruv_objects_DeleteObjectModelResponse(buffer_arg) {
   return objects_models_pb.DeleteObjectModelResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
+function serialize_mruv_objects_FetchAllModelsRequest(arg) {
+  if (!(arg instanceof objects_models_pb.FetchAllModelsRequest)) {
+    throw new Error('Expected argument of type mruv.objects.FetchAllModelsRequest');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_objects_FetchAllModelsRequest(buffer_arg) {
+  return objects_models_pb.FetchAllModelsRequest.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_objects_FetchAllModelsResponse(arg) {
+  if (!(arg instanceof objects_models_pb.FetchAllModelsResponse)) {
+    throw new Error('Expected argument of type mruv.objects.FetchAllModelsResponse');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_objects_FetchAllModelsResponse(buffer_arg) {
+  return objects_models_pb.FetchAllModelsResponse.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
 function serialize_mruv_objects_GetObjectModelRequest(arg) {
   if (!(arg instanceof objects_models_pb.GetObjectModelRequest)) {
     throw new Error('Expected argument of type mruv.objects.GetObjectModelRequest');
@@ -143,6 +165,18 @@ var MruVObjectModelsServiceService = exports.MruVObjectModelsServiceService = {
     requestDeserialize: deserialize_mruv_objects_DeleteObjectModelRequest,
     responseSerialize: serialize_mruv_objects_DeleteObjectModelResponse,
     responseDeserialize: deserialize_mruv_objects_DeleteObjectModelResponse,
+  },
+  // Get all models.
+  fetchAll: {
+    path: '/mruv.objects.MruVObjectModelsService/FetchAll',
+    requestStream: false,
+    responseStream: true,
+    requestType: objects_models_pb.FetchAllModelsRequest,
+    responseType: objects_models_pb.FetchAllModelsResponse,
+    requestSerialize: serialize_mruv_objects_FetchAllModelsRequest,
+    requestDeserialize: deserialize_mruv_objects_FetchAllModelsRequest,
+    responseSerialize: serialize_mruv_objects_FetchAllModelsResponse,
+    responseDeserialize: deserialize_mruv_objects_FetchAllModelsResponse,
   },
 };
 

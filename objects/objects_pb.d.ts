@@ -681,10 +681,10 @@ export namespace GetRemovedBuildingsRequest {
 }
 
 export class GetRemovedBuildingsResponse extends jspb.Message {
-  clearRemovedBuildingList(): void;
-  getRemovedBuildingList(): Array<RemovedBuilding>;
-  setRemovedBuildingList(value: Array<RemovedBuilding>): void;
-  addRemovedBuilding(value?: RemovedBuilding, index?: number): RemovedBuilding;
+  clearRemovedBuildingsList(): void;
+  getRemovedBuildingsList(): Array<RemovedBuilding>;
+  setRemovedBuildingsList(value: Array<RemovedBuilding>): void;
+  addRemovedBuildings(value?: RemovedBuilding, index?: number): RemovedBuilding;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): GetRemovedBuildingsResponse.AsObject;
@@ -698,7 +698,7 @@ export class GetRemovedBuildingsResponse extends jspb.Message {
 
 export namespace GetRemovedBuildingsResponse {
   export type AsObject = {
-    removedBuildingList: Array<RemovedBuilding.AsObject>,
+    removedBuildingsList: Array<RemovedBuilding.AsObject>,
   }
 }
 
@@ -738,40 +738,44 @@ export namespace DeleteRemoveBuildingResponse {
   }
 }
 
-export class FetchAllRequest extends jspb.Message {
+export class FetchAllObjectsRequest extends jspb.Message {
   getChunkSize(): number;
   setChunkSize(value: number): void;
 
+  getEstateId(): number;
+  setEstateId(value: number): void;
+
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): FetchAllRequest.AsObject;
-  static toObject(includeInstance: boolean, msg: FetchAllRequest): FetchAllRequest.AsObject;
+  toObject(includeInstance?: boolean): FetchAllObjectsRequest.AsObject;
+  static toObject(includeInstance: boolean, msg: FetchAllObjectsRequest): FetchAllObjectsRequest.AsObject;
   static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
   static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-  static serializeBinaryToWriter(message: FetchAllRequest, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): FetchAllRequest;
-  static deserializeBinaryFromReader(message: FetchAllRequest, reader: jspb.BinaryReader): FetchAllRequest;
+  static serializeBinaryToWriter(message: FetchAllObjectsRequest, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): FetchAllObjectsRequest;
+  static deserializeBinaryFromReader(message: FetchAllObjectsRequest, reader: jspb.BinaryReader): FetchAllObjectsRequest;
 }
 
-export namespace FetchAllRequest {
+export namespace FetchAllObjectsRequest {
   export type AsObject = {
     chunkSize: number,
+    estateId: number,
   }
 }
 
-export class FetchAllResponse extends jspb.Message {
+export class FetchAllObjectsResponse extends jspb.Message {
   getObjectsMap(): jspb.Map<number, Object>;
   clearObjectsMap(): void;
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): FetchAllResponse.AsObject;
-  static toObject(includeInstance: boolean, msg: FetchAllResponse): FetchAllResponse.AsObject;
+  toObject(includeInstance?: boolean): FetchAllObjectsResponse.AsObject;
+  static toObject(includeInstance: boolean, msg: FetchAllObjectsResponse): FetchAllObjectsResponse.AsObject;
   static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
   static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-  static serializeBinaryToWriter(message: FetchAllResponse, writer: jspb.BinaryWriter): void;
-  static deserializeBinary(bytes: Uint8Array): FetchAllResponse;
-  static deserializeBinaryFromReader(message: FetchAllResponse, reader: jspb.BinaryReader): FetchAllResponse;
+  static serializeBinaryToWriter(message: FetchAllObjectsResponse, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): FetchAllObjectsResponse;
+  static deserializeBinaryFromReader(message: FetchAllObjectsResponse, reader: jspb.BinaryReader): FetchAllObjectsResponse;
 }
 
-export namespace FetchAllResponse {
+export namespace FetchAllObjectsResponse {
   export type AsObject = {
     objectsMap: Array<[number, Object.AsObject]>,
   }

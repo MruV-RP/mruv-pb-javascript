@@ -181,26 +181,26 @@ function deserialize_mruv_objects_DeleteRemoveBuildingResponse(buffer_arg) {
   return objects_objects_pb.DeleteRemoveBuildingResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_objects_FetchAllRequest(arg) {
-  if (!(arg instanceof objects_objects_pb.FetchAllRequest)) {
-    throw new Error('Expected argument of type mruv.objects.FetchAllRequest');
+function serialize_mruv_objects_FetchAllObjectsRequest(arg) {
+  if (!(arg instanceof objects_objects_pb.FetchAllObjectsRequest)) {
+    throw new Error('Expected argument of type mruv.objects.FetchAllObjectsRequest');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_objects_FetchAllRequest(buffer_arg) {
-  return objects_objects_pb.FetchAllRequest.deserializeBinary(new Uint8Array(buffer_arg));
+function deserialize_mruv_objects_FetchAllObjectsRequest(buffer_arg) {
+  return objects_objects_pb.FetchAllObjectsRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_objects_FetchAllResponse(arg) {
-  if (!(arg instanceof objects_objects_pb.FetchAllResponse)) {
-    throw new Error('Expected argument of type mruv.objects.FetchAllResponse');
+function serialize_mruv_objects_FetchAllObjectsResponse(arg) {
+  if (!(arg instanceof objects_objects_pb.FetchAllObjectsResponse)) {
+    throw new Error('Expected argument of type mruv.objects.FetchAllObjectsResponse');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_objects_FetchAllResponse(buffer_arg) {
-  return objects_objects_pb.FetchAllResponse.deserializeBinary(new Uint8Array(buffer_arg));
+function deserialize_mruv_objects_FetchAllObjectsResponse(buffer_arg) {
+  return objects_objects_pb.FetchAllObjectsResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_mruv_objects_GetObjectMaterialTextsRequest(arg) {
@@ -477,12 +477,12 @@ var MruVObjectsServiceService = exports.MruVObjectsServiceService = {
     path: '/mruv.objects.MruVObjectsService/FetchAll',
     requestStream: false,
     responseStream: true,
-    requestType: objects_objects_pb.FetchAllRequest,
-    responseType: objects_objects_pb.FetchAllResponse,
-    requestSerialize: serialize_mruv_objects_FetchAllRequest,
-    requestDeserialize: deserialize_mruv_objects_FetchAllRequest,
-    responseSerialize: serialize_mruv_objects_FetchAllResponse,
-    responseDeserialize: deserialize_mruv_objects_FetchAllResponse,
+    requestType: objects_objects_pb.FetchAllObjectsRequest,
+    responseType: objects_objects_pb.FetchAllObjectsResponse,
+    requestSerialize: serialize_mruv_objects_FetchAllObjectsRequest,
+    requestDeserialize: deserialize_mruv_objects_FetchAllObjectsRequest,
+    responseSerialize: serialize_mruv_objects_FetchAllObjectsResponse,
+    responseDeserialize: deserialize_mruv_objects_FetchAllObjectsResponse,
   },
 };
 
