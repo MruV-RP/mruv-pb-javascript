@@ -473,8 +473,8 @@ var MruVObjectsServiceService = exports.MruVObjectsServiceService = {
     responseDeserialize: deserialize_mruv_objects_DeleteRemoveBuildingResponse,
   },
   // Fetch all existing objects.
-  fetchAll: {
-    path: '/mruv.objects.MruVObjectsService/FetchAll',
+  fetchAllObjects: {
+    path: '/mruv.objects.MruVObjectsService/FetchAllObjects',
     requestStream: false,
     responseStream: true,
     requestType: objects_objects_pb.FetchAllObjectsRequest,

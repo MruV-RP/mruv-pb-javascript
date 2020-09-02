@@ -11,7 +11,7 @@ interface IMruVObjectModelsServiceService extends grpc.ServiceDefinition<grpc.Un
   getObjectModel: grpc.MethodDefinition<objects_models_pb.GetObjectModelRequest, objects_models_pb.GetObjectModelResponse>;
   updateObjectModel: grpc.MethodDefinition<objects_models_pb.UpdateObjectModelRequest, objects_models_pb.UpdateObjectModelResponse>;
   deleteObjectModel: grpc.MethodDefinition<objects_models_pb.DeleteObjectModelRequest, objects_models_pb.DeleteObjectModelResponse>;
-  fetchAll: grpc.MethodDefinition<objects_models_pb.FetchAllModelsRequest, objects_models_pb.FetchAllModelsResponse>;
+  fetchAllModels: grpc.MethodDefinition<objects_models_pb.FetchAllModelsRequest, objects_models_pb.FetchAllModelsResponse>;
 }
 
 export const MruVObjectModelsServiceService: IMruVObjectModelsServiceService;
@@ -30,6 +30,6 @@ export class MruVObjectModelsServiceClient extends grpc.Client {
   deleteObjectModel(argument: objects_models_pb.DeleteObjectModelRequest, callback: grpc.requestCallback<objects_models_pb.DeleteObjectModelResponse>): grpc.ClientUnaryCall;
   deleteObjectModel(argument: objects_models_pb.DeleteObjectModelRequest, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<objects_models_pb.DeleteObjectModelResponse>): grpc.ClientUnaryCall;
   deleteObjectModel(argument: objects_models_pb.DeleteObjectModelRequest, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<objects_models_pb.DeleteObjectModelResponse>): grpc.ClientUnaryCall;
-  fetchAll(argument: objects_models_pb.FetchAllModelsRequest, metadataOrOptions?: grpc.Metadata | grpc.CallOptions | null): grpc.ClientReadableStream<objects_models_pb.FetchAllModelsResponse>;
-  fetchAll(argument: objects_models_pb.FetchAllModelsRequest, metadata?: grpc.Metadata | null, options?: grpc.CallOptions | null): grpc.ClientReadableStream<objects_models_pb.FetchAllModelsResponse>;
+  fetchAllModels(argument: objects_models_pb.FetchAllModelsRequest, metadataOrOptions?: grpc.Metadata | grpc.CallOptions | null): grpc.ClientReadableStream<objects_models_pb.FetchAllModelsResponse>;
+  fetchAllModels(argument: objects_models_pb.FetchAllModelsRequest, metadata?: grpc.Metadata | null, options?: grpc.CallOptions | null): grpc.ClientReadableStream<objects_models_pb.FetchAllModelsResponse>;
 }

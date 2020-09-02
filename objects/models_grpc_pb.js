@@ -167,8 +167,8 @@ var MruVObjectModelsServiceService = exports.MruVObjectModelsServiceService = {
     responseDeserialize: deserialize_mruv_objects_DeleteObjectModelResponse,
   },
   // Get all models.
-  fetchAll: {
-    path: '/mruv.objects.MruVObjectModelsService/FetchAll',
+  fetchAllModels: {
+    path: '/mruv.objects.MruVObjectModelsService/FetchAllModels',
     requestStream: false,
     responseStream: true,
     requestType: objects_models_pb.FetchAllModelsRequest,

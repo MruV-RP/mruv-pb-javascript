@@ -270,8 +270,8 @@ var MruVMovableObjectsServiceService = exports.MruVMovableObjectsServiceService 
     responseDeserialize: deserialize_mruv_objects_MoveObjectPreviousResponse,
   },
   //
-  fetchAll: {
-    path: '/mruv.objects.MruVMovableObjectsService/FetchAll',
+  fetchAllMovableObjects: {
+    path: '/mruv.objects.MruVMovableObjectsService/FetchAllMovableObjects',
     requestStream: false,
     responseStream: true,
     requestType: objects_movable_pb.FetchAllMovableObjectsRequest,

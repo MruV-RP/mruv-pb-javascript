@@ -20,7 +20,7 @@ interface IMruVObjectsServiceService extends grpc.ServiceDefinition<grpc.Untyped
   addRemoveBuilding: grpc.MethodDefinition<objects_objects_pb.AddRemoveBuildingRequest, objects_objects_pb.AddRemoveBuildingResponse>;
   getRemovedBuildings: grpc.MethodDefinition<objects_objects_pb.GetRemovedBuildingsRequest, objects_objects_pb.GetRemovedBuildingsResponse>;
   deleteRemoveBuilding: grpc.MethodDefinition<objects_objects_pb.DeleteRemoveBuildingRequest, objects_objects_pb.DeleteRemoveBuildingResponse>;
-  fetchAll: grpc.MethodDefinition<objects_objects_pb.FetchAllObjectsRequest, objects_objects_pb.FetchAllObjectsResponse>;
+  fetchAllObjects: grpc.MethodDefinition<objects_objects_pb.FetchAllObjectsRequest, objects_objects_pb.FetchAllObjectsResponse>;
 }
 
 export const MruVObjectsServiceService: IMruVObjectsServiceService;
@@ -66,6 +66,6 @@ export class MruVObjectsServiceClient extends grpc.Client {
   deleteRemoveBuilding(argument: objects_objects_pb.DeleteRemoveBuildingRequest, callback: grpc.requestCallback<objects_objects_pb.DeleteRemoveBuildingResponse>): grpc.ClientUnaryCall;
   deleteRemoveBuilding(argument: objects_objects_pb.DeleteRemoveBuildingRequest, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<objects_objects_pb.DeleteRemoveBuildingResponse>): grpc.ClientUnaryCall;
   deleteRemoveBuilding(argument: objects_objects_pb.DeleteRemoveBuildingRequest, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<objects_objects_pb.DeleteRemoveBuildingResponse>): grpc.ClientUnaryCall;
-  fetchAll(argument: objects_objects_pb.FetchAllObjectsRequest, metadataOrOptions?: grpc.Metadata | grpc.CallOptions | null): grpc.ClientReadableStream<objects_objects_pb.FetchAllObjectsResponse>;
-  fetchAll(argument: objects_objects_pb.FetchAllObjectsRequest, metadata?: grpc.Metadata | null, options?: grpc.CallOptions | null): grpc.ClientReadableStream<objects_objects_pb.FetchAllObjectsResponse>;
+  fetchAllObjects(argument: objects_objects_pb.FetchAllObjectsRequest, metadataOrOptions?: grpc.Metadata | grpc.CallOptions | null): grpc.ClientReadableStream<objects_objects_pb.FetchAllObjectsResponse>;
+  fetchAllObjects(argument: objects_objects_pb.FetchAllObjectsRequest, metadata?: grpc.Metadata | null, options?: grpc.CallOptions | null): grpc.ClientReadableStream<objects_objects_pb.FetchAllObjectsResponse>;
 }
