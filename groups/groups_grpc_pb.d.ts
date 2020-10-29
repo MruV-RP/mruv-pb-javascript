@@ -1,6 +1,6 @@
 // GENERATED CODE -- DO NOT EDIT!
 
-// package: mruv
+// package: mruv.groups
 // file: groups/groups.proto
 
 import * as groups_groups_pb from "../groups/groups_pb";

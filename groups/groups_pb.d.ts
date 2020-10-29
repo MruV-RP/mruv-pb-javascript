@@ -1,4 +1,4 @@
-// package: mruv
+// package: mruv.groups
 // file: groups/groups.proto
 
 import * as jspb from "google-protobuf";

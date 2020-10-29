@@ -1,12 +1,13 @@
 // GENERATED CODE -- DO NOT EDIT!
 
-// package: mruv.economy
+// package: mruv.punishments
 // file: punishments/punishments.proto
 
 import * as punishments_punishments_pb from "../punishments/punishments_pb";
 import * as grpc from "grpc";
 
 interface IMruVPunishmentsServiceService extends grpc.ServiceDefinition<grpc.UntypedServiceImplementation> {
+  punish: grpc.MethodDefinition<punishments_punishments_pb.PunishRequest, punishments_punishments_pb.PunishResponse>;
   ban: grpc.MethodDefinition<punishments_punishments_pb.BanRequest, punishments_punishments_pb.BanResponse>;
   block: grpc.MethodDefinition<punishments_punishments_pb.BlockRequest, punishments_punishments_pb.BlockResponse>;
   warn: grpc.MethodDefinition<punishments_punishments_pb.WarnRequest, punishments_punishments_pb.WarnResponse>;
@@ -37,12 +38,16 @@ interface IMruVPunishmentsServiceService extends grpc.ServiceDefinition<grpc.Unt
   watchPlayerPunishments: grpc.MethodDefinition<punishments_punishments_pb.WatchPlayerPunishmentsRequest, punishments_punishments_pb.WatchPlayerPunishmentsResponse>;
   watchPlayerAcquittals: grpc.MethodDefinition<punishments_punishments_pb.WatchPlayerAcquittalsRequest, punishments_punishments_pb.WatchPlayerAcquittalsResponse>;
   watchPunishments: grpc.MethodDefinition<punishments_punishments_pb.WatchPunishmentsRequest, punishments_punishments_pb.WatchPunishmentsResponse>;
+  watchAcquittals: grpc.MethodDefinition<punishments_punishments_pb.WatchAcquittalsRequest, punishments_punishments_pb.WatchAcquittalsResponse>;
 }
 
 export const MruVPunishmentsServiceService: IMruVPunishmentsServiceService;
 
 export class MruVPunishmentsServiceClient extends grpc.Client {
   constructor(address: string, credentials: grpc.ChannelCredentials, options?: object);
+  punish(argument: punishments_punishments_pb.PunishRequest, callback: grpc.requestCallback<punishments_punishments_pb.PunishResponse>): grpc.ClientUnaryCall;
+  punish(argument: punishments_punishments_pb.PunishRequest, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<punishments_punishments_pb.PunishResponse>): grpc.ClientUnaryCall;
+  punish(argument: punishments_punishments_pb.PunishRequest, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<punishments_punishments_pb.PunishResponse>): grpc.ClientUnaryCall;
   ban(argument: punishments_punishments_pb.BanRequest, callback: grpc.requestCallback<punishments_punishments_pb.BanResponse>): grpc.ClientUnaryCall;
   ban(argument: punishments_punishments_pb.BanRequest, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<punishments_punishments_pb.BanResponse>): grpc.ClientUnaryCall;
   ban(argument: punishments_punishments_pb.BanRequest, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<punishments_punishments_pb.BanResponse>): grpc.ClientUnaryCall;
@@ -122,4 +127,7 @@ export class MruVPunishmentsServiceClient extends grpc.Client {
   watchPlayerAcquittals(argument: punishments_punishments_pb.WatchPlayerAcquittalsRequest, metadata?: grpc.Metadata | null, options?: grpc.CallOptions | null): grpc.ClientReadableStream<punishments_punishments_pb.WatchPlayerAcquittalsResponse>;
   watchPunishments(argument: punishments_punishments_pb.WatchPunishmentsRequest, metadataOrOptions?: grpc.Metadata | grpc.CallOptions | null): grpc.ClientReadableStream<punishments_punishments_pb.WatchPunishmentsResponse>;
   watchPunishments(argument: punishments_punishments_pb.WatchPunishmentsRequest, metadata?: grpc.Metadata | null, options?: grpc.CallOptions | null): grpc.ClientReadableStream<punishments_punishments_pb.WatchPunishmentsResponse>;
+  watchAcquittals(argument: punishments_punishments_pb.WatchAcquittalsRequest, callback: grpc.requestCallback<punishments_punishments_pb.WatchAcquittalsResponse>): grpc.ClientUnaryCall;
+  watchAcquittals(argument: punishments_punishments_pb.WatchAcquittalsRequest, metadataOrOptions: grpc.Metadata | grpc.CallOptions | null, callback: grpc.requestCallback<punishments_punishments_pb.WatchAcquittalsResponse>): grpc.ClientUnaryCall;
+  watchAcquittals(argument: punishments_punishments_pb.WatchAcquittalsRequest, metadata: grpc.Metadata | null, options: grpc.CallOptions | null, callback: grpc.requestCallback<punishments_punishments_pb.WatchAcquittalsResponse>): grpc.ClientUnaryCall;
 }

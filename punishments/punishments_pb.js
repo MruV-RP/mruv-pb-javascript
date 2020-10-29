@@ -13,65 +13,68 @@ var global = Function('return this')();
 
 var google_api_annotations_pb = require('../google/api/annotations_pb.js');
 goog.object.extend(proto, google_api_annotations_pb);
-goog.exportSymbol('proto.mruv.economy.AcquittalsType', null, global);
-goog.exportSymbol('proto.mruv.economy.AdminJailMessage', null, global);
-goog.exportSymbol('proto.mruv.economy.AdminJailRequest', null, global);
-goog.exportSymbol('proto.mruv.economy.AdminJailResponse', null, global);
-goog.exportSymbol('proto.mruv.economy.BanMessage', null, global);
-goog.exportSymbol('proto.mruv.economy.BanRequest', null, global);
-goog.exportSymbol('proto.mruv.economy.BanResponse', null, global);
-goog.exportSymbol('proto.mruv.economy.BlockMessage', null, global);
-goog.exportSymbol('proto.mruv.economy.BlockRequest', null, global);
-goog.exportSymbol('proto.mruv.economy.BlockResponse', null, global);
-goog.exportSymbol('proto.mruv.economy.GetBanRequest', null, global);
-goog.exportSymbol('proto.mruv.economy.GetBlockRequest', null, global);
-goog.exportSymbol('proto.mruv.economy.GetPlayerAdminJailRequest', null, global);
-goog.exportSymbol('proto.mruv.economy.GetPlayerAdminJailResponse', null, global);
-goog.exportSymbol('proto.mruv.economy.GetPlayerBansRequest', null, global);
-goog.exportSymbol('proto.mruv.economy.GetPlayerBansResponse', null, global);
-goog.exportSymbol('proto.mruv.economy.GetPlayerWarnsRequest', null, global);
-goog.exportSymbol('proto.mruv.economy.GetPlayerWarnsResponse', null, global);
-goog.exportSymbol('proto.mruv.economy.GetWarnRequest', null, global);
-goog.exportSymbol('proto.mruv.economy.IsCharacterBlockedRequest', null, global);
-goog.exportSymbol('proto.mruv.economy.IsCharacterBlockedResponse', null, global);
-goog.exportSymbol('proto.mruv.economy.IsCharacterJailedRequest', null, global);
-goog.exportSymbol('proto.mruv.economy.IsCharacterJailedResponse', null, global);
-goog.exportSymbol('proto.mruv.economy.IsPlayerBannedRequest', null, global);
-goog.exportSymbol('proto.mruv.economy.IsPlayerBannedResponse', null, global);
-goog.exportSymbol('proto.mruv.economy.MuteGlobalChatsRequest', null, global);
-goog.exportSymbol('proto.mruv.economy.MuteGlobalChatsResponse', null, global);
-goog.exportSymbol('proto.mruv.economy.PunishmentType', null, global);
-goog.exportSymbol('proto.mruv.economy.UnAdminJailMessage', null, global);
-goog.exportSymbol('proto.mruv.economy.UnAdminJailRequest', null, global);
-goog.exportSymbol('proto.mruv.economy.UnAdminJailResponse', null, global);
-goog.exportSymbol('proto.mruv.economy.UnBanMessage', null, global);
-goog.exportSymbol('proto.mruv.economy.UnBanRequest', null, global);
-goog.exportSymbol('proto.mruv.economy.UnBanResponse', null, global);
-goog.exportSymbol('proto.mruv.economy.UnBlockMessage', null, global);
-goog.exportSymbol('proto.mruv.economy.UnBlockRequest', null, global);
-goog.exportSymbol('proto.mruv.economy.UnBlockResponse', null, global);
-goog.exportSymbol('proto.mruv.economy.UnMuteGlobalChatsRequest', null, global);
-goog.exportSymbol('proto.mruv.economy.UnMuteGlobalChatsResponse', null, global);
-goog.exportSymbol('proto.mruv.economy.UnWarnMessage', null, global);
-goog.exportSymbol('proto.mruv.economy.UnWarnRequest', null, global);
-goog.exportSymbol('proto.mruv.economy.UnWarnResponse', null, global);
-goog.exportSymbol('proto.mruv.economy.WarnMessage', null, global);
-goog.exportSymbol('proto.mruv.economy.WarnRequest', null, global);
-goog.exportSymbol('proto.mruv.economy.WarnResponse', null, global);
-goog.exportSymbol('proto.mruv.economy.WatchAdminJailsRequest', null, global);
-goog.exportSymbol('proto.mruv.economy.WatchBansRequest', null, global);
-goog.exportSymbol('proto.mruv.economy.WatchBlocksRequest', null, global);
-goog.exportSymbol('proto.mruv.economy.WatchPlayerAcquittalsRequest', null, global);
-goog.exportSymbol('proto.mruv.economy.WatchPlayerAcquittalsResponse', null, global);
-goog.exportSymbol('proto.mruv.economy.WatchPlayerPunishmentsRequest', null, global);
-goog.exportSymbol('proto.mruv.economy.WatchPlayerPunishmentsResponse', null, global);
-goog.exportSymbol('proto.mruv.economy.WatchPunishmentsRequest', null, global);
-goog.exportSymbol('proto.mruv.economy.WatchPunishmentsResponse', null, global);
-goog.exportSymbol('proto.mruv.economy.WatchUnAdminJailsRequest', null, global);
-goog.exportSymbol('proto.mruv.economy.WatchUnBansRequest', null, global);
-goog.exportSymbol('proto.mruv.economy.WatchUnBlocksRequest', null, global);
-goog.exportSymbol('proto.mruv.economy.WatchUnWarnsRequest', null, global);
-goog.exportSymbol('proto.mruv.economy.WatchWarnsRequest', null, global);
+goog.exportSymbol('proto.mruv.punishments.AdminJailMessage', null, global);
+goog.exportSymbol('proto.mruv.punishments.AdminJailRequest', null, global);
+goog.exportSymbol('proto.mruv.punishments.AdminJailResponse', null, global);
+goog.exportSymbol('proto.mruv.punishments.BanMessage', null, global);
+goog.exportSymbol('proto.mruv.punishments.BanRequest', null, global);
+goog.exportSymbol('proto.mruv.punishments.BanResponse', null, global);
+goog.exportSymbol('proto.mruv.punishments.BlockMessage', null, global);
+goog.exportSymbol('proto.mruv.punishments.BlockRequest', null, global);
+goog.exportSymbol('proto.mruv.punishments.BlockResponse', null, global);
+goog.exportSymbol('proto.mruv.punishments.GetBanRequest', null, global);
+goog.exportSymbol('proto.mruv.punishments.GetBlockRequest', null, global);
+goog.exportSymbol('proto.mruv.punishments.GetPlayerAdminJailRequest', null, global);
+goog.exportSymbol('proto.mruv.punishments.GetPlayerAdminJailResponse', null, global);
+goog.exportSymbol('proto.mruv.punishments.GetPlayerBansRequest', null, global);
+goog.exportSymbol('proto.mruv.punishments.GetPlayerBansResponse', null, global);
+goog.exportSymbol('proto.mruv.punishments.GetPlayerWarnsRequest', null, global);
+goog.exportSymbol('proto.mruv.punishments.GetPlayerWarnsResponse', null, global);
+goog.exportSymbol('proto.mruv.punishments.GetWarnRequest', null, global);
+goog.exportSymbol('proto.mruv.punishments.IsCharacterBlockedRequest', null, global);
+goog.exportSymbol('proto.mruv.punishments.IsCharacterBlockedResponse', null, global);
+goog.exportSymbol('proto.mruv.punishments.IsCharacterJailedRequest', null, global);
+goog.exportSymbol('proto.mruv.punishments.IsCharacterJailedResponse', null, global);
+goog.exportSymbol('proto.mruv.punishments.IsPlayerBannedRequest', null, global);
+goog.exportSymbol('proto.mruv.punishments.IsPlayerBannedResponse', null, global);
+goog.exportSymbol('proto.mruv.punishments.MuteGlobalChatsRequest', null, global);
+goog.exportSymbol('proto.mruv.punishments.MuteGlobalChatsResponse', null, global);
+goog.exportSymbol('proto.mruv.punishments.PunishRequest', null, global);
+goog.exportSymbol('proto.mruv.punishments.PunishResponse', null, global);
+goog.exportSymbol('proto.mruv.punishments.PunishmentMessage', null, global);
+goog.exportSymbol('proto.mruv.punishments.UnAdminJailMessage', null, global);
+goog.exportSymbol('proto.mruv.punishments.UnAdminJailRequest', null, global);
+goog.exportSymbol('proto.mruv.punishments.UnAdminJailResponse', null, global);
+goog.exportSymbol('proto.mruv.punishments.UnBanMessage', null, global);
+goog.exportSymbol('proto.mruv.punishments.UnBanRequest', null, global);
+goog.exportSymbol('proto.mruv.punishments.UnBanResponse', null, global);
+goog.exportSymbol('proto.mruv.punishments.UnBlockMessage', null, global);
+goog.exportSymbol('proto.mruv.punishments.UnBlockRequest', null, global);
+goog.exportSymbol('proto.mruv.punishments.UnBlockResponse', null, global);
+goog.exportSymbol('proto.mruv.punishments.UnMuteGlobalChatsRequest', null, global);
+goog.exportSymbol('proto.mruv.punishments.UnMuteGlobalChatsResponse', null, global);
+goog.exportSymbol('proto.mruv.punishments.UnWarnMessage', null, global);
+goog.exportSymbol('proto.mruv.punishments.UnWarnRequest', null, global);
+goog.exportSymbol('proto.mruv.punishments.UnWarnResponse', null, global);
+goog.exportSymbol('proto.mruv.punishments.WarnMessage', null, global);
+goog.exportSymbol('proto.mruv.punishments.WarnRequest', null, global);
+goog.exportSymbol('proto.mruv.punishments.WarnResponse', null, global);
+goog.exportSymbol('proto.mruv.punishments.WatchAcquittalsRequest', null, global);
+goog.exportSymbol('proto.mruv.punishments.WatchAcquittalsResponse', null, global);
+goog.exportSymbol('proto.mruv.punishments.WatchAdminJailsRequest', null, global);
+goog.exportSymbol('proto.mruv.punishments.WatchBansRequest', null, global);
+goog.exportSymbol('proto.mruv.punishments.WatchBlocksRequest', null, global);
+goog.exportSymbol('proto.mruv.punishments.WatchPlayerAcquittalsRequest', null, global);
+goog.exportSymbol('proto.mruv.punishments.WatchPlayerAcquittalsResponse', null, global);
+goog.exportSymbol('proto.mruv.punishments.WatchPlayerPunishmentsRequest', null, global);
+goog.exportSymbol('proto.mruv.punishments.WatchPlayerPunishmentsResponse', null, global);
+goog.exportSymbol('proto.mruv.punishments.WatchPunishmentsRequest', null, global);
+goog.exportSymbol('proto.mruv.punishments.WatchPunishmentsResponse', null, global);
+goog.exportSymbol('proto.mruv.punishments.WatchUnAdminJailsRequest', null, global);
+goog.exportSymbol('proto.mruv.punishments.WatchUnBansRequest', null, global);
+goog.exportSymbol('proto.mruv.punishments.WatchUnBlocksRequest', null, global);
+goog.exportSymbol('proto.mruv.punishments.WatchUnWarnsRequest', null, global);
+goog.exportSymbol('proto.mruv.punishments.WatchWarnsRequest', null, global);
 /**
  * Generated by JsPbCodeGenerator.
  * @param {Array=} opt_data Optional initial data array, typically from a
@@ -82,16 +85,16 @@ goog.exportSymbol('proto.mruv.economy.WatchWarnsRequest', null, global);
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.BanMessage = function(opt_data) {
+proto.mruv.punishments.PunishmentMessage = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.BanMessage, jspb.Message);
+goog.inherits(proto.mruv.punishments.PunishmentMessage, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.BanMessage.displayName = 'proto.mruv.economy.BanMessage';
+  proto.mruv.punishments.PunishmentMessage.displayName = 'proto.mruv.punishments.PunishmentMessage';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -103,16 +106,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.WarnMessage = function(opt_data) {
+proto.mruv.punishments.BanMessage = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.WarnMessage, jspb.Message);
+goog.inherits(proto.mruv.punishments.BanMessage, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.WarnMessage.displayName = 'proto.mruv.economy.WarnMessage';
+  proto.mruv.punishments.BanMessage.displayName = 'proto.mruv.punishments.BanMessage';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -124,16 +127,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.BlockMessage = function(opt_data) {
+proto.mruv.punishments.WarnMessage = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.BlockMessage, jspb.Message);
+goog.inherits(proto.mruv.punishments.WarnMessage, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.BlockMessage.displayName = 'proto.mruv.economy.BlockMessage';
+  proto.mruv.punishments.WarnMessage.displayName = 'proto.mruv.punishments.WarnMessage';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -145,16 +148,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.AdminJailMessage = function(opt_data) {
+proto.mruv.punishments.BlockMessage = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.AdminJailMessage, jspb.Message);
+goog.inherits(proto.mruv.punishments.BlockMessage, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.AdminJailMessage.displayName = 'proto.mruv.economy.AdminJailMessage';
+  proto.mruv.punishments.BlockMessage.displayName = 'proto.mruv.punishments.BlockMessage';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -166,16 +169,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.UnBanMessage = function(opt_data) {
+proto.mruv.punishments.AdminJailMessage = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.UnBanMessage, jspb.Message);
+goog.inherits(proto.mruv.punishments.AdminJailMessage, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.UnBanMessage.displayName = 'proto.mruv.economy.UnBanMessage';
+  proto.mruv.punishments.AdminJailMessage.displayName = 'proto.mruv.punishments.AdminJailMessage';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -187,16 +190,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.UnBlockMessage = function(opt_data) {
+proto.mruv.punishments.UnBanMessage = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.UnBlockMessage, jspb.Message);
+goog.inherits(proto.mruv.punishments.UnBanMessage, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.UnBlockMessage.displayName = 'proto.mruv.economy.UnBlockMessage';
+  proto.mruv.punishments.UnBanMessage.displayName = 'proto.mruv.punishments.UnBanMessage';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -208,16 +211,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.UnWarnMessage = function(opt_data) {
+proto.mruv.punishments.UnBlockMessage = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.UnWarnMessage, jspb.Message);
+goog.inherits(proto.mruv.punishments.UnBlockMessage, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.UnWarnMessage.displayName = 'proto.mruv.economy.UnWarnMessage';
+  proto.mruv.punishments.UnBlockMessage.displayName = 'proto.mruv.punishments.UnBlockMessage';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -229,16 +232,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.UnAdminJailMessage = function(opt_data) {
+proto.mruv.punishments.UnWarnMessage = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.UnAdminJailMessage, jspb.Message);
+goog.inherits(proto.mruv.punishments.UnWarnMessage, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.UnAdminJailMessage.displayName = 'proto.mruv.economy.UnAdminJailMessage';
+  proto.mruv.punishments.UnWarnMessage.displayName = 'proto.mruv.punishments.UnWarnMessage';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -250,16 +253,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.BanRequest = function(opt_data) {
+proto.mruv.punishments.UnAdminJailMessage = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.BanRequest, jspb.Message);
+goog.inherits(proto.mruv.punishments.UnAdminJailMessage, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.BanRequest.displayName = 'proto.mruv.economy.BanRequest';
+  proto.mruv.punishments.UnAdminJailMessage.displayName = 'proto.mruv.punishments.UnAdminJailMessage';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -271,16 +274,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.BanResponse = function(opt_data) {
+proto.mruv.punishments.PunishRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.BanResponse, jspb.Message);
+goog.inherits(proto.mruv.punishments.PunishRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.BanResponse.displayName = 'proto.mruv.economy.BanResponse';
+  proto.mruv.punishments.PunishRequest.displayName = 'proto.mruv.punishments.PunishRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -292,16 +295,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.BlockRequest = function(opt_data) {
+proto.mruv.punishments.PunishResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.BlockRequest, jspb.Message);
+goog.inherits(proto.mruv.punishments.PunishResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.BlockRequest.displayName = 'proto.mruv.economy.BlockRequest';
+  proto.mruv.punishments.PunishResponse.displayName = 'proto.mruv.punishments.PunishResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -313,16 +316,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.BlockResponse = function(opt_data) {
+proto.mruv.punishments.BanRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.BlockResponse, jspb.Message);
+goog.inherits(proto.mruv.punishments.BanRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.BlockResponse.displayName = 'proto.mruv.economy.BlockResponse';
+  proto.mruv.punishments.BanRequest.displayName = 'proto.mruv.punishments.BanRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -334,16 +337,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.WarnRequest = function(opt_data) {
+proto.mruv.punishments.BanResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.WarnRequest, jspb.Message);
+goog.inherits(proto.mruv.punishments.BanResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.WarnRequest.displayName = 'proto.mruv.economy.WarnRequest';
+  proto.mruv.punishments.BanResponse.displayName = 'proto.mruv.punishments.BanResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -355,16 +358,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.WarnResponse = function(opt_data) {
+proto.mruv.punishments.BlockRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.WarnResponse, jspb.Message);
+goog.inherits(proto.mruv.punishments.BlockRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.WarnResponse.displayName = 'proto.mruv.economy.WarnResponse';
+  proto.mruv.punishments.BlockRequest.displayName = 'proto.mruv.punishments.BlockRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -376,16 +379,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.AdminJailRequest = function(opt_data) {
+proto.mruv.punishments.BlockResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.AdminJailRequest, jspb.Message);
+goog.inherits(proto.mruv.punishments.BlockResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.AdminJailRequest.displayName = 'proto.mruv.economy.AdminJailRequest';
+  proto.mruv.punishments.BlockResponse.displayName = 'proto.mruv.punishments.BlockResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -397,16 +400,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.AdminJailResponse = function(opt_data) {
+proto.mruv.punishments.WarnRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.AdminJailResponse, jspb.Message);
+goog.inherits(proto.mruv.punishments.WarnRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.AdminJailResponse.displayName = 'proto.mruv.economy.AdminJailResponse';
+  proto.mruv.punishments.WarnRequest.displayName = 'proto.mruv.punishments.WarnRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -418,16 +421,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.MuteGlobalChatsRequest = function(opt_data) {
+proto.mruv.punishments.WarnResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.MuteGlobalChatsRequest, jspb.Message);
+goog.inherits(proto.mruv.punishments.WarnResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.MuteGlobalChatsRequest.displayName = 'proto.mruv.economy.MuteGlobalChatsRequest';
+  proto.mruv.punishments.WarnResponse.displayName = 'proto.mruv.punishments.WarnResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -439,16 +442,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.MuteGlobalChatsResponse = function(opt_data) {
+proto.mruv.punishments.AdminJailRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.MuteGlobalChatsResponse, jspb.Message);
+goog.inherits(proto.mruv.punishments.AdminJailRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.MuteGlobalChatsResponse.displayName = 'proto.mruv.economy.MuteGlobalChatsResponse';
+  proto.mruv.punishments.AdminJailRequest.displayName = 'proto.mruv.punishments.AdminJailRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -460,16 +463,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.UnBanRequest = function(opt_data) {
+proto.mruv.punishments.AdminJailResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.UnBanRequest, jspb.Message);
+goog.inherits(proto.mruv.punishments.AdminJailResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.UnBanRequest.displayName = 'proto.mruv.economy.UnBanRequest';
+  proto.mruv.punishments.AdminJailResponse.displayName = 'proto.mruv.punishments.AdminJailResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -481,16 +484,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.UnBanResponse = function(opt_data) {
+proto.mruv.punishments.MuteGlobalChatsRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.UnBanResponse, jspb.Message);
+goog.inherits(proto.mruv.punishments.MuteGlobalChatsRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.UnBanResponse.displayName = 'proto.mruv.economy.UnBanResponse';
+  proto.mruv.punishments.MuteGlobalChatsRequest.displayName = 'proto.mruv.punishments.MuteGlobalChatsRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -502,16 +505,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.UnBlockRequest = function(opt_data) {
+proto.mruv.punishments.MuteGlobalChatsResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.UnBlockRequest, jspb.Message);
+goog.inherits(proto.mruv.punishments.MuteGlobalChatsResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.UnBlockRequest.displayName = 'proto.mruv.economy.UnBlockRequest';
+  proto.mruv.punishments.MuteGlobalChatsResponse.displayName = 'proto.mruv.punishments.MuteGlobalChatsResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -523,16 +526,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.UnBlockResponse = function(opt_data) {
+proto.mruv.punishments.UnBanRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.UnBlockResponse, jspb.Message);
+goog.inherits(proto.mruv.punishments.UnBanRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.UnBlockResponse.displayName = 'proto.mruv.economy.UnBlockResponse';
+  proto.mruv.punishments.UnBanRequest.displayName = 'proto.mruv.punishments.UnBanRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -544,16 +547,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.UnWarnRequest = function(opt_data) {
+proto.mruv.punishments.UnBanResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.UnWarnRequest, jspb.Message);
+goog.inherits(proto.mruv.punishments.UnBanResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.UnWarnRequest.displayName = 'proto.mruv.economy.UnWarnRequest';
+  proto.mruv.punishments.UnBanResponse.displayName = 'proto.mruv.punishments.UnBanResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -565,16 +568,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.UnWarnResponse = function(opt_data) {
+proto.mruv.punishments.UnBlockRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.UnWarnResponse, jspb.Message);
+goog.inherits(proto.mruv.punishments.UnBlockRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.UnWarnResponse.displayName = 'proto.mruv.economy.UnWarnResponse';
+  proto.mruv.punishments.UnBlockRequest.displayName = 'proto.mruv.punishments.UnBlockRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -586,16 +589,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.UnAdminJailRequest = function(opt_data) {
+proto.mruv.punishments.UnBlockResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.UnAdminJailRequest, jspb.Message);
+goog.inherits(proto.mruv.punishments.UnBlockResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.UnAdminJailRequest.displayName = 'proto.mruv.economy.UnAdminJailRequest';
+  proto.mruv.punishments.UnBlockResponse.displayName = 'proto.mruv.punishments.UnBlockResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -607,16 +610,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.UnAdminJailResponse = function(opt_data) {
+proto.mruv.punishments.UnWarnRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.UnAdminJailResponse, jspb.Message);
+goog.inherits(proto.mruv.punishments.UnWarnRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.UnAdminJailResponse.displayName = 'proto.mruv.economy.UnAdminJailResponse';
+  proto.mruv.punishments.UnWarnRequest.displayName = 'proto.mruv.punishments.UnWarnRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -628,16 +631,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.UnMuteGlobalChatsRequest = function(opt_data) {
+proto.mruv.punishments.UnWarnResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.UnMuteGlobalChatsRequest, jspb.Message);
+goog.inherits(proto.mruv.punishments.UnWarnResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.UnMuteGlobalChatsRequest.displayName = 'proto.mruv.economy.UnMuteGlobalChatsRequest';
+  proto.mruv.punishments.UnWarnResponse.displayName = 'proto.mruv.punishments.UnWarnResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -649,16 +652,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.UnMuteGlobalChatsResponse = function(opt_data) {
+proto.mruv.punishments.UnAdminJailRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.UnMuteGlobalChatsResponse, jspb.Message);
+goog.inherits(proto.mruv.punishments.UnAdminJailRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.UnMuteGlobalChatsResponse.displayName = 'proto.mruv.economy.UnMuteGlobalChatsResponse';
+  proto.mruv.punishments.UnAdminJailRequest.displayName = 'proto.mruv.punishments.UnAdminJailRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -670,16 +673,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.GetPlayerBansRequest = function(opt_data) {
+proto.mruv.punishments.UnAdminJailResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.GetPlayerBansRequest, jspb.Message);
+goog.inherits(proto.mruv.punishments.UnAdminJailResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.GetPlayerBansRequest.displayName = 'proto.mruv.economy.GetPlayerBansRequest';
+  proto.mruv.punishments.UnAdminJailResponse.displayName = 'proto.mruv.punishments.UnAdminJailResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -691,37 +694,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.GetPlayerBansResponse = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, proto.mruv.economy.GetPlayerBansResponse.repeatedFields_, null);
-};
-goog.inherits(proto.mruv.economy.GetPlayerBansResponse, jspb.Message);
-if (goog.DEBUG && !COMPILED) {
-  /**
-   * @public
-   * @override
-   */
-  proto.mruv.economy.GetPlayerBansResponse.displayName = 'proto.mruv.economy.GetPlayerBansResponse';
-}
-/**
- * Generated by JsPbCodeGenerator.
- * @param {Array=} opt_data Optional initial data array, typically from a
- * server response, or constructed directly in Javascript. The array is used
- * in place and becomes part of the constructed object. It is not cloned.
- * If no data is provided, the constructed object will be empty, but still
- * valid.
- * @extends {jspb.Message}
- * @constructor
- */
-proto.mruv.economy.GetPlayerWarnsRequest = function(opt_data) {
+proto.mruv.punishments.UnMuteGlobalChatsRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.GetPlayerWarnsRequest, jspb.Message);
+goog.inherits(proto.mruv.punishments.UnMuteGlobalChatsRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.GetPlayerWarnsRequest.displayName = 'proto.mruv.economy.GetPlayerWarnsRequest';
+  proto.mruv.punishments.UnMuteGlobalChatsRequest.displayName = 'proto.mruv.punishments.UnMuteGlobalChatsRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -733,37 +715,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.GetPlayerWarnsResponse = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, proto.mruv.economy.GetPlayerWarnsResponse.repeatedFields_, null);
-};
-goog.inherits(proto.mruv.economy.GetPlayerWarnsResponse, jspb.Message);
-if (goog.DEBUG && !COMPILED) {
-  /**
-   * @public
-   * @override
-   */
-  proto.mruv.economy.GetPlayerWarnsResponse.displayName = 'proto.mruv.economy.GetPlayerWarnsResponse';
-}
-/**
- * Generated by JsPbCodeGenerator.
- * @param {Array=} opt_data Optional initial data array, typically from a
- * server response, or constructed directly in Javascript. The array is used
- * in place and becomes part of the constructed object. It is not cloned.
- * If no data is provided, the constructed object will be empty, but still
- * valid.
- * @extends {jspb.Message}
- * @constructor
- */
-proto.mruv.economy.GetPlayerAdminJailRequest = function(opt_data) {
+proto.mruv.punishments.UnMuteGlobalChatsResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.GetPlayerAdminJailRequest, jspb.Message);
+goog.inherits(proto.mruv.punishments.UnMuteGlobalChatsResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.GetPlayerAdminJailRequest.displayName = 'proto.mruv.economy.GetPlayerAdminJailRequest';
+  proto.mruv.punishments.UnMuteGlobalChatsResponse.displayName = 'proto.mruv.punishments.UnMuteGlobalChatsResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -775,16 +736,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.GetPlayerAdminJailResponse = function(opt_data) {
+proto.mruv.punishments.GetPlayerBansRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.GetPlayerAdminJailResponse, jspb.Message);
+goog.inherits(proto.mruv.punishments.GetPlayerBansRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.GetPlayerAdminJailResponse.displayName = 'proto.mruv.economy.GetPlayerAdminJailResponse';
+  proto.mruv.punishments.GetPlayerBansRequest.displayName = 'proto.mruv.punishments.GetPlayerBansRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -796,16 +757,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.GetBanRequest = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+proto.mruv.punishments.GetPlayerBansResponse = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.mruv.punishments.GetPlayerBansResponse.repeatedFields_, null);
 };
-goog.inherits(proto.mruv.economy.GetBanRequest, jspb.Message);
+goog.inherits(proto.mruv.punishments.GetPlayerBansResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.GetBanRequest.displayName = 'proto.mruv.economy.GetBanRequest';
+  proto.mruv.punishments.GetPlayerBansResponse.displayName = 'proto.mruv.punishments.GetPlayerBansResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -817,16 +778,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.GetWarnRequest = function(opt_data) {
+proto.mruv.punishments.GetPlayerWarnsRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.GetWarnRequest, jspb.Message);
+goog.inherits(proto.mruv.punishments.GetPlayerWarnsRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.GetWarnRequest.displayName = 'proto.mruv.economy.GetWarnRequest';
+  proto.mruv.punishments.GetPlayerWarnsRequest.displayName = 'proto.mruv.punishments.GetPlayerWarnsRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -838,16 +799,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.GetBlockRequest = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+proto.mruv.punishments.GetPlayerWarnsResponse = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.mruv.punishments.GetPlayerWarnsResponse.repeatedFields_, null);
 };
-goog.inherits(proto.mruv.economy.GetBlockRequest, jspb.Message);
+goog.inherits(proto.mruv.punishments.GetPlayerWarnsResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.GetBlockRequest.displayName = 'proto.mruv.economy.GetBlockRequest';
+  proto.mruv.punishments.GetPlayerWarnsResponse.displayName = 'proto.mruv.punishments.GetPlayerWarnsResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -859,16 +820,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.IsPlayerBannedRequest = function(opt_data) {
+proto.mruv.punishments.GetPlayerAdminJailRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.IsPlayerBannedRequest, jspb.Message);
+goog.inherits(proto.mruv.punishments.GetPlayerAdminJailRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.IsPlayerBannedRequest.displayName = 'proto.mruv.economy.IsPlayerBannedRequest';
+  proto.mruv.punishments.GetPlayerAdminJailRequest.displayName = 'proto.mruv.punishments.GetPlayerAdminJailRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -880,16 +841,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.IsPlayerBannedResponse = function(opt_data) {
+proto.mruv.punishments.GetPlayerAdminJailResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.IsPlayerBannedResponse, jspb.Message);
+goog.inherits(proto.mruv.punishments.GetPlayerAdminJailResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.IsPlayerBannedResponse.displayName = 'proto.mruv.economy.IsPlayerBannedResponse';
+  proto.mruv.punishments.GetPlayerAdminJailResponse.displayName = 'proto.mruv.punishments.GetPlayerAdminJailResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -901,16 +862,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.IsCharacterBlockedRequest = function(opt_data) {
+proto.mruv.punishments.GetBanRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.IsCharacterBlockedRequest, jspb.Message);
+goog.inherits(proto.mruv.punishments.GetBanRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.IsCharacterBlockedRequest.displayName = 'proto.mruv.economy.IsCharacterBlockedRequest';
+  proto.mruv.punishments.GetBanRequest.displayName = 'proto.mruv.punishments.GetBanRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -922,16 +883,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.IsCharacterBlockedResponse = function(opt_data) {
+proto.mruv.punishments.GetWarnRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.IsCharacterBlockedResponse, jspb.Message);
+goog.inherits(proto.mruv.punishments.GetWarnRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.IsCharacterBlockedResponse.displayName = 'proto.mruv.economy.IsCharacterBlockedResponse';
+  proto.mruv.punishments.GetWarnRequest.displayName = 'proto.mruv.punishments.GetWarnRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -943,16 +904,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.IsCharacterJailedRequest = function(opt_data) {
+proto.mruv.punishments.GetBlockRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.IsCharacterJailedRequest, jspb.Message);
+goog.inherits(proto.mruv.punishments.GetBlockRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.IsCharacterJailedRequest.displayName = 'proto.mruv.economy.IsCharacterJailedRequest';
+  proto.mruv.punishments.GetBlockRequest.displayName = 'proto.mruv.punishments.GetBlockRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -964,16 +925,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.IsCharacterJailedResponse = function(opt_data) {
+proto.mruv.punishments.IsPlayerBannedRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.IsCharacterJailedResponse, jspb.Message);
+goog.inherits(proto.mruv.punishments.IsPlayerBannedRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.IsCharacterJailedResponse.displayName = 'proto.mruv.economy.IsCharacterJailedResponse';
+  proto.mruv.punishments.IsPlayerBannedRequest.displayName = 'proto.mruv.punishments.IsPlayerBannedRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -985,16 +946,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.WatchBansRequest = function(opt_data) {
+proto.mruv.punishments.IsPlayerBannedResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.WatchBansRequest, jspb.Message);
+goog.inherits(proto.mruv.punishments.IsPlayerBannedResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.WatchBansRequest.displayName = 'proto.mruv.economy.WatchBansRequest';
+  proto.mruv.punishments.IsPlayerBannedResponse.displayName = 'proto.mruv.punishments.IsPlayerBannedResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -1006,16 +967,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.WatchBlocksRequest = function(opt_data) {
+proto.mruv.punishments.IsCharacterBlockedRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.WatchBlocksRequest, jspb.Message);
+goog.inherits(proto.mruv.punishments.IsCharacterBlockedRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.WatchBlocksRequest.displayName = 'proto.mruv.economy.WatchBlocksRequest';
+  proto.mruv.punishments.IsCharacterBlockedRequest.displayName = 'proto.mruv.punishments.IsCharacterBlockedRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -1027,16 +988,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.WatchWarnsRequest = function(opt_data) {
+proto.mruv.punishments.IsCharacterBlockedResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.WatchWarnsRequest, jspb.Message);
+goog.inherits(proto.mruv.punishments.IsCharacterBlockedResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.WatchWarnsRequest.displayName = 'proto.mruv.economy.WatchWarnsRequest';
+  proto.mruv.punishments.IsCharacterBlockedResponse.displayName = 'proto.mruv.punishments.IsCharacterBlockedResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -1048,16 +1009,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.WatchAdminJailsRequest = function(opt_data) {
+proto.mruv.punishments.IsCharacterJailedRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.WatchAdminJailsRequest, jspb.Message);
+goog.inherits(proto.mruv.punishments.IsCharacterJailedRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.WatchAdminJailsRequest.displayName = 'proto.mruv.economy.WatchAdminJailsRequest';
+  proto.mruv.punishments.IsCharacterJailedRequest.displayName = 'proto.mruv.punishments.IsCharacterJailedRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -1069,16 +1030,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.WatchUnBansRequest = function(opt_data) {
+proto.mruv.punishments.IsCharacterJailedResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.WatchUnBansRequest, jspb.Message);
+goog.inherits(proto.mruv.punishments.IsCharacterJailedResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.WatchUnBansRequest.displayName = 'proto.mruv.economy.WatchUnBansRequest';
+  proto.mruv.punishments.IsCharacterJailedResponse.displayName = 'proto.mruv.punishments.IsCharacterJailedResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -1090,16 +1051,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.WatchUnBlocksRequest = function(opt_data) {
+proto.mruv.punishments.WatchBansRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.WatchUnBlocksRequest, jspb.Message);
+goog.inherits(proto.mruv.punishments.WatchBansRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.WatchUnBlocksRequest.displayName = 'proto.mruv.economy.WatchUnBlocksRequest';
+  proto.mruv.punishments.WatchBansRequest.displayName = 'proto.mruv.punishments.WatchBansRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -1111,16 +1072,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.WatchUnWarnsRequest = function(opt_data) {
+proto.mruv.punishments.WatchBlocksRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.WatchUnWarnsRequest, jspb.Message);
+goog.inherits(proto.mruv.punishments.WatchBlocksRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.WatchUnWarnsRequest.displayName = 'proto.mruv.economy.WatchUnWarnsRequest';
+  proto.mruv.punishments.WatchBlocksRequest.displayName = 'proto.mruv.punishments.WatchBlocksRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -1132,16 +1093,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.WatchUnAdminJailsRequest = function(opt_data) {
+proto.mruv.punishments.WatchWarnsRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.WatchUnAdminJailsRequest, jspb.Message);
+goog.inherits(proto.mruv.punishments.WatchWarnsRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.WatchUnAdminJailsRequest.displayName = 'proto.mruv.economy.WatchUnAdminJailsRequest';
+  proto.mruv.punishments.WatchWarnsRequest.displayName = 'proto.mruv.punishments.WatchWarnsRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -1153,16 +1114,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.WatchPlayerAcquittalsRequest = function(opt_data) {
+proto.mruv.punishments.WatchAdminJailsRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.WatchPlayerAcquittalsRequest, jspb.Message);
+goog.inherits(proto.mruv.punishments.WatchAdminJailsRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.WatchPlayerAcquittalsRequest.displayName = 'proto.mruv.economy.WatchPlayerAcquittalsRequest';
+  proto.mruv.punishments.WatchAdminJailsRequest.displayName = 'proto.mruv.punishments.WatchAdminJailsRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -1174,16 +1135,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.WatchPlayerAcquittalsResponse = function(opt_data) {
+proto.mruv.punishments.WatchUnBansRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.WatchPlayerAcquittalsResponse, jspb.Message);
+goog.inherits(proto.mruv.punishments.WatchUnBansRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.WatchPlayerAcquittalsResponse.displayName = 'proto.mruv.economy.WatchPlayerAcquittalsResponse';
+  proto.mruv.punishments.WatchUnBansRequest.displayName = 'proto.mruv.punishments.WatchUnBansRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -1195,16 +1156,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.WatchPlayerPunishmentsRequest = function(opt_data) {
+proto.mruv.punishments.WatchUnBlocksRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.WatchPlayerPunishmentsRequest, jspb.Message);
+goog.inherits(proto.mruv.punishments.WatchUnBlocksRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.WatchPlayerPunishmentsRequest.displayName = 'proto.mruv.economy.WatchPlayerPunishmentsRequest';
+  proto.mruv.punishments.WatchUnBlocksRequest.displayName = 'proto.mruv.punishments.WatchUnBlocksRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -1216,16 +1177,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.WatchPlayerPunishmentsResponse = function(opt_data) {
+proto.mruv.punishments.WatchUnWarnsRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.WatchPlayerPunishmentsResponse, jspb.Message);
+goog.inherits(proto.mruv.punishments.WatchUnWarnsRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.WatchPlayerPunishmentsResponse.displayName = 'proto.mruv.economy.WatchPlayerPunishmentsResponse';
+  proto.mruv.punishments.WatchUnWarnsRequest.displayName = 'proto.mruv.punishments.WatchUnWarnsRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -1237,16 +1198,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.WatchPunishmentsRequest = function(opt_data) {
+proto.mruv.punishments.WatchUnAdminJailsRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.WatchPunishmentsRequest, jspb.Message);
+goog.inherits(proto.mruv.punishments.WatchUnAdminJailsRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.WatchPunishmentsRequest.displayName = 'proto.mruv.economy.WatchPunishmentsRequest';
+  proto.mruv.punishments.WatchUnAdminJailsRequest.displayName = 'proto.mruv.punishments.WatchUnAdminJailsRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -1258,16 +1219,163 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.economy.WatchPunishmentsResponse = function(opt_data) {
+proto.mruv.punishments.WatchPlayerPunishmentsRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.economy.WatchPunishmentsResponse, jspb.Message);
+goog.inherits(proto.mruv.punishments.WatchPlayerPunishmentsRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.economy.WatchPunishmentsResponse.displayName = 'proto.mruv.economy.WatchPunishmentsResponse';
+  proto.mruv.punishments.WatchPlayerPunishmentsRequest.displayName = 'proto.mruv.punishments.WatchPlayerPunishmentsRequest';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.mruv.punishments.WatchPlayerPunishmentsResponse = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.mruv.punishments.WatchPlayerPunishmentsResponse.oneofGroups_);
+};
+goog.inherits(proto.mruv.punishments.WatchPlayerPunishmentsResponse, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.mruv.punishments.WatchPlayerPunishmentsResponse.displayName = 'proto.mruv.punishments.WatchPlayerPunishmentsResponse';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.mruv.punishments.WatchPlayerAcquittalsRequest = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.mruv.punishments.WatchPlayerAcquittalsRequest, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.mruv.punishments.WatchPlayerAcquittalsRequest.displayName = 'proto.mruv.punishments.WatchPlayerAcquittalsRequest';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.mruv.punishments.WatchPlayerAcquittalsResponse = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.mruv.punishments.WatchPlayerAcquittalsResponse.oneofGroups_);
+};
+goog.inherits(proto.mruv.punishments.WatchPlayerAcquittalsResponse, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.mruv.punishments.WatchPlayerAcquittalsResponse.displayName = 'proto.mruv.punishments.WatchPlayerAcquittalsResponse';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.mruv.punishments.WatchPunishmentsRequest = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.mruv.punishments.WatchPunishmentsRequest, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.mruv.punishments.WatchPunishmentsRequest.displayName = 'proto.mruv.punishments.WatchPunishmentsRequest';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.mruv.punishments.WatchPunishmentsResponse = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.mruv.punishments.WatchPunishmentsResponse.oneofGroups_);
+};
+goog.inherits(proto.mruv.punishments.WatchPunishmentsResponse, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.mruv.punishments.WatchPunishmentsResponse.displayName = 'proto.mruv.punishments.WatchPunishmentsResponse';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.mruv.punishments.WatchAcquittalsRequest = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.mruv.punishments.WatchAcquittalsRequest, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.mruv.punishments.WatchAcquittalsRequest.displayName = 'proto.mruv.punishments.WatchAcquittalsRequest';
+}
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.mruv.punishments.WatchAcquittalsResponse = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.mruv.punishments.WatchAcquittalsResponse.oneofGroups_);
+};
+goog.inherits(proto.mruv.punishments.WatchAcquittalsResponse, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  /**
+   * @public
+   * @override
+   */
+  proto.mruv.punishments.WatchAcquittalsResponse.displayName = 'proto.mruv.punishments.WatchAcquittalsResponse';
 }
 
 
@@ -1285,8 +1393,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.BanMessage.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.BanMessage.toObject(opt_includeInstance, this);
+proto.mruv.punishments.PunishmentMessage.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.PunishmentMessage.toObject(opt_includeInstance, this);
 };
 
 
@@ -1295,11 +1403,300 @@ proto.mruv.economy.BanMessage.prototype.toObject = function(opt_includeInstance)
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.BanMessage} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.PunishmentMessage} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.BanMessage.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.PunishmentMessage.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    player: jspb.Message.getFieldWithDefault(msg, 1, 0),
+    character: jspb.Message.getFieldWithDefault(msg, 2, 0),
+    expirationDate: jspb.Message.getFieldWithDefault(msg, 3, 0),
+    reason: jspb.Message.getFieldWithDefault(msg, 4, ""),
+    admin: jspb.Message.getFieldWithDefault(msg, 5, 0),
+    date: jspb.Message.getFieldWithDefault(msg, 6, 0),
+    active: jspb.Message.getBooleanFieldWithDefault(msg, 7, false)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.mruv.punishments.PunishmentMessage}
+ */
+proto.mruv.punishments.PunishmentMessage.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.mruv.punishments.PunishmentMessage;
+  return proto.mruv.punishments.PunishmentMessage.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.mruv.punishments.PunishmentMessage} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.mruv.punishments.PunishmentMessage}
+ */
+proto.mruv.punishments.PunishmentMessage.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {number} */ (reader.readUint32());
+      msg.setPlayer(value);
+      break;
+    case 2:
+      var value = /** @type {number} */ (reader.readUint32());
+      msg.setCharacter(value);
+      break;
+    case 3:
+      var value = /** @type {number} */ (reader.readInt64());
+      msg.setExpirationDate(value);
+      break;
+    case 4:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setReason(value);
+      break;
+    case 5:
+      var value = /** @type {number} */ (reader.readUint32());
+      msg.setAdmin(value);
+      break;
+    case 6:
+      var value = /** @type {number} */ (reader.readInt64());
+      msg.setDate(value);
+      break;
+    case 7:
+      var value = /** @type {boolean} */ (reader.readBool());
+      msg.setActive(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.mruv.punishments.PunishmentMessage.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.mruv.punishments.PunishmentMessage.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.mruv.punishments.PunishmentMessage} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mruv.punishments.PunishmentMessage.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getPlayer();
+  if (f !== 0) {
+    writer.writeUint32(
+      1,
+      f
+    );
+  }
+  f = message.getCharacter();
+  if (f !== 0) {
+    writer.writeUint32(
+      2,
+      f
+    );
+  }
+  f = message.getExpirationDate();
+  if (f !== 0) {
+    writer.writeInt64(
+      3,
+      f
+    );
+  }
+  f = message.getReason();
+  if (f.length > 0) {
+    writer.writeString(
+      4,
+      f
+    );
+  }
+  f = message.getAdmin();
+  if (f !== 0) {
+    writer.writeUint32(
+      5,
+      f
+    );
+  }
+  f = message.getDate();
+  if (f !== 0) {
+    writer.writeInt64(
+      6,
+      f
+    );
+  }
+  f = message.getActive();
+  if (f) {
+    writer.writeBool(
+      7,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional uint32 player = 1;
+ * @return {number}
+ */
+proto.mruv.punishments.PunishmentMessage.prototype.getPlayer = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
+};
+
+
+/** @param {number} value */
+proto.mruv.punishments.PunishmentMessage.prototype.setPlayer = function(value) {
+  jspb.Message.setProto3IntField(this, 1, value);
+};
+
+
+/**
+ * optional uint32 character = 2;
+ * @return {number}
+ */
+proto.mruv.punishments.PunishmentMessage.prototype.getCharacter = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
+};
+
+
+/** @param {number} value */
+proto.mruv.punishments.PunishmentMessage.prototype.setCharacter = function(value) {
+  jspb.Message.setProto3IntField(this, 2, value);
+};
+
+
+/**
+ * optional int64 expiration_date = 3;
+ * @return {number}
+ */
+proto.mruv.punishments.PunishmentMessage.prototype.getExpirationDate = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
+};
+
+
+/** @param {number} value */
+proto.mruv.punishments.PunishmentMessage.prototype.setExpirationDate = function(value) {
+  jspb.Message.setProto3IntField(this, 3, value);
+};
+
+
+/**
+ * optional string reason = 4;
+ * @return {string}
+ */
+proto.mruv.punishments.PunishmentMessage.prototype.getReason = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 4, ""));
+};
+
+
+/** @param {string} value */
+proto.mruv.punishments.PunishmentMessage.prototype.setReason = function(value) {
+  jspb.Message.setProto3StringField(this, 4, value);
+};
+
+
+/**
+ * optional uint32 admin = 5;
+ * @return {number}
+ */
+proto.mruv.punishments.PunishmentMessage.prototype.getAdmin = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 5, 0));
+};
+
+
+/** @param {number} value */
+proto.mruv.punishments.PunishmentMessage.prototype.setAdmin = function(value) {
+  jspb.Message.setProto3IntField(this, 5, value);
+};
+
+
+/**
+ * optional int64 date = 6;
+ * @return {number}
+ */
+proto.mruv.punishments.PunishmentMessage.prototype.getDate = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 6, 0));
+};
+
+
+/** @param {number} value */
+proto.mruv.punishments.PunishmentMessage.prototype.setDate = function(value) {
+  jspb.Message.setProto3IntField(this, 6, value);
+};
+
+
+/**
+ * optional bool active = 7;
+ * @return {boolean}
+ */
+proto.mruv.punishments.PunishmentMessage.prototype.getActive = function() {
+  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 7, false));
+};
+
+
+/** @param {boolean} value */
+proto.mruv.punishments.PunishmentMessage.prototype.setActive = function(value) {
+  jspb.Message.setProto3BooleanField(this, 7, value);
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mruv.punishments.BanMessage.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.BanMessage.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mruv.punishments.BanMessage} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mruv.punishments.BanMessage.toObject = function(includeInstance, msg) {
   var f, obj = {
     player: jspb.Message.getFieldWithDefault(msg, 1, 0),
     character: jspb.Message.getFieldWithDefault(msg, 2, 0),
@@ -1324,23 +1721,23 @@ proto.mruv.economy.BanMessage.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.BanMessage}
+ * @return {!proto.mruv.punishments.BanMessage}
  */
-proto.mruv.economy.BanMessage.deserializeBinary = function(bytes) {
+proto.mruv.punishments.BanMessage.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.BanMessage;
-  return proto.mruv.economy.BanMessage.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.BanMessage;
+  return proto.mruv.punishments.BanMessage.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.BanMessage} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.BanMessage} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.BanMessage}
+ * @return {!proto.mruv.punishments.BanMessage}
  */
-proto.mruv.economy.BanMessage.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.BanMessage.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -1400,9 +1797,9 @@ proto.mruv.economy.BanMessage.deserializeBinaryFromReader = function(msg, reader
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.BanMessage.prototype.serializeBinary = function() {
+proto.mruv.punishments.BanMessage.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.BanMessage.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.BanMessage.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -1410,11 +1807,11 @@ proto.mruv.economy.BanMessage.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.BanMessage} message
+ * @param {!proto.mruv.punishments.BanMessage} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.BanMessage.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.BanMessage.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getPlayer();
   if (f !== 0) {
@@ -1493,13 +1890,13 @@ proto.mruv.economy.BanMessage.serializeBinaryToWriter = function(message, writer
  * optional uint32 player = 1;
  * @return {number}
  */
-proto.mruv.economy.BanMessage.prototype.getPlayer = function() {
+proto.mruv.punishments.BanMessage.prototype.getPlayer = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.BanMessage.prototype.setPlayer = function(value) {
+proto.mruv.punishments.BanMessage.prototype.setPlayer = function(value) {
   jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -1508,13 +1905,13 @@ proto.mruv.economy.BanMessage.prototype.setPlayer = function(value) {
  * optional uint32 character = 2;
  * @return {number}
  */
-proto.mruv.economy.BanMessage.prototype.getCharacter = function() {
+proto.mruv.punishments.BanMessage.prototype.getCharacter = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.BanMessage.prototype.setCharacter = function(value) {
+proto.mruv.punishments.BanMessage.prototype.setCharacter = function(value) {
   jspb.Message.setProto3IntField(this, 2, value);
 };
 
@@ -1523,13 +1920,13 @@ proto.mruv.economy.BanMessage.prototype.setCharacter = function(value) {
  * optional string ip = 3;
  * @return {string}
  */
-proto.mruv.economy.BanMessage.prototype.getIp = function() {
+proto.mruv.punishments.BanMessage.prototype.getIp = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
 };
 
 
 /** @param {string} value */
-proto.mruv.economy.BanMessage.prototype.setIp = function(value) {
+proto.mruv.punishments.BanMessage.prototype.setIp = function(value) {
   jspb.Message.setProto3StringField(this, 3, value);
 };
 
@@ -1538,13 +1935,13 @@ proto.mruv.economy.BanMessage.prototype.setIp = function(value) {
  * optional int64 expiration_date = 4;
  * @return {number}
  */
-proto.mruv.economy.BanMessage.prototype.getExpirationDate = function() {
+proto.mruv.punishments.BanMessage.prototype.getExpirationDate = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 4, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.BanMessage.prototype.setExpirationDate = function(value) {
+proto.mruv.punishments.BanMessage.prototype.setExpirationDate = function(value) {
   jspb.Message.setProto3IntField(this, 4, value);
 };
 
@@ -1553,13 +1950,13 @@ proto.mruv.economy.BanMessage.prototype.setExpirationDate = function(value) {
  * optional string reason = 5;
  * @return {string}
  */
-proto.mruv.economy.BanMessage.prototype.getReason = function() {
+proto.mruv.punishments.BanMessage.prototype.getReason = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 5, ""));
 };
 
 
 /** @param {string} value */
-proto.mruv.economy.BanMessage.prototype.setReason = function(value) {
+proto.mruv.punishments.BanMessage.prototype.setReason = function(value) {
   jspb.Message.setProto3StringField(this, 5, value);
 };
 
@@ -1568,13 +1965,13 @@ proto.mruv.economy.BanMessage.prototype.setReason = function(value) {
  * optional uint32 admin = 6;
  * @return {number}
  */
-proto.mruv.economy.BanMessage.prototype.getAdmin = function() {
+proto.mruv.punishments.BanMessage.prototype.getAdmin = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 6, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.BanMessage.prototype.setAdmin = function(value) {
+proto.mruv.punishments.BanMessage.prototype.setAdmin = function(value) {
   jspb.Message.setProto3IntField(this, 6, value);
 };
 
@@ -1583,13 +1980,13 @@ proto.mruv.economy.BanMessage.prototype.setAdmin = function(value) {
  * optional int64 ban_date = 7;
  * @return {number}
  */
-proto.mruv.economy.BanMessage.prototype.getBanDate = function() {
+proto.mruv.punishments.BanMessage.prototype.getBanDate = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 7, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.BanMessage.prototype.setBanDate = function(value) {
+proto.mruv.punishments.BanMessage.prototype.setBanDate = function(value) {
   jspb.Message.setProto3IntField(this, 7, value);
 };
 
@@ -1598,13 +1995,13 @@ proto.mruv.economy.BanMessage.prototype.setBanDate = function(value) {
  * optional bool active = 8;
  * @return {boolean}
  */
-proto.mruv.economy.BanMessage.prototype.getActive = function() {
+proto.mruv.punishments.BanMessage.prototype.getActive = function() {
   return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 8, false));
 };
 
 
 /** @param {boolean} value */
-proto.mruv.economy.BanMessage.prototype.setActive = function(value) {
+proto.mruv.punishments.BanMessage.prototype.setActive = function(value) {
   jspb.Message.setProto3BooleanField(this, 8, value);
 };
 
@@ -1613,13 +2010,13 @@ proto.mruv.economy.BanMessage.prototype.setActive = function(value) {
  * optional int64 unban_date = 9;
  * @return {number}
  */
-proto.mruv.economy.BanMessage.prototype.getUnbanDate = function() {
+proto.mruv.punishments.BanMessage.prototype.getUnbanDate = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 9, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.BanMessage.prototype.setUnbanDate = function(value) {
+proto.mruv.punishments.BanMessage.prototype.setUnbanDate = function(value) {
   jspb.Message.setProto3IntField(this, 9, value);
 };
 
@@ -1628,13 +2025,13 @@ proto.mruv.economy.BanMessage.prototype.setUnbanDate = function(value) {
  * optional uint32 unban_admin = 10;
  * @return {number}
  */
-proto.mruv.economy.BanMessage.prototype.getUnbanAdmin = function() {
+proto.mruv.punishments.BanMessage.prototype.getUnbanAdmin = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 10, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.BanMessage.prototype.setUnbanAdmin = function(value) {
+proto.mruv.punishments.BanMessage.prototype.setUnbanAdmin = function(value) {
   jspb.Message.setProto3IntField(this, 10, value);
 };
 
@@ -1655,8 +2052,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.WarnMessage.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.WarnMessage.toObject(opt_includeInstance, this);
+proto.mruv.punishments.WarnMessage.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.WarnMessage.toObject(opt_includeInstance, this);
 };
 
 
@@ -1665,11 +2062,11 @@ proto.mruv.economy.WarnMessage.prototype.toObject = function(opt_includeInstance
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.WarnMessage} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.WarnMessage} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.WarnMessage.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.WarnMessage.toObject = function(includeInstance, msg) {
   var f, obj = {
     player: jspb.Message.getFieldWithDefault(msg, 1, 0),
     character: jspb.Message.getFieldWithDefault(msg, 2, 0),
@@ -1693,23 +2090,23 @@ proto.mruv.economy.WarnMessage.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.WarnMessage}
+ * @return {!proto.mruv.punishments.WarnMessage}
  */
-proto.mruv.economy.WarnMessage.deserializeBinary = function(bytes) {
+proto.mruv.punishments.WarnMessage.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.WarnMessage;
-  return proto.mruv.economy.WarnMessage.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.WarnMessage;
+  return proto.mruv.punishments.WarnMessage.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.WarnMessage} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.WarnMessage} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.WarnMessage}
+ * @return {!proto.mruv.punishments.WarnMessage}
  */
-proto.mruv.economy.WarnMessage.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.WarnMessage.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -1765,9 +2162,9 @@ proto.mruv.economy.WarnMessage.deserializeBinaryFromReader = function(msg, reade
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.WarnMessage.prototype.serializeBinary = function() {
+proto.mruv.punishments.WarnMessage.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.WarnMessage.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.WarnMessage.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -1775,11 +2172,11 @@ proto.mruv.economy.WarnMessage.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.WarnMessage} message
+ * @param {!proto.mruv.punishments.WarnMessage} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.WarnMessage.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.WarnMessage.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getPlayer();
   if (f !== 0) {
@@ -1851,13 +2248,13 @@ proto.mruv.economy.WarnMessage.serializeBinaryToWriter = function(message, write
  * optional uint32 player = 1;
  * @return {number}
  */
-proto.mruv.economy.WarnMessage.prototype.getPlayer = function() {
+proto.mruv.punishments.WarnMessage.prototype.getPlayer = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.WarnMessage.prototype.setPlayer = function(value) {
+proto.mruv.punishments.WarnMessage.prototype.setPlayer = function(value) {
   jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -1866,13 +2263,13 @@ proto.mruv.economy.WarnMessage.prototype.setPlayer = function(value) {
  * optional uint32 character = 2;
  * @return {number}
  */
-proto.mruv.economy.WarnMessage.prototype.getCharacter = function() {
+proto.mruv.punishments.WarnMessage.prototype.getCharacter = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.WarnMessage.prototype.setCharacter = function(value) {
+proto.mruv.punishments.WarnMessage.prototype.setCharacter = function(value) {
   jspb.Message.setProto3IntField(this, 2, value);
 };
 
@@ -1881,13 +2278,13 @@ proto.mruv.economy.WarnMessage.prototype.setCharacter = function(value) {
  * optional int64 expiration_date = 3;
  * @return {number}
  */
-proto.mruv.economy.WarnMessage.prototype.getExpirationDate = function() {
+proto.mruv.punishments.WarnMessage.prototype.getExpirationDate = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.WarnMessage.prototype.setExpirationDate = function(value) {
+proto.mruv.punishments.WarnMessage.prototype.setExpirationDate = function(value) {
   jspb.Message.setProto3IntField(this, 3, value);
 };
 
@@ -1896,13 +2293,13 @@ proto.mruv.economy.WarnMessage.prototype.setExpirationDate = function(value) {
  * optional string reason = 4;
  * @return {string}
  */
-proto.mruv.economy.WarnMessage.prototype.getReason = function() {
+proto.mruv.punishments.WarnMessage.prototype.getReason = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 4, ""));
 };
 
 
 /** @param {string} value */
-proto.mruv.economy.WarnMessage.prototype.setReason = function(value) {
+proto.mruv.punishments.WarnMessage.prototype.setReason = function(value) {
   jspb.Message.setProto3StringField(this, 4, value);
 };
 
@@ -1911,13 +2308,13 @@ proto.mruv.economy.WarnMessage.prototype.setReason = function(value) {
  * optional uint32 admin = 5;
  * @return {number}
  */
-proto.mruv.economy.WarnMessage.prototype.getAdmin = function() {
+proto.mruv.punishments.WarnMessage.prototype.getAdmin = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 5, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.WarnMessage.prototype.setAdmin = function(value) {
+proto.mruv.punishments.WarnMessage.prototype.setAdmin = function(value) {
   jspb.Message.setProto3IntField(this, 5, value);
 };
 
@@ -1926,13 +2323,13 @@ proto.mruv.economy.WarnMessage.prototype.setAdmin = function(value) {
  * optional int64 warn_date = 6;
  * @return {number}
  */
-proto.mruv.economy.WarnMessage.prototype.getWarnDate = function() {
+proto.mruv.punishments.WarnMessage.prototype.getWarnDate = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 6, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.WarnMessage.prototype.setWarnDate = function(value) {
+proto.mruv.punishments.WarnMessage.prototype.setWarnDate = function(value) {
   jspb.Message.setProto3IntField(this, 6, value);
 };
 
@@ -1941,13 +2338,13 @@ proto.mruv.economy.WarnMessage.prototype.setWarnDate = function(value) {
  * optional bool active = 7;
  * @return {boolean}
  */
-proto.mruv.economy.WarnMessage.prototype.getActive = function() {
+proto.mruv.punishments.WarnMessage.prototype.getActive = function() {
   return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 7, false));
 };
 
 
 /** @param {boolean} value */
-proto.mruv.economy.WarnMessage.prototype.setActive = function(value) {
+proto.mruv.punishments.WarnMessage.prototype.setActive = function(value) {
   jspb.Message.setProto3BooleanField(this, 7, value);
 };
 
@@ -1956,13 +2353,13 @@ proto.mruv.economy.WarnMessage.prototype.setActive = function(value) {
  * optional int64 unwarn_date = 8;
  * @return {number}
  */
-proto.mruv.economy.WarnMessage.prototype.getUnwarnDate = function() {
+proto.mruv.punishments.WarnMessage.prototype.getUnwarnDate = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 8, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.WarnMessage.prototype.setUnwarnDate = function(value) {
+proto.mruv.punishments.WarnMessage.prototype.setUnwarnDate = function(value) {
   jspb.Message.setProto3IntField(this, 8, value);
 };
 
@@ -1971,13 +2368,13 @@ proto.mruv.economy.WarnMessage.prototype.setUnwarnDate = function(value) {
  * optional uint32 unwarn_admin = 9;
  * @return {number}
  */
-proto.mruv.economy.WarnMessage.prototype.getUnwarnAdmin = function() {
+proto.mruv.punishments.WarnMessage.prototype.getUnwarnAdmin = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 9, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.WarnMessage.prototype.setUnwarnAdmin = function(value) {
+proto.mruv.punishments.WarnMessage.prototype.setUnwarnAdmin = function(value) {
   jspb.Message.setProto3IntField(this, 9, value);
 };
 
@@ -1998,8 +2395,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.BlockMessage.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.BlockMessage.toObject(opt_includeInstance, this);
+proto.mruv.punishments.BlockMessage.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.BlockMessage.toObject(opt_includeInstance, this);
 };
 
 
@@ -2008,11 +2405,11 @@ proto.mruv.economy.BlockMessage.prototype.toObject = function(opt_includeInstanc
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.BlockMessage} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.BlockMessage} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.BlockMessage.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.BlockMessage.toObject = function(includeInstance, msg) {
   var f, obj = {
     player: jspb.Message.getFieldWithDefault(msg, 1, 0),
     character: jspb.Message.getFieldWithDefault(msg, 2, 0),
@@ -2035,23 +2432,23 @@ proto.mruv.economy.BlockMessage.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.BlockMessage}
+ * @return {!proto.mruv.punishments.BlockMessage}
  */
-proto.mruv.economy.BlockMessage.deserializeBinary = function(bytes) {
+proto.mruv.punishments.BlockMessage.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.BlockMessage;
-  return proto.mruv.economy.BlockMessage.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.BlockMessage;
+  return proto.mruv.punishments.BlockMessage.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.BlockMessage} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.BlockMessage} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.BlockMessage}
+ * @return {!proto.mruv.punishments.BlockMessage}
  */
-proto.mruv.economy.BlockMessage.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.BlockMessage.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -2103,9 +2500,9 @@ proto.mruv.economy.BlockMessage.deserializeBinaryFromReader = function(msg, read
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.BlockMessage.prototype.serializeBinary = function() {
+proto.mruv.punishments.BlockMessage.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.BlockMessage.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.BlockMessage.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -2113,11 +2510,11 @@ proto.mruv.economy.BlockMessage.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.BlockMessage} message
+ * @param {!proto.mruv.punishments.BlockMessage} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.BlockMessage.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.BlockMessage.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getPlayer();
   if (f !== 0) {
@@ -2182,13 +2579,13 @@ proto.mruv.economy.BlockMessage.serializeBinaryToWriter = function(message, writ
  * optional uint32 player = 1;
  * @return {number}
  */
-proto.mruv.economy.BlockMessage.prototype.getPlayer = function() {
+proto.mruv.punishments.BlockMessage.prototype.getPlayer = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.BlockMessage.prototype.setPlayer = function(value) {
+proto.mruv.punishments.BlockMessage.prototype.setPlayer = function(value) {
   jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -2197,13 +2594,13 @@ proto.mruv.economy.BlockMessage.prototype.setPlayer = function(value) {
  * optional uint32 character = 2;
  * @return {number}
  */
-proto.mruv.economy.BlockMessage.prototype.getCharacter = function() {
+proto.mruv.punishments.BlockMessage.prototype.getCharacter = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.BlockMessage.prototype.setCharacter = function(value) {
+proto.mruv.punishments.BlockMessage.prototype.setCharacter = function(value) {
   jspb.Message.setProto3IntField(this, 2, value);
 };
 
@@ -2212,13 +2609,13 @@ proto.mruv.economy.BlockMessage.prototype.setCharacter = function(value) {
  * optional string reason = 3;
  * @return {string}
  */
-proto.mruv.economy.BlockMessage.prototype.getReason = function() {
+proto.mruv.punishments.BlockMessage.prototype.getReason = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
 };
 
 
 /** @param {string} value */
-proto.mruv.economy.BlockMessage.prototype.setReason = function(value) {
+proto.mruv.punishments.BlockMessage.prototype.setReason = function(value) {
   jspb.Message.setProto3StringField(this, 3, value);
 };
 
@@ -2227,13 +2624,13 @@ proto.mruv.economy.BlockMessage.prototype.setReason = function(value) {
  * optional uint32 admin = 4;
  * @return {number}
  */
-proto.mruv.economy.BlockMessage.prototype.getAdmin = function() {
+proto.mruv.punishments.BlockMessage.prototype.getAdmin = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 4, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.BlockMessage.prototype.setAdmin = function(value) {
+proto.mruv.punishments.BlockMessage.prototype.setAdmin = function(value) {
   jspb.Message.setProto3IntField(this, 4, value);
 };
 
@@ -2242,13 +2639,13 @@ proto.mruv.economy.BlockMessage.prototype.setAdmin = function(value) {
  * optional int64 block_date = 5;
  * @return {number}
  */
-proto.mruv.economy.BlockMessage.prototype.getBlockDate = function() {
+proto.mruv.punishments.BlockMessage.prototype.getBlockDate = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 5, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.BlockMessage.prototype.setBlockDate = function(value) {
+proto.mruv.punishments.BlockMessage.prototype.setBlockDate = function(value) {
   jspb.Message.setProto3IntField(this, 5, value);
 };
 
@@ -2257,13 +2654,13 @@ proto.mruv.economy.BlockMessage.prototype.setBlockDate = function(value) {
  * optional bool active = 6;
  * @return {boolean}
  */
-proto.mruv.economy.BlockMessage.prototype.getActive = function() {
+proto.mruv.punishments.BlockMessage.prototype.getActive = function() {
   return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 6, false));
 };
 
 
 /** @param {boolean} value */
-proto.mruv.economy.BlockMessage.prototype.setActive = function(value) {
+proto.mruv.punishments.BlockMessage.prototype.setActive = function(value) {
   jspb.Message.setProto3BooleanField(this, 6, value);
 };
 
@@ -2272,13 +2669,13 @@ proto.mruv.economy.BlockMessage.prototype.setActive = function(value) {
  * optional int64 unblock_date = 7;
  * @return {number}
  */
-proto.mruv.economy.BlockMessage.prototype.getUnblockDate = function() {
+proto.mruv.punishments.BlockMessage.prototype.getUnblockDate = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 7, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.BlockMessage.prototype.setUnblockDate = function(value) {
+proto.mruv.punishments.BlockMessage.prototype.setUnblockDate = function(value) {
   jspb.Message.setProto3IntField(this, 7, value);
 };
 
@@ -2287,13 +2684,13 @@ proto.mruv.economy.BlockMessage.prototype.setUnblockDate = function(value) {
  * optional uint32 unblock_admin = 8;
  * @return {number}
  */
-proto.mruv.economy.BlockMessage.prototype.getUnblockAdmin = function() {
+proto.mruv.punishments.BlockMessage.prototype.getUnblockAdmin = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 8, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.BlockMessage.prototype.setUnblockAdmin = function(value) {
+proto.mruv.punishments.BlockMessage.prototype.setUnblockAdmin = function(value) {
   jspb.Message.setProto3IntField(this, 8, value);
 };
 
@@ -2314,8 +2711,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.AdminJailMessage.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.AdminJailMessage.toObject(opt_includeInstance, this);
+proto.mruv.punishments.AdminJailMessage.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.AdminJailMessage.toObject(opt_includeInstance, this);
 };
 
 
@@ -2324,11 +2721,11 @@ proto.mruv.economy.AdminJailMessage.prototype.toObject = function(opt_includeIns
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.AdminJailMessage} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.AdminJailMessage} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.AdminJailMessage.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.AdminJailMessage.toObject = function(includeInstance, msg) {
   var f, obj = {
     player: jspb.Message.getFieldWithDefault(msg, 1, 0),
     character: jspb.Message.getFieldWithDefault(msg, 2, 0),
@@ -2349,23 +2746,23 @@ proto.mruv.economy.AdminJailMessage.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.AdminJailMessage}
+ * @return {!proto.mruv.punishments.AdminJailMessage}
  */
-proto.mruv.economy.AdminJailMessage.deserializeBinary = function(bytes) {
+proto.mruv.punishments.AdminJailMessage.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.AdminJailMessage;
-  return proto.mruv.economy.AdminJailMessage.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.AdminJailMessage;
+  return proto.mruv.punishments.AdminJailMessage.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.AdminJailMessage} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.AdminJailMessage} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.AdminJailMessage}
+ * @return {!proto.mruv.punishments.AdminJailMessage}
  */
-proto.mruv.economy.AdminJailMessage.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.AdminJailMessage.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -2409,9 +2806,9 @@ proto.mruv.economy.AdminJailMessage.deserializeBinaryFromReader = function(msg, 
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.AdminJailMessage.prototype.serializeBinary = function() {
+proto.mruv.punishments.AdminJailMessage.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.AdminJailMessage.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.AdminJailMessage.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -2419,11 +2816,11 @@ proto.mruv.economy.AdminJailMessage.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.AdminJailMessage} message
+ * @param {!proto.mruv.punishments.AdminJailMessage} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.AdminJailMessage.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.AdminJailMessage.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getPlayer();
   if (f !== 0) {
@@ -2474,13 +2871,13 @@ proto.mruv.economy.AdminJailMessage.serializeBinaryToWriter = function(message, 
  * optional uint32 player = 1;
  * @return {number}
  */
-proto.mruv.economy.AdminJailMessage.prototype.getPlayer = function() {
+proto.mruv.punishments.AdminJailMessage.prototype.getPlayer = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.AdminJailMessage.prototype.setPlayer = function(value) {
+proto.mruv.punishments.AdminJailMessage.prototype.setPlayer = function(value) {
   jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -2489,13 +2886,13 @@ proto.mruv.economy.AdminJailMessage.prototype.setPlayer = function(value) {
  * optional uint32 character = 2;
  * @return {number}
  */
-proto.mruv.economy.AdminJailMessage.prototype.getCharacter = function() {
+proto.mruv.punishments.AdminJailMessage.prototype.getCharacter = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.AdminJailMessage.prototype.setCharacter = function(value) {
+proto.mruv.punishments.AdminJailMessage.prototype.setCharacter = function(value) {
   jspb.Message.setProto3IntField(this, 2, value);
 };
 
@@ -2504,13 +2901,13 @@ proto.mruv.economy.AdminJailMessage.prototype.setCharacter = function(value) {
  * optional string reason = 3;
  * @return {string}
  */
-proto.mruv.economy.AdminJailMessage.prototype.getReason = function() {
+proto.mruv.punishments.AdminJailMessage.prototype.getReason = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
 };
 
 
 /** @param {string} value */
-proto.mruv.economy.AdminJailMessage.prototype.setReason = function(value) {
+proto.mruv.punishments.AdminJailMessage.prototype.setReason = function(value) {
   jspb.Message.setProto3StringField(this, 3, value);
 };
 
@@ -2519,13 +2916,13 @@ proto.mruv.economy.AdminJailMessage.prototype.setReason = function(value) {
  * optional uint32 admin = 4;
  * @return {number}
  */
-proto.mruv.economy.AdminJailMessage.prototype.getAdmin = function() {
+proto.mruv.punishments.AdminJailMessage.prototype.getAdmin = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 4, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.AdminJailMessage.prototype.setAdmin = function(value) {
+proto.mruv.punishments.AdminJailMessage.prototype.setAdmin = function(value) {
   jspb.Message.setProto3IntField(this, 4, value);
 };
 
@@ -2534,13 +2931,13 @@ proto.mruv.economy.AdminJailMessage.prototype.setAdmin = function(value) {
  * optional int64 aj_date = 5;
  * @return {number}
  */
-proto.mruv.economy.AdminJailMessage.prototype.getAjDate = function() {
+proto.mruv.punishments.AdminJailMessage.prototype.getAjDate = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 5, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.AdminJailMessage.prototype.setAjDate = function(value) {
+proto.mruv.punishments.AdminJailMessage.prototype.setAjDate = function(value) {
   jspb.Message.setProto3IntField(this, 5, value);
 };
 
@@ -2549,13 +2946,13 @@ proto.mruv.economy.AdminJailMessage.prototype.setAjDate = function(value) {
  * optional uint32 jail_time = 6;
  * @return {number}
  */
-proto.mruv.economy.AdminJailMessage.prototype.getJailTime = function() {
+proto.mruv.punishments.AdminJailMessage.prototype.getJailTime = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 6, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.AdminJailMessage.prototype.setJailTime = function(value) {
+proto.mruv.punishments.AdminJailMessage.prototype.setJailTime = function(value) {
   jspb.Message.setProto3IntField(this, 6, value);
 };
 
@@ -2576,8 +2973,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.UnBanMessage.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.UnBanMessage.toObject(opt_includeInstance, this);
+proto.mruv.punishments.UnBanMessage.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.UnBanMessage.toObject(opt_includeInstance, this);
 };
 
 
@@ -2586,11 +2983,11 @@ proto.mruv.economy.UnBanMessage.prototype.toObject = function(opt_includeInstanc
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.UnBanMessage} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.UnBanMessage} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.UnBanMessage.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.UnBanMessage.toObject = function(includeInstance, msg) {
   var f, obj = {
     player: jspb.Message.getFieldWithDefault(msg, 1, 0),
     banId: jspb.Message.getFieldWithDefault(msg, 2, 0)
@@ -2607,23 +3004,23 @@ proto.mruv.economy.UnBanMessage.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.UnBanMessage}
+ * @return {!proto.mruv.punishments.UnBanMessage}
  */
-proto.mruv.economy.UnBanMessage.deserializeBinary = function(bytes) {
+proto.mruv.punishments.UnBanMessage.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.UnBanMessage;
-  return proto.mruv.economy.UnBanMessage.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.UnBanMessage;
+  return proto.mruv.punishments.UnBanMessage.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.UnBanMessage} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.UnBanMessage} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.UnBanMessage}
+ * @return {!proto.mruv.punishments.UnBanMessage}
  */
-proto.mruv.economy.UnBanMessage.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.UnBanMessage.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -2651,9 +3048,9 @@ proto.mruv.economy.UnBanMessage.deserializeBinaryFromReader = function(msg, read
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.UnBanMessage.prototype.serializeBinary = function() {
+proto.mruv.punishments.UnBanMessage.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.UnBanMessage.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.UnBanMessage.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -2661,11 +3058,11 @@ proto.mruv.economy.UnBanMessage.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.UnBanMessage} message
+ * @param {!proto.mruv.punishments.UnBanMessage} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.UnBanMessage.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.UnBanMessage.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getPlayer();
   if (f !== 0) {
@@ -2688,13 +3085,13 @@ proto.mruv.economy.UnBanMessage.serializeBinaryToWriter = function(message, writ
  * optional uint32 player = 1;
  * @return {number}
  */
-proto.mruv.economy.UnBanMessage.prototype.getPlayer = function() {
+proto.mruv.punishments.UnBanMessage.prototype.getPlayer = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.UnBanMessage.prototype.setPlayer = function(value) {
+proto.mruv.punishments.UnBanMessage.prototype.setPlayer = function(value) {
   jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -2703,13 +3100,13 @@ proto.mruv.economy.UnBanMessage.prototype.setPlayer = function(value) {
  * optional uint32 ban_id = 2;
  * @return {number}
  */
-proto.mruv.economy.UnBanMessage.prototype.getBanId = function() {
+proto.mruv.punishments.UnBanMessage.prototype.getBanId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.UnBanMessage.prototype.setBanId = function(value) {
+proto.mruv.punishments.UnBanMessage.prototype.setBanId = function(value) {
   jspb.Message.setProto3IntField(this, 2, value);
 };
 
@@ -2730,8 +3127,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.UnBlockMessage.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.UnBlockMessage.toObject(opt_includeInstance, this);
+proto.mruv.punishments.UnBlockMessage.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.UnBlockMessage.toObject(opt_includeInstance, this);
 };
 
 
@@ -2740,11 +3137,11 @@ proto.mruv.economy.UnBlockMessage.prototype.toObject = function(opt_includeInsta
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.UnBlockMessage} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.UnBlockMessage} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.UnBlockMessage.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.UnBlockMessage.toObject = function(includeInstance, msg) {
   var f, obj = {
     player: jspb.Message.getFieldWithDefault(msg, 1, 0),
     blockId: jspb.Message.getFieldWithDefault(msg, 2, 0)
@@ -2761,23 +3158,23 @@ proto.mruv.economy.UnBlockMessage.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.UnBlockMessage}
+ * @return {!proto.mruv.punishments.UnBlockMessage}
  */
-proto.mruv.economy.UnBlockMessage.deserializeBinary = function(bytes) {
+proto.mruv.punishments.UnBlockMessage.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.UnBlockMessage;
-  return proto.mruv.economy.UnBlockMessage.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.UnBlockMessage;
+  return proto.mruv.punishments.UnBlockMessage.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.UnBlockMessage} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.UnBlockMessage} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.UnBlockMessage}
+ * @return {!proto.mruv.punishments.UnBlockMessage}
  */
-proto.mruv.economy.UnBlockMessage.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.UnBlockMessage.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -2805,9 +3202,9 @@ proto.mruv.economy.UnBlockMessage.deserializeBinaryFromReader = function(msg, re
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.UnBlockMessage.prototype.serializeBinary = function() {
+proto.mruv.punishments.UnBlockMessage.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.UnBlockMessage.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.UnBlockMessage.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -2815,11 +3212,11 @@ proto.mruv.economy.UnBlockMessage.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.UnBlockMessage} message
+ * @param {!proto.mruv.punishments.UnBlockMessage} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.UnBlockMessage.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.UnBlockMessage.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getPlayer();
   if (f !== 0) {
@@ -2842,13 +3239,13 @@ proto.mruv.economy.UnBlockMessage.serializeBinaryToWriter = function(message, wr
  * optional uint32 player = 1;
  * @return {number}
  */
-proto.mruv.economy.UnBlockMessage.prototype.getPlayer = function() {
+proto.mruv.punishments.UnBlockMessage.prototype.getPlayer = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.UnBlockMessage.prototype.setPlayer = function(value) {
+proto.mruv.punishments.UnBlockMessage.prototype.setPlayer = function(value) {
   jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -2857,13 +3254,13 @@ proto.mruv.economy.UnBlockMessage.prototype.setPlayer = function(value) {
  * optional uint32 block_id = 2;
  * @return {number}
  */
-proto.mruv.economy.UnBlockMessage.prototype.getBlockId = function() {
+proto.mruv.punishments.UnBlockMessage.prototype.getBlockId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.UnBlockMessage.prototype.setBlockId = function(value) {
+proto.mruv.punishments.UnBlockMessage.prototype.setBlockId = function(value) {
   jspb.Message.setProto3IntField(this, 2, value);
 };
 
@@ -2884,8 +3281,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.UnWarnMessage.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.UnWarnMessage.toObject(opt_includeInstance, this);
+proto.mruv.punishments.UnWarnMessage.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.UnWarnMessage.toObject(opt_includeInstance, this);
 };
 
 
@@ -2894,11 +3291,11 @@ proto.mruv.economy.UnWarnMessage.prototype.toObject = function(opt_includeInstan
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.UnWarnMessage} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.UnWarnMessage} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.UnWarnMessage.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.UnWarnMessage.toObject = function(includeInstance, msg) {
   var f, obj = {
     player: jspb.Message.getFieldWithDefault(msg, 1, 0),
     warnId: jspb.Message.getFieldWithDefault(msg, 2, 0)
@@ -2915,23 +3312,23 @@ proto.mruv.economy.UnWarnMessage.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.UnWarnMessage}
+ * @return {!proto.mruv.punishments.UnWarnMessage}
  */
-proto.mruv.economy.UnWarnMessage.deserializeBinary = function(bytes) {
+proto.mruv.punishments.UnWarnMessage.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.UnWarnMessage;
-  return proto.mruv.economy.UnWarnMessage.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.UnWarnMessage;
+  return proto.mruv.punishments.UnWarnMessage.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.UnWarnMessage} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.UnWarnMessage} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.UnWarnMessage}
+ * @return {!proto.mruv.punishments.UnWarnMessage}
  */
-proto.mruv.economy.UnWarnMessage.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.UnWarnMessage.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -2959,9 +3356,9 @@ proto.mruv.economy.UnWarnMessage.deserializeBinaryFromReader = function(msg, rea
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.UnWarnMessage.prototype.serializeBinary = function() {
+proto.mruv.punishments.UnWarnMessage.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.UnWarnMessage.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.UnWarnMessage.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -2969,11 +3366,11 @@ proto.mruv.economy.UnWarnMessage.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.UnWarnMessage} message
+ * @param {!proto.mruv.punishments.UnWarnMessage} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.UnWarnMessage.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.UnWarnMessage.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getPlayer();
   if (f !== 0) {
@@ -2996,13 +3393,13 @@ proto.mruv.economy.UnWarnMessage.serializeBinaryToWriter = function(message, wri
  * optional uint32 player = 1;
  * @return {number}
  */
-proto.mruv.economy.UnWarnMessage.prototype.getPlayer = function() {
+proto.mruv.punishments.UnWarnMessage.prototype.getPlayer = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.UnWarnMessage.prototype.setPlayer = function(value) {
+proto.mruv.punishments.UnWarnMessage.prototype.setPlayer = function(value) {
   jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -3011,13 +3408,13 @@ proto.mruv.economy.UnWarnMessage.prototype.setPlayer = function(value) {
  * optional uint32 warn_id = 2;
  * @return {number}
  */
-proto.mruv.economy.UnWarnMessage.prototype.getWarnId = function() {
+proto.mruv.punishments.UnWarnMessage.prototype.getWarnId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.UnWarnMessage.prototype.setWarnId = function(value) {
+proto.mruv.punishments.UnWarnMessage.prototype.setWarnId = function(value) {
   jspb.Message.setProto3IntField(this, 2, value);
 };
 
@@ -3038,8 +3435,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.UnAdminJailMessage.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.UnAdminJailMessage.toObject(opt_includeInstance, this);
+proto.mruv.punishments.UnAdminJailMessage.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.UnAdminJailMessage.toObject(opt_includeInstance, this);
 };
 
 
@@ -3048,11 +3445,11 @@ proto.mruv.economy.UnAdminJailMessage.prototype.toObject = function(opt_includeI
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.UnAdminJailMessage} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.UnAdminJailMessage} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.UnAdminJailMessage.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.UnAdminJailMessage.toObject = function(includeInstance, msg) {
   var f, obj = {
     player: jspb.Message.getFieldWithDefault(msg, 1, 0),
     character: jspb.Message.getFieldWithDefault(msg, 2, 0)
@@ -3069,23 +3466,23 @@ proto.mruv.economy.UnAdminJailMessage.toObject = function(includeInstance, msg) 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.UnAdminJailMessage}
+ * @return {!proto.mruv.punishments.UnAdminJailMessage}
  */
-proto.mruv.economy.UnAdminJailMessage.deserializeBinary = function(bytes) {
+proto.mruv.punishments.UnAdminJailMessage.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.UnAdminJailMessage;
-  return proto.mruv.economy.UnAdminJailMessage.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.UnAdminJailMessage;
+  return proto.mruv.punishments.UnAdminJailMessage.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.UnAdminJailMessage} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.UnAdminJailMessage} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.UnAdminJailMessage}
+ * @return {!proto.mruv.punishments.UnAdminJailMessage}
  */
-proto.mruv.economy.UnAdminJailMessage.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.UnAdminJailMessage.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -3113,9 +3510,9 @@ proto.mruv.economy.UnAdminJailMessage.deserializeBinaryFromReader = function(msg
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.UnAdminJailMessage.prototype.serializeBinary = function() {
+proto.mruv.punishments.UnAdminJailMessage.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.UnAdminJailMessage.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.UnAdminJailMessage.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -3123,11 +3520,11 @@ proto.mruv.economy.UnAdminJailMessage.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.UnAdminJailMessage} message
+ * @param {!proto.mruv.punishments.UnAdminJailMessage} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.UnAdminJailMessage.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.UnAdminJailMessage.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getPlayer();
   if (f !== 0) {
@@ -3150,13 +3547,13 @@ proto.mruv.economy.UnAdminJailMessage.serializeBinaryToWriter = function(message
  * optional uint32 player = 1;
  * @return {number}
  */
-proto.mruv.economy.UnAdminJailMessage.prototype.getPlayer = function() {
+proto.mruv.punishments.UnAdminJailMessage.prototype.getPlayer = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.UnAdminJailMessage.prototype.setPlayer = function(value) {
+proto.mruv.punishments.UnAdminJailMessage.prototype.setPlayer = function(value) {
   jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -3165,13 +3562,13 @@ proto.mruv.economy.UnAdminJailMessage.prototype.setPlayer = function(value) {
  * optional uint32 character = 2;
  * @return {number}
  */
-proto.mruv.economy.UnAdminJailMessage.prototype.getCharacter = function() {
+proto.mruv.punishments.UnAdminJailMessage.prototype.getCharacter = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.UnAdminJailMessage.prototype.setCharacter = function(value) {
+proto.mruv.punishments.UnAdminJailMessage.prototype.setCharacter = function(value) {
   jspb.Message.setProto3IntField(this, 2, value);
 };
 
@@ -3192,8 +3589,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.BanRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.BanRequest.toObject(opt_includeInstance, this);
+proto.mruv.punishments.PunishRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.PunishRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -3202,11 +3599,320 @@ proto.mruv.economy.BanRequest.prototype.toObject = function(opt_includeInstance)
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.BanRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.PunishRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.BanRequest.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.PunishRequest.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    player: jspb.Message.getFieldWithDefault(msg, 1, 0),
+    character: jspb.Message.getFieldWithDefault(msg, 2, 0),
+    reason: jspb.Message.getFieldWithDefault(msg, 3, ""),
+    admin: jspb.Message.getFieldWithDefault(msg, 4, 0)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.mruv.punishments.PunishRequest}
+ */
+proto.mruv.punishments.PunishRequest.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.mruv.punishments.PunishRequest;
+  return proto.mruv.punishments.PunishRequest.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.mruv.punishments.PunishRequest} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.mruv.punishments.PunishRequest}
+ */
+proto.mruv.punishments.PunishRequest.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {number} */ (reader.readUint32());
+      msg.setPlayer(value);
+      break;
+    case 2:
+      var value = /** @type {number} */ (reader.readUint32());
+      msg.setCharacter(value);
+      break;
+    case 3:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setReason(value);
+      break;
+    case 4:
+      var value = /** @type {number} */ (reader.readUint32());
+      msg.setAdmin(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.mruv.punishments.PunishRequest.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.mruv.punishments.PunishRequest.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.mruv.punishments.PunishRequest} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mruv.punishments.PunishRequest.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getPlayer();
+  if (f !== 0) {
+    writer.writeUint32(
+      1,
+      f
+    );
+  }
+  f = message.getCharacter();
+  if (f !== 0) {
+    writer.writeUint32(
+      2,
+      f
+    );
+  }
+  f = message.getReason();
+  if (f.length > 0) {
+    writer.writeString(
+      3,
+      f
+    );
+  }
+  f = message.getAdmin();
+  if (f !== 0) {
+    writer.writeUint32(
+      4,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional uint32 player = 1;
+ * @return {number}
+ */
+proto.mruv.punishments.PunishRequest.prototype.getPlayer = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
+};
+
+
+/** @param {number} value */
+proto.mruv.punishments.PunishRequest.prototype.setPlayer = function(value) {
+  jspb.Message.setProto3IntField(this, 1, value);
+};
+
+
+/**
+ * optional uint32 character = 2;
+ * @return {number}
+ */
+proto.mruv.punishments.PunishRequest.prototype.getCharacter = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
+};
+
+
+/** @param {number} value */
+proto.mruv.punishments.PunishRequest.prototype.setCharacter = function(value) {
+  jspb.Message.setProto3IntField(this, 2, value);
+};
+
+
+/**
+ * optional string reason = 3;
+ * @return {string}
+ */
+proto.mruv.punishments.PunishRequest.prototype.getReason = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
+};
+
+
+/** @param {string} value */
+proto.mruv.punishments.PunishRequest.prototype.setReason = function(value) {
+  jspb.Message.setProto3StringField(this, 3, value);
+};
+
+
+/**
+ * optional uint32 admin = 4;
+ * @return {number}
+ */
+proto.mruv.punishments.PunishRequest.prototype.getAdmin = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 4, 0));
+};
+
+
+/** @param {number} value */
+proto.mruv.punishments.PunishRequest.prototype.setAdmin = function(value) {
+  jspb.Message.setProto3IntField(this, 4, value);
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mruv.punishments.PunishResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.PunishResponse.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mruv.punishments.PunishResponse} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mruv.punishments.PunishResponse.toObject = function(includeInstance, msg) {
+  var f, obj = {
+
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.mruv.punishments.PunishResponse}
+ */
+proto.mruv.punishments.PunishResponse.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.mruv.punishments.PunishResponse;
+  return proto.mruv.punishments.PunishResponse.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.mruv.punishments.PunishResponse} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.mruv.punishments.PunishResponse}
+ */
+proto.mruv.punishments.PunishResponse.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.mruv.punishments.PunishResponse.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.mruv.punishments.PunishResponse.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.mruv.punishments.PunishResponse} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mruv.punishments.PunishResponse.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mruv.punishments.BanRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.BanRequest.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mruv.punishments.BanRequest} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mruv.punishments.BanRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     player: jspb.Message.getFieldWithDefault(msg, 1, 0),
     character: jspb.Message.getFieldWithDefault(msg, 2, 0),
@@ -3227,23 +3933,23 @@ proto.mruv.economy.BanRequest.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.BanRequest}
+ * @return {!proto.mruv.punishments.BanRequest}
  */
-proto.mruv.economy.BanRequest.deserializeBinary = function(bytes) {
+proto.mruv.punishments.BanRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.BanRequest;
-  return proto.mruv.economy.BanRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.BanRequest;
+  return proto.mruv.punishments.BanRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.BanRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.BanRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.BanRequest}
+ * @return {!proto.mruv.punishments.BanRequest}
  */
-proto.mruv.economy.BanRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.BanRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -3287,9 +3993,9 @@ proto.mruv.economy.BanRequest.deserializeBinaryFromReader = function(msg, reader
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.BanRequest.prototype.serializeBinary = function() {
+proto.mruv.punishments.BanRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.BanRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.BanRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -3297,11 +4003,11 @@ proto.mruv.economy.BanRequest.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.BanRequest} message
+ * @param {!proto.mruv.punishments.BanRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.BanRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.BanRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getPlayer();
   if (f !== 0) {
@@ -3352,13 +4058,13 @@ proto.mruv.economy.BanRequest.serializeBinaryToWriter = function(message, writer
  * optional uint32 player = 1;
  * @return {number}
  */
-proto.mruv.economy.BanRequest.prototype.getPlayer = function() {
+proto.mruv.punishments.BanRequest.prototype.getPlayer = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.BanRequest.prototype.setPlayer = function(value) {
+proto.mruv.punishments.BanRequest.prototype.setPlayer = function(value) {
   jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -3367,13 +4073,13 @@ proto.mruv.economy.BanRequest.prototype.setPlayer = function(value) {
  * optional uint32 character = 2;
  * @return {number}
  */
-proto.mruv.economy.BanRequest.prototype.getCharacter = function() {
+proto.mruv.punishments.BanRequest.prototype.getCharacter = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.BanRequest.prototype.setCharacter = function(value) {
+proto.mruv.punishments.BanRequest.prototype.setCharacter = function(value) {
   jspb.Message.setProto3IntField(this, 2, value);
 };
 
@@ -3382,13 +4088,13 @@ proto.mruv.economy.BanRequest.prototype.setCharacter = function(value) {
  * optional string ip = 3;
  * @return {string}
  */
-proto.mruv.economy.BanRequest.prototype.getIp = function() {
+proto.mruv.punishments.BanRequest.prototype.getIp = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
 };
 
 
 /** @param {string} value */
-proto.mruv.economy.BanRequest.prototype.setIp = function(value) {
+proto.mruv.punishments.BanRequest.prototype.setIp = function(value) {
   jspb.Message.setProto3StringField(this, 3, value);
 };
 
@@ -3397,13 +4103,13 @@ proto.mruv.economy.BanRequest.prototype.setIp = function(value) {
  * optional uint32 time = 4;
  * @return {number}
  */
-proto.mruv.economy.BanRequest.prototype.getTime = function() {
+proto.mruv.punishments.BanRequest.prototype.getTime = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 4, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.BanRequest.prototype.setTime = function(value) {
+proto.mruv.punishments.BanRequest.prototype.setTime = function(value) {
   jspb.Message.setProto3IntField(this, 4, value);
 };
 
@@ -3412,13 +4118,13 @@ proto.mruv.economy.BanRequest.prototype.setTime = function(value) {
  * optional string reason = 5;
  * @return {string}
  */
-proto.mruv.economy.BanRequest.prototype.getReason = function() {
+proto.mruv.punishments.BanRequest.prototype.getReason = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 5, ""));
 };
 
 
 /** @param {string} value */
-proto.mruv.economy.BanRequest.prototype.setReason = function(value) {
+proto.mruv.punishments.BanRequest.prototype.setReason = function(value) {
   jspb.Message.setProto3StringField(this, 5, value);
 };
 
@@ -3427,13 +4133,13 @@ proto.mruv.economy.BanRequest.prototype.setReason = function(value) {
  * optional uint32 admin = 6;
  * @return {number}
  */
-proto.mruv.economy.BanRequest.prototype.getAdmin = function() {
+proto.mruv.punishments.BanRequest.prototype.getAdmin = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 6, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.BanRequest.prototype.setAdmin = function(value) {
+proto.mruv.punishments.BanRequest.prototype.setAdmin = function(value) {
   jspb.Message.setProto3IntField(this, 6, value);
 };
 
@@ -3454,8 +4160,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.BanResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.BanResponse.toObject(opt_includeInstance, this);
+proto.mruv.punishments.BanResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.BanResponse.toObject(opt_includeInstance, this);
 };
 
 
@@ -3464,11 +4170,11 @@ proto.mruv.economy.BanResponse.prototype.toObject = function(opt_includeInstance
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.BanResponse} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.BanResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.BanResponse.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.BanResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
     banId: jspb.Message.getFieldWithDefault(msg, 1, 0)
   };
@@ -3484,23 +4190,23 @@ proto.mruv.economy.BanResponse.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.BanResponse}
+ * @return {!proto.mruv.punishments.BanResponse}
  */
-proto.mruv.economy.BanResponse.deserializeBinary = function(bytes) {
+proto.mruv.punishments.BanResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.BanResponse;
-  return proto.mruv.economy.BanResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.BanResponse;
+  return proto.mruv.punishments.BanResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.BanResponse} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.BanResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.BanResponse}
+ * @return {!proto.mruv.punishments.BanResponse}
  */
-proto.mruv.economy.BanResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.BanResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -3524,9 +4230,9 @@ proto.mruv.economy.BanResponse.deserializeBinaryFromReader = function(msg, reade
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.BanResponse.prototype.serializeBinary = function() {
+proto.mruv.punishments.BanResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.BanResponse.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.BanResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -3534,11 +4240,11 @@ proto.mruv.economy.BanResponse.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.BanResponse} message
+ * @param {!proto.mruv.punishments.BanResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.BanResponse.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.BanResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getBanId();
   if (f !== 0) {
@@ -3554,13 +4260,13 @@ proto.mruv.economy.BanResponse.serializeBinaryToWriter = function(message, write
  * optional uint32 ban_id = 1;
  * @return {number}
  */
-proto.mruv.economy.BanResponse.prototype.getBanId = function() {
+proto.mruv.punishments.BanResponse.prototype.getBanId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.BanResponse.prototype.setBanId = function(value) {
+proto.mruv.punishments.BanResponse.prototype.setBanId = function(value) {
   jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -3581,8 +4287,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.BlockRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.BlockRequest.toObject(opt_includeInstance, this);
+proto.mruv.punishments.BlockRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.BlockRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -3591,11 +4297,11 @@ proto.mruv.economy.BlockRequest.prototype.toObject = function(opt_includeInstanc
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.BlockRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.BlockRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.BlockRequest.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.BlockRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     character: jspb.Message.getFieldWithDefault(msg, 1, 0),
     reason: jspb.Message.getFieldWithDefault(msg, 2, ""),
@@ -3613,23 +4319,23 @@ proto.mruv.economy.BlockRequest.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.BlockRequest}
+ * @return {!proto.mruv.punishments.BlockRequest}
  */
-proto.mruv.economy.BlockRequest.deserializeBinary = function(bytes) {
+proto.mruv.punishments.BlockRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.BlockRequest;
-  return proto.mruv.economy.BlockRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.BlockRequest;
+  return proto.mruv.punishments.BlockRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.BlockRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.BlockRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.BlockRequest}
+ * @return {!proto.mruv.punishments.BlockRequest}
  */
-proto.mruv.economy.BlockRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.BlockRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -3661,9 +4367,9 @@ proto.mruv.economy.BlockRequest.deserializeBinaryFromReader = function(msg, read
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.BlockRequest.prototype.serializeBinary = function() {
+proto.mruv.punishments.BlockRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.BlockRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.BlockRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -3671,11 +4377,11 @@ proto.mruv.economy.BlockRequest.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.BlockRequest} message
+ * @param {!proto.mruv.punishments.BlockRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.BlockRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.BlockRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getCharacter();
   if (f !== 0) {
@@ -3705,13 +4411,13 @@ proto.mruv.economy.BlockRequest.serializeBinaryToWriter = function(message, writ
  * optional uint32 character = 1;
  * @return {number}
  */
-proto.mruv.economy.BlockRequest.prototype.getCharacter = function() {
+proto.mruv.punishments.BlockRequest.prototype.getCharacter = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.BlockRequest.prototype.setCharacter = function(value) {
+proto.mruv.punishments.BlockRequest.prototype.setCharacter = function(value) {
   jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -3720,13 +4426,13 @@ proto.mruv.economy.BlockRequest.prototype.setCharacter = function(value) {
  * optional string reason = 2;
  * @return {string}
  */
-proto.mruv.economy.BlockRequest.prototype.getReason = function() {
+proto.mruv.punishments.BlockRequest.prototype.getReason = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
 
 
 /** @param {string} value */
-proto.mruv.economy.BlockRequest.prototype.setReason = function(value) {
+proto.mruv.punishments.BlockRequest.prototype.setReason = function(value) {
   jspb.Message.setProto3StringField(this, 2, value);
 };
 
@@ -3735,13 +4441,13 @@ proto.mruv.economy.BlockRequest.prototype.setReason = function(value) {
  * optional uint32 admin = 3;
  * @return {number}
  */
-proto.mruv.economy.BlockRequest.prototype.getAdmin = function() {
+proto.mruv.punishments.BlockRequest.prototype.getAdmin = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.BlockRequest.prototype.setAdmin = function(value) {
+proto.mruv.punishments.BlockRequest.prototype.setAdmin = function(value) {
   jspb.Message.setProto3IntField(this, 3, value);
 };
 
@@ -3762,8 +4468,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.BlockResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.BlockResponse.toObject(opt_includeInstance, this);
+proto.mruv.punishments.BlockResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.BlockResponse.toObject(opt_includeInstance, this);
 };
 
 
@@ -3772,11 +4478,11 @@ proto.mruv.economy.BlockResponse.prototype.toObject = function(opt_includeInstan
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.BlockResponse} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.BlockResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.BlockResponse.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.BlockResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
     blockId: jspb.Message.getFieldWithDefault(msg, 1, 0)
   };
@@ -3792,23 +4498,23 @@ proto.mruv.economy.BlockResponse.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.BlockResponse}
+ * @return {!proto.mruv.punishments.BlockResponse}
  */
-proto.mruv.economy.BlockResponse.deserializeBinary = function(bytes) {
+proto.mruv.punishments.BlockResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.BlockResponse;
-  return proto.mruv.economy.BlockResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.BlockResponse;
+  return proto.mruv.punishments.BlockResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.BlockResponse} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.BlockResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.BlockResponse}
+ * @return {!proto.mruv.punishments.BlockResponse}
  */
-proto.mruv.economy.BlockResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.BlockResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -3832,9 +4538,9 @@ proto.mruv.economy.BlockResponse.deserializeBinaryFromReader = function(msg, rea
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.BlockResponse.prototype.serializeBinary = function() {
+proto.mruv.punishments.BlockResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.BlockResponse.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.BlockResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -3842,11 +4548,11 @@ proto.mruv.economy.BlockResponse.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.BlockResponse} message
+ * @param {!proto.mruv.punishments.BlockResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.BlockResponse.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.BlockResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getBlockId();
   if (f !== 0) {
@@ -3862,13 +4568,13 @@ proto.mruv.economy.BlockResponse.serializeBinaryToWriter = function(message, wri
  * optional uint32 block_id = 1;
  * @return {number}
  */
-proto.mruv.economy.BlockResponse.prototype.getBlockId = function() {
+proto.mruv.punishments.BlockResponse.prototype.getBlockId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.BlockResponse.prototype.setBlockId = function(value) {
+proto.mruv.punishments.BlockResponse.prototype.setBlockId = function(value) {
   jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -3889,8 +4595,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.WarnRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.WarnRequest.toObject(opt_includeInstance, this);
+proto.mruv.punishments.WarnRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.WarnRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -3899,11 +4605,11 @@ proto.mruv.economy.WarnRequest.prototype.toObject = function(opt_includeInstance
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.WarnRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.WarnRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.WarnRequest.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.WarnRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     player: jspb.Message.getFieldWithDefault(msg, 1, 0),
     character: jspb.Message.getFieldWithDefault(msg, 2, 0),
@@ -3923,23 +4629,23 @@ proto.mruv.economy.WarnRequest.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.WarnRequest}
+ * @return {!proto.mruv.punishments.WarnRequest}
  */
-proto.mruv.economy.WarnRequest.deserializeBinary = function(bytes) {
+proto.mruv.punishments.WarnRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.WarnRequest;
-  return proto.mruv.economy.WarnRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.WarnRequest;
+  return proto.mruv.punishments.WarnRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.WarnRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.WarnRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.WarnRequest}
+ * @return {!proto.mruv.punishments.WarnRequest}
  */
-proto.mruv.economy.WarnRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.WarnRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -3979,9 +4685,9 @@ proto.mruv.economy.WarnRequest.deserializeBinaryFromReader = function(msg, reade
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.WarnRequest.prototype.serializeBinary = function() {
+proto.mruv.punishments.WarnRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.WarnRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.WarnRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -3989,11 +4695,11 @@ proto.mruv.economy.WarnRequest.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.WarnRequest} message
+ * @param {!proto.mruv.punishments.WarnRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.WarnRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.WarnRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getPlayer();
   if (f !== 0) {
@@ -4037,13 +4743,13 @@ proto.mruv.economy.WarnRequest.serializeBinaryToWriter = function(message, write
  * optional uint32 player = 1;
  * @return {number}
  */
-proto.mruv.economy.WarnRequest.prototype.getPlayer = function() {
+proto.mruv.punishments.WarnRequest.prototype.getPlayer = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.WarnRequest.prototype.setPlayer = function(value) {
+proto.mruv.punishments.WarnRequest.prototype.setPlayer = function(value) {
   jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -4052,13 +4758,13 @@ proto.mruv.economy.WarnRequest.prototype.setPlayer = function(value) {
  * optional uint32 character = 2;
  * @return {number}
  */
-proto.mruv.economy.WarnRequest.prototype.getCharacter = function() {
+proto.mruv.punishments.WarnRequest.prototype.getCharacter = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.WarnRequest.prototype.setCharacter = function(value) {
+proto.mruv.punishments.WarnRequest.prototype.setCharacter = function(value) {
   jspb.Message.setProto3IntField(this, 2, value);
 };
 
@@ -4067,13 +4773,13 @@ proto.mruv.economy.WarnRequest.prototype.setCharacter = function(value) {
  * optional uint32 time = 3;
  * @return {number}
  */
-proto.mruv.economy.WarnRequest.prototype.getTime = function() {
+proto.mruv.punishments.WarnRequest.prototype.getTime = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.WarnRequest.prototype.setTime = function(value) {
+proto.mruv.punishments.WarnRequest.prototype.setTime = function(value) {
   jspb.Message.setProto3IntField(this, 3, value);
 };
 
@@ -4082,13 +4788,13 @@ proto.mruv.economy.WarnRequest.prototype.setTime = function(value) {
  * optional string reason = 4;
  * @return {string}
  */
-proto.mruv.economy.WarnRequest.prototype.getReason = function() {
+proto.mruv.punishments.WarnRequest.prototype.getReason = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 4, ""));
 };
 
 
 /** @param {string} value */
-proto.mruv.economy.WarnRequest.prototype.setReason = function(value) {
+proto.mruv.punishments.WarnRequest.prototype.setReason = function(value) {
   jspb.Message.setProto3StringField(this, 4, value);
 };
 
@@ -4097,13 +4803,13 @@ proto.mruv.economy.WarnRequest.prototype.setReason = function(value) {
  * optional uint32 admin = 5;
  * @return {number}
  */
-proto.mruv.economy.WarnRequest.prototype.getAdmin = function() {
+proto.mruv.punishments.WarnRequest.prototype.getAdmin = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 5, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.WarnRequest.prototype.setAdmin = function(value) {
+proto.mruv.punishments.WarnRequest.prototype.setAdmin = function(value) {
   jspb.Message.setProto3IntField(this, 5, value);
 };
 
@@ -4124,8 +4830,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.WarnResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.WarnResponse.toObject(opt_includeInstance, this);
+proto.mruv.punishments.WarnResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.WarnResponse.toObject(opt_includeInstance, this);
 };
 
 
@@ -4134,11 +4840,11 @@ proto.mruv.economy.WarnResponse.prototype.toObject = function(opt_includeInstanc
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.WarnResponse} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.WarnResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.WarnResponse.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.WarnResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
     warnId: jspb.Message.getFieldWithDefault(msg, 1, 0)
   };
@@ -4154,23 +4860,23 @@ proto.mruv.economy.WarnResponse.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.WarnResponse}
+ * @return {!proto.mruv.punishments.WarnResponse}
  */
-proto.mruv.economy.WarnResponse.deserializeBinary = function(bytes) {
+proto.mruv.punishments.WarnResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.WarnResponse;
-  return proto.mruv.economy.WarnResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.WarnResponse;
+  return proto.mruv.punishments.WarnResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.WarnResponse} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.WarnResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.WarnResponse}
+ * @return {!proto.mruv.punishments.WarnResponse}
  */
-proto.mruv.economy.WarnResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.WarnResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -4194,9 +4900,9 @@ proto.mruv.economy.WarnResponse.deserializeBinaryFromReader = function(msg, read
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.WarnResponse.prototype.serializeBinary = function() {
+proto.mruv.punishments.WarnResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.WarnResponse.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.WarnResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -4204,11 +4910,11 @@ proto.mruv.economy.WarnResponse.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.WarnResponse} message
+ * @param {!proto.mruv.punishments.WarnResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.WarnResponse.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.WarnResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getWarnId();
   if (f !== 0) {
@@ -4224,13 +4930,13 @@ proto.mruv.economy.WarnResponse.serializeBinaryToWriter = function(message, writ
  * optional uint32 warn_id = 1;
  * @return {number}
  */
-proto.mruv.economy.WarnResponse.prototype.getWarnId = function() {
+proto.mruv.punishments.WarnResponse.prototype.getWarnId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.WarnResponse.prototype.setWarnId = function(value) {
+proto.mruv.punishments.WarnResponse.prototype.setWarnId = function(value) {
   jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -4251,8 +4957,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.AdminJailRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.AdminJailRequest.toObject(opt_includeInstance, this);
+proto.mruv.punishments.AdminJailRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.AdminJailRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -4261,11 +4967,11 @@ proto.mruv.economy.AdminJailRequest.prototype.toObject = function(opt_includeIns
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.AdminJailRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.AdminJailRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.AdminJailRequest.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.AdminJailRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     character: jspb.Message.getFieldWithDefault(msg, 1, 0),
     time: jspb.Message.getFieldWithDefault(msg, 2, 0),
@@ -4284,23 +4990,23 @@ proto.mruv.economy.AdminJailRequest.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.AdminJailRequest}
+ * @return {!proto.mruv.punishments.AdminJailRequest}
  */
-proto.mruv.economy.AdminJailRequest.deserializeBinary = function(bytes) {
+proto.mruv.punishments.AdminJailRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.AdminJailRequest;
-  return proto.mruv.economy.AdminJailRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.AdminJailRequest;
+  return proto.mruv.punishments.AdminJailRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.AdminJailRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.AdminJailRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.AdminJailRequest}
+ * @return {!proto.mruv.punishments.AdminJailRequest}
  */
-proto.mruv.economy.AdminJailRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.AdminJailRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -4336,9 +5042,9 @@ proto.mruv.economy.AdminJailRequest.deserializeBinaryFromReader = function(msg, 
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.AdminJailRequest.prototype.serializeBinary = function() {
+proto.mruv.punishments.AdminJailRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.AdminJailRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.AdminJailRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -4346,11 +5052,11 @@ proto.mruv.economy.AdminJailRequest.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.AdminJailRequest} message
+ * @param {!proto.mruv.punishments.AdminJailRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.AdminJailRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.AdminJailRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getCharacter();
   if (f !== 0) {
@@ -4387,13 +5093,13 @@ proto.mruv.economy.AdminJailRequest.serializeBinaryToWriter = function(message, 
  * optional uint32 character = 1;
  * @return {number}
  */
-proto.mruv.economy.AdminJailRequest.prototype.getCharacter = function() {
+proto.mruv.punishments.AdminJailRequest.prototype.getCharacter = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.AdminJailRequest.prototype.setCharacter = function(value) {
+proto.mruv.punishments.AdminJailRequest.prototype.setCharacter = function(value) {
   jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -4402,13 +5108,13 @@ proto.mruv.economy.AdminJailRequest.prototype.setCharacter = function(value) {
  * optional uint32 time = 2;
  * @return {number}
  */
-proto.mruv.economy.AdminJailRequest.prototype.getTime = function() {
+proto.mruv.punishments.AdminJailRequest.prototype.getTime = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.AdminJailRequest.prototype.setTime = function(value) {
+proto.mruv.punishments.AdminJailRequest.prototype.setTime = function(value) {
   jspb.Message.setProto3IntField(this, 2, value);
 };
 
@@ -4417,13 +5123,13 @@ proto.mruv.economy.AdminJailRequest.prototype.setTime = function(value) {
  * optional string reason = 3;
  * @return {string}
  */
-proto.mruv.economy.AdminJailRequest.prototype.getReason = function() {
+proto.mruv.punishments.AdminJailRequest.prototype.getReason = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
 };
 
 
 /** @param {string} value */
-proto.mruv.economy.AdminJailRequest.prototype.setReason = function(value) {
+proto.mruv.punishments.AdminJailRequest.prototype.setReason = function(value) {
   jspb.Message.setProto3StringField(this, 3, value);
 };
 
@@ -4432,13 +5138,13 @@ proto.mruv.economy.AdminJailRequest.prototype.setReason = function(value) {
  * optional uint32 admin = 4;
  * @return {number}
  */
-proto.mruv.economy.AdminJailRequest.prototype.getAdmin = function() {
+proto.mruv.punishments.AdminJailRequest.prototype.getAdmin = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 4, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.AdminJailRequest.prototype.setAdmin = function(value) {
+proto.mruv.punishments.AdminJailRequest.prototype.setAdmin = function(value) {
   jspb.Message.setProto3IntField(this, 4, value);
 };
 
@@ -4459,8 +5165,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.AdminJailResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.AdminJailResponse.toObject(opt_includeInstance, this);
+proto.mruv.punishments.AdminJailResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.AdminJailResponse.toObject(opt_includeInstance, this);
 };
 
 
@@ -4469,11 +5175,11 @@ proto.mruv.economy.AdminJailResponse.prototype.toObject = function(opt_includeIn
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.AdminJailResponse} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.AdminJailResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.AdminJailResponse.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.AdminJailResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
 
   };
@@ -4489,23 +5195,23 @@ proto.mruv.economy.AdminJailResponse.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.AdminJailResponse}
+ * @return {!proto.mruv.punishments.AdminJailResponse}
  */
-proto.mruv.economy.AdminJailResponse.deserializeBinary = function(bytes) {
+proto.mruv.punishments.AdminJailResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.AdminJailResponse;
-  return proto.mruv.economy.AdminJailResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.AdminJailResponse;
+  return proto.mruv.punishments.AdminJailResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.AdminJailResponse} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.AdminJailResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.AdminJailResponse}
+ * @return {!proto.mruv.punishments.AdminJailResponse}
  */
-proto.mruv.economy.AdminJailResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.AdminJailResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -4525,9 +5231,9 @@ proto.mruv.economy.AdminJailResponse.deserializeBinaryFromReader = function(msg,
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.AdminJailResponse.prototype.serializeBinary = function() {
+proto.mruv.punishments.AdminJailResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.AdminJailResponse.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.AdminJailResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -4535,11 +5241,11 @@ proto.mruv.economy.AdminJailResponse.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.AdminJailResponse} message
+ * @param {!proto.mruv.punishments.AdminJailResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.AdminJailResponse.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.AdminJailResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
 };
 
@@ -4560,8 +5266,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.MuteGlobalChatsRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.MuteGlobalChatsRequest.toObject(opt_includeInstance, this);
+proto.mruv.punishments.MuteGlobalChatsRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.MuteGlobalChatsRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -4570,11 +5276,11 @@ proto.mruv.economy.MuteGlobalChatsRequest.prototype.toObject = function(opt_incl
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.MuteGlobalChatsRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.MuteGlobalChatsRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.MuteGlobalChatsRequest.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.MuteGlobalChatsRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     account: jspb.Message.getFieldWithDefault(msg, 1, 0)
   };
@@ -4590,23 +5296,23 @@ proto.mruv.economy.MuteGlobalChatsRequest.toObject = function(includeInstance, m
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.MuteGlobalChatsRequest}
+ * @return {!proto.mruv.punishments.MuteGlobalChatsRequest}
  */
-proto.mruv.economy.MuteGlobalChatsRequest.deserializeBinary = function(bytes) {
+proto.mruv.punishments.MuteGlobalChatsRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.MuteGlobalChatsRequest;
-  return proto.mruv.economy.MuteGlobalChatsRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.MuteGlobalChatsRequest;
+  return proto.mruv.punishments.MuteGlobalChatsRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.MuteGlobalChatsRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.MuteGlobalChatsRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.MuteGlobalChatsRequest}
+ * @return {!proto.mruv.punishments.MuteGlobalChatsRequest}
  */
-proto.mruv.economy.MuteGlobalChatsRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.MuteGlobalChatsRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -4630,9 +5336,9 @@ proto.mruv.economy.MuteGlobalChatsRequest.deserializeBinaryFromReader = function
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.MuteGlobalChatsRequest.prototype.serializeBinary = function() {
+proto.mruv.punishments.MuteGlobalChatsRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.MuteGlobalChatsRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.MuteGlobalChatsRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -4640,11 +5346,11 @@ proto.mruv.economy.MuteGlobalChatsRequest.prototype.serializeBinary = function()
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.MuteGlobalChatsRequest} message
+ * @param {!proto.mruv.punishments.MuteGlobalChatsRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.MuteGlobalChatsRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.MuteGlobalChatsRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getAccount();
   if (f !== 0) {
@@ -4660,13 +5366,13 @@ proto.mruv.economy.MuteGlobalChatsRequest.serializeBinaryToWriter = function(mes
  * optional uint32 account = 1;
  * @return {number}
  */
-proto.mruv.economy.MuteGlobalChatsRequest.prototype.getAccount = function() {
+proto.mruv.punishments.MuteGlobalChatsRequest.prototype.getAccount = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.MuteGlobalChatsRequest.prototype.setAccount = function(value) {
+proto.mruv.punishments.MuteGlobalChatsRequest.prototype.setAccount = function(value) {
   jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -4687,8 +5393,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.MuteGlobalChatsResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.MuteGlobalChatsResponse.toObject(opt_includeInstance, this);
+proto.mruv.punishments.MuteGlobalChatsResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.MuteGlobalChatsResponse.toObject(opt_includeInstance, this);
 };
 
 
@@ -4697,11 +5403,11 @@ proto.mruv.economy.MuteGlobalChatsResponse.prototype.toObject = function(opt_inc
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.MuteGlobalChatsResponse} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.MuteGlobalChatsResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.MuteGlobalChatsResponse.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.MuteGlobalChatsResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
 
   };
@@ -4717,23 +5423,23 @@ proto.mruv.economy.MuteGlobalChatsResponse.toObject = function(includeInstance, 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.MuteGlobalChatsResponse}
+ * @return {!proto.mruv.punishments.MuteGlobalChatsResponse}
  */
-proto.mruv.economy.MuteGlobalChatsResponse.deserializeBinary = function(bytes) {
+proto.mruv.punishments.MuteGlobalChatsResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.MuteGlobalChatsResponse;
-  return proto.mruv.economy.MuteGlobalChatsResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.MuteGlobalChatsResponse;
+  return proto.mruv.punishments.MuteGlobalChatsResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.MuteGlobalChatsResponse} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.MuteGlobalChatsResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.MuteGlobalChatsResponse}
+ * @return {!proto.mruv.punishments.MuteGlobalChatsResponse}
  */
-proto.mruv.economy.MuteGlobalChatsResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.MuteGlobalChatsResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -4753,9 +5459,9 @@ proto.mruv.economy.MuteGlobalChatsResponse.deserializeBinaryFromReader = functio
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.MuteGlobalChatsResponse.prototype.serializeBinary = function() {
+proto.mruv.punishments.MuteGlobalChatsResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.MuteGlobalChatsResponse.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.MuteGlobalChatsResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -4763,11 +5469,11 @@ proto.mruv.economy.MuteGlobalChatsResponse.prototype.serializeBinary = function(
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.MuteGlobalChatsResponse} message
+ * @param {!proto.mruv.punishments.MuteGlobalChatsResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.MuteGlobalChatsResponse.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.MuteGlobalChatsResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
 };
 
@@ -4788,8 +5494,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.UnBanRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.UnBanRequest.toObject(opt_includeInstance, this);
+proto.mruv.punishments.UnBanRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.UnBanRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -4798,14 +5504,15 @@ proto.mruv.economy.UnBanRequest.prototype.toObject = function(opt_includeInstanc
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.UnBanRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.UnBanRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.UnBanRequest.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.UnBanRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     banId: jspb.Message.getFieldWithDefault(msg, 1, 0),
-    reason: jspb.Message.getFieldWithDefault(msg, 2, "")
+    reason: jspb.Message.getFieldWithDefault(msg, 2, ""),
+    adminId: jspb.Message.getFieldWithDefault(msg, 3, 0)
   };
 
   if (includeInstance) {
@@ -4819,23 +5526,23 @@ proto.mruv.economy.UnBanRequest.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.UnBanRequest}
+ * @return {!proto.mruv.punishments.UnBanRequest}
  */
-proto.mruv.economy.UnBanRequest.deserializeBinary = function(bytes) {
+proto.mruv.punishments.UnBanRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.UnBanRequest;
-  return proto.mruv.economy.UnBanRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.UnBanRequest;
+  return proto.mruv.punishments.UnBanRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.UnBanRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.UnBanRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.UnBanRequest}
+ * @return {!proto.mruv.punishments.UnBanRequest}
  */
-proto.mruv.economy.UnBanRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.UnBanRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -4850,6 +5557,10 @@ proto.mruv.economy.UnBanRequest.deserializeBinaryFromReader = function(msg, read
       var value = /** @type {string} */ (reader.readString());
       msg.setReason(value);
       break;
+    case 3:
+      var value = /** @type {number} */ (reader.readUint32());
+      msg.setAdminId(value);
+      break;
     default:
       reader.skipField();
       break;
@@ -4863,9 +5574,9 @@ proto.mruv.economy.UnBanRequest.deserializeBinaryFromReader = function(msg, read
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.UnBanRequest.prototype.serializeBinary = function() {
+proto.mruv.punishments.UnBanRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.UnBanRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.UnBanRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -4873,11 +5584,11 @@ proto.mruv.economy.UnBanRequest.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.UnBanRequest} message
+ * @param {!proto.mruv.punishments.UnBanRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.UnBanRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.UnBanRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getBanId();
   if (f !== 0) {
@@ -4893,6 +5604,13 @@ proto.mruv.economy.UnBanRequest.serializeBinaryToWriter = function(message, writ
       f
     );
   }
+  f = message.getAdminId();
+  if (f !== 0) {
+    writer.writeUint32(
+      3,
+      f
+    );
+  }
 };
 
 
@@ -4900,13 +5618,13 @@ proto.mruv.economy.UnBanRequest.serializeBinaryToWriter = function(message, writ
  * optional uint32 ban_id = 1;
  * @return {number}
  */
-proto.mruv.economy.UnBanRequest.prototype.getBanId = function() {
+proto.mruv.punishments.UnBanRequest.prototype.getBanId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.UnBanRequest.prototype.setBanId = function(value) {
+proto.mruv.punishments.UnBanRequest.prototype.setBanId = function(value) {
   jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -4915,14 +5633,29 @@ proto.mruv.economy.UnBanRequest.prototype.setBanId = function(value) {
  * optional string reason = 2;
  * @return {string}
  */
-proto.mruv.economy.UnBanRequest.prototype.getReason = function() {
+proto.mruv.punishments.UnBanRequest.prototype.getReason = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
 
 
 /** @param {string} value */
-proto.mruv.economy.UnBanRequest.prototype.setReason = function(value) {
+proto.mruv.punishments.UnBanRequest.prototype.setReason = function(value) {
   jspb.Message.setProto3StringField(this, 2, value);
+};
+
+
+/**
+ * optional uint32 admin_id = 3;
+ * @return {number}
+ */
+proto.mruv.punishments.UnBanRequest.prototype.getAdminId = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
+};
+
+
+/** @param {number} value */
+proto.mruv.punishments.UnBanRequest.prototype.setAdminId = function(value) {
+  jspb.Message.setProto3IntField(this, 3, value);
 };
 
 
@@ -4942,8 +5675,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.UnBanResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.UnBanResponse.toObject(opt_includeInstance, this);
+proto.mruv.punishments.UnBanResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.UnBanResponse.toObject(opt_includeInstance, this);
 };
 
 
@@ -4952,11 +5685,11 @@ proto.mruv.economy.UnBanResponse.prototype.toObject = function(opt_includeInstan
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.UnBanResponse} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.UnBanResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.UnBanResponse.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.UnBanResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
 
   };
@@ -4972,23 +5705,23 @@ proto.mruv.economy.UnBanResponse.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.UnBanResponse}
+ * @return {!proto.mruv.punishments.UnBanResponse}
  */
-proto.mruv.economy.UnBanResponse.deserializeBinary = function(bytes) {
+proto.mruv.punishments.UnBanResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.UnBanResponse;
-  return proto.mruv.economy.UnBanResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.UnBanResponse;
+  return proto.mruv.punishments.UnBanResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.UnBanResponse} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.UnBanResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.UnBanResponse}
+ * @return {!proto.mruv.punishments.UnBanResponse}
  */
-proto.mruv.economy.UnBanResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.UnBanResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -5008,9 +5741,9 @@ proto.mruv.economy.UnBanResponse.deserializeBinaryFromReader = function(msg, rea
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.UnBanResponse.prototype.serializeBinary = function() {
+proto.mruv.punishments.UnBanResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.UnBanResponse.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.UnBanResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -5018,11 +5751,11 @@ proto.mruv.economy.UnBanResponse.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.UnBanResponse} message
+ * @param {!proto.mruv.punishments.UnBanResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.UnBanResponse.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.UnBanResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
 };
 
@@ -5043,8 +5776,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.UnBlockRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.UnBlockRequest.toObject(opt_includeInstance, this);
+proto.mruv.punishments.UnBlockRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.UnBlockRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -5053,14 +5786,15 @@ proto.mruv.economy.UnBlockRequest.prototype.toObject = function(opt_includeInsta
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.UnBlockRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.UnBlockRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.UnBlockRequest.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.UnBlockRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     blockId: jspb.Message.getFieldWithDefault(msg, 1, 0),
-    reason: jspb.Message.getFieldWithDefault(msg, 2, "")
+    reason: jspb.Message.getFieldWithDefault(msg, 2, ""),
+    adminId: jspb.Message.getFieldWithDefault(msg, 3, 0)
   };
 
   if (includeInstance) {
@@ -5074,23 +5808,23 @@ proto.mruv.economy.UnBlockRequest.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.UnBlockRequest}
+ * @return {!proto.mruv.punishments.UnBlockRequest}
  */
-proto.mruv.economy.UnBlockRequest.deserializeBinary = function(bytes) {
+proto.mruv.punishments.UnBlockRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.UnBlockRequest;
-  return proto.mruv.economy.UnBlockRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.UnBlockRequest;
+  return proto.mruv.punishments.UnBlockRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.UnBlockRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.UnBlockRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.UnBlockRequest}
+ * @return {!proto.mruv.punishments.UnBlockRequest}
  */
-proto.mruv.economy.UnBlockRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.UnBlockRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -5105,6 +5839,10 @@ proto.mruv.economy.UnBlockRequest.deserializeBinaryFromReader = function(msg, re
       var value = /** @type {string} */ (reader.readString());
       msg.setReason(value);
       break;
+    case 3:
+      var value = /** @type {number} */ (reader.readUint32());
+      msg.setAdminId(value);
+      break;
     default:
       reader.skipField();
       break;
@@ -5118,9 +5856,9 @@ proto.mruv.economy.UnBlockRequest.deserializeBinaryFromReader = function(msg, re
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.UnBlockRequest.prototype.serializeBinary = function() {
+proto.mruv.punishments.UnBlockRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.UnBlockRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.UnBlockRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -5128,11 +5866,11 @@ proto.mruv.economy.UnBlockRequest.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.UnBlockRequest} message
+ * @param {!proto.mruv.punishments.UnBlockRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.UnBlockRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.UnBlockRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getBlockId();
   if (f !== 0) {
@@ -5148,6 +5886,13 @@ proto.mruv.economy.UnBlockRequest.serializeBinaryToWriter = function(message, wr
       f
     );
   }
+  f = message.getAdminId();
+  if (f !== 0) {
+    writer.writeUint32(
+      3,
+      f
+    );
+  }
 };
 
 
@@ -5155,13 +5900,13 @@ proto.mruv.economy.UnBlockRequest.serializeBinaryToWriter = function(message, wr
  * optional uint32 block_id = 1;
  * @return {number}
  */
-proto.mruv.economy.UnBlockRequest.prototype.getBlockId = function() {
+proto.mruv.punishments.UnBlockRequest.prototype.getBlockId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.UnBlockRequest.prototype.setBlockId = function(value) {
+proto.mruv.punishments.UnBlockRequest.prototype.setBlockId = function(value) {
   jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -5170,14 +5915,29 @@ proto.mruv.economy.UnBlockRequest.prototype.setBlockId = function(value) {
  * optional string reason = 2;
  * @return {string}
  */
-proto.mruv.economy.UnBlockRequest.prototype.getReason = function() {
+proto.mruv.punishments.UnBlockRequest.prototype.getReason = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
 
 
 /** @param {string} value */
-proto.mruv.economy.UnBlockRequest.prototype.setReason = function(value) {
+proto.mruv.punishments.UnBlockRequest.prototype.setReason = function(value) {
   jspb.Message.setProto3StringField(this, 2, value);
+};
+
+
+/**
+ * optional uint32 admin_id = 3;
+ * @return {number}
+ */
+proto.mruv.punishments.UnBlockRequest.prototype.getAdminId = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
+};
+
+
+/** @param {number} value */
+proto.mruv.punishments.UnBlockRequest.prototype.setAdminId = function(value) {
+  jspb.Message.setProto3IntField(this, 3, value);
 };
 
 
@@ -5197,8 +5957,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.UnBlockResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.UnBlockResponse.toObject(opt_includeInstance, this);
+proto.mruv.punishments.UnBlockResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.UnBlockResponse.toObject(opt_includeInstance, this);
 };
 
 
@@ -5207,11 +5967,11 @@ proto.mruv.economy.UnBlockResponse.prototype.toObject = function(opt_includeInst
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.UnBlockResponse} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.UnBlockResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.UnBlockResponse.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.UnBlockResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
 
   };
@@ -5227,23 +5987,23 @@ proto.mruv.economy.UnBlockResponse.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.UnBlockResponse}
+ * @return {!proto.mruv.punishments.UnBlockResponse}
  */
-proto.mruv.economy.UnBlockResponse.deserializeBinary = function(bytes) {
+proto.mruv.punishments.UnBlockResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.UnBlockResponse;
-  return proto.mruv.economy.UnBlockResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.UnBlockResponse;
+  return proto.mruv.punishments.UnBlockResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.UnBlockResponse} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.UnBlockResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.UnBlockResponse}
+ * @return {!proto.mruv.punishments.UnBlockResponse}
  */
-proto.mruv.economy.UnBlockResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.UnBlockResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -5263,9 +6023,9 @@ proto.mruv.economy.UnBlockResponse.deserializeBinaryFromReader = function(msg, r
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.UnBlockResponse.prototype.serializeBinary = function() {
+proto.mruv.punishments.UnBlockResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.UnBlockResponse.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.UnBlockResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -5273,11 +6033,11 @@ proto.mruv.economy.UnBlockResponse.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.UnBlockResponse} message
+ * @param {!proto.mruv.punishments.UnBlockResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.UnBlockResponse.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.UnBlockResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
 };
 
@@ -5298,8 +6058,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.UnWarnRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.UnWarnRequest.toObject(opt_includeInstance, this);
+proto.mruv.punishments.UnWarnRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.UnWarnRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -5308,14 +6068,15 @@ proto.mruv.economy.UnWarnRequest.prototype.toObject = function(opt_includeInstan
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.UnWarnRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.UnWarnRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.UnWarnRequest.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.UnWarnRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     warnId: jspb.Message.getFieldWithDefault(msg, 1, 0),
-    reason: jspb.Message.getFieldWithDefault(msg, 2, "")
+    reason: jspb.Message.getFieldWithDefault(msg, 2, ""),
+    adminId: jspb.Message.getFieldWithDefault(msg, 3, 0)
   };
 
   if (includeInstance) {
@@ -5329,23 +6090,23 @@ proto.mruv.economy.UnWarnRequest.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.UnWarnRequest}
+ * @return {!proto.mruv.punishments.UnWarnRequest}
  */
-proto.mruv.economy.UnWarnRequest.deserializeBinary = function(bytes) {
+proto.mruv.punishments.UnWarnRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.UnWarnRequest;
-  return proto.mruv.economy.UnWarnRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.UnWarnRequest;
+  return proto.mruv.punishments.UnWarnRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.UnWarnRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.UnWarnRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.UnWarnRequest}
+ * @return {!proto.mruv.punishments.UnWarnRequest}
  */
-proto.mruv.economy.UnWarnRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.UnWarnRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -5360,6 +6121,10 @@ proto.mruv.economy.UnWarnRequest.deserializeBinaryFromReader = function(msg, rea
       var value = /** @type {string} */ (reader.readString());
       msg.setReason(value);
       break;
+    case 3:
+      var value = /** @type {number} */ (reader.readUint32());
+      msg.setAdminId(value);
+      break;
     default:
       reader.skipField();
       break;
@@ -5373,9 +6138,9 @@ proto.mruv.economy.UnWarnRequest.deserializeBinaryFromReader = function(msg, rea
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.UnWarnRequest.prototype.serializeBinary = function() {
+proto.mruv.punishments.UnWarnRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.UnWarnRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.UnWarnRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -5383,11 +6148,11 @@ proto.mruv.economy.UnWarnRequest.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.UnWarnRequest} message
+ * @param {!proto.mruv.punishments.UnWarnRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.UnWarnRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.UnWarnRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getWarnId();
   if (f !== 0) {
@@ -5403,6 +6168,13 @@ proto.mruv.economy.UnWarnRequest.serializeBinaryToWriter = function(message, wri
       f
     );
   }
+  f = message.getAdminId();
+  if (f !== 0) {
+    writer.writeUint32(
+      3,
+      f
+    );
+  }
 };
 
 
@@ -5410,13 +6182,13 @@ proto.mruv.economy.UnWarnRequest.serializeBinaryToWriter = function(message, wri
  * optional uint32 warn_id = 1;
  * @return {number}
  */
-proto.mruv.economy.UnWarnRequest.prototype.getWarnId = function() {
+proto.mruv.punishments.UnWarnRequest.prototype.getWarnId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.UnWarnRequest.prototype.setWarnId = function(value) {
+proto.mruv.punishments.UnWarnRequest.prototype.setWarnId = function(value) {
   jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -5425,14 +6197,29 @@ proto.mruv.economy.UnWarnRequest.prototype.setWarnId = function(value) {
  * optional string reason = 2;
  * @return {string}
  */
-proto.mruv.economy.UnWarnRequest.prototype.getReason = function() {
+proto.mruv.punishments.UnWarnRequest.prototype.getReason = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
 
 
 /** @param {string} value */
-proto.mruv.economy.UnWarnRequest.prototype.setReason = function(value) {
+proto.mruv.punishments.UnWarnRequest.prototype.setReason = function(value) {
   jspb.Message.setProto3StringField(this, 2, value);
+};
+
+
+/**
+ * optional uint32 admin_id = 3;
+ * @return {number}
+ */
+proto.mruv.punishments.UnWarnRequest.prototype.getAdminId = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
+};
+
+
+/** @param {number} value */
+proto.mruv.punishments.UnWarnRequest.prototype.setAdminId = function(value) {
+  jspb.Message.setProto3IntField(this, 3, value);
 };
 
 
@@ -5452,8 +6239,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.UnWarnResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.UnWarnResponse.toObject(opt_includeInstance, this);
+proto.mruv.punishments.UnWarnResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.UnWarnResponse.toObject(opt_includeInstance, this);
 };
 
 
@@ -5462,11 +6249,11 @@ proto.mruv.economy.UnWarnResponse.prototype.toObject = function(opt_includeInsta
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.UnWarnResponse} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.UnWarnResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.UnWarnResponse.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.UnWarnResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
 
   };
@@ -5482,23 +6269,23 @@ proto.mruv.economy.UnWarnResponse.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.UnWarnResponse}
+ * @return {!proto.mruv.punishments.UnWarnResponse}
  */
-proto.mruv.economy.UnWarnResponse.deserializeBinary = function(bytes) {
+proto.mruv.punishments.UnWarnResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.UnWarnResponse;
-  return proto.mruv.economy.UnWarnResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.UnWarnResponse;
+  return proto.mruv.punishments.UnWarnResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.UnWarnResponse} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.UnWarnResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.UnWarnResponse}
+ * @return {!proto.mruv.punishments.UnWarnResponse}
  */
-proto.mruv.economy.UnWarnResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.UnWarnResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -5518,9 +6305,9 @@ proto.mruv.economy.UnWarnResponse.deserializeBinaryFromReader = function(msg, re
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.UnWarnResponse.prototype.serializeBinary = function() {
+proto.mruv.punishments.UnWarnResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.UnWarnResponse.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.UnWarnResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -5528,11 +6315,11 @@ proto.mruv.economy.UnWarnResponse.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.UnWarnResponse} message
+ * @param {!proto.mruv.punishments.UnWarnResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.UnWarnResponse.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.UnWarnResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
 };
 
@@ -5553,8 +6340,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.UnAdminJailRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.UnAdminJailRequest.toObject(opt_includeInstance, this);
+proto.mruv.punishments.UnAdminJailRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.UnAdminJailRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -5563,13 +6350,15 @@ proto.mruv.economy.UnAdminJailRequest.prototype.toObject = function(opt_includeI
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.UnAdminJailRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.UnAdminJailRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.UnAdminJailRequest.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.UnAdminJailRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
-    character: jspb.Message.getFieldWithDefault(msg, 1, 0)
+    character: jspb.Message.getFieldWithDefault(msg, 1, 0),
+    reason: jspb.Message.getFieldWithDefault(msg, 2, ""),
+    adminId: jspb.Message.getFieldWithDefault(msg, 3, 0)
   };
 
   if (includeInstance) {
@@ -5583,23 +6372,23 @@ proto.mruv.economy.UnAdminJailRequest.toObject = function(includeInstance, msg) 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.UnAdminJailRequest}
+ * @return {!proto.mruv.punishments.UnAdminJailRequest}
  */
-proto.mruv.economy.UnAdminJailRequest.deserializeBinary = function(bytes) {
+proto.mruv.punishments.UnAdminJailRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.UnAdminJailRequest;
-  return proto.mruv.economy.UnAdminJailRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.UnAdminJailRequest;
+  return proto.mruv.punishments.UnAdminJailRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.UnAdminJailRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.UnAdminJailRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.UnAdminJailRequest}
+ * @return {!proto.mruv.punishments.UnAdminJailRequest}
  */
-proto.mruv.economy.UnAdminJailRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.UnAdminJailRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -5610,6 +6399,14 @@ proto.mruv.economy.UnAdminJailRequest.deserializeBinaryFromReader = function(msg
       var value = /** @type {number} */ (reader.readUint32());
       msg.setCharacter(value);
       break;
+    case 2:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setReason(value);
+      break;
+    case 3:
+      var value = /** @type {number} */ (reader.readUint32());
+      msg.setAdminId(value);
+      break;
     default:
       reader.skipField();
       break;
@@ -5623,9 +6420,9 @@ proto.mruv.economy.UnAdminJailRequest.deserializeBinaryFromReader = function(msg
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.UnAdminJailRequest.prototype.serializeBinary = function() {
+proto.mruv.punishments.UnAdminJailRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.UnAdminJailRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.UnAdminJailRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -5633,16 +6430,30 @@ proto.mruv.economy.UnAdminJailRequest.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.UnAdminJailRequest} message
+ * @param {!proto.mruv.punishments.UnAdminJailRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.UnAdminJailRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.UnAdminJailRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getCharacter();
   if (f !== 0) {
     writer.writeUint32(
       1,
+      f
+    );
+  }
+  f = message.getReason();
+  if (f.length > 0) {
+    writer.writeString(
+      2,
+      f
+    );
+  }
+  f = message.getAdminId();
+  if (f !== 0) {
+    writer.writeUint32(
+      3,
       f
     );
   }
@@ -5653,14 +6464,44 @@ proto.mruv.economy.UnAdminJailRequest.serializeBinaryToWriter = function(message
  * optional uint32 character = 1;
  * @return {number}
  */
-proto.mruv.economy.UnAdminJailRequest.prototype.getCharacter = function() {
+proto.mruv.punishments.UnAdminJailRequest.prototype.getCharacter = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.UnAdminJailRequest.prototype.setCharacter = function(value) {
+proto.mruv.punishments.UnAdminJailRequest.prototype.setCharacter = function(value) {
   jspb.Message.setProto3IntField(this, 1, value);
+};
+
+
+/**
+ * optional string reason = 2;
+ * @return {string}
+ */
+proto.mruv.punishments.UnAdminJailRequest.prototype.getReason = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
+};
+
+
+/** @param {string} value */
+proto.mruv.punishments.UnAdminJailRequest.prototype.setReason = function(value) {
+  jspb.Message.setProto3StringField(this, 2, value);
+};
+
+
+/**
+ * optional uint32 admin_id = 3;
+ * @return {number}
+ */
+proto.mruv.punishments.UnAdminJailRequest.prototype.getAdminId = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
+};
+
+
+/** @param {number} value */
+proto.mruv.punishments.UnAdminJailRequest.prototype.setAdminId = function(value) {
+  jspb.Message.setProto3IntField(this, 3, value);
 };
 
 
@@ -5680,8 +6521,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.UnAdminJailResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.UnAdminJailResponse.toObject(opt_includeInstance, this);
+proto.mruv.punishments.UnAdminJailResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.UnAdminJailResponse.toObject(opt_includeInstance, this);
 };
 
 
@@ -5690,11 +6531,11 @@ proto.mruv.economy.UnAdminJailResponse.prototype.toObject = function(opt_include
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.UnAdminJailResponse} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.UnAdminJailResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.UnAdminJailResponse.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.UnAdminJailResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
 
   };
@@ -5710,23 +6551,23 @@ proto.mruv.economy.UnAdminJailResponse.toObject = function(includeInstance, msg)
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.UnAdminJailResponse}
+ * @return {!proto.mruv.punishments.UnAdminJailResponse}
  */
-proto.mruv.economy.UnAdminJailResponse.deserializeBinary = function(bytes) {
+proto.mruv.punishments.UnAdminJailResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.UnAdminJailResponse;
-  return proto.mruv.economy.UnAdminJailResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.UnAdminJailResponse;
+  return proto.mruv.punishments.UnAdminJailResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.UnAdminJailResponse} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.UnAdminJailResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.UnAdminJailResponse}
+ * @return {!proto.mruv.punishments.UnAdminJailResponse}
  */
-proto.mruv.economy.UnAdminJailResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.UnAdminJailResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -5746,9 +6587,9 @@ proto.mruv.economy.UnAdminJailResponse.deserializeBinaryFromReader = function(ms
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.UnAdminJailResponse.prototype.serializeBinary = function() {
+proto.mruv.punishments.UnAdminJailResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.UnAdminJailResponse.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.UnAdminJailResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -5756,11 +6597,11 @@ proto.mruv.economy.UnAdminJailResponse.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.UnAdminJailResponse} message
+ * @param {!proto.mruv.punishments.UnAdminJailResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.UnAdminJailResponse.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.UnAdminJailResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
 };
 
@@ -5781,8 +6622,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.UnMuteGlobalChatsRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.UnMuteGlobalChatsRequest.toObject(opt_includeInstance, this);
+proto.mruv.punishments.UnMuteGlobalChatsRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.UnMuteGlobalChatsRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -5791,11 +6632,11 @@ proto.mruv.economy.UnMuteGlobalChatsRequest.prototype.toObject = function(opt_in
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.UnMuteGlobalChatsRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.UnMuteGlobalChatsRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.UnMuteGlobalChatsRequest.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.UnMuteGlobalChatsRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     account: jspb.Message.getFieldWithDefault(msg, 1, 0)
   };
@@ -5811,23 +6652,23 @@ proto.mruv.economy.UnMuteGlobalChatsRequest.toObject = function(includeInstance,
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.UnMuteGlobalChatsRequest}
+ * @return {!proto.mruv.punishments.UnMuteGlobalChatsRequest}
  */
-proto.mruv.economy.UnMuteGlobalChatsRequest.deserializeBinary = function(bytes) {
+proto.mruv.punishments.UnMuteGlobalChatsRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.UnMuteGlobalChatsRequest;
-  return proto.mruv.economy.UnMuteGlobalChatsRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.UnMuteGlobalChatsRequest;
+  return proto.mruv.punishments.UnMuteGlobalChatsRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.UnMuteGlobalChatsRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.UnMuteGlobalChatsRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.UnMuteGlobalChatsRequest}
+ * @return {!proto.mruv.punishments.UnMuteGlobalChatsRequest}
  */
-proto.mruv.economy.UnMuteGlobalChatsRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.UnMuteGlobalChatsRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -5851,9 +6692,9 @@ proto.mruv.economy.UnMuteGlobalChatsRequest.deserializeBinaryFromReader = functi
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.UnMuteGlobalChatsRequest.prototype.serializeBinary = function() {
+proto.mruv.punishments.UnMuteGlobalChatsRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.UnMuteGlobalChatsRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.UnMuteGlobalChatsRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -5861,11 +6702,11 @@ proto.mruv.economy.UnMuteGlobalChatsRequest.prototype.serializeBinary = function
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.UnMuteGlobalChatsRequest} message
+ * @param {!proto.mruv.punishments.UnMuteGlobalChatsRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.UnMuteGlobalChatsRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.UnMuteGlobalChatsRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getAccount();
   if (f !== 0) {
@@ -5881,13 +6722,13 @@ proto.mruv.economy.UnMuteGlobalChatsRequest.serializeBinaryToWriter = function(m
  * optional uint32 account = 1;
  * @return {number}
  */
-proto.mruv.economy.UnMuteGlobalChatsRequest.prototype.getAccount = function() {
+proto.mruv.punishments.UnMuteGlobalChatsRequest.prototype.getAccount = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.UnMuteGlobalChatsRequest.prototype.setAccount = function(value) {
+proto.mruv.punishments.UnMuteGlobalChatsRequest.prototype.setAccount = function(value) {
   jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -5908,8 +6749,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.UnMuteGlobalChatsResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.UnMuteGlobalChatsResponse.toObject(opt_includeInstance, this);
+proto.mruv.punishments.UnMuteGlobalChatsResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.UnMuteGlobalChatsResponse.toObject(opt_includeInstance, this);
 };
 
 
@@ -5918,11 +6759,11 @@ proto.mruv.economy.UnMuteGlobalChatsResponse.prototype.toObject = function(opt_i
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.UnMuteGlobalChatsResponse} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.UnMuteGlobalChatsResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.UnMuteGlobalChatsResponse.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.UnMuteGlobalChatsResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
 
   };
@@ -5938,23 +6779,23 @@ proto.mruv.economy.UnMuteGlobalChatsResponse.toObject = function(includeInstance
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.UnMuteGlobalChatsResponse}
+ * @return {!proto.mruv.punishments.UnMuteGlobalChatsResponse}
  */
-proto.mruv.economy.UnMuteGlobalChatsResponse.deserializeBinary = function(bytes) {
+proto.mruv.punishments.UnMuteGlobalChatsResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.UnMuteGlobalChatsResponse;
-  return proto.mruv.economy.UnMuteGlobalChatsResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.UnMuteGlobalChatsResponse;
+  return proto.mruv.punishments.UnMuteGlobalChatsResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.UnMuteGlobalChatsResponse} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.UnMuteGlobalChatsResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.UnMuteGlobalChatsResponse}
+ * @return {!proto.mruv.punishments.UnMuteGlobalChatsResponse}
  */
-proto.mruv.economy.UnMuteGlobalChatsResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.UnMuteGlobalChatsResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -5974,9 +6815,9 @@ proto.mruv.economy.UnMuteGlobalChatsResponse.deserializeBinaryFromReader = funct
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.UnMuteGlobalChatsResponse.prototype.serializeBinary = function() {
+proto.mruv.punishments.UnMuteGlobalChatsResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.UnMuteGlobalChatsResponse.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.UnMuteGlobalChatsResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -5984,11 +6825,11 @@ proto.mruv.economy.UnMuteGlobalChatsResponse.prototype.serializeBinary = functio
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.UnMuteGlobalChatsResponse} message
+ * @param {!proto.mruv.punishments.UnMuteGlobalChatsResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.UnMuteGlobalChatsResponse.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.UnMuteGlobalChatsResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
 };
 
@@ -6009,8 +6850,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.GetPlayerBansRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.GetPlayerBansRequest.toObject(opt_includeInstance, this);
+proto.mruv.punishments.GetPlayerBansRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.GetPlayerBansRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -6019,11 +6860,11 @@ proto.mruv.economy.GetPlayerBansRequest.prototype.toObject = function(opt_includ
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.GetPlayerBansRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.GetPlayerBansRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.GetPlayerBansRequest.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.GetPlayerBansRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     player: jspb.Message.getFieldWithDefault(msg, 1, 0),
     ip: jspb.Message.getFieldWithDefault(msg, 2, "")
@@ -6040,23 +6881,23 @@ proto.mruv.economy.GetPlayerBansRequest.toObject = function(includeInstance, msg
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.GetPlayerBansRequest}
+ * @return {!proto.mruv.punishments.GetPlayerBansRequest}
  */
-proto.mruv.economy.GetPlayerBansRequest.deserializeBinary = function(bytes) {
+proto.mruv.punishments.GetPlayerBansRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.GetPlayerBansRequest;
-  return proto.mruv.economy.GetPlayerBansRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.GetPlayerBansRequest;
+  return proto.mruv.punishments.GetPlayerBansRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.GetPlayerBansRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.GetPlayerBansRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.GetPlayerBansRequest}
+ * @return {!proto.mruv.punishments.GetPlayerBansRequest}
  */
-proto.mruv.economy.GetPlayerBansRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.GetPlayerBansRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -6084,9 +6925,9 @@ proto.mruv.economy.GetPlayerBansRequest.deserializeBinaryFromReader = function(m
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.GetPlayerBansRequest.prototype.serializeBinary = function() {
+proto.mruv.punishments.GetPlayerBansRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.GetPlayerBansRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.GetPlayerBansRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -6094,11 +6935,11 @@ proto.mruv.economy.GetPlayerBansRequest.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.GetPlayerBansRequest} message
+ * @param {!proto.mruv.punishments.GetPlayerBansRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.GetPlayerBansRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.GetPlayerBansRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getPlayer();
   if (f !== 0) {
@@ -6121,13 +6962,13 @@ proto.mruv.economy.GetPlayerBansRequest.serializeBinaryToWriter = function(messa
  * optional uint32 player = 1;
  * @return {number}
  */
-proto.mruv.economy.GetPlayerBansRequest.prototype.getPlayer = function() {
+proto.mruv.punishments.GetPlayerBansRequest.prototype.getPlayer = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.GetPlayerBansRequest.prototype.setPlayer = function(value) {
+proto.mruv.punishments.GetPlayerBansRequest.prototype.setPlayer = function(value) {
   jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -6136,13 +6977,13 @@ proto.mruv.economy.GetPlayerBansRequest.prototype.setPlayer = function(value) {
  * optional string ip = 2;
  * @return {string}
  */
-proto.mruv.economy.GetPlayerBansRequest.prototype.getIp = function() {
+proto.mruv.punishments.GetPlayerBansRequest.prototype.getIp = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
 
 
 /** @param {string} value */
-proto.mruv.economy.GetPlayerBansRequest.prototype.setIp = function(value) {
+proto.mruv.punishments.GetPlayerBansRequest.prototype.setIp = function(value) {
   jspb.Message.setProto3StringField(this, 2, value);
 };
 
@@ -6153,7 +6994,7 @@ proto.mruv.economy.GetPlayerBansRequest.prototype.setIp = function(value) {
  * @private {!Array<number>}
  * @const
  */
-proto.mruv.economy.GetPlayerBansResponse.repeatedFields_ = [1];
+proto.mruv.punishments.GetPlayerBansResponse.repeatedFields_ = [1];
 
 
 
@@ -6170,8 +7011,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.GetPlayerBansResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.GetPlayerBansResponse.toObject(opt_includeInstance, this);
+proto.mruv.punishments.GetPlayerBansResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.GetPlayerBansResponse.toObject(opt_includeInstance, this);
 };
 
 
@@ -6180,14 +7021,14 @@ proto.mruv.economy.GetPlayerBansResponse.prototype.toObject = function(opt_inclu
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.GetPlayerBansResponse} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.GetPlayerBansResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.GetPlayerBansResponse.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.GetPlayerBansResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
     bansList: jspb.Message.toObjectList(msg.getBansList(),
-    proto.mruv.economy.BanMessage.toObject, includeInstance)
+    proto.mruv.punishments.BanMessage.toObject, includeInstance)
   };
 
   if (includeInstance) {
@@ -6201,23 +7042,23 @@ proto.mruv.economy.GetPlayerBansResponse.toObject = function(includeInstance, ms
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.GetPlayerBansResponse}
+ * @return {!proto.mruv.punishments.GetPlayerBansResponse}
  */
-proto.mruv.economy.GetPlayerBansResponse.deserializeBinary = function(bytes) {
+proto.mruv.punishments.GetPlayerBansResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.GetPlayerBansResponse;
-  return proto.mruv.economy.GetPlayerBansResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.GetPlayerBansResponse;
+  return proto.mruv.punishments.GetPlayerBansResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.GetPlayerBansResponse} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.GetPlayerBansResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.GetPlayerBansResponse}
+ * @return {!proto.mruv.punishments.GetPlayerBansResponse}
  */
-proto.mruv.economy.GetPlayerBansResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.GetPlayerBansResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -6225,8 +7066,8 @@ proto.mruv.economy.GetPlayerBansResponse.deserializeBinaryFromReader = function(
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new proto.mruv.economy.BanMessage;
-      reader.readMessage(value,proto.mruv.economy.BanMessage.deserializeBinaryFromReader);
+      var value = new proto.mruv.punishments.BanMessage;
+      reader.readMessage(value,proto.mruv.punishments.BanMessage.deserializeBinaryFromReader);
       msg.addBans(value);
       break;
     default:
@@ -6242,9 +7083,9 @@ proto.mruv.economy.GetPlayerBansResponse.deserializeBinaryFromReader = function(
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.GetPlayerBansResponse.prototype.serializeBinary = function() {
+proto.mruv.punishments.GetPlayerBansResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.GetPlayerBansResponse.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.GetPlayerBansResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -6252,18 +7093,18 @@ proto.mruv.economy.GetPlayerBansResponse.prototype.serializeBinary = function() 
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.GetPlayerBansResponse} message
+ * @param {!proto.mruv.punishments.GetPlayerBansResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.GetPlayerBansResponse.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.GetPlayerBansResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getBansList();
   if (f.length > 0) {
     writer.writeRepeatedMessage(
       1,
       f,
-      proto.mruv.economy.BanMessage.serializeBinaryToWriter
+      proto.mruv.punishments.BanMessage.serializeBinaryToWriter
     );
   }
 };
@@ -6271,34 +7112,34 @@ proto.mruv.economy.GetPlayerBansResponse.serializeBinaryToWriter = function(mess
 
 /**
  * repeated BanMessage bans = 1;
- * @return {!Array<!proto.mruv.economy.BanMessage>}
+ * @return {!Array<!proto.mruv.punishments.BanMessage>}
  */
-proto.mruv.economy.GetPlayerBansResponse.prototype.getBansList = function() {
-  return /** @type{!Array<!proto.mruv.economy.BanMessage>} */ (
-    jspb.Message.getRepeatedWrapperField(this, proto.mruv.economy.BanMessage, 1));
+proto.mruv.punishments.GetPlayerBansResponse.prototype.getBansList = function() {
+  return /** @type{!Array<!proto.mruv.punishments.BanMessage>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.mruv.punishments.BanMessage, 1));
 };
 
 
-/** @param {!Array<!proto.mruv.economy.BanMessage>} value */
-proto.mruv.economy.GetPlayerBansResponse.prototype.setBansList = function(value) {
+/** @param {!Array<!proto.mruv.punishments.BanMessage>} value */
+proto.mruv.punishments.GetPlayerBansResponse.prototype.setBansList = function(value) {
   jspb.Message.setRepeatedWrapperField(this, 1, value);
 };
 
 
 /**
- * @param {!proto.mruv.economy.BanMessage=} opt_value
+ * @param {!proto.mruv.punishments.BanMessage=} opt_value
  * @param {number=} opt_index
- * @return {!proto.mruv.economy.BanMessage}
+ * @return {!proto.mruv.punishments.BanMessage}
  */
-proto.mruv.economy.GetPlayerBansResponse.prototype.addBans = function(opt_value, opt_index) {
-  return jspb.Message.addToRepeatedWrapperField(this, 1, opt_value, proto.mruv.economy.BanMessage, opt_index);
+proto.mruv.punishments.GetPlayerBansResponse.prototype.addBans = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 1, opt_value, proto.mruv.punishments.BanMessage, opt_index);
 };
 
 
 /**
  * Clears the list making it empty but non-null.
  */
-proto.mruv.economy.GetPlayerBansResponse.prototype.clearBansList = function() {
+proto.mruv.punishments.GetPlayerBansResponse.prototype.clearBansList = function() {
   this.setBansList([]);
 };
 
@@ -6319,8 +7160,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.GetPlayerWarnsRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.GetPlayerWarnsRequest.toObject(opt_includeInstance, this);
+proto.mruv.punishments.GetPlayerWarnsRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.GetPlayerWarnsRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -6329,11 +7170,11 @@ proto.mruv.economy.GetPlayerWarnsRequest.prototype.toObject = function(opt_inclu
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.GetPlayerWarnsRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.GetPlayerWarnsRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.GetPlayerWarnsRequest.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.GetPlayerWarnsRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     player: jspb.Message.getFieldWithDefault(msg, 1, 0)
   };
@@ -6349,23 +7190,23 @@ proto.mruv.economy.GetPlayerWarnsRequest.toObject = function(includeInstance, ms
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.GetPlayerWarnsRequest}
+ * @return {!proto.mruv.punishments.GetPlayerWarnsRequest}
  */
-proto.mruv.economy.GetPlayerWarnsRequest.deserializeBinary = function(bytes) {
+proto.mruv.punishments.GetPlayerWarnsRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.GetPlayerWarnsRequest;
-  return proto.mruv.economy.GetPlayerWarnsRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.GetPlayerWarnsRequest;
+  return proto.mruv.punishments.GetPlayerWarnsRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.GetPlayerWarnsRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.GetPlayerWarnsRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.GetPlayerWarnsRequest}
+ * @return {!proto.mruv.punishments.GetPlayerWarnsRequest}
  */
-proto.mruv.economy.GetPlayerWarnsRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.GetPlayerWarnsRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -6389,9 +7230,9 @@ proto.mruv.economy.GetPlayerWarnsRequest.deserializeBinaryFromReader = function(
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.GetPlayerWarnsRequest.prototype.serializeBinary = function() {
+proto.mruv.punishments.GetPlayerWarnsRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.GetPlayerWarnsRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.GetPlayerWarnsRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -6399,11 +7240,11 @@ proto.mruv.economy.GetPlayerWarnsRequest.prototype.serializeBinary = function() 
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.GetPlayerWarnsRequest} message
+ * @param {!proto.mruv.punishments.GetPlayerWarnsRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.GetPlayerWarnsRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.GetPlayerWarnsRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getPlayer();
   if (f !== 0) {
@@ -6419,13 +7260,13 @@ proto.mruv.economy.GetPlayerWarnsRequest.serializeBinaryToWriter = function(mess
  * optional uint32 player = 1;
  * @return {number}
  */
-proto.mruv.economy.GetPlayerWarnsRequest.prototype.getPlayer = function() {
+proto.mruv.punishments.GetPlayerWarnsRequest.prototype.getPlayer = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.GetPlayerWarnsRequest.prototype.setPlayer = function(value) {
+proto.mruv.punishments.GetPlayerWarnsRequest.prototype.setPlayer = function(value) {
   jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -6436,7 +7277,7 @@ proto.mruv.economy.GetPlayerWarnsRequest.prototype.setPlayer = function(value) {
  * @private {!Array<number>}
  * @const
  */
-proto.mruv.economy.GetPlayerWarnsResponse.repeatedFields_ = [1];
+proto.mruv.punishments.GetPlayerWarnsResponse.repeatedFields_ = [1];
 
 
 
@@ -6453,8 +7294,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.GetPlayerWarnsResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.GetPlayerWarnsResponse.toObject(opt_includeInstance, this);
+proto.mruv.punishments.GetPlayerWarnsResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.GetPlayerWarnsResponse.toObject(opt_includeInstance, this);
 };
 
 
@@ -6463,14 +7304,14 @@ proto.mruv.economy.GetPlayerWarnsResponse.prototype.toObject = function(opt_incl
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.GetPlayerWarnsResponse} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.GetPlayerWarnsResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.GetPlayerWarnsResponse.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.GetPlayerWarnsResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
     warnsList: jspb.Message.toObjectList(msg.getWarnsList(),
-    proto.mruv.economy.WarnMessage.toObject, includeInstance)
+    proto.mruv.punishments.WarnMessage.toObject, includeInstance)
   };
 
   if (includeInstance) {
@@ -6484,23 +7325,23 @@ proto.mruv.economy.GetPlayerWarnsResponse.toObject = function(includeInstance, m
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.GetPlayerWarnsResponse}
+ * @return {!proto.mruv.punishments.GetPlayerWarnsResponse}
  */
-proto.mruv.economy.GetPlayerWarnsResponse.deserializeBinary = function(bytes) {
+proto.mruv.punishments.GetPlayerWarnsResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.GetPlayerWarnsResponse;
-  return proto.mruv.economy.GetPlayerWarnsResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.GetPlayerWarnsResponse;
+  return proto.mruv.punishments.GetPlayerWarnsResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.GetPlayerWarnsResponse} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.GetPlayerWarnsResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.GetPlayerWarnsResponse}
+ * @return {!proto.mruv.punishments.GetPlayerWarnsResponse}
  */
-proto.mruv.economy.GetPlayerWarnsResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.GetPlayerWarnsResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -6508,8 +7349,8 @@ proto.mruv.economy.GetPlayerWarnsResponse.deserializeBinaryFromReader = function
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new proto.mruv.economy.WarnMessage;
-      reader.readMessage(value,proto.mruv.economy.WarnMessage.deserializeBinaryFromReader);
+      var value = new proto.mruv.punishments.WarnMessage;
+      reader.readMessage(value,proto.mruv.punishments.WarnMessage.deserializeBinaryFromReader);
       msg.addWarns(value);
       break;
     default:
@@ -6525,9 +7366,9 @@ proto.mruv.economy.GetPlayerWarnsResponse.deserializeBinaryFromReader = function
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.GetPlayerWarnsResponse.prototype.serializeBinary = function() {
+proto.mruv.punishments.GetPlayerWarnsResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.GetPlayerWarnsResponse.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.GetPlayerWarnsResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -6535,18 +7376,18 @@ proto.mruv.economy.GetPlayerWarnsResponse.prototype.serializeBinary = function()
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.GetPlayerWarnsResponse} message
+ * @param {!proto.mruv.punishments.GetPlayerWarnsResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.GetPlayerWarnsResponse.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.GetPlayerWarnsResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getWarnsList();
   if (f.length > 0) {
     writer.writeRepeatedMessage(
       1,
       f,
-      proto.mruv.economy.WarnMessage.serializeBinaryToWriter
+      proto.mruv.punishments.WarnMessage.serializeBinaryToWriter
     );
   }
 };
@@ -6554,34 +7395,34 @@ proto.mruv.economy.GetPlayerWarnsResponse.serializeBinaryToWriter = function(mes
 
 /**
  * repeated WarnMessage warns = 1;
- * @return {!Array<!proto.mruv.economy.WarnMessage>}
+ * @return {!Array<!proto.mruv.punishments.WarnMessage>}
  */
-proto.mruv.economy.GetPlayerWarnsResponse.prototype.getWarnsList = function() {
-  return /** @type{!Array<!proto.mruv.economy.WarnMessage>} */ (
-    jspb.Message.getRepeatedWrapperField(this, proto.mruv.economy.WarnMessage, 1));
+proto.mruv.punishments.GetPlayerWarnsResponse.prototype.getWarnsList = function() {
+  return /** @type{!Array<!proto.mruv.punishments.WarnMessage>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.mruv.punishments.WarnMessage, 1));
 };
 
 
-/** @param {!Array<!proto.mruv.economy.WarnMessage>} value */
-proto.mruv.economy.GetPlayerWarnsResponse.prototype.setWarnsList = function(value) {
+/** @param {!Array<!proto.mruv.punishments.WarnMessage>} value */
+proto.mruv.punishments.GetPlayerWarnsResponse.prototype.setWarnsList = function(value) {
   jspb.Message.setRepeatedWrapperField(this, 1, value);
 };
 
 
 /**
- * @param {!proto.mruv.economy.WarnMessage=} opt_value
+ * @param {!proto.mruv.punishments.WarnMessage=} opt_value
  * @param {number=} opt_index
- * @return {!proto.mruv.economy.WarnMessage}
+ * @return {!proto.mruv.punishments.WarnMessage}
  */
-proto.mruv.economy.GetPlayerWarnsResponse.prototype.addWarns = function(opt_value, opt_index) {
-  return jspb.Message.addToRepeatedWrapperField(this, 1, opt_value, proto.mruv.economy.WarnMessage, opt_index);
+proto.mruv.punishments.GetPlayerWarnsResponse.prototype.addWarns = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 1, opt_value, proto.mruv.punishments.WarnMessage, opt_index);
 };
 
 
 /**
  * Clears the list making it empty but non-null.
  */
-proto.mruv.economy.GetPlayerWarnsResponse.prototype.clearWarnsList = function() {
+proto.mruv.punishments.GetPlayerWarnsResponse.prototype.clearWarnsList = function() {
   this.setWarnsList([]);
 };
 
@@ -6602,8 +7443,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.GetPlayerAdminJailRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.GetPlayerAdminJailRequest.toObject(opt_includeInstance, this);
+proto.mruv.punishments.GetPlayerAdminJailRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.GetPlayerAdminJailRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -6612,11 +7453,11 @@ proto.mruv.economy.GetPlayerAdminJailRequest.prototype.toObject = function(opt_i
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.GetPlayerAdminJailRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.GetPlayerAdminJailRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.GetPlayerAdminJailRequest.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.GetPlayerAdminJailRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     character: jspb.Message.getFieldWithDefault(msg, 1, 0)
   };
@@ -6632,23 +7473,23 @@ proto.mruv.economy.GetPlayerAdminJailRequest.toObject = function(includeInstance
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.GetPlayerAdminJailRequest}
+ * @return {!proto.mruv.punishments.GetPlayerAdminJailRequest}
  */
-proto.mruv.economy.GetPlayerAdminJailRequest.deserializeBinary = function(bytes) {
+proto.mruv.punishments.GetPlayerAdminJailRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.GetPlayerAdminJailRequest;
-  return proto.mruv.economy.GetPlayerAdminJailRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.GetPlayerAdminJailRequest;
+  return proto.mruv.punishments.GetPlayerAdminJailRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.GetPlayerAdminJailRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.GetPlayerAdminJailRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.GetPlayerAdminJailRequest}
+ * @return {!proto.mruv.punishments.GetPlayerAdminJailRequest}
  */
-proto.mruv.economy.GetPlayerAdminJailRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.GetPlayerAdminJailRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -6672,9 +7513,9 @@ proto.mruv.economy.GetPlayerAdminJailRequest.deserializeBinaryFromReader = funct
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.GetPlayerAdminJailRequest.prototype.serializeBinary = function() {
+proto.mruv.punishments.GetPlayerAdminJailRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.GetPlayerAdminJailRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.GetPlayerAdminJailRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -6682,11 +7523,11 @@ proto.mruv.economy.GetPlayerAdminJailRequest.prototype.serializeBinary = functio
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.GetPlayerAdminJailRequest} message
+ * @param {!proto.mruv.punishments.GetPlayerAdminJailRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.GetPlayerAdminJailRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.GetPlayerAdminJailRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getCharacter();
   if (f !== 0) {
@@ -6702,13 +7543,13 @@ proto.mruv.economy.GetPlayerAdminJailRequest.serializeBinaryToWriter = function(
  * optional uint32 character = 1;
  * @return {number}
  */
-proto.mruv.economy.GetPlayerAdminJailRequest.prototype.getCharacter = function() {
+proto.mruv.punishments.GetPlayerAdminJailRequest.prototype.getCharacter = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.GetPlayerAdminJailRequest.prototype.setCharacter = function(value) {
+proto.mruv.punishments.GetPlayerAdminJailRequest.prototype.setCharacter = function(value) {
   jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -6729,8 +7570,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.GetPlayerAdminJailResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.GetPlayerAdminJailResponse.toObject(opt_includeInstance, this);
+proto.mruv.punishments.GetPlayerAdminJailResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.GetPlayerAdminJailResponse.toObject(opt_includeInstance, this);
 };
 
 
@@ -6739,11 +7580,11 @@ proto.mruv.economy.GetPlayerAdminJailResponse.prototype.toObject = function(opt_
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.GetPlayerAdminJailResponse} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.GetPlayerAdminJailResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.GetPlayerAdminJailResponse.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.GetPlayerAdminJailResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
     jailTime: jspb.Message.getFieldWithDefault(msg, 1, 0),
     reason: jspb.Message.getFieldWithDefault(msg, 2, ""),
@@ -6762,23 +7603,23 @@ proto.mruv.economy.GetPlayerAdminJailResponse.toObject = function(includeInstanc
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.GetPlayerAdminJailResponse}
+ * @return {!proto.mruv.punishments.GetPlayerAdminJailResponse}
  */
-proto.mruv.economy.GetPlayerAdminJailResponse.deserializeBinary = function(bytes) {
+proto.mruv.punishments.GetPlayerAdminJailResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.GetPlayerAdminJailResponse;
-  return proto.mruv.economy.GetPlayerAdminJailResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.GetPlayerAdminJailResponse;
+  return proto.mruv.punishments.GetPlayerAdminJailResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.GetPlayerAdminJailResponse} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.GetPlayerAdminJailResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.GetPlayerAdminJailResponse}
+ * @return {!proto.mruv.punishments.GetPlayerAdminJailResponse}
  */
-proto.mruv.economy.GetPlayerAdminJailResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.GetPlayerAdminJailResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -6814,9 +7655,9 @@ proto.mruv.economy.GetPlayerAdminJailResponse.deserializeBinaryFromReader = func
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.GetPlayerAdminJailResponse.prototype.serializeBinary = function() {
+proto.mruv.punishments.GetPlayerAdminJailResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.GetPlayerAdminJailResponse.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.GetPlayerAdminJailResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -6824,11 +7665,11 @@ proto.mruv.economy.GetPlayerAdminJailResponse.prototype.serializeBinary = functi
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.GetPlayerAdminJailResponse} message
+ * @param {!proto.mruv.punishments.GetPlayerAdminJailResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.GetPlayerAdminJailResponse.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.GetPlayerAdminJailResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getJailTime();
   if (f !== 0) {
@@ -6865,13 +7706,13 @@ proto.mruv.economy.GetPlayerAdminJailResponse.serializeBinaryToWriter = function
  * optional uint32 jail_time = 1;
  * @return {number}
  */
-proto.mruv.economy.GetPlayerAdminJailResponse.prototype.getJailTime = function() {
+proto.mruv.punishments.GetPlayerAdminJailResponse.prototype.getJailTime = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.GetPlayerAdminJailResponse.prototype.setJailTime = function(value) {
+proto.mruv.punishments.GetPlayerAdminJailResponse.prototype.setJailTime = function(value) {
   jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -6880,13 +7721,13 @@ proto.mruv.economy.GetPlayerAdminJailResponse.prototype.setJailTime = function(v
  * optional string reason = 2;
  * @return {string}
  */
-proto.mruv.economy.GetPlayerAdminJailResponse.prototype.getReason = function() {
+proto.mruv.punishments.GetPlayerAdminJailResponse.prototype.getReason = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
 
 
 /** @param {string} value */
-proto.mruv.economy.GetPlayerAdminJailResponse.prototype.setReason = function(value) {
+proto.mruv.punishments.GetPlayerAdminJailResponse.prototype.setReason = function(value) {
   jspb.Message.setProto3StringField(this, 2, value);
 };
 
@@ -6895,13 +7736,13 @@ proto.mruv.economy.GetPlayerAdminJailResponse.prototype.setReason = function(val
  * optional uint32 admin = 3;
  * @return {number}
  */
-proto.mruv.economy.GetPlayerAdminJailResponse.prototype.getAdmin = function() {
+proto.mruv.punishments.GetPlayerAdminJailResponse.prototype.getAdmin = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.GetPlayerAdminJailResponse.prototype.setAdmin = function(value) {
+proto.mruv.punishments.GetPlayerAdminJailResponse.prototype.setAdmin = function(value) {
   jspb.Message.setProto3IntField(this, 3, value);
 };
 
@@ -6910,13 +7751,13 @@ proto.mruv.economy.GetPlayerAdminJailResponse.prototype.setAdmin = function(valu
  * optional int64 date = 4;
  * @return {number}
  */
-proto.mruv.economy.GetPlayerAdminJailResponse.prototype.getDate = function() {
+proto.mruv.punishments.GetPlayerAdminJailResponse.prototype.getDate = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 4, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.GetPlayerAdminJailResponse.prototype.setDate = function(value) {
+proto.mruv.punishments.GetPlayerAdminJailResponse.prototype.setDate = function(value) {
   jspb.Message.setProto3IntField(this, 4, value);
 };
 
@@ -6937,8 +7778,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.GetBanRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.GetBanRequest.toObject(opt_includeInstance, this);
+proto.mruv.punishments.GetBanRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.GetBanRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -6947,11 +7788,11 @@ proto.mruv.economy.GetBanRequest.prototype.toObject = function(opt_includeInstan
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.GetBanRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.GetBanRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.GetBanRequest.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.GetBanRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     id: jspb.Message.getFieldWithDefault(msg, 1, 0)
   };
@@ -6967,23 +7808,23 @@ proto.mruv.economy.GetBanRequest.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.GetBanRequest}
+ * @return {!proto.mruv.punishments.GetBanRequest}
  */
-proto.mruv.economy.GetBanRequest.deserializeBinary = function(bytes) {
+proto.mruv.punishments.GetBanRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.GetBanRequest;
-  return proto.mruv.economy.GetBanRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.GetBanRequest;
+  return proto.mruv.punishments.GetBanRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.GetBanRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.GetBanRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.GetBanRequest}
+ * @return {!proto.mruv.punishments.GetBanRequest}
  */
-proto.mruv.economy.GetBanRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.GetBanRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -7007,9 +7848,9 @@ proto.mruv.economy.GetBanRequest.deserializeBinaryFromReader = function(msg, rea
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.GetBanRequest.prototype.serializeBinary = function() {
+proto.mruv.punishments.GetBanRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.GetBanRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.GetBanRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -7017,11 +7858,11 @@ proto.mruv.economy.GetBanRequest.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.GetBanRequest} message
+ * @param {!proto.mruv.punishments.GetBanRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.GetBanRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.GetBanRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getId();
   if (f !== 0) {
@@ -7037,13 +7878,13 @@ proto.mruv.economy.GetBanRequest.serializeBinaryToWriter = function(message, wri
  * optional uint32 id = 1;
  * @return {number}
  */
-proto.mruv.economy.GetBanRequest.prototype.getId = function() {
+proto.mruv.punishments.GetBanRequest.prototype.getId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.GetBanRequest.prototype.setId = function(value) {
+proto.mruv.punishments.GetBanRequest.prototype.setId = function(value) {
   jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -7064,8 +7905,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.GetWarnRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.GetWarnRequest.toObject(opt_includeInstance, this);
+proto.mruv.punishments.GetWarnRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.GetWarnRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -7074,11 +7915,11 @@ proto.mruv.economy.GetWarnRequest.prototype.toObject = function(opt_includeInsta
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.GetWarnRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.GetWarnRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.GetWarnRequest.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.GetWarnRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     id: jspb.Message.getFieldWithDefault(msg, 1, 0)
   };
@@ -7094,23 +7935,23 @@ proto.mruv.economy.GetWarnRequest.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.GetWarnRequest}
+ * @return {!proto.mruv.punishments.GetWarnRequest}
  */
-proto.mruv.economy.GetWarnRequest.deserializeBinary = function(bytes) {
+proto.mruv.punishments.GetWarnRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.GetWarnRequest;
-  return proto.mruv.economy.GetWarnRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.GetWarnRequest;
+  return proto.mruv.punishments.GetWarnRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.GetWarnRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.GetWarnRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.GetWarnRequest}
+ * @return {!proto.mruv.punishments.GetWarnRequest}
  */
-proto.mruv.economy.GetWarnRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.GetWarnRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -7134,9 +7975,9 @@ proto.mruv.economy.GetWarnRequest.deserializeBinaryFromReader = function(msg, re
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.GetWarnRequest.prototype.serializeBinary = function() {
+proto.mruv.punishments.GetWarnRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.GetWarnRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.GetWarnRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -7144,11 +7985,11 @@ proto.mruv.economy.GetWarnRequest.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.GetWarnRequest} message
+ * @param {!proto.mruv.punishments.GetWarnRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.GetWarnRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.GetWarnRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getId();
   if (f !== 0) {
@@ -7164,13 +8005,13 @@ proto.mruv.economy.GetWarnRequest.serializeBinaryToWriter = function(message, wr
  * optional uint32 id = 1;
  * @return {number}
  */
-proto.mruv.economy.GetWarnRequest.prototype.getId = function() {
+proto.mruv.punishments.GetWarnRequest.prototype.getId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.GetWarnRequest.prototype.setId = function(value) {
+proto.mruv.punishments.GetWarnRequest.prototype.setId = function(value) {
   jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -7191,8 +8032,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.GetBlockRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.GetBlockRequest.toObject(opt_includeInstance, this);
+proto.mruv.punishments.GetBlockRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.GetBlockRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -7201,11 +8042,11 @@ proto.mruv.economy.GetBlockRequest.prototype.toObject = function(opt_includeInst
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.GetBlockRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.GetBlockRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.GetBlockRequest.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.GetBlockRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     id: jspb.Message.getFieldWithDefault(msg, 1, 0)
   };
@@ -7221,23 +8062,23 @@ proto.mruv.economy.GetBlockRequest.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.GetBlockRequest}
+ * @return {!proto.mruv.punishments.GetBlockRequest}
  */
-proto.mruv.economy.GetBlockRequest.deserializeBinary = function(bytes) {
+proto.mruv.punishments.GetBlockRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.GetBlockRequest;
-  return proto.mruv.economy.GetBlockRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.GetBlockRequest;
+  return proto.mruv.punishments.GetBlockRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.GetBlockRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.GetBlockRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.GetBlockRequest}
+ * @return {!proto.mruv.punishments.GetBlockRequest}
  */
-proto.mruv.economy.GetBlockRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.GetBlockRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -7261,9 +8102,9 @@ proto.mruv.economy.GetBlockRequest.deserializeBinaryFromReader = function(msg, r
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.GetBlockRequest.prototype.serializeBinary = function() {
+proto.mruv.punishments.GetBlockRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.GetBlockRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.GetBlockRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -7271,11 +8112,11 @@ proto.mruv.economy.GetBlockRequest.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.GetBlockRequest} message
+ * @param {!proto.mruv.punishments.GetBlockRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.GetBlockRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.GetBlockRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getId();
   if (f !== 0) {
@@ -7291,13 +8132,13 @@ proto.mruv.economy.GetBlockRequest.serializeBinaryToWriter = function(message, w
  * optional uint32 id = 1;
  * @return {number}
  */
-proto.mruv.economy.GetBlockRequest.prototype.getId = function() {
+proto.mruv.punishments.GetBlockRequest.prototype.getId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.GetBlockRequest.prototype.setId = function(value) {
+proto.mruv.punishments.GetBlockRequest.prototype.setId = function(value) {
   jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -7318,8 +8159,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.IsPlayerBannedRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.IsPlayerBannedRequest.toObject(opt_includeInstance, this);
+proto.mruv.punishments.IsPlayerBannedRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.IsPlayerBannedRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -7328,11 +8169,11 @@ proto.mruv.economy.IsPlayerBannedRequest.prototype.toObject = function(opt_inclu
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.IsPlayerBannedRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.IsPlayerBannedRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.IsPlayerBannedRequest.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.IsPlayerBannedRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     player: jspb.Message.getFieldWithDefault(msg, 1, 0),
     ip: jspb.Message.getFieldWithDefault(msg, 2, "")
@@ -7349,23 +8190,23 @@ proto.mruv.economy.IsPlayerBannedRequest.toObject = function(includeInstance, ms
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.IsPlayerBannedRequest}
+ * @return {!proto.mruv.punishments.IsPlayerBannedRequest}
  */
-proto.mruv.economy.IsPlayerBannedRequest.deserializeBinary = function(bytes) {
+proto.mruv.punishments.IsPlayerBannedRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.IsPlayerBannedRequest;
-  return proto.mruv.economy.IsPlayerBannedRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.IsPlayerBannedRequest;
+  return proto.mruv.punishments.IsPlayerBannedRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.IsPlayerBannedRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.IsPlayerBannedRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.IsPlayerBannedRequest}
+ * @return {!proto.mruv.punishments.IsPlayerBannedRequest}
  */
-proto.mruv.economy.IsPlayerBannedRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.IsPlayerBannedRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -7393,9 +8234,9 @@ proto.mruv.economy.IsPlayerBannedRequest.deserializeBinaryFromReader = function(
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.IsPlayerBannedRequest.prototype.serializeBinary = function() {
+proto.mruv.punishments.IsPlayerBannedRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.IsPlayerBannedRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.IsPlayerBannedRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -7403,11 +8244,11 @@ proto.mruv.economy.IsPlayerBannedRequest.prototype.serializeBinary = function() 
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.IsPlayerBannedRequest} message
+ * @param {!proto.mruv.punishments.IsPlayerBannedRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.IsPlayerBannedRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.IsPlayerBannedRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getPlayer();
   if (f !== 0) {
@@ -7430,13 +8271,13 @@ proto.mruv.economy.IsPlayerBannedRequest.serializeBinaryToWriter = function(mess
  * optional uint32 player = 1;
  * @return {number}
  */
-proto.mruv.economy.IsPlayerBannedRequest.prototype.getPlayer = function() {
+proto.mruv.punishments.IsPlayerBannedRequest.prototype.getPlayer = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.IsPlayerBannedRequest.prototype.setPlayer = function(value) {
+proto.mruv.punishments.IsPlayerBannedRequest.prototype.setPlayer = function(value) {
   jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -7445,13 +8286,13 @@ proto.mruv.economy.IsPlayerBannedRequest.prototype.setPlayer = function(value) {
  * optional string ip = 2;
  * @return {string}
  */
-proto.mruv.economy.IsPlayerBannedRequest.prototype.getIp = function() {
+proto.mruv.punishments.IsPlayerBannedRequest.prototype.getIp = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
 
 
 /** @param {string} value */
-proto.mruv.economy.IsPlayerBannedRequest.prototype.setIp = function(value) {
+proto.mruv.punishments.IsPlayerBannedRequest.prototype.setIp = function(value) {
   jspb.Message.setProto3StringField(this, 2, value);
 };
 
@@ -7472,8 +8313,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.IsPlayerBannedResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.IsPlayerBannedResponse.toObject(opt_includeInstance, this);
+proto.mruv.punishments.IsPlayerBannedResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.IsPlayerBannedResponse.toObject(opt_includeInstance, this);
 };
 
 
@@ -7482,11 +8323,11 @@ proto.mruv.economy.IsPlayerBannedResponse.prototype.toObject = function(opt_incl
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.IsPlayerBannedResponse} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.IsPlayerBannedResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.IsPlayerBannedResponse.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.IsPlayerBannedResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
     banned: jspb.Message.getBooleanFieldWithDefault(msg, 1, false),
     banId: jspb.Message.getFieldWithDefault(msg, 2, 0)
@@ -7503,23 +8344,23 @@ proto.mruv.economy.IsPlayerBannedResponse.toObject = function(includeInstance, m
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.IsPlayerBannedResponse}
+ * @return {!proto.mruv.punishments.IsPlayerBannedResponse}
  */
-proto.mruv.economy.IsPlayerBannedResponse.deserializeBinary = function(bytes) {
+proto.mruv.punishments.IsPlayerBannedResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.IsPlayerBannedResponse;
-  return proto.mruv.economy.IsPlayerBannedResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.IsPlayerBannedResponse;
+  return proto.mruv.punishments.IsPlayerBannedResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.IsPlayerBannedResponse} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.IsPlayerBannedResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.IsPlayerBannedResponse}
+ * @return {!proto.mruv.punishments.IsPlayerBannedResponse}
  */
-proto.mruv.economy.IsPlayerBannedResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.IsPlayerBannedResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -7547,9 +8388,9 @@ proto.mruv.economy.IsPlayerBannedResponse.deserializeBinaryFromReader = function
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.IsPlayerBannedResponse.prototype.serializeBinary = function() {
+proto.mruv.punishments.IsPlayerBannedResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.IsPlayerBannedResponse.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.IsPlayerBannedResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -7557,11 +8398,11 @@ proto.mruv.economy.IsPlayerBannedResponse.prototype.serializeBinary = function()
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.IsPlayerBannedResponse} message
+ * @param {!proto.mruv.punishments.IsPlayerBannedResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.IsPlayerBannedResponse.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.IsPlayerBannedResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getBanned();
   if (f) {
@@ -7584,13 +8425,13 @@ proto.mruv.economy.IsPlayerBannedResponse.serializeBinaryToWriter = function(mes
  * optional bool banned = 1;
  * @return {boolean}
  */
-proto.mruv.economy.IsPlayerBannedResponse.prototype.getBanned = function() {
+proto.mruv.punishments.IsPlayerBannedResponse.prototype.getBanned = function() {
   return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 1, false));
 };
 
 
 /** @param {boolean} value */
-proto.mruv.economy.IsPlayerBannedResponse.prototype.setBanned = function(value) {
+proto.mruv.punishments.IsPlayerBannedResponse.prototype.setBanned = function(value) {
   jspb.Message.setProto3BooleanField(this, 1, value);
 };
 
@@ -7599,13 +8440,13 @@ proto.mruv.economy.IsPlayerBannedResponse.prototype.setBanned = function(value) 
  * optional uint32 ban_id = 2;
  * @return {number}
  */
-proto.mruv.economy.IsPlayerBannedResponse.prototype.getBanId = function() {
+proto.mruv.punishments.IsPlayerBannedResponse.prototype.getBanId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.IsPlayerBannedResponse.prototype.setBanId = function(value) {
+proto.mruv.punishments.IsPlayerBannedResponse.prototype.setBanId = function(value) {
   jspb.Message.setProto3IntField(this, 2, value);
 };
 
@@ -7626,8 +8467,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.IsCharacterBlockedRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.IsCharacterBlockedRequest.toObject(opt_includeInstance, this);
+proto.mruv.punishments.IsCharacterBlockedRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.IsCharacterBlockedRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -7636,11 +8477,11 @@ proto.mruv.economy.IsCharacterBlockedRequest.prototype.toObject = function(opt_i
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.IsCharacterBlockedRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.IsCharacterBlockedRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.IsCharacterBlockedRequest.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.IsCharacterBlockedRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     character: jspb.Message.getFieldWithDefault(msg, 1, 0)
   };
@@ -7656,23 +8497,23 @@ proto.mruv.economy.IsCharacterBlockedRequest.toObject = function(includeInstance
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.IsCharacterBlockedRequest}
+ * @return {!proto.mruv.punishments.IsCharacterBlockedRequest}
  */
-proto.mruv.economy.IsCharacterBlockedRequest.deserializeBinary = function(bytes) {
+proto.mruv.punishments.IsCharacterBlockedRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.IsCharacterBlockedRequest;
-  return proto.mruv.economy.IsCharacterBlockedRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.IsCharacterBlockedRequest;
+  return proto.mruv.punishments.IsCharacterBlockedRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.IsCharacterBlockedRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.IsCharacterBlockedRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.IsCharacterBlockedRequest}
+ * @return {!proto.mruv.punishments.IsCharacterBlockedRequest}
  */
-proto.mruv.economy.IsCharacterBlockedRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.IsCharacterBlockedRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -7696,9 +8537,9 @@ proto.mruv.economy.IsCharacterBlockedRequest.deserializeBinaryFromReader = funct
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.IsCharacterBlockedRequest.prototype.serializeBinary = function() {
+proto.mruv.punishments.IsCharacterBlockedRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.IsCharacterBlockedRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.IsCharacterBlockedRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -7706,11 +8547,11 @@ proto.mruv.economy.IsCharacterBlockedRequest.prototype.serializeBinary = functio
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.IsCharacterBlockedRequest} message
+ * @param {!proto.mruv.punishments.IsCharacterBlockedRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.IsCharacterBlockedRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.IsCharacterBlockedRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getCharacter();
   if (f !== 0) {
@@ -7726,13 +8567,13 @@ proto.mruv.economy.IsCharacterBlockedRequest.serializeBinaryToWriter = function(
  * optional uint32 character = 1;
  * @return {number}
  */
-proto.mruv.economy.IsCharacterBlockedRequest.prototype.getCharacter = function() {
+proto.mruv.punishments.IsCharacterBlockedRequest.prototype.getCharacter = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.IsCharacterBlockedRequest.prototype.setCharacter = function(value) {
+proto.mruv.punishments.IsCharacterBlockedRequest.prototype.setCharacter = function(value) {
   jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -7753,8 +8594,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.IsCharacterBlockedResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.IsCharacterBlockedResponse.toObject(opt_includeInstance, this);
+proto.mruv.punishments.IsCharacterBlockedResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.IsCharacterBlockedResponse.toObject(opt_includeInstance, this);
 };
 
 
@@ -7763,11 +8604,11 @@ proto.mruv.economy.IsCharacterBlockedResponse.prototype.toObject = function(opt_
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.IsCharacterBlockedResponse} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.IsCharacterBlockedResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.IsCharacterBlockedResponse.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.IsCharacterBlockedResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
     blocked: jspb.Message.getBooleanFieldWithDefault(msg, 1, false),
     blockId: jspb.Message.getFieldWithDefault(msg, 2, 0)
@@ -7784,23 +8625,23 @@ proto.mruv.economy.IsCharacterBlockedResponse.toObject = function(includeInstanc
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.IsCharacterBlockedResponse}
+ * @return {!proto.mruv.punishments.IsCharacterBlockedResponse}
  */
-proto.mruv.economy.IsCharacterBlockedResponse.deserializeBinary = function(bytes) {
+proto.mruv.punishments.IsCharacterBlockedResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.IsCharacterBlockedResponse;
-  return proto.mruv.economy.IsCharacterBlockedResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.IsCharacterBlockedResponse;
+  return proto.mruv.punishments.IsCharacterBlockedResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.IsCharacterBlockedResponse} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.IsCharacterBlockedResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.IsCharacterBlockedResponse}
+ * @return {!proto.mruv.punishments.IsCharacterBlockedResponse}
  */
-proto.mruv.economy.IsCharacterBlockedResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.IsCharacterBlockedResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -7828,9 +8669,9 @@ proto.mruv.economy.IsCharacterBlockedResponse.deserializeBinaryFromReader = func
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.IsCharacterBlockedResponse.prototype.serializeBinary = function() {
+proto.mruv.punishments.IsCharacterBlockedResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.IsCharacterBlockedResponse.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.IsCharacterBlockedResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -7838,11 +8679,11 @@ proto.mruv.economy.IsCharacterBlockedResponse.prototype.serializeBinary = functi
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.IsCharacterBlockedResponse} message
+ * @param {!proto.mruv.punishments.IsCharacterBlockedResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.IsCharacterBlockedResponse.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.IsCharacterBlockedResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getBlocked();
   if (f) {
@@ -7865,13 +8706,13 @@ proto.mruv.economy.IsCharacterBlockedResponse.serializeBinaryToWriter = function
  * optional bool blocked = 1;
  * @return {boolean}
  */
-proto.mruv.economy.IsCharacterBlockedResponse.prototype.getBlocked = function() {
+proto.mruv.punishments.IsCharacterBlockedResponse.prototype.getBlocked = function() {
   return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 1, false));
 };
 
 
 /** @param {boolean} value */
-proto.mruv.economy.IsCharacterBlockedResponse.prototype.setBlocked = function(value) {
+proto.mruv.punishments.IsCharacterBlockedResponse.prototype.setBlocked = function(value) {
   jspb.Message.setProto3BooleanField(this, 1, value);
 };
 
@@ -7880,13 +8721,13 @@ proto.mruv.economy.IsCharacterBlockedResponse.prototype.setBlocked = function(va
  * optional uint32 block_id = 2;
  * @return {number}
  */
-proto.mruv.economy.IsCharacterBlockedResponse.prototype.getBlockId = function() {
+proto.mruv.punishments.IsCharacterBlockedResponse.prototype.getBlockId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.IsCharacterBlockedResponse.prototype.setBlockId = function(value) {
+proto.mruv.punishments.IsCharacterBlockedResponse.prototype.setBlockId = function(value) {
   jspb.Message.setProto3IntField(this, 2, value);
 };
 
@@ -7907,8 +8748,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.IsCharacterJailedRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.IsCharacterJailedRequest.toObject(opt_includeInstance, this);
+proto.mruv.punishments.IsCharacterJailedRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.IsCharacterJailedRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -7917,11 +8758,11 @@ proto.mruv.economy.IsCharacterJailedRequest.prototype.toObject = function(opt_in
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.IsCharacterJailedRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.IsCharacterJailedRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.IsCharacterJailedRequest.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.IsCharacterJailedRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     character: jspb.Message.getFieldWithDefault(msg, 1, 0)
   };
@@ -7937,23 +8778,23 @@ proto.mruv.economy.IsCharacterJailedRequest.toObject = function(includeInstance,
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.IsCharacterJailedRequest}
+ * @return {!proto.mruv.punishments.IsCharacterJailedRequest}
  */
-proto.mruv.economy.IsCharacterJailedRequest.deserializeBinary = function(bytes) {
+proto.mruv.punishments.IsCharacterJailedRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.IsCharacterJailedRequest;
-  return proto.mruv.economy.IsCharacterJailedRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.IsCharacterJailedRequest;
+  return proto.mruv.punishments.IsCharacterJailedRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.IsCharacterJailedRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.IsCharacterJailedRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.IsCharacterJailedRequest}
+ * @return {!proto.mruv.punishments.IsCharacterJailedRequest}
  */
-proto.mruv.economy.IsCharacterJailedRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.IsCharacterJailedRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -7977,9 +8818,9 @@ proto.mruv.economy.IsCharacterJailedRequest.deserializeBinaryFromReader = functi
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.IsCharacterJailedRequest.prototype.serializeBinary = function() {
+proto.mruv.punishments.IsCharacterJailedRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.IsCharacterJailedRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.IsCharacterJailedRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -7987,11 +8828,11 @@ proto.mruv.economy.IsCharacterJailedRequest.prototype.serializeBinary = function
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.IsCharacterJailedRequest} message
+ * @param {!proto.mruv.punishments.IsCharacterJailedRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.IsCharacterJailedRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.IsCharacterJailedRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getCharacter();
   if (f !== 0) {
@@ -8007,13 +8848,13 @@ proto.mruv.economy.IsCharacterJailedRequest.serializeBinaryToWriter = function(m
  * optional uint32 character = 1;
  * @return {number}
  */
-proto.mruv.economy.IsCharacterJailedRequest.prototype.getCharacter = function() {
+proto.mruv.punishments.IsCharacterJailedRequest.prototype.getCharacter = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.IsCharacterJailedRequest.prototype.setCharacter = function(value) {
+proto.mruv.punishments.IsCharacterJailedRequest.prototype.setCharacter = function(value) {
   jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -8034,8 +8875,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.IsCharacterJailedResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.IsCharacterJailedResponse.toObject(opt_includeInstance, this);
+proto.mruv.punishments.IsCharacterJailedResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.IsCharacterJailedResponse.toObject(opt_includeInstance, this);
 };
 
 
@@ -8044,11 +8885,11 @@ proto.mruv.economy.IsCharacterJailedResponse.prototype.toObject = function(opt_i
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.IsCharacterJailedResponse} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.IsCharacterJailedResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.IsCharacterJailedResponse.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.IsCharacterJailedResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
     jailed: jspb.Message.getBooleanFieldWithDefault(msg, 1, false),
     jailTime: jspb.Message.getFieldWithDefault(msg, 2, 0)
@@ -8065,23 +8906,23 @@ proto.mruv.economy.IsCharacterJailedResponse.toObject = function(includeInstance
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.IsCharacterJailedResponse}
+ * @return {!proto.mruv.punishments.IsCharacterJailedResponse}
  */
-proto.mruv.economy.IsCharacterJailedResponse.deserializeBinary = function(bytes) {
+proto.mruv.punishments.IsCharacterJailedResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.IsCharacterJailedResponse;
-  return proto.mruv.economy.IsCharacterJailedResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.IsCharacterJailedResponse;
+  return proto.mruv.punishments.IsCharacterJailedResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.IsCharacterJailedResponse} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.IsCharacterJailedResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.IsCharacterJailedResponse}
+ * @return {!proto.mruv.punishments.IsCharacterJailedResponse}
  */
-proto.mruv.economy.IsCharacterJailedResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.IsCharacterJailedResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -8109,9 +8950,9 @@ proto.mruv.economy.IsCharacterJailedResponse.deserializeBinaryFromReader = funct
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.IsCharacterJailedResponse.prototype.serializeBinary = function() {
+proto.mruv.punishments.IsCharacterJailedResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.IsCharacterJailedResponse.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.IsCharacterJailedResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -8119,11 +8960,11 @@ proto.mruv.economy.IsCharacterJailedResponse.prototype.serializeBinary = functio
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.IsCharacterJailedResponse} message
+ * @param {!proto.mruv.punishments.IsCharacterJailedResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.IsCharacterJailedResponse.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.IsCharacterJailedResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getJailed();
   if (f) {
@@ -8146,13 +8987,13 @@ proto.mruv.economy.IsCharacterJailedResponse.serializeBinaryToWriter = function(
  * optional bool jailed = 1;
  * @return {boolean}
  */
-proto.mruv.economy.IsCharacterJailedResponse.prototype.getJailed = function() {
+proto.mruv.punishments.IsCharacterJailedResponse.prototype.getJailed = function() {
   return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 1, false));
 };
 
 
 /** @param {boolean} value */
-proto.mruv.economy.IsCharacterJailedResponse.prototype.setJailed = function(value) {
+proto.mruv.punishments.IsCharacterJailedResponse.prototype.setJailed = function(value) {
   jspb.Message.setProto3BooleanField(this, 1, value);
 };
 
@@ -8161,13 +9002,13 @@ proto.mruv.economy.IsCharacterJailedResponse.prototype.setJailed = function(valu
  * optional uint32 jail_time = 2;
  * @return {number}
  */
-proto.mruv.economy.IsCharacterJailedResponse.prototype.getJailTime = function() {
+proto.mruv.punishments.IsCharacterJailedResponse.prototype.getJailTime = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.IsCharacterJailedResponse.prototype.setJailTime = function(value) {
+proto.mruv.punishments.IsCharacterJailedResponse.prototype.setJailTime = function(value) {
   jspb.Message.setProto3IntField(this, 2, value);
 };
 
@@ -8188,8 +9029,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.WatchBansRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.WatchBansRequest.toObject(opt_includeInstance, this);
+proto.mruv.punishments.WatchBansRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.WatchBansRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -8198,11 +9039,11 @@ proto.mruv.economy.WatchBansRequest.prototype.toObject = function(opt_includeIns
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.WatchBansRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.WatchBansRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.WatchBansRequest.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.WatchBansRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
 
   };
@@ -8218,23 +9059,23 @@ proto.mruv.economy.WatchBansRequest.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.WatchBansRequest}
+ * @return {!proto.mruv.punishments.WatchBansRequest}
  */
-proto.mruv.economy.WatchBansRequest.deserializeBinary = function(bytes) {
+proto.mruv.punishments.WatchBansRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.WatchBansRequest;
-  return proto.mruv.economy.WatchBansRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.WatchBansRequest;
+  return proto.mruv.punishments.WatchBansRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.WatchBansRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.WatchBansRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.WatchBansRequest}
+ * @return {!proto.mruv.punishments.WatchBansRequest}
  */
-proto.mruv.economy.WatchBansRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.WatchBansRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -8254,9 +9095,9 @@ proto.mruv.economy.WatchBansRequest.deserializeBinaryFromReader = function(msg, 
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.WatchBansRequest.prototype.serializeBinary = function() {
+proto.mruv.punishments.WatchBansRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.WatchBansRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.WatchBansRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -8264,11 +9105,11 @@ proto.mruv.economy.WatchBansRequest.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.WatchBansRequest} message
+ * @param {!proto.mruv.punishments.WatchBansRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.WatchBansRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.WatchBansRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
 };
 
@@ -8289,8 +9130,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.WatchBlocksRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.WatchBlocksRequest.toObject(opt_includeInstance, this);
+proto.mruv.punishments.WatchBlocksRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.WatchBlocksRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -8299,11 +9140,11 @@ proto.mruv.economy.WatchBlocksRequest.prototype.toObject = function(opt_includeI
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.WatchBlocksRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.WatchBlocksRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.WatchBlocksRequest.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.WatchBlocksRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
 
   };
@@ -8319,23 +9160,23 @@ proto.mruv.economy.WatchBlocksRequest.toObject = function(includeInstance, msg) 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.WatchBlocksRequest}
+ * @return {!proto.mruv.punishments.WatchBlocksRequest}
  */
-proto.mruv.economy.WatchBlocksRequest.deserializeBinary = function(bytes) {
+proto.mruv.punishments.WatchBlocksRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.WatchBlocksRequest;
-  return proto.mruv.economy.WatchBlocksRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.WatchBlocksRequest;
+  return proto.mruv.punishments.WatchBlocksRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.WatchBlocksRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.WatchBlocksRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.WatchBlocksRequest}
+ * @return {!proto.mruv.punishments.WatchBlocksRequest}
  */
-proto.mruv.economy.WatchBlocksRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.WatchBlocksRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -8355,9 +9196,9 @@ proto.mruv.economy.WatchBlocksRequest.deserializeBinaryFromReader = function(msg
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.WatchBlocksRequest.prototype.serializeBinary = function() {
+proto.mruv.punishments.WatchBlocksRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.WatchBlocksRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.WatchBlocksRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -8365,11 +9206,11 @@ proto.mruv.economy.WatchBlocksRequest.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.WatchBlocksRequest} message
+ * @param {!proto.mruv.punishments.WatchBlocksRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.WatchBlocksRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.WatchBlocksRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
 };
 
@@ -8390,8 +9231,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.WatchWarnsRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.WatchWarnsRequest.toObject(opt_includeInstance, this);
+proto.mruv.punishments.WatchWarnsRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.WatchWarnsRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -8400,11 +9241,11 @@ proto.mruv.economy.WatchWarnsRequest.prototype.toObject = function(opt_includeIn
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.WatchWarnsRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.WatchWarnsRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.WatchWarnsRequest.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.WatchWarnsRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
 
   };
@@ -8420,23 +9261,23 @@ proto.mruv.economy.WatchWarnsRequest.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.WatchWarnsRequest}
+ * @return {!proto.mruv.punishments.WatchWarnsRequest}
  */
-proto.mruv.economy.WatchWarnsRequest.deserializeBinary = function(bytes) {
+proto.mruv.punishments.WatchWarnsRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.WatchWarnsRequest;
-  return proto.mruv.economy.WatchWarnsRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.WatchWarnsRequest;
+  return proto.mruv.punishments.WatchWarnsRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.WatchWarnsRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.WatchWarnsRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.WatchWarnsRequest}
+ * @return {!proto.mruv.punishments.WatchWarnsRequest}
  */
-proto.mruv.economy.WatchWarnsRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.WatchWarnsRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -8456,9 +9297,9 @@ proto.mruv.economy.WatchWarnsRequest.deserializeBinaryFromReader = function(msg,
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.WatchWarnsRequest.prototype.serializeBinary = function() {
+proto.mruv.punishments.WatchWarnsRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.WatchWarnsRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.WatchWarnsRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -8466,11 +9307,11 @@ proto.mruv.economy.WatchWarnsRequest.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.WatchWarnsRequest} message
+ * @param {!proto.mruv.punishments.WatchWarnsRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.WatchWarnsRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.WatchWarnsRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
 };
 
@@ -8491,8 +9332,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.WatchAdminJailsRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.WatchAdminJailsRequest.toObject(opt_includeInstance, this);
+proto.mruv.punishments.WatchAdminJailsRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.WatchAdminJailsRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -8501,11 +9342,11 @@ proto.mruv.economy.WatchAdminJailsRequest.prototype.toObject = function(opt_incl
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.WatchAdminJailsRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.WatchAdminJailsRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.WatchAdminJailsRequest.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.WatchAdminJailsRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
 
   };
@@ -8521,23 +9362,23 @@ proto.mruv.economy.WatchAdminJailsRequest.toObject = function(includeInstance, m
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.WatchAdminJailsRequest}
+ * @return {!proto.mruv.punishments.WatchAdminJailsRequest}
  */
-proto.mruv.economy.WatchAdminJailsRequest.deserializeBinary = function(bytes) {
+proto.mruv.punishments.WatchAdminJailsRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.WatchAdminJailsRequest;
-  return proto.mruv.economy.WatchAdminJailsRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.WatchAdminJailsRequest;
+  return proto.mruv.punishments.WatchAdminJailsRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.WatchAdminJailsRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.WatchAdminJailsRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.WatchAdminJailsRequest}
+ * @return {!proto.mruv.punishments.WatchAdminJailsRequest}
  */
-proto.mruv.economy.WatchAdminJailsRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.WatchAdminJailsRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -8557,9 +9398,9 @@ proto.mruv.economy.WatchAdminJailsRequest.deserializeBinaryFromReader = function
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.WatchAdminJailsRequest.prototype.serializeBinary = function() {
+proto.mruv.punishments.WatchAdminJailsRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.WatchAdminJailsRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.WatchAdminJailsRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -8567,11 +9408,11 @@ proto.mruv.economy.WatchAdminJailsRequest.prototype.serializeBinary = function()
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.WatchAdminJailsRequest} message
+ * @param {!proto.mruv.punishments.WatchAdminJailsRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.WatchAdminJailsRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.WatchAdminJailsRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
 };
 
@@ -8592,8 +9433,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.WatchUnBansRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.WatchUnBansRequest.toObject(opt_includeInstance, this);
+proto.mruv.punishments.WatchUnBansRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.WatchUnBansRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -8602,11 +9443,11 @@ proto.mruv.economy.WatchUnBansRequest.prototype.toObject = function(opt_includeI
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.WatchUnBansRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.WatchUnBansRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.WatchUnBansRequest.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.WatchUnBansRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
 
   };
@@ -8622,23 +9463,23 @@ proto.mruv.economy.WatchUnBansRequest.toObject = function(includeInstance, msg) 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.WatchUnBansRequest}
+ * @return {!proto.mruv.punishments.WatchUnBansRequest}
  */
-proto.mruv.economy.WatchUnBansRequest.deserializeBinary = function(bytes) {
+proto.mruv.punishments.WatchUnBansRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.WatchUnBansRequest;
-  return proto.mruv.economy.WatchUnBansRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.WatchUnBansRequest;
+  return proto.mruv.punishments.WatchUnBansRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.WatchUnBansRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.WatchUnBansRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.WatchUnBansRequest}
+ * @return {!proto.mruv.punishments.WatchUnBansRequest}
  */
-proto.mruv.economy.WatchUnBansRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.WatchUnBansRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -8658,9 +9499,9 @@ proto.mruv.economy.WatchUnBansRequest.deserializeBinaryFromReader = function(msg
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.WatchUnBansRequest.prototype.serializeBinary = function() {
+proto.mruv.punishments.WatchUnBansRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.WatchUnBansRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.WatchUnBansRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -8668,11 +9509,11 @@ proto.mruv.economy.WatchUnBansRequest.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.WatchUnBansRequest} message
+ * @param {!proto.mruv.punishments.WatchUnBansRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.WatchUnBansRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.WatchUnBansRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
 };
 
@@ -8693,8 +9534,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.WatchUnBlocksRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.WatchUnBlocksRequest.toObject(opt_includeInstance, this);
+proto.mruv.punishments.WatchUnBlocksRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.WatchUnBlocksRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -8703,11 +9544,11 @@ proto.mruv.economy.WatchUnBlocksRequest.prototype.toObject = function(opt_includ
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.WatchUnBlocksRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.WatchUnBlocksRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.WatchUnBlocksRequest.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.WatchUnBlocksRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
 
   };
@@ -8723,23 +9564,23 @@ proto.mruv.economy.WatchUnBlocksRequest.toObject = function(includeInstance, msg
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.WatchUnBlocksRequest}
+ * @return {!proto.mruv.punishments.WatchUnBlocksRequest}
  */
-proto.mruv.economy.WatchUnBlocksRequest.deserializeBinary = function(bytes) {
+proto.mruv.punishments.WatchUnBlocksRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.WatchUnBlocksRequest;
-  return proto.mruv.economy.WatchUnBlocksRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.WatchUnBlocksRequest;
+  return proto.mruv.punishments.WatchUnBlocksRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.WatchUnBlocksRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.WatchUnBlocksRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.WatchUnBlocksRequest}
+ * @return {!proto.mruv.punishments.WatchUnBlocksRequest}
  */
-proto.mruv.economy.WatchUnBlocksRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.WatchUnBlocksRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -8759,9 +9600,9 @@ proto.mruv.economy.WatchUnBlocksRequest.deserializeBinaryFromReader = function(m
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.WatchUnBlocksRequest.prototype.serializeBinary = function() {
+proto.mruv.punishments.WatchUnBlocksRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.WatchUnBlocksRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.WatchUnBlocksRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -8769,11 +9610,11 @@ proto.mruv.economy.WatchUnBlocksRequest.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.WatchUnBlocksRequest} message
+ * @param {!proto.mruv.punishments.WatchUnBlocksRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.WatchUnBlocksRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.WatchUnBlocksRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
 };
 
@@ -8794,8 +9635,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.WatchUnWarnsRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.WatchUnWarnsRequest.toObject(opt_includeInstance, this);
+proto.mruv.punishments.WatchUnWarnsRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.WatchUnWarnsRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -8804,11 +9645,11 @@ proto.mruv.economy.WatchUnWarnsRequest.prototype.toObject = function(opt_include
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.WatchUnWarnsRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.WatchUnWarnsRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.WatchUnWarnsRequest.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.WatchUnWarnsRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
 
   };
@@ -8824,23 +9665,23 @@ proto.mruv.economy.WatchUnWarnsRequest.toObject = function(includeInstance, msg)
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.WatchUnWarnsRequest}
+ * @return {!proto.mruv.punishments.WatchUnWarnsRequest}
  */
-proto.mruv.economy.WatchUnWarnsRequest.deserializeBinary = function(bytes) {
+proto.mruv.punishments.WatchUnWarnsRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.WatchUnWarnsRequest;
-  return proto.mruv.economy.WatchUnWarnsRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.WatchUnWarnsRequest;
+  return proto.mruv.punishments.WatchUnWarnsRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.WatchUnWarnsRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.WatchUnWarnsRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.WatchUnWarnsRequest}
+ * @return {!proto.mruv.punishments.WatchUnWarnsRequest}
  */
-proto.mruv.economy.WatchUnWarnsRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.WatchUnWarnsRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -8860,9 +9701,9 @@ proto.mruv.economy.WatchUnWarnsRequest.deserializeBinaryFromReader = function(ms
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.WatchUnWarnsRequest.prototype.serializeBinary = function() {
+proto.mruv.punishments.WatchUnWarnsRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.WatchUnWarnsRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.WatchUnWarnsRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -8870,11 +9711,11 @@ proto.mruv.economy.WatchUnWarnsRequest.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.WatchUnWarnsRequest} message
+ * @param {!proto.mruv.punishments.WatchUnWarnsRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.WatchUnWarnsRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.WatchUnWarnsRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
 };
 
@@ -8895,8 +9736,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.WatchUnAdminJailsRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.WatchUnAdminJailsRequest.toObject(opt_includeInstance, this);
+proto.mruv.punishments.WatchUnAdminJailsRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.WatchUnAdminJailsRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -8905,11 +9746,11 @@ proto.mruv.economy.WatchUnAdminJailsRequest.prototype.toObject = function(opt_in
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.WatchUnAdminJailsRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.WatchUnAdminJailsRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.WatchUnAdminJailsRequest.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.WatchUnAdminJailsRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
 
   };
@@ -8925,23 +9766,23 @@ proto.mruv.economy.WatchUnAdminJailsRequest.toObject = function(includeInstance,
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.WatchUnAdminJailsRequest}
+ * @return {!proto.mruv.punishments.WatchUnAdminJailsRequest}
  */
-proto.mruv.economy.WatchUnAdminJailsRequest.deserializeBinary = function(bytes) {
+proto.mruv.punishments.WatchUnAdminJailsRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.WatchUnAdminJailsRequest;
-  return proto.mruv.economy.WatchUnAdminJailsRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.WatchUnAdminJailsRequest;
+  return proto.mruv.punishments.WatchUnAdminJailsRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.WatchUnAdminJailsRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.WatchUnAdminJailsRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.WatchUnAdminJailsRequest}
+ * @return {!proto.mruv.punishments.WatchUnAdminJailsRequest}
  */
-proto.mruv.economy.WatchUnAdminJailsRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.WatchUnAdminJailsRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -8961,9 +9802,9 @@ proto.mruv.economy.WatchUnAdminJailsRequest.deserializeBinaryFromReader = functi
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.WatchUnAdminJailsRequest.prototype.serializeBinary = function() {
+proto.mruv.punishments.WatchUnAdminJailsRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.WatchUnAdminJailsRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.WatchUnAdminJailsRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -8971,11 +9812,11 @@ proto.mruv.economy.WatchUnAdminJailsRequest.prototype.serializeBinary = function
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.WatchUnAdminJailsRequest} message
+ * @param {!proto.mruv.punishments.WatchUnAdminJailsRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.WatchUnAdminJailsRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.WatchUnAdminJailsRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
 };
 
@@ -8996,8 +9837,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.economy.WatchPlayerAcquittalsRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.WatchPlayerAcquittalsRequest.toObject(opt_includeInstance, this);
+proto.mruv.punishments.WatchPlayerPunishmentsRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.WatchPlayerPunishmentsRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -9006,13 +9847,14 @@ proto.mruv.economy.WatchPlayerAcquittalsRequest.prototype.toObject = function(op
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.WatchPlayerAcquittalsRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.punishments.WatchPlayerPunishmentsRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.WatchPlayerAcquittalsRequest.toObject = function(includeInstance, msg) {
+proto.mruv.punishments.WatchPlayerPunishmentsRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
-
+    accountId: jspb.Message.getFieldWithDefault(msg, 1, 0),
+    characterId: jspb.Message.getFieldWithDefault(msg, 2, 0)
   };
 
   if (includeInstance) {
@@ -9026,327 +9868,23 @@ proto.mruv.economy.WatchPlayerAcquittalsRequest.toObject = function(includeInsta
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.WatchPlayerAcquittalsRequest}
+ * @return {!proto.mruv.punishments.WatchPlayerPunishmentsRequest}
  */
-proto.mruv.economy.WatchPlayerAcquittalsRequest.deserializeBinary = function(bytes) {
+proto.mruv.punishments.WatchPlayerPunishmentsRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.WatchPlayerAcquittalsRequest;
-  return proto.mruv.economy.WatchPlayerAcquittalsRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.punishments.WatchPlayerPunishmentsRequest;
+  return proto.mruv.punishments.WatchPlayerPunishmentsRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.economy.WatchPlayerAcquittalsRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.punishments.WatchPlayerPunishmentsRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.WatchPlayerAcquittalsRequest}
+ * @return {!proto.mruv.punishments.WatchPlayerPunishmentsRequest}
  */
-proto.mruv.economy.WatchPlayerAcquittalsRequest.deserializeBinaryFromReader = function(msg, reader) {
-  while (reader.nextField()) {
-    if (reader.isEndGroup()) {
-      break;
-    }
-    var field = reader.getFieldNumber();
-    switch (field) {
-    default:
-      reader.skipField();
-      break;
-    }
-  }
-  return msg;
-};
-
-
-/**
- * Serializes the message to binary data (in protobuf wire format).
- * @return {!Uint8Array}
- */
-proto.mruv.economy.WatchPlayerAcquittalsRequest.prototype.serializeBinary = function() {
-  var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.WatchPlayerAcquittalsRequest.serializeBinaryToWriter(this, writer);
-  return writer.getResultBuffer();
-};
-
-
-/**
- * Serializes the given message to binary data (in protobuf wire
- * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.WatchPlayerAcquittalsRequest} message
- * @param {!jspb.BinaryWriter} writer
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.mruv.economy.WatchPlayerAcquittalsRequest.serializeBinaryToWriter = function(message, writer) {
-  var f = undefined;
-};
-
-
-
-
-
-if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.mruv.economy.WatchPlayerAcquittalsResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.WatchPlayerAcquittalsResponse.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.WatchPlayerAcquittalsResponse} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.mruv.economy.WatchPlayerAcquittalsResponse.toObject = function(includeInstance, msg) {
-  var f, obj = {
-
-  };
-
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
-
-
-/**
- * Deserializes binary data (in protobuf wire format).
- * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.WatchPlayerAcquittalsResponse}
- */
-proto.mruv.economy.WatchPlayerAcquittalsResponse.deserializeBinary = function(bytes) {
-  var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.WatchPlayerAcquittalsResponse;
-  return proto.mruv.economy.WatchPlayerAcquittalsResponse.deserializeBinaryFromReader(msg, reader);
-};
-
-
-/**
- * Deserializes binary data (in protobuf wire format) from the
- * given reader into the given message object.
- * @param {!proto.mruv.economy.WatchPlayerAcquittalsResponse} msg The message object to deserialize into.
- * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.WatchPlayerAcquittalsResponse}
- */
-proto.mruv.economy.WatchPlayerAcquittalsResponse.deserializeBinaryFromReader = function(msg, reader) {
-  while (reader.nextField()) {
-    if (reader.isEndGroup()) {
-      break;
-    }
-    var field = reader.getFieldNumber();
-    switch (field) {
-    default:
-      reader.skipField();
-      break;
-    }
-  }
-  return msg;
-};
-
-
-/**
- * Serializes the message to binary data (in protobuf wire format).
- * @return {!Uint8Array}
- */
-proto.mruv.economy.WatchPlayerAcquittalsResponse.prototype.serializeBinary = function() {
-  var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.WatchPlayerAcquittalsResponse.serializeBinaryToWriter(this, writer);
-  return writer.getResultBuffer();
-};
-
-
-/**
- * Serializes the given message to binary data (in protobuf wire
- * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.WatchPlayerAcquittalsResponse} message
- * @param {!jspb.BinaryWriter} writer
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.mruv.economy.WatchPlayerAcquittalsResponse.serializeBinaryToWriter = function(message, writer) {
-  var f = undefined;
-};
-
-
-
-
-
-if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.mruv.economy.WatchPlayerPunishmentsRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.WatchPlayerPunishmentsRequest.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.WatchPlayerPunishmentsRequest} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.mruv.economy.WatchPlayerPunishmentsRequest.toObject = function(includeInstance, msg) {
-  var f, obj = {
-
-  };
-
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
-
-
-/**
- * Deserializes binary data (in protobuf wire format).
- * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.WatchPlayerPunishmentsRequest}
- */
-proto.mruv.economy.WatchPlayerPunishmentsRequest.deserializeBinary = function(bytes) {
-  var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.WatchPlayerPunishmentsRequest;
-  return proto.mruv.economy.WatchPlayerPunishmentsRequest.deserializeBinaryFromReader(msg, reader);
-};
-
-
-/**
- * Deserializes binary data (in protobuf wire format) from the
- * given reader into the given message object.
- * @param {!proto.mruv.economy.WatchPlayerPunishmentsRequest} msg The message object to deserialize into.
- * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.WatchPlayerPunishmentsRequest}
- */
-proto.mruv.economy.WatchPlayerPunishmentsRequest.deserializeBinaryFromReader = function(msg, reader) {
-  while (reader.nextField()) {
-    if (reader.isEndGroup()) {
-      break;
-    }
-    var field = reader.getFieldNumber();
-    switch (field) {
-    default:
-      reader.skipField();
-      break;
-    }
-  }
-  return msg;
-};
-
-
-/**
- * Serializes the message to binary data (in protobuf wire format).
- * @return {!Uint8Array}
- */
-proto.mruv.economy.WatchPlayerPunishmentsRequest.prototype.serializeBinary = function() {
-  var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.WatchPlayerPunishmentsRequest.serializeBinaryToWriter(this, writer);
-  return writer.getResultBuffer();
-};
-
-
-/**
- * Serializes the given message to binary data (in protobuf wire
- * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.WatchPlayerPunishmentsRequest} message
- * @param {!jspb.BinaryWriter} writer
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.mruv.economy.WatchPlayerPunishmentsRequest.serializeBinaryToWriter = function(message, writer) {
-  var f = undefined;
-};
-
-
-
-
-
-if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.mruv.economy.WatchPlayerPunishmentsResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.WatchPlayerPunishmentsResponse.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.WatchPlayerPunishmentsResponse} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.mruv.economy.WatchPlayerPunishmentsResponse.toObject = function(includeInstance, msg) {
-  var f, obj = {
-    type: jspb.Message.getFieldWithDefault(msg, 1, 0),
-    punishmentId: jspb.Message.getFieldWithDefault(msg, 2, 0)
-  };
-
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
-
-
-/**
- * Deserializes binary data (in protobuf wire format).
- * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.WatchPlayerPunishmentsResponse}
- */
-proto.mruv.economy.WatchPlayerPunishmentsResponse.deserializeBinary = function(bytes) {
-  var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.WatchPlayerPunishmentsResponse;
-  return proto.mruv.economy.WatchPlayerPunishmentsResponse.deserializeBinaryFromReader(msg, reader);
-};
-
-
-/**
- * Deserializes binary data (in protobuf wire format) from the
- * given reader into the given message object.
- * @param {!proto.mruv.economy.WatchPlayerPunishmentsResponse} msg The message object to deserialize into.
- * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.WatchPlayerPunishmentsResponse}
- */
-proto.mruv.economy.WatchPlayerPunishmentsResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.punishments.WatchPlayerPunishmentsRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -9354,12 +9892,12 @@ proto.mruv.economy.WatchPlayerPunishmentsResponse.deserializeBinaryFromReader = 
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = /** @type {!proto.mruv.economy.PunishmentType} */ (reader.readEnum());
-      msg.setType(value);
+      var value = /** @type {number} */ (reader.readUint32());
+      msg.setAccountId(value);
       break;
     case 2:
       var value = /** @type {number} */ (reader.readUint32());
-      msg.setPunishmentId(value);
+      msg.setCharacterId(value);
       break;
     default:
       reader.skipField();
@@ -9374,9 +9912,9 @@ proto.mruv.economy.WatchPlayerPunishmentsResponse.deserializeBinaryFromReader = 
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.economy.WatchPlayerPunishmentsResponse.prototype.serializeBinary = function() {
+proto.mruv.punishments.WatchPlayerPunishmentsRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.WatchPlayerPunishmentsResponse.serializeBinaryToWriter(this, writer);
+  proto.mruv.punishments.WatchPlayerPunishmentsRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -9384,20 +9922,20 @@ proto.mruv.economy.WatchPlayerPunishmentsResponse.prototype.serializeBinary = fu
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.WatchPlayerPunishmentsResponse} message
+ * @param {!proto.mruv.punishments.WatchPlayerPunishmentsRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.economy.WatchPlayerPunishmentsResponse.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.punishments.WatchPlayerPunishmentsRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
-  f = message.getType();
-  if (f !== 0.0) {
-    writer.writeEnum(
+  f = message.getAccountId();
+  if (f !== 0) {
+    writer.writeUint32(
       1,
       f
     );
   }
-  f = message.getPunishmentId();
+  f = message.getCharacterId();
   if (f !== 0) {
     writer.writeUint32(
       2,
@@ -9408,364 +9946,1653 @@ proto.mruv.economy.WatchPlayerPunishmentsResponse.serializeBinaryToWriter = func
 
 
 /**
- * optional PunishmentType type = 1;
- * @return {!proto.mruv.economy.PunishmentType}
+ * optional uint32 account_id = 1;
+ * @return {number}
  */
-proto.mruv.economy.WatchPlayerPunishmentsResponse.prototype.getType = function() {
-  return /** @type {!proto.mruv.economy.PunishmentType} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
+proto.mruv.punishments.WatchPlayerPunishmentsRequest.prototype.getAccountId = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
-/** @param {!proto.mruv.economy.PunishmentType} value */
-proto.mruv.economy.WatchPlayerPunishmentsResponse.prototype.setType = function(value) {
-  jspb.Message.setProto3EnumField(this, 1, value);
+/** @param {number} value */
+proto.mruv.punishments.WatchPlayerPunishmentsRequest.prototype.setAccountId = function(value) {
+  jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
 /**
- * optional uint32 punishment_id = 2;
+ * optional uint32 character_id = 2;
  * @return {number}
  */
-proto.mruv.economy.WatchPlayerPunishmentsResponse.prototype.getPunishmentId = function() {
+proto.mruv.punishments.WatchPlayerPunishmentsRequest.prototype.getCharacterId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
 /** @param {number} value */
-proto.mruv.economy.WatchPlayerPunishmentsResponse.prototype.setPunishmentId = function(value) {
+proto.mruv.punishments.WatchPlayerPunishmentsRequest.prototype.setCharacterId = function(value) {
   jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
 
-
-
-if (jspb.Message.GENERATE_TO_OBJECT) {
 /**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
+ * Oneof group definitions for this message. Each group defines the field
+ * numbers belonging to that group. When of these fields' value is set, all
+ * other fields in the group are cleared. During deserialization, if multiple
+ * fields are encountered for a group, only the last value seen will be kept.
+ * @private {!Array<!Array<number>>}
+ * @const
  */
-proto.mruv.economy.WatchPunishmentsRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.WatchPunishmentsRequest.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.WatchPunishmentsRequest} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.mruv.economy.WatchPunishmentsRequest.toObject = function(includeInstance, msg) {
-  var f, obj = {
-
-  };
-
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
-
-
-/**
- * Deserializes binary data (in protobuf wire format).
- * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.WatchPunishmentsRequest}
- */
-proto.mruv.economy.WatchPunishmentsRequest.deserializeBinary = function(bytes) {
-  var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.WatchPunishmentsRequest;
-  return proto.mruv.economy.WatchPunishmentsRequest.deserializeBinaryFromReader(msg, reader);
-};
-
-
-/**
- * Deserializes binary data (in protobuf wire format) from the
- * given reader into the given message object.
- * @param {!proto.mruv.economy.WatchPunishmentsRequest} msg The message object to deserialize into.
- * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.WatchPunishmentsRequest}
- */
-proto.mruv.economy.WatchPunishmentsRequest.deserializeBinaryFromReader = function(msg, reader) {
-  while (reader.nextField()) {
-    if (reader.isEndGroup()) {
-      break;
-    }
-    var field = reader.getFieldNumber();
-    switch (field) {
-    default:
-      reader.skipField();
-      break;
-    }
-  }
-  return msg;
-};
-
-
-/**
- * Serializes the message to binary data (in protobuf wire format).
- * @return {!Uint8Array}
- */
-proto.mruv.economy.WatchPunishmentsRequest.prototype.serializeBinary = function() {
-  var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.WatchPunishmentsRequest.serializeBinaryToWriter(this, writer);
-  return writer.getResultBuffer();
-};
-
-
-/**
- * Serializes the given message to binary data (in protobuf wire
- * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.WatchPunishmentsRequest} message
- * @param {!jspb.BinaryWriter} writer
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.mruv.economy.WatchPunishmentsRequest.serializeBinaryToWriter = function(message, writer) {
-  var f = undefined;
-};
-
-
-
-
-
-if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * Optional fields that are not set will be set to undefined.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
- * @param {boolean=} opt_includeInstance Deprecated. whether to include the
- *     JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.mruv.economy.WatchPunishmentsResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.economy.WatchPunishmentsResponse.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Deprecated. Whether to include
- *     the JSPB instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.mruv.economy.WatchPunishmentsResponse} msg The msg instance to transform.
- * @return {!Object}
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.mruv.economy.WatchPunishmentsResponse.toObject = function(includeInstance, msg) {
-  var f, obj = {
-    type: jspb.Message.getFieldWithDefault(msg, 1, 0),
-    punishmentId: jspb.Message.getFieldWithDefault(msg, 2, 0),
-    player: jspb.Message.getFieldWithDefault(msg, 3, 0),
-    character: jspb.Message.getFieldWithDefault(msg, 4, 0)
-  };
-
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
-
-
-/**
- * Deserializes binary data (in protobuf wire format).
- * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.economy.WatchPunishmentsResponse}
- */
-proto.mruv.economy.WatchPunishmentsResponse.deserializeBinary = function(bytes) {
-  var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.economy.WatchPunishmentsResponse;
-  return proto.mruv.economy.WatchPunishmentsResponse.deserializeBinaryFromReader(msg, reader);
-};
-
-
-/**
- * Deserializes binary data (in protobuf wire format) from the
- * given reader into the given message object.
- * @param {!proto.mruv.economy.WatchPunishmentsResponse} msg The message object to deserialize into.
- * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.economy.WatchPunishmentsResponse}
- */
-proto.mruv.economy.WatchPunishmentsResponse.deserializeBinaryFromReader = function(msg, reader) {
-  while (reader.nextField()) {
-    if (reader.isEndGroup()) {
-      break;
-    }
-    var field = reader.getFieldNumber();
-    switch (field) {
-    case 1:
-      var value = /** @type {!proto.mruv.economy.PunishmentType} */ (reader.readEnum());
-      msg.setType(value);
-      break;
-    case 2:
-      var value = /** @type {number} */ (reader.readUint32());
-      msg.setPunishmentId(value);
-      break;
-    case 3:
-      var value = /** @type {number} */ (reader.readUint32());
-      msg.setPlayer(value);
-      break;
-    case 4:
-      var value = /** @type {number} */ (reader.readUint32());
-      msg.setCharacter(value);
-      break;
-    default:
-      reader.skipField();
-      break;
-    }
-  }
-  return msg;
-};
-
-
-/**
- * Serializes the message to binary data (in protobuf wire format).
- * @return {!Uint8Array}
- */
-proto.mruv.economy.WatchPunishmentsResponse.prototype.serializeBinary = function() {
-  var writer = new jspb.BinaryWriter();
-  proto.mruv.economy.WatchPunishmentsResponse.serializeBinaryToWriter(this, writer);
-  return writer.getResultBuffer();
-};
-
-
-/**
- * Serializes the given message to binary data (in protobuf wire
- * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.economy.WatchPunishmentsResponse} message
- * @param {!jspb.BinaryWriter} writer
- * @suppress {unusedLocalVariables} f is only used for nested messages
- */
-proto.mruv.economy.WatchPunishmentsResponse.serializeBinaryToWriter = function(message, writer) {
-  var f = undefined;
-  f = message.getType();
-  if (f !== 0.0) {
-    writer.writeEnum(
-      1,
-      f
-    );
-  }
-  f = message.getPunishmentId();
-  if (f !== 0) {
-    writer.writeUint32(
-      2,
-      f
-    );
-  }
-  f = message.getPlayer();
-  if (f !== 0) {
-    writer.writeUint32(
-      3,
-      f
-    );
-  }
-  f = message.getCharacter();
-  if (f !== 0) {
-    writer.writeUint32(
-      4,
-      f
-    );
-  }
-};
-
-
-/**
- * optional PunishmentType type = 1;
- * @return {!proto.mruv.economy.PunishmentType}
- */
-proto.mruv.economy.WatchPunishmentsResponse.prototype.getType = function() {
-  return /** @type {!proto.mruv.economy.PunishmentType} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
-};
-
-
-/** @param {!proto.mruv.economy.PunishmentType} value */
-proto.mruv.economy.WatchPunishmentsResponse.prototype.setType = function(value) {
-  jspb.Message.setProto3EnumField(this, 1, value);
-};
-
-
-/**
- * optional uint32 punishment_id = 2;
- * @return {number}
- */
-proto.mruv.economy.WatchPunishmentsResponse.prototype.getPunishmentId = function() {
-  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
-};
-
-
-/** @param {number} value */
-proto.mruv.economy.WatchPunishmentsResponse.prototype.setPunishmentId = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
-};
-
-
-/**
- * optional uint32 player = 3;
- * @return {number}
- */
-proto.mruv.economy.WatchPunishmentsResponse.prototype.getPlayer = function() {
-  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
-};
-
-
-/** @param {number} value */
-proto.mruv.economy.WatchPunishmentsResponse.prototype.setPlayer = function(value) {
-  jspb.Message.setProto3IntField(this, 3, value);
-};
-
-
-/**
- * optional uint32 character = 4;
- * @return {number}
- */
-proto.mruv.economy.WatchPunishmentsResponse.prototype.getCharacter = function() {
-  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 4, 0));
-};
-
-
-/** @param {number} value */
-proto.mruv.economy.WatchPunishmentsResponse.prototype.setCharacter = function(value) {
-  jspb.Message.setProto3IntField(this, 4, value);
-};
-
+proto.mruv.punishments.WatchPlayerPunishmentsResponse.oneofGroups_ = [[1,2,3,4]];
 
 /**
  * @enum {number}
  */
-proto.mruv.economy.PunishmentType = {
-  UNKNOWN_PUNISHMENT: 0,
+proto.mruv.punishments.WatchPlayerPunishmentsResponse.PunishmentCase = {
+  PUNISHMENT_NOT_SET: 0,
   BAN: 1,
   BLOCK: 2,
   WARN: 3,
-  ADMIN_JAIL: 4
+  AJ: 4
 };
+
+/**
+ * @return {proto.mruv.punishments.WatchPlayerPunishmentsResponse.PunishmentCase}
+ */
+proto.mruv.punishments.WatchPlayerPunishmentsResponse.prototype.getPunishmentCase = function() {
+  return /** @type {proto.mruv.punishments.WatchPlayerPunishmentsResponse.PunishmentCase} */(jspb.Message.computeOneofCase(this, proto.mruv.punishments.WatchPlayerPunishmentsResponse.oneofGroups_[0]));
+};
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mruv.punishments.WatchPlayerPunishmentsResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.WatchPlayerPunishmentsResponse.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mruv.punishments.WatchPlayerPunishmentsResponse} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mruv.punishments.WatchPlayerPunishmentsResponse.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    ban: (f = msg.getBan()) && proto.mruv.punishments.BanMessage.toObject(includeInstance, f),
+    block: (f = msg.getBlock()) && proto.mruv.punishments.BlockMessage.toObject(includeInstance, f),
+    warn: (f = msg.getWarn()) && proto.mruv.punishments.WarnMessage.toObject(includeInstance, f),
+    aj: (f = msg.getAj()) && proto.mruv.punishments.AdminJailMessage.toObject(includeInstance, f)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.mruv.punishments.WatchPlayerPunishmentsResponse}
+ */
+proto.mruv.punishments.WatchPlayerPunishmentsResponse.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.mruv.punishments.WatchPlayerPunishmentsResponse;
+  return proto.mruv.punishments.WatchPlayerPunishmentsResponse.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.mruv.punishments.WatchPlayerPunishmentsResponse} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.mruv.punishments.WatchPlayerPunishmentsResponse}
+ */
+proto.mruv.punishments.WatchPlayerPunishmentsResponse.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new proto.mruv.punishments.BanMessage;
+      reader.readMessage(value,proto.mruv.punishments.BanMessage.deserializeBinaryFromReader);
+      msg.setBan(value);
+      break;
+    case 2:
+      var value = new proto.mruv.punishments.BlockMessage;
+      reader.readMessage(value,proto.mruv.punishments.BlockMessage.deserializeBinaryFromReader);
+      msg.setBlock(value);
+      break;
+    case 3:
+      var value = new proto.mruv.punishments.WarnMessage;
+      reader.readMessage(value,proto.mruv.punishments.WarnMessage.deserializeBinaryFromReader);
+      msg.setWarn(value);
+      break;
+    case 4:
+      var value = new proto.mruv.punishments.AdminJailMessage;
+      reader.readMessage(value,proto.mruv.punishments.AdminJailMessage.deserializeBinaryFromReader);
+      msg.setAj(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.mruv.punishments.WatchPlayerPunishmentsResponse.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.mruv.punishments.WatchPlayerPunishmentsResponse.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.mruv.punishments.WatchPlayerPunishmentsResponse} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mruv.punishments.WatchPlayerPunishmentsResponse.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getBan();
+  if (f != null) {
+    writer.writeMessage(
+      1,
+      f,
+      proto.mruv.punishments.BanMessage.serializeBinaryToWriter
+    );
+  }
+  f = message.getBlock();
+  if (f != null) {
+    writer.writeMessage(
+      2,
+      f,
+      proto.mruv.punishments.BlockMessage.serializeBinaryToWriter
+    );
+  }
+  f = message.getWarn();
+  if (f != null) {
+    writer.writeMessage(
+      3,
+      f,
+      proto.mruv.punishments.WarnMessage.serializeBinaryToWriter
+    );
+  }
+  f = message.getAj();
+  if (f != null) {
+    writer.writeMessage(
+      4,
+      f,
+      proto.mruv.punishments.AdminJailMessage.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional BanMessage ban = 1;
+ * @return {?proto.mruv.punishments.BanMessage}
+ */
+proto.mruv.punishments.WatchPlayerPunishmentsResponse.prototype.getBan = function() {
+  return /** @type{?proto.mruv.punishments.BanMessage} */ (
+    jspb.Message.getWrapperField(this, proto.mruv.punishments.BanMessage, 1));
+};
+
+
+/** @param {?proto.mruv.punishments.BanMessage|undefined} value */
+proto.mruv.punishments.WatchPlayerPunishmentsResponse.prototype.setBan = function(value) {
+  jspb.Message.setOneofWrapperField(this, 1, proto.mruv.punishments.WatchPlayerPunishmentsResponse.oneofGroups_[0], value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.mruv.punishments.WatchPlayerPunishmentsResponse.prototype.clearBan = function() {
+  this.setBan(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.mruv.punishments.WatchPlayerPunishmentsResponse.prototype.hasBan = function() {
+  return jspb.Message.getField(this, 1) != null;
+};
+
+
+/**
+ * optional BlockMessage block = 2;
+ * @return {?proto.mruv.punishments.BlockMessage}
+ */
+proto.mruv.punishments.WatchPlayerPunishmentsResponse.prototype.getBlock = function() {
+  return /** @type{?proto.mruv.punishments.BlockMessage} */ (
+    jspb.Message.getWrapperField(this, proto.mruv.punishments.BlockMessage, 2));
+};
+
+
+/** @param {?proto.mruv.punishments.BlockMessage|undefined} value */
+proto.mruv.punishments.WatchPlayerPunishmentsResponse.prototype.setBlock = function(value) {
+  jspb.Message.setOneofWrapperField(this, 2, proto.mruv.punishments.WatchPlayerPunishmentsResponse.oneofGroups_[0], value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.mruv.punishments.WatchPlayerPunishmentsResponse.prototype.clearBlock = function() {
+  this.setBlock(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.mruv.punishments.WatchPlayerPunishmentsResponse.prototype.hasBlock = function() {
+  return jspb.Message.getField(this, 2) != null;
+};
+
+
+/**
+ * optional WarnMessage warn = 3;
+ * @return {?proto.mruv.punishments.WarnMessage}
+ */
+proto.mruv.punishments.WatchPlayerPunishmentsResponse.prototype.getWarn = function() {
+  return /** @type{?proto.mruv.punishments.WarnMessage} */ (
+    jspb.Message.getWrapperField(this, proto.mruv.punishments.WarnMessage, 3));
+};
+
+
+/** @param {?proto.mruv.punishments.WarnMessage|undefined} value */
+proto.mruv.punishments.WatchPlayerPunishmentsResponse.prototype.setWarn = function(value) {
+  jspb.Message.setOneofWrapperField(this, 3, proto.mruv.punishments.WatchPlayerPunishmentsResponse.oneofGroups_[0], value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.mruv.punishments.WatchPlayerPunishmentsResponse.prototype.clearWarn = function() {
+  this.setWarn(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.mruv.punishments.WatchPlayerPunishmentsResponse.prototype.hasWarn = function() {
+  return jspb.Message.getField(this, 3) != null;
+};
+
+
+/**
+ * optional AdminJailMessage aj = 4;
+ * @return {?proto.mruv.punishments.AdminJailMessage}
+ */
+proto.mruv.punishments.WatchPlayerPunishmentsResponse.prototype.getAj = function() {
+  return /** @type{?proto.mruv.punishments.AdminJailMessage} */ (
+    jspb.Message.getWrapperField(this, proto.mruv.punishments.AdminJailMessage, 4));
+};
+
+
+/** @param {?proto.mruv.punishments.AdminJailMessage|undefined} value */
+proto.mruv.punishments.WatchPlayerPunishmentsResponse.prototype.setAj = function(value) {
+  jspb.Message.setOneofWrapperField(this, 4, proto.mruv.punishments.WatchPlayerPunishmentsResponse.oneofGroups_[0], value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.mruv.punishments.WatchPlayerPunishmentsResponse.prototype.clearAj = function() {
+  this.setAj(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.mruv.punishments.WatchPlayerPunishmentsResponse.prototype.hasAj = function() {
+  return jspb.Message.getField(this, 4) != null;
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mruv.punishments.WatchPlayerAcquittalsRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.WatchPlayerAcquittalsRequest.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mruv.punishments.WatchPlayerAcquittalsRequest} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mruv.punishments.WatchPlayerAcquittalsRequest.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    accountId: jspb.Message.getFieldWithDefault(msg, 1, 0),
+    characterId: jspb.Message.getFieldWithDefault(msg, 2, 0)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.mruv.punishments.WatchPlayerAcquittalsRequest}
+ */
+proto.mruv.punishments.WatchPlayerAcquittalsRequest.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.mruv.punishments.WatchPlayerAcquittalsRequest;
+  return proto.mruv.punishments.WatchPlayerAcquittalsRequest.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.mruv.punishments.WatchPlayerAcquittalsRequest} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.mruv.punishments.WatchPlayerAcquittalsRequest}
+ */
+proto.mruv.punishments.WatchPlayerAcquittalsRequest.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {number} */ (reader.readUint32());
+      msg.setAccountId(value);
+      break;
+    case 2:
+      var value = /** @type {number} */ (reader.readUint32());
+      msg.setCharacterId(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.mruv.punishments.WatchPlayerAcquittalsRequest.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.mruv.punishments.WatchPlayerAcquittalsRequest.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.mruv.punishments.WatchPlayerAcquittalsRequest} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mruv.punishments.WatchPlayerAcquittalsRequest.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getAccountId();
+  if (f !== 0) {
+    writer.writeUint32(
+      1,
+      f
+    );
+  }
+  f = message.getCharacterId();
+  if (f !== 0) {
+    writer.writeUint32(
+      2,
+      f
+    );
+  }
+};
+
+
+/**
+ * optional uint32 account_id = 1;
+ * @return {number}
+ */
+proto.mruv.punishments.WatchPlayerAcquittalsRequest.prototype.getAccountId = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
+};
+
+
+/** @param {number} value */
+proto.mruv.punishments.WatchPlayerAcquittalsRequest.prototype.setAccountId = function(value) {
+  jspb.Message.setProto3IntField(this, 1, value);
+};
+
+
+/**
+ * optional uint32 character_id = 2;
+ * @return {number}
+ */
+proto.mruv.punishments.WatchPlayerAcquittalsRequest.prototype.getCharacterId = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
+};
+
+
+/** @param {number} value */
+proto.mruv.punishments.WatchPlayerAcquittalsRequest.prototype.setCharacterId = function(value) {
+  jspb.Message.setProto3IntField(this, 2, value);
+};
+
+
+
+/**
+ * Oneof group definitions for this message. Each group defines the field
+ * numbers belonging to that group. When of these fields' value is set, all
+ * other fields in the group are cleared. During deserialization, if multiple
+ * fields are encountered for a group, only the last value seen will be kept.
+ * @private {!Array<!Array<number>>}
+ * @const
+ */
+proto.mruv.punishments.WatchPlayerAcquittalsResponse.oneofGroups_ = [[1,2,3,4]];
 
 /**
  * @enum {number}
  */
-proto.mruv.economy.AcquittalsType = {
-  UNKNOWN_ACQUITAL: 0,
+proto.mruv.punishments.WatchPlayerAcquittalsResponse.AcquittalCase = {
+  ACQUITTAL_NOT_SET: 0,
   UNBAN: 1,
   UNBLOCK: 2,
   UNWARN: 3,
-  UN_ADMIN_JAIL: 4
+  UNAJ: 4
 };
 
-goog.object.extend(exports, proto.mruv.economy);
+/**
+ * @return {proto.mruv.punishments.WatchPlayerAcquittalsResponse.AcquittalCase}
+ */
+proto.mruv.punishments.WatchPlayerAcquittalsResponse.prototype.getAcquittalCase = function() {
+  return /** @type {proto.mruv.punishments.WatchPlayerAcquittalsResponse.AcquittalCase} */(jspb.Message.computeOneofCase(this, proto.mruv.punishments.WatchPlayerAcquittalsResponse.oneofGroups_[0]));
+};
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mruv.punishments.WatchPlayerAcquittalsResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.WatchPlayerAcquittalsResponse.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mruv.punishments.WatchPlayerAcquittalsResponse} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mruv.punishments.WatchPlayerAcquittalsResponse.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    unban: (f = msg.getUnban()) && proto.mruv.punishments.UnBanMessage.toObject(includeInstance, f),
+    unblock: (f = msg.getUnblock()) && proto.mruv.punishments.UnBlockMessage.toObject(includeInstance, f),
+    unwarn: (f = msg.getUnwarn()) && proto.mruv.punishments.UnWarnMessage.toObject(includeInstance, f),
+    unaj: (f = msg.getUnaj()) && proto.mruv.punishments.UnAdminJailMessage.toObject(includeInstance, f)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.mruv.punishments.WatchPlayerAcquittalsResponse}
+ */
+proto.mruv.punishments.WatchPlayerAcquittalsResponse.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.mruv.punishments.WatchPlayerAcquittalsResponse;
+  return proto.mruv.punishments.WatchPlayerAcquittalsResponse.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.mruv.punishments.WatchPlayerAcquittalsResponse} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.mruv.punishments.WatchPlayerAcquittalsResponse}
+ */
+proto.mruv.punishments.WatchPlayerAcquittalsResponse.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new proto.mruv.punishments.UnBanMessage;
+      reader.readMessage(value,proto.mruv.punishments.UnBanMessage.deserializeBinaryFromReader);
+      msg.setUnban(value);
+      break;
+    case 2:
+      var value = new proto.mruv.punishments.UnBlockMessage;
+      reader.readMessage(value,proto.mruv.punishments.UnBlockMessage.deserializeBinaryFromReader);
+      msg.setUnblock(value);
+      break;
+    case 3:
+      var value = new proto.mruv.punishments.UnWarnMessage;
+      reader.readMessage(value,proto.mruv.punishments.UnWarnMessage.deserializeBinaryFromReader);
+      msg.setUnwarn(value);
+      break;
+    case 4:
+      var value = new proto.mruv.punishments.UnAdminJailMessage;
+      reader.readMessage(value,proto.mruv.punishments.UnAdminJailMessage.deserializeBinaryFromReader);
+      msg.setUnaj(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.mruv.punishments.WatchPlayerAcquittalsResponse.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.mruv.punishments.WatchPlayerAcquittalsResponse.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.mruv.punishments.WatchPlayerAcquittalsResponse} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mruv.punishments.WatchPlayerAcquittalsResponse.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getUnban();
+  if (f != null) {
+    writer.writeMessage(
+      1,
+      f,
+      proto.mruv.punishments.UnBanMessage.serializeBinaryToWriter
+    );
+  }
+  f = message.getUnblock();
+  if (f != null) {
+    writer.writeMessage(
+      2,
+      f,
+      proto.mruv.punishments.UnBlockMessage.serializeBinaryToWriter
+    );
+  }
+  f = message.getUnwarn();
+  if (f != null) {
+    writer.writeMessage(
+      3,
+      f,
+      proto.mruv.punishments.UnWarnMessage.serializeBinaryToWriter
+    );
+  }
+  f = message.getUnaj();
+  if (f != null) {
+    writer.writeMessage(
+      4,
+      f,
+      proto.mruv.punishments.UnAdminJailMessage.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional UnBanMessage unban = 1;
+ * @return {?proto.mruv.punishments.UnBanMessage}
+ */
+proto.mruv.punishments.WatchPlayerAcquittalsResponse.prototype.getUnban = function() {
+  return /** @type{?proto.mruv.punishments.UnBanMessage} */ (
+    jspb.Message.getWrapperField(this, proto.mruv.punishments.UnBanMessage, 1));
+};
+
+
+/** @param {?proto.mruv.punishments.UnBanMessage|undefined} value */
+proto.mruv.punishments.WatchPlayerAcquittalsResponse.prototype.setUnban = function(value) {
+  jspb.Message.setOneofWrapperField(this, 1, proto.mruv.punishments.WatchPlayerAcquittalsResponse.oneofGroups_[0], value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.mruv.punishments.WatchPlayerAcquittalsResponse.prototype.clearUnban = function() {
+  this.setUnban(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.mruv.punishments.WatchPlayerAcquittalsResponse.prototype.hasUnban = function() {
+  return jspb.Message.getField(this, 1) != null;
+};
+
+
+/**
+ * optional UnBlockMessage unblock = 2;
+ * @return {?proto.mruv.punishments.UnBlockMessage}
+ */
+proto.mruv.punishments.WatchPlayerAcquittalsResponse.prototype.getUnblock = function() {
+  return /** @type{?proto.mruv.punishments.UnBlockMessage} */ (
+    jspb.Message.getWrapperField(this, proto.mruv.punishments.UnBlockMessage, 2));
+};
+
+
+/** @param {?proto.mruv.punishments.UnBlockMessage|undefined} value */
+proto.mruv.punishments.WatchPlayerAcquittalsResponse.prototype.setUnblock = function(value) {
+  jspb.Message.setOneofWrapperField(this, 2, proto.mruv.punishments.WatchPlayerAcquittalsResponse.oneofGroups_[0], value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.mruv.punishments.WatchPlayerAcquittalsResponse.prototype.clearUnblock = function() {
+  this.setUnblock(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.mruv.punishments.WatchPlayerAcquittalsResponse.prototype.hasUnblock = function() {
+  return jspb.Message.getField(this, 2) != null;
+};
+
+
+/**
+ * optional UnWarnMessage unwarn = 3;
+ * @return {?proto.mruv.punishments.UnWarnMessage}
+ */
+proto.mruv.punishments.WatchPlayerAcquittalsResponse.prototype.getUnwarn = function() {
+  return /** @type{?proto.mruv.punishments.UnWarnMessage} */ (
+    jspb.Message.getWrapperField(this, proto.mruv.punishments.UnWarnMessage, 3));
+};
+
+
+/** @param {?proto.mruv.punishments.UnWarnMessage|undefined} value */
+proto.mruv.punishments.WatchPlayerAcquittalsResponse.prototype.setUnwarn = function(value) {
+  jspb.Message.setOneofWrapperField(this, 3, proto.mruv.punishments.WatchPlayerAcquittalsResponse.oneofGroups_[0], value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.mruv.punishments.WatchPlayerAcquittalsResponse.prototype.clearUnwarn = function() {
+  this.setUnwarn(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.mruv.punishments.WatchPlayerAcquittalsResponse.prototype.hasUnwarn = function() {
+  return jspb.Message.getField(this, 3) != null;
+};
+
+
+/**
+ * optional UnAdminJailMessage unaj = 4;
+ * @return {?proto.mruv.punishments.UnAdminJailMessage}
+ */
+proto.mruv.punishments.WatchPlayerAcquittalsResponse.prototype.getUnaj = function() {
+  return /** @type{?proto.mruv.punishments.UnAdminJailMessage} */ (
+    jspb.Message.getWrapperField(this, proto.mruv.punishments.UnAdminJailMessage, 4));
+};
+
+
+/** @param {?proto.mruv.punishments.UnAdminJailMessage|undefined} value */
+proto.mruv.punishments.WatchPlayerAcquittalsResponse.prototype.setUnaj = function(value) {
+  jspb.Message.setOneofWrapperField(this, 4, proto.mruv.punishments.WatchPlayerAcquittalsResponse.oneofGroups_[0], value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.mruv.punishments.WatchPlayerAcquittalsResponse.prototype.clearUnaj = function() {
+  this.setUnaj(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.mruv.punishments.WatchPlayerAcquittalsResponse.prototype.hasUnaj = function() {
+  return jspb.Message.getField(this, 4) != null;
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mruv.punishments.WatchPunishmentsRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.WatchPunishmentsRequest.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mruv.punishments.WatchPunishmentsRequest} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mruv.punishments.WatchPunishmentsRequest.toObject = function(includeInstance, msg) {
+  var f, obj = {
+
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.mruv.punishments.WatchPunishmentsRequest}
+ */
+proto.mruv.punishments.WatchPunishmentsRequest.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.mruv.punishments.WatchPunishmentsRequest;
+  return proto.mruv.punishments.WatchPunishmentsRequest.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.mruv.punishments.WatchPunishmentsRequest} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.mruv.punishments.WatchPunishmentsRequest}
+ */
+proto.mruv.punishments.WatchPunishmentsRequest.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.mruv.punishments.WatchPunishmentsRequest.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.mruv.punishments.WatchPunishmentsRequest.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.mruv.punishments.WatchPunishmentsRequest} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mruv.punishments.WatchPunishmentsRequest.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+};
+
+
+
+/**
+ * Oneof group definitions for this message. Each group defines the field
+ * numbers belonging to that group. When of these fields' value is set, all
+ * other fields in the group are cleared. During deserialization, if multiple
+ * fields are encountered for a group, only the last value seen will be kept.
+ * @private {!Array<!Array<number>>}
+ * @const
+ */
+proto.mruv.punishments.WatchPunishmentsResponse.oneofGroups_ = [[1,2,3,4]];
+
+/**
+ * @enum {number}
+ */
+proto.mruv.punishments.WatchPunishmentsResponse.PunishmentCase = {
+  PUNISHMENT_NOT_SET: 0,
+  BAN: 1,
+  BLOCK: 2,
+  WARN: 3,
+  AJ: 4
+};
+
+/**
+ * @return {proto.mruv.punishments.WatchPunishmentsResponse.PunishmentCase}
+ */
+proto.mruv.punishments.WatchPunishmentsResponse.prototype.getPunishmentCase = function() {
+  return /** @type {proto.mruv.punishments.WatchPunishmentsResponse.PunishmentCase} */(jspb.Message.computeOneofCase(this, proto.mruv.punishments.WatchPunishmentsResponse.oneofGroups_[0]));
+};
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mruv.punishments.WatchPunishmentsResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.WatchPunishmentsResponse.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mruv.punishments.WatchPunishmentsResponse} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mruv.punishments.WatchPunishmentsResponse.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    ban: (f = msg.getBan()) && proto.mruv.punishments.BanMessage.toObject(includeInstance, f),
+    block: (f = msg.getBlock()) && proto.mruv.punishments.BlockMessage.toObject(includeInstance, f),
+    warn: (f = msg.getWarn()) && proto.mruv.punishments.WarnMessage.toObject(includeInstance, f),
+    aj: (f = msg.getAj()) && proto.mruv.punishments.AdminJailMessage.toObject(includeInstance, f)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.mruv.punishments.WatchPunishmentsResponse}
+ */
+proto.mruv.punishments.WatchPunishmentsResponse.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.mruv.punishments.WatchPunishmentsResponse;
+  return proto.mruv.punishments.WatchPunishmentsResponse.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.mruv.punishments.WatchPunishmentsResponse} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.mruv.punishments.WatchPunishmentsResponse}
+ */
+proto.mruv.punishments.WatchPunishmentsResponse.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new proto.mruv.punishments.BanMessage;
+      reader.readMessage(value,proto.mruv.punishments.BanMessage.deserializeBinaryFromReader);
+      msg.setBan(value);
+      break;
+    case 2:
+      var value = new proto.mruv.punishments.BlockMessage;
+      reader.readMessage(value,proto.mruv.punishments.BlockMessage.deserializeBinaryFromReader);
+      msg.setBlock(value);
+      break;
+    case 3:
+      var value = new proto.mruv.punishments.WarnMessage;
+      reader.readMessage(value,proto.mruv.punishments.WarnMessage.deserializeBinaryFromReader);
+      msg.setWarn(value);
+      break;
+    case 4:
+      var value = new proto.mruv.punishments.AdminJailMessage;
+      reader.readMessage(value,proto.mruv.punishments.AdminJailMessage.deserializeBinaryFromReader);
+      msg.setAj(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.mruv.punishments.WatchPunishmentsResponse.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.mruv.punishments.WatchPunishmentsResponse.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.mruv.punishments.WatchPunishmentsResponse} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mruv.punishments.WatchPunishmentsResponse.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getBan();
+  if (f != null) {
+    writer.writeMessage(
+      1,
+      f,
+      proto.mruv.punishments.BanMessage.serializeBinaryToWriter
+    );
+  }
+  f = message.getBlock();
+  if (f != null) {
+    writer.writeMessage(
+      2,
+      f,
+      proto.mruv.punishments.BlockMessage.serializeBinaryToWriter
+    );
+  }
+  f = message.getWarn();
+  if (f != null) {
+    writer.writeMessage(
+      3,
+      f,
+      proto.mruv.punishments.WarnMessage.serializeBinaryToWriter
+    );
+  }
+  f = message.getAj();
+  if (f != null) {
+    writer.writeMessage(
+      4,
+      f,
+      proto.mruv.punishments.AdminJailMessage.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional BanMessage ban = 1;
+ * @return {?proto.mruv.punishments.BanMessage}
+ */
+proto.mruv.punishments.WatchPunishmentsResponse.prototype.getBan = function() {
+  return /** @type{?proto.mruv.punishments.BanMessage} */ (
+    jspb.Message.getWrapperField(this, proto.mruv.punishments.BanMessage, 1));
+};
+
+
+/** @param {?proto.mruv.punishments.BanMessage|undefined} value */
+proto.mruv.punishments.WatchPunishmentsResponse.prototype.setBan = function(value) {
+  jspb.Message.setOneofWrapperField(this, 1, proto.mruv.punishments.WatchPunishmentsResponse.oneofGroups_[0], value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.mruv.punishments.WatchPunishmentsResponse.prototype.clearBan = function() {
+  this.setBan(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.mruv.punishments.WatchPunishmentsResponse.prototype.hasBan = function() {
+  return jspb.Message.getField(this, 1) != null;
+};
+
+
+/**
+ * optional BlockMessage block = 2;
+ * @return {?proto.mruv.punishments.BlockMessage}
+ */
+proto.mruv.punishments.WatchPunishmentsResponse.prototype.getBlock = function() {
+  return /** @type{?proto.mruv.punishments.BlockMessage} */ (
+    jspb.Message.getWrapperField(this, proto.mruv.punishments.BlockMessage, 2));
+};
+
+
+/** @param {?proto.mruv.punishments.BlockMessage|undefined} value */
+proto.mruv.punishments.WatchPunishmentsResponse.prototype.setBlock = function(value) {
+  jspb.Message.setOneofWrapperField(this, 2, proto.mruv.punishments.WatchPunishmentsResponse.oneofGroups_[0], value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.mruv.punishments.WatchPunishmentsResponse.prototype.clearBlock = function() {
+  this.setBlock(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.mruv.punishments.WatchPunishmentsResponse.prototype.hasBlock = function() {
+  return jspb.Message.getField(this, 2) != null;
+};
+
+
+/**
+ * optional WarnMessage warn = 3;
+ * @return {?proto.mruv.punishments.WarnMessage}
+ */
+proto.mruv.punishments.WatchPunishmentsResponse.prototype.getWarn = function() {
+  return /** @type{?proto.mruv.punishments.WarnMessage} */ (
+    jspb.Message.getWrapperField(this, proto.mruv.punishments.WarnMessage, 3));
+};
+
+
+/** @param {?proto.mruv.punishments.WarnMessage|undefined} value */
+proto.mruv.punishments.WatchPunishmentsResponse.prototype.setWarn = function(value) {
+  jspb.Message.setOneofWrapperField(this, 3, proto.mruv.punishments.WatchPunishmentsResponse.oneofGroups_[0], value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.mruv.punishments.WatchPunishmentsResponse.prototype.clearWarn = function() {
+  this.setWarn(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.mruv.punishments.WatchPunishmentsResponse.prototype.hasWarn = function() {
+  return jspb.Message.getField(this, 3) != null;
+};
+
+
+/**
+ * optional AdminJailMessage aj = 4;
+ * @return {?proto.mruv.punishments.AdminJailMessage}
+ */
+proto.mruv.punishments.WatchPunishmentsResponse.prototype.getAj = function() {
+  return /** @type{?proto.mruv.punishments.AdminJailMessage} */ (
+    jspb.Message.getWrapperField(this, proto.mruv.punishments.AdminJailMessage, 4));
+};
+
+
+/** @param {?proto.mruv.punishments.AdminJailMessage|undefined} value */
+proto.mruv.punishments.WatchPunishmentsResponse.prototype.setAj = function(value) {
+  jspb.Message.setOneofWrapperField(this, 4, proto.mruv.punishments.WatchPunishmentsResponse.oneofGroups_[0], value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.mruv.punishments.WatchPunishmentsResponse.prototype.clearAj = function() {
+  this.setAj(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.mruv.punishments.WatchPunishmentsResponse.prototype.hasAj = function() {
+  return jspb.Message.getField(this, 4) != null;
+};
+
+
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mruv.punishments.WatchAcquittalsRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.WatchAcquittalsRequest.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mruv.punishments.WatchAcquittalsRequest} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mruv.punishments.WatchAcquittalsRequest.toObject = function(includeInstance, msg) {
+  var f, obj = {
+
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.mruv.punishments.WatchAcquittalsRequest}
+ */
+proto.mruv.punishments.WatchAcquittalsRequest.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.mruv.punishments.WatchAcquittalsRequest;
+  return proto.mruv.punishments.WatchAcquittalsRequest.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.mruv.punishments.WatchAcquittalsRequest} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.mruv.punishments.WatchAcquittalsRequest}
+ */
+proto.mruv.punishments.WatchAcquittalsRequest.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.mruv.punishments.WatchAcquittalsRequest.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.mruv.punishments.WatchAcquittalsRequest.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.mruv.punishments.WatchAcquittalsRequest} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mruv.punishments.WatchAcquittalsRequest.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+};
+
+
+
+/**
+ * Oneof group definitions for this message. Each group defines the field
+ * numbers belonging to that group. When of these fields' value is set, all
+ * other fields in the group are cleared. During deserialization, if multiple
+ * fields are encountered for a group, only the last value seen will be kept.
+ * @private {!Array<!Array<number>>}
+ * @const
+ */
+proto.mruv.punishments.WatchAcquittalsResponse.oneofGroups_ = [[1,2,3,4]];
+
+/**
+ * @enum {number}
+ */
+proto.mruv.punishments.WatchAcquittalsResponse.AcquittalCase = {
+  ACQUITTAL_NOT_SET: 0,
+  UNBAN: 1,
+  UNBLOCK: 2,
+  UNWARN: 3,
+  UNAJ: 4
+};
+
+/**
+ * @return {proto.mruv.punishments.WatchAcquittalsResponse.AcquittalCase}
+ */
+proto.mruv.punishments.WatchAcquittalsResponse.prototype.getAcquittalCase = function() {
+  return /** @type {proto.mruv.punishments.WatchAcquittalsResponse.AcquittalCase} */(jspb.Message.computeOneofCase(this, proto.mruv.punishments.WatchAcquittalsResponse.oneofGroups_[0]));
+};
+
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mruv.punishments.WatchAcquittalsResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.punishments.WatchAcquittalsResponse.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mruv.punishments.WatchAcquittalsResponse} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mruv.punishments.WatchAcquittalsResponse.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    unban: (f = msg.getUnban()) && proto.mruv.punishments.UnBanMessage.toObject(includeInstance, f),
+    unblock: (f = msg.getUnblock()) && proto.mruv.punishments.UnBlockMessage.toObject(includeInstance, f),
+    unwarn: (f = msg.getUnwarn()) && proto.mruv.punishments.UnWarnMessage.toObject(includeInstance, f),
+    unaj: (f = msg.getUnaj()) && proto.mruv.punishments.UnAdminJailMessage.toObject(includeInstance, f)
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.mruv.punishments.WatchAcquittalsResponse}
+ */
+proto.mruv.punishments.WatchAcquittalsResponse.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.mruv.punishments.WatchAcquittalsResponse;
+  return proto.mruv.punishments.WatchAcquittalsResponse.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.mruv.punishments.WatchAcquittalsResponse} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.mruv.punishments.WatchAcquittalsResponse}
+ */
+proto.mruv.punishments.WatchAcquittalsResponse.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = new proto.mruv.punishments.UnBanMessage;
+      reader.readMessage(value,proto.mruv.punishments.UnBanMessage.deserializeBinaryFromReader);
+      msg.setUnban(value);
+      break;
+    case 2:
+      var value = new proto.mruv.punishments.UnBlockMessage;
+      reader.readMessage(value,proto.mruv.punishments.UnBlockMessage.deserializeBinaryFromReader);
+      msg.setUnblock(value);
+      break;
+    case 3:
+      var value = new proto.mruv.punishments.UnWarnMessage;
+      reader.readMessage(value,proto.mruv.punishments.UnWarnMessage.deserializeBinaryFromReader);
+      msg.setUnwarn(value);
+      break;
+    case 4:
+      var value = new proto.mruv.punishments.UnAdminJailMessage;
+      reader.readMessage(value,proto.mruv.punishments.UnAdminJailMessage.deserializeBinaryFromReader);
+      msg.setUnaj(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.mruv.punishments.WatchAcquittalsResponse.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.mruv.punishments.WatchAcquittalsResponse.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the given message to binary data (in protobuf wire
+ * format), writing to the given BinaryWriter.
+ * @param {!proto.mruv.punishments.WatchAcquittalsResponse} message
+ * @param {!jspb.BinaryWriter} writer
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mruv.punishments.WatchAcquittalsResponse.serializeBinaryToWriter = function(message, writer) {
+  var f = undefined;
+  f = message.getUnban();
+  if (f != null) {
+    writer.writeMessage(
+      1,
+      f,
+      proto.mruv.punishments.UnBanMessage.serializeBinaryToWriter
+    );
+  }
+  f = message.getUnblock();
+  if (f != null) {
+    writer.writeMessage(
+      2,
+      f,
+      proto.mruv.punishments.UnBlockMessage.serializeBinaryToWriter
+    );
+  }
+  f = message.getUnwarn();
+  if (f != null) {
+    writer.writeMessage(
+      3,
+      f,
+      proto.mruv.punishments.UnWarnMessage.serializeBinaryToWriter
+    );
+  }
+  f = message.getUnaj();
+  if (f != null) {
+    writer.writeMessage(
+      4,
+      f,
+      proto.mruv.punishments.UnAdminJailMessage.serializeBinaryToWriter
+    );
+  }
+};
+
+
+/**
+ * optional UnBanMessage unban = 1;
+ * @return {?proto.mruv.punishments.UnBanMessage}
+ */
+proto.mruv.punishments.WatchAcquittalsResponse.prototype.getUnban = function() {
+  return /** @type{?proto.mruv.punishments.UnBanMessage} */ (
+    jspb.Message.getWrapperField(this, proto.mruv.punishments.UnBanMessage, 1));
+};
+
+
+/** @param {?proto.mruv.punishments.UnBanMessage|undefined} value */
+proto.mruv.punishments.WatchAcquittalsResponse.prototype.setUnban = function(value) {
+  jspb.Message.setOneofWrapperField(this, 1, proto.mruv.punishments.WatchAcquittalsResponse.oneofGroups_[0], value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.mruv.punishments.WatchAcquittalsResponse.prototype.clearUnban = function() {
+  this.setUnban(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.mruv.punishments.WatchAcquittalsResponse.prototype.hasUnban = function() {
+  return jspb.Message.getField(this, 1) != null;
+};
+
+
+/**
+ * optional UnBlockMessage unblock = 2;
+ * @return {?proto.mruv.punishments.UnBlockMessage}
+ */
+proto.mruv.punishments.WatchAcquittalsResponse.prototype.getUnblock = function() {
+  return /** @type{?proto.mruv.punishments.UnBlockMessage} */ (
+    jspb.Message.getWrapperField(this, proto.mruv.punishments.UnBlockMessage, 2));
+};
+
+
+/** @param {?proto.mruv.punishments.UnBlockMessage|undefined} value */
+proto.mruv.punishments.WatchAcquittalsResponse.prototype.setUnblock = function(value) {
+  jspb.Message.setOneofWrapperField(this, 2, proto.mruv.punishments.WatchAcquittalsResponse.oneofGroups_[0], value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.mruv.punishments.WatchAcquittalsResponse.prototype.clearUnblock = function() {
+  this.setUnblock(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.mruv.punishments.WatchAcquittalsResponse.prototype.hasUnblock = function() {
+  return jspb.Message.getField(this, 2) != null;
+};
+
+
+/**
+ * optional UnWarnMessage unwarn = 3;
+ * @return {?proto.mruv.punishments.UnWarnMessage}
+ */
+proto.mruv.punishments.WatchAcquittalsResponse.prototype.getUnwarn = function() {
+  return /** @type{?proto.mruv.punishments.UnWarnMessage} */ (
+    jspb.Message.getWrapperField(this, proto.mruv.punishments.UnWarnMessage, 3));
+};
+
+
+/** @param {?proto.mruv.punishments.UnWarnMessage|undefined} value */
+proto.mruv.punishments.WatchAcquittalsResponse.prototype.setUnwarn = function(value) {
+  jspb.Message.setOneofWrapperField(this, 3, proto.mruv.punishments.WatchAcquittalsResponse.oneofGroups_[0], value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.mruv.punishments.WatchAcquittalsResponse.prototype.clearUnwarn = function() {
+  this.setUnwarn(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.mruv.punishments.WatchAcquittalsResponse.prototype.hasUnwarn = function() {
+  return jspb.Message.getField(this, 3) != null;
+};
+
+
+/**
+ * optional UnAdminJailMessage unaj = 4;
+ * @return {?proto.mruv.punishments.UnAdminJailMessage}
+ */
+proto.mruv.punishments.WatchAcquittalsResponse.prototype.getUnaj = function() {
+  return /** @type{?proto.mruv.punishments.UnAdminJailMessage} */ (
+    jspb.Message.getWrapperField(this, proto.mruv.punishments.UnAdminJailMessage, 4));
+};
+
+
+/** @param {?proto.mruv.punishments.UnAdminJailMessage|undefined} value */
+proto.mruv.punishments.WatchAcquittalsResponse.prototype.setUnaj = function(value) {
+  jspb.Message.setOneofWrapperField(this, 4, proto.mruv.punishments.WatchAcquittalsResponse.oneofGroups_[0], value);
+};
+
+
+/**
+ * Clears the message field making it undefined.
+ */
+proto.mruv.punishments.WatchAcquittalsResponse.prototype.clearUnaj = function() {
+  this.setUnaj(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return {boolean}
+ */
+proto.mruv.punishments.WatchAcquittalsResponse.prototype.hasUnaj = function() {
+  return jspb.Message.getField(this, 4) != null;
+};
+
+
+goog.object.extend(exports, proto.mruv.punishments);

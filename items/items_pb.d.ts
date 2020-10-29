@@ -1,4 +1,4 @@
-// package: mruv
+// package: mruv.items
 // file: items/items.proto
 
 import * as jspb from "google-protobuf";

@@ -5,997 +5,1065 @@ var grpc = require('grpc');
 var punishments_punishments_pb = require('../punishments/punishments_pb.js');
 var google_api_annotations_pb = require('../google/api/annotations_pb.js');
 
-function serialize_mruv_economy_AdminJailMessage(arg) {
+function serialize_mruv_punishments_AdminJailMessage(arg) {
   if (!(arg instanceof punishments_punishments_pb.AdminJailMessage)) {
-    throw new Error('Expected argument of type mruv.economy.AdminJailMessage');
+    throw new Error('Expected argument of type mruv.punishments.AdminJailMessage');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_AdminJailMessage(buffer_arg) {
+function deserialize_mruv_punishments_AdminJailMessage(buffer_arg) {
   return punishments_punishments_pb.AdminJailMessage.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_AdminJailRequest(arg) {
+function serialize_mruv_punishments_AdminJailRequest(arg) {
   if (!(arg instanceof punishments_punishments_pb.AdminJailRequest)) {
-    throw new Error('Expected argument of type mruv.economy.AdminJailRequest');
+    throw new Error('Expected argument of type mruv.punishments.AdminJailRequest');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_AdminJailRequest(buffer_arg) {
+function deserialize_mruv_punishments_AdminJailRequest(buffer_arg) {
   return punishments_punishments_pb.AdminJailRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_AdminJailResponse(arg) {
+function serialize_mruv_punishments_AdminJailResponse(arg) {
   if (!(arg instanceof punishments_punishments_pb.AdminJailResponse)) {
-    throw new Error('Expected argument of type mruv.economy.AdminJailResponse');
+    throw new Error('Expected argument of type mruv.punishments.AdminJailResponse');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_AdminJailResponse(buffer_arg) {
+function deserialize_mruv_punishments_AdminJailResponse(buffer_arg) {
   return punishments_punishments_pb.AdminJailResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_BanMessage(arg) {
+function serialize_mruv_punishments_BanMessage(arg) {
   if (!(arg instanceof punishments_punishments_pb.BanMessage)) {
-    throw new Error('Expected argument of type mruv.economy.BanMessage');
+    throw new Error('Expected argument of type mruv.punishments.BanMessage');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_BanMessage(buffer_arg) {
+function deserialize_mruv_punishments_BanMessage(buffer_arg) {
   return punishments_punishments_pb.BanMessage.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_BanRequest(arg) {
+function serialize_mruv_punishments_BanRequest(arg) {
   if (!(arg instanceof punishments_punishments_pb.BanRequest)) {
-    throw new Error('Expected argument of type mruv.economy.BanRequest');
+    throw new Error('Expected argument of type mruv.punishments.BanRequest');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_BanRequest(buffer_arg) {
+function deserialize_mruv_punishments_BanRequest(buffer_arg) {
   return punishments_punishments_pb.BanRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_BanResponse(arg) {
+function serialize_mruv_punishments_BanResponse(arg) {
   if (!(arg instanceof punishments_punishments_pb.BanResponse)) {
-    throw new Error('Expected argument of type mruv.economy.BanResponse');
+    throw new Error('Expected argument of type mruv.punishments.BanResponse');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_BanResponse(buffer_arg) {
+function deserialize_mruv_punishments_BanResponse(buffer_arg) {
   return punishments_punishments_pb.BanResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_BlockMessage(arg) {
+function serialize_mruv_punishments_BlockMessage(arg) {
   if (!(arg instanceof punishments_punishments_pb.BlockMessage)) {
-    throw new Error('Expected argument of type mruv.economy.BlockMessage');
+    throw new Error('Expected argument of type mruv.punishments.BlockMessage');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_BlockMessage(buffer_arg) {
+function deserialize_mruv_punishments_BlockMessage(buffer_arg) {
   return punishments_punishments_pb.BlockMessage.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_BlockRequest(arg) {
+function serialize_mruv_punishments_BlockRequest(arg) {
   if (!(arg instanceof punishments_punishments_pb.BlockRequest)) {
-    throw new Error('Expected argument of type mruv.economy.BlockRequest');
+    throw new Error('Expected argument of type mruv.punishments.BlockRequest');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_BlockRequest(buffer_arg) {
+function deserialize_mruv_punishments_BlockRequest(buffer_arg) {
   return punishments_punishments_pb.BlockRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_BlockResponse(arg) {
+function serialize_mruv_punishments_BlockResponse(arg) {
   if (!(arg instanceof punishments_punishments_pb.BlockResponse)) {
-    throw new Error('Expected argument of type mruv.economy.BlockResponse');
+    throw new Error('Expected argument of type mruv.punishments.BlockResponse');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_BlockResponse(buffer_arg) {
+function deserialize_mruv_punishments_BlockResponse(buffer_arg) {
   return punishments_punishments_pb.BlockResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_GetBanRequest(arg) {
+function serialize_mruv_punishments_GetBanRequest(arg) {
   if (!(arg instanceof punishments_punishments_pb.GetBanRequest)) {
-    throw new Error('Expected argument of type mruv.economy.GetBanRequest');
+    throw new Error('Expected argument of type mruv.punishments.GetBanRequest');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_GetBanRequest(buffer_arg) {
+function deserialize_mruv_punishments_GetBanRequest(buffer_arg) {
   return punishments_punishments_pb.GetBanRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_GetBlockRequest(arg) {
+function serialize_mruv_punishments_GetBlockRequest(arg) {
   if (!(arg instanceof punishments_punishments_pb.GetBlockRequest)) {
-    throw new Error('Expected argument of type mruv.economy.GetBlockRequest');
+    throw new Error('Expected argument of type mruv.punishments.GetBlockRequest');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_GetBlockRequest(buffer_arg) {
+function deserialize_mruv_punishments_GetBlockRequest(buffer_arg) {
   return punishments_punishments_pb.GetBlockRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_GetPlayerAdminJailRequest(arg) {
+function serialize_mruv_punishments_GetPlayerAdminJailRequest(arg) {
   if (!(arg instanceof punishments_punishments_pb.GetPlayerAdminJailRequest)) {
-    throw new Error('Expected argument of type mruv.economy.GetPlayerAdminJailRequest');
+    throw new Error('Expected argument of type mruv.punishments.GetPlayerAdminJailRequest');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_GetPlayerAdminJailRequest(buffer_arg) {
+function deserialize_mruv_punishments_GetPlayerAdminJailRequest(buffer_arg) {
   return punishments_punishments_pb.GetPlayerAdminJailRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_GetPlayerAdminJailResponse(arg) {
+function serialize_mruv_punishments_GetPlayerAdminJailResponse(arg) {
   if (!(arg instanceof punishments_punishments_pb.GetPlayerAdminJailResponse)) {
-    throw new Error('Expected argument of type mruv.economy.GetPlayerAdminJailResponse');
+    throw new Error('Expected argument of type mruv.punishments.GetPlayerAdminJailResponse');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_GetPlayerAdminJailResponse(buffer_arg) {
+function deserialize_mruv_punishments_GetPlayerAdminJailResponse(buffer_arg) {
   return punishments_punishments_pb.GetPlayerAdminJailResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_GetPlayerBansRequest(arg) {
+function serialize_mruv_punishments_GetPlayerBansRequest(arg) {
   if (!(arg instanceof punishments_punishments_pb.GetPlayerBansRequest)) {
-    throw new Error('Expected argument of type mruv.economy.GetPlayerBansRequest');
+    throw new Error('Expected argument of type mruv.punishments.GetPlayerBansRequest');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_GetPlayerBansRequest(buffer_arg) {
+function deserialize_mruv_punishments_GetPlayerBansRequest(buffer_arg) {
   return punishments_punishments_pb.GetPlayerBansRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_GetPlayerBansResponse(arg) {
+function serialize_mruv_punishments_GetPlayerBansResponse(arg) {
   if (!(arg instanceof punishments_punishments_pb.GetPlayerBansResponse)) {
-    throw new Error('Expected argument of type mruv.economy.GetPlayerBansResponse');
+    throw new Error('Expected argument of type mruv.punishments.GetPlayerBansResponse');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_GetPlayerBansResponse(buffer_arg) {
+function deserialize_mruv_punishments_GetPlayerBansResponse(buffer_arg) {
   return punishments_punishments_pb.GetPlayerBansResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_GetPlayerWarnsRequest(arg) {
+function serialize_mruv_punishments_GetPlayerWarnsRequest(arg) {
   if (!(arg instanceof punishments_punishments_pb.GetPlayerWarnsRequest)) {
-    throw new Error('Expected argument of type mruv.economy.GetPlayerWarnsRequest');
+    throw new Error('Expected argument of type mruv.punishments.GetPlayerWarnsRequest');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_GetPlayerWarnsRequest(buffer_arg) {
+function deserialize_mruv_punishments_GetPlayerWarnsRequest(buffer_arg) {
   return punishments_punishments_pb.GetPlayerWarnsRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_GetPlayerWarnsResponse(arg) {
+function serialize_mruv_punishments_GetPlayerWarnsResponse(arg) {
   if (!(arg instanceof punishments_punishments_pb.GetPlayerWarnsResponse)) {
-    throw new Error('Expected argument of type mruv.economy.GetPlayerWarnsResponse');
+    throw new Error('Expected argument of type mruv.punishments.GetPlayerWarnsResponse');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_GetPlayerWarnsResponse(buffer_arg) {
+function deserialize_mruv_punishments_GetPlayerWarnsResponse(buffer_arg) {
   return punishments_punishments_pb.GetPlayerWarnsResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_GetWarnRequest(arg) {
+function serialize_mruv_punishments_GetWarnRequest(arg) {
   if (!(arg instanceof punishments_punishments_pb.GetWarnRequest)) {
-    throw new Error('Expected argument of type mruv.economy.GetWarnRequest');
+    throw new Error('Expected argument of type mruv.punishments.GetWarnRequest');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_GetWarnRequest(buffer_arg) {
+function deserialize_mruv_punishments_GetWarnRequest(buffer_arg) {
   return punishments_punishments_pb.GetWarnRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_IsCharacterBlockedRequest(arg) {
+function serialize_mruv_punishments_IsCharacterBlockedRequest(arg) {
   if (!(arg instanceof punishments_punishments_pb.IsCharacterBlockedRequest)) {
-    throw new Error('Expected argument of type mruv.economy.IsCharacterBlockedRequest');
+    throw new Error('Expected argument of type mruv.punishments.IsCharacterBlockedRequest');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_IsCharacterBlockedRequest(buffer_arg) {
+function deserialize_mruv_punishments_IsCharacterBlockedRequest(buffer_arg) {
   return punishments_punishments_pb.IsCharacterBlockedRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_IsCharacterBlockedResponse(arg) {
+function serialize_mruv_punishments_IsCharacterBlockedResponse(arg) {
   if (!(arg instanceof punishments_punishments_pb.IsCharacterBlockedResponse)) {
-    throw new Error('Expected argument of type mruv.economy.IsCharacterBlockedResponse');
+    throw new Error('Expected argument of type mruv.punishments.IsCharacterBlockedResponse');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_IsCharacterBlockedResponse(buffer_arg) {
+function deserialize_mruv_punishments_IsCharacterBlockedResponse(buffer_arg) {
   return punishments_punishments_pb.IsCharacterBlockedResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_IsCharacterJailedRequest(arg) {
+function serialize_mruv_punishments_IsCharacterJailedRequest(arg) {
   if (!(arg instanceof punishments_punishments_pb.IsCharacterJailedRequest)) {
-    throw new Error('Expected argument of type mruv.economy.IsCharacterJailedRequest');
+    throw new Error('Expected argument of type mruv.punishments.IsCharacterJailedRequest');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_IsCharacterJailedRequest(buffer_arg) {
+function deserialize_mruv_punishments_IsCharacterJailedRequest(buffer_arg) {
   return punishments_punishments_pb.IsCharacterJailedRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_IsCharacterJailedResponse(arg) {
+function serialize_mruv_punishments_IsCharacterJailedResponse(arg) {
   if (!(arg instanceof punishments_punishments_pb.IsCharacterJailedResponse)) {
-    throw new Error('Expected argument of type mruv.economy.IsCharacterJailedResponse');
+    throw new Error('Expected argument of type mruv.punishments.IsCharacterJailedResponse');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_IsCharacterJailedResponse(buffer_arg) {
+function deserialize_mruv_punishments_IsCharacterJailedResponse(buffer_arg) {
   return punishments_punishments_pb.IsCharacterJailedResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_IsPlayerBannedRequest(arg) {
+function serialize_mruv_punishments_IsPlayerBannedRequest(arg) {
   if (!(arg instanceof punishments_punishments_pb.IsPlayerBannedRequest)) {
-    throw new Error('Expected argument of type mruv.economy.IsPlayerBannedRequest');
+    throw new Error('Expected argument of type mruv.punishments.IsPlayerBannedRequest');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_IsPlayerBannedRequest(buffer_arg) {
+function deserialize_mruv_punishments_IsPlayerBannedRequest(buffer_arg) {
   return punishments_punishments_pb.IsPlayerBannedRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_IsPlayerBannedResponse(arg) {
+function serialize_mruv_punishments_IsPlayerBannedResponse(arg) {
   if (!(arg instanceof punishments_punishments_pb.IsPlayerBannedResponse)) {
-    throw new Error('Expected argument of type mruv.economy.IsPlayerBannedResponse');
+    throw new Error('Expected argument of type mruv.punishments.IsPlayerBannedResponse');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_IsPlayerBannedResponse(buffer_arg) {
+function deserialize_mruv_punishments_IsPlayerBannedResponse(buffer_arg) {
   return punishments_punishments_pb.IsPlayerBannedResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_MuteGlobalChatsRequest(arg) {
+function serialize_mruv_punishments_MuteGlobalChatsRequest(arg) {
   if (!(arg instanceof punishments_punishments_pb.MuteGlobalChatsRequest)) {
-    throw new Error('Expected argument of type mruv.economy.MuteGlobalChatsRequest');
+    throw new Error('Expected argument of type mruv.punishments.MuteGlobalChatsRequest');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_MuteGlobalChatsRequest(buffer_arg) {
+function deserialize_mruv_punishments_MuteGlobalChatsRequest(buffer_arg) {
   return punishments_punishments_pb.MuteGlobalChatsRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_MuteGlobalChatsResponse(arg) {
+function serialize_mruv_punishments_MuteGlobalChatsResponse(arg) {
   if (!(arg instanceof punishments_punishments_pb.MuteGlobalChatsResponse)) {
-    throw new Error('Expected argument of type mruv.economy.MuteGlobalChatsResponse');
+    throw new Error('Expected argument of type mruv.punishments.MuteGlobalChatsResponse');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_MuteGlobalChatsResponse(buffer_arg) {
+function deserialize_mruv_punishments_MuteGlobalChatsResponse(buffer_arg) {
   return punishments_punishments_pb.MuteGlobalChatsResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_UnAdminJailMessage(arg) {
-  if (!(arg instanceof punishments_punishments_pb.UnAdminJailMessage)) {
-    throw new Error('Expected argument of type mruv.economy.UnAdminJailMessage');
+function serialize_mruv_punishments_PunishRequest(arg) {
+  if (!(arg instanceof punishments_punishments_pb.PunishRequest)) {
+    throw new Error('Expected argument of type mruv.punishments.PunishRequest');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_UnAdminJailMessage(buffer_arg) {
+function deserialize_mruv_punishments_PunishRequest(buffer_arg) {
+  return punishments_punishments_pb.PunishRequest.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_punishments_PunishResponse(arg) {
+  if (!(arg instanceof punishments_punishments_pb.PunishResponse)) {
+    throw new Error('Expected argument of type mruv.punishments.PunishResponse');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_punishments_PunishResponse(buffer_arg) {
+  return punishments_punishments_pb.PunishResponse.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_punishments_UnAdminJailMessage(arg) {
+  if (!(arg instanceof punishments_punishments_pb.UnAdminJailMessage)) {
+    throw new Error('Expected argument of type mruv.punishments.UnAdminJailMessage');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_punishments_UnAdminJailMessage(buffer_arg) {
   return punishments_punishments_pb.UnAdminJailMessage.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_UnAdminJailRequest(arg) {
+function serialize_mruv_punishments_UnAdminJailRequest(arg) {
   if (!(arg instanceof punishments_punishments_pb.UnAdminJailRequest)) {
-    throw new Error('Expected argument of type mruv.economy.UnAdminJailRequest');
+    throw new Error('Expected argument of type mruv.punishments.UnAdminJailRequest');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_UnAdminJailRequest(buffer_arg) {
+function deserialize_mruv_punishments_UnAdminJailRequest(buffer_arg) {
   return punishments_punishments_pb.UnAdminJailRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_UnAdminJailResponse(arg) {
+function serialize_mruv_punishments_UnAdminJailResponse(arg) {
   if (!(arg instanceof punishments_punishments_pb.UnAdminJailResponse)) {
-    throw new Error('Expected argument of type mruv.economy.UnAdminJailResponse');
+    throw new Error('Expected argument of type mruv.punishments.UnAdminJailResponse');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_UnAdminJailResponse(buffer_arg) {
+function deserialize_mruv_punishments_UnAdminJailResponse(buffer_arg) {
   return punishments_punishments_pb.UnAdminJailResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_UnBanMessage(arg) {
+function serialize_mruv_punishments_UnBanMessage(arg) {
   if (!(arg instanceof punishments_punishments_pb.UnBanMessage)) {
-    throw new Error('Expected argument of type mruv.economy.UnBanMessage');
+    throw new Error('Expected argument of type mruv.punishments.UnBanMessage');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_UnBanMessage(buffer_arg) {
+function deserialize_mruv_punishments_UnBanMessage(buffer_arg) {
   return punishments_punishments_pb.UnBanMessage.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_UnBanRequest(arg) {
+function serialize_mruv_punishments_UnBanRequest(arg) {
   if (!(arg instanceof punishments_punishments_pb.UnBanRequest)) {
-    throw new Error('Expected argument of type mruv.economy.UnBanRequest');
+    throw new Error('Expected argument of type mruv.punishments.UnBanRequest');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_UnBanRequest(buffer_arg) {
+function deserialize_mruv_punishments_UnBanRequest(buffer_arg) {
   return punishments_punishments_pb.UnBanRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_UnBanResponse(arg) {
+function serialize_mruv_punishments_UnBanResponse(arg) {
   if (!(arg instanceof punishments_punishments_pb.UnBanResponse)) {
-    throw new Error('Expected argument of type mruv.economy.UnBanResponse');
+    throw new Error('Expected argument of type mruv.punishments.UnBanResponse');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_UnBanResponse(buffer_arg) {
+function deserialize_mruv_punishments_UnBanResponse(buffer_arg) {
   return punishments_punishments_pb.UnBanResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_UnBlockMessage(arg) {
+function serialize_mruv_punishments_UnBlockMessage(arg) {
   if (!(arg instanceof punishments_punishments_pb.UnBlockMessage)) {
-    throw new Error('Expected argument of type mruv.economy.UnBlockMessage');
+    throw new Error('Expected argument of type mruv.punishments.UnBlockMessage');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_UnBlockMessage(buffer_arg) {
+function deserialize_mruv_punishments_UnBlockMessage(buffer_arg) {
   return punishments_punishments_pb.UnBlockMessage.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_UnBlockRequest(arg) {
+function serialize_mruv_punishments_UnBlockRequest(arg) {
   if (!(arg instanceof punishments_punishments_pb.UnBlockRequest)) {
-    throw new Error('Expected argument of type mruv.economy.UnBlockRequest');
+    throw new Error('Expected argument of type mruv.punishments.UnBlockRequest');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_UnBlockRequest(buffer_arg) {
+function deserialize_mruv_punishments_UnBlockRequest(buffer_arg) {
   return punishments_punishments_pb.UnBlockRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_UnBlockResponse(arg) {
+function serialize_mruv_punishments_UnBlockResponse(arg) {
   if (!(arg instanceof punishments_punishments_pb.UnBlockResponse)) {
-    throw new Error('Expected argument of type mruv.economy.UnBlockResponse');
+    throw new Error('Expected argument of type mruv.punishments.UnBlockResponse');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_UnBlockResponse(buffer_arg) {
+function deserialize_mruv_punishments_UnBlockResponse(buffer_arg) {
   return punishments_punishments_pb.UnBlockResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_UnMuteGlobalChatsRequest(arg) {
+function serialize_mruv_punishments_UnMuteGlobalChatsRequest(arg) {
   if (!(arg instanceof punishments_punishments_pb.UnMuteGlobalChatsRequest)) {
-    throw new Error('Expected argument of type mruv.economy.UnMuteGlobalChatsRequest');
+    throw new Error('Expected argument of type mruv.punishments.UnMuteGlobalChatsRequest');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_UnMuteGlobalChatsRequest(buffer_arg) {
+function deserialize_mruv_punishments_UnMuteGlobalChatsRequest(buffer_arg) {
   return punishments_punishments_pb.UnMuteGlobalChatsRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_UnMuteGlobalChatsResponse(arg) {
+function serialize_mruv_punishments_UnMuteGlobalChatsResponse(arg) {
   if (!(arg instanceof punishments_punishments_pb.UnMuteGlobalChatsResponse)) {
-    throw new Error('Expected argument of type mruv.economy.UnMuteGlobalChatsResponse');
+    throw new Error('Expected argument of type mruv.punishments.UnMuteGlobalChatsResponse');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_UnMuteGlobalChatsResponse(buffer_arg) {
+function deserialize_mruv_punishments_UnMuteGlobalChatsResponse(buffer_arg) {
   return punishments_punishments_pb.UnMuteGlobalChatsResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_UnWarnMessage(arg) {
+function serialize_mruv_punishments_UnWarnMessage(arg) {
   if (!(arg instanceof punishments_punishments_pb.UnWarnMessage)) {
-    throw new Error('Expected argument of type mruv.economy.UnWarnMessage');
+    throw new Error('Expected argument of type mruv.punishments.UnWarnMessage');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_UnWarnMessage(buffer_arg) {
+function deserialize_mruv_punishments_UnWarnMessage(buffer_arg) {
   return punishments_punishments_pb.UnWarnMessage.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_UnWarnRequest(arg) {
+function serialize_mruv_punishments_UnWarnRequest(arg) {
   if (!(arg instanceof punishments_punishments_pb.UnWarnRequest)) {
-    throw new Error('Expected argument of type mruv.economy.UnWarnRequest');
+    throw new Error('Expected argument of type mruv.punishments.UnWarnRequest');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_UnWarnRequest(buffer_arg) {
+function deserialize_mruv_punishments_UnWarnRequest(buffer_arg) {
   return punishments_punishments_pb.UnWarnRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_UnWarnResponse(arg) {
+function serialize_mruv_punishments_UnWarnResponse(arg) {
   if (!(arg instanceof punishments_punishments_pb.UnWarnResponse)) {
-    throw new Error('Expected argument of type mruv.economy.UnWarnResponse');
+    throw new Error('Expected argument of type mruv.punishments.UnWarnResponse');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_UnWarnResponse(buffer_arg) {
+function deserialize_mruv_punishments_UnWarnResponse(buffer_arg) {
   return punishments_punishments_pb.UnWarnResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_WarnMessage(arg) {
+function serialize_mruv_punishments_WarnMessage(arg) {
   if (!(arg instanceof punishments_punishments_pb.WarnMessage)) {
-    throw new Error('Expected argument of type mruv.economy.WarnMessage');
+    throw new Error('Expected argument of type mruv.punishments.WarnMessage');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_WarnMessage(buffer_arg) {
+function deserialize_mruv_punishments_WarnMessage(buffer_arg) {
   return punishments_punishments_pb.WarnMessage.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_WarnRequest(arg) {
+function serialize_mruv_punishments_WarnRequest(arg) {
   if (!(arg instanceof punishments_punishments_pb.WarnRequest)) {
-    throw new Error('Expected argument of type mruv.economy.WarnRequest');
+    throw new Error('Expected argument of type mruv.punishments.WarnRequest');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_WarnRequest(buffer_arg) {
+function deserialize_mruv_punishments_WarnRequest(buffer_arg) {
   return punishments_punishments_pb.WarnRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_WarnResponse(arg) {
+function serialize_mruv_punishments_WarnResponse(arg) {
   if (!(arg instanceof punishments_punishments_pb.WarnResponse)) {
-    throw new Error('Expected argument of type mruv.economy.WarnResponse');
+    throw new Error('Expected argument of type mruv.punishments.WarnResponse');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_WarnResponse(buffer_arg) {
+function deserialize_mruv_punishments_WarnResponse(buffer_arg) {
   return punishments_punishments_pb.WarnResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_WatchAdminJailsRequest(arg) {
-  if (!(arg instanceof punishments_punishments_pb.WatchAdminJailsRequest)) {
-    throw new Error('Expected argument of type mruv.economy.WatchAdminJailsRequest');
+function serialize_mruv_punishments_WatchAcquittalsRequest(arg) {
+  if (!(arg instanceof punishments_punishments_pb.WatchAcquittalsRequest)) {
+    throw new Error('Expected argument of type mruv.punishments.WatchAcquittalsRequest');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_WatchAdminJailsRequest(buffer_arg) {
+function deserialize_mruv_punishments_WatchAcquittalsRequest(buffer_arg) {
+  return punishments_punishments_pb.WatchAcquittalsRequest.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_punishments_WatchAcquittalsResponse(arg) {
+  if (!(arg instanceof punishments_punishments_pb.WatchAcquittalsResponse)) {
+    throw new Error('Expected argument of type mruv.punishments.WatchAcquittalsResponse');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_punishments_WatchAcquittalsResponse(buffer_arg) {
+  return punishments_punishments_pb.WatchAcquittalsResponse.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_punishments_WatchAdminJailsRequest(arg) {
+  if (!(arg instanceof punishments_punishments_pb.WatchAdminJailsRequest)) {
+    throw new Error('Expected argument of type mruv.punishments.WatchAdminJailsRequest');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_punishments_WatchAdminJailsRequest(buffer_arg) {
   return punishments_punishments_pb.WatchAdminJailsRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_WatchBansRequest(arg) {
+function serialize_mruv_punishments_WatchBansRequest(arg) {
   if (!(arg instanceof punishments_punishments_pb.WatchBansRequest)) {
-    throw new Error('Expected argument of type mruv.economy.WatchBansRequest');
+    throw new Error('Expected argument of type mruv.punishments.WatchBansRequest');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_WatchBansRequest(buffer_arg) {
+function deserialize_mruv_punishments_WatchBansRequest(buffer_arg) {
   return punishments_punishments_pb.WatchBansRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_WatchBlocksRequest(arg) {
+function serialize_mruv_punishments_WatchBlocksRequest(arg) {
   if (!(arg instanceof punishments_punishments_pb.WatchBlocksRequest)) {
-    throw new Error('Expected argument of type mruv.economy.WatchBlocksRequest');
+    throw new Error('Expected argument of type mruv.punishments.WatchBlocksRequest');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_WatchBlocksRequest(buffer_arg) {
+function deserialize_mruv_punishments_WatchBlocksRequest(buffer_arg) {
   return punishments_punishments_pb.WatchBlocksRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_WatchPlayerAcquittalsRequest(arg) {
+function serialize_mruv_punishments_WatchPlayerAcquittalsRequest(arg) {
   if (!(arg instanceof punishments_punishments_pb.WatchPlayerAcquittalsRequest)) {
-    throw new Error('Expected argument of type mruv.economy.WatchPlayerAcquittalsRequest');
+    throw new Error('Expected argument of type mruv.punishments.WatchPlayerAcquittalsRequest');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_WatchPlayerAcquittalsRequest(buffer_arg) {
+function deserialize_mruv_punishments_WatchPlayerAcquittalsRequest(buffer_arg) {
   return punishments_punishments_pb.WatchPlayerAcquittalsRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_WatchPlayerAcquittalsResponse(arg) {
+function serialize_mruv_punishments_WatchPlayerAcquittalsResponse(arg) {
   if (!(arg instanceof punishments_punishments_pb.WatchPlayerAcquittalsResponse)) {
-    throw new Error('Expected argument of type mruv.economy.WatchPlayerAcquittalsResponse');
+    throw new Error('Expected argument of type mruv.punishments.WatchPlayerAcquittalsResponse');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_WatchPlayerAcquittalsResponse(buffer_arg) {
+function deserialize_mruv_punishments_WatchPlayerAcquittalsResponse(buffer_arg) {
   return punishments_punishments_pb.WatchPlayerAcquittalsResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_WatchPlayerPunishmentsRequest(arg) {
+function serialize_mruv_punishments_WatchPlayerPunishmentsRequest(arg) {
   if (!(arg instanceof punishments_punishments_pb.WatchPlayerPunishmentsRequest)) {
-    throw new Error('Expected argument of type mruv.economy.WatchPlayerPunishmentsRequest');
+    throw new Error('Expected argument of type mruv.punishments.WatchPlayerPunishmentsRequest');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_WatchPlayerPunishmentsRequest(buffer_arg) {
+function deserialize_mruv_punishments_WatchPlayerPunishmentsRequest(buffer_arg) {
   return punishments_punishments_pb.WatchPlayerPunishmentsRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_WatchPlayerPunishmentsResponse(arg) {
+function serialize_mruv_punishments_WatchPlayerPunishmentsResponse(arg) {
   if (!(arg instanceof punishments_punishments_pb.WatchPlayerPunishmentsResponse)) {
-    throw new Error('Expected argument of type mruv.economy.WatchPlayerPunishmentsResponse');
+    throw new Error('Expected argument of type mruv.punishments.WatchPlayerPunishmentsResponse');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_WatchPlayerPunishmentsResponse(buffer_arg) {
+function deserialize_mruv_punishments_WatchPlayerPunishmentsResponse(buffer_arg) {
   return punishments_punishments_pb.WatchPlayerPunishmentsResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_WatchPunishmentsRequest(arg) {
+function serialize_mruv_punishments_WatchPunishmentsRequest(arg) {
   if (!(arg instanceof punishments_punishments_pb.WatchPunishmentsRequest)) {
-    throw new Error('Expected argument of type mruv.economy.WatchPunishmentsRequest');
+    throw new Error('Expected argument of type mruv.punishments.WatchPunishmentsRequest');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_WatchPunishmentsRequest(buffer_arg) {
+function deserialize_mruv_punishments_WatchPunishmentsRequest(buffer_arg) {
   return punishments_punishments_pb.WatchPunishmentsRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_WatchPunishmentsResponse(arg) {
+function serialize_mruv_punishments_WatchPunishmentsResponse(arg) {
   if (!(arg instanceof punishments_punishments_pb.WatchPunishmentsResponse)) {
-    throw new Error('Expected argument of type mruv.economy.WatchPunishmentsResponse');
+    throw new Error('Expected argument of type mruv.punishments.WatchPunishmentsResponse');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_WatchPunishmentsResponse(buffer_arg) {
+function deserialize_mruv_punishments_WatchPunishmentsResponse(buffer_arg) {
   return punishments_punishments_pb.WatchPunishmentsResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_WatchUnAdminJailsRequest(arg) {
+function serialize_mruv_punishments_WatchUnAdminJailsRequest(arg) {
   if (!(arg instanceof punishments_punishments_pb.WatchUnAdminJailsRequest)) {
-    throw new Error('Expected argument of type mruv.economy.WatchUnAdminJailsRequest');
+    throw new Error('Expected argument of type mruv.punishments.WatchUnAdminJailsRequest');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_WatchUnAdminJailsRequest(buffer_arg) {
+function deserialize_mruv_punishments_WatchUnAdminJailsRequest(buffer_arg) {
   return punishments_punishments_pb.WatchUnAdminJailsRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_WatchUnBansRequest(arg) {
+function serialize_mruv_punishments_WatchUnBansRequest(arg) {
   if (!(arg instanceof punishments_punishments_pb.WatchUnBansRequest)) {
-    throw new Error('Expected argument of type mruv.economy.WatchUnBansRequest');
+    throw new Error('Expected argument of type mruv.punishments.WatchUnBansRequest');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_WatchUnBansRequest(buffer_arg) {
+function deserialize_mruv_punishments_WatchUnBansRequest(buffer_arg) {
   return punishments_punishments_pb.WatchUnBansRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_WatchUnBlocksRequest(arg) {
+function serialize_mruv_punishments_WatchUnBlocksRequest(arg) {
   if (!(arg instanceof punishments_punishments_pb.WatchUnBlocksRequest)) {
-    throw new Error('Expected argument of type mruv.economy.WatchUnBlocksRequest');
+    throw new Error('Expected argument of type mruv.punishments.WatchUnBlocksRequest');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_WatchUnBlocksRequest(buffer_arg) {
+function deserialize_mruv_punishments_WatchUnBlocksRequest(buffer_arg) {
   return punishments_punishments_pb.WatchUnBlocksRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_WatchUnWarnsRequest(arg) {
+function serialize_mruv_punishments_WatchUnWarnsRequest(arg) {
   if (!(arg instanceof punishments_punishments_pb.WatchUnWarnsRequest)) {
-    throw new Error('Expected argument of type mruv.economy.WatchUnWarnsRequest');
+    throw new Error('Expected argument of type mruv.punishments.WatchUnWarnsRequest');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_WatchUnWarnsRequest(buffer_arg) {
+function deserialize_mruv_punishments_WatchUnWarnsRequest(buffer_arg) {
   return punishments_punishments_pb.WatchUnWarnsRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_economy_WatchWarnsRequest(arg) {
+function serialize_mruv_punishments_WatchWarnsRequest(arg) {
   if (!(arg instanceof punishments_punishments_pb.WatchWarnsRequest)) {
-    throw new Error('Expected argument of type mruv.economy.WatchWarnsRequest');
+    throw new Error('Expected argument of type mruv.punishments.WatchWarnsRequest');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_economy_WatchWarnsRequest(buffer_arg) {
+function deserialize_mruv_punishments_WatchWarnsRequest(buffer_arg) {
   return punishments_punishments_pb.WatchWarnsRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 
 // This service provides interface for managing punishments for players.
 var MruVPunishmentsServiceService = exports.MruVPunishmentsServiceService = {
+  // Punish player with choosen punishment type.
+  punish: {
+    path: '/mruv.punishments.MruVPunishmentsService/Punish',
+    requestStream: false,
+    responseStream: false,
+    requestType: punishments_punishments_pb.PunishRequest,
+    responseType: punishments_punishments_pb.PunishResponse,
+    requestSerialize: serialize_mruv_punishments_PunishRequest,
+    requestDeserialize: deserialize_mruv_punishments_PunishRequest,
+    responseSerialize: serialize_mruv_punishments_PunishResponse,
+    responseDeserialize: deserialize_mruv_punishments_PunishResponse,
+  },
   // Ban player on account and/or ip.
   // If ban_time is 0, ban will never expire.
   ban: {
-    path: '/mruv.economy.MruVPunishmentsService/Ban',
+    path: '/mruv.punishments.MruVPunishmentsService/Ban',
     requestStream: false,
     responseStream: false,
     requestType: punishments_punishments_pb.BanRequest,
     responseType: punishments_punishments_pb.BanResponse,
-    requestSerialize: serialize_mruv_economy_BanRequest,
-    requestDeserialize: deserialize_mruv_economy_BanRequest,
-    responseSerialize: serialize_mruv_economy_BanResponse,
-    responseDeserialize: deserialize_mruv_economy_BanResponse,
+    requestSerialize: serialize_mruv_punishments_BanRequest,
+    requestDeserialize: deserialize_mruv_punishments_BanRequest,
+    responseSerialize: serialize_mruv_punishments_BanResponse,
+    responseDeserialize: deserialize_mruv_punishments_BanResponse,
   },
   // Block player character.
   block: {
-    path: '/mruv.economy.MruVPunishmentsService/Block',
+    path: '/mruv.punishments.MruVPunishmentsService/Block',
     requestStream: false,
     responseStream: false,
     requestType: punishments_punishments_pb.BlockRequest,
     responseType: punishments_punishments_pb.BlockResponse,
-    requestSerialize: serialize_mruv_economy_BlockRequest,
-    requestDeserialize: deserialize_mruv_economy_BlockRequest,
-    responseSerialize: serialize_mruv_economy_BlockResponse,
-    responseDeserialize: deserialize_mruv_economy_BlockResponse,
+    requestSerialize: serialize_mruv_punishments_BlockRequest,
+    requestDeserialize: deserialize_mruv_punishments_BlockRequest,
+    responseSerialize: serialize_mruv_punishments_BlockResponse,
+    responseDeserialize: deserialize_mruv_punishments_BlockResponse,
   },
   // Warn player.
   // If warn_time is 0, warn will never expire.
   warn: {
-    path: '/mruv.economy.MruVPunishmentsService/Warn',
+    path: '/mruv.punishments.MruVPunishmentsService/Warn',
     requestStream: false,
     responseStream: false,
     requestType: punishments_punishments_pb.WarnRequest,
     responseType: punishments_punishments_pb.WarnResponse,
-    requestSerialize: serialize_mruv_economy_WarnRequest,
-    requestDeserialize: deserialize_mruv_economy_WarnRequest,
-    responseSerialize: serialize_mruv_economy_WarnResponse,
-    responseDeserialize: deserialize_mruv_economy_WarnResponse,
+    requestSerialize: serialize_mruv_punishments_WarnRequest,
+    requestDeserialize: deserialize_mruv_punishments_WarnRequest,
+    responseSerialize: serialize_mruv_punishments_WarnResponse,
+    responseDeserialize: deserialize_mruv_punishments_WarnResponse,
   },
   // Put player in an admin jail.
   adminJail: {
-    path: '/mruv.economy.MruVPunishmentsService/AdminJail',
+    path: '/mruv.punishments.MruVPunishmentsService/AdminJail',
     requestStream: false,
     responseStream: false,
     requestType: punishments_punishments_pb.AdminJailRequest,
     responseType: punishments_punishments_pb.AdminJailResponse,
-    requestSerialize: serialize_mruv_economy_AdminJailRequest,
-    requestDeserialize: deserialize_mruv_economy_AdminJailRequest,
-    responseSerialize: serialize_mruv_economy_AdminJailResponse,
-    responseDeserialize: deserialize_mruv_economy_AdminJailResponse,
+    requestSerialize: serialize_mruv_punishments_AdminJailRequest,
+    requestDeserialize: deserialize_mruv_punishments_AdminJailRequest,
+    responseSerialize: serialize_mruv_punishments_AdminJailResponse,
+    responseDeserialize: deserialize_mruv_punishments_AdminJailResponse,
   },
   // Mute player global chats.
   muteGlobalChats: {
-    path: '/mruv.economy.MruVPunishmentsService/MuteGlobalChats',
+    path: '/mruv.punishments.MruVPunishmentsService/MuteGlobalChats',
     requestStream: false,
     responseStream: false,
     requestType: punishments_punishments_pb.MuteGlobalChatsRequest,
     responseType: punishments_punishments_pb.MuteGlobalChatsResponse,
-    requestSerialize: serialize_mruv_economy_MuteGlobalChatsRequest,
-    requestDeserialize: deserialize_mruv_economy_MuteGlobalChatsRequest,
-    responseSerialize: serialize_mruv_economy_MuteGlobalChatsResponse,
-    responseDeserialize: deserialize_mruv_economy_MuteGlobalChatsResponse,
+    requestSerialize: serialize_mruv_punishments_MuteGlobalChatsRequest,
+    requestDeserialize: deserialize_mruv_punishments_MuteGlobalChatsRequest,
+    responseSerialize: serialize_mruv_punishments_MuteGlobalChatsResponse,
+    responseDeserialize: deserialize_mruv_punishments_MuteGlobalChatsResponse,
   },
   // Deactivate a specific player ban.
   unBan: {
-    path: '/mruv.economy.MruVPunishmentsService/UnBan',
+    path: '/mruv.punishments.MruVPunishmentsService/UnBan',
     requestStream: false,
     responseStream: false,
     requestType: punishments_punishments_pb.UnBanRequest,
     responseType: punishments_punishments_pb.UnBanResponse,
-    requestSerialize: serialize_mruv_economy_UnBanRequest,
-    requestDeserialize: deserialize_mruv_economy_UnBanRequest,
-    responseSerialize: serialize_mruv_economy_UnBanResponse,
-    responseDeserialize: deserialize_mruv_economy_UnBanResponse,
+    requestSerialize: serialize_mruv_punishments_UnBanRequest,
+    requestDeserialize: deserialize_mruv_punishments_UnBanRequest,
+    responseSerialize: serialize_mruv_punishments_UnBanResponse,
+    responseDeserialize: deserialize_mruv_punishments_UnBanResponse,
   },
   // Deactivate a character block.
   unBlock: {
-    path: '/mruv.economy.MruVPunishmentsService/UnBlock',
+    path: '/mruv.punishments.MruVPunishmentsService/UnBlock',
     requestStream: false,
     responseStream: false,
     requestType: punishments_punishments_pb.UnBlockRequest,
     responseType: punishments_punishments_pb.UnBlockResponse,
-    requestSerialize: serialize_mruv_economy_UnBlockRequest,
-    requestDeserialize: deserialize_mruv_economy_UnBlockRequest,
-    responseSerialize: serialize_mruv_economy_UnBlockResponse,
-    responseDeserialize: deserialize_mruv_economy_UnBlockResponse,
+    requestSerialize: serialize_mruv_punishments_UnBlockRequest,
+    requestDeserialize: deserialize_mruv_punishments_UnBlockRequest,
+    responseSerialize: serialize_mruv_punishments_UnBlockResponse,
+    responseDeserialize: deserialize_mruv_punishments_UnBlockResponse,
   },
   // Deactivate a specific player warning. If a player was banned by reaching the warning limit, a player will be unbanned.
   unWarn: {
-    path: '/mruv.economy.MruVPunishmentsService/UnWarn',
+    path: '/mruv.punishments.MruVPunishmentsService/UnWarn',
     requestStream: false,
     responseStream: false,
     requestType: punishments_punishments_pb.UnWarnRequest,
     responseType: punishments_punishments_pb.UnWarnResponse,
-    requestSerialize: serialize_mruv_economy_UnWarnRequest,
-    requestDeserialize: deserialize_mruv_economy_UnWarnRequest,
-    responseSerialize: serialize_mruv_economy_UnWarnResponse,
-    responseDeserialize: deserialize_mruv_economy_UnWarnResponse,
+    requestSerialize: serialize_mruv_punishments_UnWarnRequest,
+    requestDeserialize: deserialize_mruv_punishments_UnWarnRequest,
+    responseSerialize: serialize_mruv_punishments_UnWarnResponse,
+    responseDeserialize: deserialize_mruv_punishments_UnWarnResponse,
   },
   // Remove player from admin jail.
   unAdminJail: {
-    path: '/mruv.economy.MruVPunishmentsService/UnAdminJail',
+    path: '/mruv.punishments.MruVPunishmentsService/UnAdminJail',
     requestStream: false,
     responseStream: false,
     requestType: punishments_punishments_pb.UnAdminJailRequest,
     responseType: punishments_punishments_pb.UnAdminJailResponse,
-    requestSerialize: serialize_mruv_economy_UnAdminJailRequest,
-    requestDeserialize: deserialize_mruv_economy_UnAdminJailRequest,
-    responseSerialize: serialize_mruv_economy_UnAdminJailResponse,
-    responseDeserialize: deserialize_mruv_economy_UnAdminJailResponse,
+    requestSerialize: serialize_mruv_punishments_UnAdminJailRequest,
+    requestDeserialize: deserialize_mruv_punishments_UnAdminJailRequest,
+    responseSerialize: serialize_mruv_punishments_UnAdminJailResponse,
+    responseDeserialize: deserialize_mruv_punishments_UnAdminJailResponse,
   },
   //
   unMuteGlobalChats: {
-    path: '/mruv.economy.MruVPunishmentsService/UnMuteGlobalChats',
+    path: '/mruv.punishments.MruVPunishmentsService/UnMuteGlobalChats',
     requestStream: false,
     responseStream: false,
     requestType: punishments_punishments_pb.UnMuteGlobalChatsRequest,
     responseType: punishments_punishments_pb.UnMuteGlobalChatsResponse,
-    requestSerialize: serialize_mruv_economy_UnMuteGlobalChatsRequest,
-    requestDeserialize: deserialize_mruv_economy_UnMuteGlobalChatsRequest,
-    responseSerialize: serialize_mruv_economy_UnMuteGlobalChatsResponse,
-    responseDeserialize: deserialize_mruv_economy_UnMuteGlobalChatsResponse,
+    requestSerialize: serialize_mruv_punishments_UnMuteGlobalChatsRequest,
+    requestDeserialize: deserialize_mruv_punishments_UnMuteGlobalChatsRequest,
+    responseSerialize: serialize_mruv_punishments_UnMuteGlobalChatsResponse,
+    responseDeserialize: deserialize_mruv_punishments_UnMuteGlobalChatsResponse,
   },
   // Get all player bans.
   getPlayerBans: {
-    path: '/mruv.economy.MruVPunishmentsService/GetPlayerBans',
+    path: '/mruv.punishments.MruVPunishmentsService/GetPlayerBans',
     requestStream: false,
     responseStream: false,
     requestType: punishments_punishments_pb.GetPlayerBansRequest,
     responseType: punishments_punishments_pb.GetPlayerBansResponse,
-    requestSerialize: serialize_mruv_economy_GetPlayerBansRequest,
-    requestDeserialize: deserialize_mruv_economy_GetPlayerBansRequest,
-    responseSerialize: serialize_mruv_economy_GetPlayerBansResponse,
-    responseDeserialize: deserialize_mruv_economy_GetPlayerBansResponse,
+    requestSerialize: serialize_mruv_punishments_GetPlayerBansRequest,
+    requestDeserialize: deserialize_mruv_punishments_GetPlayerBansRequest,
+    responseSerialize: serialize_mruv_punishments_GetPlayerBansResponse,
+    responseDeserialize: deserialize_mruv_punishments_GetPlayerBansResponse,
   },
   // Get all player warns.
   getPlayerWarns: {
-    path: '/mruv.economy.MruVPunishmentsService/GetPlayerWarns',
+    path: '/mruv.punishments.MruVPunishmentsService/GetPlayerWarns',
     requestStream: false,
     responseStream: false,
     requestType: punishments_punishments_pb.GetPlayerWarnsRequest,
     responseType: punishments_punishments_pb.GetPlayerWarnsResponse,
-    requestSerialize: serialize_mruv_economy_GetPlayerWarnsRequest,
-    requestDeserialize: deserialize_mruv_economy_GetPlayerWarnsRequest,
-    responseSerialize: serialize_mruv_economy_GetPlayerWarnsResponse,
-    responseDeserialize: deserialize_mruv_economy_GetPlayerWarnsResponse,
+    requestSerialize: serialize_mruv_punishments_GetPlayerWarnsRequest,
+    requestDeserialize: deserialize_mruv_punishments_GetPlayerWarnsRequest,
+    responseSerialize: serialize_mruv_punishments_GetPlayerWarnsResponse,
+    responseDeserialize: deserialize_mruv_punishments_GetPlayerWarnsResponse,
   },
   // Get player admin jail time.
   getPlayerAdminJail: {
-    path: '/mruv.economy.MruVPunishmentsService/GetPlayerAdminJail',
+    path: '/mruv.punishments.MruVPunishmentsService/GetPlayerAdminJail',
     requestStream: false,
     responseStream: false,
     requestType: punishments_punishments_pb.GetPlayerAdminJailRequest,
     responseType: punishments_punishments_pb.GetPlayerAdminJailResponse,
-    requestSerialize: serialize_mruv_economy_GetPlayerAdminJailRequest,
-    requestDeserialize: deserialize_mruv_economy_GetPlayerAdminJailRequest,
-    responseSerialize: serialize_mruv_economy_GetPlayerAdminJailResponse,
-    responseDeserialize: deserialize_mruv_economy_GetPlayerAdminJailResponse,
+    requestSerialize: serialize_mruv_punishments_GetPlayerAdminJailRequest,
+    requestDeserialize: deserialize_mruv_punishments_GetPlayerAdminJailRequest,
+    responseSerialize: serialize_mruv_punishments_GetPlayerAdminJailResponse,
+    responseDeserialize: deserialize_mruv_punishments_GetPlayerAdminJailResponse,
   },
   // Get ban info.
   getBan: {
-    path: '/mruv.economy.MruVPunishmentsService/GetBan',
+    path: '/mruv.punishments.MruVPunishmentsService/GetBan',
     requestStream: false,
     responseStream: false,
     requestType: punishments_punishments_pb.GetBanRequest,
     responseType: punishments_punishments_pb.BanMessage,
-    requestSerialize: serialize_mruv_economy_GetBanRequest,
-    requestDeserialize: deserialize_mruv_economy_GetBanRequest,
-    responseSerialize: serialize_mruv_economy_BanMessage,
-    responseDeserialize: deserialize_mruv_economy_BanMessage,
+    requestSerialize: serialize_mruv_punishments_GetBanRequest,
+    requestDeserialize: deserialize_mruv_punishments_GetBanRequest,
+    responseSerialize: serialize_mruv_punishments_BanMessage,
+    responseDeserialize: deserialize_mruv_punishments_BanMessage,
   },
   // Get warn info.
   getWarn: {
-    path: '/mruv.economy.MruVPunishmentsService/GetWarn',
+    path: '/mruv.punishments.MruVPunishmentsService/GetWarn',
     requestStream: false,
     responseStream: false,
     requestType: punishments_punishments_pb.GetWarnRequest,
     responseType: punishments_punishments_pb.WarnMessage,
-    requestSerialize: serialize_mruv_economy_GetWarnRequest,
-    requestDeserialize: deserialize_mruv_economy_GetWarnRequest,
-    responseSerialize: serialize_mruv_economy_WarnMessage,
-    responseDeserialize: deserialize_mruv_economy_WarnMessage,
+    requestSerialize: serialize_mruv_punishments_GetWarnRequest,
+    requestDeserialize: deserialize_mruv_punishments_GetWarnRequest,
+    responseSerialize: serialize_mruv_punishments_WarnMessage,
+    responseDeserialize: deserialize_mruv_punishments_WarnMessage,
   },
   // Get block info.
   getBlock: {
-    path: '/mruv.economy.MruVPunishmentsService/GetBlock',
+    path: '/mruv.punishments.MruVPunishmentsService/GetBlock',
     requestStream: false,
     responseStream: false,
     requestType: punishments_punishments_pb.GetBlockRequest,
     responseType: punishments_punishments_pb.BlockMessage,
-    requestSerialize: serialize_mruv_economy_GetBlockRequest,
-    requestDeserialize: deserialize_mruv_economy_GetBlockRequest,
-    responseSerialize: serialize_mruv_economy_BlockMessage,
-    responseDeserialize: deserialize_mruv_economy_BlockMessage,
+    requestSerialize: serialize_mruv_punishments_GetBlockRequest,
+    requestDeserialize: deserialize_mruv_punishments_GetBlockRequest,
+    responseSerialize: serialize_mruv_punishments_BlockMessage,
+    responseDeserialize: deserialize_mruv_punishments_BlockMessage,
   },
   // Check is player or ip banned.
   isPlayerBanned: {
-    path: '/mruv.economy.MruVPunishmentsService/IsPlayerBanned',
+    path: '/mruv.punishments.MruVPunishmentsService/IsPlayerBanned',
     requestStream: false,
     responseStream: false,
     requestType: punishments_punishments_pb.IsPlayerBannedRequest,
     responseType: punishments_punishments_pb.IsPlayerBannedResponse,
-    requestSerialize: serialize_mruv_economy_IsPlayerBannedRequest,
-    requestDeserialize: deserialize_mruv_economy_IsPlayerBannedRequest,
-    responseSerialize: serialize_mruv_economy_IsPlayerBannedResponse,
-    responseDeserialize: deserialize_mruv_economy_IsPlayerBannedResponse,
+    requestSerialize: serialize_mruv_punishments_IsPlayerBannedRequest,
+    requestDeserialize: deserialize_mruv_punishments_IsPlayerBannedRequest,
+    responseSerialize: serialize_mruv_punishments_IsPlayerBannedResponse,
+    responseDeserialize: deserialize_mruv_punishments_IsPlayerBannedResponse,
   },
   // Check is character is blocked.
   isCharacterBlocked: {
-    path: '/mruv.economy.MruVPunishmentsService/IsCharacterBlocked',
+    path: '/mruv.punishments.MruVPunishmentsService/IsCharacterBlocked',
     requestStream: false,
     responseStream: false,
     requestType: punishments_punishments_pb.IsCharacterBlockedRequest,
     responseType: punishments_punishments_pb.IsCharacterBlockedResponse,
-    requestSerialize: serialize_mruv_economy_IsCharacterBlockedRequest,
-    requestDeserialize: deserialize_mruv_economy_IsCharacterBlockedRequest,
-    responseSerialize: serialize_mruv_economy_IsCharacterBlockedResponse,
-    responseDeserialize: deserialize_mruv_economy_IsCharacterBlockedResponse,
+    requestSerialize: serialize_mruv_punishments_IsCharacterBlockedRequest,
+    requestDeserialize: deserialize_mruv_punishments_IsCharacterBlockedRequest,
+    responseSerialize: serialize_mruv_punishments_IsCharacterBlockedResponse,
+    responseDeserialize: deserialize_mruv_punishments_IsCharacterBlockedResponse,
   },
   //
   isCharacterJailed: {
-    path: '/mruv.economy.MruVPunishmentsService/IsCharacterJailed',
+    path: '/mruv.punishments.MruVPunishmentsService/IsCharacterJailed',
     requestStream: false,
     responseStream: false,
     requestType: punishments_punishments_pb.IsCharacterJailedRequest,
     responseType: punishments_punishments_pb.IsCharacterJailedResponse,
-    requestSerialize: serialize_mruv_economy_IsCharacterJailedRequest,
-    requestDeserialize: deserialize_mruv_economy_IsCharacterJailedRequest,
-    responseSerialize: serialize_mruv_economy_IsCharacterJailedResponse,
-    responseDeserialize: deserialize_mruv_economy_IsCharacterJailedResponse,
+    requestSerialize: serialize_mruv_punishments_IsCharacterJailedRequest,
+    requestDeserialize: deserialize_mruv_punishments_IsCharacterJailedRequest,
+    responseSerialize: serialize_mruv_punishments_IsCharacterJailedResponse,
+    responseDeserialize: deserialize_mruv_punishments_IsCharacterJailedResponse,
   },
   // Subscribe to ban events.
   watchBans: {
-    path: '/mruv.economy.MruVPunishmentsService/WatchBans',
+    path: '/mruv.punishments.MruVPunishmentsService/WatchBans',
     requestStream: false,
     responseStream: true,
     requestType: punishments_punishments_pb.WatchBansRequest,
     responseType: punishments_punishments_pb.BanMessage,
-    requestSerialize: serialize_mruv_economy_WatchBansRequest,
-    requestDeserialize: deserialize_mruv_economy_WatchBansRequest,
-    responseSerialize: serialize_mruv_economy_BanMessage,
-    responseDeserialize: deserialize_mruv_economy_BanMessage,
+    requestSerialize: serialize_mruv_punishments_WatchBansRequest,
+    requestDeserialize: deserialize_mruv_punishments_WatchBansRequest,
+    responseSerialize: serialize_mruv_punishments_BanMessage,
+    responseDeserialize: deserialize_mruv_punishments_BanMessage,
   },
   // Subscribe to block events.
   watchBlocks: {
-    path: '/mruv.economy.MruVPunishmentsService/WatchBlocks',
+    path: '/mruv.punishments.MruVPunishmentsService/WatchBlocks',
     requestStream: false,
     responseStream: true,
     requestType: punishments_punishments_pb.WatchBlocksRequest,
     responseType: punishments_punishments_pb.BlockMessage,
-    requestSerialize: serialize_mruv_economy_WatchBlocksRequest,
-    requestDeserialize: deserialize_mruv_economy_WatchBlocksRequest,
-    responseSerialize: serialize_mruv_economy_BlockMessage,
-    responseDeserialize: deserialize_mruv_economy_BlockMessage,
+    requestSerialize: serialize_mruv_punishments_WatchBlocksRequest,
+    requestDeserialize: deserialize_mruv_punishments_WatchBlocksRequest,
+    responseSerialize: serialize_mruv_punishments_BlockMessage,
+    responseDeserialize: deserialize_mruv_punishments_BlockMessage,
   },
   // Subscribe to warn events.
   watchWarns: {
-    path: '/mruv.economy.MruVPunishmentsService/WatchWarns',
+    path: '/mruv.punishments.MruVPunishmentsService/WatchWarns',
     requestStream: false,
     responseStream: true,
     requestType: punishments_punishments_pb.WatchWarnsRequest,
     responseType: punishments_punishments_pb.WarnMessage,
-    requestSerialize: serialize_mruv_economy_WatchWarnsRequest,
-    requestDeserialize: deserialize_mruv_economy_WatchWarnsRequest,
-    responseSerialize: serialize_mruv_economy_WarnMessage,
-    responseDeserialize: deserialize_mruv_economy_WarnMessage,
+    requestSerialize: serialize_mruv_punishments_WatchWarnsRequest,
+    requestDeserialize: deserialize_mruv_punishments_WatchWarnsRequest,
+    responseSerialize: serialize_mruv_punishments_WarnMessage,
+    responseDeserialize: deserialize_mruv_punishments_WarnMessage,
   },
   // Subscribe to admin jail events.
   watchAdminJails: {
-    path: '/mruv.economy.MruVPunishmentsService/WatchAdminJails',
+    path: '/mruv.punishments.MruVPunishmentsService/WatchAdminJails',
     requestStream: false,
     responseStream: true,
     requestType: punishments_punishments_pb.WatchAdminJailsRequest,
     responseType: punishments_punishments_pb.AdminJailMessage,
-    requestSerialize: serialize_mruv_economy_WatchAdminJailsRequest,
-    requestDeserialize: deserialize_mruv_economy_WatchAdminJailsRequest,
-    responseSerialize: serialize_mruv_economy_AdminJailMessage,
-    responseDeserialize: deserialize_mruv_economy_AdminJailMessage,
+    requestSerialize: serialize_mruv_punishments_WatchAdminJailsRequest,
+    requestDeserialize: deserialize_mruv_punishments_WatchAdminJailsRequest,
+    responseSerialize: serialize_mruv_punishments_AdminJailMessage,
+    responseDeserialize: deserialize_mruv_punishments_AdminJailMessage,
   },
   // Subscribe to unban events.
   watchUnBans: {
-    path: '/mruv.economy.MruVPunishmentsService/WatchUnBans',
+    path: '/mruv.punishments.MruVPunishmentsService/WatchUnBans',
     requestStream: false,
     responseStream: true,
     requestType: punishments_punishments_pb.WatchUnBansRequest,
     responseType: punishments_punishments_pb.UnBanMessage,
-    requestSerialize: serialize_mruv_economy_WatchUnBansRequest,
-    requestDeserialize: deserialize_mruv_economy_WatchUnBansRequest,
-    responseSerialize: serialize_mruv_economy_UnBanMessage,
-    responseDeserialize: deserialize_mruv_economy_UnBanMessage,
+    requestSerialize: serialize_mruv_punishments_WatchUnBansRequest,
+    requestDeserialize: deserialize_mruv_punishments_WatchUnBansRequest,
+    responseSerialize: serialize_mruv_punishments_UnBanMessage,
+    responseDeserialize: deserialize_mruv_punishments_UnBanMessage,
   },
   // Subscribe to unblock events.
   watchUnBlocks: {
-    path: '/mruv.economy.MruVPunishmentsService/WatchUnBlocks',
+    path: '/mruv.punishments.MruVPunishmentsService/WatchUnBlocks',
     requestStream: false,
     responseStream: true,
     requestType: punishments_punishments_pb.WatchUnBlocksRequest,
     responseType: punishments_punishments_pb.UnBlockMessage,
-    requestSerialize: serialize_mruv_economy_WatchUnBlocksRequest,
-    requestDeserialize: deserialize_mruv_economy_WatchUnBlocksRequest,
-    responseSerialize: serialize_mruv_economy_UnBlockMessage,
-    responseDeserialize: deserialize_mruv_economy_UnBlockMessage,
+    requestSerialize: serialize_mruv_punishments_WatchUnBlocksRequest,
+    requestDeserialize: deserialize_mruv_punishments_WatchUnBlocksRequest,
+    responseSerialize: serialize_mruv_punishments_UnBlockMessage,
+    responseDeserialize: deserialize_mruv_punishments_UnBlockMessage,
   },
   // Subscribe to unwarn events.
   watchUnWarns: {
-    path: '/mruv.economy.MruVPunishmentsService/WatchUnWarns',
+    path: '/mruv.punishments.MruVPunishmentsService/WatchUnWarns',
     requestStream: false,
     responseStream: true,
     requestType: punishments_punishments_pb.WatchUnWarnsRequest,
     responseType: punishments_punishments_pb.UnWarnMessage,
-    requestSerialize: serialize_mruv_economy_WatchUnWarnsRequest,
-    requestDeserialize: deserialize_mruv_economy_WatchUnWarnsRequest,
-    responseSerialize: serialize_mruv_economy_UnWarnMessage,
-    responseDeserialize: deserialize_mruv_economy_UnWarnMessage,
+    requestSerialize: serialize_mruv_punishments_WatchUnWarnsRequest,
+    requestDeserialize: deserialize_mruv_punishments_WatchUnWarnsRequest,
+    responseSerialize: serialize_mruv_punishments_UnWarnMessage,
+    responseDeserialize: deserialize_mruv_punishments_UnWarnMessage,
   },
   // Subscribe to admin jail release events.
   watchUnAdminJails: {
-    path: '/mruv.economy.MruVPunishmentsService/WatchUnAdminJails',
+    path: '/mruv.punishments.MruVPunishmentsService/WatchUnAdminJails',
     requestStream: false,
     responseStream: true,
     requestType: punishments_punishments_pb.WatchUnAdminJailsRequest,
     responseType: punishments_punishments_pb.UnAdminJailMessage,
-    requestSerialize: serialize_mruv_economy_WatchUnAdminJailsRequest,
-    requestDeserialize: deserialize_mruv_economy_WatchUnAdminJailsRequest,
-    responseSerialize: serialize_mruv_economy_UnAdminJailMessage,
-    responseDeserialize: deserialize_mruv_economy_UnAdminJailMessage,
+    requestSerialize: serialize_mruv_punishments_WatchUnAdminJailsRequest,
+    requestDeserialize: deserialize_mruv_punishments_WatchUnAdminJailsRequest,
+    responseSerialize: serialize_mruv_punishments_UnAdminJailMessage,
+    responseDeserialize: deserialize_mruv_punishments_UnAdminJailMessage,
   },
   // Subscribe to player punishments.
   watchPlayerPunishments: {
-    path: '/mruv.economy.MruVPunishmentsService/WatchPlayerPunishments',
+    path: '/mruv.punishments.MruVPunishmentsService/WatchPlayerPunishments',
     requestStream: false,
     responseStream: true,
     requestType: punishments_punishments_pb.WatchPlayerPunishmentsRequest,
     responseType: punishments_punishments_pb.WatchPlayerPunishmentsResponse,
-    requestSerialize: serialize_mruv_economy_WatchPlayerPunishmentsRequest,
-    requestDeserialize: deserialize_mruv_economy_WatchPlayerPunishmentsRequest,
-    responseSerialize: serialize_mruv_economy_WatchPlayerPunishmentsResponse,
-    responseDeserialize: deserialize_mruv_economy_WatchPlayerPunishmentsResponse,
+    requestSerialize: serialize_mruv_punishments_WatchPlayerPunishmentsRequest,
+    requestDeserialize: deserialize_mruv_punishments_WatchPlayerPunishmentsRequest,
+    responseSerialize: serialize_mruv_punishments_WatchPlayerPunishmentsResponse,
+    responseDeserialize: deserialize_mruv_punishments_WatchPlayerPunishmentsResponse,
   },
   // Subscribe to player acquittals.
   watchPlayerAcquittals: {
-    path: '/mruv.economy.MruVPunishmentsService/WatchPlayerAcquittals',
+    path: '/mruv.punishments.MruVPunishmentsService/WatchPlayerAcquittals',
     requestStream: false,
     responseStream: true,
     requestType: punishments_punishments_pb.WatchPlayerAcquittalsRequest,
     responseType: punishments_punishments_pb.WatchPlayerAcquittalsResponse,
-    requestSerialize: serialize_mruv_economy_WatchPlayerAcquittalsRequest,
-    requestDeserialize: deserialize_mruv_economy_WatchPlayerAcquittalsRequest,
-    responseSerialize: serialize_mruv_economy_WatchPlayerAcquittalsResponse,
-    responseDeserialize: deserialize_mruv_economy_WatchPlayerAcquittalsResponse,
+    requestSerialize: serialize_mruv_punishments_WatchPlayerAcquittalsRequest,
+    requestDeserialize: deserialize_mruv_punishments_WatchPlayerAcquittalsRequest,
+    responseSerialize: serialize_mruv_punishments_WatchPlayerAcquittalsResponse,
+    responseDeserialize: deserialize_mruv_punishments_WatchPlayerAcquittalsResponse,
   },
-  // Subscribe to all punishments and acquittals events.
+  // Subscribe to all punishments events.
   watchPunishments: {
-    path: '/mruv.economy.MruVPunishmentsService/WatchPunishments',
+    path: '/mruv.punishments.MruVPunishmentsService/WatchPunishments',
     requestStream: false,
     responseStream: true,
     requestType: punishments_punishments_pb.WatchPunishmentsRequest,
     responseType: punishments_punishments_pb.WatchPunishmentsResponse,
-    requestSerialize: serialize_mruv_economy_WatchPunishmentsRequest,
-    requestDeserialize: deserialize_mruv_economy_WatchPunishmentsRequest,
-    responseSerialize: serialize_mruv_economy_WatchPunishmentsResponse,
-    responseDeserialize: deserialize_mruv_economy_WatchPunishmentsResponse,
+    requestSerialize: serialize_mruv_punishments_WatchPunishmentsRequest,
+    requestDeserialize: deserialize_mruv_punishments_WatchPunishmentsRequest,
+    responseSerialize: serialize_mruv_punishments_WatchPunishmentsResponse,
+    responseDeserialize: deserialize_mruv_punishments_WatchPunishmentsResponse,
+  },
+  // Subscribe to all acquittals events.
+  watchAcquittals: {
+    path: '/mruv.punishments.MruVPunishmentsService/WatchAcquittals',
+    requestStream: false,
+    responseStream: false,
+    requestType: punishments_punishments_pb.WatchAcquittalsRequest,
+    responseType: punishments_punishments_pb.WatchAcquittalsResponse,
+    requestSerialize: serialize_mruv_punishments_WatchAcquittalsRequest,
+    requestDeserialize: deserialize_mruv_punishments_WatchAcquittalsRequest,
+    responseSerialize: serialize_mruv_punishments_WatchAcquittalsResponse,
+    responseDeserialize: deserialize_mruv_punishments_WatchAcquittalsResponse,
   },
 };
 
