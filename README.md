@@ -3,7 +3,7 @@
 This repository contains code generated from https://github.com/MruV-RP/mruv-protos protobuf files.
 
 ## How to use this repository?
-This repository is a npm package, so if you want to use MruV API package in your Node.JS project, you should add this module to your npm project as a dependency by using this command in project root directory:
+This repository is a npm package, so if you want to use MruV API in your Node.JS project, you should add this module to your npm project as a dependency by using this command in project root directory:
 ```
 $ npm i mruv-pb-node
 ```
