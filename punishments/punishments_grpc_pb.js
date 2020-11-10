@@ -291,28 +291,6 @@ function deserialize_mruv_punishments_MuteGlobalChatsResponse(buffer_arg) {
   return punishments_punishments_pb.MuteGlobalChatsResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_punishments_PunishRequest(arg) {
-  if (!(arg instanceof punishments_punishments_pb.PunishRequest)) {
-    throw new Error('Expected argument of type mruv.punishments.PunishRequest');
-  }
-  return new Buffer(arg.serializeBinary());
-}
-
-function deserialize_mruv_punishments_PunishRequest(buffer_arg) {
-  return punishments_punishments_pb.PunishRequest.deserializeBinary(new Uint8Array(buffer_arg));
-}
-
-function serialize_mruv_punishments_PunishResponse(arg) {
-  if (!(arg instanceof punishments_punishments_pb.PunishResponse)) {
-    throw new Error('Expected argument of type mruv.punishments.PunishResponse');
-  }
-  return new Buffer(arg.serializeBinary());
-}
-
-function deserialize_mruv_punishments_PunishResponse(buffer_arg) {
-  return punishments_punishments_pb.PunishResponse.deserializeBinary(new Uint8Array(buffer_arg));
-}
-
 function serialize_mruv_punishments_UnAdminJailMessage(arg) {
   if (!(arg instanceof punishments_punishments_pb.UnAdminJailMessage)) {
     throw new Error('Expected argument of type mruv.punishments.UnAdminJailMessage');
@@ -500,28 +478,6 @@ function deserialize_mruv_punishments_WarnResponse(buffer_arg) {
   return punishments_punishments_pb.WarnResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_punishments_WatchAcquittalsRequest(arg) {
-  if (!(arg instanceof punishments_punishments_pb.WatchAcquittalsRequest)) {
-    throw new Error('Expected argument of type mruv.punishments.WatchAcquittalsRequest');
-  }
-  return new Buffer(arg.serializeBinary());
-}
-
-function deserialize_mruv_punishments_WatchAcquittalsRequest(buffer_arg) {
-  return punishments_punishments_pb.WatchAcquittalsRequest.deserializeBinary(new Uint8Array(buffer_arg));
-}
-
-function serialize_mruv_punishments_WatchAcquittalsResponse(arg) {
-  if (!(arg instanceof punishments_punishments_pb.WatchAcquittalsResponse)) {
-    throw new Error('Expected argument of type mruv.punishments.WatchAcquittalsResponse');
-  }
-  return new Buffer(arg.serializeBinary());
-}
-
-function deserialize_mruv_punishments_WatchAcquittalsResponse(buffer_arg) {
-  return punishments_punishments_pb.WatchAcquittalsResponse.deserializeBinary(new Uint8Array(buffer_arg));
-}
-
 function serialize_mruv_punishments_WatchAdminJailsRequest(arg) {
   if (!(arg instanceof punishments_punishments_pb.WatchAdminJailsRequest)) {
     throw new Error('Expected argument of type mruv.punishments.WatchAdminJailsRequest');
@@ -679,18 +635,6 @@ function deserialize_mruv_punishments_WatchWarnsRequest(buffer_arg) {
 
 // This service provides interface for managing punishments for players.
 var MruVPunishmentsServiceService = exports.MruVPunishmentsServiceService = {
-  // Punish player with choosen punishment type.
-  punish: {
-    path: '/mruv.punishments.MruVPunishmentsService/Punish',
-    requestStream: false,
-    responseStream: false,
-    requestType: punishments_punishments_pb.PunishRequest,
-    responseType: punishments_punishments_pb.PunishResponse,
-    requestSerialize: serialize_mruv_punishments_PunishRequest,
-    requestDeserialize: deserialize_mruv_punishments_PunishRequest,
-    responseSerialize: serialize_mruv_punishments_PunishResponse,
-    responseDeserialize: deserialize_mruv_punishments_PunishResponse,
-  },
   // Ban player on account and/or ip.
   // If ban_time is 0, ban will never expire.
   ban: {
@@ -1041,7 +985,7 @@ var MruVPunishmentsServiceService = exports.MruVPunishmentsServiceService = {
     responseSerialize: serialize_mruv_punishments_WatchPlayerAcquittalsResponse,
     responseDeserialize: deserialize_mruv_punishments_WatchPlayerAcquittalsResponse,
   },
-  // Subscribe to all punishments events.
+  // Subscribe to all punishments and acquittals events.
   watchPunishments: {
     path: '/mruv.punishments.MruVPunishmentsService/WatchPunishments',
     requestStream: false,
@@ -1052,18 +996,6 @@ var MruVPunishmentsServiceService = exports.MruVPunishmentsServiceService = {
     requestDeserialize: deserialize_mruv_punishments_WatchPunishmentsRequest,
     responseSerialize: serialize_mruv_punishments_WatchPunishmentsResponse,
     responseDeserialize: deserialize_mruv_punishments_WatchPunishmentsResponse,
-  },
-  // Subscribe to all acquittals events.
-  watchAcquittals: {
-    path: '/mruv.punishments.MruVPunishmentsService/WatchAcquittals',
-    requestStream: false,
-    responseStream: false,
-    requestType: punishments_punishments_pb.WatchAcquittalsRequest,
-    responseType: punishments_punishments_pb.WatchAcquittalsResponse,
-    requestSerialize: serialize_mruv_punishments_WatchAcquittalsRequest,
-    requestDeserialize: deserialize_mruv_punishments_WatchAcquittalsRequest,
-    responseSerialize: serialize_mruv_punishments_WatchAcquittalsResponse,
-    responseDeserialize: deserialize_mruv_punishments_WatchAcquittalsResponse,
   },
 };
 

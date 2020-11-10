@@ -1,6 +1,6 @@
 // GENERATED CODE -- DO NOT EDIT!
 
-// package: mruv.items
+// package: mruv
 // file: items/items.proto
 
 import * as items_items_pb from "../items/items_pb";

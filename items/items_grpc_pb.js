@@ -52,6 +52,138 @@ function deserialize_mruv_ContainerTypeID(buffer_arg) {
   return items_items_model_pb.ContainerTypeID.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
+function serialize_mruv_GetContainerItemsRequest(arg) {
+  if (!(arg instanceof items_items_pb.GetContainerItemsRequest)) {
+    throw new Error('Expected argument of type mruv.GetContainerItemsRequest');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_GetContainerItemsRequest(buffer_arg) {
+  return items_items_pb.GetContainerItemsRequest.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_GetContainerItemsResponse(arg) {
+  if (!(arg instanceof items_items_pb.GetContainerItemsResponse)) {
+    throw new Error('Expected argument of type mruv.GetContainerItemsResponse');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_GetContainerItemsResponse(buffer_arg) {
+  return items_items_pb.GetContainerItemsResponse.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_GetContainerTypesRequest(arg) {
+  if (!(arg instanceof items_items_pb.GetContainerTypesRequest)) {
+    throw new Error('Expected argument of type mruv.GetContainerTypesRequest');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_GetContainerTypesRequest(buffer_arg) {
+  return items_items_pb.GetContainerTypesRequest.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_GetContainerTypesResponse(arg) {
+  if (!(arg instanceof items_items_pb.GetContainerTypesResponse)) {
+    throw new Error('Expected argument of type mruv.GetContainerTypesResponse');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_GetContainerTypesResponse(buffer_arg) {
+  return items_items_pb.GetContainerTypesResponse.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_GetContainersRequest(arg) {
+  if (!(arg instanceof items_items_pb.GetContainersRequest)) {
+    throw new Error('Expected argument of type mruv.GetContainersRequest');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_GetContainersRequest(buffer_arg) {
+  return items_items_pb.GetContainersRequest.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_GetContainersResponse(arg) {
+  if (!(arg instanceof items_items_pb.GetContainersResponse)) {
+    throw new Error('Expected argument of type mruv.GetContainersResponse');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_GetContainersResponse(buffer_arg) {
+  return items_items_pb.GetContainersResponse.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_GetItemTypesRequest(arg) {
+  if (!(arg instanceof items_items_pb.GetItemTypesRequest)) {
+    throw new Error('Expected argument of type mruv.GetItemTypesRequest');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_GetItemTypesRequest(buffer_arg) {
+  return items_items_pb.GetItemTypesRequest.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_GetItemTypesResponse(arg) {
+  if (!(arg instanceof items_items_pb.GetItemTypesResponse)) {
+    throw new Error('Expected argument of type mruv.GetItemTypesResponse');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_GetItemTypesResponse(buffer_arg) {
+  return items_items_pb.GetItemTypesResponse.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_GetItemsRequest(arg) {
+  if (!(arg instanceof items_items_pb.GetItemsRequest)) {
+    throw new Error('Expected argument of type mruv.GetItemsRequest');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_GetItemsRequest(buffer_arg) {
+  return items_items_pb.GetItemsRequest.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_GetItemsResponse(arg) {
+  if (!(arg instanceof items_items_pb.GetItemsResponse)) {
+    throw new Error('Expected argument of type mruv.GetItemsResponse');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_GetItemsResponse(buffer_arg) {
+  return items_items_pb.GetItemsResponse.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_GetNearestItemsRequest(arg) {
+  if (!(arg instanceof items_items_pb.GetNearestItemsRequest)) {
+    throw new Error('Expected argument of type mruv.GetNearestItemsRequest');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_GetNearestItemsRequest(buffer_arg) {
+  return items_items_pb.GetNearestItemsRequest.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_GetNearestItemsResponse(arg) {
+  if (!(arg instanceof items_items_pb.GetNearestItemsResponse)) {
+    throw new Error('Expected argument of type mruv.GetNearestItemsResponse');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_GetNearestItemsResponse(buffer_arg) {
+  return items_items_pb.GetNearestItemsResponse.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
 function serialize_mruv_Item(arg) {
   if (!(arg instanceof items_items_model_pb.Item)) {
     throw new Error('Expected argument of type mruv.Item');
@@ -96,6 +228,39 @@ function deserialize_mruv_ItemTypeID(buffer_arg) {
   return items_items_model_pb.ItemTypeID.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
+function serialize_mruv_PullItemRequest(arg) {
+  if (!(arg instanceof items_items_pb.PullItemRequest)) {
+    throw new Error('Expected argument of type mruv.PullItemRequest');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_PullItemRequest(buffer_arg) {
+  return items_items_pb.PullItemRequest.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_PutItemRequest(arg) {
+  if (!(arg instanceof items_items_pb.PutItemRequest)) {
+    throw new Error('Expected argument of type mruv.PutItemRequest');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_PutItemRequest(buffer_arg) {
+  return items_items_pb.PutItemRequest.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_PutItemResponse(arg) {
+  if (!(arg instanceof items_items_pb.PutItemResponse)) {
+    throw new Error('Expected argument of type mruv.PutItemResponse');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_PutItemResponse(buffer_arg) {
+  return items_items_pb.PutItemResponse.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
 function serialize_mruv_ServiceStatusRequest(arg) {
   if (!(arg instanceof common_health_pb.ServiceStatusRequest)) {
     throw new Error('Expected argument of type mruv.ServiceStatusRequest');
@@ -116,6 +281,50 @@ function serialize_mruv_ServiceStatusResponse(arg) {
 
 function deserialize_mruv_ServiceStatusResponse(buffer_arg) {
   return common_health_pb.ServiceStatusResponse.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_SortItemsRequest(arg) {
+  if (!(arg instanceof items_items_pb.SortItemsRequest)) {
+    throw new Error('Expected argument of type mruv.SortItemsRequest');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_SortItemsRequest(buffer_arg) {
+  return items_items_pb.SortItemsRequest.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_SortItemsResponse(arg) {
+  if (!(arg instanceof items_items_pb.SortItemsResponse)) {
+    throw new Error('Expected argument of type mruv.SortItemsResponse');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_SortItemsResponse(buffer_arg) {
+  return items_items_pb.SortItemsResponse.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_UseItemRequest(arg) {
+  if (!(arg instanceof items_items_pb.UseItemRequest)) {
+    throw new Error('Expected argument of type mruv.UseItemRequest');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_UseItemRequest(buffer_arg) {
+  return items_items_pb.UseItemRequest.deserializeBinary(new Uint8Array(buffer_arg));
+}
+
+function serialize_mruv_UseItemResponse(arg) {
+  if (!(arg instanceof items_items_pb.UseItemResponse)) {
+    throw new Error('Expected argument of type mruv.UseItemResponse');
+  }
+  return new Buffer(arg.serializeBinary());
+}
+
+function deserialize_mruv_UseItemResponse(buffer_arg) {
+  return items_items_pb.UseItemResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_mruv_VersionRequest(arg) {
@@ -140,221 +349,12 @@ function deserialize_mruv_VersionResponse(buffer_arg) {
   return common_health_pb.VersionResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_items_GetContainerItemsRequest(arg) {
-  if (!(arg instanceof items_items_pb.GetContainerItemsRequest)) {
-    throw new Error('Expected argument of type mruv.items.GetContainerItemsRequest');
-  }
-  return new Buffer(arg.serializeBinary());
-}
-
-function deserialize_mruv_items_GetContainerItemsRequest(buffer_arg) {
-  return items_items_pb.GetContainerItemsRequest.deserializeBinary(new Uint8Array(buffer_arg));
-}
-
-function serialize_mruv_items_GetContainerItemsResponse(arg) {
-  if (!(arg instanceof items_items_pb.GetContainerItemsResponse)) {
-    throw new Error('Expected argument of type mruv.items.GetContainerItemsResponse');
-  }
-  return new Buffer(arg.serializeBinary());
-}
-
-function deserialize_mruv_items_GetContainerItemsResponse(buffer_arg) {
-  return items_items_pb.GetContainerItemsResponse.deserializeBinary(new Uint8Array(buffer_arg));
-}
-
-function serialize_mruv_items_GetContainerTypesRequest(arg) {
-  if (!(arg instanceof items_items_pb.GetContainerTypesRequest)) {
-    throw new Error('Expected argument of type mruv.items.GetContainerTypesRequest');
-  }
-  return new Buffer(arg.serializeBinary());
-}
-
-function deserialize_mruv_items_GetContainerTypesRequest(buffer_arg) {
-  return items_items_pb.GetContainerTypesRequest.deserializeBinary(new Uint8Array(buffer_arg));
-}
-
-function serialize_mruv_items_GetContainerTypesResponse(arg) {
-  if (!(arg instanceof items_items_pb.GetContainerTypesResponse)) {
-    throw new Error('Expected argument of type mruv.items.GetContainerTypesResponse');
-  }
-  return new Buffer(arg.serializeBinary());
-}
-
-function deserialize_mruv_items_GetContainerTypesResponse(buffer_arg) {
-  return items_items_pb.GetContainerTypesResponse.deserializeBinary(new Uint8Array(buffer_arg));
-}
-
-function serialize_mruv_items_GetContainersRequest(arg) {
-  if (!(arg instanceof items_items_pb.GetContainersRequest)) {
-    throw new Error('Expected argument of type mruv.items.GetContainersRequest');
-  }
-  return new Buffer(arg.serializeBinary());
-}
-
-function deserialize_mruv_items_GetContainersRequest(buffer_arg) {
-  return items_items_pb.GetContainersRequest.deserializeBinary(new Uint8Array(buffer_arg));
-}
-
-function serialize_mruv_items_GetContainersResponse(arg) {
-  if (!(arg instanceof items_items_pb.GetContainersResponse)) {
-    throw new Error('Expected argument of type mruv.items.GetContainersResponse');
-  }
-  return new Buffer(arg.serializeBinary());
-}
-
-function deserialize_mruv_items_GetContainersResponse(buffer_arg) {
-  return items_items_pb.GetContainersResponse.deserializeBinary(new Uint8Array(buffer_arg));
-}
-
-function serialize_mruv_items_GetItemTypesRequest(arg) {
-  if (!(arg instanceof items_items_pb.GetItemTypesRequest)) {
-    throw new Error('Expected argument of type mruv.items.GetItemTypesRequest');
-  }
-  return new Buffer(arg.serializeBinary());
-}
-
-function deserialize_mruv_items_GetItemTypesRequest(buffer_arg) {
-  return items_items_pb.GetItemTypesRequest.deserializeBinary(new Uint8Array(buffer_arg));
-}
-
-function serialize_mruv_items_GetItemTypesResponse(arg) {
-  if (!(arg instanceof items_items_pb.GetItemTypesResponse)) {
-    throw new Error('Expected argument of type mruv.items.GetItemTypesResponse');
-  }
-  return new Buffer(arg.serializeBinary());
-}
-
-function deserialize_mruv_items_GetItemTypesResponse(buffer_arg) {
-  return items_items_pb.GetItemTypesResponse.deserializeBinary(new Uint8Array(buffer_arg));
-}
-
-function serialize_mruv_items_GetItemsRequest(arg) {
-  if (!(arg instanceof items_items_pb.GetItemsRequest)) {
-    throw new Error('Expected argument of type mruv.items.GetItemsRequest');
-  }
-  return new Buffer(arg.serializeBinary());
-}
-
-function deserialize_mruv_items_GetItemsRequest(buffer_arg) {
-  return items_items_pb.GetItemsRequest.deserializeBinary(new Uint8Array(buffer_arg));
-}
-
-function serialize_mruv_items_GetItemsResponse(arg) {
-  if (!(arg instanceof items_items_pb.GetItemsResponse)) {
-    throw new Error('Expected argument of type mruv.items.GetItemsResponse');
-  }
-  return new Buffer(arg.serializeBinary());
-}
-
-function deserialize_mruv_items_GetItemsResponse(buffer_arg) {
-  return items_items_pb.GetItemsResponse.deserializeBinary(new Uint8Array(buffer_arg));
-}
-
-function serialize_mruv_items_GetNearestItemsRequest(arg) {
-  if (!(arg instanceof items_items_pb.GetNearestItemsRequest)) {
-    throw new Error('Expected argument of type mruv.items.GetNearestItemsRequest');
-  }
-  return new Buffer(arg.serializeBinary());
-}
-
-function deserialize_mruv_items_GetNearestItemsRequest(buffer_arg) {
-  return items_items_pb.GetNearestItemsRequest.deserializeBinary(new Uint8Array(buffer_arg));
-}
-
-function serialize_mruv_items_GetNearestItemsResponse(arg) {
-  if (!(arg instanceof items_items_pb.GetNearestItemsResponse)) {
-    throw new Error('Expected argument of type mruv.items.GetNearestItemsResponse');
-  }
-  return new Buffer(arg.serializeBinary());
-}
-
-function deserialize_mruv_items_GetNearestItemsResponse(buffer_arg) {
-  return items_items_pb.GetNearestItemsResponse.deserializeBinary(new Uint8Array(buffer_arg));
-}
-
-function serialize_mruv_items_PullItemRequest(arg) {
-  if (!(arg instanceof items_items_pb.PullItemRequest)) {
-    throw new Error('Expected argument of type mruv.items.PullItemRequest');
-  }
-  return new Buffer(arg.serializeBinary());
-}
-
-function deserialize_mruv_items_PullItemRequest(buffer_arg) {
-  return items_items_pb.PullItemRequest.deserializeBinary(new Uint8Array(buffer_arg));
-}
-
-function serialize_mruv_items_PutItemRequest(arg) {
-  if (!(arg instanceof items_items_pb.PutItemRequest)) {
-    throw new Error('Expected argument of type mruv.items.PutItemRequest');
-  }
-  return new Buffer(arg.serializeBinary());
-}
-
-function deserialize_mruv_items_PutItemRequest(buffer_arg) {
-  return items_items_pb.PutItemRequest.deserializeBinary(new Uint8Array(buffer_arg));
-}
-
-function serialize_mruv_items_PutItemResponse(arg) {
-  if (!(arg instanceof items_items_pb.PutItemResponse)) {
-    throw new Error('Expected argument of type mruv.items.PutItemResponse');
-  }
-  return new Buffer(arg.serializeBinary());
-}
-
-function deserialize_mruv_items_PutItemResponse(buffer_arg) {
-  return items_items_pb.PutItemResponse.deserializeBinary(new Uint8Array(buffer_arg));
-}
-
-function serialize_mruv_items_SortItemsRequest(arg) {
-  if (!(arg instanceof items_items_pb.SortItemsRequest)) {
-    throw new Error('Expected argument of type mruv.items.SortItemsRequest');
-  }
-  return new Buffer(arg.serializeBinary());
-}
-
-function deserialize_mruv_items_SortItemsRequest(buffer_arg) {
-  return items_items_pb.SortItemsRequest.deserializeBinary(new Uint8Array(buffer_arg));
-}
-
-function serialize_mruv_items_SortItemsResponse(arg) {
-  if (!(arg instanceof items_items_pb.SortItemsResponse)) {
-    throw new Error('Expected argument of type mruv.items.SortItemsResponse');
-  }
-  return new Buffer(arg.serializeBinary());
-}
-
-function deserialize_mruv_items_SortItemsResponse(buffer_arg) {
-  return items_items_pb.SortItemsResponse.deserializeBinary(new Uint8Array(buffer_arg));
-}
-
-function serialize_mruv_items_UseItemRequest(arg) {
-  if (!(arg instanceof items_items_pb.UseItemRequest)) {
-    throw new Error('Expected argument of type mruv.items.UseItemRequest');
-  }
-  return new Buffer(arg.serializeBinary());
-}
-
-function deserialize_mruv_items_UseItemRequest(buffer_arg) {
-  return items_items_pb.UseItemRequest.deserializeBinary(new Uint8Array(buffer_arg));
-}
-
-function serialize_mruv_items_UseItemResponse(arg) {
-  if (!(arg instanceof items_items_pb.UseItemResponse)) {
-    throw new Error('Expected argument of type mruv.items.UseItemResponse');
-  }
-  return new Buffer(arg.serializeBinary());
-}
-
-function deserialize_mruv_items_UseItemResponse(buffer_arg) {
-  return items_items_pb.UseItemResponse.deserializeBinary(new Uint8Array(buffer_arg));
-}
-
 
 // The MruV items service provides procedures for managing items and containers
 var MruVItemServiceService = exports.MruVItemServiceService = {
   // Create new item.
   createItem: {
-    path: '/mruv.items.MruVItemService/CreateItem',
+    path: '/mruv.MruVItemService/CreateItem',
     requestStream: false,
     responseStream: false,
     requestType: items_items_model_pb.Item,
@@ -366,7 +366,7 @@ var MruVItemServiceService = exports.MruVItemServiceService = {
   },
   // Get item by id.
   getItem: {
-    path: '/mruv.items.MruVItemService/GetItem',
+    path: '/mruv.MruVItemService/GetItem',
     requestStream: false,
     responseStream: false,
     requestType: items_items_model_pb.ItemID,
@@ -378,7 +378,7 @@ var MruVItemServiceService = exports.MruVItemServiceService = {
   },
   // Delete item by id.
   deleteItem: {
-    path: '/mruv.items.MruVItemService/DeleteItem',
+    path: '/mruv.MruVItemService/DeleteItem',
     requestStream: false,
     responseStream: false,
     requestType: items_items_model_pb.ItemID,
@@ -390,19 +390,19 @@ var MruVItemServiceService = exports.MruVItemServiceService = {
   },
   // Gets all items.
   getItems: {
-    path: '/mruv.items.MruVItemService/GetItems',
+    path: '/mruv.MruVItemService/GetItems',
     requestStream: false,
     responseStream: false,
     requestType: items_items_pb.GetItemsRequest,
     responseType: items_items_pb.GetItemsResponse,
-    requestSerialize: serialize_mruv_items_GetItemsRequest,
-    requestDeserialize: deserialize_mruv_items_GetItemsRequest,
-    responseSerialize: serialize_mruv_items_GetItemsResponse,
-    responseDeserialize: deserialize_mruv_items_GetItemsResponse,
+    requestSerialize: serialize_mruv_GetItemsRequest,
+    requestDeserialize: deserialize_mruv_GetItemsRequest,
+    responseSerialize: serialize_mruv_GetItemsResponse,
+    responseDeserialize: deserialize_mruv_GetItemsResponse,
   },
   // Create item type.
   createItemType: {
-    path: '/mruv.items.MruVItemService/CreateItemType',
+    path: '/mruv.MruVItemService/CreateItemType',
     requestStream: false,
     responseStream: false,
     requestType: items_items_model_pb.ItemType,
@@ -414,7 +414,7 @@ var MruVItemServiceService = exports.MruVItemServiceService = {
   },
   // Get item type by id.
   getItemType: {
-    path: '/mruv.items.MruVItemService/GetItemType',
+    path: '/mruv.MruVItemService/GetItemType',
     requestStream: false,
     responseStream: false,
     requestType: items_items_model_pb.ItemTypeID,
@@ -426,7 +426,7 @@ var MruVItemServiceService = exports.MruVItemServiceService = {
   },
   // Delete item type by id.
   deleteItemType: {
-    path: '/mruv.items.MruVItemService/DeleteItemType',
+    path: '/mruv.MruVItemService/DeleteItemType',
     requestStream: false,
     responseStream: false,
     requestType: items_items_model_pb.ItemTypeID,
@@ -438,19 +438,19 @@ var MruVItemServiceService = exports.MruVItemServiceService = {
   },
   // Gets all item types.
   getItemTypes: {
-    path: '/mruv.items.MruVItemService/GetItemTypes',
+    path: '/mruv.MruVItemService/GetItemTypes',
     requestStream: false,
     responseStream: false,
     requestType: items_items_pb.GetItemTypesRequest,
     responseType: items_items_pb.GetItemTypesResponse,
-    requestSerialize: serialize_mruv_items_GetItemTypesRequest,
-    requestDeserialize: deserialize_mruv_items_GetItemTypesRequest,
-    responseSerialize: serialize_mruv_items_GetItemTypesResponse,
-    responseDeserialize: deserialize_mruv_items_GetItemTypesResponse,
+    requestSerialize: serialize_mruv_GetItemTypesRequest,
+    requestDeserialize: deserialize_mruv_GetItemTypesRequest,
+    responseSerialize: serialize_mruv_GetItemTypesResponse,
+    responseDeserialize: deserialize_mruv_GetItemTypesResponse,
   },
   // Create container.
   createContainer: {
-    path: '/mruv.items.MruVItemService/CreateContainer',
+    path: '/mruv.MruVItemService/CreateContainer',
     requestStream: false,
     responseStream: false,
     requestType: items_items_model_pb.Container,
@@ -462,7 +462,7 @@ var MruVItemServiceService = exports.MruVItemServiceService = {
   },
   // Get container by id.
   getContainer: {
-    path: '/mruv.items.MruVItemService/GetContainer',
+    path: '/mruv.MruVItemService/GetContainer',
     requestStream: false,
     responseStream: false,
     requestType: items_items_model_pb.ContainerID,
@@ -474,7 +474,7 @@ var MruVItemServiceService = exports.MruVItemServiceService = {
   },
   // Delete container by id.
   deleteContainer: {
-    path: '/mruv.items.MruVItemService/DeleteContainer',
+    path: '/mruv.MruVItemService/DeleteContainer',
     requestStream: false,
     responseStream: false,
     requestType: items_items_model_pb.ContainerID,
@@ -486,19 +486,19 @@ var MruVItemServiceService = exports.MruVItemServiceService = {
   },
   // Get all containers.
   getContainers: {
-    path: '/mruv.items.MruVItemService/GetContainers',
+    path: '/mruv.MruVItemService/GetContainers',
     requestStream: false,
     responseStream: false,
     requestType: items_items_pb.GetContainersRequest,
     responseType: items_items_pb.GetContainersResponse,
-    requestSerialize: serialize_mruv_items_GetContainersRequest,
-    requestDeserialize: deserialize_mruv_items_GetContainersRequest,
-    responseSerialize: serialize_mruv_items_GetContainersResponse,
-    responseDeserialize: deserialize_mruv_items_GetContainersResponse,
+    requestSerialize: serialize_mruv_GetContainersRequest,
+    requestDeserialize: deserialize_mruv_GetContainersRequest,
+    responseSerialize: serialize_mruv_GetContainersResponse,
+    responseDeserialize: deserialize_mruv_GetContainersResponse,
   },
   // Create a container type.
   createContainerType: {
-    path: '/mruv.items.MruVItemService/CreateContainerType',
+    path: '/mruv.MruVItemService/CreateContainerType',
     requestStream: false,
     responseStream: false,
     requestType: items_items_model_pb.ContainerType,
@@ -510,7 +510,7 @@ var MruVItemServiceService = exports.MruVItemServiceService = {
   },
   // Get a container type by id.
   getContainerType: {
-    path: '/mruv.items.MruVItemService/GetContainerType',
+    path: '/mruv.MruVItemService/GetContainerType',
     requestStream: false,
     responseStream: false,
     requestType: items_items_model_pb.ContainerTypeID,
@@ -522,7 +522,7 @@ var MruVItemServiceService = exports.MruVItemServiceService = {
   },
   // Delete a container type by id.
   deleteContainerType: {
-    path: '/mruv.items.MruVItemService/DeleteContainerType',
+    path: '/mruv.MruVItemService/DeleteContainerType',
     requestStream: false,
     responseStream: false,
     requestType: items_items_model_pb.ContainerTypeID,
@@ -534,92 +534,92 @@ var MruVItemServiceService = exports.MruVItemServiceService = {
   },
   // Get all container types.
   getContainerTypes: {
-    path: '/mruv.items.MruVItemService/GetContainerTypes',
+    path: '/mruv.MruVItemService/GetContainerTypes',
     requestStream: false,
     responseStream: false,
     requestType: items_items_pb.GetContainerTypesRequest,
     responseType: items_items_pb.GetContainerTypesResponse,
-    requestSerialize: serialize_mruv_items_GetContainerTypesRequest,
-    requestDeserialize: deserialize_mruv_items_GetContainerTypesRequest,
-    responseSerialize: serialize_mruv_items_GetContainerTypesResponse,
-    responseDeserialize: deserialize_mruv_items_GetContainerTypesResponse,
+    requestSerialize: serialize_mruv_GetContainerTypesRequest,
+    requestDeserialize: deserialize_mruv_GetContainerTypesRequest,
+    responseSerialize: serialize_mruv_GetContainerTypesResponse,
+    responseDeserialize: deserialize_mruv_GetContainerTypesResponse,
   },
   // Get items inside a container.
   getContainerItems: {
-    path: '/mruv.items.MruVItemService/GetContainerItems',
+    path: '/mruv.MruVItemService/GetContainerItems',
     requestStream: false,
     responseStream: false,
     requestType: items_items_pb.GetContainerItemsRequest,
     responseType: items_items_pb.GetContainerItemsResponse,
-    requestSerialize: serialize_mruv_items_GetContainerItemsRequest,
-    requestDeserialize: deserialize_mruv_items_GetContainerItemsRequest,
-    responseSerialize: serialize_mruv_items_GetContainerItemsResponse,
-    responseDeserialize: deserialize_mruv_items_GetContainerItemsResponse,
+    requestSerialize: serialize_mruv_GetContainerItemsRequest,
+    requestDeserialize: deserialize_mruv_GetContainerItemsRequest,
+    responseSerialize: serialize_mruv_GetContainerItemsResponse,
+    responseDeserialize: deserialize_mruv_GetContainerItemsResponse,
   },
   // Pull an item from container.
   pullItem: {
-    path: '/mruv.items.MruVItemService/PullItem',
+    path: '/mruv.MruVItemService/PullItem',
     requestStream: false,
     responseStream: false,
     requestType: items_items_pb.PullItemRequest,
     responseType: items_items_model_pb.Item,
-    requestSerialize: serialize_mruv_items_PullItemRequest,
-    requestDeserialize: deserialize_mruv_items_PullItemRequest,
+    requestSerialize: serialize_mruv_PullItemRequest,
+    requestDeserialize: deserialize_mruv_PullItemRequest,
     responseSerialize: serialize_mruv_Item,
     responseDeserialize: deserialize_mruv_Item,
   },
   // Put an item into container.
   putItem: {
-    path: '/mruv.items.MruVItemService/PutItem',
+    path: '/mruv.MruVItemService/PutItem',
     requestStream: false,
     responseStream: false,
     requestType: items_items_pb.PutItemRequest,
     responseType: items_items_pb.PutItemResponse,
-    requestSerialize: serialize_mruv_items_PutItemRequest,
-    requestDeserialize: deserialize_mruv_items_PutItemRequest,
-    responseSerialize: serialize_mruv_items_PutItemResponse,
-    responseDeserialize: deserialize_mruv_items_PutItemResponse,
+    requestSerialize: serialize_mruv_PutItemRequest,
+    requestDeserialize: deserialize_mruv_PutItemRequest,
+    responseSerialize: serialize_mruv_PutItemResponse,
+    responseDeserialize: deserialize_mruv_PutItemResponse,
   },
   // Sort items inside container.
   // This procedure change order of items inside container.
   sortItems: {
-    path: '/mruv.items.MruVItemService/SortItems',
+    path: '/mruv.MruVItemService/SortItems',
     requestStream: false,
     responseStream: false,
     requestType: items_items_pb.SortItemsRequest,
     responseType: items_items_pb.SortItemsResponse,
-    requestSerialize: serialize_mruv_items_SortItemsRequest,
-    requestDeserialize: deserialize_mruv_items_SortItemsRequest,
-    responseSerialize: serialize_mruv_items_SortItemsResponse,
-    responseDeserialize: deserialize_mruv_items_SortItemsResponse,
+    requestSerialize: serialize_mruv_SortItemsRequest,
+    requestDeserialize: deserialize_mruv_SortItemsRequest,
+    responseSerialize: serialize_mruv_SortItemsResponse,
+    responseDeserialize: deserialize_mruv_SortItemsResponse,
   },
   // Retrieves from the container the list of items nearest to the given position.
   getNearestItems: {
-    path: '/mruv.items.MruVItemService/GetNearestItems',
+    path: '/mruv.MruVItemService/GetNearestItems',
     requestStream: false,
     responseStream: false,
     requestType: items_items_pb.GetNearestItemsRequest,
     responseType: items_items_pb.GetNearestItemsResponse,
-    requestSerialize: serialize_mruv_items_GetNearestItemsRequest,
-    requestDeserialize: deserialize_mruv_items_GetNearestItemsRequest,
-    responseSerialize: serialize_mruv_items_GetNearestItemsResponse,
-    responseDeserialize: deserialize_mruv_items_GetNearestItemsResponse,
+    requestSerialize: serialize_mruv_GetNearestItemsRequest,
+    requestDeserialize: deserialize_mruv_GetNearestItemsRequest,
+    responseSerialize: serialize_mruv_GetNearestItemsResponse,
+    responseDeserialize: deserialize_mruv_GetNearestItemsResponse,
   },
   // Trigger action associated with the item usage.
   useItem: {
-    path: '/mruv.items.MruVItemService/UseItem',
+    path: '/mruv.MruVItemService/UseItem',
     requestStream: false,
     responseStream: false,
     requestType: items_items_pb.UseItemRequest,
     responseType: items_items_pb.UseItemResponse,
-    requestSerialize: serialize_mruv_items_UseItemRequest,
-    requestDeserialize: deserialize_mruv_items_UseItemRequest,
-    responseSerialize: serialize_mruv_items_UseItemResponse,
-    responseDeserialize: deserialize_mruv_items_UseItemResponse,
+    requestSerialize: serialize_mruv_UseItemRequest,
+    requestDeserialize: deserialize_mruv_UseItemRequest,
+    responseSerialize: serialize_mruv_UseItemResponse,
+    responseDeserialize: deserialize_mruv_UseItemResponse,
   },
   // Get service health status.
   getServiceStatus: {
-    path: '/mruv.items.MruVItemService/GetServiceStatus',
+    path: '/mruv.MruVItemService/GetServiceStatus',
     requestStream: false,
     responseStream: false,
     requestType: common_health_pb.ServiceStatusRequest,
@@ -631,7 +631,7 @@ var MruVItemServiceService = exports.MruVItemServiceService = {
   },
   // Get service current version.
   getServiceVersion: {
-    path: '/mruv.items.MruVItemService/GetServiceVersion',
+    path: '/mruv.MruVItemService/GetServiceVersion',
     requestStream: false,
     responseStream: false,
     requestType: common_health_pb.VersionRequest,

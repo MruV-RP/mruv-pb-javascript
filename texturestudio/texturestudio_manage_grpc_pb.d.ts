@@ -1,6 +1,6 @@
 // GENERATED CODE -- DO NOT EDIT!
 
-// package: mruv.texture_studio
+// package: texture_studio
 // file: texturestudio/texturestudio_manage.proto
 
 import * as texturestudio_texturestudio_manage_pb from "../texturestudio/texturestudio_manage_pb";

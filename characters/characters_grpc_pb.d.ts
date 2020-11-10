@@ -1,6 +1,6 @@
 // GENERATED CODE -- DO NOT EDIT!
 
-// package: mruv.characters
+// package: mruv
 // file: characters/characters.proto
 
 import * as characters_characters_pb from "../characters/characters_pb";

@@ -1,4 +1,4 @@
-// package: mruv.texture_studio
+// package: texture_studio
 // file: texturestudio/texturestudio_manage.proto
 
 import * as jspb from "google-protobuf";

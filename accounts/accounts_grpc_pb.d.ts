@@ -1,6 +1,6 @@
 // GENERATED CODE -- DO NOT EDIT!
 
-// package: mruv.accounts
+// package: mruv
 // file: accounts/accounts.proto
 
 import * as accounts_accounts_pb from "../accounts/accounts_pb";
