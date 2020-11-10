@@ -1,3 +1,4 @@
+// source: common/spatial.proto
 /**
  * @fileoverview
  * @enhanceable
@@ -200,9 +201,12 @@ proto.mruv.Position.prototype.getX = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.Position} returns this
+ */
 proto.mruv.Position.prototype.setX = function(value) {
-  jspb.Message.setProto3FloatField(this, 1, value);
+  return jspb.Message.setProto3FloatField(this, 1, value);
 };
 
 
@@ -215,9 +219,12 @@ proto.mruv.Position.prototype.getY = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.Position} returns this
+ */
 proto.mruv.Position.prototype.setY = function(value) {
-  jspb.Message.setProto3FloatField(this, 2, value);
+  return jspb.Message.setProto3FloatField(this, 2, value);
 };
 
 
@@ -230,9 +237,12 @@ proto.mruv.Position.prototype.getZ = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.Position} returns this
+ */
 proto.mruv.Position.prototype.setZ = function(value) {
-  jspb.Message.setProto3FloatField(this, 3, value);
+  return jspb.Message.setProto3FloatField(this, 3, value);
 };
 
 
@@ -381,9 +391,12 @@ proto.mruv.Rotation.prototype.getRx = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.Rotation} returns this
+ */
 proto.mruv.Rotation.prototype.setRx = function(value) {
-  jspb.Message.setProto3FloatField(this, 1, value);
+  return jspb.Message.setProto3FloatField(this, 1, value);
 };
 
 
@@ -396,9 +409,12 @@ proto.mruv.Rotation.prototype.getRy = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.Rotation} returns this
+ */
 proto.mruv.Rotation.prototype.setRy = function(value) {
-  jspb.Message.setProto3FloatField(this, 2, value);
+  return jspb.Message.setProto3FloatField(this, 2, value);
 };
 
 
@@ -411,9 +427,12 @@ proto.mruv.Rotation.prototype.getRz = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.Rotation} returns this
+ */
 proto.mruv.Rotation.prototype.setRz = function(value) {
-  jspb.Message.setProto3FloatField(this, 3, value);
+  return jspb.Message.setProto3FloatField(this, 3, value);
 };
 
 

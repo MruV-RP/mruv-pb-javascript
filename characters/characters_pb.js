@@ -1,3 +1,4 @@
+// source: characters/characters.proto
 /**
  * @fileoverview
  * @enhanceable
@@ -553,9 +554,12 @@ proto.mruv.Character.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.Character} returns this
+ */
 proto.mruv.Character.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -568,9 +572,12 @@ proto.mruv.Character.prototype.getOwnerId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.Character} returns this
+ */
 proto.mruv.Character.prototype.setOwnerId = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -583,9 +590,12 @@ proto.mruv.Character.prototype.getFirstName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.Character} returns this
+ */
 proto.mruv.Character.prototype.setFirstName = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -598,9 +608,12 @@ proto.mruv.Character.prototype.getSecondName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.Character} returns this
+ */
 proto.mruv.Character.prototype.setSecondName = function(value) {
-  jspb.Message.setProto3StringField(this, 4, value);
+  return jspb.Message.setProto3StringField(this, 4, value);
 };
 
 
@@ -613,9 +626,12 @@ proto.mruv.Character.prototype.getAge = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.Character} returns this
+ */
 proto.mruv.Character.prototype.setAge = function(value) {
-  jspb.Message.setProto3IntField(this, 5, value);
+  return jspb.Message.setProto3IntField(this, 5, value);
 };
 
 
@@ -628,9 +644,12 @@ proto.mruv.Character.prototype.getSex = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.Character} returns this
+ */
 proto.mruv.Character.prototype.setSex = function(value) {
-  jspb.Message.setProto3IntField(this, 6, value);
+  return jspb.Message.setProto3IntField(this, 6, value);
 };
 
 
@@ -643,9 +662,12 @@ proto.mruv.Character.prototype.getClothesId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.Character} returns this
+ */
 proto.mruv.Character.prototype.setClothesId = function(value) {
-  jspb.Message.setProto3IntField(this, 7, value);
+  return jspb.Message.setProto3IntField(this, 7, value);
 };
 
 
@@ -658,9 +680,12 @@ proto.mruv.Character.prototype.getX = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.Character} returns this
+ */
 proto.mruv.Character.prototype.setX = function(value) {
-  jspb.Message.setProto3FloatField(this, 8, value);
+  return jspb.Message.setProto3FloatField(this, 8, value);
 };
 
 
@@ -673,9 +698,12 @@ proto.mruv.Character.prototype.getY = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.Character} returns this
+ */
 proto.mruv.Character.prototype.setY = function(value) {
-  jspb.Message.setProto3FloatField(this, 9, value);
+  return jspb.Message.setProto3FloatField(this, 9, value);
 };
 
 
@@ -688,9 +716,12 @@ proto.mruv.Character.prototype.getZ = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.Character} returns this
+ */
 proto.mruv.Character.prototype.setZ = function(value) {
-  jspb.Message.setProto3FloatField(this, 10, value);
+  return jspb.Message.setProto3FloatField(this, 10, value);
 };
 
 
@@ -815,9 +846,12 @@ proto.mruv.CharacterID.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.CharacterID} returns this
+ */
 proto.mruv.CharacterID.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1002,9 +1036,12 @@ proto.mruv.CreateCharacterRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.CreateCharacterRequest} returns this
+ */
 proto.mruv.CreateCharacterRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1017,9 +1054,12 @@ proto.mruv.CreateCharacterRequest.prototype.getOwnerId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.CreateCharacterRequest} returns this
+ */
 proto.mruv.CreateCharacterRequest.prototype.setOwnerId = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -1032,9 +1072,12 @@ proto.mruv.CreateCharacterRequest.prototype.getFirstName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.CreateCharacterRequest} returns this
+ */
 proto.mruv.CreateCharacterRequest.prototype.setFirstName = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -1047,9 +1090,12 @@ proto.mruv.CreateCharacterRequest.prototype.getSecondName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.CreateCharacterRequest} returns this
+ */
 proto.mruv.CreateCharacterRequest.prototype.setSecondName = function(value) {
-  jspb.Message.setProto3StringField(this, 4, value);
+  return jspb.Message.setProto3StringField(this, 4, value);
 };
 
 
@@ -1062,9 +1108,12 @@ proto.mruv.CreateCharacterRequest.prototype.getAge = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.CreateCharacterRequest} returns this
+ */
 proto.mruv.CreateCharacterRequest.prototype.setAge = function(value) {
-  jspb.Message.setProto3IntField(this, 5, value);
+  return jspb.Message.setProto3IntField(this, 5, value);
 };
 
 
@@ -1077,9 +1126,12 @@ proto.mruv.CreateCharacterRequest.prototype.getSex = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.CreateCharacterRequest} returns this
+ */
 proto.mruv.CreateCharacterRequest.prototype.setSex = function(value) {
-  jspb.Message.setProto3IntField(this, 6, value);
+  return jspb.Message.setProto3IntField(this, 6, value);
 };
 
 
@@ -1204,9 +1256,12 @@ proto.mruv.CreateCharacterResponse.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.CreateCharacterResponse} returns this
+ */
 proto.mruv.CreateCharacterResponse.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1331,9 +1386,12 @@ proto.mruv.GetCharacterRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.GetCharacterRequest} returns this
+ */
 proto.mruv.GetCharacterRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1566,9 +1624,12 @@ proto.mruv.GetCharacterResponse.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.GetCharacterResponse} returns this
+ */
 proto.mruv.GetCharacterResponse.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1581,9 +1642,12 @@ proto.mruv.GetCharacterResponse.prototype.getOwnerId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.GetCharacterResponse} returns this
+ */
 proto.mruv.GetCharacterResponse.prototype.setOwnerId = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -1596,9 +1660,12 @@ proto.mruv.GetCharacterResponse.prototype.getFirstName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.GetCharacterResponse} returns this
+ */
 proto.mruv.GetCharacterResponse.prototype.setFirstName = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -1611,9 +1678,12 @@ proto.mruv.GetCharacterResponse.prototype.getSecondName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.GetCharacterResponse} returns this
+ */
 proto.mruv.GetCharacterResponse.prototype.setSecondName = function(value) {
-  jspb.Message.setProto3StringField(this, 4, value);
+  return jspb.Message.setProto3StringField(this, 4, value);
 };
 
 
@@ -1626,9 +1696,12 @@ proto.mruv.GetCharacterResponse.prototype.getAge = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.GetCharacterResponse} returns this
+ */
 proto.mruv.GetCharacterResponse.prototype.setAge = function(value) {
-  jspb.Message.setProto3IntField(this, 5, value);
+  return jspb.Message.setProto3IntField(this, 5, value);
 };
 
 
@@ -1641,9 +1714,12 @@ proto.mruv.GetCharacterResponse.prototype.getSex = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.GetCharacterResponse} returns this
+ */
 proto.mruv.GetCharacterResponse.prototype.setSex = function(value) {
-  jspb.Message.setProto3IntField(this, 6, value);
+  return jspb.Message.setProto3IntField(this, 6, value);
 };
 
 
@@ -1656,9 +1732,12 @@ proto.mruv.GetCharacterResponse.prototype.getClothesId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.GetCharacterResponse} returns this
+ */
 proto.mruv.GetCharacterResponse.prototype.setClothesId = function(value) {
-  jspb.Message.setProto3IntField(this, 7, value);
+  return jspb.Message.setProto3IntField(this, 7, value);
 };
 
 
@@ -1671,9 +1750,12 @@ proto.mruv.GetCharacterResponse.prototype.getX = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.GetCharacterResponse} returns this
+ */
 proto.mruv.GetCharacterResponse.prototype.setX = function(value) {
-  jspb.Message.setProto3FloatField(this, 8, value);
+  return jspb.Message.setProto3FloatField(this, 8, value);
 };
 
 
@@ -1686,9 +1768,12 @@ proto.mruv.GetCharacterResponse.prototype.getY = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.GetCharacterResponse} returns this
+ */
 proto.mruv.GetCharacterResponse.prototype.setY = function(value) {
-  jspb.Message.setProto3FloatField(this, 9, value);
+  return jspb.Message.setProto3FloatField(this, 9, value);
 };
 
 
@@ -1701,9 +1786,12 @@ proto.mruv.GetCharacterResponse.prototype.getZ = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.GetCharacterResponse} returns this
+ */
 proto.mruv.GetCharacterResponse.prototype.setZ = function(value) {
-  jspb.Message.setProto3FloatField(this, 10, value);
+  return jspb.Message.setProto3FloatField(this, 10, value);
 };
 
 
@@ -1828,9 +1916,12 @@ proto.mruv.UpdateCharacterRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.UpdateCharacterRequest} returns this
+ */
 proto.mruv.UpdateCharacterRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2056,9 +2147,12 @@ proto.mruv.DeleteCharacterRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.DeleteCharacterRequest} returns this
+ */
 proto.mruv.DeleteCharacterRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2296,9 +2390,12 @@ proto.mruv.ChangeClothesRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.ChangeClothesRequest} returns this
+ */
 proto.mruv.ChangeClothesRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2311,9 +2408,12 @@ proto.mruv.ChangeClothesRequest.prototype.getClothesId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.ChangeClothesRequest} returns this
+ */
 proto.mruv.ChangeClothesRequest.prototype.setClothesId = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -2546,26 +2646,31 @@ proto.mruv.DeathStreamRequest.prototype.getDeathTypesList = function() {
 };
 
 
-/** @param {!Array<!proto.mruv.DeathType>} value */
+/**
+ * @param {!Array<!proto.mruv.DeathType>} value
+ * @return {!proto.mruv.DeathStreamRequest} returns this
+ */
 proto.mruv.DeathStreamRequest.prototype.setDeathTypesList = function(value) {
-  jspb.Message.setField(this, 1, value || []);
+  return jspb.Message.setField(this, 1, value || []);
 };
 
 
 /**
  * @param {!proto.mruv.DeathType} value
  * @param {number=} opt_index
+ * @return {!proto.mruv.DeathStreamRequest} returns this
  */
 proto.mruv.DeathStreamRequest.prototype.addDeathTypes = function(value, opt_index) {
-  jspb.Message.addToRepeatedField(this, 1, value, opt_index);
+  return jspb.Message.addToRepeatedField(this, 1, value, opt_index);
 };
 
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.mruv.DeathStreamRequest} returns this
  */
 proto.mruv.DeathStreamRequest.prototype.clearDeathTypesList = function() {
-  this.setDeathTypesList([]);
+  return this.setDeathTypesList([]);
 };
 
 
@@ -2705,17 +2810,21 @@ proto.mruv.DeathStreamResponse.prototype.getCharacter = function() {
 };
 
 
-/** @param {?proto.mruv.Character|undefined} value */
+/**
+ * @param {?proto.mruv.Character|undefined} value
+ * @return {!proto.mruv.DeathStreamResponse} returns this
+*/
 proto.mruv.DeathStreamResponse.prototype.setCharacter = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.mruv.DeathStreamResponse} returns this
  */
 proto.mruv.DeathStreamResponse.prototype.clearCharacter = function() {
-  this.setCharacter(undefined);
+  return this.setCharacter(undefined);
 };
 
 
@@ -2737,9 +2846,12 @@ proto.mruv.DeathStreamResponse.prototype.getDeathType = function() {
 };
 
 
-/** @param {!proto.mruv.DeathType} value */
+/**
+ * @param {!proto.mruv.DeathType} value
+ * @return {!proto.mruv.DeathStreamResponse} returns this
+ */
 proto.mruv.DeathStreamResponse.prototype.setDeathType = function(value) {
-  jspb.Message.setProto3EnumField(this, 2, value);
+  return jspb.Message.setProto3EnumField(this, 2, value);
 };
 
 

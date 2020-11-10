@@ -1,3 +1,4 @@
+// source: common/health.proto
 /**
  * @fileoverview
  * @enhanceable
@@ -321,9 +322,12 @@ proto.mruv.ServiceStatusResponse.prototype.getStatus = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.ServiceStatusResponse} returns this
+ */
 proto.mruv.ServiceStatusResponse.prototype.setStatus = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -585,9 +589,12 @@ proto.mruv.VersionResponse.prototype.getVersion = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.VersionResponse} returns this
+ */
 proto.mruv.VersionResponse.prototype.setVersion = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -600,9 +607,12 @@ proto.mruv.VersionResponse.prototype.getBuildDate = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.VersionResponse} returns this
+ */
 proto.mruv.VersionResponse.prototype.setBuildDate = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -615,9 +625,12 @@ proto.mruv.VersionResponse.prototype.getCommit = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.VersionResponse} returns this
+ */
 proto.mruv.VersionResponse.prototype.setCommit = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -630,9 +643,12 @@ proto.mruv.VersionResponse.prototype.getOsArch = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.VersionResponse} returns this
+ */
 proto.mruv.VersionResponse.prototype.setOsArch = function(value) {
-  jspb.Message.setProto3StringField(this, 4, value);
+  return jspb.Message.setProto3StringField(this, 4, value);
 };
 
 

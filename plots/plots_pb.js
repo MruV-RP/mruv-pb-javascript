@@ -1,3 +1,4 @@
+// source: plots/plots.proto
 /**
  * @fileoverview
  * @enhanceable
@@ -368,9 +369,12 @@ proto.mruv.plots.Plot.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.plots.Plot} returns this
+ */
 proto.mruv.plots.Plot.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -383,9 +387,12 @@ proto.mruv.plots.Plot.prototype.getDescription = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.plots.Plot} returns this
+ */
 proto.mruv.plots.Plot.prototype.setDescription = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -399,9 +406,12 @@ proto.mruv.plots.Plot.prototype.getPointsList = function() {
 };
 
 
-/** @param {!Array<!proto.mruv.Position>} value */
+/**
+ * @param {!Array<!proto.mruv.Position>} value
+ * @return {!proto.mruv.plots.Plot} returns this
+*/
 proto.mruv.plots.Plot.prototype.setPointsList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 3, value);
+  return jspb.Message.setRepeatedWrapperField(this, 3, value);
 };
 
 
@@ -417,9 +427,10 @@ proto.mruv.plots.Plot.prototype.addPoints = function(opt_value, opt_index) {
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.mruv.plots.Plot} returns this
  */
 proto.mruv.plots.Plot.prototype.clearPointsList = function() {
-  this.setPointsList([]);
+  return this.setPointsList([]);
 };
 
 
@@ -578,9 +589,12 @@ proto.mruv.plots.CreatePlotRequest.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.plots.CreatePlotRequest} returns this
+ */
 proto.mruv.plots.CreatePlotRequest.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -593,9 +607,12 @@ proto.mruv.plots.CreatePlotRequest.prototype.getDescription = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.plots.CreatePlotRequest} returns this
+ */
 proto.mruv.plots.CreatePlotRequest.prototype.setDescription = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -609,9 +626,12 @@ proto.mruv.plots.CreatePlotRequest.prototype.getPointsList = function() {
 };
 
 
-/** @param {!Array<!proto.mruv.Position>} value */
+/**
+ * @param {!Array<!proto.mruv.Position>} value
+ * @return {!proto.mruv.plots.CreatePlotRequest} returns this
+*/
 proto.mruv.plots.CreatePlotRequest.prototype.setPointsList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 3, value);
+  return jspb.Message.setRepeatedWrapperField(this, 3, value);
 };
 
 
@@ -627,9 +647,10 @@ proto.mruv.plots.CreatePlotRequest.prototype.addPoints = function(opt_value, opt
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.mruv.plots.CreatePlotRequest} returns this
  */
 proto.mruv.plots.CreatePlotRequest.prototype.clearPointsList = function() {
-  this.setPointsList([]);
+  return this.setPointsList([]);
 };
 
 
@@ -754,9 +775,12 @@ proto.mruv.plots.CreatePlotResponse.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.plots.CreatePlotResponse} returns this
+ */
 proto.mruv.plots.CreatePlotResponse.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -881,9 +905,12 @@ proto.mruv.plots.GetPlotRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.plots.GetPlotRequest} returns this
+ */
 proto.mruv.plots.GetPlotRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1054,9 +1081,12 @@ proto.mruv.plots.GetPlotResponse.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.plots.GetPlotResponse} returns this
+ */
 proto.mruv.plots.GetPlotResponse.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -1069,9 +1099,12 @@ proto.mruv.plots.GetPlotResponse.prototype.getDescription = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.plots.GetPlotResponse} returns this
+ */
 proto.mruv.plots.GetPlotResponse.prototype.setDescription = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -1085,9 +1118,12 @@ proto.mruv.plots.GetPlotResponse.prototype.getPointsList = function() {
 };
 
 
-/** @param {!Array<!proto.mruv.Position>} value */
+/**
+ * @param {!Array<!proto.mruv.Position>} value
+ * @return {!proto.mruv.plots.GetPlotResponse} returns this
+*/
 proto.mruv.plots.GetPlotResponse.prototype.setPointsList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 3, value);
+  return jspb.Message.setRepeatedWrapperField(this, 3, value);
 };
 
 
@@ -1103,9 +1139,10 @@ proto.mruv.plots.GetPlotResponse.prototype.addPoints = function(opt_value, opt_i
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.mruv.plots.GetPlotResponse} returns this
  */
 proto.mruv.plots.GetPlotResponse.prototype.clearPointsList = function() {
-  this.setPointsList([]);
+  return this.setPointsList([]);
 };
 
 
@@ -1118,9 +1155,12 @@ proto.mruv.plots.GetPlotResponse.prototype.getArea = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.plots.GetPlotResponse} returns this
+ */
 proto.mruv.plots.GetPlotResponse.prototype.setArea = function(value) {
-  jspb.Message.setProto3FloatField(this, 4, value);
+  return jspb.Message.setProto3FloatField(this, 4, value);
 };
 
 
@@ -1269,9 +1309,12 @@ proto.mruv.plots.UpdatePlotRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.plots.UpdatePlotRequest} returns this
+ */
 proto.mruv.plots.UpdatePlotRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1284,9 +1327,12 @@ proto.mruv.plots.UpdatePlotRequest.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.plots.UpdatePlotRequest} returns this
+ */
 proto.mruv.plots.UpdatePlotRequest.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -1299,9 +1345,12 @@ proto.mruv.plots.UpdatePlotRequest.prototype.getDescription = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.plots.UpdatePlotRequest} returns this
+ */
 proto.mruv.plots.UpdatePlotRequest.prototype.setDescription = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -1527,9 +1576,12 @@ proto.mruv.plots.DeletePlotRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.plots.DeletePlotRequest} returns this
+ */
 proto.mruv.plots.DeletePlotRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 

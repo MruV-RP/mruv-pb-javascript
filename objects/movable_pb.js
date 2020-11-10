@@ -1,3 +1,4 @@
+// source: objects/movable.proto
 /**
  * @fileoverview
  * @enhanceable
@@ -616,9 +617,12 @@ proto.mruv.objects.State.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.objects.State} returns this
+ */
 proto.mruv.objects.State.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -631,9 +635,12 @@ proto.mruv.objects.State.prototype.getX = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.State} returns this
+ */
 proto.mruv.objects.State.prototype.setX = function(value) {
-  jspb.Message.setProto3FloatField(this, 2, value);
+  return jspb.Message.setProto3FloatField(this, 2, value);
 };
 
 
@@ -646,9 +653,12 @@ proto.mruv.objects.State.prototype.getY = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.State} returns this
+ */
 proto.mruv.objects.State.prototype.setY = function(value) {
-  jspb.Message.setProto3FloatField(this, 3, value);
+  return jspb.Message.setProto3FloatField(this, 3, value);
 };
 
 
@@ -661,9 +671,12 @@ proto.mruv.objects.State.prototype.getZ = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.State} returns this
+ */
 proto.mruv.objects.State.prototype.setZ = function(value) {
-  jspb.Message.setProto3FloatField(this, 4, value);
+  return jspb.Message.setProto3FloatField(this, 4, value);
 };
 
 
@@ -676,9 +689,12 @@ proto.mruv.objects.State.prototype.getRx = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.State} returns this
+ */
 proto.mruv.objects.State.prototype.setRx = function(value) {
-  jspb.Message.setProto3FloatField(this, 5, value);
+  return jspb.Message.setProto3FloatField(this, 5, value);
 };
 
 
@@ -691,9 +707,12 @@ proto.mruv.objects.State.prototype.getRy = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.State} returns this
+ */
 proto.mruv.objects.State.prototype.setRy = function(value) {
-  jspb.Message.setProto3FloatField(this, 6, value);
+  return jspb.Message.setProto3FloatField(this, 6, value);
 };
 
 
@@ -706,9 +725,12 @@ proto.mruv.objects.State.prototype.getRz = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.State} returns this
+ */
 proto.mruv.objects.State.prototype.setRz = function(value) {
-  jspb.Message.setProto3FloatField(this, 7, value);
+  return jspb.Message.setProto3FloatField(this, 7, value);
 };
 
 
@@ -721,9 +743,12 @@ proto.mruv.objects.State.prototype.getTransitionSpeed = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.State} returns this
+ */
 proto.mruv.objects.State.prototype.setTransitionSpeed = function(value) {
-  jspb.Message.setProto3FloatField(this, 8, value);
+  return jspb.Message.setProto3FloatField(this, 8, value);
 };
 
 
@@ -873,17 +898,21 @@ proto.mruv.objects.MovableObject.prototype.getObject = function() {
 };
 
 
-/** @param {?proto.mruv.objects.Object|undefined} value */
+/**
+ * @param {?proto.mruv.objects.Object|undefined} value
+ * @return {!proto.mruv.objects.MovableObject} returns this
+*/
 proto.mruv.objects.MovableObject.prototype.setObject = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.mruv.objects.MovableObject} returns this
  */
 proto.mruv.objects.MovableObject.prototype.clearObject = function() {
-  this.setObject(undefined);
+  return this.setObject(undefined);
 };
 
 
@@ -906,9 +935,12 @@ proto.mruv.objects.MovableObject.prototype.getStatesList = function() {
 };
 
 
-/** @param {!Array<!proto.mruv.objects.State>} value */
+/**
+ * @param {!Array<!proto.mruv.objects.State>} value
+ * @return {!proto.mruv.objects.MovableObject} returns this
+*/
 proto.mruv.objects.MovableObject.prototype.setStatesList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 2, value);
+  return jspb.Message.setRepeatedWrapperField(this, 2, value);
 };
 
 
@@ -924,9 +956,10 @@ proto.mruv.objects.MovableObject.prototype.addStates = function(opt_value, opt_i
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.mruv.objects.MovableObject} returns this
  */
 proto.mruv.objects.MovableObject.prototype.clearStatesList = function() {
-  this.setStatesList([]);
+  return this.setStatesList([]);
 };
 
 
@@ -1076,17 +1109,21 @@ proto.mruv.objects.CreateMovableObjectRequest.prototype.getObject = function() {
 };
 
 
-/** @param {?proto.mruv.objects.Object|undefined} value */
+/**
+ * @param {?proto.mruv.objects.Object|undefined} value
+ * @return {!proto.mruv.objects.CreateMovableObjectRequest} returns this
+*/
 proto.mruv.objects.CreateMovableObjectRequest.prototype.setObject = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.mruv.objects.CreateMovableObjectRequest} returns this
  */
 proto.mruv.objects.CreateMovableObjectRequest.prototype.clearObject = function() {
-  this.setObject(undefined);
+  return this.setObject(undefined);
 };
 
 
@@ -1109,9 +1146,12 @@ proto.mruv.objects.CreateMovableObjectRequest.prototype.getStatesList = function
 };
 
 
-/** @param {!Array<!proto.mruv.objects.State>} value */
+/**
+ * @param {!Array<!proto.mruv.objects.State>} value
+ * @return {!proto.mruv.objects.CreateMovableObjectRequest} returns this
+*/
 proto.mruv.objects.CreateMovableObjectRequest.prototype.setStatesList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 2, value);
+  return jspb.Message.setRepeatedWrapperField(this, 2, value);
 };
 
 
@@ -1127,9 +1167,10 @@ proto.mruv.objects.CreateMovableObjectRequest.prototype.addStates = function(opt
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.mruv.objects.CreateMovableObjectRequest} returns this
  */
 proto.mruv.objects.CreateMovableObjectRequest.prototype.clearStatesList = function() {
-  this.setStatesList([]);
+  return this.setStatesList([]);
 };
 
 
@@ -1254,9 +1295,12 @@ proto.mruv.objects.CreateMovableObjectResponse.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.CreateMovableObjectResponse} returns this
+ */
 proto.mruv.objects.CreateMovableObjectResponse.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1381,9 +1425,12 @@ proto.mruv.objects.GetMovableObjectRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.GetMovableObjectRequest} returns this
+ */
 proto.mruv.objects.GetMovableObjectRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1557,17 +1604,21 @@ proto.mruv.objects.GetMovableObjectResponse.prototype.getObject = function() {
 };
 
 
-/** @param {?proto.mruv.objects.Object|undefined} value */
+/**
+ * @param {?proto.mruv.objects.Object|undefined} value
+ * @return {!proto.mruv.objects.GetMovableObjectResponse} returns this
+*/
 proto.mruv.objects.GetMovableObjectResponse.prototype.setObject = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.mruv.objects.GetMovableObjectResponse} returns this
  */
 proto.mruv.objects.GetMovableObjectResponse.prototype.clearObject = function() {
-  this.setObject(undefined);
+  return this.setObject(undefined);
 };
 
 
@@ -1590,9 +1641,12 @@ proto.mruv.objects.GetMovableObjectResponse.prototype.getStatesList = function()
 };
 
 
-/** @param {!Array<!proto.mruv.objects.State>} value */
+/**
+ * @param {!Array<!proto.mruv.objects.State>} value
+ * @return {!proto.mruv.objects.GetMovableObjectResponse} returns this
+*/
 proto.mruv.objects.GetMovableObjectResponse.prototype.setStatesList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 2, value);
+  return jspb.Message.setRepeatedWrapperField(this, 2, value);
 };
 
 
@@ -1608,9 +1662,10 @@ proto.mruv.objects.GetMovableObjectResponse.prototype.addStates = function(opt_v
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.mruv.objects.GetMovableObjectResponse} returns this
  */
 proto.mruv.objects.GetMovableObjectResponse.prototype.clearStatesList = function() {
-  this.setStatesList([]);
+  return this.setStatesList([]);
 };
 
 
@@ -1623,9 +1678,12 @@ proto.mruv.objects.GetMovableObjectResponse.prototype.getCurrentStateId = functi
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.GetMovableObjectResponse} returns this
+ */
 proto.mruv.objects.GetMovableObjectResponse.prototype.setCurrentStateId = function(value) {
-  jspb.Message.setProto3IntField(this, 3, value);
+  return jspb.Message.setProto3IntField(this, 3, value);
 };
 
 
@@ -1638,9 +1696,12 @@ proto.mruv.objects.GetMovableObjectResponse.prototype.getCurrentStateName = func
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.objects.GetMovableObjectResponse} returns this
+ */
 proto.mruv.objects.GetMovableObjectResponse.prototype.setCurrentStateName = function(value) {
-  jspb.Message.setProto3StringField(this, 4, value);
+  return jspb.Message.setProto3StringField(this, 4, value);
 };
 
 
@@ -1799,9 +1860,12 @@ proto.mruv.objects.UpdateMovableObjectRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.UpdateMovableObjectRequest} returns this
+ */
 proto.mruv.objects.UpdateMovableObjectRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1814,9 +1878,12 @@ proto.mruv.objects.UpdateMovableObjectRequest.prototype.getObjectId = function()
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.UpdateMovableObjectRequest} returns this
+ */
 proto.mruv.objects.UpdateMovableObjectRequest.prototype.setObjectId = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -1830,9 +1897,12 @@ proto.mruv.objects.UpdateMovableObjectRequest.prototype.getStatesList = function
 };
 
 
-/** @param {!Array<!proto.mruv.objects.State>} value */
+/**
+ * @param {!Array<!proto.mruv.objects.State>} value
+ * @return {!proto.mruv.objects.UpdateMovableObjectRequest} returns this
+*/
 proto.mruv.objects.UpdateMovableObjectRequest.prototype.setStatesList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 3, value);
+  return jspb.Message.setRepeatedWrapperField(this, 3, value);
 };
 
 
@@ -1848,9 +1918,10 @@ proto.mruv.objects.UpdateMovableObjectRequest.prototype.addStates = function(opt
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.mruv.objects.UpdateMovableObjectRequest} returns this
  */
 proto.mruv.objects.UpdateMovableObjectRequest.prototype.clearStatesList = function() {
-  this.setStatesList([]);
+  return this.setStatesList([]);
 };
 
 
@@ -2076,9 +2147,12 @@ proto.mruv.objects.DeleteMovableObjectRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.DeleteMovableObjectRequest} returns this
+ */
 proto.mruv.objects.DeleteMovableObjectRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2304,9 +2378,12 @@ proto.mruv.objects.MoveObjectRequest.prototype.getState = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.MoveObjectRequest} returns this
+ */
 proto.mruv.objects.MoveObjectRequest.prototype.setState = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2532,9 +2609,12 @@ proto.mruv.objects.MoveObjectNextRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.MoveObjectNextRequest} returns this
+ */
 proto.mruv.objects.MoveObjectNextRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2671,9 +2751,12 @@ proto.mruv.objects.MoveObjectNextResponse.prototype.getStateId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.MoveObjectNextResponse} returns this
+ */
 proto.mruv.objects.MoveObjectNextResponse.prototype.setStateId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2686,9 +2769,12 @@ proto.mruv.objects.MoveObjectNextResponse.prototype.getStateName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.objects.MoveObjectNextResponse} returns this
+ */
 proto.mruv.objects.MoveObjectNextResponse.prototype.setStateName = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -2813,9 +2899,12 @@ proto.mruv.objects.MoveObjectPreviousRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.MoveObjectPreviousRequest} returns this
+ */
 proto.mruv.objects.MoveObjectPreviousRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2952,9 +3041,12 @@ proto.mruv.objects.MoveObjectPreviousResponse.prototype.getStateId = function() 
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.MoveObjectPreviousResponse} returns this
+ */
 proto.mruv.objects.MoveObjectPreviousResponse.prototype.setStateId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2967,9 +3059,12 @@ proto.mruv.objects.MoveObjectPreviousResponse.prototype.getStateName = function(
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.objects.MoveObjectPreviousResponse} returns this
+ */
 proto.mruv.objects.MoveObjectPreviousResponse.prototype.setStateName = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -3094,9 +3189,12 @@ proto.mruv.objects.FetchAllMovableObjectsRequest.prototype.getChunkSize = functi
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.FetchAllMovableObjectsRequest} returns this
+ */
 proto.mruv.objects.FetchAllMovableObjectsRequest.prototype.setChunkSize = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -3172,7 +3270,7 @@ proto.mruv.objects.FetchAllMovableObjectsResponse.deserializeBinaryFromReader = 
     case 1:
       var value = msg.getMovableObjectsMap();
       reader.readMessage(value, function(message, reader) {
-        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readUint32, jspb.BinaryReader.prototype.readMessage, proto.mruv.objects.MovableObject.deserializeBinaryFromReader, 0);
+        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readUint32, jspb.BinaryReader.prototype.readMessage, proto.mruv.objects.MovableObject.deserializeBinaryFromReader, 0, new proto.mruv.objects.MovableObject());
          });
       break;
     default:
@@ -3226,10 +3324,11 @@ proto.mruv.objects.FetchAllMovableObjectsResponse.prototype.getMovableObjectsMap
 
 /**
  * Clears values from the map. The map will be non-null.
+ * @return {!proto.mruv.objects.FetchAllMovableObjectsResponse} returns this
  */
 proto.mruv.objects.FetchAllMovableObjectsResponse.prototype.clearMovableObjectsMap = function() {
   this.getMovableObjectsMap().clear();
-};
+  return this;};
 
 
 goog.object.extend(exports, proto.mruv.objects);

@@ -1,3 +1,4 @@
+// source: elevators/elevators.proto
 /**
  * @fileoverview
  * @enhanceable
@@ -455,9 +456,12 @@ proto.mruv.elevators.CreateElevatorResponse.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.elevators.CreateElevatorResponse} returns this
+ */
 proto.mruv.elevators.CreateElevatorResponse.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -582,9 +586,12 @@ proto.mruv.elevators.GetElevatorRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.elevators.GetElevatorRequest} returns this
+ */
 proto.mruv.elevators.GetElevatorRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -810,9 +817,12 @@ proto.mruv.elevators.UpdateElevatorRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.elevators.UpdateElevatorRequest} returns this
+ */
 proto.mruv.elevators.UpdateElevatorRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1038,9 +1048,12 @@ proto.mruv.elevators.DeleteElevatorRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.elevators.DeleteElevatorRequest} returns this
+ */
 proto.mruv.elevators.DeleteElevatorRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1266,9 +1279,12 @@ proto.mruv.elevators.GetElevatorFloorsRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.elevators.GetElevatorFloorsRequest} returns this
+ */
 proto.mruv.elevators.GetElevatorFloorsRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 

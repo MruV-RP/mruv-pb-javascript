@@ -1,3 +1,4 @@
+// source: vehicles/vehicles.proto
 /**
  * @fileoverview
  * @enhanceable
@@ -512,9 +513,12 @@ proto.mruv.vehicles.GetVehicleRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.vehicles.GetVehicleRequest} returns this
+ */
 proto.mruv.vehicles.GetVehicleRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -740,9 +744,12 @@ proto.mruv.vehicles.UpdateVehicleRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.vehicles.UpdateVehicleRequest} returns this
+ */
 proto.mruv.vehicles.UpdateVehicleRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -968,9 +975,12 @@ proto.mruv.vehicles.DeleteVehicleRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.vehicles.DeleteVehicleRequest} returns this
+ */
 proto.mruv.vehicles.DeleteVehicleRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 

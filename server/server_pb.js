@@ -1,3 +1,4 @@
+// source: server/server.proto
 /**
  * @fileoverview
  * @enhanceable
@@ -381,9 +382,12 @@ proto.mruv.server.GetRegisteredServersResponse.prototype.getServersList = functi
 };
 
 
-/** @param {!Array<!proto.mruv.server.ServerInfo>} value */
+/**
+ * @param {!Array<!proto.mruv.server.ServerInfo>} value
+ * @return {!proto.mruv.server.GetRegisteredServersResponse} returns this
+*/
 proto.mruv.server.GetRegisteredServersResponse.prototype.setServersList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 1, value);
+  return jspb.Message.setRepeatedWrapperField(this, 1, value);
 };
 
 
@@ -399,9 +403,10 @@ proto.mruv.server.GetRegisteredServersResponse.prototype.addServers = function(o
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.mruv.server.GetRegisteredServersResponse} returns this
  */
 proto.mruv.server.GetRegisteredServersResponse.prototype.clearServersList = function() {
-  this.setServersList([]);
+  return this.setServersList([]);
 };
 
 
@@ -550,9 +555,12 @@ proto.mruv.server.UpdateServerStatusRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.server.UpdateServerStatusRequest} returns this
+ */
 proto.mruv.server.UpdateServerStatusRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -565,9 +573,12 @@ proto.mruv.server.UpdateServerStatusRequest.prototype.getStatus = function() {
 };
 
 
-/** @param {!proto.mruv.server.ServerStatus} value */
+/**
+ * @param {!proto.mruv.server.ServerStatus} value
+ * @return {!proto.mruv.server.UpdateServerStatusRequest} returns this
+ */
 proto.mruv.server.UpdateServerStatusRequest.prototype.setStatus = function(value) {
-  jspb.Message.setProto3EnumField(this, 2, value);
+  return jspb.Message.setProto3EnumField(this, 2, value);
 };
 
 
@@ -580,9 +591,12 @@ proto.mruv.server.UpdateServerStatusRequest.prototype.getPlayers = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.server.UpdateServerStatusRequest} returns this
+ */
 proto.mruv.server.UpdateServerStatusRequest.prototype.setPlayers = function(value) {
-  jspb.Message.setProto3IntField(this, 3, value);
+  return jspb.Message.setProto3IntField(this, 3, value);
 };
 
 
@@ -808,9 +822,12 @@ proto.mruv.server.ServerEventsStreamRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.server.ServerEventsStreamRequest} returns this
+ */
 proto.mruv.server.ServerEventsStreamRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -946,9 +963,12 @@ proto.mruv.server.ServerEvent.prototype.getType = function() {
 };
 
 
-/** @param {!proto.mruv.server.ServerEvent.ServerEventType} value */
+/**
+ * @param {!proto.mruv.server.ServerEvent.ServerEventType} value
+ * @return {!proto.mruv.server.ServerEvent} returns this
+ */
 proto.mruv.server.ServerEvent.prototype.setType = function(value) {
-  jspb.Message.setProto3EnumField(this, 1, value);
+  return jspb.Message.setProto3EnumField(this, 1, value);
 };
 
 

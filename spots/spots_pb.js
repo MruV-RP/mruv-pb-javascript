@@ -1,3 +1,4 @@
+// source: spots/spots.proto
 /**
  * @fileoverview
  * @enhanceable
@@ -472,9 +473,12 @@ proto.mruv.spots.Spot.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.spots.Spot} returns this
+ */
 proto.mruv.spots.Spot.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -487,9 +491,12 @@ proto.mruv.spots.Spot.prototype.getMessage = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.spots.Spot} returns this
+ */
 proto.mruv.spots.Spot.prototype.setMessage = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -502,9 +509,12 @@ proto.mruv.spots.Spot.prototype.getIcon = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.spots.Spot} returns this
+ */
 proto.mruv.spots.Spot.prototype.setIcon = function(value) {
-  jspb.Message.setProto3IntField(this, 3, value);
+  return jspb.Message.setProto3IntField(this, 3, value);
 };
 
 
@@ -517,9 +527,12 @@ proto.mruv.spots.Spot.prototype.getMarker = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.spots.Spot} returns this
+ */
 proto.mruv.spots.Spot.prototype.setMarker = function(value) {
-  jspb.Message.setProto3IntField(this, 4, value);
+  return jspb.Message.setProto3IntField(this, 4, value);
 };
 
 
@@ -532,9 +545,12 @@ proto.mruv.spots.Spot.prototype.getX = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.spots.Spot} returns this
+ */
 proto.mruv.spots.Spot.prototype.setX = function(value) {
-  jspb.Message.setProto3FloatField(this, 5, value);
+  return jspb.Message.setProto3FloatField(this, 5, value);
 };
 
 
@@ -547,9 +563,12 @@ proto.mruv.spots.Spot.prototype.getY = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.spots.Spot} returns this
+ */
 proto.mruv.spots.Spot.prototype.setY = function(value) {
-  jspb.Message.setProto3FloatField(this, 6, value);
+  return jspb.Message.setProto3FloatField(this, 6, value);
 };
 
 
@@ -562,9 +581,12 @@ proto.mruv.spots.Spot.prototype.getZ = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.spots.Spot} returns this
+ */
 proto.mruv.spots.Spot.prototype.setZ = function(value) {
-  jspb.Message.setProto3FloatField(this, 7, value);
+  return jspb.Message.setProto3FloatField(this, 7, value);
 };
 
 
@@ -577,9 +599,12 @@ proto.mruv.spots.Spot.prototype.getVw = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.spots.Spot} returns this
+ */
 proto.mruv.spots.Spot.prototype.setVw = function(value) {
-  jspb.Message.setProto3IntField(this, 8, value);
+  return jspb.Message.setProto3IntField(this, 8, value);
 };
 
 
@@ -592,9 +617,12 @@ proto.mruv.spots.Spot.prototype.getInt = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.spots.Spot} returns this
+ */
 proto.mruv.spots.Spot.prototype.setInt = function(value) {
-  jspb.Message.setProto3IntField(this, 9, value);
+  return jspb.Message.setProto3IntField(this, 9, value);
 };
 
 
@@ -722,17 +750,21 @@ proto.mruv.spots.CreateSpotRequest.prototype.getSpot = function() {
 };
 
 
-/** @param {?proto.mruv.spots.Spot|undefined} value */
+/**
+ * @param {?proto.mruv.spots.Spot|undefined} value
+ * @return {!proto.mruv.spots.CreateSpotRequest} returns this
+*/
 proto.mruv.spots.CreateSpotRequest.prototype.setSpot = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.mruv.spots.CreateSpotRequest} returns this
  */
 proto.mruv.spots.CreateSpotRequest.prototype.clearSpot = function() {
-  this.setSpot(undefined);
+  return this.setSpot(undefined);
 };
 
 
@@ -866,9 +898,12 @@ proto.mruv.spots.CreateSpotResponse.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.spots.CreateSpotResponse} returns this
+ */
 proto.mruv.spots.CreateSpotResponse.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -993,9 +1028,12 @@ proto.mruv.spots.GetSpotRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.spots.GetSpotRequest} returns this
+ */
 proto.mruv.spots.GetSpotRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1123,17 +1161,21 @@ proto.mruv.spots.GetSpotResponse.prototype.getSpot = function() {
 };
 
 
-/** @param {?proto.mruv.spots.Spot|undefined} value */
+/**
+ * @param {?proto.mruv.spots.Spot|undefined} value
+ * @return {!proto.mruv.spots.GetSpotResponse} returns this
+*/
 proto.mruv.spots.GetSpotResponse.prototype.setSpot = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.mruv.spots.GetSpotResponse} returns this
  */
 proto.mruv.spots.GetSpotResponse.prototype.clearSpot = function() {
-  this.setSpot(undefined);
+  return this.setSpot(undefined);
 };
 
 
@@ -1281,9 +1323,12 @@ proto.mruv.spots.UpdateSpotRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.spots.UpdateSpotRequest} returns this
+ */
 proto.mruv.spots.UpdateSpotRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1297,17 +1342,21 @@ proto.mruv.spots.UpdateSpotRequest.prototype.getSpot = function() {
 };
 
 
-/** @param {?proto.mruv.spots.Spot|undefined} value */
+/**
+ * @param {?proto.mruv.spots.Spot|undefined} value
+ * @return {!proto.mruv.spots.UpdateSpotRequest} returns this
+*/
 proto.mruv.spots.UpdateSpotRequest.prototype.setSpot = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.mruv.spots.UpdateSpotRequest} returns this
  */
 proto.mruv.spots.UpdateSpotRequest.prototype.clearSpot = function() {
-  this.setSpot(undefined);
+  return this.setSpot(undefined);
 };
 
 
@@ -1542,9 +1591,12 @@ proto.mruv.spots.DeleteSpotRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.spots.DeleteSpotRequest} returns this
+ */
 proto.mruv.spots.DeleteSpotRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1770,9 +1822,12 @@ proto.mruv.spots.FetchAllSpotsRequest.prototype.getChunkSize = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.spots.FetchAllSpotsRequest} returns this
+ */
 proto.mruv.spots.FetchAllSpotsRequest.prototype.setChunkSize = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1848,7 +1903,7 @@ proto.mruv.spots.FetchAllSpotsResponse.deserializeBinaryFromReader = function(ms
     case 1:
       var value = msg.getSpotsMap();
       reader.readMessage(value, function(message, reader) {
-        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readUint32, jspb.BinaryReader.prototype.readMessage, proto.mruv.spots.Spot.deserializeBinaryFromReader, 0);
+        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readUint32, jspb.BinaryReader.prototype.readMessage, proto.mruv.spots.Spot.deserializeBinaryFromReader, 0, new proto.mruv.spots.Spot());
          });
       break;
     default:
@@ -1902,10 +1957,11 @@ proto.mruv.spots.FetchAllSpotsResponse.prototype.getSpotsMap = function(opt_noLa
 
 /**
  * Clears values from the map. The map will be non-null.
+ * @return {!proto.mruv.spots.FetchAllSpotsResponse} returns this
  */
 proto.mruv.spots.FetchAllSpotsResponse.prototype.clearSpotsMap = function() {
   this.getSpotsMap().clear();
-};
+  return this;};
 
 
 goog.object.extend(exports, proto.mruv.spots);

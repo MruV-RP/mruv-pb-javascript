@@ -1,3 +1,4 @@
+// source: devtools/devtools.proto
 /**
  * @fileoverview
  * @enhanceable
@@ -582,9 +583,12 @@ proto.mruv.devtools.GetPositionsRequest.prototype.getLimit = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.devtools.GetPositionsRequest} returns this
+ */
 proto.mruv.devtools.GetPositionsRequest.prototype.setLimit = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -597,9 +601,12 @@ proto.mruv.devtools.GetPositionsRequest.prototype.getCategory = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.devtools.GetPositionsRequest} returns this
+ */
 proto.mruv.devtools.GetPositionsRequest.prototype.setCategory = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -613,17 +620,21 @@ proto.mruv.devtools.GetPositionsRequest.prototype.getAuthor = function() {
 };
 
 
-/** @param {?proto.mruv.devtools.Player|undefined} value */
+/**
+ * @param {?proto.mruv.devtools.Player|undefined} value
+ * @return {!proto.mruv.devtools.GetPositionsRequest} returns this
+*/
 proto.mruv.devtools.GetPositionsRequest.prototype.setAuthor = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.mruv.devtools.GetPositionsRequest} returns this
  */
 proto.mruv.devtools.GetPositionsRequest.prototype.clearAuthor = function() {
-  this.setAuthor(undefined);
+  return this.setAuthor(undefined);
 };
 
 
@@ -896,17 +907,21 @@ proto.mruv.devtools.GetPositionsResponse.Row.prototype.getPosition = function() 
 };
 
 
-/** @param {?proto.mruv.devtools.Position|undefined} value */
+/**
+ * @param {?proto.mruv.devtools.Position|undefined} value
+ * @return {!proto.mruv.devtools.GetPositionsResponse.Row} returns this
+*/
 proto.mruv.devtools.GetPositionsResponse.Row.prototype.setPosition = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.mruv.devtools.GetPositionsResponse.Row} returns this
  */
 proto.mruv.devtools.GetPositionsResponse.Row.prototype.clearPosition = function() {
-  this.setPosition(undefined);
+  return this.setPosition(undefined);
 };
 
 
@@ -929,17 +944,21 @@ proto.mruv.devtools.GetPositionsResponse.Row.prototype.getAuthor = function() {
 };
 
 
-/** @param {?proto.mruv.devtools.Player|undefined} value */
+/**
+ * @param {?proto.mruv.devtools.Player|undefined} value
+ * @return {!proto.mruv.devtools.GetPositionsResponse.Row} returns this
+*/
 proto.mruv.devtools.GetPositionsResponse.Row.prototype.setAuthor = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.mruv.devtools.GetPositionsResponse.Row} returns this
  */
 proto.mruv.devtools.GetPositionsResponse.Row.prototype.clearAuthor = function() {
-  this.setAuthor(undefined);
+  return this.setAuthor(undefined);
 };
 
 
@@ -962,9 +981,12 @@ proto.mruv.devtools.GetPositionsResponse.prototype.getPositionsList = function()
 };
 
 
-/** @param {!Array<!proto.mruv.devtools.GetPositionsResponse.Row>} value */
+/**
+ * @param {!Array<!proto.mruv.devtools.GetPositionsResponse.Row>} value
+ * @return {!proto.mruv.devtools.GetPositionsResponse} returns this
+*/
 proto.mruv.devtools.GetPositionsResponse.prototype.setPositionsList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 1, value);
+  return jspb.Message.setRepeatedWrapperField(this, 1, value);
 };
 
 
@@ -980,9 +1002,10 @@ proto.mruv.devtools.GetPositionsResponse.prototype.addPositions = function(opt_v
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.mruv.devtools.GetPositionsResponse} returns this
  */
 proto.mruv.devtools.GetPositionsResponse.prototype.clearPositionsList = function() {
-  this.setPositionsList([]);
+  return this.setPositionsList([]);
 };
 
 
@@ -1110,17 +1133,21 @@ proto.mruv.devtools.SavePositionRequest.prototype.getPosition = function() {
 };
 
 
-/** @param {?proto.mruv.devtools.Position|undefined} value */
+/**
+ * @param {?proto.mruv.devtools.Position|undefined} value
+ * @return {!proto.mruv.devtools.SavePositionRequest} returns this
+*/
 proto.mruv.devtools.SavePositionRequest.prototype.setPosition = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.mruv.devtools.SavePositionRequest} returns this
  */
 proto.mruv.devtools.SavePositionRequest.prototype.clearPosition = function() {
-  this.setPosition(undefined);
+  return this.setPosition(undefined);
 };
 
 
@@ -1254,9 +1281,12 @@ proto.mruv.devtools.SavePositionResponse.prototype.getSuccess = function() {
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.mruv.devtools.SavePositionResponse} returns this
+ */
 proto.mruv.devtools.SavePositionResponse.prototype.setSuccess = function(value) {
-  jspb.Message.setProto3BooleanField(this, 1, value);
+  return jspb.Message.setProto3BooleanField(this, 1, value);
 };
 
 
@@ -1384,17 +1414,21 @@ proto.mruv.devtools.DeletePositionRequest.prototype.getPosition = function() {
 };
 
 
-/** @param {?proto.mruv.devtools.Position|undefined} value */
+/**
+ * @param {?proto.mruv.devtools.Position|undefined} value
+ * @return {!proto.mruv.devtools.DeletePositionRequest} returns this
+*/
 proto.mruv.devtools.DeletePositionRequest.prototype.setPosition = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.mruv.devtools.DeletePositionRequest} returns this
  */
 proto.mruv.devtools.DeletePositionRequest.prototype.clearPosition = function() {
-  this.setPosition(undefined);
+  return this.setPosition(undefined);
 };
 
 
@@ -1528,9 +1562,12 @@ proto.mruv.devtools.DeletePositionResponse.prototype.getSuccess = function() {
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.mruv.devtools.DeletePositionResponse} returns this
+ */
 proto.mruv.devtools.DeletePositionResponse.prototype.setSuccess = function(value) {
-  jspb.Message.setProto3BooleanField(this, 1, value);
+  return jspb.Message.setProto3BooleanField(this, 1, value);
 };
 
 
@@ -1679,9 +1716,12 @@ proto.mruv.devtools.GetOutfitsRequest.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.devtools.GetOutfitsRequest} returns this
+ */
 proto.mruv.devtools.GetOutfitsRequest.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -1694,9 +1734,12 @@ proto.mruv.devtools.GetOutfitsRequest.prototype.getCategory = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.devtools.GetOutfitsRequest} returns this
+ */
 proto.mruv.devtools.GetOutfitsRequest.prototype.setCategory = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -1709,9 +1752,12 @@ proto.mruv.devtools.GetOutfitsRequest.prototype.getAuthor = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.devtools.GetOutfitsRequest} returns this
+ */
 proto.mruv.devtools.GetOutfitsRequest.prototype.setAuthor = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -1975,17 +2021,21 @@ proto.mruv.devtools.GetOutfitsResponse.Row.prototype.getOutfit = function() {
 };
 
 
-/** @param {?proto.mruv.devtools.Outfit|undefined} value */
+/**
+ * @param {?proto.mruv.devtools.Outfit|undefined} value
+ * @return {!proto.mruv.devtools.GetOutfitsResponse.Row} returns this
+*/
 proto.mruv.devtools.GetOutfitsResponse.Row.prototype.setOutfit = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.mruv.devtools.GetOutfitsResponse.Row} returns this
  */
 proto.mruv.devtools.GetOutfitsResponse.Row.prototype.clearOutfit = function() {
-  this.setOutfit(undefined);
+  return this.setOutfit(undefined);
 };
 
 
@@ -2008,17 +2058,21 @@ proto.mruv.devtools.GetOutfitsResponse.Row.prototype.getAuthor = function() {
 };
 
 
-/** @param {?proto.mruv.devtools.Player|undefined} value */
+/**
+ * @param {?proto.mruv.devtools.Player|undefined} value
+ * @return {!proto.mruv.devtools.GetOutfitsResponse.Row} returns this
+*/
 proto.mruv.devtools.GetOutfitsResponse.Row.prototype.setAuthor = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.mruv.devtools.GetOutfitsResponse.Row} returns this
  */
 proto.mruv.devtools.GetOutfitsResponse.Row.prototype.clearAuthor = function() {
-  this.setAuthor(undefined);
+  return this.setAuthor(undefined);
 };
 
 
@@ -2041,9 +2095,12 @@ proto.mruv.devtools.GetOutfitsResponse.prototype.getOutfitsList = function() {
 };
 
 
-/** @param {!Array<!proto.mruv.devtools.GetOutfitsResponse.Row>} value */
+/**
+ * @param {!Array<!proto.mruv.devtools.GetOutfitsResponse.Row>} value
+ * @return {!proto.mruv.devtools.GetOutfitsResponse} returns this
+*/
 proto.mruv.devtools.GetOutfitsResponse.prototype.setOutfitsList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 1, value);
+  return jspb.Message.setRepeatedWrapperField(this, 1, value);
 };
 
 
@@ -2059,9 +2116,10 @@ proto.mruv.devtools.GetOutfitsResponse.prototype.addOutfits = function(opt_value
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.mruv.devtools.GetOutfitsResponse} returns this
  */
 proto.mruv.devtools.GetOutfitsResponse.prototype.clearOutfitsList = function() {
-  this.setOutfitsList([]);
+  return this.setOutfitsList([]);
 };
 
 
@@ -2189,17 +2247,21 @@ proto.mruv.devtools.SaveOutfitRequest.prototype.getOutfit = function() {
 };
 
 
-/** @param {?proto.mruv.devtools.Outfit|undefined} value */
+/**
+ * @param {?proto.mruv.devtools.Outfit|undefined} value
+ * @return {!proto.mruv.devtools.SaveOutfitRequest} returns this
+*/
 proto.mruv.devtools.SaveOutfitRequest.prototype.setOutfit = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.mruv.devtools.SaveOutfitRequest} returns this
  */
 proto.mruv.devtools.SaveOutfitRequest.prototype.clearOutfit = function() {
-  this.setOutfit(undefined);
+  return this.setOutfit(undefined);
 };
 
 
@@ -2333,9 +2395,12 @@ proto.mruv.devtools.SaveOutfitResponse.prototype.getSuccess = function() {
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.mruv.devtools.SaveOutfitResponse} returns this
+ */
 proto.mruv.devtools.SaveOutfitResponse.prototype.setSuccess = function(value) {
-  jspb.Message.setProto3BooleanField(this, 1, value);
+  return jspb.Message.setProto3BooleanField(this, 1, value);
 };
 
 
@@ -2484,9 +2549,12 @@ proto.mruv.devtools.GetAnimationsRequest.prototype.getLimit = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.devtools.GetAnimationsRequest} returns this
+ */
 proto.mruv.devtools.GetAnimationsRequest.prototype.setLimit = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2499,9 +2567,12 @@ proto.mruv.devtools.GetAnimationsRequest.prototype.getDict = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.devtools.GetAnimationsRequest} returns this
+ */
 proto.mruv.devtools.GetAnimationsRequest.prototype.setDict = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -2514,9 +2585,12 @@ proto.mruv.devtools.GetAnimationsRequest.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.devtools.GetAnimationsRequest} returns this
+ */
 proto.mruv.devtools.GetAnimationsRequest.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -2780,17 +2854,21 @@ proto.mruv.devtools.GetAnimationsResponse.Row.prototype.getAnimation = function(
 };
 
 
-/** @param {?proto.mruv.devtools.Animation|undefined} value */
+/**
+ * @param {?proto.mruv.devtools.Animation|undefined} value
+ * @return {!proto.mruv.devtools.GetAnimationsResponse.Row} returns this
+*/
 proto.mruv.devtools.GetAnimationsResponse.Row.prototype.setAnimation = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.mruv.devtools.GetAnimationsResponse.Row} returns this
  */
 proto.mruv.devtools.GetAnimationsResponse.Row.prototype.clearAnimation = function() {
-  this.setAnimation(undefined);
+  return this.setAnimation(undefined);
 };
 
 
@@ -2813,17 +2891,21 @@ proto.mruv.devtools.GetAnimationsResponse.Row.prototype.getAuthor = function() {
 };
 
 
-/** @param {?proto.mruv.devtools.Player|undefined} value */
+/**
+ * @param {?proto.mruv.devtools.Player|undefined} value
+ * @return {!proto.mruv.devtools.GetAnimationsResponse.Row} returns this
+*/
 proto.mruv.devtools.GetAnimationsResponse.Row.prototype.setAuthor = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.mruv.devtools.GetAnimationsResponse.Row} returns this
  */
 proto.mruv.devtools.GetAnimationsResponse.Row.prototype.clearAuthor = function() {
-  this.setAuthor(undefined);
+  return this.setAuthor(undefined);
 };
 
 
@@ -2846,9 +2928,12 @@ proto.mruv.devtools.GetAnimationsResponse.prototype.getAnimationsList = function
 };
 
 
-/** @param {!Array<!proto.mruv.devtools.GetAnimationsResponse.Row>} value */
+/**
+ * @param {!Array<!proto.mruv.devtools.GetAnimationsResponse.Row>} value
+ * @return {!proto.mruv.devtools.GetAnimationsResponse} returns this
+*/
 proto.mruv.devtools.GetAnimationsResponse.prototype.setAnimationsList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 1, value);
+  return jspb.Message.setRepeatedWrapperField(this, 1, value);
 };
 
 
@@ -2864,9 +2949,10 @@ proto.mruv.devtools.GetAnimationsResponse.prototype.addAnimations = function(opt
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.mruv.devtools.GetAnimationsResponse} returns this
  */
 proto.mruv.devtools.GetAnimationsResponse.prototype.clearAnimationsList = function() {
-  this.setAnimationsList([]);
+  return this.setAnimationsList([]);
 };
 
 
@@ -3003,9 +3089,12 @@ proto.mruv.devtools.GetAnimationRequest.prototype.getDict = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.devtools.GetAnimationRequest} returns this
+ */
 proto.mruv.devtools.GetAnimationRequest.prototype.setDict = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -3018,9 +3107,12 @@ proto.mruv.devtools.GetAnimationRequest.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.devtools.GetAnimationRequest} returns this
+ */
 proto.mruv.devtools.GetAnimationRequest.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -3162,17 +3254,21 @@ proto.mruv.devtools.GetAnimationResponse.prototype.getAnimation = function() {
 };
 
 
-/** @param {?proto.mruv.devtools.Animation|undefined} value */
+/**
+ * @param {?proto.mruv.devtools.Animation|undefined} value
+ * @return {!proto.mruv.devtools.GetAnimationResponse} returns this
+*/
 proto.mruv.devtools.GetAnimationResponse.prototype.setAnimation = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.mruv.devtools.GetAnimationResponse} returns this
  */
 proto.mruv.devtools.GetAnimationResponse.prototype.clearAnimation = function() {
-  this.setAnimation(undefined);
+  return this.setAnimation(undefined);
 };
 
 
@@ -3195,17 +3291,21 @@ proto.mruv.devtools.GetAnimationResponse.prototype.getAuthor = function() {
 };
 
 
-/** @param {?proto.mruv.devtools.Player|undefined} value */
+/**
+ * @param {?proto.mruv.devtools.Player|undefined} value
+ * @return {!proto.mruv.devtools.GetAnimationResponse} returns this
+*/
 proto.mruv.devtools.GetAnimationResponse.prototype.setAuthor = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.mruv.devtools.GetAnimationResponse} returns this
  */
 proto.mruv.devtools.GetAnimationResponse.prototype.clearAuthor = function() {
-  this.setAuthor(undefined);
+  return this.setAuthor(undefined);
 };
 
 
@@ -3342,17 +3442,21 @@ proto.mruv.devtools.SaveAnimationRequest.prototype.getAnimation = function() {
 };
 
 
-/** @param {?proto.mruv.devtools.Animation|undefined} value */
+/**
+ * @param {?proto.mruv.devtools.Animation|undefined} value
+ * @return {!proto.mruv.devtools.SaveAnimationRequest} returns this
+*/
 proto.mruv.devtools.SaveAnimationRequest.prototype.setAnimation = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.mruv.devtools.SaveAnimationRequest} returns this
  */
 proto.mruv.devtools.SaveAnimationRequest.prototype.clearAnimation = function() {
-  this.setAnimation(undefined);
+  return this.setAnimation(undefined);
 };
 
 
@@ -3486,9 +3590,12 @@ proto.mruv.devtools.SaveAnimationResponse.prototype.getSuccess = function() {
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.mruv.devtools.SaveAnimationResponse} returns this
+ */
 proto.mruv.devtools.SaveAnimationResponse.prototype.setSuccess = function(value) {
-  jspb.Message.setProto3BooleanField(this, 1, value);
+  return jspb.Message.setProto3BooleanField(this, 1, value);
 };
 
 

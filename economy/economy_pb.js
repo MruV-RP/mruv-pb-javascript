@@ -1,3 +1,4 @@
+// source: economy/economy.proto
 /**
  * @fileoverview
  * @enhanceable
@@ -591,9 +592,12 @@ proto.mruv.economy.RegisterProductRequest.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.economy.RegisterProductRequest} returns this
+ */
 proto.mruv.economy.RegisterProductRequest.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -606,9 +610,12 @@ proto.mruv.economy.RegisterProductRequest.prototype.getFullName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.economy.RegisterProductRequest} returns this
+ */
 proto.mruv.economy.RegisterProductRequest.prototype.setFullName = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -621,9 +628,12 @@ proto.mruv.economy.RegisterProductRequest.prototype.getDescription = function() 
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.economy.RegisterProductRequest} returns this
+ */
 proto.mruv.economy.RegisterProductRequest.prototype.setDescription = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -636,9 +646,12 @@ proto.mruv.economy.RegisterProductRequest.prototype.getPriceClass = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.economy.RegisterProductRequest} returns this
+ */
 proto.mruv.economy.RegisterProductRequest.prototype.setPriceClass = function(value) {
-  jspb.Message.setProto3IntField(this, 4, value);
+  return jspb.Message.setProto3IntField(this, 4, value);
 };
 
 
@@ -651,9 +664,12 @@ proto.mruv.economy.RegisterProductRequest.prototype.getPriceRatio = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.economy.RegisterProductRequest} returns this
+ */
 proto.mruv.economy.RegisterProductRequest.prototype.setPriceRatio = function(value) {
-  jspb.Message.setProto3FloatField(this, 5, value);
+  return jspb.Message.setProto3FloatField(this, 5, value);
 };
 
 
@@ -666,9 +682,12 @@ proto.mruv.economy.RegisterProductRequest.prototype.getStartingPrice = function(
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.economy.RegisterProductRequest} returns this
+ */
 proto.mruv.economy.RegisterProductRequest.prototype.setStartingPrice = function(value) {
-  jspb.Message.setProto3IntField(this, 6, value);
+  return jspb.Message.setProto3IntField(this, 6, value);
 };
 
 
@@ -793,9 +812,12 @@ proto.mruv.economy.RegisterProductResponse.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.economy.RegisterProductResponse} returns this
+ */
 proto.mruv.economy.RegisterProductResponse.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -932,9 +954,12 @@ proto.mruv.economy.GetProductRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.economy.GetProductRequest} returns this
+ */
 proto.mruv.economy.GetProductRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -947,9 +972,12 @@ proto.mruv.economy.GetProductRequest.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.economy.GetProductRequest} returns this
+ */
 proto.mruv.economy.GetProductRequest.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -1146,9 +1174,12 @@ proto.mruv.economy.GetProductResponse.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.economy.GetProductResponse} returns this
+ */
 proto.mruv.economy.GetProductResponse.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -1161,9 +1192,12 @@ proto.mruv.economy.GetProductResponse.prototype.getFullName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.economy.GetProductResponse} returns this
+ */
 proto.mruv.economy.GetProductResponse.prototype.setFullName = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -1176,9 +1210,12 @@ proto.mruv.economy.GetProductResponse.prototype.getDescription = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.economy.GetProductResponse} returns this
+ */
 proto.mruv.economy.GetProductResponse.prototype.setDescription = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -1191,9 +1228,12 @@ proto.mruv.economy.GetProductResponse.prototype.getPriceClass = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.economy.GetProductResponse} returns this
+ */
 proto.mruv.economy.GetProductResponse.prototype.setPriceClass = function(value) {
-  jspb.Message.setProto3IntField(this, 4, value);
+  return jspb.Message.setProto3IntField(this, 4, value);
 };
 
 
@@ -1206,9 +1246,12 @@ proto.mruv.economy.GetProductResponse.prototype.getPriceRatio = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.economy.GetProductResponse} returns this
+ */
 proto.mruv.economy.GetProductResponse.prototype.setPriceRatio = function(value) {
-  jspb.Message.setProto3FloatField(this, 5, value);
+  return jspb.Message.setProto3FloatField(this, 5, value);
 };
 
 
@@ -1221,9 +1264,12 @@ proto.mruv.economy.GetProductResponse.prototype.getStartingPrice = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.economy.GetProductResponse} returns this
+ */
 proto.mruv.economy.GetProductResponse.prototype.setStartingPrice = function(value) {
-  jspb.Message.setProto3IntField(this, 6, value);
+  return jspb.Message.setProto3IntField(this, 6, value);
 };
 
 
@@ -1236,9 +1282,12 @@ proto.mruv.economy.GetProductResponse.prototype.getPrice = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.economy.GetProductResponse} returns this
+ */
 proto.mruv.economy.GetProductResponse.prototype.setPrice = function(value) {
-  jspb.Message.setProto3IntField(this, 7, value);
+  return jspb.Message.setProto3IntField(this, 7, value);
 };
 
 
@@ -1423,9 +1472,12 @@ proto.mruv.economy.UpdateProductRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.economy.UpdateProductRequest} returns this
+ */
 proto.mruv.economy.UpdateProductRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1438,9 +1490,12 @@ proto.mruv.economy.UpdateProductRequest.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.economy.UpdateProductRequest} returns this
+ */
 proto.mruv.economy.UpdateProductRequest.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -1453,9 +1508,12 @@ proto.mruv.economy.UpdateProductRequest.prototype.getFullName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.economy.UpdateProductRequest} returns this
+ */
 proto.mruv.economy.UpdateProductRequest.prototype.setFullName = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -1468,9 +1526,12 @@ proto.mruv.economy.UpdateProductRequest.prototype.getDescription = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.economy.UpdateProductRequest} returns this
+ */
 proto.mruv.economy.UpdateProductRequest.prototype.setDescription = function(value) {
-  jspb.Message.setProto3StringField(this, 4, value);
+  return jspb.Message.setProto3StringField(this, 4, value);
 };
 
 
@@ -1483,9 +1544,12 @@ proto.mruv.economy.UpdateProductRequest.prototype.getPriceClass = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.economy.UpdateProductRequest} returns this
+ */
 proto.mruv.economy.UpdateProductRequest.prototype.setPriceClass = function(value) {
-  jspb.Message.setProto3IntField(this, 5, value);
+  return jspb.Message.setProto3IntField(this, 5, value);
 };
 
 
@@ -1498,9 +1562,12 @@ proto.mruv.economy.UpdateProductRequest.prototype.getPriceRatio = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.economy.UpdateProductRequest} returns this
+ */
 proto.mruv.economy.UpdateProductRequest.prototype.setPriceRatio = function(value) {
-  jspb.Message.setProto3FloatField(this, 6, value);
+  return jspb.Message.setProto3FloatField(this, 6, value);
 };
 
 
@@ -1750,9 +1817,12 @@ proto.mruv.economy.UpdatePriceRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.economy.UpdatePriceRequest} returns this
+ */
 proto.mruv.economy.UpdatePriceRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1765,9 +1835,12 @@ proto.mruv.economy.UpdatePriceRequest.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.economy.UpdatePriceRequest} returns this
+ */
 proto.mruv.economy.UpdatePriceRequest.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -1780,9 +1853,12 @@ proto.mruv.economy.UpdatePriceRequest.prototype.getNewPrice = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.economy.UpdatePriceRequest} returns this
+ */
 proto.mruv.economy.UpdatePriceRequest.prototype.setNewPrice = function(value) {
-  jspb.Message.setProto3IntField(this, 3, value);
+  return jspb.Message.setProto3IntField(this, 3, value);
 };
 
 
@@ -2020,9 +2096,12 @@ proto.mruv.economy.DeleteProductRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.economy.DeleteProductRequest} returns this
+ */
 proto.mruv.economy.DeleteProductRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2035,9 +2114,12 @@ proto.mruv.economy.DeleteProductRequest.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.economy.DeleteProductRequest} returns this
+ */
 proto.mruv.economy.DeleteProductRequest.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -2275,9 +2357,12 @@ proto.mruv.economy.GetPriceRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.economy.GetPriceRequest} returns this
+ */
 proto.mruv.economy.GetPriceRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2290,9 +2375,12 @@ proto.mruv.economy.GetPriceRequest.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.economy.GetPriceRequest} returns this
+ */
 proto.mruv.economy.GetPriceRequest.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -2417,9 +2505,12 @@ proto.mruv.economy.GetPriceResponse.prototype.getPrice = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.economy.GetPriceResponse} returns this
+ */
 proto.mruv.economy.GetPriceResponse.prototype.setPrice = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2556,9 +2647,12 @@ proto.mruv.economy.BuyProductRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.economy.BuyProductRequest} returns this
+ */
 proto.mruv.economy.BuyProductRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2571,9 +2665,12 @@ proto.mruv.economy.BuyProductRequest.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.economy.BuyProductRequest} returns this
+ */
 proto.mruv.economy.BuyProductRequest.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -2811,9 +2908,12 @@ proto.mruv.economy.WatchProductRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.economy.WatchProductRequest} returns this
+ */
 proto.mruv.economy.WatchProductRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2826,9 +2926,12 @@ proto.mruv.economy.WatchProductRequest.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.economy.WatchProductRequest} returns this
+ */
 proto.mruv.economy.WatchProductRequest.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -2964,9 +3067,12 @@ proto.mruv.economy.WatchProductResponse.prototype.getEvent = function() {
 };
 
 
-/** @param {!proto.mruv.economy.WatchProductResponse.ProductEvent} value */
+/**
+ * @param {!proto.mruv.economy.WatchProductResponse.ProductEvent} value
+ * @return {!proto.mruv.economy.WatchProductResponse} returns this
+ */
 proto.mruv.economy.WatchProductResponse.prototype.setEvent = function(value) {
-  jspb.Message.setProto3EnumField(this, 1, value);
+  return jspb.Message.setProto3EnumField(this, 1, value);
 };
 
 
@@ -3103,9 +3209,12 @@ proto.mruv.economy.WatchPriceRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.economy.WatchPriceRequest} returns this
+ */
 proto.mruv.economy.WatchPriceRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -3118,9 +3227,12 @@ proto.mruv.economy.WatchPriceRequest.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.economy.WatchPriceRequest} returns this
+ */
 proto.mruv.economy.WatchPriceRequest.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -3245,9 +3357,12 @@ proto.mruv.economy.WatchPriceResponse.prototype.getPrice = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.economy.WatchPriceResponse} returns this
+ */
 proto.mruv.economy.WatchPriceResponse.prototype.setPrice = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 

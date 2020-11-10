@@ -1,3 +1,4 @@
+// source: items/items_model.proto
 /**
  * @fileoverview
  * @enhanceable
@@ -16,6 +17,7 @@ goog.exportSymbol('proto.mruv.ContainerID', null, global);
 goog.exportSymbol('proto.mruv.ContainerType', null, global);
 goog.exportSymbol('proto.mruv.ContainerTypeID', null, global);
 goog.exportSymbol('proto.mruv.InsideItem', null, global);
+goog.exportSymbol('proto.mruv.InsideItem.ItemOrIdCase', null, global);
 goog.exportSymbol('proto.mruv.Item', null, global);
 goog.exportSymbol('proto.mruv.ItemID', null, global);
 goog.exportSymbol('proto.mruv.ItemType', null, global);
@@ -403,9 +405,12 @@ proto.mruv.ItemType.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.ItemType} returns this
+ */
 proto.mruv.ItemType.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -418,9 +423,12 @@ proto.mruv.ItemType.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.ItemType} returns this
+ */
 proto.mruv.ItemType.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -433,9 +441,12 @@ proto.mruv.ItemType.prototype.getDescription = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.ItemType} returns this
+ */
 proto.mruv.ItemType.prototype.setDescription = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -448,9 +459,12 @@ proto.mruv.ItemType.prototype.getBaseWeight = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.ItemType} returns this
+ */
 proto.mruv.ItemType.prototype.setBaseWeight = function(value) {
-  jspb.Message.setProto3FloatField(this, 4, value);
+  return jspb.Message.setProto3FloatField(this, 4, value);
 };
 
 
@@ -463,9 +477,12 @@ proto.mruv.ItemType.prototype.getBaseVolume = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.ItemType} returns this
+ */
 proto.mruv.ItemType.prototype.setBaseVolume = function(value) {
-  jspb.Message.setProto3FloatField(this, 5, value);
+  return jspb.Message.setProto3FloatField(this, 5, value);
 };
 
 
@@ -478,9 +495,12 @@ proto.mruv.ItemType.prototype.getModelName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.ItemType} returns this
+ */
 proto.mruv.ItemType.prototype.setModelName = function(value) {
-  jspb.Message.setProto3StringField(this, 6, value);
+  return jspb.Message.setProto3StringField(this, 6, value);
 };
 
 
@@ -493,9 +513,12 @@ proto.mruv.ItemType.prototype.getModelHash = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.ItemType} returns this
+ */
 proto.mruv.ItemType.prototype.setModelHash = function(value) {
-  jspb.Message.setProto3IntField(this, 7, value);
+  return jspb.Message.setProto3IntField(this, 7, value);
 };
 
 
@@ -620,9 +643,12 @@ proto.mruv.ItemTypeID.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.ItemTypeID} returns this
+ */
 proto.mruv.ItemTypeID.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -783,9 +809,12 @@ proto.mruv.Item.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.Item} returns this
+ */
 proto.mruv.Item.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -798,9 +827,12 @@ proto.mruv.Item.prototype.getItemTypeId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.Item} returns this
+ */
 proto.mruv.Item.prototype.setItemTypeId = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -813,9 +845,12 @@ proto.mruv.Item.prototype.getWeight = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.Item} returns this
+ */
 proto.mruv.Item.prototype.setWeight = function(value) {
-  jspb.Message.setProto3FloatField(this, 3, value);
+  return jspb.Message.setProto3FloatField(this, 3, value);
 };
 
 
@@ -828,9 +863,12 @@ proto.mruv.Item.prototype.getVolume = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.Item} returns this
+ */
 proto.mruv.Item.prototype.setVolume = function(value) {
-  jspb.Message.setProto3FloatField(this, 4, value);
+  return jspb.Message.setProto3FloatField(this, 4, value);
 };
 
 
@@ -955,9 +993,12 @@ proto.mruv.ItemID.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.ItemID} returns this
+ */
 proto.mruv.ItemID.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1149,9 +1190,12 @@ proto.mruv.ContainerType.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.ContainerType} returns this
+ */
 proto.mruv.ContainerType.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1164,9 +1208,12 @@ proto.mruv.ContainerType.prototype.getContainerItemTypeId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.ContainerType} returns this
+ */
 proto.mruv.ContainerType.prototype.setContainerItemTypeId = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -1179,9 +1226,12 @@ proto.mruv.ContainerType.prototype.getMaxNumber = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.ContainerType} returns this
+ */
 proto.mruv.ContainerType.prototype.setMaxNumber = function(value) {
-  jspb.Message.setProto3IntField(this, 3, value);
+  return jspb.Message.setProto3IntField(this, 3, value);
 };
 
 
@@ -1194,9 +1244,12 @@ proto.mruv.ContainerType.prototype.getMaxVolume = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.ContainerType} returns this
+ */
 proto.mruv.ContainerType.prototype.setMaxVolume = function(value) {
-  jspb.Message.setProto3FloatField(this, 4, value);
+  return jspb.Message.setProto3FloatField(this, 4, value);
 };
 
 
@@ -1209,9 +1262,12 @@ proto.mruv.ContainerType.prototype.getMaxWeight = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.ContainerType} returns this
+ */
 proto.mruv.ContainerType.prototype.setMaxWeight = function(value) {
-  jspb.Message.setProto3FloatField(this, 5, value);
+  return jspb.Message.setProto3FloatField(this, 5, value);
 };
 
 
@@ -1224,26 +1280,31 @@ proto.mruv.ContainerType.prototype.getValidItemTypesList = function() {
 };
 
 
-/** @param {!Array<number>} value */
+/**
+ * @param {!Array<number>} value
+ * @return {!proto.mruv.ContainerType} returns this
+ */
 proto.mruv.ContainerType.prototype.setValidItemTypesList = function(value) {
-  jspb.Message.setField(this, 8, value || []);
+  return jspb.Message.setField(this, 8, value || []);
 };
 
 
 /**
  * @param {number} value
  * @param {number=} opt_index
+ * @return {!proto.mruv.ContainerType} returns this
  */
 proto.mruv.ContainerType.prototype.addValidItemTypes = function(value, opt_index) {
-  jspb.Message.addToRepeatedField(this, 8, value, opt_index);
+  return jspb.Message.addToRepeatedField(this, 8, value, opt_index);
 };
 
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.mruv.ContainerType} returns this
  */
 proto.mruv.ContainerType.prototype.clearValidItemTypesList = function() {
-  this.setValidItemTypesList([]);
+  return this.setValidItemTypesList([]);
 };
 
 
@@ -1368,9 +1429,12 @@ proto.mruv.ContainerTypeID.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.ContainerTypeID} returns this
+ */
 proto.mruv.ContainerTypeID.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1553,9 +1617,12 @@ proto.mruv.Container.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.Container} returns this
+ */
 proto.mruv.Container.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1568,9 +1635,12 @@ proto.mruv.Container.prototype.getTypeId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.Container} returns this
+ */
 proto.mruv.Container.prototype.setTypeId = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -1583,9 +1653,12 @@ proto.mruv.Container.prototype.getItemId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.Container} returns this
+ */
 proto.mruv.Container.prototype.setItemId = function(value) {
-  jspb.Message.setProto3IntField(this, 3, value);
+  return jspb.Message.setProto3IntField(this, 3, value);
 };
 
 
@@ -1598,9 +1671,12 @@ proto.mruv.Container.prototype.getItemsInside = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.Container} returns this
+ */
 proto.mruv.Container.prototype.setItemsInside = function(value) {
-  jspb.Message.setProto3IntField(this, 4, value);
+  return jspb.Message.setProto3IntField(this, 4, value);
 };
 
 
@@ -1614,9 +1690,12 @@ proto.mruv.Container.prototype.getItemsList = function() {
 };
 
 
-/** @param {!Array<!proto.mruv.InsideItem>} value */
+/**
+ * @param {!Array<!proto.mruv.InsideItem>} value
+ * @return {!proto.mruv.Container} returns this
+*/
 proto.mruv.Container.prototype.setItemsList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 5, value);
+  return jspb.Message.setRepeatedWrapperField(this, 5, value);
 };
 
 
@@ -1632,9 +1711,10 @@ proto.mruv.Container.prototype.addItems = function(opt_value, opt_index) {
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.mruv.Container} returns this
  */
 proto.mruv.Container.prototype.clearItemsList = function() {
-  this.setItemsList([]);
+  return this.setItemsList([]);
 };
 
 
@@ -1759,9 +1839,12 @@ proto.mruv.ContainerID.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.ContainerID} returns this
+ */
 proto.mruv.ContainerID.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1950,9 +2033,12 @@ proto.mruv.InsideItem.prototype.getContainerId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.InsideItem} returns this
+ */
 proto.mruv.InsideItem.prototype.setContainerId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1965,17 +2051,21 @@ proto.mruv.InsideItem.prototype.getItemId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.InsideItem} returns this
+ */
 proto.mruv.InsideItem.prototype.setItemId = function(value) {
-  jspb.Message.setOneofField(this, 2, proto.mruv.InsideItem.oneofGroups_[0], value);
+  return jspb.Message.setOneofField(this, 2, proto.mruv.InsideItem.oneofGroups_[0], value);
 };
 
 
 /**
  * Clears the field making it undefined.
+ * @return {!proto.mruv.InsideItem} returns this
  */
 proto.mruv.InsideItem.prototype.clearItemId = function() {
-  jspb.Message.setOneofField(this, 2, proto.mruv.InsideItem.oneofGroups_[0], undefined);
+  return jspb.Message.setOneofField(this, 2, proto.mruv.InsideItem.oneofGroups_[0], undefined);
 };
 
 
@@ -1998,17 +2088,21 @@ proto.mruv.InsideItem.prototype.getItem = function() {
 };
 
 
-/** @param {?proto.mruv.Item|undefined} value */
+/**
+ * @param {?proto.mruv.Item|undefined} value
+ * @return {!proto.mruv.InsideItem} returns this
+*/
 proto.mruv.InsideItem.prototype.setItem = function(value) {
-  jspb.Message.setOneofWrapperField(this, 3, proto.mruv.InsideItem.oneofGroups_[0], value);
+  return jspb.Message.setOneofWrapperField(this, 3, proto.mruv.InsideItem.oneofGroups_[0], value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.mruv.InsideItem} returns this
  */
 proto.mruv.InsideItem.prototype.clearItem = function() {
-  this.setItem(undefined);
+  return this.setItem(undefined);
 };
 
 
@@ -2030,9 +2124,12 @@ proto.mruv.InsideItem.prototype.getPosition = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.InsideItem} returns this
+ */
 proto.mruv.InsideItem.prototype.setPosition = function(value) {
-  jspb.Message.setProto3IntField(this, 4, value);
+  return jspb.Message.setProto3IntField(this, 4, value);
 };
 
 

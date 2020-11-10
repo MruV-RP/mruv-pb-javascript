@@ -1,3 +1,4 @@
+// source: server/server_model.proto
 /**
  * @fileoverview
  * @enhanceable
@@ -177,9 +178,12 @@ proto.mruv.server.ServerID.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.server.ServerID} returns this
+ */
 proto.mruv.server.ServerID.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -376,9 +380,12 @@ proto.mruv.server.ServerInfo.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.server.ServerInfo} returns this
+ */
 proto.mruv.server.ServerInfo.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -391,9 +398,12 @@ proto.mruv.server.ServerInfo.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.server.ServerInfo} returns this
+ */
 proto.mruv.server.ServerInfo.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -406,9 +416,12 @@ proto.mruv.server.ServerInfo.prototype.getHost = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.server.ServerInfo} returns this
+ */
 proto.mruv.server.ServerInfo.prototype.setHost = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -421,9 +434,12 @@ proto.mruv.server.ServerInfo.prototype.getPort = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.server.ServerInfo} returns this
+ */
 proto.mruv.server.ServerInfo.prototype.setPort = function(value) {
-  jspb.Message.setProto3StringField(this, 4, value);
+  return jspb.Message.setProto3StringField(this, 4, value);
 };
 
 
@@ -436,9 +452,12 @@ proto.mruv.server.ServerInfo.prototype.getPlatform = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.server.ServerInfo} returns this
+ */
 proto.mruv.server.ServerInfo.prototype.setPlatform = function(value) {
-  jspb.Message.setProto3StringField(this, 5, value);
+  return jspb.Message.setProto3StringField(this, 5, value);
 };
 
 
@@ -451,9 +470,12 @@ proto.mruv.server.ServerInfo.prototype.getStatus = function() {
 };
 
 
-/** @param {!proto.mruv.server.ServerStatus} value */
+/**
+ * @param {!proto.mruv.server.ServerStatus} value
+ * @return {!proto.mruv.server.ServerInfo} returns this
+ */
 proto.mruv.server.ServerInfo.prototype.setStatus = function(value) {
-  jspb.Message.setProto3EnumField(this, 6, value);
+  return jspb.Message.setProto3EnumField(this, 6, value);
 };
 
 
@@ -466,9 +488,12 @@ proto.mruv.server.ServerInfo.prototype.getPlayers = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.server.ServerInfo} returns this
+ */
 proto.mruv.server.ServerInfo.prototype.setPlayers = function(value) {
-  jspb.Message.setProto3IntField(this, 7, value);
+  return jspb.Message.setProto3IntField(this, 7, value);
 };
 
 

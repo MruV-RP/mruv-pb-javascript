@@ -1,3 +1,4 @@
+// source: devtools/devtools_model.proto
 /**
  * @fileoverview
  * @enhanceable
@@ -268,9 +269,12 @@ proto.mruv.devtools.Position.prototype.getX = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.devtools.Position} returns this
+ */
 proto.mruv.devtools.Position.prototype.setX = function(value) {
-  jspb.Message.setProto3FloatField(this, 1, value);
+  return jspb.Message.setProto3FloatField(this, 1, value);
 };
 
 
@@ -283,9 +287,12 @@ proto.mruv.devtools.Position.prototype.getY = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.devtools.Position} returns this
+ */
 proto.mruv.devtools.Position.prototype.setY = function(value) {
-  jspb.Message.setProto3FloatField(this, 2, value);
+  return jspb.Message.setProto3FloatField(this, 2, value);
 };
 
 
@@ -298,9 +305,12 @@ proto.mruv.devtools.Position.prototype.getZ = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.devtools.Position} returns this
+ */
 proto.mruv.devtools.Position.prototype.setZ = function(value) {
-  jspb.Message.setProto3FloatField(this, 3, value);
+  return jspb.Message.setProto3FloatField(this, 3, value);
 };
 
 
@@ -313,9 +323,12 @@ proto.mruv.devtools.Position.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.devtools.Position} returns this
+ */
 proto.mruv.devtools.Position.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 4, value);
+  return jspb.Message.setProto3StringField(this, 4, value);
 };
 
 
@@ -328,9 +341,12 @@ proto.mruv.devtools.Position.prototype.getDescription = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.devtools.Position} returns this
+ */
 proto.mruv.devtools.Position.prototype.setDescription = function(value) {
-  jspb.Message.setProto3StringField(this, 5, value);
+  return jspb.Message.setProto3StringField(this, 5, value);
 };
 
 
@@ -467,9 +483,12 @@ proto.mruv.devtools.Outfit.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.devtools.Outfit} returns this
+ */
 proto.mruv.devtools.Outfit.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -482,9 +501,12 @@ proto.mruv.devtools.Outfit.prototype.getCategory = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.devtools.Outfit} returns this
+ */
 proto.mruv.devtools.Outfit.prototype.setCategory = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -645,9 +667,12 @@ proto.mruv.devtools.Animation.prototype.getDict = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.devtools.Animation} returns this
+ */
 proto.mruv.devtools.Animation.prototype.setDict = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -660,9 +685,12 @@ proto.mruv.devtools.Animation.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.devtools.Animation} returns this
+ */
 proto.mruv.devtools.Animation.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -675,9 +703,12 @@ proto.mruv.devtools.Animation.prototype.getReadableCategory = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.devtools.Animation} returns this
+ */
 proto.mruv.devtools.Animation.prototype.setReadableCategory = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -690,9 +721,12 @@ proto.mruv.devtools.Animation.prototype.getCategory = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.devtools.Animation} returns this
+ */
 proto.mruv.devtools.Animation.prototype.setCategory = function(value) {
-  jspb.Message.setProto3StringField(this, 4, value);
+  return jspb.Message.setProto3StringField(this, 4, value);
 };
 
 
@@ -841,9 +875,12 @@ proto.mruv.devtools.Player.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.devtools.Player} returns this
+ */
 proto.mruv.devtools.Player.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -856,9 +893,12 @@ proto.mruv.devtools.Player.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.devtools.Player} returns this
+ */
 proto.mruv.devtools.Player.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -871,9 +911,12 @@ proto.mruv.devtools.Player.prototype.getHash = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.devtools.Player} returns this
+ */
 proto.mruv.devtools.Player.prototype.setHash = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 

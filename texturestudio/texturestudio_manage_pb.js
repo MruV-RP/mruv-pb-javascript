@@ -1,3 +1,4 @@
+// source: texturestudio/texturestudio_manage.proto
 /**
  * @fileoverview
  * @enhanceable
@@ -354,9 +355,12 @@ proto.texture_studio.CreateServerRequest.prototype.getOwnerId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.texture_studio.CreateServerRequest} returns this
+ */
 proto.texture_studio.CreateServerRequest.prototype.setOwnerId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -493,9 +497,12 @@ proto.texture_studio.CreateServerResponse.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.texture_studio.CreateServerResponse} returns this
+ */
 proto.texture_studio.CreateServerResponse.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -508,9 +515,12 @@ proto.texture_studio.CreateServerResponse.prototype.getPort = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.texture_studio.CreateServerResponse} returns this
+ */
 proto.texture_studio.CreateServerResponse.prototype.setPort = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -743,26 +753,31 @@ proto.texture_studio.GetServersResponse.prototype.getIdList = function() {
 };
 
 
-/** @param {!Array<number>} value */
+/**
+ * @param {!Array<number>} value
+ * @return {!proto.texture_studio.GetServersResponse} returns this
+ */
 proto.texture_studio.GetServersResponse.prototype.setIdList = function(value) {
-  jspb.Message.setField(this, 1, value || []);
+  return jspb.Message.setField(this, 1, value || []);
 };
 
 
 /**
  * @param {number} value
  * @param {number=} opt_index
+ * @return {!proto.texture_studio.GetServersResponse} returns this
  */
 proto.texture_studio.GetServersResponse.prototype.addId = function(value, opt_index) {
-  jspb.Message.addToRepeatedField(this, 1, value, opt_index);
+  return jspb.Message.addToRepeatedField(this, 1, value, opt_index);
 };
 
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.texture_studio.GetServersResponse} returns this
  */
 proto.texture_studio.GetServersResponse.prototype.clearIdList = function() {
-  this.setIdList([]);
+  return this.setIdList([]);
 };
 
 
@@ -988,9 +1003,12 @@ proto.texture_studio.MyServerResponse.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.texture_studio.MyServerResponse} returns this
+ */
 proto.texture_studio.MyServerResponse.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1127,9 +1145,12 @@ proto.texture_studio.TransferOwnershipRequest.prototype.getServerId = function()
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.texture_studio.TransferOwnershipRequest} returns this
+ */
 proto.texture_studio.TransferOwnershipRequest.prototype.setServerId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1142,9 +1163,12 @@ proto.texture_studio.TransferOwnershipRequest.prototype.getOwnerId = function() 
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.texture_studio.TransferOwnershipRequest} returns this
+ */
 proto.texture_studio.TransferOwnershipRequest.prototype.setOwnerId = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -1370,9 +1394,12 @@ proto.texture_studio.DeleteServerRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.texture_studio.DeleteServerRequest} returns this
+ */
 proto.texture_studio.DeleteServerRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 

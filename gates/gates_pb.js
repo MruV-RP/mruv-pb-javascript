@@ -1,3 +1,4 @@
+// source: gates/gates.proto
 /**
  * @fileoverview
  * @enhanceable
@@ -660,9 +661,12 @@ proto.mruv.gates.Gate.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.gates.Gate} returns this
+ */
 proto.mruv.gates.Gate.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -676,9 +680,12 @@ proto.mruv.gates.Gate.prototype.getGateObjectsList = function() {
 };
 
 
-/** @param {!Array<!proto.mruv.objects.MovableObject>} value */
+/**
+ * @param {!Array<!proto.mruv.objects.MovableObject>} value
+ * @return {!proto.mruv.gates.Gate} returns this
+*/
 proto.mruv.gates.Gate.prototype.setGateObjectsList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 2, value);
+  return jspb.Message.setRepeatedWrapperField(this, 2, value);
 };
 
 
@@ -694,9 +701,10 @@ proto.mruv.gates.Gate.prototype.addGateObjects = function(opt_value, opt_index) 
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.mruv.gates.Gate} returns this
  */
 proto.mruv.gates.Gate.prototype.clearGateObjectsList = function() {
-  this.setGateObjectsList([]);
+  return this.setGateObjectsList([]);
 };
 
 
@@ -710,17 +718,21 @@ proto.mruv.gates.Gate.prototype.getSpot = function() {
 };
 
 
-/** @param {?proto.mruv.spots.Spot|undefined} value */
+/**
+ * @param {?proto.mruv.spots.Spot|undefined} value
+ * @return {!proto.mruv.gates.Gate} returns this
+*/
 proto.mruv.gates.Gate.prototype.setSpot = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.mruv.gates.Gate} returns this
  */
 proto.mruv.gates.Gate.prototype.clearSpot = function() {
-  this.setSpot(undefined);
+  return this.setSpot(undefined);
 };
 
 
@@ -742,9 +754,12 @@ proto.mruv.gates.Gate.prototype.getOpened = function() {
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.mruv.gates.Gate} returns this
+ */
 proto.mruv.gates.Gate.prototype.setOpened = function(value) {
-  jspb.Message.setProto3BooleanField(this, 4, value);
+  return jspb.Message.setProto3BooleanField(this, 4, value);
 };
 
 
@@ -757,9 +772,12 @@ proto.mruv.gates.Gate.prototype.getLocked = function() {
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.mruv.gates.Gate} returns this
+ */
 proto.mruv.gates.Gate.prototype.setLocked = function(value) {
-  jspb.Message.setProto3BooleanField(this, 5, value);
+  return jspb.Message.setProto3BooleanField(this, 5, value);
 };
 
 
@@ -920,9 +938,12 @@ proto.mruv.gates.CreateGateRequest.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.gates.CreateGateRequest} returns this
+ */
 proto.mruv.gates.CreateGateRequest.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -936,9 +957,12 @@ proto.mruv.gates.CreateGateRequest.prototype.getGateObjectsList = function() {
 };
 
 
-/** @param {!Array<!proto.mruv.objects.MovableObject>} value */
+/**
+ * @param {!Array<!proto.mruv.objects.MovableObject>} value
+ * @return {!proto.mruv.gates.CreateGateRequest} returns this
+*/
 proto.mruv.gates.CreateGateRequest.prototype.setGateObjectsList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 2, value);
+  return jspb.Message.setRepeatedWrapperField(this, 2, value);
 };
 
 
@@ -954,9 +978,10 @@ proto.mruv.gates.CreateGateRequest.prototype.addGateObjects = function(opt_value
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.mruv.gates.CreateGateRequest} returns this
  */
 proto.mruv.gates.CreateGateRequest.prototype.clearGateObjectsList = function() {
-  this.setGateObjectsList([]);
+  return this.setGateObjectsList([]);
 };
 
 
@@ -970,17 +995,21 @@ proto.mruv.gates.CreateGateRequest.prototype.getSpot = function() {
 };
 
 
-/** @param {?proto.mruv.spots.Spot|undefined} value */
+/**
+ * @param {?proto.mruv.spots.Spot|undefined} value
+ * @return {!proto.mruv.gates.CreateGateRequest} returns this
+*/
 proto.mruv.gates.CreateGateRequest.prototype.setSpot = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.mruv.gates.CreateGateRequest} returns this
  */
 proto.mruv.gates.CreateGateRequest.prototype.clearSpot = function() {
-  this.setSpot(undefined);
+  return this.setSpot(undefined);
 };
 
 
@@ -1114,9 +1143,12 @@ proto.mruv.gates.CreateGateResponse.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.gates.CreateGateResponse} returns this
+ */
 proto.mruv.gates.CreateGateResponse.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1241,9 +1273,12 @@ proto.mruv.gates.GetGateRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.gates.GetGateRequest} returns this
+ */
 proto.mruv.gates.GetGateRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1428,9 +1463,12 @@ proto.mruv.gates.GetGateResponse.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.gates.GetGateResponse} returns this
+ */
 proto.mruv.gates.GetGateResponse.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -1444,9 +1482,12 @@ proto.mruv.gates.GetGateResponse.prototype.getMovableObjectsList = function() {
 };
 
 
-/** @param {!Array<!proto.mruv.objects.MovableObject>} value */
+/**
+ * @param {!Array<!proto.mruv.objects.MovableObject>} value
+ * @return {!proto.mruv.gates.GetGateResponse} returns this
+*/
 proto.mruv.gates.GetGateResponse.prototype.setMovableObjectsList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 2, value);
+  return jspb.Message.setRepeatedWrapperField(this, 2, value);
 };
 
 
@@ -1462,9 +1503,10 @@ proto.mruv.gates.GetGateResponse.prototype.addMovableObjects = function(opt_valu
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.mruv.gates.GetGateResponse} returns this
  */
 proto.mruv.gates.GetGateResponse.prototype.clearMovableObjectsList = function() {
-  this.setMovableObjectsList([]);
+  return this.setMovableObjectsList([]);
 };
 
 
@@ -1478,17 +1520,21 @@ proto.mruv.gates.GetGateResponse.prototype.getSpot = function() {
 };
 
 
-/** @param {?proto.mruv.spots.Spot|undefined} value */
+/**
+ * @param {?proto.mruv.spots.Spot|undefined} value
+ * @return {!proto.mruv.gates.GetGateResponse} returns this
+*/
 proto.mruv.gates.GetGateResponse.prototype.setSpot = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.mruv.gates.GetGateResponse} returns this
  */
 proto.mruv.gates.GetGateResponse.prototype.clearSpot = function() {
-  this.setSpot(undefined);
+  return this.setSpot(undefined);
 };
 
 
@@ -1510,9 +1556,12 @@ proto.mruv.gates.GetGateResponse.prototype.getOpened = function() {
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.mruv.gates.GetGateResponse} returns this
+ */
 proto.mruv.gates.GetGateResponse.prototype.setOpened = function(value) {
-  jspb.Message.setProto3BooleanField(this, 4, value);
+  return jspb.Message.setProto3BooleanField(this, 4, value);
 };
 
 
@@ -1525,9 +1574,12 @@ proto.mruv.gates.GetGateResponse.prototype.getLocked = function() {
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.mruv.gates.GetGateResponse} returns this
+ */
 proto.mruv.gates.GetGateResponse.prototype.setLocked = function(value) {
-  jspb.Message.setProto3BooleanField(this, 5, value);
+  return jspb.Message.setProto3BooleanField(this, 5, value);
 };
 
 
@@ -1695,9 +1747,12 @@ proto.mruv.gates.UpdateGateRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.gates.UpdateGateRequest} returns this
+ */
 proto.mruv.gates.UpdateGateRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1710,9 +1765,12 @@ proto.mruv.gates.UpdateGateRequest.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.gates.UpdateGateRequest} returns this
+ */
 proto.mruv.gates.UpdateGateRequest.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -1725,9 +1783,12 @@ proto.mruv.gates.UpdateGateRequest.prototype.getSpotId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.gates.UpdateGateRequest} returns this
+ */
 proto.mruv.gates.UpdateGateRequest.prototype.setSpotId = function(value) {
-  jspb.Message.setProto3IntField(this, 3, value);
+  return jspb.Message.setProto3IntField(this, 3, value);
 };
 
 
@@ -1740,26 +1801,31 @@ proto.mruv.gates.UpdateGateRequest.prototype.getGateMovableObjectsList = functio
 };
 
 
-/** @param {!Array<number>} value */
+/**
+ * @param {!Array<number>} value
+ * @return {!proto.mruv.gates.UpdateGateRequest} returns this
+ */
 proto.mruv.gates.UpdateGateRequest.prototype.setGateMovableObjectsList = function(value) {
-  jspb.Message.setField(this, 4, value || []);
+  return jspb.Message.setField(this, 4, value || []);
 };
 
 
 /**
  * @param {number} value
  * @param {number=} opt_index
+ * @return {!proto.mruv.gates.UpdateGateRequest} returns this
  */
 proto.mruv.gates.UpdateGateRequest.prototype.addGateMovableObjects = function(value, opt_index) {
-  jspb.Message.addToRepeatedField(this, 4, value, opt_index);
+  return jspb.Message.addToRepeatedField(this, 4, value, opt_index);
 };
 
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.mruv.gates.UpdateGateRequest} returns this
  */
 proto.mruv.gates.UpdateGateRequest.prototype.clearGateMovableObjectsList = function() {
-  this.setGateMovableObjectsList([]);
+  return this.setGateMovableObjectsList([]);
 };
 
 
@@ -1985,9 +2051,12 @@ proto.mruv.gates.DeleteGateRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.gates.DeleteGateRequest} returns this
+ */
 proto.mruv.gates.DeleteGateRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2213,9 +2282,12 @@ proto.mruv.gates.LockRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.gates.LockRequest} returns this
+ */
 proto.mruv.gates.LockRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2441,9 +2513,12 @@ proto.mruv.gates.UnlockRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.gates.UnlockRequest} returns this
+ */
 proto.mruv.gates.UnlockRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2669,9 +2744,12 @@ proto.mruv.gates.OpenRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.gates.OpenRequest} returns this
+ */
 proto.mruv.gates.OpenRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2897,9 +2975,12 @@ proto.mruv.gates.CloseRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.gates.CloseRequest} returns this
+ */
 proto.mruv.gates.CloseRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -3161,9 +3242,12 @@ proto.mruv.gates.FindNearestGateRequest.prototype.getX = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.gates.FindNearestGateRequest} returns this
+ */
 proto.mruv.gates.FindNearestGateRequest.prototype.setX = function(value) {
-  jspb.Message.setProto3FloatField(this, 1, value);
+  return jspb.Message.setProto3FloatField(this, 1, value);
 };
 
 
@@ -3176,9 +3260,12 @@ proto.mruv.gates.FindNearestGateRequest.prototype.getY = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.gates.FindNearestGateRequest} returns this
+ */
 proto.mruv.gates.FindNearestGateRequest.prototype.setY = function(value) {
-  jspb.Message.setProto3FloatField(this, 2, value);
+  return jspb.Message.setProto3FloatField(this, 2, value);
 };
 
 
@@ -3191,9 +3278,12 @@ proto.mruv.gates.FindNearestGateRequest.prototype.getZ = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.gates.FindNearestGateRequest} returns this
+ */
 proto.mruv.gates.FindNearestGateRequest.prototype.setZ = function(value) {
-  jspb.Message.setProto3FloatField(this, 3, value);
+  return jspb.Message.setProto3FloatField(this, 3, value);
 };
 
 
@@ -3206,9 +3296,12 @@ proto.mruv.gates.FindNearestGateRequest.prototype.getMaxDistance = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.gates.FindNearestGateRequest} returns this
+ */
 proto.mruv.gates.FindNearestGateRequest.prototype.setMaxDistance = function(value) {
-  jspb.Message.setProto3FloatField(this, 4, value);
+  return jspb.Message.setProto3FloatField(this, 4, value);
 };
 
 
@@ -3345,9 +3438,12 @@ proto.mruv.gates.FindNearestGateResponse.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.gates.FindNearestGateResponse} returns this
+ */
 proto.mruv.gates.FindNearestGateResponse.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -3360,9 +3456,12 @@ proto.mruv.gates.FindNearestGateResponse.prototype.getDistance = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.gates.FindNearestGateResponse} returns this
+ */
 proto.mruv.gates.FindNearestGateResponse.prototype.setDistance = function(value) {
-  jspb.Message.setProto3FloatField(this, 2, value);
+  return jspb.Message.setProto3FloatField(this, 2, value);
 };
 
 
@@ -3487,9 +3586,12 @@ proto.mruv.gates.FetchAllGatesRequest.prototype.getChunkSize = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.gates.FetchAllGatesRequest} returns this
+ */
 proto.mruv.gates.FetchAllGatesRequest.prototype.setChunkSize = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -3565,7 +3667,7 @@ proto.mruv.gates.FetchAllGatesResponse.deserializeBinaryFromReader = function(ms
     case 1:
       var value = msg.getGatesMap();
       reader.readMessage(value, function(message, reader) {
-        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readUint32, jspb.BinaryReader.prototype.readMessage, proto.mruv.gates.Gate.deserializeBinaryFromReader, 0);
+        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readUint32, jspb.BinaryReader.prototype.readMessage, proto.mruv.gates.Gate.deserializeBinaryFromReader, 0, new proto.mruv.gates.Gate());
          });
       break;
     default:
@@ -3619,10 +3721,11 @@ proto.mruv.gates.FetchAllGatesResponse.prototype.getGatesMap = function(opt_noLa
 
 /**
  * Clears values from the map. The map will be non-null.
+ * @return {!proto.mruv.gates.FetchAllGatesResponse} returns this
  */
 proto.mruv.gates.FetchAllGatesResponse.prototype.clearGatesMap = function() {
   this.getGatesMap().clear();
-};
+  return this;};
 
 
 goog.object.extend(exports, proto.mruv.gates);

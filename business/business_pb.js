@@ -1,3 +1,4 @@
+// source: business/business.proto
 /**
  * @fileoverview
  * @enhanceable
@@ -688,9 +689,12 @@ proto.mruv.business.Business.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.business.Business} returns this
+ */
 proto.mruv.business.Business.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -703,9 +707,12 @@ proto.mruv.business.Business.prototype.getDescription = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.business.Business} returns this
+ */
 proto.mruv.business.Business.prototype.setDescription = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -718,26 +725,31 @@ proto.mruv.business.Business.prototype.getEstateIdsList = function() {
 };
 
 
-/** @param {!Array<number>} value */
+/**
+ * @param {!Array<number>} value
+ * @return {!proto.mruv.business.Business} returns this
+ */
 proto.mruv.business.Business.prototype.setEstateIdsList = function(value) {
-  jspb.Message.setField(this, 3, value || []);
+  return jspb.Message.setField(this, 3, value || []);
 };
 
 
 /**
  * @param {number} value
  * @param {number=} opt_index
+ * @return {!proto.mruv.business.Business} returns this
  */
 proto.mruv.business.Business.prototype.addEstateIds = function(value, opt_index) {
-  jspb.Message.addToRepeatedField(this, 3, value, opt_index);
+  return jspb.Message.addToRepeatedField(this, 3, value, opt_index);
 };
 
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.mruv.business.Business} returns this
  */
 proto.mruv.business.Business.prototype.clearEstateIdsList = function() {
-  this.setEstateIdsList([]);
+  return this.setEstateIdsList([]);
 };
 
 
@@ -750,9 +762,12 @@ proto.mruv.business.Business.prototype.getProductId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.business.Business} returns this
+ */
 proto.mruv.business.Business.prototype.setProductId = function(value) {
-  jspb.Message.setProto3IntField(this, 4, value);
+  return jspb.Message.setProto3IntField(this, 4, value);
 };
 
 
@@ -765,9 +780,12 @@ proto.mruv.business.Business.prototype.getOwnerType = function() {
 };
 
 
-/** @param {!proto.mruv.business.OwnerType} value */
+/**
+ * @param {!proto.mruv.business.OwnerType} value
+ * @return {!proto.mruv.business.Business} returns this
+ */
 proto.mruv.business.Business.prototype.setOwnerType = function(value) {
-  jspb.Message.setProto3EnumField(this, 5, value);
+  return jspb.Message.setProto3EnumField(this, 5, value);
 };
 
 
@@ -780,9 +798,12 @@ proto.mruv.business.Business.prototype.getOwnerId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.business.Business} returns this
+ */
 proto.mruv.business.Business.prototype.setOwnerId = function(value) {
-  jspb.Message.setProto3IntField(this, 6, value);
+  return jspb.Message.setProto3IntField(this, 6, value);
 };
 
 
@@ -795,26 +816,31 @@ proto.mruv.business.Business.prototype.getBusinessItemsList = function() {
 };
 
 
-/** @param {!Array<number>} value */
+/**
+ * @param {!Array<number>} value
+ * @return {!proto.mruv.business.Business} returns this
+ */
 proto.mruv.business.Business.prototype.setBusinessItemsList = function(value) {
-  jspb.Message.setField(this, 7, value || []);
+  return jspb.Message.setField(this, 7, value || []);
 };
 
 
 /**
  * @param {number} value
  * @param {number=} opt_index
+ * @return {!proto.mruv.business.Business} returns this
  */
 proto.mruv.business.Business.prototype.addBusinessItems = function(value, opt_index) {
-  jspb.Message.addToRepeatedField(this, 7, value, opt_index);
+  return jspb.Message.addToRepeatedField(this, 7, value, opt_index);
 };
 
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.mruv.business.Business} returns this
  */
 proto.mruv.business.Business.prototype.clearBusinessItemsList = function() {
-  this.setBusinessItemsList([]);
+  return this.setBusinessItemsList([]);
 };
 
 
@@ -827,9 +853,12 @@ proto.mruv.business.Business.prototype.getBusinessGroup = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.business.Business} returns this
+ */
 proto.mruv.business.Business.prototype.setBusinessGroup = function(value) {
-  jspb.Message.setProto3IntField(this, 8, value);
+  return jspb.Message.setProto3IntField(this, 8, value);
 };
 
 
@@ -978,9 +1007,12 @@ proto.mruv.business.CreateBusinessRequest.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.business.CreateBusinessRequest} returns this
+ */
 proto.mruv.business.CreateBusinessRequest.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -993,9 +1025,12 @@ proto.mruv.business.CreateBusinessRequest.prototype.getDescription = function() 
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.business.CreateBusinessRequest} returns this
+ */
 proto.mruv.business.CreateBusinessRequest.prototype.setDescription = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -1008,9 +1043,12 @@ proto.mruv.business.CreateBusinessRequest.prototype.getProductId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.business.CreateBusinessRequest} returns this
+ */
 proto.mruv.business.CreateBusinessRequest.prototype.setProductId = function(value) {
-  jspb.Message.setProto3IntField(this, 3, value);
+  return jspb.Message.setProto3IntField(this, 3, value);
 };
 
 
@@ -1135,9 +1173,12 @@ proto.mruv.business.CreateBusinessResponse.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.business.CreateBusinessResponse} returns this
+ */
 proto.mruv.business.CreateBusinessResponse.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1262,9 +1303,12 @@ proto.mruv.business.GetBusinessRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.business.GetBusinessRequest} returns this
+ */
 proto.mruv.business.GetBusinessRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1490,9 +1534,12 @@ proto.mruv.business.UpdateBusinessRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.business.UpdateBusinessRequest} returns this
+ */
 proto.mruv.business.UpdateBusinessRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1718,9 +1765,12 @@ proto.mruv.business.DeleteBusinessRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.business.DeleteBusinessRequest} returns this
+ */
 proto.mruv.business.DeleteBusinessRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1946,9 +1996,12 @@ proto.mruv.business.AssignOwnerRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.business.AssignOwnerRequest} returns this
+ */
 proto.mruv.business.AssignOwnerRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2085,9 +2138,12 @@ proto.mruv.business.AssignOwnerResponse.prototype.getOwnerType = function() {
 };
 
 
-/** @param {!proto.mruv.business.OwnerType} value */
+/**
+ * @param {!proto.mruv.business.OwnerType} value
+ * @return {!proto.mruv.business.AssignOwnerResponse} returns this
+ */
 proto.mruv.business.AssignOwnerResponse.prototype.setOwnerType = function(value) {
-  jspb.Message.setProto3EnumField(this, 5, value);
+  return jspb.Message.setProto3EnumField(this, 5, value);
 };
 
 
@@ -2100,9 +2156,12 @@ proto.mruv.business.AssignOwnerResponse.prototype.getOwnerId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.business.AssignOwnerResponse} returns this
+ */
 proto.mruv.business.AssignOwnerResponse.prototype.setOwnerId = function(value) {
-  jspb.Message.setProto3IntField(this, 6, value);
+  return jspb.Message.setProto3IntField(this, 6, value);
 };
 
 
@@ -2239,9 +2298,12 @@ proto.mruv.business.AssignEstateRequest.prototype.getBusinessId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.business.AssignEstateRequest} returns this
+ */
 proto.mruv.business.AssignEstateRequest.prototype.setBusinessId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2254,9 +2316,12 @@ proto.mruv.business.AssignEstateRequest.prototype.getEstateId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.business.AssignEstateRequest} returns this
+ */
 proto.mruv.business.AssignEstateRequest.prototype.setEstateId = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -2381,9 +2446,12 @@ proto.mruv.business.AssignEstateResponse.prototype.getEstateCount = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.business.AssignEstateResponse} returns this
+ */
 proto.mruv.business.AssignEstateResponse.prototype.setEstateCount = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2520,9 +2588,12 @@ proto.mruv.business.UnassignEstateRequest.prototype.getBusinessId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.business.UnassignEstateRequest} returns this
+ */
 proto.mruv.business.UnassignEstateRequest.prototype.setBusinessId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2535,9 +2606,12 @@ proto.mruv.business.UnassignEstateRequest.prototype.getEstateId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.business.UnassignEstateRequest} returns this
+ */
 proto.mruv.business.UnassignEstateRequest.prototype.setEstateId = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -2662,9 +2736,12 @@ proto.mruv.business.UnassignEstateResponse.prototype.getEstateCount = function()
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.business.UnassignEstateResponse} returns this
+ */
 proto.mruv.business.UnassignEstateResponse.prototype.setEstateCount = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2813,9 +2890,12 @@ proto.mruv.business.BuyBusinessRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.business.BuyBusinessRequest} returns this
+ */
 proto.mruv.business.BuyBusinessRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2828,9 +2908,12 @@ proto.mruv.business.BuyBusinessRequest.prototype.getBuyerType = function() {
 };
 
 
-/** @param {!proto.mruv.business.OwnerType} value */
+/**
+ * @param {!proto.mruv.business.OwnerType} value
+ * @return {!proto.mruv.business.BuyBusinessRequest} returns this
+ */
 proto.mruv.business.BuyBusinessRequest.prototype.setBuyerType = function(value) {
-  jspb.Message.setProto3EnumField(this, 5, value);
+  return jspb.Message.setProto3EnumField(this, 5, value);
 };
 
 
@@ -2843,9 +2926,12 @@ proto.mruv.business.BuyBusinessRequest.prototype.getBuyerId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.business.BuyBusinessRequest} returns this
+ */
 proto.mruv.business.BuyBusinessRequest.prototype.setBuyerId = function(value) {
-  jspb.Message.setProto3IntField(this, 6, value);
+  return jspb.Message.setProto3IntField(this, 6, value);
 };
 
 

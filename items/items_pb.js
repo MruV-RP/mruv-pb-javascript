@@ -1,3 +1,4 @@
+// source: items/items.proto
 /**
  * @fileoverview
  * @enhanceable
@@ -33,6 +34,7 @@ goog.exportSymbol('proto.mruv.GetNearestItemsRequest', null, global);
 goog.exportSymbol('proto.mruv.GetNearestItemsResponse', null, global);
 goog.exportSymbol('proto.mruv.PullItemRequest', null, global);
 goog.exportSymbol('proto.mruv.PutItemRequest', null, global);
+goog.exportSymbol('proto.mruv.PutItemRequest.WhereCase', null, global);
 goog.exportSymbol('proto.mruv.PutItemResponse', null, global);
 goog.exportSymbol('proto.mruv.SortItemsRequest', null, global);
 goog.exportSymbol('proto.mruv.SortItemsResponse', null, global);
@@ -558,9 +560,12 @@ proto.mruv.GetItemsRequest.prototype.getLimit = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.GetItemsRequest} returns this
+ */
 proto.mruv.GetItemsRequest.prototype.setLimit = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -696,9 +701,12 @@ proto.mruv.GetItemsResponse.prototype.getItemsList = function() {
 };
 
 
-/** @param {!Array<!proto.mruv.Item>} value */
+/**
+ * @param {!Array<!proto.mruv.Item>} value
+ * @return {!proto.mruv.GetItemsResponse} returns this
+*/
 proto.mruv.GetItemsResponse.prototype.setItemsList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 1, value);
+  return jspb.Message.setRepeatedWrapperField(this, 1, value);
 };
 
 
@@ -714,9 +722,10 @@ proto.mruv.GetItemsResponse.prototype.addItems = function(opt_value, opt_index) 
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.mruv.GetItemsResponse} returns this
  */
 proto.mruv.GetItemsResponse.prototype.clearItemsList = function() {
-  this.setItemsList([]);
+  return this.setItemsList([]);
 };
 
 
@@ -841,9 +850,12 @@ proto.mruv.GetItemTypesRequest.prototype.getLimit = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.GetItemTypesRequest} returns this
+ */
 proto.mruv.GetItemTypesRequest.prototype.setLimit = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -979,9 +991,12 @@ proto.mruv.GetItemTypesResponse.prototype.getItemTypesList = function() {
 };
 
 
-/** @param {!Array<!proto.mruv.ItemType>} value */
+/**
+ * @param {!Array<!proto.mruv.ItemType>} value
+ * @return {!proto.mruv.GetItemTypesResponse} returns this
+*/
 proto.mruv.GetItemTypesResponse.prototype.setItemTypesList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 1, value);
+  return jspb.Message.setRepeatedWrapperField(this, 1, value);
 };
 
 
@@ -997,9 +1012,10 @@ proto.mruv.GetItemTypesResponse.prototype.addItemTypes = function(opt_value, opt
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.mruv.GetItemTypesResponse} returns this
  */
 proto.mruv.GetItemTypesResponse.prototype.clearItemTypesList = function() {
-  this.setItemTypesList([]);
+  return this.setItemTypesList([]);
 };
 
 
@@ -1124,9 +1140,12 @@ proto.mruv.GetContainersRequest.prototype.getLimit = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.GetContainersRequest} returns this
+ */
 proto.mruv.GetContainersRequest.prototype.setLimit = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1262,9 +1281,12 @@ proto.mruv.GetContainersResponse.prototype.getContainersList = function() {
 };
 
 
-/** @param {!Array<!proto.mruv.Container>} value */
+/**
+ * @param {!Array<!proto.mruv.Container>} value
+ * @return {!proto.mruv.GetContainersResponse} returns this
+*/
 proto.mruv.GetContainersResponse.prototype.setContainersList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 1, value);
+  return jspb.Message.setRepeatedWrapperField(this, 1, value);
 };
 
 
@@ -1280,9 +1302,10 @@ proto.mruv.GetContainersResponse.prototype.addContainers = function(opt_value, o
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.mruv.GetContainersResponse} returns this
  */
 proto.mruv.GetContainersResponse.prototype.clearContainersList = function() {
-  this.setContainersList([]);
+  return this.setContainersList([]);
 };
 
 
@@ -1407,9 +1430,12 @@ proto.mruv.GetContainerTypesRequest.prototype.getLimit = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.GetContainerTypesRequest} returns this
+ */
 proto.mruv.GetContainerTypesRequest.prototype.setLimit = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1545,9 +1571,12 @@ proto.mruv.GetContainerTypesResponse.prototype.getContainerTypesList = function(
 };
 
 
-/** @param {!Array<!proto.mruv.ContainerType>} value */
+/**
+ * @param {!Array<!proto.mruv.ContainerType>} value
+ * @return {!proto.mruv.GetContainerTypesResponse} returns this
+*/
 proto.mruv.GetContainerTypesResponse.prototype.setContainerTypesList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 1, value);
+  return jspb.Message.setRepeatedWrapperField(this, 1, value);
 };
 
 
@@ -1563,9 +1592,10 @@ proto.mruv.GetContainerTypesResponse.prototype.addContainerTypes = function(opt_
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.mruv.GetContainerTypesResponse} returns this
  */
 proto.mruv.GetContainerTypesResponse.prototype.clearContainerTypesList = function() {
-  this.setContainerTypesList([]);
+  return this.setContainerTypesList([]);
 };
 
 
@@ -1739,9 +1769,12 @@ proto.mruv.PutItemRequest.prototype.getContainerId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.PutItemRequest} returns this
+ */
 proto.mruv.PutItemRequest.prototype.setContainerId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1754,9 +1787,12 @@ proto.mruv.PutItemRequest.prototype.getItemId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.PutItemRequest} returns this
+ */
 proto.mruv.PutItemRequest.prototype.setItemId = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -1769,17 +1805,21 @@ proto.mruv.PutItemRequest.prototype.getSlot = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.PutItemRequest} returns this
+ */
 proto.mruv.PutItemRequest.prototype.setSlot = function(value) {
-  jspb.Message.setOneofField(this, 3, proto.mruv.PutItemRequest.oneofGroups_[0], value);
+  return jspb.Message.setOneofField(this, 3, proto.mruv.PutItemRequest.oneofGroups_[0], value);
 };
 
 
 /**
  * Clears the field making it undefined.
+ * @return {!proto.mruv.PutItemRequest} returns this
  */
 proto.mruv.PutItemRequest.prototype.clearSlot = function() {
-  jspb.Message.setOneofField(this, 3, proto.mruv.PutItemRequest.oneofGroups_[0], undefined);
+  return jspb.Message.setOneofField(this, 3, proto.mruv.PutItemRequest.oneofGroups_[0], undefined);
 };
 
 
@@ -1916,17 +1956,21 @@ proto.mruv.PutItemResponse.prototype.getInsideItem = function() {
 };
 
 
-/** @param {?proto.mruv.InsideItem|undefined} value */
+/**
+ * @param {?proto.mruv.InsideItem|undefined} value
+ * @return {!proto.mruv.PutItemResponse} returns this
+*/
 proto.mruv.PutItemResponse.prototype.setInsideItem = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.mruv.PutItemResponse} returns this
  */
 proto.mruv.PutItemResponse.prototype.clearInsideItem = function() {
-  this.setInsideItem(undefined);
+  return this.setInsideItem(undefined);
 };
 
 
@@ -2072,9 +2116,12 @@ proto.mruv.GetContainerItemsRequest.prototype.getContainerId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.GetContainerItemsRequest} returns this
+ */
 proto.mruv.GetContainerItemsRequest.prototype.setContainerId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2087,9 +2134,12 @@ proto.mruv.GetContainerItemsRequest.prototype.getLimit = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.GetContainerItemsRequest} returns this
+ */
 proto.mruv.GetContainerItemsRequest.prototype.setLimit = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -2225,9 +2275,12 @@ proto.mruv.GetContainerItemsResponse.prototype.getItemsList = function() {
 };
 
 
-/** @param {!Array<!proto.mruv.InsideItem>} value */
+/**
+ * @param {!Array<!proto.mruv.InsideItem>} value
+ * @return {!proto.mruv.GetContainerItemsResponse} returns this
+*/
 proto.mruv.GetContainerItemsResponse.prototype.setItemsList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 1, value);
+  return jspb.Message.setRepeatedWrapperField(this, 1, value);
 };
 
 
@@ -2243,9 +2296,10 @@ proto.mruv.GetContainerItemsResponse.prototype.addItems = function(opt_value, op
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.mruv.GetContainerItemsResponse} returns this
  */
 proto.mruv.GetContainerItemsResponse.prototype.clearItemsList = function() {
-  this.setItemsList([]);
+  return this.setItemsList([]);
 };
 
 
@@ -2382,9 +2436,12 @@ proto.mruv.PullItemRequest.prototype.getContainerId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.PullItemRequest} returns this
+ */
 proto.mruv.PullItemRequest.prototype.setContainerId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2397,9 +2454,12 @@ proto.mruv.PullItemRequest.prototype.getItemId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.PullItemRequest} returns this
+ */
 proto.mruv.PullItemRequest.prototype.setItemId = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -2536,9 +2596,12 @@ proto.mruv.SortItemsRequest.prototype.getContainerId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.SortItemsRequest} returns this
+ */
 proto.mruv.SortItemsRequest.prototype.setContainerId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2551,9 +2614,12 @@ proto.mruv.SortItemsRequest.prototype.getSortBy = function() {
 };
 
 
-/** @param {!proto.mruv.SortingMode} value */
+/**
+ * @param {!proto.mruv.SortingMode} value
+ * @return {!proto.mruv.SortItemsRequest} returns this
+ */
 proto.mruv.SortItemsRequest.prototype.setSortBy = function(value) {
-  jspb.Message.setProto3EnumField(this, 2, value);
+  return jspb.Message.setProto3EnumField(this, 2, value);
 };
 
 
@@ -2681,17 +2747,21 @@ proto.mruv.SortItemsResponse.prototype.getContainer = function() {
 };
 
 
-/** @param {?proto.mruv.Container|undefined} value */
+/**
+ * @param {?proto.mruv.Container|undefined} value
+ * @return {!proto.mruv.SortItemsResponse} returns this
+*/
 proto.mruv.SortItemsResponse.prototype.setContainer = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.mruv.SortItemsResponse} returns this
  */
 proto.mruv.SortItemsResponse.prototype.clearContainer = function() {
-  this.setContainer(undefined);
+  return this.setContainer(undefined);
 };
 
 
@@ -2852,17 +2922,21 @@ proto.mruv.GetNearestItemsRequest.prototype.getPosition = function() {
 };
 
 
-/** @param {?proto.mruv.Position|undefined} value */
+/**
+ * @param {?proto.mruv.Position|undefined} value
+ * @return {!proto.mruv.GetNearestItemsRequest} returns this
+*/
 proto.mruv.GetNearestItemsRequest.prototype.setPosition = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.mruv.GetNearestItemsRequest} returns this
  */
 proto.mruv.GetNearestItemsRequest.prototype.clearPosition = function() {
-  this.setPosition(undefined);
+  return this.setPosition(undefined);
 };
 
 
@@ -2884,9 +2958,12 @@ proto.mruv.GetNearestItemsRequest.prototype.getContainerId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.GetNearestItemsRequest} returns this
+ */
 proto.mruv.GetNearestItemsRequest.prototype.setContainerId = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -2899,9 +2976,12 @@ proto.mruv.GetNearestItemsRequest.prototype.getDistanceLimit = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.GetNearestItemsRequest} returns this
+ */
 proto.mruv.GetNearestItemsRequest.prototype.setDistanceLimit = function(value) {
-  jspb.Message.setProto3FloatField(this, 3, value);
+  return jspb.Message.setProto3FloatField(this, 3, value);
 };
 
 
@@ -3037,9 +3117,12 @@ proto.mruv.GetNearestItemsResponse.prototype.getItemList = function() {
 };
 
 
-/** @param {!Array<!proto.mruv.InsideItem>} value */
+/**
+ * @param {!Array<!proto.mruv.InsideItem>} value
+ * @return {!proto.mruv.GetNearestItemsResponse} returns this
+*/
 proto.mruv.GetNearestItemsResponse.prototype.setItemList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 1, value);
+  return jspb.Message.setRepeatedWrapperField(this, 1, value);
 };
 
 
@@ -3055,9 +3138,10 @@ proto.mruv.GetNearestItemsResponse.prototype.addItem = function(opt_value, opt_i
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.mruv.GetNearestItemsResponse} returns this
  */
 proto.mruv.GetNearestItemsResponse.prototype.clearItemList = function() {
-  this.setItemList([]);
+  return this.setItemList([]);
 };
 
 
@@ -3182,9 +3266,12 @@ proto.mruv.UseItemRequest.prototype.getItemId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.UseItemRequest} returns this
+ */
 proto.mruv.UseItemRequest.prototype.setItemId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -3309,9 +3396,12 @@ proto.mruv.UseItemResponse.prototype.getSuccess = function() {
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.mruv.UseItemResponse} returns this
+ */
 proto.mruv.UseItemResponse.prototype.setSuccess = function(value) {
-  jspb.Message.setProto3BooleanField(this, 1, value);
+  return jspb.Message.setProto3BooleanField(this, 1, value);
 };
 
 

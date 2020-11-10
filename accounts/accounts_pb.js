@@ -1,3 +1,4 @@
+// source: accounts/accounts.proto
 /**
  * @fileoverview
  * @enhanceable
@@ -378,9 +379,12 @@ proto.mruv.RegisterAccountRequest.prototype.getLogin = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.RegisterAccountRequest} returns this
+ */
 proto.mruv.RegisterAccountRequest.prototype.setLogin = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -393,9 +397,12 @@ proto.mruv.RegisterAccountRequest.prototype.getPassword = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.RegisterAccountRequest} returns this
+ */
 proto.mruv.RegisterAccountRequest.prototype.setPassword = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -408,9 +415,12 @@ proto.mruv.RegisterAccountRequest.prototype.getEmail = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.RegisterAccountRequest} returns this
+ */
 proto.mruv.RegisterAccountRequest.prototype.setEmail = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -547,9 +557,12 @@ proto.mruv.RegisterAccountResponse.prototype.getSuccess = function() {
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.mruv.RegisterAccountResponse} returns this
+ */
 proto.mruv.RegisterAccountResponse.prototype.setSuccess = function(value) {
-  jspb.Message.setProto3BooleanField(this, 1, value);
+  return jspb.Message.setProto3BooleanField(this, 1, value);
 };
 
 
@@ -562,9 +575,12 @@ proto.mruv.RegisterAccountResponse.prototype.getAccountId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.RegisterAccountResponse} returns this
+ */
 proto.mruv.RegisterAccountResponse.prototype.setAccountId = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -701,9 +717,12 @@ proto.mruv.LogInRequest.prototype.getLogin = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.LogInRequest} returns this
+ */
 proto.mruv.LogInRequest.prototype.setLogin = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -716,9 +735,12 @@ proto.mruv.LogInRequest.prototype.getPassword = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.LogInRequest} returns this
+ */
 proto.mruv.LogInRequest.prototype.setPassword = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -855,9 +877,12 @@ proto.mruv.LogInResponse.prototype.getSuccess = function() {
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.mruv.LogInResponse} returns this
+ */
 proto.mruv.LogInResponse.prototype.setSuccess = function(value) {
-  jspb.Message.setProto3BooleanField(this, 1, value);
+  return jspb.Message.setProto3BooleanField(this, 1, value);
 };
 
 
@@ -870,9 +895,12 @@ proto.mruv.LogInResponse.prototype.getAccountId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.LogInResponse} returns this
+ */
 proto.mruv.LogInResponse.prototype.setAccountId = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -997,9 +1025,12 @@ proto.mruv.GetAccountRequest.prototype.getLogin = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.GetAccountRequest} returns this
+ */
 proto.mruv.GetAccountRequest.prototype.setLogin = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -1136,9 +1167,12 @@ proto.mruv.GetAccountResponse.prototype.getLogin = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.GetAccountResponse} returns this
+ */
 proto.mruv.GetAccountResponse.prototype.setLogin = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -1151,9 +1185,12 @@ proto.mruv.GetAccountResponse.prototype.getEmail = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.GetAccountResponse} returns this
+ */
 proto.mruv.GetAccountResponse.prototype.setEmail = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -1278,9 +1315,12 @@ proto.mruv.GetAccountCharactersRequest.prototype.getLogin = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.GetAccountCharactersRequest} returns this
+ */
 proto.mruv.GetAccountCharactersRequest.prototype.setLogin = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -1412,26 +1452,31 @@ proto.mruv.GetAccountCharactersResponse.prototype.getCharacterIdsList = function
 };
 
 
-/** @param {!Array<number>} value */
+/**
+ * @param {!Array<number>} value
+ * @return {!proto.mruv.GetAccountCharactersResponse} returns this
+ */
 proto.mruv.GetAccountCharactersResponse.prototype.setCharacterIdsList = function(value) {
-  jspb.Message.setField(this, 1, value || []);
+  return jspb.Message.setField(this, 1, value || []);
 };
 
 
 /**
  * @param {number} value
  * @param {number=} opt_index
+ * @return {!proto.mruv.GetAccountCharactersResponse} returns this
  */
 proto.mruv.GetAccountCharactersResponse.prototype.addCharacterIds = function(value, opt_index) {
-  jspb.Message.addToRepeatedField(this, 1, value, opt_index);
+  return jspb.Message.addToRepeatedField(this, 1, value, opt_index);
 };
 
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.mruv.GetAccountCharactersResponse} returns this
  */
 proto.mruv.GetAccountCharactersResponse.prototype.clearCharacterIdsList = function() {
-  this.setCharacterIdsList([]);
+  return this.setCharacterIdsList([]);
 };
 
 
@@ -1556,9 +1601,12 @@ proto.mruv.IsAccountExistRequest.prototype.getLogin = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.IsAccountExistRequest} returns this
+ */
 proto.mruv.IsAccountExistRequest.prototype.setLogin = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -1695,9 +1743,12 @@ proto.mruv.IsAccountExistResponse.prototype.getExists = function() {
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.mruv.IsAccountExistResponse} returns this
+ */
 proto.mruv.IsAccountExistResponse.prototype.setExists = function(value) {
-  jspb.Message.setProto3BooleanField(this, 1, value);
+  return jspb.Message.setProto3BooleanField(this, 1, value);
 };
 
 
@@ -1710,9 +1761,12 @@ proto.mruv.IsAccountExistResponse.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.IsAccountExistResponse} returns this
+ */
 proto.mruv.IsAccountExistResponse.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 

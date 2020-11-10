@@ -1,3 +1,4 @@
+// source: offers/offers.proto
 /**
  * @fileoverview
  * @enhanceable
@@ -427,9 +428,12 @@ proto.mruv.offers.CreateOfferRequest.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.offers.CreateOfferRequest} returns this
+ */
 proto.mruv.offers.CreateOfferRequest.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -442,9 +446,12 @@ proto.mruv.offers.CreateOfferRequest.prototype.getDescription = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.offers.CreateOfferRequest} returns this
+ */
 proto.mruv.offers.CreateOfferRequest.prototype.setDescription = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -457,9 +464,12 @@ proto.mruv.offers.CreateOfferRequest.prototype.getOffer = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.offers.CreateOfferRequest} returns this
+ */
 proto.mruv.offers.CreateOfferRequest.prototype.setOffer = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -472,9 +482,12 @@ proto.mruv.offers.CreateOfferRequest.prototype.getEndDate = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.offers.CreateOfferRequest} returns this
+ */
 proto.mruv.offers.CreateOfferRequest.prototype.setEndDate = function(value) {
-  jspb.Message.setProto3IntField(this, 4, value);
+  return jspb.Message.setProto3IntField(this, 4, value);
 };
 
 
@@ -487,9 +500,12 @@ proto.mruv.offers.CreateOfferRequest.prototype.getPrice = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.offers.CreateOfferRequest} returns this
+ */
 proto.mruv.offers.CreateOfferRequest.prototype.setPrice = function(value) {
-  jspb.Message.setProto3IntField(this, 5, value);
+  return jspb.Message.setProto3IntField(this, 5, value);
 };
 
 
@@ -502,9 +518,12 @@ proto.mruv.offers.CreateOfferRequest.prototype.getOfferType = function() {
 };
 
 
-/** @param {!proto.mruv.offers.OfferType} value */
+/**
+ * @param {!proto.mruv.offers.OfferType} value
+ * @return {!proto.mruv.offers.CreateOfferRequest} returns this
+ */
 proto.mruv.offers.CreateOfferRequest.prototype.setOfferType = function(value) {
-  jspb.Message.setProto3EnumField(this, 6, value);
+  return jspb.Message.setProto3EnumField(this, 6, value);
 };
 
 
@@ -517,9 +536,12 @@ proto.mruv.offers.CreateOfferRequest.prototype.getOfferEntityId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.offers.CreateOfferRequest} returns this
+ */
 proto.mruv.offers.CreateOfferRequest.prototype.setOfferEntityId = function(value) {
-  jspb.Message.setProto3IntField(this, 7, value);
+  return jspb.Message.setProto3IntField(this, 7, value);
 };
 
 
@@ -644,9 +666,12 @@ proto.mruv.offers.CreateOfferResponse.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.offers.CreateOfferResponse} returns this
+ */
 proto.mruv.offers.CreateOfferResponse.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -771,9 +796,12 @@ proto.mruv.offers.GetOfferRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.offers.GetOfferRequest} returns this
+ */
 proto.mruv.offers.GetOfferRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -999,9 +1027,12 @@ proto.mruv.offers.UpdateOfferRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.offers.UpdateOfferRequest} returns this
+ */
 proto.mruv.offers.UpdateOfferRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1227,9 +1258,12 @@ proto.mruv.offers.DeleteOfferRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.offers.DeleteOfferRequest} returns this
+ */
 proto.mruv.offers.DeleteOfferRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1455,9 +1489,12 @@ proto.mruv.offers.AcceptOfferRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.offers.AcceptOfferRequest} returns this
+ */
 proto.mruv.offers.AcceptOfferRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 

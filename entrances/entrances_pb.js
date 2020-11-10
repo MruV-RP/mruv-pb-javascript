@@ -1,3 +1,4 @@
+// source: entrances/entrances.proto
 /**
  * @fileoverview
  * @enhanceable
@@ -626,9 +627,12 @@ proto.mruv.entrances.Entrance.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.entrances.Entrance} returns this
+ */
 proto.mruv.entrances.Entrance.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -642,17 +646,21 @@ proto.mruv.entrances.Entrance.prototype.getOut = function() {
 };
 
 
-/** @param {?proto.mruv.spots.Spot|undefined} value */
+/**
+ * @param {?proto.mruv.spots.Spot|undefined} value
+ * @return {!proto.mruv.entrances.Entrance} returns this
+*/
 proto.mruv.entrances.Entrance.prototype.setOut = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.mruv.entrances.Entrance} returns this
  */
 proto.mruv.entrances.Entrance.prototype.clearOut = function() {
-  this.setOut(undefined);
+  return this.setOut(undefined);
 };
 
 
@@ -675,17 +683,21 @@ proto.mruv.entrances.Entrance.prototype.getIn = function() {
 };
 
 
-/** @param {?proto.mruv.spots.Spot|undefined} value */
+/**
+ * @param {?proto.mruv.spots.Spot|undefined} value
+ * @return {!proto.mruv.entrances.Entrance} returns this
+*/
 proto.mruv.entrances.Entrance.prototype.setIn = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.mruv.entrances.Entrance} returns this
  */
 proto.mruv.entrances.Entrance.prototype.clearIn = function() {
-  this.setIn(undefined);
+  return this.setIn(undefined);
 };
 
 
@@ -847,9 +859,12 @@ proto.mruv.entrances.CreateEntranceRequest.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.entrances.CreateEntranceRequest} returns this
+ */
 proto.mruv.entrances.CreateEntranceRequest.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -863,17 +878,21 @@ proto.mruv.entrances.CreateEntranceRequest.prototype.getOut = function() {
 };
 
 
-/** @param {?proto.mruv.spots.Spot|undefined} value */
+/**
+ * @param {?proto.mruv.spots.Spot|undefined} value
+ * @return {!proto.mruv.entrances.CreateEntranceRequest} returns this
+*/
 proto.mruv.entrances.CreateEntranceRequest.prototype.setOut = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.mruv.entrances.CreateEntranceRequest} returns this
  */
 proto.mruv.entrances.CreateEntranceRequest.prototype.clearOut = function() {
-  this.setOut(undefined);
+  return this.setOut(undefined);
 };
 
 
@@ -896,17 +915,21 @@ proto.mruv.entrances.CreateEntranceRequest.prototype.getIn = function() {
 };
 
 
-/** @param {?proto.mruv.spots.Spot|undefined} value */
+/**
+ * @param {?proto.mruv.spots.Spot|undefined} value
+ * @return {!proto.mruv.entrances.CreateEntranceRequest} returns this
+*/
 proto.mruv.entrances.CreateEntranceRequest.prototype.setIn = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.mruv.entrances.CreateEntranceRequest} returns this
  */
 proto.mruv.entrances.CreateEntranceRequest.prototype.clearIn = function() {
-  this.setIn(undefined);
+  return this.setIn(undefined);
 };
 
 
@@ -1040,9 +1063,12 @@ proto.mruv.entrances.CreateEntranceResponse.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.entrances.CreateEntranceResponse} returns this
+ */
 proto.mruv.entrances.CreateEntranceResponse.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1167,9 +1193,12 @@ proto.mruv.entrances.GetEntranceRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.entrances.GetEntranceRequest} returns this
+ */
 proto.mruv.entrances.GetEntranceRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1322,9 +1351,12 @@ proto.mruv.entrances.GetEntranceResponse.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.entrances.GetEntranceResponse} returns this
+ */
 proto.mruv.entrances.GetEntranceResponse.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -1338,17 +1370,21 @@ proto.mruv.entrances.GetEntranceResponse.prototype.getInSpot = function() {
 };
 
 
-/** @param {?proto.mruv.spots.Spot|undefined} value */
+/**
+ * @param {?proto.mruv.spots.Spot|undefined} value
+ * @return {!proto.mruv.entrances.GetEntranceResponse} returns this
+*/
 proto.mruv.entrances.GetEntranceResponse.prototype.setInSpot = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.mruv.entrances.GetEntranceResponse} returns this
  */
 proto.mruv.entrances.GetEntranceResponse.prototype.clearInSpot = function() {
-  this.setInSpot(undefined);
+  return this.setInSpot(undefined);
 };
 
 
@@ -1371,17 +1407,21 @@ proto.mruv.entrances.GetEntranceResponse.prototype.getOutSpot = function() {
 };
 
 
-/** @param {?proto.mruv.spots.Spot|undefined} value */
+/**
+ * @param {?proto.mruv.spots.Spot|undefined} value
+ * @return {!proto.mruv.entrances.GetEntranceResponse} returns this
+*/
 proto.mruv.entrances.GetEntranceResponse.prototype.setOutSpot = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.mruv.entrances.GetEntranceResponse} returns this
  */
 proto.mruv.entrances.GetEntranceResponse.prototype.clearOutSpot = function() {
-  this.setOutSpot(undefined);
+  return this.setOutSpot(undefined);
 };
 
 
@@ -1539,9 +1579,12 @@ proto.mruv.entrances.UpdateEntranceRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.entrances.UpdateEntranceRequest} returns this
+ */
 proto.mruv.entrances.UpdateEntranceRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1554,9 +1597,12 @@ proto.mruv.entrances.UpdateEntranceRequest.prototype.getInSpotId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.entrances.UpdateEntranceRequest} returns this
+ */
 proto.mruv.entrances.UpdateEntranceRequest.prototype.setInSpotId = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -1569,9 +1615,12 @@ proto.mruv.entrances.UpdateEntranceRequest.prototype.getOutSpotId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.entrances.UpdateEntranceRequest} returns this
+ */
 proto.mruv.entrances.UpdateEntranceRequest.prototype.setOutSpotId = function(value) {
-  jspb.Message.setProto3IntField(this, 3, value);
+  return jspb.Message.setProto3IntField(this, 3, value);
 };
 
 
@@ -1797,9 +1846,12 @@ proto.mruv.entrances.DeleteEntranceRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.entrances.DeleteEntranceRequest} returns this
+ */
 proto.mruv.entrances.DeleteEntranceRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2025,9 +2077,12 @@ proto.mruv.entrances.LockRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.entrances.LockRequest} returns this
+ */
 proto.mruv.entrances.LockRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2253,9 +2308,12 @@ proto.mruv.entrances.UnlockRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.entrances.UnlockRequest} returns this
+ */
 proto.mruv.entrances.UnlockRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2517,9 +2575,12 @@ proto.mruv.entrances.FindNearestEntranceRequest.prototype.getX = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.entrances.FindNearestEntranceRequest} returns this
+ */
 proto.mruv.entrances.FindNearestEntranceRequest.prototype.setX = function(value) {
-  jspb.Message.setProto3FloatField(this, 1, value);
+  return jspb.Message.setProto3FloatField(this, 1, value);
 };
 
 
@@ -2532,9 +2593,12 @@ proto.mruv.entrances.FindNearestEntranceRequest.prototype.getY = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.entrances.FindNearestEntranceRequest} returns this
+ */
 proto.mruv.entrances.FindNearestEntranceRequest.prototype.setY = function(value) {
-  jspb.Message.setProto3FloatField(this, 2, value);
+  return jspb.Message.setProto3FloatField(this, 2, value);
 };
 
 
@@ -2547,9 +2611,12 @@ proto.mruv.entrances.FindNearestEntranceRequest.prototype.getZ = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.entrances.FindNearestEntranceRequest} returns this
+ */
 proto.mruv.entrances.FindNearestEntranceRequest.prototype.setZ = function(value) {
-  jspb.Message.setProto3FloatField(this, 3, value);
+  return jspb.Message.setProto3FloatField(this, 3, value);
 };
 
 
@@ -2562,9 +2629,12 @@ proto.mruv.entrances.FindNearestEntranceRequest.prototype.getMaxDistance = funct
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.entrances.FindNearestEntranceRequest} returns this
+ */
 proto.mruv.entrances.FindNearestEntranceRequest.prototype.setMaxDistance = function(value) {
-  jspb.Message.setProto3FloatField(this, 4, value);
+  return jspb.Message.setProto3FloatField(this, 4, value);
 };
 
 
@@ -2713,9 +2783,12 @@ proto.mruv.entrances.FindNearestEntranceResponse.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.entrances.FindNearestEntranceResponse} returns this
+ */
 proto.mruv.entrances.FindNearestEntranceResponse.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2728,9 +2801,12 @@ proto.mruv.entrances.FindNearestEntranceResponse.prototype.getDistance = functio
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.entrances.FindNearestEntranceResponse} returns this
+ */
 proto.mruv.entrances.FindNearestEntranceResponse.prototype.setDistance = function(value) {
-  jspb.Message.setProto3FloatField(this, 2, value);
+  return jspb.Message.setProto3FloatField(this, 2, value);
 };
 
 
@@ -2743,9 +2819,12 @@ proto.mruv.entrances.FindNearestEntranceResponse.prototype.getInside = function(
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.mruv.entrances.FindNearestEntranceResponse} returns this
+ */
 proto.mruv.entrances.FindNearestEntranceResponse.prototype.setInside = function(value) {
-  jspb.Message.setProto3BooleanField(this, 3, value);
+  return jspb.Message.setProto3BooleanField(this, 3, value);
 };
 
 
@@ -2870,9 +2949,12 @@ proto.mruv.entrances.EnterRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.entrances.EnterRequest} returns this
+ */
 proto.mruv.entrances.EnterRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -3098,9 +3180,12 @@ proto.mruv.entrances.ExitRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.entrances.ExitRequest} returns this
+ */
 proto.mruv.entrances.ExitRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -3326,9 +3411,12 @@ proto.mruv.entrances.FetchAllEntrancesRequest.prototype.getChunkSize = function(
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.entrances.FetchAllEntrancesRequest} returns this
+ */
 proto.mruv.entrances.FetchAllEntrancesRequest.prototype.setChunkSize = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -3404,7 +3492,7 @@ proto.mruv.entrances.FetchAllEntrancesResponse.deserializeBinaryFromReader = fun
     case 1:
       var value = msg.getEntrancesMap();
       reader.readMessage(value, function(message, reader) {
-        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readUint32, jspb.BinaryReader.prototype.readMessage, proto.mruv.entrances.Entrance.deserializeBinaryFromReader, 0);
+        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readUint32, jspb.BinaryReader.prototype.readMessage, proto.mruv.entrances.Entrance.deserializeBinaryFromReader, 0, new proto.mruv.entrances.Entrance());
          });
       break;
     default:
@@ -3458,10 +3546,11 @@ proto.mruv.entrances.FetchAllEntrancesResponse.prototype.getEntrancesMap = funct
 
 /**
  * Clears values from the map. The map will be non-null.
+ * @return {!proto.mruv.entrances.FetchAllEntrancesResponse} returns this
  */
 proto.mruv.entrances.FetchAllEntrancesResponse.prototype.clearEntrancesMap = function() {
   this.getEntrancesMap().clear();
-};
+  return this;};
 
 
 goog.object.extend(exports, proto.mruv.entrances);

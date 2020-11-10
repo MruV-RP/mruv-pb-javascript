@@ -1,3 +1,4 @@
+// source: organizations/organizations.proto
 /**
  * @fileoverview
  * @enhanceable
@@ -600,9 +601,12 @@ proto.mruv.organizations.GetOrganizationRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.organizations.GetOrganizationRequest} returns this
+ */
 proto.mruv.organizations.GetOrganizationRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -828,9 +832,12 @@ proto.mruv.organizations.UpdateOrganizationRequest.prototype.getId = function() 
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.organizations.UpdateOrganizationRequest} returns this
+ */
 proto.mruv.organizations.UpdateOrganizationRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1056,9 +1063,12 @@ proto.mruv.organizations.DeleteOrganizationRequest.prototype.getId = function() 
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.organizations.DeleteOrganizationRequest} returns this
+ */
 proto.mruv.organizations.DeleteOrganizationRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1284,9 +1294,12 @@ proto.mruv.organizations.AssignLeaderRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.organizations.AssignLeaderRequest} returns this
+ */
 proto.mruv.organizations.AssignLeaderRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1512,9 +1525,12 @@ proto.mruv.organizations.UnassignLeaderRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.organizations.UnassignLeaderRequest} returns this
+ */
 proto.mruv.organizations.UnassignLeaderRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 

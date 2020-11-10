@@ -1,3 +1,4 @@
+// source: punishments/punishments.proto
 /**
  * @fileoverview
  * @enhanceable
@@ -1498,9 +1499,12 @@ proto.mruv.punishments.BanMessage.prototype.getPlayer = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.BanMessage} returns this
+ */
 proto.mruv.punishments.BanMessage.prototype.setPlayer = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1513,9 +1517,12 @@ proto.mruv.punishments.BanMessage.prototype.getCharacter = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.BanMessage} returns this
+ */
 proto.mruv.punishments.BanMessage.prototype.setCharacter = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -1528,9 +1535,12 @@ proto.mruv.punishments.BanMessage.prototype.getIp = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.punishments.BanMessage} returns this
+ */
 proto.mruv.punishments.BanMessage.prototype.setIp = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -1543,9 +1553,12 @@ proto.mruv.punishments.BanMessage.prototype.getExpirationDate = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.BanMessage} returns this
+ */
 proto.mruv.punishments.BanMessage.prototype.setExpirationDate = function(value) {
-  jspb.Message.setProto3IntField(this, 4, value);
+  return jspb.Message.setProto3IntField(this, 4, value);
 };
 
 
@@ -1558,9 +1571,12 @@ proto.mruv.punishments.BanMessage.prototype.getReason = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.punishments.BanMessage} returns this
+ */
 proto.mruv.punishments.BanMessage.prototype.setReason = function(value) {
-  jspb.Message.setProto3StringField(this, 5, value);
+  return jspb.Message.setProto3StringField(this, 5, value);
 };
 
 
@@ -1573,9 +1589,12 @@ proto.mruv.punishments.BanMessage.prototype.getAdmin = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.BanMessage} returns this
+ */
 proto.mruv.punishments.BanMessage.prototype.setAdmin = function(value) {
-  jspb.Message.setProto3IntField(this, 6, value);
+  return jspb.Message.setProto3IntField(this, 6, value);
 };
 
 
@@ -1588,9 +1607,12 @@ proto.mruv.punishments.BanMessage.prototype.getBanDate = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.BanMessage} returns this
+ */
 proto.mruv.punishments.BanMessage.prototype.setBanDate = function(value) {
-  jspb.Message.setProto3IntField(this, 7, value);
+  return jspb.Message.setProto3IntField(this, 7, value);
 };
 
 
@@ -1603,9 +1625,12 @@ proto.mruv.punishments.BanMessage.prototype.getActive = function() {
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.mruv.punishments.BanMessage} returns this
+ */
 proto.mruv.punishments.BanMessage.prototype.setActive = function(value) {
-  jspb.Message.setProto3BooleanField(this, 8, value);
+  return jspb.Message.setProto3BooleanField(this, 8, value);
 };
 
 
@@ -1618,9 +1643,12 @@ proto.mruv.punishments.BanMessage.prototype.getUnbanDate = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.BanMessage} returns this
+ */
 proto.mruv.punishments.BanMessage.prototype.setUnbanDate = function(value) {
-  jspb.Message.setProto3IntField(this, 9, value);
+  return jspb.Message.setProto3IntField(this, 9, value);
 };
 
 
@@ -1633,9 +1661,12 @@ proto.mruv.punishments.BanMessage.prototype.getUnbanAdmin = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.BanMessage} returns this
+ */
 proto.mruv.punishments.BanMessage.prototype.setUnbanAdmin = function(value) {
-  jspb.Message.setProto3IntField(this, 10, value);
+  return jspb.Message.setProto3IntField(this, 10, value);
 };
 
 
@@ -1856,9 +1887,12 @@ proto.mruv.punishments.WarnMessage.prototype.getPlayer = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.WarnMessage} returns this
+ */
 proto.mruv.punishments.WarnMessage.prototype.setPlayer = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1871,9 +1905,12 @@ proto.mruv.punishments.WarnMessage.prototype.getCharacter = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.WarnMessage} returns this
+ */
 proto.mruv.punishments.WarnMessage.prototype.setCharacter = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -1886,9 +1923,12 @@ proto.mruv.punishments.WarnMessage.prototype.getExpirationDate = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.WarnMessage} returns this
+ */
 proto.mruv.punishments.WarnMessage.prototype.setExpirationDate = function(value) {
-  jspb.Message.setProto3IntField(this, 3, value);
+  return jspb.Message.setProto3IntField(this, 3, value);
 };
 
 
@@ -1901,9 +1941,12 @@ proto.mruv.punishments.WarnMessage.prototype.getReason = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.punishments.WarnMessage} returns this
+ */
 proto.mruv.punishments.WarnMessage.prototype.setReason = function(value) {
-  jspb.Message.setProto3StringField(this, 4, value);
+  return jspb.Message.setProto3StringField(this, 4, value);
 };
 
 
@@ -1916,9 +1959,12 @@ proto.mruv.punishments.WarnMessage.prototype.getAdmin = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.WarnMessage} returns this
+ */
 proto.mruv.punishments.WarnMessage.prototype.setAdmin = function(value) {
-  jspb.Message.setProto3IntField(this, 5, value);
+  return jspb.Message.setProto3IntField(this, 5, value);
 };
 
 
@@ -1931,9 +1977,12 @@ proto.mruv.punishments.WarnMessage.prototype.getWarnDate = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.WarnMessage} returns this
+ */
 proto.mruv.punishments.WarnMessage.prototype.setWarnDate = function(value) {
-  jspb.Message.setProto3IntField(this, 6, value);
+  return jspb.Message.setProto3IntField(this, 6, value);
 };
 
 
@@ -1946,9 +1995,12 @@ proto.mruv.punishments.WarnMessage.prototype.getActive = function() {
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.mruv.punishments.WarnMessage} returns this
+ */
 proto.mruv.punishments.WarnMessage.prototype.setActive = function(value) {
-  jspb.Message.setProto3BooleanField(this, 7, value);
+  return jspb.Message.setProto3BooleanField(this, 7, value);
 };
 
 
@@ -1961,9 +2013,12 @@ proto.mruv.punishments.WarnMessage.prototype.getUnwarnDate = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.WarnMessage} returns this
+ */
 proto.mruv.punishments.WarnMessage.prototype.setUnwarnDate = function(value) {
-  jspb.Message.setProto3IntField(this, 8, value);
+  return jspb.Message.setProto3IntField(this, 8, value);
 };
 
 
@@ -1976,9 +2031,12 @@ proto.mruv.punishments.WarnMessage.prototype.getUnwarnAdmin = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.WarnMessage} returns this
+ */
 proto.mruv.punishments.WarnMessage.prototype.setUnwarnAdmin = function(value) {
-  jspb.Message.setProto3IntField(this, 9, value);
+  return jspb.Message.setProto3IntField(this, 9, value);
 };
 
 
@@ -2187,9 +2245,12 @@ proto.mruv.punishments.BlockMessage.prototype.getPlayer = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.BlockMessage} returns this
+ */
 proto.mruv.punishments.BlockMessage.prototype.setPlayer = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2202,9 +2263,12 @@ proto.mruv.punishments.BlockMessage.prototype.getCharacter = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.BlockMessage} returns this
+ */
 proto.mruv.punishments.BlockMessage.prototype.setCharacter = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -2217,9 +2281,12 @@ proto.mruv.punishments.BlockMessage.prototype.getReason = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.punishments.BlockMessage} returns this
+ */
 proto.mruv.punishments.BlockMessage.prototype.setReason = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -2232,9 +2299,12 @@ proto.mruv.punishments.BlockMessage.prototype.getAdmin = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.BlockMessage} returns this
+ */
 proto.mruv.punishments.BlockMessage.prototype.setAdmin = function(value) {
-  jspb.Message.setProto3IntField(this, 4, value);
+  return jspb.Message.setProto3IntField(this, 4, value);
 };
 
 
@@ -2247,9 +2317,12 @@ proto.mruv.punishments.BlockMessage.prototype.getBlockDate = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.BlockMessage} returns this
+ */
 proto.mruv.punishments.BlockMessage.prototype.setBlockDate = function(value) {
-  jspb.Message.setProto3IntField(this, 5, value);
+  return jspb.Message.setProto3IntField(this, 5, value);
 };
 
 
@@ -2262,9 +2335,12 @@ proto.mruv.punishments.BlockMessage.prototype.getActive = function() {
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.mruv.punishments.BlockMessage} returns this
+ */
 proto.mruv.punishments.BlockMessage.prototype.setActive = function(value) {
-  jspb.Message.setProto3BooleanField(this, 6, value);
+  return jspb.Message.setProto3BooleanField(this, 6, value);
 };
 
 
@@ -2277,9 +2353,12 @@ proto.mruv.punishments.BlockMessage.prototype.getUnblockDate = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.BlockMessage} returns this
+ */
 proto.mruv.punishments.BlockMessage.prototype.setUnblockDate = function(value) {
-  jspb.Message.setProto3IntField(this, 7, value);
+  return jspb.Message.setProto3IntField(this, 7, value);
 };
 
 
@@ -2292,9 +2371,12 @@ proto.mruv.punishments.BlockMessage.prototype.getUnblockAdmin = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.BlockMessage} returns this
+ */
 proto.mruv.punishments.BlockMessage.prototype.setUnblockAdmin = function(value) {
-  jspb.Message.setProto3IntField(this, 8, value);
+  return jspb.Message.setProto3IntField(this, 8, value);
 };
 
 
@@ -2479,9 +2561,12 @@ proto.mruv.punishments.AdminJailMessage.prototype.getPlayer = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.AdminJailMessage} returns this
+ */
 proto.mruv.punishments.AdminJailMessage.prototype.setPlayer = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2494,9 +2579,12 @@ proto.mruv.punishments.AdminJailMessage.prototype.getCharacter = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.AdminJailMessage} returns this
+ */
 proto.mruv.punishments.AdminJailMessage.prototype.setCharacter = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -2509,9 +2597,12 @@ proto.mruv.punishments.AdminJailMessage.prototype.getReason = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.punishments.AdminJailMessage} returns this
+ */
 proto.mruv.punishments.AdminJailMessage.prototype.setReason = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -2524,9 +2615,12 @@ proto.mruv.punishments.AdminJailMessage.prototype.getAdmin = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.AdminJailMessage} returns this
+ */
 proto.mruv.punishments.AdminJailMessage.prototype.setAdmin = function(value) {
-  jspb.Message.setProto3IntField(this, 4, value);
+  return jspb.Message.setProto3IntField(this, 4, value);
 };
 
 
@@ -2539,9 +2633,12 @@ proto.mruv.punishments.AdminJailMessage.prototype.getAjDate = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.AdminJailMessage} returns this
+ */
 proto.mruv.punishments.AdminJailMessage.prototype.setAjDate = function(value) {
-  jspb.Message.setProto3IntField(this, 5, value);
+  return jspb.Message.setProto3IntField(this, 5, value);
 };
 
 
@@ -2554,9 +2651,12 @@ proto.mruv.punishments.AdminJailMessage.prototype.getJailTime = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.AdminJailMessage} returns this
+ */
 proto.mruv.punishments.AdminJailMessage.prototype.setJailTime = function(value) {
-  jspb.Message.setProto3IntField(this, 6, value);
+  return jspb.Message.setProto3IntField(this, 6, value);
 };
 
 
@@ -2693,9 +2793,12 @@ proto.mruv.punishments.UnBanMessage.prototype.getPlayer = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.UnBanMessage} returns this
+ */
 proto.mruv.punishments.UnBanMessage.prototype.setPlayer = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2708,9 +2811,12 @@ proto.mruv.punishments.UnBanMessage.prototype.getBanId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.UnBanMessage} returns this
+ */
 proto.mruv.punishments.UnBanMessage.prototype.setBanId = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -2847,9 +2953,12 @@ proto.mruv.punishments.UnBlockMessage.prototype.getPlayer = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.UnBlockMessage} returns this
+ */
 proto.mruv.punishments.UnBlockMessage.prototype.setPlayer = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2862,9 +2971,12 @@ proto.mruv.punishments.UnBlockMessage.prototype.getBlockId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.UnBlockMessage} returns this
+ */
 proto.mruv.punishments.UnBlockMessage.prototype.setBlockId = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -3001,9 +3113,12 @@ proto.mruv.punishments.UnWarnMessage.prototype.getPlayer = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.UnWarnMessage} returns this
+ */
 proto.mruv.punishments.UnWarnMessage.prototype.setPlayer = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -3016,9 +3131,12 @@ proto.mruv.punishments.UnWarnMessage.prototype.getWarnId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.UnWarnMessage} returns this
+ */
 proto.mruv.punishments.UnWarnMessage.prototype.setWarnId = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -3155,9 +3273,12 @@ proto.mruv.punishments.UnAdminJailMessage.prototype.getPlayer = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.UnAdminJailMessage} returns this
+ */
 proto.mruv.punishments.UnAdminJailMessage.prototype.setPlayer = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -3170,9 +3291,12 @@ proto.mruv.punishments.UnAdminJailMessage.prototype.getCharacter = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.UnAdminJailMessage} returns this
+ */
 proto.mruv.punishments.UnAdminJailMessage.prototype.setCharacter = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -3357,9 +3481,12 @@ proto.mruv.punishments.BanRequest.prototype.getPlayer = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.BanRequest} returns this
+ */
 proto.mruv.punishments.BanRequest.prototype.setPlayer = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -3372,9 +3499,12 @@ proto.mruv.punishments.BanRequest.prototype.getCharacter = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.BanRequest} returns this
+ */
 proto.mruv.punishments.BanRequest.prototype.setCharacter = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -3387,9 +3517,12 @@ proto.mruv.punishments.BanRequest.prototype.getIp = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.punishments.BanRequest} returns this
+ */
 proto.mruv.punishments.BanRequest.prototype.setIp = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -3402,9 +3535,12 @@ proto.mruv.punishments.BanRequest.prototype.getTime = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.BanRequest} returns this
+ */
 proto.mruv.punishments.BanRequest.prototype.setTime = function(value) {
-  jspb.Message.setProto3IntField(this, 4, value);
+  return jspb.Message.setProto3IntField(this, 4, value);
 };
 
 
@@ -3417,9 +3553,12 @@ proto.mruv.punishments.BanRequest.prototype.getReason = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.punishments.BanRequest} returns this
+ */
 proto.mruv.punishments.BanRequest.prototype.setReason = function(value) {
-  jspb.Message.setProto3StringField(this, 5, value);
+  return jspb.Message.setProto3StringField(this, 5, value);
 };
 
 
@@ -3432,9 +3571,12 @@ proto.mruv.punishments.BanRequest.prototype.getAdmin = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.BanRequest} returns this
+ */
 proto.mruv.punishments.BanRequest.prototype.setAdmin = function(value) {
-  jspb.Message.setProto3IntField(this, 6, value);
+  return jspb.Message.setProto3IntField(this, 6, value);
 };
 
 
@@ -3559,9 +3701,12 @@ proto.mruv.punishments.BanResponse.prototype.getBanId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.BanResponse} returns this
+ */
 proto.mruv.punishments.BanResponse.prototype.setBanId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -3710,9 +3855,12 @@ proto.mruv.punishments.BlockRequest.prototype.getCharacter = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.BlockRequest} returns this
+ */
 proto.mruv.punishments.BlockRequest.prototype.setCharacter = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -3725,9 +3873,12 @@ proto.mruv.punishments.BlockRequest.prototype.getReason = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.punishments.BlockRequest} returns this
+ */
 proto.mruv.punishments.BlockRequest.prototype.setReason = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -3740,9 +3891,12 @@ proto.mruv.punishments.BlockRequest.prototype.getAdmin = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.BlockRequest} returns this
+ */
 proto.mruv.punishments.BlockRequest.prototype.setAdmin = function(value) {
-  jspb.Message.setProto3IntField(this, 3, value);
+  return jspb.Message.setProto3IntField(this, 3, value);
 };
 
 
@@ -3867,9 +4021,12 @@ proto.mruv.punishments.BlockResponse.prototype.getBlockId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.BlockResponse} returns this
+ */
 proto.mruv.punishments.BlockResponse.prototype.setBlockId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -4042,9 +4199,12 @@ proto.mruv.punishments.WarnRequest.prototype.getPlayer = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.WarnRequest} returns this
+ */
 proto.mruv.punishments.WarnRequest.prototype.setPlayer = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -4057,9 +4217,12 @@ proto.mruv.punishments.WarnRequest.prototype.getCharacter = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.WarnRequest} returns this
+ */
 proto.mruv.punishments.WarnRequest.prototype.setCharacter = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -4072,9 +4235,12 @@ proto.mruv.punishments.WarnRequest.prototype.getTime = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.WarnRequest} returns this
+ */
 proto.mruv.punishments.WarnRequest.prototype.setTime = function(value) {
-  jspb.Message.setProto3IntField(this, 3, value);
+  return jspb.Message.setProto3IntField(this, 3, value);
 };
 
 
@@ -4087,9 +4253,12 @@ proto.mruv.punishments.WarnRequest.prototype.getReason = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.punishments.WarnRequest} returns this
+ */
 proto.mruv.punishments.WarnRequest.prototype.setReason = function(value) {
-  jspb.Message.setProto3StringField(this, 4, value);
+  return jspb.Message.setProto3StringField(this, 4, value);
 };
 
 
@@ -4102,9 +4271,12 @@ proto.mruv.punishments.WarnRequest.prototype.getAdmin = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.WarnRequest} returns this
+ */
 proto.mruv.punishments.WarnRequest.prototype.setAdmin = function(value) {
-  jspb.Message.setProto3IntField(this, 5, value);
+  return jspb.Message.setProto3IntField(this, 5, value);
 };
 
 
@@ -4229,9 +4401,12 @@ proto.mruv.punishments.WarnResponse.prototype.getWarnId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.WarnResponse} returns this
+ */
 proto.mruv.punishments.WarnResponse.prototype.setWarnId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -4392,9 +4567,12 @@ proto.mruv.punishments.AdminJailRequest.prototype.getCharacter = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.AdminJailRequest} returns this
+ */
 proto.mruv.punishments.AdminJailRequest.prototype.setCharacter = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -4407,9 +4585,12 @@ proto.mruv.punishments.AdminJailRequest.prototype.getTime = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.AdminJailRequest} returns this
+ */
 proto.mruv.punishments.AdminJailRequest.prototype.setTime = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -4422,9 +4603,12 @@ proto.mruv.punishments.AdminJailRequest.prototype.getReason = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.punishments.AdminJailRequest} returns this
+ */
 proto.mruv.punishments.AdminJailRequest.prototype.setReason = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -4437,9 +4621,12 @@ proto.mruv.punishments.AdminJailRequest.prototype.getAdmin = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.AdminJailRequest} returns this
+ */
 proto.mruv.punishments.AdminJailRequest.prototype.setAdmin = function(value) {
-  jspb.Message.setProto3IntField(this, 4, value);
+  return jspb.Message.setProto3IntField(this, 4, value);
 };
 
 
@@ -4665,9 +4852,12 @@ proto.mruv.punishments.MuteGlobalChatsRequest.prototype.getAccount = function() 
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.MuteGlobalChatsRequest} returns this
+ */
 proto.mruv.punishments.MuteGlobalChatsRequest.prototype.setAccount = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -4905,9 +5095,12 @@ proto.mruv.punishments.UnBanRequest.prototype.getBanId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.UnBanRequest} returns this
+ */
 proto.mruv.punishments.UnBanRequest.prototype.setBanId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -4920,9 +5113,12 @@ proto.mruv.punishments.UnBanRequest.prototype.getReason = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.punishments.UnBanRequest} returns this
+ */
 proto.mruv.punishments.UnBanRequest.prototype.setReason = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -5160,9 +5356,12 @@ proto.mruv.punishments.UnBlockRequest.prototype.getBlockId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.UnBlockRequest} returns this
+ */
 proto.mruv.punishments.UnBlockRequest.prototype.setBlockId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -5175,9 +5374,12 @@ proto.mruv.punishments.UnBlockRequest.prototype.getReason = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.punishments.UnBlockRequest} returns this
+ */
 proto.mruv.punishments.UnBlockRequest.prototype.setReason = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -5415,9 +5617,12 @@ proto.mruv.punishments.UnWarnRequest.prototype.getWarnId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.UnWarnRequest} returns this
+ */
 proto.mruv.punishments.UnWarnRequest.prototype.setWarnId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -5430,9 +5635,12 @@ proto.mruv.punishments.UnWarnRequest.prototype.getReason = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.punishments.UnWarnRequest} returns this
+ */
 proto.mruv.punishments.UnWarnRequest.prototype.setReason = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -5658,9 +5866,12 @@ proto.mruv.punishments.UnAdminJailRequest.prototype.getCharacter = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.UnAdminJailRequest} returns this
+ */
 proto.mruv.punishments.UnAdminJailRequest.prototype.setCharacter = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -5886,9 +6097,12 @@ proto.mruv.punishments.UnMuteGlobalChatsRequest.prototype.getAccount = function(
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.UnMuteGlobalChatsRequest} returns this
+ */
 proto.mruv.punishments.UnMuteGlobalChatsRequest.prototype.setAccount = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -6126,9 +6340,12 @@ proto.mruv.punishments.GetPlayerBansRequest.prototype.getPlayer = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.GetPlayerBansRequest} returns this
+ */
 proto.mruv.punishments.GetPlayerBansRequest.prototype.setPlayer = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -6141,9 +6358,12 @@ proto.mruv.punishments.GetPlayerBansRequest.prototype.getIp = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.punishments.GetPlayerBansRequest} returns this
+ */
 proto.mruv.punishments.GetPlayerBansRequest.prototype.setIp = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -6279,9 +6499,12 @@ proto.mruv.punishments.GetPlayerBansResponse.prototype.getBansList = function() 
 };
 
 
-/** @param {!Array<!proto.mruv.punishments.BanMessage>} value */
+/**
+ * @param {!Array<!proto.mruv.punishments.BanMessage>} value
+ * @return {!proto.mruv.punishments.GetPlayerBansResponse} returns this
+*/
 proto.mruv.punishments.GetPlayerBansResponse.prototype.setBansList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 1, value);
+  return jspb.Message.setRepeatedWrapperField(this, 1, value);
 };
 
 
@@ -6297,9 +6520,10 @@ proto.mruv.punishments.GetPlayerBansResponse.prototype.addBans = function(opt_va
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.mruv.punishments.GetPlayerBansResponse} returns this
  */
 proto.mruv.punishments.GetPlayerBansResponse.prototype.clearBansList = function() {
-  this.setBansList([]);
+  return this.setBansList([]);
 };
 
 
@@ -6424,9 +6648,12 @@ proto.mruv.punishments.GetPlayerWarnsRequest.prototype.getPlayer = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.GetPlayerWarnsRequest} returns this
+ */
 proto.mruv.punishments.GetPlayerWarnsRequest.prototype.setPlayer = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -6562,9 +6789,12 @@ proto.mruv.punishments.GetPlayerWarnsResponse.prototype.getWarnsList = function(
 };
 
 
-/** @param {!Array<!proto.mruv.punishments.WarnMessage>} value */
+/**
+ * @param {!Array<!proto.mruv.punishments.WarnMessage>} value
+ * @return {!proto.mruv.punishments.GetPlayerWarnsResponse} returns this
+*/
 proto.mruv.punishments.GetPlayerWarnsResponse.prototype.setWarnsList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 1, value);
+  return jspb.Message.setRepeatedWrapperField(this, 1, value);
 };
 
 
@@ -6580,9 +6810,10 @@ proto.mruv.punishments.GetPlayerWarnsResponse.prototype.addWarns = function(opt_
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.mruv.punishments.GetPlayerWarnsResponse} returns this
  */
 proto.mruv.punishments.GetPlayerWarnsResponse.prototype.clearWarnsList = function() {
-  this.setWarnsList([]);
+  return this.setWarnsList([]);
 };
 
 
@@ -6707,9 +6938,12 @@ proto.mruv.punishments.GetPlayerAdminJailRequest.prototype.getCharacter = functi
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.GetPlayerAdminJailRequest} returns this
+ */
 proto.mruv.punishments.GetPlayerAdminJailRequest.prototype.setCharacter = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -6870,9 +7104,12 @@ proto.mruv.punishments.GetPlayerAdminJailResponse.prototype.getJailTime = functi
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.GetPlayerAdminJailResponse} returns this
+ */
 proto.mruv.punishments.GetPlayerAdminJailResponse.prototype.setJailTime = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -6885,9 +7122,12 @@ proto.mruv.punishments.GetPlayerAdminJailResponse.prototype.getReason = function
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.punishments.GetPlayerAdminJailResponse} returns this
+ */
 proto.mruv.punishments.GetPlayerAdminJailResponse.prototype.setReason = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -6900,9 +7140,12 @@ proto.mruv.punishments.GetPlayerAdminJailResponse.prototype.getAdmin = function(
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.GetPlayerAdminJailResponse} returns this
+ */
 proto.mruv.punishments.GetPlayerAdminJailResponse.prototype.setAdmin = function(value) {
-  jspb.Message.setProto3IntField(this, 3, value);
+  return jspb.Message.setProto3IntField(this, 3, value);
 };
 
 
@@ -6915,9 +7158,12 @@ proto.mruv.punishments.GetPlayerAdminJailResponse.prototype.getDate = function()
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.GetPlayerAdminJailResponse} returns this
+ */
 proto.mruv.punishments.GetPlayerAdminJailResponse.prototype.setDate = function(value) {
-  jspb.Message.setProto3IntField(this, 4, value);
+  return jspb.Message.setProto3IntField(this, 4, value);
 };
 
 
@@ -7042,9 +7288,12 @@ proto.mruv.punishments.GetBanRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.GetBanRequest} returns this
+ */
 proto.mruv.punishments.GetBanRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -7169,9 +7418,12 @@ proto.mruv.punishments.GetWarnRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.GetWarnRequest} returns this
+ */
 proto.mruv.punishments.GetWarnRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -7296,9 +7548,12 @@ proto.mruv.punishments.GetBlockRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.GetBlockRequest} returns this
+ */
 proto.mruv.punishments.GetBlockRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -7435,9 +7690,12 @@ proto.mruv.punishments.IsPlayerBannedRequest.prototype.getPlayer = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.IsPlayerBannedRequest} returns this
+ */
 proto.mruv.punishments.IsPlayerBannedRequest.prototype.setPlayer = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -7450,9 +7708,12 @@ proto.mruv.punishments.IsPlayerBannedRequest.prototype.getIp = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.punishments.IsPlayerBannedRequest} returns this
+ */
 proto.mruv.punishments.IsPlayerBannedRequest.prototype.setIp = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -7589,9 +7850,12 @@ proto.mruv.punishments.IsPlayerBannedResponse.prototype.getBanned = function() {
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.mruv.punishments.IsPlayerBannedResponse} returns this
+ */
 proto.mruv.punishments.IsPlayerBannedResponse.prototype.setBanned = function(value) {
-  jspb.Message.setProto3BooleanField(this, 1, value);
+  return jspb.Message.setProto3BooleanField(this, 1, value);
 };
 
 
@@ -7604,9 +7868,12 @@ proto.mruv.punishments.IsPlayerBannedResponse.prototype.getBanId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.IsPlayerBannedResponse} returns this
+ */
 proto.mruv.punishments.IsPlayerBannedResponse.prototype.setBanId = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -7731,9 +7998,12 @@ proto.mruv.punishments.IsCharacterBlockedRequest.prototype.getCharacter = functi
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.IsCharacterBlockedRequest} returns this
+ */
 proto.mruv.punishments.IsCharacterBlockedRequest.prototype.setCharacter = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -7870,9 +8140,12 @@ proto.mruv.punishments.IsCharacterBlockedResponse.prototype.getBlocked = functio
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.mruv.punishments.IsCharacterBlockedResponse} returns this
+ */
 proto.mruv.punishments.IsCharacterBlockedResponse.prototype.setBlocked = function(value) {
-  jspb.Message.setProto3BooleanField(this, 1, value);
+  return jspb.Message.setProto3BooleanField(this, 1, value);
 };
 
 
@@ -7885,9 +8158,12 @@ proto.mruv.punishments.IsCharacterBlockedResponse.prototype.getBlockId = functio
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.IsCharacterBlockedResponse} returns this
+ */
 proto.mruv.punishments.IsCharacterBlockedResponse.prototype.setBlockId = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -8012,9 +8288,12 @@ proto.mruv.punishments.IsCharacterJailedRequest.prototype.getCharacter = functio
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.IsCharacterJailedRequest} returns this
+ */
 proto.mruv.punishments.IsCharacterJailedRequest.prototype.setCharacter = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -8151,9 +8430,12 @@ proto.mruv.punishments.IsCharacterJailedResponse.prototype.getJailed = function(
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.mruv.punishments.IsCharacterJailedResponse} returns this
+ */
 proto.mruv.punishments.IsCharacterJailedResponse.prototype.setJailed = function(value) {
-  jspb.Message.setProto3BooleanField(this, 1, value);
+  return jspb.Message.setProto3BooleanField(this, 1, value);
 };
 
 
@@ -8166,9 +8448,12 @@ proto.mruv.punishments.IsCharacterJailedResponse.prototype.getJailTime = functio
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.IsCharacterJailedResponse} returns this
+ */
 proto.mruv.punishments.IsCharacterJailedResponse.prototype.setJailTime = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -9416,9 +9701,12 @@ proto.mruv.punishments.WatchPlayerPunishmentsResponse.prototype.getType = functi
 };
 
 
-/** @param {!proto.mruv.punishments.PunishmentType} value */
+/**
+ * @param {!proto.mruv.punishments.PunishmentType} value
+ * @return {!proto.mruv.punishments.WatchPlayerPunishmentsResponse} returns this
+ */
 proto.mruv.punishments.WatchPlayerPunishmentsResponse.prototype.setType = function(value) {
-  jspb.Message.setProto3EnumField(this, 1, value);
+  return jspb.Message.setProto3EnumField(this, 1, value);
 };
 
 
@@ -9431,9 +9719,12 @@ proto.mruv.punishments.WatchPlayerPunishmentsResponse.prototype.getPunishmentId 
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.WatchPlayerPunishmentsResponse} returns this
+ */
 proto.mruv.punishments.WatchPlayerPunishmentsResponse.prototype.setPunishmentId = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -9695,9 +9986,12 @@ proto.mruv.punishments.WatchPunishmentsResponse.prototype.getType = function() {
 };
 
 
-/** @param {!proto.mruv.punishments.PunishmentType} value */
+/**
+ * @param {!proto.mruv.punishments.PunishmentType} value
+ * @return {!proto.mruv.punishments.WatchPunishmentsResponse} returns this
+ */
 proto.mruv.punishments.WatchPunishmentsResponse.prototype.setType = function(value) {
-  jspb.Message.setProto3EnumField(this, 1, value);
+  return jspb.Message.setProto3EnumField(this, 1, value);
 };
 
 
@@ -9710,9 +10004,12 @@ proto.mruv.punishments.WatchPunishmentsResponse.prototype.getPunishmentId = func
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.WatchPunishmentsResponse} returns this
+ */
 proto.mruv.punishments.WatchPunishmentsResponse.prototype.setPunishmentId = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -9725,9 +10022,12 @@ proto.mruv.punishments.WatchPunishmentsResponse.prototype.getPlayer = function()
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.WatchPunishmentsResponse} returns this
+ */
 proto.mruv.punishments.WatchPunishmentsResponse.prototype.setPlayer = function(value) {
-  jspb.Message.setProto3IntField(this, 3, value);
+  return jspb.Message.setProto3IntField(this, 3, value);
 };
 
 
@@ -9740,9 +10040,12 @@ proto.mruv.punishments.WatchPunishmentsResponse.prototype.getCharacter = functio
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.punishments.WatchPunishmentsResponse} returns this
+ */
 proto.mruv.punishments.WatchPunishmentsResponse.prototype.setCharacter = function(value) {
-  jspb.Message.setProto3IntField(this, 4, value);
+  return jspb.Message.setProto3IntField(this, 4, value);
 };
 
 

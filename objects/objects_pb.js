@@ -1,3 +1,4 @@
+// source: objects/objects.proto
 /**
  * @fileoverview
  * @enhanceable
@@ -866,13 +867,13 @@ proto.mruv.objects.Object.deserializeBinaryFromReader = function(msg, reader) {
     case 17:
       var value = msg.getMaterialsMap();
       reader.readMessage(value, function(message, reader) {
-        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readUint32, jspb.BinaryReader.prototype.readMessage, proto.mruv.objects.Material.deserializeBinaryFromReader, 0);
+        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readUint32, jspb.BinaryReader.prototype.readMessage, proto.mruv.objects.Material.deserializeBinaryFromReader, 0, new proto.mruv.objects.Material());
          });
       break;
     case 18:
       var value = msg.getMaterialTextsMap();
       reader.readMessage(value, function(message, reader) {
-        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readUint32, jspb.BinaryReader.prototype.readMessage, proto.mruv.objects.MaterialText.deserializeBinaryFromReader, 0);
+        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readUint32, jspb.BinaryReader.prototype.readMessage, proto.mruv.objects.MaterialText.deserializeBinaryFromReader, 0, new proto.mruv.objects.MaterialText());
          });
       break;
     default:
@@ -1029,9 +1030,12 @@ proto.mruv.objects.Object.prototype.getModel = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.Object} returns this
+ */
 proto.mruv.objects.Object.prototype.setModel = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1044,9 +1048,12 @@ proto.mruv.objects.Object.prototype.getX = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.Object} returns this
+ */
 proto.mruv.objects.Object.prototype.setX = function(value) {
-  jspb.Message.setProto3FloatField(this, 2, value);
+  return jspb.Message.setProto3FloatField(this, 2, value);
 };
 
 
@@ -1059,9 +1066,12 @@ proto.mruv.objects.Object.prototype.getY = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.Object} returns this
+ */
 proto.mruv.objects.Object.prototype.setY = function(value) {
-  jspb.Message.setProto3FloatField(this, 3, value);
+  return jspb.Message.setProto3FloatField(this, 3, value);
 };
 
 
@@ -1074,9 +1084,12 @@ proto.mruv.objects.Object.prototype.getZ = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.Object} returns this
+ */
 proto.mruv.objects.Object.prototype.setZ = function(value) {
-  jspb.Message.setProto3FloatField(this, 4, value);
+  return jspb.Message.setProto3FloatField(this, 4, value);
 };
 
 
@@ -1089,9 +1102,12 @@ proto.mruv.objects.Object.prototype.getRx = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.Object} returns this
+ */
 proto.mruv.objects.Object.prototype.setRx = function(value) {
-  jspb.Message.setProto3FloatField(this, 5, value);
+  return jspb.Message.setProto3FloatField(this, 5, value);
 };
 
 
@@ -1104,9 +1120,12 @@ proto.mruv.objects.Object.prototype.getRy = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.Object} returns this
+ */
 proto.mruv.objects.Object.prototype.setRy = function(value) {
-  jspb.Message.setProto3FloatField(this, 6, value);
+  return jspb.Message.setProto3FloatField(this, 6, value);
 };
 
 
@@ -1119,9 +1138,12 @@ proto.mruv.objects.Object.prototype.getRz = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.Object} returns this
+ */
 proto.mruv.objects.Object.prototype.setRz = function(value) {
-  jspb.Message.setProto3FloatField(this, 7, value);
+  return jspb.Message.setProto3FloatField(this, 7, value);
 };
 
 
@@ -1134,9 +1156,12 @@ proto.mruv.objects.Object.prototype.getWorldId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.Object} returns this
+ */
 proto.mruv.objects.Object.prototype.setWorldId = function(value) {
-  jspb.Message.setProto3IntField(this, 8, value);
+  return jspb.Message.setProto3IntField(this, 8, value);
 };
 
 
@@ -1149,9 +1174,12 @@ proto.mruv.objects.Object.prototype.getInteriorId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.Object} returns this
+ */
 proto.mruv.objects.Object.prototype.setInteriorId = function(value) {
-  jspb.Message.setProto3IntField(this, 9, value);
+  return jspb.Message.setProto3IntField(this, 9, value);
 };
 
 
@@ -1164,9 +1192,12 @@ proto.mruv.objects.Object.prototype.getPlayerId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.Object} returns this
+ */
 proto.mruv.objects.Object.prototype.setPlayerId = function(value) {
-  jspb.Message.setProto3IntField(this, 10, value);
+  return jspb.Message.setProto3IntField(this, 10, value);
 };
 
 
@@ -1179,9 +1210,12 @@ proto.mruv.objects.Object.prototype.getAreaId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.Object} returns this
+ */
 proto.mruv.objects.Object.prototype.setAreaId = function(value) {
-  jspb.Message.setProto3IntField(this, 11, value);
+  return jspb.Message.setProto3IntField(this, 11, value);
 };
 
 
@@ -1194,9 +1228,12 @@ proto.mruv.objects.Object.prototype.getStreamDistance = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.Object} returns this
+ */
 proto.mruv.objects.Object.prototype.setStreamDistance = function(value) {
-  jspb.Message.setProto3FloatField(this, 12, value);
+  return jspb.Message.setProto3FloatField(this, 12, value);
 };
 
 
@@ -1209,9 +1246,12 @@ proto.mruv.objects.Object.prototype.getDrawDistance = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.Object} returns this
+ */
 proto.mruv.objects.Object.prototype.setDrawDistance = function(value) {
-  jspb.Message.setProto3FloatField(this, 13, value);
+  return jspb.Message.setProto3FloatField(this, 13, value);
 };
 
 
@@ -1224,9 +1264,12 @@ proto.mruv.objects.Object.prototype.getPriority = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.Object} returns this
+ */
 proto.mruv.objects.Object.prototype.setPriority = function(value) {
-  jspb.Message.setProto3IntField(this, 15, value);
+  return jspb.Message.setProto3IntField(this, 15, value);
 };
 
 
@@ -1239,9 +1282,12 @@ proto.mruv.objects.Object.prototype.getEstateId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.Object} returns this
+ */
 proto.mruv.objects.Object.prototype.setEstateId = function(value) {
-  jspb.Message.setProto3IntField(this, 16, value);
+  return jspb.Message.setProto3IntField(this, 16, value);
 };
 
 
@@ -1260,10 +1306,11 @@ proto.mruv.objects.Object.prototype.getMaterialsMap = function(opt_noLazyCreate)
 
 /**
  * Clears values from the map. The map will be non-null.
+ * @return {!proto.mruv.objects.Object} returns this
  */
 proto.mruv.objects.Object.prototype.clearMaterialsMap = function() {
   this.getMaterialsMap().clear();
-};
+  return this;};
 
 
 /**
@@ -1281,10 +1328,11 @@ proto.mruv.objects.Object.prototype.getMaterialTextsMap = function(opt_noLazyCre
 
 /**
  * Clears values from the map. The map will be non-null.
+ * @return {!proto.mruv.objects.Object} returns this
  */
 proto.mruv.objects.Object.prototype.clearMaterialTextsMap = function() {
   this.getMaterialTextsMap().clear();
-};
+  return this;};
 
 
 
@@ -1444,9 +1492,12 @@ proto.mruv.objects.Material.prototype.getModelId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.Material} returns this
+ */
 proto.mruv.objects.Material.prototype.setModelId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1459,9 +1510,12 @@ proto.mruv.objects.Material.prototype.getTxdName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.objects.Material} returns this
+ */
 proto.mruv.objects.Material.prototype.setTxdName = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -1474,9 +1528,12 @@ proto.mruv.objects.Material.prototype.getTextureName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.objects.Material} returns this
+ */
 proto.mruv.objects.Material.prototype.setTextureName = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -1489,9 +1546,12 @@ proto.mruv.objects.Material.prototype.getMaterialColor = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.Material} returns this
+ */
 proto.mruv.objects.Material.prototype.setMaterialColor = function(value) {
-  jspb.Message.setProto3IntField(this, 4, value);
+  return jspb.Message.setProto3IntField(this, 4, value);
 };
 
 
@@ -1700,9 +1760,12 @@ proto.mruv.objects.MaterialText.prototype.getText = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.objects.MaterialText} returns this
+ */
 proto.mruv.objects.MaterialText.prototype.setText = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -1715,9 +1778,12 @@ proto.mruv.objects.MaterialText.prototype.getMaterialSize = function() {
 };
 
 
-/** @param {!proto.mruv.objects.MaterialSize} value */
+/**
+ * @param {!proto.mruv.objects.MaterialSize} value
+ * @return {!proto.mruv.objects.MaterialText} returns this
+ */
 proto.mruv.objects.MaterialText.prototype.setMaterialSize = function(value) {
-  jspb.Message.setProto3EnumField(this, 2, value);
+  return jspb.Message.setProto3EnumField(this, 2, value);
 };
 
 
@@ -1730,9 +1796,12 @@ proto.mruv.objects.MaterialText.prototype.getFontFace = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.objects.MaterialText} returns this
+ */
 proto.mruv.objects.MaterialText.prototype.setFontFace = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -1745,9 +1814,12 @@ proto.mruv.objects.MaterialText.prototype.getFontSize = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.MaterialText} returns this
+ */
 proto.mruv.objects.MaterialText.prototype.setFontSize = function(value) {
-  jspb.Message.setProto3IntField(this, 4, value);
+  return jspb.Message.setProto3IntField(this, 4, value);
 };
 
 
@@ -1760,9 +1832,12 @@ proto.mruv.objects.MaterialText.prototype.getBold = function() {
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.mruv.objects.MaterialText} returns this
+ */
 proto.mruv.objects.MaterialText.prototype.setBold = function(value) {
-  jspb.Message.setProto3BooleanField(this, 5, value);
+  return jspb.Message.setProto3BooleanField(this, 5, value);
 };
 
 
@@ -1775,9 +1850,12 @@ proto.mruv.objects.MaterialText.prototype.getFontColor = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.MaterialText} returns this
+ */
 proto.mruv.objects.MaterialText.prototype.setFontColor = function(value) {
-  jspb.Message.setProto3IntField(this, 6, value);
+  return jspb.Message.setProto3IntField(this, 6, value);
 };
 
 
@@ -1790,9 +1868,12 @@ proto.mruv.objects.MaterialText.prototype.getBackColor = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.MaterialText} returns this
+ */
 proto.mruv.objects.MaterialText.prototype.setBackColor = function(value) {
-  jspb.Message.setProto3IntField(this, 7, value);
+  return jspb.Message.setProto3IntField(this, 7, value);
 };
 
 
@@ -1805,9 +1886,12 @@ proto.mruv.objects.MaterialText.prototype.getTextAlignment = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.MaterialText} returns this
+ */
 proto.mruv.objects.MaterialText.prototype.setTextAlignment = function(value) {
-  jspb.Message.setProto3IntField(this, 8, value);
+  return jspb.Message.setProto3IntField(this, 8, value);
 };
 
 
@@ -1992,9 +2076,12 @@ proto.mruv.objects.RemovedBuilding.prototype.getModel = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.RemovedBuilding} returns this
+ */
 proto.mruv.objects.RemovedBuilding.prototype.setModel = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2007,9 +2094,12 @@ proto.mruv.objects.RemovedBuilding.prototype.getX = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.RemovedBuilding} returns this
+ */
 proto.mruv.objects.RemovedBuilding.prototype.setX = function(value) {
-  jspb.Message.setProto3FloatField(this, 2, value);
+  return jspb.Message.setProto3FloatField(this, 2, value);
 };
 
 
@@ -2022,9 +2112,12 @@ proto.mruv.objects.RemovedBuilding.prototype.getY = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.RemovedBuilding} returns this
+ */
 proto.mruv.objects.RemovedBuilding.prototype.setY = function(value) {
-  jspb.Message.setProto3FloatField(this, 3, value);
+  return jspb.Message.setProto3FloatField(this, 3, value);
 };
 
 
@@ -2037,9 +2130,12 @@ proto.mruv.objects.RemovedBuilding.prototype.getZ = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.RemovedBuilding} returns this
+ */
 proto.mruv.objects.RemovedBuilding.prototype.setZ = function(value) {
-  jspb.Message.setProto3FloatField(this, 4, value);
+  return jspb.Message.setProto3FloatField(this, 4, value);
 };
 
 
@@ -2052,9 +2148,12 @@ proto.mruv.objects.RemovedBuilding.prototype.getRadius = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.RemovedBuilding} returns this
+ */
 proto.mruv.objects.RemovedBuilding.prototype.setRadius = function(value) {
-  jspb.Message.setProto3FloatField(this, 5, value);
+  return jspb.Message.setProto3FloatField(this, 5, value);
 };
 
 
@@ -2067,9 +2166,12 @@ proto.mruv.objects.RemovedBuilding.prototype.getEstateId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.RemovedBuilding} returns this
+ */
 proto.mruv.objects.RemovedBuilding.prototype.setEstateId = function(value) {
-  jspb.Message.setProto3IntField(this, 6, value);
+  return jspb.Message.setProto3IntField(this, 6, value);
 };
 
 
@@ -2197,17 +2299,21 @@ proto.mruv.objects.CreateObjectRequest.prototype.getObject = function() {
 };
 
 
-/** @param {?proto.mruv.objects.Object|undefined} value */
+/**
+ * @param {?proto.mruv.objects.Object|undefined} value
+ * @return {!proto.mruv.objects.CreateObjectRequest} returns this
+*/
 proto.mruv.objects.CreateObjectRequest.prototype.setObject = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.mruv.objects.CreateObjectRequest} returns this
  */
 proto.mruv.objects.CreateObjectRequest.prototype.clearObject = function() {
-  this.setObject(undefined);
+  return this.setObject(undefined);
 };
 
 
@@ -2341,9 +2447,12 @@ proto.mruv.objects.CreateObjectResponse.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.CreateObjectResponse} returns this
+ */
 proto.mruv.objects.CreateObjectResponse.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2468,9 +2577,12 @@ proto.mruv.objects.GetObjectRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.GetObjectRequest} returns this
+ */
 proto.mruv.objects.GetObjectRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2598,17 +2710,21 @@ proto.mruv.objects.GetObjectResponse.prototype.getObject = function() {
 };
 
 
-/** @param {?proto.mruv.objects.Object|undefined} value */
+/**
+ * @param {?proto.mruv.objects.Object|undefined} value
+ * @return {!proto.mruv.objects.GetObjectResponse} returns this
+*/
 proto.mruv.objects.GetObjectResponse.prototype.setObject = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.mruv.objects.GetObjectResponse} returns this
  */
 proto.mruv.objects.GetObjectResponse.prototype.clearObject = function() {
-  this.setObject(undefined);
+  return this.setObject(undefined);
 };
 
 
@@ -2756,9 +2872,12 @@ proto.mruv.objects.UpdateObjectRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.UpdateObjectRequest} returns this
+ */
 proto.mruv.objects.UpdateObjectRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2772,17 +2891,21 @@ proto.mruv.objects.UpdateObjectRequest.prototype.getObject = function() {
 };
 
 
-/** @param {?proto.mruv.objects.Object|undefined} value */
+/**
+ * @param {?proto.mruv.objects.Object|undefined} value
+ * @return {!proto.mruv.objects.UpdateObjectRequest} returns this
+*/
 proto.mruv.objects.UpdateObjectRequest.prototype.setObject = function(value) {
-  jspb.Message.setWrapperField(this, 2, value);
+  return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.mruv.objects.UpdateObjectRequest} returns this
  */
 proto.mruv.objects.UpdateObjectRequest.prototype.clearObject = function() {
-  this.setObject(undefined);
+  return this.setObject(undefined);
 };
 
 
@@ -3017,9 +3140,12 @@ proto.mruv.objects.DeleteObjectRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.DeleteObjectRequest} returns this
+ */
 proto.mruv.objects.DeleteObjectRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -3271,9 +3397,12 @@ proto.mruv.objects.AddObjectMaterialRequest.prototype.getObjectId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.AddObjectMaterialRequest} returns this
+ */
 proto.mruv.objects.AddObjectMaterialRequest.prototype.setObjectId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -3286,9 +3415,12 @@ proto.mruv.objects.AddObjectMaterialRequest.prototype.getIndex = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.AddObjectMaterialRequest} returns this
+ */
 proto.mruv.objects.AddObjectMaterialRequest.prototype.setIndex = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -3302,17 +3434,21 @@ proto.mruv.objects.AddObjectMaterialRequest.prototype.getMaterial = function() {
 };
 
 
-/** @param {?proto.mruv.objects.Material|undefined} value */
+/**
+ * @param {?proto.mruv.objects.Material|undefined} value
+ * @return {!proto.mruv.objects.AddObjectMaterialRequest} returns this
+*/
 proto.mruv.objects.AddObjectMaterialRequest.prototype.setMaterial = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.mruv.objects.AddObjectMaterialRequest} returns this
  */
 proto.mruv.objects.AddObjectMaterialRequest.prototype.clearMaterial = function() {
-  this.setMaterial(undefined);
+  return this.setMaterial(undefined);
 };
 
 
@@ -3547,9 +3683,12 @@ proto.mruv.objects.GetObjectMaterialsRequest.prototype.getObjectId = function() 
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.GetObjectMaterialsRequest} returns this
+ */
 proto.mruv.objects.GetObjectMaterialsRequest.prototype.setObjectId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -3625,7 +3764,7 @@ proto.mruv.objects.GetObjectMaterialsResponse.deserializeBinaryFromReader = func
     case 1:
       var value = msg.getMaterialsMap();
       reader.readMessage(value, function(message, reader) {
-        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readUint32, jspb.BinaryReader.prototype.readMessage, proto.mruv.objects.Material.deserializeBinaryFromReader, 0);
+        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readUint32, jspb.BinaryReader.prototype.readMessage, proto.mruv.objects.Material.deserializeBinaryFromReader, 0, new proto.mruv.objects.Material());
          });
       break;
     default:
@@ -3679,10 +3818,11 @@ proto.mruv.objects.GetObjectMaterialsResponse.prototype.getMaterialsMap = functi
 
 /**
  * Clears values from the map. The map will be non-null.
+ * @return {!proto.mruv.objects.GetObjectMaterialsResponse} returns this
  */
 proto.mruv.objects.GetObjectMaterialsResponse.prototype.clearMaterialsMap = function() {
   this.getMaterialsMap().clear();
-};
+  return this;};
 
 
 
@@ -3818,9 +3958,12 @@ proto.mruv.objects.DeleteObjectMaterialRequest.prototype.getObjectId = function(
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.DeleteObjectMaterialRequest} returns this
+ */
 proto.mruv.objects.DeleteObjectMaterialRequest.prototype.setObjectId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -3833,9 +3976,12 @@ proto.mruv.objects.DeleteObjectMaterialRequest.prototype.getIndex = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.DeleteObjectMaterialRequest} returns this
+ */
 proto.mruv.objects.DeleteObjectMaterialRequest.prototype.setIndex = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -4087,9 +4233,12 @@ proto.mruv.objects.AddObjectMaterialTextRequest.prototype.getObjectId = function
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.AddObjectMaterialTextRequest} returns this
+ */
 proto.mruv.objects.AddObjectMaterialTextRequest.prototype.setObjectId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -4102,9 +4251,12 @@ proto.mruv.objects.AddObjectMaterialTextRequest.prototype.getIndex = function() 
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.AddObjectMaterialTextRequest} returns this
+ */
 proto.mruv.objects.AddObjectMaterialTextRequest.prototype.setIndex = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -4118,17 +4270,21 @@ proto.mruv.objects.AddObjectMaterialTextRequest.prototype.getMaterialText = func
 };
 
 
-/** @param {?proto.mruv.objects.MaterialText|undefined} value */
+/**
+ * @param {?proto.mruv.objects.MaterialText|undefined} value
+ * @return {!proto.mruv.objects.AddObjectMaterialTextRequest} returns this
+*/
 proto.mruv.objects.AddObjectMaterialTextRequest.prototype.setMaterialText = function(value) {
-  jspb.Message.setWrapperField(this, 3, value);
+  return jspb.Message.setWrapperField(this, 3, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.mruv.objects.AddObjectMaterialTextRequest} returns this
  */
 proto.mruv.objects.AddObjectMaterialTextRequest.prototype.clearMaterialText = function() {
-  this.setMaterialText(undefined);
+  return this.setMaterialText(undefined);
 };
 
 
@@ -4363,9 +4519,12 @@ proto.mruv.objects.GetObjectMaterialTextsRequest.prototype.getObjectId = functio
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.GetObjectMaterialTextsRequest} returns this
+ */
 proto.mruv.objects.GetObjectMaterialTextsRequest.prototype.setObjectId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -4441,7 +4600,7 @@ proto.mruv.objects.GetObjectMaterialTextsResponse.deserializeBinaryFromReader = 
     case 1:
       var value = msg.getMaterialTextsMap();
       reader.readMessage(value, function(message, reader) {
-        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readUint32, jspb.BinaryReader.prototype.readMessage, proto.mruv.objects.MaterialText.deserializeBinaryFromReader, 0);
+        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readUint32, jspb.BinaryReader.prototype.readMessage, proto.mruv.objects.MaterialText.deserializeBinaryFromReader, 0, new proto.mruv.objects.MaterialText());
          });
       break;
     default:
@@ -4495,10 +4654,11 @@ proto.mruv.objects.GetObjectMaterialTextsResponse.prototype.getMaterialTextsMap 
 
 /**
  * Clears values from the map. The map will be non-null.
+ * @return {!proto.mruv.objects.GetObjectMaterialTextsResponse} returns this
  */
 proto.mruv.objects.GetObjectMaterialTextsResponse.prototype.clearMaterialTextsMap = function() {
   this.getMaterialTextsMap().clear();
-};
+  return this;};
 
 
 
@@ -4634,9 +4794,12 @@ proto.mruv.objects.DeleteObjectMaterialTextRequest.prototype.getObjectId = funct
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.DeleteObjectMaterialTextRequest} returns this
+ */
 proto.mruv.objects.DeleteObjectMaterialTextRequest.prototype.setObjectId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -4649,9 +4812,12 @@ proto.mruv.objects.DeleteObjectMaterialTextRequest.prototype.getIndex = function
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.DeleteObjectMaterialTextRequest} returns this
+ */
 proto.mruv.objects.DeleteObjectMaterialTextRequest.prototype.setIndex = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -4880,17 +5046,21 @@ proto.mruv.objects.AddRemoveBuildingRequest.prototype.getRemovedBuilding = funct
 };
 
 
-/** @param {?proto.mruv.objects.RemovedBuilding|undefined} value */
+/**
+ * @param {?proto.mruv.objects.RemovedBuilding|undefined} value
+ * @return {!proto.mruv.objects.AddRemoveBuildingRequest} returns this
+*/
 proto.mruv.objects.AddRemoveBuildingRequest.prototype.setRemovedBuilding = function(value) {
-  jspb.Message.setWrapperField(this, 1, value);
+  return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
+ * @return {!proto.mruv.objects.AddRemoveBuildingRequest} returns this
  */
 proto.mruv.objects.AddRemoveBuildingRequest.prototype.clearRemovedBuilding = function() {
-  this.setRemovedBuilding(undefined);
+  return this.setRemovedBuilding(undefined);
 };
 
 
@@ -5024,9 +5194,12 @@ proto.mruv.objects.AddRemoveBuildingResponse.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.AddRemoveBuildingResponse} returns this
+ */
 proto.mruv.objects.AddRemoveBuildingResponse.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -5151,9 +5324,12 @@ proto.mruv.objects.GetRemovedBuildingsRequest.prototype.getEstateId = function()
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.GetRemovedBuildingsRequest} returns this
+ */
 proto.mruv.objects.GetRemovedBuildingsRequest.prototype.setEstateId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -5289,9 +5465,12 @@ proto.mruv.objects.GetRemovedBuildingsResponse.prototype.getRemovedBuildingsList
 };
 
 
-/** @param {!Array<!proto.mruv.objects.RemovedBuilding>} value */
+/**
+ * @param {!Array<!proto.mruv.objects.RemovedBuilding>} value
+ * @return {!proto.mruv.objects.GetRemovedBuildingsResponse} returns this
+*/
 proto.mruv.objects.GetRemovedBuildingsResponse.prototype.setRemovedBuildingsList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 1, value);
+  return jspb.Message.setRepeatedWrapperField(this, 1, value);
 };
 
 
@@ -5307,9 +5486,10 @@ proto.mruv.objects.GetRemovedBuildingsResponse.prototype.addRemovedBuildings = f
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.mruv.objects.GetRemovedBuildingsResponse} returns this
  */
 proto.mruv.objects.GetRemovedBuildingsResponse.prototype.clearRemovedBuildingsList = function() {
-  this.setRemovedBuildingsList([]);
+  return this.setRemovedBuildingsList([]);
 };
 
 
@@ -5434,9 +5614,12 @@ proto.mruv.objects.DeleteRemoveBuildingRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.DeleteRemoveBuildingRequest} returns this
+ */
 proto.mruv.objects.DeleteRemoveBuildingRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -5674,9 +5857,12 @@ proto.mruv.objects.FetchAllObjectsRequest.prototype.getChunkSize = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.FetchAllObjectsRequest} returns this
+ */
 proto.mruv.objects.FetchAllObjectsRequest.prototype.setChunkSize = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -5689,9 +5875,12 @@ proto.mruv.objects.FetchAllObjectsRequest.prototype.getEstateId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.objects.FetchAllObjectsRequest} returns this
+ */
 proto.mruv.objects.FetchAllObjectsRequest.prototype.setEstateId = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -5767,7 +5956,7 @@ proto.mruv.objects.FetchAllObjectsResponse.deserializeBinaryFromReader = functio
     case 1:
       var value = msg.getObjectsMap();
       reader.readMessage(value, function(message, reader) {
-        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readInt32, jspb.BinaryReader.prototype.readMessage, proto.mruv.objects.Object.deserializeBinaryFromReader, 0);
+        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readInt32, jspb.BinaryReader.prototype.readMessage, proto.mruv.objects.Object.deserializeBinaryFromReader, 0, new proto.mruv.objects.Object());
          });
       break;
     default:
@@ -5821,10 +6010,11 @@ proto.mruv.objects.FetchAllObjectsResponse.prototype.getObjectsMap = function(op
 
 /**
  * Clears values from the map. The map will be non-null.
+ * @return {!proto.mruv.objects.FetchAllObjectsResponse} returns this
  */
 proto.mruv.objects.FetchAllObjectsResponse.prototype.clearObjectsMap = function() {
   this.getObjectsMap().clear();
-};
+  return this;};
 
 
 /**

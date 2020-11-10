@@ -1,3 +1,4 @@
+// source: houses/houses.proto
 /**
  * @fileoverview
  * @enhanceable
@@ -512,9 +513,12 @@ proto.mruv.houses.GetHouseRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.houses.GetHouseRequest} returns this
+ */
 proto.mruv.houses.GetHouseRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -740,9 +744,12 @@ proto.mruv.houses.UpdateHouseRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.houses.UpdateHouseRequest} returns this
+ */
 proto.mruv.houses.UpdateHouseRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -968,9 +975,12 @@ proto.mruv.houses.DeleteHouseRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.houses.DeleteHouseRequest} returns this
+ */
 proto.mruv.houses.DeleteHouseRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 

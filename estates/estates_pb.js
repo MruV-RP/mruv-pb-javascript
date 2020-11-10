@@ -1,3 +1,4 @@
+// source: estates/estates.proto
 /**
  * @fileoverview
  * @enhanceable
@@ -769,9 +770,12 @@ proto.mruv.estates.Estate.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.estates.Estate} returns this
+ */
 proto.mruv.estates.Estate.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -784,9 +788,12 @@ proto.mruv.estates.Estate.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.estates.Estate} returns this
+ */
 proto.mruv.estates.Estate.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -799,9 +806,12 @@ proto.mruv.estates.Estate.prototype.getDescription = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.estates.Estate} returns this
+ */
 proto.mruv.estates.Estate.prototype.setDescription = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -814,26 +824,31 @@ proto.mruv.estates.Estate.prototype.getEntrancesList = function() {
 };
 
 
-/** @param {!Array<number>} value */
+/**
+ * @param {!Array<number>} value
+ * @return {!proto.mruv.estates.Estate} returns this
+ */
 proto.mruv.estates.Estate.prototype.setEntrancesList = function(value) {
-  jspb.Message.setField(this, 4, value || []);
+  return jspb.Message.setField(this, 4, value || []);
 };
 
 
 /**
  * @param {number} value
  * @param {number=} opt_index
+ * @return {!proto.mruv.estates.Estate} returns this
  */
 proto.mruv.estates.Estate.prototype.addEntrances = function(value, opt_index) {
-  jspb.Message.addToRepeatedField(this, 4, value, opt_index);
+  return jspb.Message.addToRepeatedField(this, 4, value, opt_index);
 };
 
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.mruv.estates.Estate} returns this
  */
 proto.mruv.estates.Estate.prototype.clearEntrancesList = function() {
-  this.setEntrancesList([]);
+  return this.setEntrancesList([]);
 };
 
 
@@ -846,26 +861,31 @@ proto.mruv.estates.Estate.prototype.getGatesList = function() {
 };
 
 
-/** @param {!Array<number>} value */
+/**
+ * @param {!Array<number>} value
+ * @return {!proto.mruv.estates.Estate} returns this
+ */
 proto.mruv.estates.Estate.prototype.setGatesList = function(value) {
-  jspb.Message.setField(this, 5, value || []);
+  return jspb.Message.setField(this, 5, value || []);
 };
 
 
 /**
  * @param {number} value
  * @param {number=} opt_index
+ * @return {!proto.mruv.estates.Estate} returns this
  */
 proto.mruv.estates.Estate.prototype.addGates = function(value, opt_index) {
-  jspb.Message.addToRepeatedField(this, 5, value, opt_index);
+  return jspb.Message.addToRepeatedField(this, 5, value, opt_index);
 };
 
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.mruv.estates.Estate} returns this
  */
 proto.mruv.estates.Estate.prototype.clearGatesList = function() {
-  this.setGatesList([]);
+  return this.setGatesList([]);
 };
 
 
@@ -878,26 +898,31 @@ proto.mruv.estates.Estate.prototype.getRoomsList = function() {
 };
 
 
-/** @param {!Array<number>} value */
+/**
+ * @param {!Array<number>} value
+ * @return {!proto.mruv.estates.Estate} returns this
+ */
 proto.mruv.estates.Estate.prototype.setRoomsList = function(value) {
-  jspb.Message.setField(this, 6, value || []);
+  return jspb.Message.setField(this, 6, value || []);
 };
 
 
 /**
  * @param {number} value
  * @param {number=} opt_index
+ * @return {!proto.mruv.estates.Estate} returns this
  */
 proto.mruv.estates.Estate.prototype.addRooms = function(value, opt_index) {
-  jspb.Message.addToRepeatedField(this, 6, value, opt_index);
+  return jspb.Message.addToRepeatedField(this, 6, value, opt_index);
 };
 
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.mruv.estates.Estate} returns this
  */
 proto.mruv.estates.Estate.prototype.clearRoomsList = function() {
-  this.setRoomsList([]);
+  return this.setRoomsList([]);
 };
 
 
@@ -910,9 +935,12 @@ proto.mruv.estates.Estate.prototype.getProductId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.estates.Estate} returns this
+ */
 proto.mruv.estates.Estate.prototype.setProductId = function(value) {
-  jspb.Message.setProto3IntField(this, 7, value);
+  return jspb.Message.setProto3IntField(this, 7, value);
 };
 
 
@@ -1006,25 +1034,25 @@ proto.mruv.estates.FullEstate.deserializeBinaryFromReader = function(msg, reader
     case 4:
       var value = msg.getObjectsMap();
       reader.readMessage(value, function(message, reader) {
-        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readUint32, jspb.BinaryReader.prototype.readMessage, proto.mruv.objects.Object.deserializeBinaryFromReader, 0);
+        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readUint32, jspb.BinaryReader.prototype.readMessage, proto.mruv.objects.Object.deserializeBinaryFromReader, 0, new proto.mruv.objects.Object());
          });
       break;
     case 5:
       var value = msg.getRemovedBuildingsMap();
       reader.readMessage(value, function(message, reader) {
-        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readUint32, jspb.BinaryReader.prototype.readMessage, proto.mruv.objects.RemovedBuilding.deserializeBinaryFromReader, 0);
+        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readUint32, jspb.BinaryReader.prototype.readMessage, proto.mruv.objects.RemovedBuilding.deserializeBinaryFromReader, 0, new proto.mruv.objects.RemovedBuilding());
          });
       break;
     case 6:
       var value = msg.getEntrancesMap();
       reader.readMessage(value, function(message, reader) {
-        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readUint32, jspb.BinaryReader.prototype.readMessage, proto.mruv.entrances.Entrance.deserializeBinaryFromReader, 0);
+        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readUint32, jspb.BinaryReader.prototype.readMessage, proto.mruv.entrances.Entrance.deserializeBinaryFromReader, 0, new proto.mruv.entrances.Entrance());
          });
       break;
     case 7:
       var value = msg.getGatesMap();
       reader.readMessage(value, function(message, reader) {
-        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readUint32, jspb.BinaryReader.prototype.readMessage, proto.mruv.gates.Gate.deserializeBinaryFromReader, 0);
+        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readUint32, jspb.BinaryReader.prototype.readMessage, proto.mruv.gates.Gate.deserializeBinaryFromReader, 0, new proto.mruv.gates.Gate());
          });
       break;
     default:
@@ -1105,9 +1133,12 @@ proto.mruv.estates.FullEstate.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.estates.FullEstate} returns this
+ */
 proto.mruv.estates.FullEstate.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1120,9 +1151,12 @@ proto.mruv.estates.FullEstate.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.estates.FullEstate} returns this
+ */
 proto.mruv.estates.FullEstate.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -1135,9 +1169,12 @@ proto.mruv.estates.FullEstate.prototype.getDescription = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.estates.FullEstate} returns this
+ */
 proto.mruv.estates.FullEstate.prototype.setDescription = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -1156,10 +1193,11 @@ proto.mruv.estates.FullEstate.prototype.getObjectsMap = function(opt_noLazyCreat
 
 /**
  * Clears values from the map. The map will be non-null.
+ * @return {!proto.mruv.estates.FullEstate} returns this
  */
 proto.mruv.estates.FullEstate.prototype.clearObjectsMap = function() {
   this.getObjectsMap().clear();
-};
+  return this;};
 
 
 /**
@@ -1177,10 +1215,11 @@ proto.mruv.estates.FullEstate.prototype.getRemovedBuildingsMap = function(opt_no
 
 /**
  * Clears values from the map. The map will be non-null.
+ * @return {!proto.mruv.estates.FullEstate} returns this
  */
 proto.mruv.estates.FullEstate.prototype.clearRemovedBuildingsMap = function() {
   this.getRemovedBuildingsMap().clear();
-};
+  return this;};
 
 
 /**
@@ -1198,10 +1237,11 @@ proto.mruv.estates.FullEstate.prototype.getEntrancesMap = function(opt_noLazyCre
 
 /**
  * Clears values from the map. The map will be non-null.
+ * @return {!proto.mruv.estates.FullEstate} returns this
  */
 proto.mruv.estates.FullEstate.prototype.clearEntrancesMap = function() {
   this.getEntrancesMap().clear();
-};
+  return this;};
 
 
 /**
@@ -1219,10 +1259,11 @@ proto.mruv.estates.FullEstate.prototype.getGatesMap = function(opt_noLazyCreate)
 
 /**
  * Clears values from the map. The map will be non-null.
+ * @return {!proto.mruv.estates.FullEstate} returns this
  */
 proto.mruv.estates.FullEstate.prototype.clearGatesMap = function() {
   this.getGatesMap().clear();
-};
+  return this;};
 
 
 
@@ -1358,9 +1399,12 @@ proto.mruv.estates.CreateEstateRequest.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.estates.CreateEstateRequest} returns this
+ */
 proto.mruv.estates.CreateEstateRequest.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -1373,9 +1417,12 @@ proto.mruv.estates.CreateEstateRequest.prototype.getDescription = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.estates.CreateEstateRequest} returns this
+ */
 proto.mruv.estates.CreateEstateRequest.prototype.setDescription = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -1500,9 +1547,12 @@ proto.mruv.estates.CreateEstateResponse.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.estates.CreateEstateResponse} returns this
+ */
 proto.mruv.estates.CreateEstateResponse.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1627,9 +1677,12 @@ proto.mruv.estates.GetEstateRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.estates.GetEstateRequest} returns this
+ */
 proto.mruv.estates.GetEstateRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1778,9 +1831,12 @@ proto.mruv.estates.UpdateEstateRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.estates.UpdateEstateRequest} returns this
+ */
 proto.mruv.estates.UpdateEstateRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1793,9 +1849,12 @@ proto.mruv.estates.UpdateEstateRequest.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.estates.UpdateEstateRequest} returns this
+ */
 proto.mruv.estates.UpdateEstateRequest.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -1808,9 +1867,12 @@ proto.mruv.estates.UpdateEstateRequest.prototype.getDescription = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.estates.UpdateEstateRequest} returns this
+ */
 proto.mruv.estates.UpdateEstateRequest.prototype.setDescription = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -2036,9 +2098,12 @@ proto.mruv.estates.DeleteEstateRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.estates.DeleteEstateRequest} returns this
+ */
 proto.mruv.estates.DeleteEstateRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2276,9 +2341,12 @@ proto.mruv.estates.GetEstatesRequest.prototype.getFrom = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.estates.GetEstatesRequest} returns this
+ */
 proto.mruv.estates.GetEstatesRequest.prototype.setFrom = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2291,9 +2359,12 @@ proto.mruv.estates.GetEstatesRequest.prototype.getLimit = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.estates.GetEstatesRequest} returns this
+ */
 proto.mruv.estates.GetEstatesRequest.prototype.setLimit = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -2429,9 +2500,12 @@ proto.mruv.estates.GetEstatesResponse.prototype.getEstatesList = function() {
 };
 
 
-/** @param {!Array<!proto.mruv.estates.Estate>} value */
+/**
+ * @param {!Array<!proto.mruv.estates.Estate>} value
+ * @return {!proto.mruv.estates.GetEstatesResponse} returns this
+*/
 proto.mruv.estates.GetEstatesResponse.prototype.setEstatesList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 1, value);
+  return jspb.Message.setRepeatedWrapperField(this, 1, value);
 };
 
 
@@ -2447,9 +2521,10 @@ proto.mruv.estates.GetEstatesResponse.prototype.addEstates = function(opt_value,
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.mruv.estates.GetEstatesResponse} returns this
  */
 proto.mruv.estates.GetEstatesResponse.prototype.clearEstatesList = function() {
-  this.setEstatesList([]);
+  return this.setEstatesList([]);
 };
 
 
@@ -2586,9 +2661,12 @@ proto.mruv.estates.AddGateRequest.prototype.getEstateId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.estates.AddGateRequest} returns this
+ */
 proto.mruv.estates.AddGateRequest.prototype.setEstateId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2601,9 +2679,12 @@ proto.mruv.estates.AddGateRequest.prototype.getGateId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.estates.AddGateRequest} returns this
+ */
 proto.mruv.estates.AddGateRequest.prototype.setGateId = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -2841,9 +2922,12 @@ proto.mruv.estates.RemoveGateRequest.prototype.getEstateId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.estates.RemoveGateRequest} returns this
+ */
 proto.mruv.estates.RemoveGateRequest.prototype.setEstateId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2856,9 +2940,12 @@ proto.mruv.estates.RemoveGateRequest.prototype.getGateId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.estates.RemoveGateRequest} returns this
+ */
 proto.mruv.estates.RemoveGateRequest.prototype.setGateId = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -3084,9 +3171,12 @@ proto.mruv.estates.GetEstateGatesRequest.prototype.getEstateId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.estates.GetEstateGatesRequest} returns this
+ */
 proto.mruv.estates.GetEstateGatesRequest.prototype.setEstateId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -3222,9 +3312,12 @@ proto.mruv.estates.GetEstateGatesResponse.prototype.getGatesList = function() {
 };
 
 
-/** @param {!Array<!proto.mruv.gates.Gate>} value */
+/**
+ * @param {!Array<!proto.mruv.gates.Gate>} value
+ * @return {!proto.mruv.estates.GetEstateGatesResponse} returns this
+*/
 proto.mruv.estates.GetEstateGatesResponse.prototype.setGatesList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 1, value);
+  return jspb.Message.setRepeatedWrapperField(this, 1, value);
 };
 
 
@@ -3240,9 +3333,10 @@ proto.mruv.estates.GetEstateGatesResponse.prototype.addGates = function(opt_valu
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.mruv.estates.GetEstateGatesResponse} returns this
  */
 proto.mruv.estates.GetEstateGatesResponse.prototype.clearGatesList = function() {
-  this.setGatesList([]);
+  return this.setGatesList([]);
 };
 
 
@@ -3379,9 +3473,12 @@ proto.mruv.estates.AddEntranceRequest.prototype.getEstateId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.estates.AddEntranceRequest} returns this
+ */
 proto.mruv.estates.AddEntranceRequest.prototype.setEstateId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -3394,9 +3491,12 @@ proto.mruv.estates.AddEntranceRequest.prototype.getEntranceId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.estates.AddEntranceRequest} returns this
+ */
 proto.mruv.estates.AddEntranceRequest.prototype.setEntranceId = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -3634,9 +3734,12 @@ proto.mruv.estates.RemoveEntranceRequest.prototype.getEstateId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.estates.RemoveEntranceRequest} returns this
+ */
 proto.mruv.estates.RemoveEntranceRequest.prototype.setEstateId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -3649,9 +3752,12 @@ proto.mruv.estates.RemoveEntranceRequest.prototype.getEntranceId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.estates.RemoveEntranceRequest} returns this
+ */
 proto.mruv.estates.RemoveEntranceRequest.prototype.setEntranceId = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -3877,9 +3983,12 @@ proto.mruv.estates.GetEstateEntrancesRequest.prototype.getEstateId = function() 
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.estates.GetEstateEntrancesRequest} returns this
+ */
 proto.mruv.estates.GetEstateEntrancesRequest.prototype.setEstateId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -4015,9 +4124,12 @@ proto.mruv.estates.GetEstateEntrancesResponse.prototype.getEntrancesList = funct
 };
 
 
-/** @param {!Array<!proto.mruv.entrances.Entrance>} value */
+/**
+ * @param {!Array<!proto.mruv.entrances.Entrance>} value
+ * @return {!proto.mruv.estates.GetEstateEntrancesResponse} returns this
+*/
 proto.mruv.estates.GetEstateEntrancesResponse.prototype.setEntrancesList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 1, value);
+  return jspb.Message.setRepeatedWrapperField(this, 1, value);
 };
 
 
@@ -4033,9 +4145,10 @@ proto.mruv.estates.GetEstateEntrancesResponse.prototype.addEntrances = function(
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.mruv.estates.GetEstateEntrancesResponse} returns this
  */
 proto.mruv.estates.GetEstateEntrancesResponse.prototype.clearEntrancesList = function() {
-  this.setEntrancesList([]);
+  return this.setEntrancesList([]);
 };
 
 
@@ -4160,9 +4273,12 @@ proto.mruv.estates.FetchAllEstatesRequest.prototype.getChunkSize = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.estates.FetchAllEstatesRequest} returns this
+ */
 proto.mruv.estates.FetchAllEstatesRequest.prototype.setChunkSize = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -4298,9 +4414,12 @@ proto.mruv.estates.FetchAllEstatesResponse.prototype.getEstatesList = function()
 };
 
 
-/** @param {!Array<!proto.mruv.estates.FullEstate>} value */
+/**
+ * @param {!Array<!proto.mruv.estates.FullEstate>} value
+ * @return {!proto.mruv.estates.FetchAllEstatesResponse} returns this
+*/
 proto.mruv.estates.FetchAllEstatesResponse.prototype.setEstatesList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 1, value);
+  return jspb.Message.setRepeatedWrapperField(this, 1, value);
 };
 
 
@@ -4316,9 +4435,10 @@ proto.mruv.estates.FetchAllEstatesResponse.prototype.addEstates = function(opt_v
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.mruv.estates.FetchAllEstatesResponse} returns this
  */
 proto.mruv.estates.FetchAllEstatesResponse.prototype.clearEstatesList = function() {
-  this.setEstatesList([]);
+  return this.setEstatesList([]);
 };
 
 

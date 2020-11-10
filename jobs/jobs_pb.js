@@ -1,3 +1,4 @@
+// source: jobs/jobs.proto
 /**
  * @fileoverview
  * @enhanceable
@@ -512,9 +513,12 @@ proto.mruv.jobs.GetJobRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.jobs.GetJobRequest} returns this
+ */
 proto.mruv.jobs.GetJobRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -740,9 +744,12 @@ proto.mruv.jobs.UpdateJobRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.jobs.UpdateJobRequest} returns this
+ */
 proto.mruv.jobs.UpdateJobRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -968,9 +975,12 @@ proto.mruv.jobs.DeleteJobRequest.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.jobs.DeleteJobRequest} returns this
+ */
 proto.mruv.jobs.DeleteJobRequest.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 

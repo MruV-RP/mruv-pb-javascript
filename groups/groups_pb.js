@@ -1,3 +1,4 @@
+// source: groups/groups.proto
 /**
  * @fileoverview
  * @enhanceable
@@ -942,9 +943,12 @@ proto.mruv.CreateGroupRequest.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.CreateGroupRequest} returns this
+ */
 proto.mruv.CreateGroupRequest.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -957,9 +961,12 @@ proto.mruv.CreateGroupRequest.prototype.getDescription = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.CreateGroupRequest} returns this
+ */
 proto.mruv.CreateGroupRequest.prototype.setDescription = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -1084,9 +1091,12 @@ proto.mruv.CreateGroupResponse.prototype.getGroupId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.CreateGroupResponse} returns this
+ */
 proto.mruv.CreateGroupResponse.prototype.setGroupId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1211,9 +1221,12 @@ proto.mruv.GetGroupRequest.prototype.getGroupId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.GetGroupRequest} returns this
+ */
 proto.mruv.GetGroupRequest.prototype.setGroupId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1350,9 +1363,12 @@ proto.mruv.GetGroupResponse.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.GetGroupResponse} returns this
+ */
 proto.mruv.GetGroupResponse.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 1, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
@@ -1365,9 +1381,12 @@ proto.mruv.GetGroupResponse.prototype.getDescription = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.GetGroupResponse} returns this
+ */
 proto.mruv.GetGroupResponse.prototype.setDescription = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -1516,9 +1535,12 @@ proto.mruv.UpdateGroupRequest.prototype.getGroupId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.UpdateGroupRequest} returns this
+ */
 proto.mruv.UpdateGroupRequest.prototype.setGroupId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -1531,9 +1553,12 @@ proto.mruv.UpdateGroupRequest.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.UpdateGroupRequest} returns this
+ */
 proto.mruv.UpdateGroupRequest.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -1546,9 +1571,12 @@ proto.mruv.UpdateGroupRequest.prototype.getDescription = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.UpdateGroupRequest} returns this
+ */
 proto.mruv.UpdateGroupRequest.prototype.setDescription = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -1774,9 +1802,12 @@ proto.mruv.DeleteGroupRequest.prototype.getGroupId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.DeleteGroupRequest} returns this
+ */
 proto.mruv.DeleteGroupRequest.prototype.setGroupId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2014,9 +2045,12 @@ proto.mruv.GetGroupsRequest.prototype.getLimit = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.GetGroupsRequest} returns this
+ */
 proto.mruv.GetGroupsRequest.prototype.setLimit = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2029,9 +2063,12 @@ proto.mruv.GetGroupsRequest.prototype.getBeginFrom = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.GetGroupsRequest} returns this
+ */
 proto.mruv.GetGroupsRequest.prototype.setBeginFrom = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -2302,9 +2339,12 @@ proto.mruv.GetGroupsResponse.Group.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.GetGroupsResponse.Group} returns this
+ */
 proto.mruv.GetGroupsResponse.Group.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2317,9 +2357,12 @@ proto.mruv.GetGroupsResponse.Group.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.GetGroupsResponse.Group} returns this
+ */
 proto.mruv.GetGroupsResponse.Group.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -2332,9 +2375,12 @@ proto.mruv.GetGroupsResponse.Group.prototype.getDescription = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.GetGroupsResponse.Group} returns this
+ */
 proto.mruv.GetGroupsResponse.Group.prototype.setDescription = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -2348,9 +2394,12 @@ proto.mruv.GetGroupsResponse.prototype.getGroupsList = function() {
 };
 
 
-/** @param {!Array<!proto.mruv.GetGroupsResponse.Group>} value */
+/**
+ * @param {!Array<!proto.mruv.GetGroupsResponse.Group>} value
+ * @return {!proto.mruv.GetGroupsResponse} returns this
+*/
 proto.mruv.GetGroupsResponse.prototype.setGroupsList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 1, value);
+  return jspb.Message.setRepeatedWrapperField(this, 1, value);
 };
 
 
@@ -2366,9 +2415,10 @@ proto.mruv.GetGroupsResponse.prototype.addGroups = function(opt_value, opt_index
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.mruv.GetGroupsResponse} returns this
  */
 proto.mruv.GetGroupsResponse.prototype.clearGroupsList = function() {
-  this.setGroupsList([]);
+  return this.setGroupsList([]);
 };
 
 
@@ -2517,9 +2567,12 @@ proto.mruv.AssignOwnerRequest.prototype.getGroupId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.AssignOwnerRequest} returns this
+ */
 proto.mruv.AssignOwnerRequest.prototype.setGroupId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2532,9 +2585,12 @@ proto.mruv.AssignOwnerRequest.prototype.getOwnerType = function() {
 };
 
 
-/** @param {!proto.mruv.OwnerType} value */
+/**
+ * @param {!proto.mruv.OwnerType} value
+ * @return {!proto.mruv.AssignOwnerRequest} returns this
+ */
 proto.mruv.AssignOwnerRequest.prototype.setOwnerType = function(value) {
-  jspb.Message.setProto3EnumField(this, 3, value);
+  return jspb.Message.setProto3EnumField(this, 3, value);
 };
 
 
@@ -2547,9 +2603,12 @@ proto.mruv.AssignOwnerRequest.prototype.getOwnerId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.AssignOwnerRequest} returns this
+ */
 proto.mruv.AssignOwnerRequest.prototype.setOwnerId = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -2775,9 +2834,12 @@ proto.mruv.GetOwnerRequest.prototype.getGroupId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.GetOwnerRequest} returns this
+ */
 proto.mruv.GetOwnerRequest.prototype.setGroupId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2914,9 +2976,12 @@ proto.mruv.GetOwnerResponse.prototype.getOwnerId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.GetOwnerResponse} returns this
+ */
 proto.mruv.GetOwnerResponse.prototype.setOwnerId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -2929,9 +2994,12 @@ proto.mruv.GetOwnerResponse.prototype.getOwnerType = function() {
 };
 
 
-/** @param {!proto.mruv.OwnerType} value */
+/**
+ * @param {!proto.mruv.OwnerType} value
+ * @return {!proto.mruv.GetOwnerResponse} returns this
+ */
 proto.mruv.GetOwnerResponse.prototype.setOwnerType = function(value) {
-  jspb.Message.setProto3EnumField(this, 2, value);
+  return jspb.Message.setProto3EnumField(this, 2, value);
 };
 
 
@@ -3068,9 +3136,12 @@ proto.mruv.AddMemberRequest.prototype.getGroupId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.AddMemberRequest} returns this
+ */
 proto.mruv.AddMemberRequest.prototype.setGroupId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -3083,9 +3154,12 @@ proto.mruv.AddMemberRequest.prototype.getMemberId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.AddMemberRequest} returns this
+ */
 proto.mruv.AddMemberRequest.prototype.setMemberId = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -3311,9 +3385,12 @@ proto.mruv.GetMembersRequest.prototype.getGroupId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.GetMembersRequest} returns this
+ */
 proto.mruv.GetMembersRequest.prototype.setGroupId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -3457,9 +3534,12 @@ proto.mruv.GetMembersResponse.prototype.getMemberType = function() {
 };
 
 
-/** @param {!proto.mruv.MemberType} value */
+/**
+ * @param {!proto.mruv.MemberType} value
+ * @return {!proto.mruv.GetMembersResponse} returns this
+ */
 proto.mruv.GetMembersResponse.prototype.setMemberType = function(value) {
-  jspb.Message.setProto3EnumField(this, 1, value);
+  return jspb.Message.setProto3EnumField(this, 1, value);
 };
 
 
@@ -3472,26 +3552,31 @@ proto.mruv.GetMembersResponse.prototype.getMemberIdsList = function() {
 };
 
 
-/** @param {!Array<number>} value */
+/**
+ * @param {!Array<number>} value
+ * @return {!proto.mruv.GetMembersResponse} returns this
+ */
 proto.mruv.GetMembersResponse.prototype.setMemberIdsList = function(value) {
-  jspb.Message.setField(this, 2, value || []);
+  return jspb.Message.setField(this, 2, value || []);
 };
 
 
 /**
  * @param {number} value
  * @param {number=} opt_index
+ * @return {!proto.mruv.GetMembersResponse} returns this
  */
 proto.mruv.GetMembersResponse.prototype.addMemberIds = function(value, opt_index) {
-  jspb.Message.addToRepeatedField(this, 2, value, opt_index);
+  return jspb.Message.addToRepeatedField(this, 2, value, opt_index);
 };
 
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.mruv.GetMembersResponse} returns this
  */
 proto.mruv.GetMembersResponse.prototype.clearMemberIdsList = function() {
-  this.setMemberIdsList([]);
+  return this.setMemberIdsList([]);
 };
 
 
@@ -3628,9 +3713,12 @@ proto.mruv.RemoveMemberRequest.prototype.getGroupId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.RemoveMemberRequest} returns this
+ */
 proto.mruv.RemoveMemberRequest.prototype.setGroupId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -3643,9 +3731,12 @@ proto.mruv.RemoveMemberRequest.prototype.getMemberId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.RemoveMemberRequest} returns this
+ */
 proto.mruv.RemoveMemberRequest.prototype.setMemberId = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -3895,9 +3986,12 @@ proto.mruv.AddPermissionRequest.prototype.getGroupId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.AddPermissionRequest} returns this
+ */
 proto.mruv.AddPermissionRequest.prototype.setGroupId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -3910,9 +4004,12 @@ proto.mruv.AddPermissionRequest.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.AddPermissionRequest} returns this
+ */
 proto.mruv.AddPermissionRequest.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -3925,9 +4022,12 @@ proto.mruv.AddPermissionRequest.prototype.getDefinition = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.AddPermissionRequest} returns this
+ */
 proto.mruv.AddPermissionRequest.prototype.setDefinition = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -4052,9 +4152,12 @@ proto.mruv.AddPermissionResponse.prototype.getPermissionId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.AddPermissionResponse} returns this
+ */
 proto.mruv.AddPermissionResponse.prototype.setPermissionId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -4179,9 +4282,12 @@ proto.mruv.GetPermissionsRequest.prototype.getGroupId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.GetPermissionsRequest} returns this
+ */
 proto.mruv.GetPermissionsRequest.prototype.setGroupId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -4452,9 +4558,12 @@ proto.mruv.GetPermissionsResponse.Permission.prototype.getId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.GetPermissionsResponse.Permission} returns this
+ */
 proto.mruv.GetPermissionsResponse.Permission.prototype.setId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -4467,9 +4576,12 @@ proto.mruv.GetPermissionsResponse.Permission.prototype.getName = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.GetPermissionsResponse.Permission} returns this
+ */
 proto.mruv.GetPermissionsResponse.Permission.prototype.setName = function(value) {
-  jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
@@ -4482,9 +4594,12 @@ proto.mruv.GetPermissionsResponse.Permission.prototype.getDefinition = function(
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.GetPermissionsResponse.Permission} returns this
+ */
 proto.mruv.GetPermissionsResponse.Permission.prototype.setDefinition = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -4498,9 +4613,12 @@ proto.mruv.GetPermissionsResponse.prototype.getPermissionsList = function() {
 };
 
 
-/** @param {!Array<!proto.mruv.GetPermissionsResponse.Permission>} value */
+/**
+ * @param {!Array<!proto.mruv.GetPermissionsResponse.Permission>} value
+ * @return {!proto.mruv.GetPermissionsResponse} returns this
+*/
 proto.mruv.GetPermissionsResponse.prototype.setPermissionsList = function(value) {
-  jspb.Message.setRepeatedWrapperField(this, 1, value);
+  return jspb.Message.setRepeatedWrapperField(this, 1, value);
 };
 
 
@@ -4516,9 +4634,10 @@ proto.mruv.GetPermissionsResponse.prototype.addPermissions = function(opt_value,
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.mruv.GetPermissionsResponse} returns this
  */
 proto.mruv.GetPermissionsResponse.prototype.clearPermissionsList = function() {
-  this.setPermissionsList([]);
+  return this.setPermissionsList([]);
 };
 
 
@@ -4655,9 +4774,12 @@ proto.mruv.RemovePermissionRequest.prototype.getGroupId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.RemovePermissionRequest} returns this
+ */
 proto.mruv.RemovePermissionRequest.prototype.setGroupId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -4670,9 +4792,12 @@ proto.mruv.RemovePermissionRequest.prototype.getPermissionId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.RemovePermissionRequest} returns this
+ */
 proto.mruv.RemovePermissionRequest.prototype.setPermissionId = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -4910,9 +5035,12 @@ proto.mruv.AddSubgroupRequest.prototype.getGroupId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.AddSubgroupRequest} returns this
+ */
 proto.mruv.AddSubgroupRequest.prototype.setGroupId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -4925,9 +5053,12 @@ proto.mruv.AddSubgroupRequest.prototype.getSubgroupId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.AddSubgroupRequest} returns this
+ */
 proto.mruv.AddSubgroupRequest.prototype.setSubgroupId = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -5153,9 +5284,12 @@ proto.mruv.GetSubgroupsRequest.prototype.getGroupId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.GetSubgroupsRequest} returns this
+ */
 proto.mruv.GetSubgroupsRequest.prototype.setGroupId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -5287,26 +5421,31 @@ proto.mruv.GetSubgroupsResponse.prototype.getSubgroupIdsList = function() {
 };
 
 
-/** @param {!Array<number>} value */
+/**
+ * @param {!Array<number>} value
+ * @return {!proto.mruv.GetSubgroupsResponse} returns this
+ */
 proto.mruv.GetSubgroupsResponse.prototype.setSubgroupIdsList = function(value) {
-  jspb.Message.setField(this, 1, value || []);
+  return jspb.Message.setField(this, 1, value || []);
 };
 
 
 /**
  * @param {number} value
  * @param {number=} opt_index
+ * @return {!proto.mruv.GetSubgroupsResponse} returns this
  */
 proto.mruv.GetSubgroupsResponse.prototype.addSubgroupIds = function(value, opt_index) {
-  jspb.Message.addToRepeatedField(this, 1, value, opt_index);
+  return jspb.Message.addToRepeatedField(this, 1, value, opt_index);
 };
 
 
 /**
  * Clears the list making it empty but non-null.
+ * @return {!proto.mruv.GetSubgroupsResponse} returns this
  */
 proto.mruv.GetSubgroupsResponse.prototype.clearSubgroupIdsList = function() {
-  this.setSubgroupIdsList([]);
+  return this.setSubgroupIdsList([]);
 };
 
 
@@ -5443,9 +5582,12 @@ proto.mruv.RemoveSubgroupRequest.prototype.getGroupId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.RemoveSubgroupRequest} returns this
+ */
 proto.mruv.RemoveSubgroupRequest.prototype.setGroupId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -5458,9 +5600,12 @@ proto.mruv.RemoveSubgroupRequest.prototype.getSubgroupId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.RemoveSubgroupRequest} returns this
+ */
 proto.mruv.RemoveSubgroupRequest.prototype.setSubgroupId = function(value) {
-  jspb.Message.setProto3IntField(this, 2, value);
+  return jspb.Message.setProto3IntField(this, 2, value);
 };
 
 
@@ -5710,9 +5855,12 @@ proto.mruv.IsPermittedRequest.prototype.getMemberId = function() {
 };
 
 
-/** @param {number} value */
+/**
+ * @param {number} value
+ * @return {!proto.mruv.IsPermittedRequest} returns this
+ */
 proto.mruv.IsPermittedRequest.prototype.setMemberId = function(value) {
-  jspb.Message.setProto3IntField(this, 1, value);
+  return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
@@ -5725,9 +5873,12 @@ proto.mruv.IsPermittedRequest.prototype.getMemberType = function() {
 };
 
 
-/** @param {!proto.mruv.MemberType} value */
+/**
+ * @param {!proto.mruv.MemberType} value
+ * @return {!proto.mruv.IsPermittedRequest} returns this
+ */
 proto.mruv.IsPermittedRequest.prototype.setMemberType = function(value) {
-  jspb.Message.setProto3EnumField(this, 2, value);
+  return jspb.Message.setProto3EnumField(this, 2, value);
 };
 
 
@@ -5740,9 +5891,12 @@ proto.mruv.IsPermittedRequest.prototype.getAction = function() {
 };
 
 
-/** @param {string} value */
+/**
+ * @param {string} value
+ * @return {!proto.mruv.IsPermittedRequest} returns this
+ */
 proto.mruv.IsPermittedRequest.prototype.setAction = function(value) {
-  jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
@@ -5867,9 +6021,12 @@ proto.mruv.IsPermittedResponse.prototype.getPermitted = function() {
 };
 
 
-/** @param {boolean} value */
+/**
+ * @param {boolean} value
+ * @return {!proto.mruv.IsPermittedResponse} returns this
+ */
 proto.mruv.IsPermittedResponse.prototype.setPermitted = function(value) {
-  jspb.Message.setProto3BooleanField(this, 1, value);
+  return jspb.Message.setProto3BooleanField(this, 1, value);
 };
 
 
