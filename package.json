@@ -1,6 +1,6 @@
 {
   "name": "mruv-pb-node",
-  "version": "0.8.4",
+  "version": "0.9.0",
   "description": "MruV Protobuf & gRPC files for MruV API",
   "dependencies": {
     "@grpc/proto-loader": "^0.1.0",
