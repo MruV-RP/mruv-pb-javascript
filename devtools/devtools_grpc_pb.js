@@ -7,47 +7,47 @@ var google_api_annotations_pb = require('../google/api/annotations_pb.js');
 var common_health_pb = require('../common/health_pb.js');
 var devtools_devtools_model_pb = require('../devtools/devtools_model_pb.js');
 
-function serialize_mruv_ServiceStatusRequest(arg) {
+function serialize_mruv_common_ServiceStatusRequest(arg) {
   if (!(arg instanceof common_health_pb.ServiceStatusRequest)) {
-    throw new Error('Expected argument of type mruv.ServiceStatusRequest');
+    throw new Error('Expected argument of type mruv.common.ServiceStatusRequest');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_ServiceStatusRequest(buffer_arg) {
+function deserialize_mruv_common_ServiceStatusRequest(buffer_arg) {
   return common_health_pb.ServiceStatusRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_ServiceStatusResponse(arg) {
+function serialize_mruv_common_ServiceStatusResponse(arg) {
   if (!(arg instanceof common_health_pb.ServiceStatusResponse)) {
-    throw new Error('Expected argument of type mruv.ServiceStatusResponse');
+    throw new Error('Expected argument of type mruv.common.ServiceStatusResponse');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_ServiceStatusResponse(buffer_arg) {
+function deserialize_mruv_common_ServiceStatusResponse(buffer_arg) {
   return common_health_pb.ServiceStatusResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_VersionRequest(arg) {
+function serialize_mruv_common_VersionRequest(arg) {
   if (!(arg instanceof common_health_pb.VersionRequest)) {
-    throw new Error('Expected argument of type mruv.VersionRequest');
+    throw new Error('Expected argument of type mruv.common.VersionRequest');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_VersionRequest(buffer_arg) {
+function deserialize_mruv_common_VersionRequest(buffer_arg) {
   return common_health_pb.VersionRequest.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_mruv_VersionResponse(arg) {
+function serialize_mruv_common_VersionResponse(arg) {
   if (!(arg instanceof common_health_pb.VersionResponse)) {
-    throw new Error('Expected argument of type mruv.VersionResponse');
+    throw new Error('Expected argument of type mruv.common.VersionResponse');
   }
   return new Buffer(arg.serializeBinary());
 }
 
-function deserialize_mruv_VersionResponse(buffer_arg) {
+function deserialize_mruv_common_VersionResponse(buffer_arg) {
   return common_health_pb.VersionResponse.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
@@ -333,10 +333,10 @@ var MruVDevToolsServiceService = exports.MruVDevToolsServiceService = {
     responseStream: false,
     requestType: common_health_pb.ServiceStatusRequest,
     responseType: common_health_pb.ServiceStatusResponse,
-    requestSerialize: serialize_mruv_ServiceStatusRequest,
-    requestDeserialize: deserialize_mruv_ServiceStatusRequest,
-    responseSerialize: serialize_mruv_ServiceStatusResponse,
-    responseDeserialize: deserialize_mruv_ServiceStatusResponse,
+    requestSerialize: serialize_mruv_common_ServiceStatusRequest,
+    requestDeserialize: deserialize_mruv_common_ServiceStatusRequest,
+    responseSerialize: serialize_mruv_common_ServiceStatusResponse,
+    responseDeserialize: deserialize_mruv_common_ServiceStatusResponse,
   },
   // Get service version.
   getServiceVersion: {
@@ -345,10 +345,10 @@ var MruVDevToolsServiceService = exports.MruVDevToolsServiceService = {
     responseStream: false,
     requestType: common_health_pb.VersionRequest,
     responseType: common_health_pb.VersionResponse,
-    requestSerialize: serialize_mruv_VersionRequest,
-    requestDeserialize: deserialize_mruv_VersionRequest,
-    responseSerialize: serialize_mruv_VersionResponse,
-    responseDeserialize: deserialize_mruv_VersionResponse,
+    requestSerialize: serialize_mruv_common_VersionRequest,
+    requestDeserialize: deserialize_mruv_common_VersionRequest,
+    responseSerialize: serialize_mruv_common_VersionResponse,
+    responseDeserialize: deserialize_mruv_common_VersionResponse,
   },
 };
 

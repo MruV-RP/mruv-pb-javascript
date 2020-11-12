@@ -397,17 +397,17 @@ proto.mruv.plots.Plot.prototype.setDescription = function(value) {
 
 
 /**
- * repeated mruv.Position points = 3;
- * @return {!Array<!proto.mruv.Position>}
+ * repeated mruv.common.Position points = 3;
+ * @return {!Array<!proto.mruv.common.Position>}
  */
 proto.mruv.plots.Plot.prototype.getPointsList = function() {
-  return /** @type{!Array<!proto.mruv.Position>} */ (
+  return /** @type{!Array<!proto.mruv.common.Position>} */ (
     jspb.Message.getRepeatedWrapperField(this, common_spatial_pb.Position, 3));
 };
 
 
 /**
- * @param {!Array<!proto.mruv.Position>} value
+ * @param {!Array<!proto.mruv.common.Position>} value
  * @return {!proto.mruv.plots.Plot} returns this
 */
 proto.mruv.plots.Plot.prototype.setPointsList = function(value) {
@@ -416,12 +416,12 @@ proto.mruv.plots.Plot.prototype.setPointsList = function(value) {
 
 
 /**
- * @param {!proto.mruv.Position=} opt_value
+ * @param {!proto.mruv.common.Position=} opt_value
  * @param {number=} opt_index
- * @return {!proto.mruv.Position}
+ * @return {!proto.mruv.common.Position}
  */
 proto.mruv.plots.Plot.prototype.addPoints = function(opt_value, opt_index) {
-  return jspb.Message.addToRepeatedWrapperField(this, 3, opt_value, proto.mruv.Position, opt_index);
+  return jspb.Message.addToRepeatedWrapperField(this, 3, opt_value, proto.mruv.common.Position, opt_index);
 };
 
 
@@ -617,17 +617,17 @@ proto.mruv.plots.CreatePlotRequest.prototype.setDescription = function(value) {
 
 
 /**
- * repeated mruv.Position points = 3;
- * @return {!Array<!proto.mruv.Position>}
+ * repeated mruv.common.Position points = 3;
+ * @return {!Array<!proto.mruv.common.Position>}
  */
 proto.mruv.plots.CreatePlotRequest.prototype.getPointsList = function() {
-  return /** @type{!Array<!proto.mruv.Position>} */ (
+  return /** @type{!Array<!proto.mruv.common.Position>} */ (
     jspb.Message.getRepeatedWrapperField(this, common_spatial_pb.Position, 3));
 };
 
 
 /**
- * @param {!Array<!proto.mruv.Position>} value
+ * @param {!Array<!proto.mruv.common.Position>} value
  * @return {!proto.mruv.plots.CreatePlotRequest} returns this
 */
 proto.mruv.plots.CreatePlotRequest.prototype.setPointsList = function(value) {
@@ -636,12 +636,12 @@ proto.mruv.plots.CreatePlotRequest.prototype.setPointsList = function(value) {
 
 
 /**
- * @param {!proto.mruv.Position=} opt_value
+ * @param {!proto.mruv.common.Position=} opt_value
  * @param {number=} opt_index
- * @return {!proto.mruv.Position}
+ * @return {!proto.mruv.common.Position}
  */
 proto.mruv.plots.CreatePlotRequest.prototype.addPoints = function(opt_value, opt_index) {
-  return jspb.Message.addToRepeatedWrapperField(this, 3, opt_value, proto.mruv.Position, opt_index);
+  return jspb.Message.addToRepeatedWrapperField(this, 3, opt_value, proto.mruv.common.Position, opt_index);
 };
 
 
@@ -1109,17 +1109,17 @@ proto.mruv.plots.GetPlotResponse.prototype.setDescription = function(value) {
 
 
 /**
- * repeated mruv.Position points = 3;
- * @return {!Array<!proto.mruv.Position>}
+ * repeated mruv.common.Position points = 3;
+ * @return {!Array<!proto.mruv.common.Position>}
  */
 proto.mruv.plots.GetPlotResponse.prototype.getPointsList = function() {
-  return /** @type{!Array<!proto.mruv.Position>} */ (
+  return /** @type{!Array<!proto.mruv.common.Position>} */ (
     jspb.Message.getRepeatedWrapperField(this, common_spatial_pb.Position, 3));
 };
 
 
 /**
- * @param {!Array<!proto.mruv.Position>} value
+ * @param {!Array<!proto.mruv.common.Position>} value
  * @return {!proto.mruv.plots.GetPlotResponse} returns this
 */
 proto.mruv.plots.GetPlotResponse.prototype.setPointsList = function(value) {
@@ -1128,12 +1128,12 @@ proto.mruv.plots.GetPlotResponse.prototype.setPointsList = function(value) {
 
 
 /**
- * @param {!proto.mruv.Position=} opt_value
+ * @param {!proto.mruv.common.Position=} opt_value
  * @param {number=} opt_index
- * @return {!proto.mruv.Position}
+ * @return {!proto.mruv.common.Position}
  */
 proto.mruv.plots.GetPlotResponse.prototype.addPoints = function(opt_value, opt_index) {
-  return jspb.Message.addToRepeatedWrapperField(this, 3, opt_value, proto.mruv.Position, opt_index);
+  return jspb.Message.addToRepeatedWrapperField(this, 3, opt_value, proto.mruv.common.Position, opt_index);
 };
 
 

@@ -16,44 +16,44 @@ var google_api_annotations_pb = require('../google/api/annotations_pb.js');
 goog.object.extend(proto, google_api_annotations_pb);
 var common_health_pb = require('../common/health_pb.js');
 goog.object.extend(proto, common_health_pb);
-goog.exportSymbol('proto.mruv.AddMemberRequest', null, global);
-goog.exportSymbol('proto.mruv.AddMemberResponse', null, global);
-goog.exportSymbol('proto.mruv.AddPermissionRequest', null, global);
-goog.exportSymbol('proto.mruv.AddPermissionResponse', null, global);
-goog.exportSymbol('proto.mruv.AddSubgroupRequest', null, global);
-goog.exportSymbol('proto.mruv.AddSubgroupResponse', null, global);
-goog.exportSymbol('proto.mruv.AssignOwnerRequest', null, global);
-goog.exportSymbol('proto.mruv.AssignOwnerResponse', null, global);
-goog.exportSymbol('proto.mruv.CreateGroupRequest', null, global);
-goog.exportSymbol('proto.mruv.CreateGroupResponse', null, global);
-goog.exportSymbol('proto.mruv.DeleteGroupRequest', null, global);
-goog.exportSymbol('proto.mruv.DeleteGroupResponse', null, global);
-goog.exportSymbol('proto.mruv.GetGroupRequest', null, global);
-goog.exportSymbol('proto.mruv.GetGroupResponse', null, global);
-goog.exportSymbol('proto.mruv.GetGroupsRequest', null, global);
-goog.exportSymbol('proto.mruv.GetGroupsResponse', null, global);
-goog.exportSymbol('proto.mruv.GetGroupsResponse.Group', null, global);
-goog.exportSymbol('proto.mruv.GetMembersRequest', null, global);
-goog.exportSymbol('proto.mruv.GetMembersResponse', null, global);
-goog.exportSymbol('proto.mruv.GetOwnerRequest', null, global);
-goog.exportSymbol('proto.mruv.GetOwnerResponse', null, global);
-goog.exportSymbol('proto.mruv.GetPermissionsRequest', null, global);
-goog.exportSymbol('proto.mruv.GetPermissionsResponse', null, global);
-goog.exportSymbol('proto.mruv.GetPermissionsResponse.Permission', null, global);
-goog.exportSymbol('proto.mruv.GetSubgroupsRequest', null, global);
-goog.exportSymbol('proto.mruv.GetSubgroupsResponse', null, global);
-goog.exportSymbol('proto.mruv.IsPermittedRequest', null, global);
-goog.exportSymbol('proto.mruv.IsPermittedResponse', null, global);
-goog.exportSymbol('proto.mruv.MemberType', null, global);
-goog.exportSymbol('proto.mruv.OwnerType', null, global);
-goog.exportSymbol('proto.mruv.RemoveMemberRequest', null, global);
-goog.exportSymbol('proto.mruv.RemoveMemberResponse', null, global);
-goog.exportSymbol('proto.mruv.RemovePermissionRequest', null, global);
-goog.exportSymbol('proto.mruv.RemovePermissionResponse', null, global);
-goog.exportSymbol('proto.mruv.RemoveSubgroupRequest', null, global);
-goog.exportSymbol('proto.mruv.RemoveSubgroupResponse', null, global);
-goog.exportSymbol('proto.mruv.UpdateGroupRequest', null, global);
-goog.exportSymbol('proto.mruv.UpdateGroupResponse', null, global);
+goog.exportSymbol('proto.mruv.groups.AddMemberRequest', null, global);
+goog.exportSymbol('proto.mruv.groups.AddMemberResponse', null, global);
+goog.exportSymbol('proto.mruv.groups.AddPermissionRequest', null, global);
+goog.exportSymbol('proto.mruv.groups.AddPermissionResponse', null, global);
+goog.exportSymbol('proto.mruv.groups.AddSubgroupRequest', null, global);
+goog.exportSymbol('proto.mruv.groups.AddSubgroupResponse', null, global);
+goog.exportSymbol('proto.mruv.groups.AssignOwnerRequest', null, global);
+goog.exportSymbol('proto.mruv.groups.AssignOwnerResponse', null, global);
+goog.exportSymbol('proto.mruv.groups.CreateGroupRequest', null, global);
+goog.exportSymbol('proto.mruv.groups.CreateGroupResponse', null, global);
+goog.exportSymbol('proto.mruv.groups.DeleteGroupRequest', null, global);
+goog.exportSymbol('proto.mruv.groups.DeleteGroupResponse', null, global);
+goog.exportSymbol('proto.mruv.groups.GetGroupRequest', null, global);
+goog.exportSymbol('proto.mruv.groups.GetGroupResponse', null, global);
+goog.exportSymbol('proto.mruv.groups.GetGroupsRequest', null, global);
+goog.exportSymbol('proto.mruv.groups.GetGroupsResponse', null, global);
+goog.exportSymbol('proto.mruv.groups.GetGroupsResponse.Group', null, global);
+goog.exportSymbol('proto.mruv.groups.GetMembersRequest', null, global);
+goog.exportSymbol('proto.mruv.groups.GetMembersResponse', null, global);
+goog.exportSymbol('proto.mruv.groups.GetOwnerRequest', null, global);
+goog.exportSymbol('proto.mruv.groups.GetOwnerResponse', null, global);
+goog.exportSymbol('proto.mruv.groups.GetPermissionsRequest', null, global);
+goog.exportSymbol('proto.mruv.groups.GetPermissionsResponse', null, global);
+goog.exportSymbol('proto.mruv.groups.GetPermissionsResponse.Permission', null, global);
+goog.exportSymbol('proto.mruv.groups.GetSubgroupsRequest', null, global);
+goog.exportSymbol('proto.mruv.groups.GetSubgroupsResponse', null, global);
+goog.exportSymbol('proto.mruv.groups.IsPermittedRequest', null, global);
+goog.exportSymbol('proto.mruv.groups.IsPermittedResponse', null, global);
+goog.exportSymbol('proto.mruv.groups.MemberType', null, global);
+goog.exportSymbol('proto.mruv.groups.OwnerType', null, global);
+goog.exportSymbol('proto.mruv.groups.RemoveMemberRequest', null, global);
+goog.exportSymbol('proto.mruv.groups.RemoveMemberResponse', null, global);
+goog.exportSymbol('proto.mruv.groups.RemovePermissionRequest', null, global);
+goog.exportSymbol('proto.mruv.groups.RemovePermissionResponse', null, global);
+goog.exportSymbol('proto.mruv.groups.RemoveSubgroupRequest', null, global);
+goog.exportSymbol('proto.mruv.groups.RemoveSubgroupResponse', null, global);
+goog.exportSymbol('proto.mruv.groups.UpdateGroupRequest', null, global);
+goog.exportSymbol('proto.mruv.groups.UpdateGroupResponse', null, global);
 /**
  * Generated by JsPbCodeGenerator.
  * @param {Array=} opt_data Optional initial data array, typically from a
@@ -64,16 +64,16 @@ goog.exportSymbol('proto.mruv.UpdateGroupResponse', null, global);
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.CreateGroupRequest = function(opt_data) {
+proto.mruv.groups.CreateGroupRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.CreateGroupRequest, jspb.Message);
+goog.inherits(proto.mruv.groups.CreateGroupRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.CreateGroupRequest.displayName = 'proto.mruv.CreateGroupRequest';
+  proto.mruv.groups.CreateGroupRequest.displayName = 'proto.mruv.groups.CreateGroupRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -85,16 +85,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.CreateGroupResponse = function(opt_data) {
+proto.mruv.groups.CreateGroupResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.CreateGroupResponse, jspb.Message);
+goog.inherits(proto.mruv.groups.CreateGroupResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.CreateGroupResponse.displayName = 'proto.mruv.CreateGroupResponse';
+  proto.mruv.groups.CreateGroupResponse.displayName = 'proto.mruv.groups.CreateGroupResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -106,16 +106,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.GetGroupRequest = function(opt_data) {
+proto.mruv.groups.GetGroupRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.GetGroupRequest, jspb.Message);
+goog.inherits(proto.mruv.groups.GetGroupRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.GetGroupRequest.displayName = 'proto.mruv.GetGroupRequest';
+  proto.mruv.groups.GetGroupRequest.displayName = 'proto.mruv.groups.GetGroupRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -127,16 +127,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.GetGroupResponse = function(opt_data) {
+proto.mruv.groups.GetGroupResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.GetGroupResponse, jspb.Message);
+goog.inherits(proto.mruv.groups.GetGroupResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.GetGroupResponse.displayName = 'proto.mruv.GetGroupResponse';
+  proto.mruv.groups.GetGroupResponse.displayName = 'proto.mruv.groups.GetGroupResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -148,16 +148,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.UpdateGroupRequest = function(opt_data) {
+proto.mruv.groups.UpdateGroupRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.UpdateGroupRequest, jspb.Message);
+goog.inherits(proto.mruv.groups.UpdateGroupRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.UpdateGroupRequest.displayName = 'proto.mruv.UpdateGroupRequest';
+  proto.mruv.groups.UpdateGroupRequest.displayName = 'proto.mruv.groups.UpdateGroupRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -169,16 +169,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.UpdateGroupResponse = function(opt_data) {
+proto.mruv.groups.UpdateGroupResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.UpdateGroupResponse, jspb.Message);
+goog.inherits(proto.mruv.groups.UpdateGroupResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.UpdateGroupResponse.displayName = 'proto.mruv.UpdateGroupResponse';
+  proto.mruv.groups.UpdateGroupResponse.displayName = 'proto.mruv.groups.UpdateGroupResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -190,16 +190,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.DeleteGroupRequest = function(opt_data) {
+proto.mruv.groups.DeleteGroupRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.DeleteGroupRequest, jspb.Message);
+goog.inherits(proto.mruv.groups.DeleteGroupRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.DeleteGroupRequest.displayName = 'proto.mruv.DeleteGroupRequest';
+  proto.mruv.groups.DeleteGroupRequest.displayName = 'proto.mruv.groups.DeleteGroupRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -211,16 +211,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.DeleteGroupResponse = function(opt_data) {
+proto.mruv.groups.DeleteGroupResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.DeleteGroupResponse, jspb.Message);
+goog.inherits(proto.mruv.groups.DeleteGroupResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.DeleteGroupResponse.displayName = 'proto.mruv.DeleteGroupResponse';
+  proto.mruv.groups.DeleteGroupResponse.displayName = 'proto.mruv.groups.DeleteGroupResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -232,16 +232,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.GetGroupsRequest = function(opt_data) {
+proto.mruv.groups.GetGroupsRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.GetGroupsRequest, jspb.Message);
+goog.inherits(proto.mruv.groups.GetGroupsRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.GetGroupsRequest.displayName = 'proto.mruv.GetGroupsRequest';
+  proto.mruv.groups.GetGroupsRequest.displayName = 'proto.mruv.groups.GetGroupsRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -253,16 +253,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.GetGroupsResponse = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, proto.mruv.GetGroupsResponse.repeatedFields_, null);
+proto.mruv.groups.GetGroupsResponse = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.mruv.groups.GetGroupsResponse.repeatedFields_, null);
 };
-goog.inherits(proto.mruv.GetGroupsResponse, jspb.Message);
+goog.inherits(proto.mruv.groups.GetGroupsResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.GetGroupsResponse.displayName = 'proto.mruv.GetGroupsResponse';
+  proto.mruv.groups.GetGroupsResponse.displayName = 'proto.mruv.groups.GetGroupsResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -274,16 +274,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.GetGroupsResponse.Group = function(opt_data) {
+proto.mruv.groups.GetGroupsResponse.Group = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.GetGroupsResponse.Group, jspb.Message);
+goog.inherits(proto.mruv.groups.GetGroupsResponse.Group, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.GetGroupsResponse.Group.displayName = 'proto.mruv.GetGroupsResponse.Group';
+  proto.mruv.groups.GetGroupsResponse.Group.displayName = 'proto.mruv.groups.GetGroupsResponse.Group';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -295,16 +295,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.AssignOwnerRequest = function(opt_data) {
+proto.mruv.groups.AssignOwnerRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.AssignOwnerRequest, jspb.Message);
+goog.inherits(proto.mruv.groups.AssignOwnerRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.AssignOwnerRequest.displayName = 'proto.mruv.AssignOwnerRequest';
+  proto.mruv.groups.AssignOwnerRequest.displayName = 'proto.mruv.groups.AssignOwnerRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -316,16 +316,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.AssignOwnerResponse = function(opt_data) {
+proto.mruv.groups.AssignOwnerResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.AssignOwnerResponse, jspb.Message);
+goog.inherits(proto.mruv.groups.AssignOwnerResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.AssignOwnerResponse.displayName = 'proto.mruv.AssignOwnerResponse';
+  proto.mruv.groups.AssignOwnerResponse.displayName = 'proto.mruv.groups.AssignOwnerResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -337,16 +337,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.GetOwnerRequest = function(opt_data) {
+proto.mruv.groups.GetOwnerRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.GetOwnerRequest, jspb.Message);
+goog.inherits(proto.mruv.groups.GetOwnerRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.GetOwnerRequest.displayName = 'proto.mruv.GetOwnerRequest';
+  proto.mruv.groups.GetOwnerRequest.displayName = 'proto.mruv.groups.GetOwnerRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -358,16 +358,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.GetOwnerResponse = function(opt_data) {
+proto.mruv.groups.GetOwnerResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.GetOwnerResponse, jspb.Message);
+goog.inherits(proto.mruv.groups.GetOwnerResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.GetOwnerResponse.displayName = 'proto.mruv.GetOwnerResponse';
+  proto.mruv.groups.GetOwnerResponse.displayName = 'proto.mruv.groups.GetOwnerResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -379,16 +379,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.AddMemberRequest = function(opt_data) {
+proto.mruv.groups.AddMemberRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.AddMemberRequest, jspb.Message);
+goog.inherits(proto.mruv.groups.AddMemberRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.AddMemberRequest.displayName = 'proto.mruv.AddMemberRequest';
+  proto.mruv.groups.AddMemberRequest.displayName = 'proto.mruv.groups.AddMemberRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -400,16 +400,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.AddMemberResponse = function(opt_data) {
+proto.mruv.groups.AddMemberResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.AddMemberResponse, jspb.Message);
+goog.inherits(proto.mruv.groups.AddMemberResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.AddMemberResponse.displayName = 'proto.mruv.AddMemberResponse';
+  proto.mruv.groups.AddMemberResponse.displayName = 'proto.mruv.groups.AddMemberResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -421,16 +421,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.GetMembersRequest = function(opt_data) {
+proto.mruv.groups.GetMembersRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.GetMembersRequest, jspb.Message);
+goog.inherits(proto.mruv.groups.GetMembersRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.GetMembersRequest.displayName = 'proto.mruv.GetMembersRequest';
+  proto.mruv.groups.GetMembersRequest.displayName = 'proto.mruv.groups.GetMembersRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -442,16 +442,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.GetMembersResponse = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, proto.mruv.GetMembersResponse.repeatedFields_, null);
+proto.mruv.groups.GetMembersResponse = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.mruv.groups.GetMembersResponse.repeatedFields_, null);
 };
-goog.inherits(proto.mruv.GetMembersResponse, jspb.Message);
+goog.inherits(proto.mruv.groups.GetMembersResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.GetMembersResponse.displayName = 'proto.mruv.GetMembersResponse';
+  proto.mruv.groups.GetMembersResponse.displayName = 'proto.mruv.groups.GetMembersResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -463,16 +463,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.RemoveMemberRequest = function(opt_data) {
+proto.mruv.groups.RemoveMemberRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.RemoveMemberRequest, jspb.Message);
+goog.inherits(proto.mruv.groups.RemoveMemberRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.RemoveMemberRequest.displayName = 'proto.mruv.RemoveMemberRequest';
+  proto.mruv.groups.RemoveMemberRequest.displayName = 'proto.mruv.groups.RemoveMemberRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -484,16 +484,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.RemoveMemberResponse = function(opt_data) {
+proto.mruv.groups.RemoveMemberResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.RemoveMemberResponse, jspb.Message);
+goog.inherits(proto.mruv.groups.RemoveMemberResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.RemoveMemberResponse.displayName = 'proto.mruv.RemoveMemberResponse';
+  proto.mruv.groups.RemoveMemberResponse.displayName = 'proto.mruv.groups.RemoveMemberResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -505,16 +505,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.AddPermissionRequest = function(opt_data) {
+proto.mruv.groups.AddPermissionRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.AddPermissionRequest, jspb.Message);
+goog.inherits(proto.mruv.groups.AddPermissionRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.AddPermissionRequest.displayName = 'proto.mruv.AddPermissionRequest';
+  proto.mruv.groups.AddPermissionRequest.displayName = 'proto.mruv.groups.AddPermissionRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -526,16 +526,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.AddPermissionResponse = function(opt_data) {
+proto.mruv.groups.AddPermissionResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.AddPermissionResponse, jspb.Message);
+goog.inherits(proto.mruv.groups.AddPermissionResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.AddPermissionResponse.displayName = 'proto.mruv.AddPermissionResponse';
+  proto.mruv.groups.AddPermissionResponse.displayName = 'proto.mruv.groups.AddPermissionResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -547,16 +547,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.GetPermissionsRequest = function(opt_data) {
+proto.mruv.groups.GetPermissionsRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.GetPermissionsRequest, jspb.Message);
+goog.inherits(proto.mruv.groups.GetPermissionsRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.GetPermissionsRequest.displayName = 'proto.mruv.GetPermissionsRequest';
+  proto.mruv.groups.GetPermissionsRequest.displayName = 'proto.mruv.groups.GetPermissionsRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -568,16 +568,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.GetPermissionsResponse = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, proto.mruv.GetPermissionsResponse.repeatedFields_, null);
+proto.mruv.groups.GetPermissionsResponse = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.mruv.groups.GetPermissionsResponse.repeatedFields_, null);
 };
-goog.inherits(proto.mruv.GetPermissionsResponse, jspb.Message);
+goog.inherits(proto.mruv.groups.GetPermissionsResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.GetPermissionsResponse.displayName = 'proto.mruv.GetPermissionsResponse';
+  proto.mruv.groups.GetPermissionsResponse.displayName = 'proto.mruv.groups.GetPermissionsResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -589,16 +589,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.GetPermissionsResponse.Permission = function(opt_data) {
+proto.mruv.groups.GetPermissionsResponse.Permission = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.GetPermissionsResponse.Permission, jspb.Message);
+goog.inherits(proto.mruv.groups.GetPermissionsResponse.Permission, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.GetPermissionsResponse.Permission.displayName = 'proto.mruv.GetPermissionsResponse.Permission';
+  proto.mruv.groups.GetPermissionsResponse.Permission.displayName = 'proto.mruv.groups.GetPermissionsResponse.Permission';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -610,16 +610,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.RemovePermissionRequest = function(opt_data) {
+proto.mruv.groups.RemovePermissionRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.RemovePermissionRequest, jspb.Message);
+goog.inherits(proto.mruv.groups.RemovePermissionRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.RemovePermissionRequest.displayName = 'proto.mruv.RemovePermissionRequest';
+  proto.mruv.groups.RemovePermissionRequest.displayName = 'proto.mruv.groups.RemovePermissionRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -631,16 +631,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.RemovePermissionResponse = function(opt_data) {
+proto.mruv.groups.RemovePermissionResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.RemovePermissionResponse, jspb.Message);
+goog.inherits(proto.mruv.groups.RemovePermissionResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.RemovePermissionResponse.displayName = 'proto.mruv.RemovePermissionResponse';
+  proto.mruv.groups.RemovePermissionResponse.displayName = 'proto.mruv.groups.RemovePermissionResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -652,16 +652,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.AddSubgroupRequest = function(opt_data) {
+proto.mruv.groups.AddSubgroupRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.AddSubgroupRequest, jspb.Message);
+goog.inherits(proto.mruv.groups.AddSubgroupRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.AddSubgroupRequest.displayName = 'proto.mruv.AddSubgroupRequest';
+  proto.mruv.groups.AddSubgroupRequest.displayName = 'proto.mruv.groups.AddSubgroupRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -673,16 +673,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.AddSubgroupResponse = function(opt_data) {
+proto.mruv.groups.AddSubgroupResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.AddSubgroupResponse, jspb.Message);
+goog.inherits(proto.mruv.groups.AddSubgroupResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.AddSubgroupResponse.displayName = 'proto.mruv.AddSubgroupResponse';
+  proto.mruv.groups.AddSubgroupResponse.displayName = 'proto.mruv.groups.AddSubgroupResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -694,16 +694,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.GetSubgroupsRequest = function(opt_data) {
+proto.mruv.groups.GetSubgroupsRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.GetSubgroupsRequest, jspb.Message);
+goog.inherits(proto.mruv.groups.GetSubgroupsRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.GetSubgroupsRequest.displayName = 'proto.mruv.GetSubgroupsRequest';
+  proto.mruv.groups.GetSubgroupsRequest.displayName = 'proto.mruv.groups.GetSubgroupsRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -715,16 +715,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.GetSubgroupsResponse = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, proto.mruv.GetSubgroupsResponse.repeatedFields_, null);
+proto.mruv.groups.GetSubgroupsResponse = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.mruv.groups.GetSubgroupsResponse.repeatedFields_, null);
 };
-goog.inherits(proto.mruv.GetSubgroupsResponse, jspb.Message);
+goog.inherits(proto.mruv.groups.GetSubgroupsResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.GetSubgroupsResponse.displayName = 'proto.mruv.GetSubgroupsResponse';
+  proto.mruv.groups.GetSubgroupsResponse.displayName = 'proto.mruv.groups.GetSubgroupsResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -736,16 +736,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.RemoveSubgroupRequest = function(opt_data) {
+proto.mruv.groups.RemoveSubgroupRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.RemoveSubgroupRequest, jspb.Message);
+goog.inherits(proto.mruv.groups.RemoveSubgroupRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.RemoveSubgroupRequest.displayName = 'proto.mruv.RemoveSubgroupRequest';
+  proto.mruv.groups.RemoveSubgroupRequest.displayName = 'proto.mruv.groups.RemoveSubgroupRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -757,16 +757,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.RemoveSubgroupResponse = function(opt_data) {
+proto.mruv.groups.RemoveSubgroupResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.RemoveSubgroupResponse, jspb.Message);
+goog.inherits(proto.mruv.groups.RemoveSubgroupResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.RemoveSubgroupResponse.displayName = 'proto.mruv.RemoveSubgroupResponse';
+  proto.mruv.groups.RemoveSubgroupResponse.displayName = 'proto.mruv.groups.RemoveSubgroupResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -778,16 +778,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.IsPermittedRequest = function(opt_data) {
+proto.mruv.groups.IsPermittedRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.IsPermittedRequest, jspb.Message);
+goog.inherits(proto.mruv.groups.IsPermittedRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.IsPermittedRequest.displayName = 'proto.mruv.IsPermittedRequest';
+  proto.mruv.groups.IsPermittedRequest.displayName = 'proto.mruv.groups.IsPermittedRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -799,16 +799,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mruv.IsPermittedResponse = function(opt_data) {
+proto.mruv.groups.IsPermittedResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.mruv.IsPermittedResponse, jspb.Message);
+goog.inherits(proto.mruv.groups.IsPermittedResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.mruv.IsPermittedResponse.displayName = 'proto.mruv.IsPermittedResponse';
+  proto.mruv.groups.IsPermittedResponse.displayName = 'proto.mruv.groups.IsPermittedResponse';
 }
 
 
@@ -826,8 +826,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.CreateGroupRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.CreateGroupRequest.toObject(opt_includeInstance, this);
+proto.mruv.groups.CreateGroupRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.groups.CreateGroupRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -836,11 +836,11 @@ proto.mruv.CreateGroupRequest.prototype.toObject = function(opt_includeInstance)
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.CreateGroupRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.groups.CreateGroupRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.CreateGroupRequest.toObject = function(includeInstance, msg) {
+proto.mruv.groups.CreateGroupRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     name: jspb.Message.getFieldWithDefault(msg, 1, ""),
     description: jspb.Message.getFieldWithDefault(msg, 2, "")
@@ -857,23 +857,23 @@ proto.mruv.CreateGroupRequest.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.CreateGroupRequest}
+ * @return {!proto.mruv.groups.CreateGroupRequest}
  */
-proto.mruv.CreateGroupRequest.deserializeBinary = function(bytes) {
+proto.mruv.groups.CreateGroupRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.CreateGroupRequest;
-  return proto.mruv.CreateGroupRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.groups.CreateGroupRequest;
+  return proto.mruv.groups.CreateGroupRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.CreateGroupRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.groups.CreateGroupRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.CreateGroupRequest}
+ * @return {!proto.mruv.groups.CreateGroupRequest}
  */
-proto.mruv.CreateGroupRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.groups.CreateGroupRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -901,9 +901,9 @@ proto.mruv.CreateGroupRequest.deserializeBinaryFromReader = function(msg, reader
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.CreateGroupRequest.prototype.serializeBinary = function() {
+proto.mruv.groups.CreateGroupRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.CreateGroupRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.groups.CreateGroupRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -911,11 +911,11 @@ proto.mruv.CreateGroupRequest.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.CreateGroupRequest} message
+ * @param {!proto.mruv.groups.CreateGroupRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.CreateGroupRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.groups.CreateGroupRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getName();
   if (f.length > 0) {
@@ -938,16 +938,16 @@ proto.mruv.CreateGroupRequest.serializeBinaryToWriter = function(message, writer
  * optional string name = 1;
  * @return {string}
  */
-proto.mruv.CreateGroupRequest.prototype.getName = function() {
+proto.mruv.groups.CreateGroupRequest.prototype.getName = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
 
 
 /**
  * @param {string} value
- * @return {!proto.mruv.CreateGroupRequest} returns this
+ * @return {!proto.mruv.groups.CreateGroupRequest} returns this
  */
-proto.mruv.CreateGroupRequest.prototype.setName = function(value) {
+proto.mruv.groups.CreateGroupRequest.prototype.setName = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
 
@@ -956,16 +956,16 @@ proto.mruv.CreateGroupRequest.prototype.setName = function(value) {
  * optional string description = 2;
  * @return {string}
  */
-proto.mruv.CreateGroupRequest.prototype.getDescription = function() {
+proto.mruv.groups.CreateGroupRequest.prototype.getDescription = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
 
 
 /**
  * @param {string} value
- * @return {!proto.mruv.CreateGroupRequest} returns this
+ * @return {!proto.mruv.groups.CreateGroupRequest} returns this
  */
-proto.mruv.CreateGroupRequest.prototype.setDescription = function(value) {
+proto.mruv.groups.CreateGroupRequest.prototype.setDescription = function(value) {
   return jspb.Message.setProto3StringField(this, 2, value);
 };
 
@@ -986,8 +986,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.CreateGroupResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.CreateGroupResponse.toObject(opt_includeInstance, this);
+proto.mruv.groups.CreateGroupResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.groups.CreateGroupResponse.toObject(opt_includeInstance, this);
 };
 
 
@@ -996,11 +996,11 @@ proto.mruv.CreateGroupResponse.prototype.toObject = function(opt_includeInstance
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.CreateGroupResponse} msg The msg instance to transform.
+ * @param {!proto.mruv.groups.CreateGroupResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.CreateGroupResponse.toObject = function(includeInstance, msg) {
+proto.mruv.groups.CreateGroupResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
     groupId: jspb.Message.getFieldWithDefault(msg, 1, 0)
   };
@@ -1016,23 +1016,23 @@ proto.mruv.CreateGroupResponse.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.CreateGroupResponse}
+ * @return {!proto.mruv.groups.CreateGroupResponse}
  */
-proto.mruv.CreateGroupResponse.deserializeBinary = function(bytes) {
+proto.mruv.groups.CreateGroupResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.CreateGroupResponse;
-  return proto.mruv.CreateGroupResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.groups.CreateGroupResponse;
+  return proto.mruv.groups.CreateGroupResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.CreateGroupResponse} msg The message object to deserialize into.
+ * @param {!proto.mruv.groups.CreateGroupResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.CreateGroupResponse}
+ * @return {!proto.mruv.groups.CreateGroupResponse}
  */
-proto.mruv.CreateGroupResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.groups.CreateGroupResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -1056,9 +1056,9 @@ proto.mruv.CreateGroupResponse.deserializeBinaryFromReader = function(msg, reade
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.CreateGroupResponse.prototype.serializeBinary = function() {
+proto.mruv.groups.CreateGroupResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.CreateGroupResponse.serializeBinaryToWriter(this, writer);
+  proto.mruv.groups.CreateGroupResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -1066,11 +1066,11 @@ proto.mruv.CreateGroupResponse.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.CreateGroupResponse} message
+ * @param {!proto.mruv.groups.CreateGroupResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.CreateGroupResponse.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.groups.CreateGroupResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getGroupId();
   if (f !== 0) {
@@ -1086,16 +1086,16 @@ proto.mruv.CreateGroupResponse.serializeBinaryToWriter = function(message, write
  * optional uint32 group_id = 1;
  * @return {number}
  */
-proto.mruv.CreateGroupResponse.prototype.getGroupId = function() {
+proto.mruv.groups.CreateGroupResponse.prototype.getGroupId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.mruv.CreateGroupResponse} returns this
+ * @return {!proto.mruv.groups.CreateGroupResponse} returns this
  */
-proto.mruv.CreateGroupResponse.prototype.setGroupId = function(value) {
+proto.mruv.groups.CreateGroupResponse.prototype.setGroupId = function(value) {
   return jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -1116,8 +1116,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.GetGroupRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.GetGroupRequest.toObject(opt_includeInstance, this);
+proto.mruv.groups.GetGroupRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.groups.GetGroupRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -1126,11 +1126,11 @@ proto.mruv.GetGroupRequest.prototype.toObject = function(opt_includeInstance) {
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.GetGroupRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.groups.GetGroupRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.GetGroupRequest.toObject = function(includeInstance, msg) {
+proto.mruv.groups.GetGroupRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     groupId: jspb.Message.getFieldWithDefault(msg, 1, 0)
   };
@@ -1146,23 +1146,23 @@ proto.mruv.GetGroupRequest.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.GetGroupRequest}
+ * @return {!proto.mruv.groups.GetGroupRequest}
  */
-proto.mruv.GetGroupRequest.deserializeBinary = function(bytes) {
+proto.mruv.groups.GetGroupRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.GetGroupRequest;
-  return proto.mruv.GetGroupRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.groups.GetGroupRequest;
+  return proto.mruv.groups.GetGroupRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.GetGroupRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.groups.GetGroupRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.GetGroupRequest}
+ * @return {!proto.mruv.groups.GetGroupRequest}
  */
-proto.mruv.GetGroupRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.groups.GetGroupRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -1186,9 +1186,9 @@ proto.mruv.GetGroupRequest.deserializeBinaryFromReader = function(msg, reader) {
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.GetGroupRequest.prototype.serializeBinary = function() {
+proto.mruv.groups.GetGroupRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.GetGroupRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.groups.GetGroupRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -1196,11 +1196,11 @@ proto.mruv.GetGroupRequest.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.GetGroupRequest} message
+ * @param {!proto.mruv.groups.GetGroupRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.GetGroupRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.groups.GetGroupRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getGroupId();
   if (f !== 0) {
@@ -1216,16 +1216,16 @@ proto.mruv.GetGroupRequest.serializeBinaryToWriter = function(message, writer) {
  * optional uint32 group_id = 1;
  * @return {number}
  */
-proto.mruv.GetGroupRequest.prototype.getGroupId = function() {
+proto.mruv.groups.GetGroupRequest.prototype.getGroupId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.mruv.GetGroupRequest} returns this
+ * @return {!proto.mruv.groups.GetGroupRequest} returns this
  */
-proto.mruv.GetGroupRequest.prototype.setGroupId = function(value) {
+proto.mruv.groups.GetGroupRequest.prototype.setGroupId = function(value) {
   return jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -1246,8 +1246,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.GetGroupResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.GetGroupResponse.toObject(opt_includeInstance, this);
+proto.mruv.groups.GetGroupResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.groups.GetGroupResponse.toObject(opt_includeInstance, this);
 };
 
 
@@ -1256,11 +1256,11 @@ proto.mruv.GetGroupResponse.prototype.toObject = function(opt_includeInstance) {
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.GetGroupResponse} msg The msg instance to transform.
+ * @param {!proto.mruv.groups.GetGroupResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.GetGroupResponse.toObject = function(includeInstance, msg) {
+proto.mruv.groups.GetGroupResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
     name: jspb.Message.getFieldWithDefault(msg, 1, ""),
     description: jspb.Message.getFieldWithDefault(msg, 2, "")
@@ -1277,23 +1277,23 @@ proto.mruv.GetGroupResponse.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.GetGroupResponse}
+ * @return {!proto.mruv.groups.GetGroupResponse}
  */
-proto.mruv.GetGroupResponse.deserializeBinary = function(bytes) {
+proto.mruv.groups.GetGroupResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.GetGroupResponse;
-  return proto.mruv.GetGroupResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.groups.GetGroupResponse;
+  return proto.mruv.groups.GetGroupResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.GetGroupResponse} msg The message object to deserialize into.
+ * @param {!proto.mruv.groups.GetGroupResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.GetGroupResponse}
+ * @return {!proto.mruv.groups.GetGroupResponse}
  */
-proto.mruv.GetGroupResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.groups.GetGroupResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -1321,9 +1321,9 @@ proto.mruv.GetGroupResponse.deserializeBinaryFromReader = function(msg, reader) 
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.GetGroupResponse.prototype.serializeBinary = function() {
+proto.mruv.groups.GetGroupResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.GetGroupResponse.serializeBinaryToWriter(this, writer);
+  proto.mruv.groups.GetGroupResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -1331,11 +1331,11 @@ proto.mruv.GetGroupResponse.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.GetGroupResponse} message
+ * @param {!proto.mruv.groups.GetGroupResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.GetGroupResponse.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.groups.GetGroupResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getName();
   if (f.length > 0) {
@@ -1358,16 +1358,16 @@ proto.mruv.GetGroupResponse.serializeBinaryToWriter = function(message, writer) 
  * optional string name = 1;
  * @return {string}
  */
-proto.mruv.GetGroupResponse.prototype.getName = function() {
+proto.mruv.groups.GetGroupResponse.prototype.getName = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
 
 
 /**
  * @param {string} value
- * @return {!proto.mruv.GetGroupResponse} returns this
+ * @return {!proto.mruv.groups.GetGroupResponse} returns this
  */
-proto.mruv.GetGroupResponse.prototype.setName = function(value) {
+proto.mruv.groups.GetGroupResponse.prototype.setName = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
 
@@ -1376,16 +1376,16 @@ proto.mruv.GetGroupResponse.prototype.setName = function(value) {
  * optional string description = 2;
  * @return {string}
  */
-proto.mruv.GetGroupResponse.prototype.getDescription = function() {
+proto.mruv.groups.GetGroupResponse.prototype.getDescription = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
 
 
 /**
  * @param {string} value
- * @return {!proto.mruv.GetGroupResponse} returns this
+ * @return {!proto.mruv.groups.GetGroupResponse} returns this
  */
-proto.mruv.GetGroupResponse.prototype.setDescription = function(value) {
+proto.mruv.groups.GetGroupResponse.prototype.setDescription = function(value) {
   return jspb.Message.setProto3StringField(this, 2, value);
 };
 
@@ -1406,8 +1406,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.UpdateGroupRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.UpdateGroupRequest.toObject(opt_includeInstance, this);
+proto.mruv.groups.UpdateGroupRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.groups.UpdateGroupRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -1416,11 +1416,11 @@ proto.mruv.UpdateGroupRequest.prototype.toObject = function(opt_includeInstance)
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.UpdateGroupRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.groups.UpdateGroupRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.UpdateGroupRequest.toObject = function(includeInstance, msg) {
+proto.mruv.groups.UpdateGroupRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     groupId: jspb.Message.getFieldWithDefault(msg, 1, 0),
     name: jspb.Message.getFieldWithDefault(msg, 2, ""),
@@ -1438,23 +1438,23 @@ proto.mruv.UpdateGroupRequest.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.UpdateGroupRequest}
+ * @return {!proto.mruv.groups.UpdateGroupRequest}
  */
-proto.mruv.UpdateGroupRequest.deserializeBinary = function(bytes) {
+proto.mruv.groups.UpdateGroupRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.UpdateGroupRequest;
-  return proto.mruv.UpdateGroupRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.groups.UpdateGroupRequest;
+  return proto.mruv.groups.UpdateGroupRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.UpdateGroupRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.groups.UpdateGroupRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.UpdateGroupRequest}
+ * @return {!proto.mruv.groups.UpdateGroupRequest}
  */
-proto.mruv.UpdateGroupRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.groups.UpdateGroupRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -1486,9 +1486,9 @@ proto.mruv.UpdateGroupRequest.deserializeBinaryFromReader = function(msg, reader
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.UpdateGroupRequest.prototype.serializeBinary = function() {
+proto.mruv.groups.UpdateGroupRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.UpdateGroupRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.groups.UpdateGroupRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -1496,11 +1496,11 @@ proto.mruv.UpdateGroupRequest.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.UpdateGroupRequest} message
+ * @param {!proto.mruv.groups.UpdateGroupRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.UpdateGroupRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.groups.UpdateGroupRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getGroupId();
   if (f !== 0) {
@@ -1530,16 +1530,16 @@ proto.mruv.UpdateGroupRequest.serializeBinaryToWriter = function(message, writer
  * optional uint32 group_id = 1;
  * @return {number}
  */
-proto.mruv.UpdateGroupRequest.prototype.getGroupId = function() {
+proto.mruv.groups.UpdateGroupRequest.prototype.getGroupId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.mruv.UpdateGroupRequest} returns this
+ * @return {!proto.mruv.groups.UpdateGroupRequest} returns this
  */
-proto.mruv.UpdateGroupRequest.prototype.setGroupId = function(value) {
+proto.mruv.groups.UpdateGroupRequest.prototype.setGroupId = function(value) {
   return jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -1548,16 +1548,16 @@ proto.mruv.UpdateGroupRequest.prototype.setGroupId = function(value) {
  * optional string name = 2;
  * @return {string}
  */
-proto.mruv.UpdateGroupRequest.prototype.getName = function() {
+proto.mruv.groups.UpdateGroupRequest.prototype.getName = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
 
 
 /**
  * @param {string} value
- * @return {!proto.mruv.UpdateGroupRequest} returns this
+ * @return {!proto.mruv.groups.UpdateGroupRequest} returns this
  */
-proto.mruv.UpdateGroupRequest.prototype.setName = function(value) {
+proto.mruv.groups.UpdateGroupRequest.prototype.setName = function(value) {
   return jspb.Message.setProto3StringField(this, 2, value);
 };
 
@@ -1566,16 +1566,16 @@ proto.mruv.UpdateGroupRequest.prototype.setName = function(value) {
  * optional string description = 3;
  * @return {string}
  */
-proto.mruv.UpdateGroupRequest.prototype.getDescription = function() {
+proto.mruv.groups.UpdateGroupRequest.prototype.getDescription = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
 };
 
 
 /**
  * @param {string} value
- * @return {!proto.mruv.UpdateGroupRequest} returns this
+ * @return {!proto.mruv.groups.UpdateGroupRequest} returns this
  */
-proto.mruv.UpdateGroupRequest.prototype.setDescription = function(value) {
+proto.mruv.groups.UpdateGroupRequest.prototype.setDescription = function(value) {
   return jspb.Message.setProto3StringField(this, 3, value);
 };
 
@@ -1596,8 +1596,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.UpdateGroupResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.UpdateGroupResponse.toObject(opt_includeInstance, this);
+proto.mruv.groups.UpdateGroupResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.groups.UpdateGroupResponse.toObject(opt_includeInstance, this);
 };
 
 
@@ -1606,11 +1606,11 @@ proto.mruv.UpdateGroupResponse.prototype.toObject = function(opt_includeInstance
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.UpdateGroupResponse} msg The msg instance to transform.
+ * @param {!proto.mruv.groups.UpdateGroupResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.UpdateGroupResponse.toObject = function(includeInstance, msg) {
+proto.mruv.groups.UpdateGroupResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
 
   };
@@ -1626,23 +1626,23 @@ proto.mruv.UpdateGroupResponse.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.UpdateGroupResponse}
+ * @return {!proto.mruv.groups.UpdateGroupResponse}
  */
-proto.mruv.UpdateGroupResponse.deserializeBinary = function(bytes) {
+proto.mruv.groups.UpdateGroupResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.UpdateGroupResponse;
-  return proto.mruv.UpdateGroupResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.groups.UpdateGroupResponse;
+  return proto.mruv.groups.UpdateGroupResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.UpdateGroupResponse} msg The message object to deserialize into.
+ * @param {!proto.mruv.groups.UpdateGroupResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.UpdateGroupResponse}
+ * @return {!proto.mruv.groups.UpdateGroupResponse}
  */
-proto.mruv.UpdateGroupResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.groups.UpdateGroupResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -1662,9 +1662,9 @@ proto.mruv.UpdateGroupResponse.deserializeBinaryFromReader = function(msg, reade
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.UpdateGroupResponse.prototype.serializeBinary = function() {
+proto.mruv.groups.UpdateGroupResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.UpdateGroupResponse.serializeBinaryToWriter(this, writer);
+  proto.mruv.groups.UpdateGroupResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -1672,11 +1672,11 @@ proto.mruv.UpdateGroupResponse.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.UpdateGroupResponse} message
+ * @param {!proto.mruv.groups.UpdateGroupResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.UpdateGroupResponse.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.groups.UpdateGroupResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
 };
 
@@ -1697,8 +1697,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.DeleteGroupRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.DeleteGroupRequest.toObject(opt_includeInstance, this);
+proto.mruv.groups.DeleteGroupRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.groups.DeleteGroupRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -1707,11 +1707,11 @@ proto.mruv.DeleteGroupRequest.prototype.toObject = function(opt_includeInstance)
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.DeleteGroupRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.groups.DeleteGroupRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.DeleteGroupRequest.toObject = function(includeInstance, msg) {
+proto.mruv.groups.DeleteGroupRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     groupId: jspb.Message.getFieldWithDefault(msg, 1, 0)
   };
@@ -1727,23 +1727,23 @@ proto.mruv.DeleteGroupRequest.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.DeleteGroupRequest}
+ * @return {!proto.mruv.groups.DeleteGroupRequest}
  */
-proto.mruv.DeleteGroupRequest.deserializeBinary = function(bytes) {
+proto.mruv.groups.DeleteGroupRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.DeleteGroupRequest;
-  return proto.mruv.DeleteGroupRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.groups.DeleteGroupRequest;
+  return proto.mruv.groups.DeleteGroupRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.DeleteGroupRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.groups.DeleteGroupRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.DeleteGroupRequest}
+ * @return {!proto.mruv.groups.DeleteGroupRequest}
  */
-proto.mruv.DeleteGroupRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.groups.DeleteGroupRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -1767,9 +1767,9 @@ proto.mruv.DeleteGroupRequest.deserializeBinaryFromReader = function(msg, reader
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.DeleteGroupRequest.prototype.serializeBinary = function() {
+proto.mruv.groups.DeleteGroupRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.DeleteGroupRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.groups.DeleteGroupRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -1777,11 +1777,11 @@ proto.mruv.DeleteGroupRequest.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.DeleteGroupRequest} message
+ * @param {!proto.mruv.groups.DeleteGroupRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.DeleteGroupRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.groups.DeleteGroupRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getGroupId();
   if (f !== 0) {
@@ -1797,16 +1797,16 @@ proto.mruv.DeleteGroupRequest.serializeBinaryToWriter = function(message, writer
  * optional uint32 group_id = 1;
  * @return {number}
  */
-proto.mruv.DeleteGroupRequest.prototype.getGroupId = function() {
+proto.mruv.groups.DeleteGroupRequest.prototype.getGroupId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.mruv.DeleteGroupRequest} returns this
+ * @return {!proto.mruv.groups.DeleteGroupRequest} returns this
  */
-proto.mruv.DeleteGroupRequest.prototype.setGroupId = function(value) {
+proto.mruv.groups.DeleteGroupRequest.prototype.setGroupId = function(value) {
   return jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -1827,8 +1827,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.DeleteGroupResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.DeleteGroupResponse.toObject(opt_includeInstance, this);
+proto.mruv.groups.DeleteGroupResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.groups.DeleteGroupResponse.toObject(opt_includeInstance, this);
 };
 
 
@@ -1837,11 +1837,11 @@ proto.mruv.DeleteGroupResponse.prototype.toObject = function(opt_includeInstance
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.DeleteGroupResponse} msg The msg instance to transform.
+ * @param {!proto.mruv.groups.DeleteGroupResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.DeleteGroupResponse.toObject = function(includeInstance, msg) {
+proto.mruv.groups.DeleteGroupResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
 
   };
@@ -1857,23 +1857,23 @@ proto.mruv.DeleteGroupResponse.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.DeleteGroupResponse}
+ * @return {!proto.mruv.groups.DeleteGroupResponse}
  */
-proto.mruv.DeleteGroupResponse.deserializeBinary = function(bytes) {
+proto.mruv.groups.DeleteGroupResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.DeleteGroupResponse;
-  return proto.mruv.DeleteGroupResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.groups.DeleteGroupResponse;
+  return proto.mruv.groups.DeleteGroupResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.DeleteGroupResponse} msg The message object to deserialize into.
+ * @param {!proto.mruv.groups.DeleteGroupResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.DeleteGroupResponse}
+ * @return {!proto.mruv.groups.DeleteGroupResponse}
  */
-proto.mruv.DeleteGroupResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.groups.DeleteGroupResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -1893,9 +1893,9 @@ proto.mruv.DeleteGroupResponse.deserializeBinaryFromReader = function(msg, reade
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.DeleteGroupResponse.prototype.serializeBinary = function() {
+proto.mruv.groups.DeleteGroupResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.DeleteGroupResponse.serializeBinaryToWriter(this, writer);
+  proto.mruv.groups.DeleteGroupResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -1903,11 +1903,11 @@ proto.mruv.DeleteGroupResponse.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.DeleteGroupResponse} message
+ * @param {!proto.mruv.groups.DeleteGroupResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.DeleteGroupResponse.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.groups.DeleteGroupResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
 };
 
@@ -1928,8 +1928,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.GetGroupsRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.GetGroupsRequest.toObject(opt_includeInstance, this);
+proto.mruv.groups.GetGroupsRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.groups.GetGroupsRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -1938,11 +1938,11 @@ proto.mruv.GetGroupsRequest.prototype.toObject = function(opt_includeInstance) {
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.GetGroupsRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.groups.GetGroupsRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.GetGroupsRequest.toObject = function(includeInstance, msg) {
+proto.mruv.groups.GetGroupsRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     limit: jspb.Message.getFieldWithDefault(msg, 1, 0),
     beginFrom: jspb.Message.getFieldWithDefault(msg, 2, 0)
@@ -1959,23 +1959,23 @@ proto.mruv.GetGroupsRequest.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.GetGroupsRequest}
+ * @return {!proto.mruv.groups.GetGroupsRequest}
  */
-proto.mruv.GetGroupsRequest.deserializeBinary = function(bytes) {
+proto.mruv.groups.GetGroupsRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.GetGroupsRequest;
-  return proto.mruv.GetGroupsRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.groups.GetGroupsRequest;
+  return proto.mruv.groups.GetGroupsRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.GetGroupsRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.groups.GetGroupsRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.GetGroupsRequest}
+ * @return {!proto.mruv.groups.GetGroupsRequest}
  */
-proto.mruv.GetGroupsRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.groups.GetGroupsRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -2003,9 +2003,9 @@ proto.mruv.GetGroupsRequest.deserializeBinaryFromReader = function(msg, reader) 
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.GetGroupsRequest.prototype.serializeBinary = function() {
+proto.mruv.groups.GetGroupsRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.GetGroupsRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.groups.GetGroupsRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -2013,11 +2013,11 @@ proto.mruv.GetGroupsRequest.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.GetGroupsRequest} message
+ * @param {!proto.mruv.groups.GetGroupsRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.GetGroupsRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.groups.GetGroupsRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getLimit();
   if (f !== 0) {
@@ -2040,16 +2040,16 @@ proto.mruv.GetGroupsRequest.serializeBinaryToWriter = function(message, writer) 
  * optional uint32 limit = 1;
  * @return {number}
  */
-proto.mruv.GetGroupsRequest.prototype.getLimit = function() {
+proto.mruv.groups.GetGroupsRequest.prototype.getLimit = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.mruv.GetGroupsRequest} returns this
+ * @return {!proto.mruv.groups.GetGroupsRequest} returns this
  */
-proto.mruv.GetGroupsRequest.prototype.setLimit = function(value) {
+proto.mruv.groups.GetGroupsRequest.prototype.setLimit = function(value) {
   return jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -2058,16 +2058,16 @@ proto.mruv.GetGroupsRequest.prototype.setLimit = function(value) {
  * optional uint32 begin_from = 2;
  * @return {number}
  */
-proto.mruv.GetGroupsRequest.prototype.getBeginFrom = function() {
+proto.mruv.groups.GetGroupsRequest.prototype.getBeginFrom = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.mruv.GetGroupsRequest} returns this
+ * @return {!proto.mruv.groups.GetGroupsRequest} returns this
  */
-proto.mruv.GetGroupsRequest.prototype.setBeginFrom = function(value) {
+proto.mruv.groups.GetGroupsRequest.prototype.setBeginFrom = function(value) {
   return jspb.Message.setProto3IntField(this, 2, value);
 };
 
@@ -2078,7 +2078,7 @@ proto.mruv.GetGroupsRequest.prototype.setBeginFrom = function(value) {
  * @private {!Array<number>}
  * @const
  */
-proto.mruv.GetGroupsResponse.repeatedFields_ = [1];
+proto.mruv.groups.GetGroupsResponse.repeatedFields_ = [1];
 
 
 
@@ -2095,8 +2095,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.GetGroupsResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.GetGroupsResponse.toObject(opt_includeInstance, this);
+proto.mruv.groups.GetGroupsResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.groups.GetGroupsResponse.toObject(opt_includeInstance, this);
 };
 
 
@@ -2105,14 +2105,14 @@ proto.mruv.GetGroupsResponse.prototype.toObject = function(opt_includeInstance) 
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.GetGroupsResponse} msg The msg instance to transform.
+ * @param {!proto.mruv.groups.GetGroupsResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.GetGroupsResponse.toObject = function(includeInstance, msg) {
+proto.mruv.groups.GetGroupsResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
     groupsList: jspb.Message.toObjectList(msg.getGroupsList(),
-    proto.mruv.GetGroupsResponse.Group.toObject, includeInstance)
+    proto.mruv.groups.GetGroupsResponse.Group.toObject, includeInstance)
   };
 
   if (includeInstance) {
@@ -2126,23 +2126,23 @@ proto.mruv.GetGroupsResponse.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.GetGroupsResponse}
+ * @return {!proto.mruv.groups.GetGroupsResponse}
  */
-proto.mruv.GetGroupsResponse.deserializeBinary = function(bytes) {
+proto.mruv.groups.GetGroupsResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.GetGroupsResponse;
-  return proto.mruv.GetGroupsResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.groups.GetGroupsResponse;
+  return proto.mruv.groups.GetGroupsResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.GetGroupsResponse} msg The message object to deserialize into.
+ * @param {!proto.mruv.groups.GetGroupsResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.GetGroupsResponse}
+ * @return {!proto.mruv.groups.GetGroupsResponse}
  */
-proto.mruv.GetGroupsResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.groups.GetGroupsResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -2150,8 +2150,8 @@ proto.mruv.GetGroupsResponse.deserializeBinaryFromReader = function(msg, reader)
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new proto.mruv.GetGroupsResponse.Group;
-      reader.readMessage(value,proto.mruv.GetGroupsResponse.Group.deserializeBinaryFromReader);
+      var value = new proto.mruv.groups.GetGroupsResponse.Group;
+      reader.readMessage(value,proto.mruv.groups.GetGroupsResponse.Group.deserializeBinaryFromReader);
       msg.addGroups(value);
       break;
     default:
@@ -2167,9 +2167,9 @@ proto.mruv.GetGroupsResponse.deserializeBinaryFromReader = function(msg, reader)
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.GetGroupsResponse.prototype.serializeBinary = function() {
+proto.mruv.groups.GetGroupsResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.GetGroupsResponse.serializeBinaryToWriter(this, writer);
+  proto.mruv.groups.GetGroupsResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -2177,18 +2177,18 @@ proto.mruv.GetGroupsResponse.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.GetGroupsResponse} message
+ * @param {!proto.mruv.groups.GetGroupsResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.GetGroupsResponse.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.groups.GetGroupsResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getGroupsList();
   if (f.length > 0) {
     writer.writeRepeatedMessage(
       1,
       f,
-      proto.mruv.GetGroupsResponse.Group.serializeBinaryToWriter
+      proto.mruv.groups.GetGroupsResponse.Group.serializeBinaryToWriter
     );
   }
 };
@@ -2210,8 +2210,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.GetGroupsResponse.Group.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.GetGroupsResponse.Group.toObject(opt_includeInstance, this);
+proto.mruv.groups.GetGroupsResponse.Group.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.groups.GetGroupsResponse.Group.toObject(opt_includeInstance, this);
 };
 
 
@@ -2220,11 +2220,11 @@ proto.mruv.GetGroupsResponse.Group.prototype.toObject = function(opt_includeInst
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.GetGroupsResponse.Group} msg The msg instance to transform.
+ * @param {!proto.mruv.groups.GetGroupsResponse.Group} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.GetGroupsResponse.Group.toObject = function(includeInstance, msg) {
+proto.mruv.groups.GetGroupsResponse.Group.toObject = function(includeInstance, msg) {
   var f, obj = {
     id: jspb.Message.getFieldWithDefault(msg, 1, 0),
     name: jspb.Message.getFieldWithDefault(msg, 2, ""),
@@ -2242,23 +2242,23 @@ proto.mruv.GetGroupsResponse.Group.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.GetGroupsResponse.Group}
+ * @return {!proto.mruv.groups.GetGroupsResponse.Group}
  */
-proto.mruv.GetGroupsResponse.Group.deserializeBinary = function(bytes) {
+proto.mruv.groups.GetGroupsResponse.Group.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.GetGroupsResponse.Group;
-  return proto.mruv.GetGroupsResponse.Group.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.groups.GetGroupsResponse.Group;
+  return proto.mruv.groups.GetGroupsResponse.Group.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.GetGroupsResponse.Group} msg The message object to deserialize into.
+ * @param {!proto.mruv.groups.GetGroupsResponse.Group} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.GetGroupsResponse.Group}
+ * @return {!proto.mruv.groups.GetGroupsResponse.Group}
  */
-proto.mruv.GetGroupsResponse.Group.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.groups.GetGroupsResponse.Group.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -2290,9 +2290,9 @@ proto.mruv.GetGroupsResponse.Group.deserializeBinaryFromReader = function(msg, r
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.GetGroupsResponse.Group.prototype.serializeBinary = function() {
+proto.mruv.groups.GetGroupsResponse.Group.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.GetGroupsResponse.Group.serializeBinaryToWriter(this, writer);
+  proto.mruv.groups.GetGroupsResponse.Group.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -2300,11 +2300,11 @@ proto.mruv.GetGroupsResponse.Group.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.GetGroupsResponse.Group} message
+ * @param {!proto.mruv.groups.GetGroupsResponse.Group} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.GetGroupsResponse.Group.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.groups.GetGroupsResponse.Group.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getId();
   if (f !== 0) {
@@ -2334,16 +2334,16 @@ proto.mruv.GetGroupsResponse.Group.serializeBinaryToWriter = function(message, w
  * optional uint32 id = 1;
  * @return {number}
  */
-proto.mruv.GetGroupsResponse.Group.prototype.getId = function() {
+proto.mruv.groups.GetGroupsResponse.Group.prototype.getId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.mruv.GetGroupsResponse.Group} returns this
+ * @return {!proto.mruv.groups.GetGroupsResponse.Group} returns this
  */
-proto.mruv.GetGroupsResponse.Group.prototype.setId = function(value) {
+proto.mruv.groups.GetGroupsResponse.Group.prototype.setId = function(value) {
   return jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -2352,16 +2352,16 @@ proto.mruv.GetGroupsResponse.Group.prototype.setId = function(value) {
  * optional string name = 2;
  * @return {string}
  */
-proto.mruv.GetGroupsResponse.Group.prototype.getName = function() {
+proto.mruv.groups.GetGroupsResponse.Group.prototype.getName = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
 
 
 /**
  * @param {string} value
- * @return {!proto.mruv.GetGroupsResponse.Group} returns this
+ * @return {!proto.mruv.groups.GetGroupsResponse.Group} returns this
  */
-proto.mruv.GetGroupsResponse.Group.prototype.setName = function(value) {
+proto.mruv.groups.GetGroupsResponse.Group.prototype.setName = function(value) {
   return jspb.Message.setProto3StringField(this, 2, value);
 };
 
@@ -2370,54 +2370,54 @@ proto.mruv.GetGroupsResponse.Group.prototype.setName = function(value) {
  * optional string description = 3;
  * @return {string}
  */
-proto.mruv.GetGroupsResponse.Group.prototype.getDescription = function() {
+proto.mruv.groups.GetGroupsResponse.Group.prototype.getDescription = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
 };
 
 
 /**
  * @param {string} value
- * @return {!proto.mruv.GetGroupsResponse.Group} returns this
+ * @return {!proto.mruv.groups.GetGroupsResponse.Group} returns this
  */
-proto.mruv.GetGroupsResponse.Group.prototype.setDescription = function(value) {
+proto.mruv.groups.GetGroupsResponse.Group.prototype.setDescription = function(value) {
   return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
 /**
  * repeated Group groups = 1;
- * @return {!Array<!proto.mruv.GetGroupsResponse.Group>}
+ * @return {!Array<!proto.mruv.groups.GetGroupsResponse.Group>}
  */
-proto.mruv.GetGroupsResponse.prototype.getGroupsList = function() {
-  return /** @type{!Array<!proto.mruv.GetGroupsResponse.Group>} */ (
-    jspb.Message.getRepeatedWrapperField(this, proto.mruv.GetGroupsResponse.Group, 1));
+proto.mruv.groups.GetGroupsResponse.prototype.getGroupsList = function() {
+  return /** @type{!Array<!proto.mruv.groups.GetGroupsResponse.Group>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.mruv.groups.GetGroupsResponse.Group, 1));
 };
 
 
 /**
- * @param {!Array<!proto.mruv.GetGroupsResponse.Group>} value
- * @return {!proto.mruv.GetGroupsResponse} returns this
+ * @param {!Array<!proto.mruv.groups.GetGroupsResponse.Group>} value
+ * @return {!proto.mruv.groups.GetGroupsResponse} returns this
 */
-proto.mruv.GetGroupsResponse.prototype.setGroupsList = function(value) {
+proto.mruv.groups.GetGroupsResponse.prototype.setGroupsList = function(value) {
   return jspb.Message.setRepeatedWrapperField(this, 1, value);
 };
 
 
 /**
- * @param {!proto.mruv.GetGroupsResponse.Group=} opt_value
+ * @param {!proto.mruv.groups.GetGroupsResponse.Group=} opt_value
  * @param {number=} opt_index
- * @return {!proto.mruv.GetGroupsResponse.Group}
+ * @return {!proto.mruv.groups.GetGroupsResponse.Group}
  */
-proto.mruv.GetGroupsResponse.prototype.addGroups = function(opt_value, opt_index) {
-  return jspb.Message.addToRepeatedWrapperField(this, 1, opt_value, proto.mruv.GetGroupsResponse.Group, opt_index);
+proto.mruv.groups.GetGroupsResponse.prototype.addGroups = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 1, opt_value, proto.mruv.groups.GetGroupsResponse.Group, opt_index);
 };
 
 
 /**
  * Clears the list making it empty but non-null.
- * @return {!proto.mruv.GetGroupsResponse} returns this
+ * @return {!proto.mruv.groups.GetGroupsResponse} returns this
  */
-proto.mruv.GetGroupsResponse.prototype.clearGroupsList = function() {
+proto.mruv.groups.GetGroupsResponse.prototype.clearGroupsList = function() {
   return this.setGroupsList([]);
 };
 
@@ -2438,8 +2438,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.AssignOwnerRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.AssignOwnerRequest.toObject(opt_includeInstance, this);
+proto.mruv.groups.AssignOwnerRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.groups.AssignOwnerRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -2448,11 +2448,11 @@ proto.mruv.AssignOwnerRequest.prototype.toObject = function(opt_includeInstance)
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.AssignOwnerRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.groups.AssignOwnerRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.AssignOwnerRequest.toObject = function(includeInstance, msg) {
+proto.mruv.groups.AssignOwnerRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     groupId: jspb.Message.getFieldWithDefault(msg, 1, 0),
     ownerType: jspb.Message.getFieldWithDefault(msg, 3, 0),
@@ -2470,23 +2470,23 @@ proto.mruv.AssignOwnerRequest.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.AssignOwnerRequest}
+ * @return {!proto.mruv.groups.AssignOwnerRequest}
  */
-proto.mruv.AssignOwnerRequest.deserializeBinary = function(bytes) {
+proto.mruv.groups.AssignOwnerRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.AssignOwnerRequest;
-  return proto.mruv.AssignOwnerRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.groups.AssignOwnerRequest;
+  return proto.mruv.groups.AssignOwnerRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.AssignOwnerRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.groups.AssignOwnerRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.AssignOwnerRequest}
+ * @return {!proto.mruv.groups.AssignOwnerRequest}
  */
-proto.mruv.AssignOwnerRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.groups.AssignOwnerRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -2498,7 +2498,7 @@ proto.mruv.AssignOwnerRequest.deserializeBinaryFromReader = function(msg, reader
       msg.setGroupId(value);
       break;
     case 3:
-      var value = /** @type {!proto.mruv.OwnerType} */ (reader.readEnum());
+      var value = /** @type {!proto.mruv.groups.OwnerType} */ (reader.readEnum());
       msg.setOwnerType(value);
       break;
     case 2:
@@ -2518,9 +2518,9 @@ proto.mruv.AssignOwnerRequest.deserializeBinaryFromReader = function(msg, reader
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.AssignOwnerRequest.prototype.serializeBinary = function() {
+proto.mruv.groups.AssignOwnerRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.AssignOwnerRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.groups.AssignOwnerRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -2528,11 +2528,11 @@ proto.mruv.AssignOwnerRequest.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.AssignOwnerRequest} message
+ * @param {!proto.mruv.groups.AssignOwnerRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.AssignOwnerRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.groups.AssignOwnerRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getGroupId();
   if (f !== 0) {
@@ -2562,34 +2562,34 @@ proto.mruv.AssignOwnerRequest.serializeBinaryToWriter = function(message, writer
  * optional uint32 group_id = 1;
  * @return {number}
  */
-proto.mruv.AssignOwnerRequest.prototype.getGroupId = function() {
+proto.mruv.groups.AssignOwnerRequest.prototype.getGroupId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.mruv.AssignOwnerRequest} returns this
+ * @return {!proto.mruv.groups.AssignOwnerRequest} returns this
  */
-proto.mruv.AssignOwnerRequest.prototype.setGroupId = function(value) {
+proto.mruv.groups.AssignOwnerRequest.prototype.setGroupId = function(value) {
   return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
 /**
  * optional OwnerType owner_type = 3;
- * @return {!proto.mruv.OwnerType}
+ * @return {!proto.mruv.groups.OwnerType}
  */
-proto.mruv.AssignOwnerRequest.prototype.getOwnerType = function() {
-  return /** @type {!proto.mruv.OwnerType} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
+proto.mruv.groups.AssignOwnerRequest.prototype.getOwnerType = function() {
+  return /** @type {!proto.mruv.groups.OwnerType} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
 };
 
 
 /**
- * @param {!proto.mruv.OwnerType} value
- * @return {!proto.mruv.AssignOwnerRequest} returns this
+ * @param {!proto.mruv.groups.OwnerType} value
+ * @return {!proto.mruv.groups.AssignOwnerRequest} returns this
  */
-proto.mruv.AssignOwnerRequest.prototype.setOwnerType = function(value) {
+proto.mruv.groups.AssignOwnerRequest.prototype.setOwnerType = function(value) {
   return jspb.Message.setProto3EnumField(this, 3, value);
 };
 
@@ -2598,16 +2598,16 @@ proto.mruv.AssignOwnerRequest.prototype.setOwnerType = function(value) {
  * optional uint32 owner_id = 2;
  * @return {number}
  */
-proto.mruv.AssignOwnerRequest.prototype.getOwnerId = function() {
+proto.mruv.groups.AssignOwnerRequest.prototype.getOwnerId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.mruv.AssignOwnerRequest} returns this
+ * @return {!proto.mruv.groups.AssignOwnerRequest} returns this
  */
-proto.mruv.AssignOwnerRequest.prototype.setOwnerId = function(value) {
+proto.mruv.groups.AssignOwnerRequest.prototype.setOwnerId = function(value) {
   return jspb.Message.setProto3IntField(this, 2, value);
 };
 
@@ -2628,8 +2628,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.AssignOwnerResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.AssignOwnerResponse.toObject(opt_includeInstance, this);
+proto.mruv.groups.AssignOwnerResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.groups.AssignOwnerResponse.toObject(opt_includeInstance, this);
 };
 
 
@@ -2638,11 +2638,11 @@ proto.mruv.AssignOwnerResponse.prototype.toObject = function(opt_includeInstance
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.AssignOwnerResponse} msg The msg instance to transform.
+ * @param {!proto.mruv.groups.AssignOwnerResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.AssignOwnerResponse.toObject = function(includeInstance, msg) {
+proto.mruv.groups.AssignOwnerResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
 
   };
@@ -2658,23 +2658,23 @@ proto.mruv.AssignOwnerResponse.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.AssignOwnerResponse}
+ * @return {!proto.mruv.groups.AssignOwnerResponse}
  */
-proto.mruv.AssignOwnerResponse.deserializeBinary = function(bytes) {
+proto.mruv.groups.AssignOwnerResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.AssignOwnerResponse;
-  return proto.mruv.AssignOwnerResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.groups.AssignOwnerResponse;
+  return proto.mruv.groups.AssignOwnerResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.AssignOwnerResponse} msg The message object to deserialize into.
+ * @param {!proto.mruv.groups.AssignOwnerResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.AssignOwnerResponse}
+ * @return {!proto.mruv.groups.AssignOwnerResponse}
  */
-proto.mruv.AssignOwnerResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.groups.AssignOwnerResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -2694,9 +2694,9 @@ proto.mruv.AssignOwnerResponse.deserializeBinaryFromReader = function(msg, reade
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.AssignOwnerResponse.prototype.serializeBinary = function() {
+proto.mruv.groups.AssignOwnerResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.AssignOwnerResponse.serializeBinaryToWriter(this, writer);
+  proto.mruv.groups.AssignOwnerResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -2704,11 +2704,11 @@ proto.mruv.AssignOwnerResponse.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.AssignOwnerResponse} message
+ * @param {!proto.mruv.groups.AssignOwnerResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.AssignOwnerResponse.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.groups.AssignOwnerResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
 };
 
@@ -2729,8 +2729,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.GetOwnerRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.GetOwnerRequest.toObject(opt_includeInstance, this);
+proto.mruv.groups.GetOwnerRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.groups.GetOwnerRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -2739,11 +2739,11 @@ proto.mruv.GetOwnerRequest.prototype.toObject = function(opt_includeInstance) {
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.GetOwnerRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.groups.GetOwnerRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.GetOwnerRequest.toObject = function(includeInstance, msg) {
+proto.mruv.groups.GetOwnerRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     groupId: jspb.Message.getFieldWithDefault(msg, 1, 0)
   };
@@ -2759,23 +2759,23 @@ proto.mruv.GetOwnerRequest.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.GetOwnerRequest}
+ * @return {!proto.mruv.groups.GetOwnerRequest}
  */
-proto.mruv.GetOwnerRequest.deserializeBinary = function(bytes) {
+proto.mruv.groups.GetOwnerRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.GetOwnerRequest;
-  return proto.mruv.GetOwnerRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.groups.GetOwnerRequest;
+  return proto.mruv.groups.GetOwnerRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.GetOwnerRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.groups.GetOwnerRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.GetOwnerRequest}
+ * @return {!proto.mruv.groups.GetOwnerRequest}
  */
-proto.mruv.GetOwnerRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.groups.GetOwnerRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -2799,9 +2799,9 @@ proto.mruv.GetOwnerRequest.deserializeBinaryFromReader = function(msg, reader) {
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.GetOwnerRequest.prototype.serializeBinary = function() {
+proto.mruv.groups.GetOwnerRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.GetOwnerRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.groups.GetOwnerRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -2809,11 +2809,11 @@ proto.mruv.GetOwnerRequest.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.GetOwnerRequest} message
+ * @param {!proto.mruv.groups.GetOwnerRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.GetOwnerRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.groups.GetOwnerRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getGroupId();
   if (f !== 0) {
@@ -2829,16 +2829,16 @@ proto.mruv.GetOwnerRequest.serializeBinaryToWriter = function(message, writer) {
  * optional uint32 group_id = 1;
  * @return {number}
  */
-proto.mruv.GetOwnerRequest.prototype.getGroupId = function() {
+proto.mruv.groups.GetOwnerRequest.prototype.getGroupId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.mruv.GetOwnerRequest} returns this
+ * @return {!proto.mruv.groups.GetOwnerRequest} returns this
  */
-proto.mruv.GetOwnerRequest.prototype.setGroupId = function(value) {
+proto.mruv.groups.GetOwnerRequest.prototype.setGroupId = function(value) {
   return jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -2859,8 +2859,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.GetOwnerResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.GetOwnerResponse.toObject(opt_includeInstance, this);
+proto.mruv.groups.GetOwnerResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.groups.GetOwnerResponse.toObject(opt_includeInstance, this);
 };
 
 
@@ -2869,11 +2869,11 @@ proto.mruv.GetOwnerResponse.prototype.toObject = function(opt_includeInstance) {
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.GetOwnerResponse} msg The msg instance to transform.
+ * @param {!proto.mruv.groups.GetOwnerResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.GetOwnerResponse.toObject = function(includeInstance, msg) {
+proto.mruv.groups.GetOwnerResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
     ownerId: jspb.Message.getFieldWithDefault(msg, 1, 0),
     ownerType: jspb.Message.getFieldWithDefault(msg, 2, 0)
@@ -2890,23 +2890,23 @@ proto.mruv.GetOwnerResponse.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.GetOwnerResponse}
+ * @return {!proto.mruv.groups.GetOwnerResponse}
  */
-proto.mruv.GetOwnerResponse.deserializeBinary = function(bytes) {
+proto.mruv.groups.GetOwnerResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.GetOwnerResponse;
-  return proto.mruv.GetOwnerResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.groups.GetOwnerResponse;
+  return proto.mruv.groups.GetOwnerResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.GetOwnerResponse} msg The message object to deserialize into.
+ * @param {!proto.mruv.groups.GetOwnerResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.GetOwnerResponse}
+ * @return {!proto.mruv.groups.GetOwnerResponse}
  */
-proto.mruv.GetOwnerResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.groups.GetOwnerResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -2918,7 +2918,7 @@ proto.mruv.GetOwnerResponse.deserializeBinaryFromReader = function(msg, reader) 
       msg.setOwnerId(value);
       break;
     case 2:
-      var value = /** @type {!proto.mruv.OwnerType} */ (reader.readEnum());
+      var value = /** @type {!proto.mruv.groups.OwnerType} */ (reader.readEnum());
       msg.setOwnerType(value);
       break;
     default:
@@ -2934,9 +2934,9 @@ proto.mruv.GetOwnerResponse.deserializeBinaryFromReader = function(msg, reader) 
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.GetOwnerResponse.prototype.serializeBinary = function() {
+proto.mruv.groups.GetOwnerResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.GetOwnerResponse.serializeBinaryToWriter(this, writer);
+  proto.mruv.groups.GetOwnerResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -2944,11 +2944,11 @@ proto.mruv.GetOwnerResponse.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.GetOwnerResponse} message
+ * @param {!proto.mruv.groups.GetOwnerResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.GetOwnerResponse.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.groups.GetOwnerResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getOwnerId();
   if (f !== 0) {
@@ -2971,34 +2971,34 @@ proto.mruv.GetOwnerResponse.serializeBinaryToWriter = function(message, writer) 
  * optional uint32 owner_id = 1;
  * @return {number}
  */
-proto.mruv.GetOwnerResponse.prototype.getOwnerId = function() {
+proto.mruv.groups.GetOwnerResponse.prototype.getOwnerId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.mruv.GetOwnerResponse} returns this
+ * @return {!proto.mruv.groups.GetOwnerResponse} returns this
  */
-proto.mruv.GetOwnerResponse.prototype.setOwnerId = function(value) {
+proto.mruv.groups.GetOwnerResponse.prototype.setOwnerId = function(value) {
   return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
 /**
  * optional OwnerType owner_type = 2;
- * @return {!proto.mruv.OwnerType}
+ * @return {!proto.mruv.groups.OwnerType}
  */
-proto.mruv.GetOwnerResponse.prototype.getOwnerType = function() {
-  return /** @type {!proto.mruv.OwnerType} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
+proto.mruv.groups.GetOwnerResponse.prototype.getOwnerType = function() {
+  return /** @type {!proto.mruv.groups.OwnerType} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
 /**
- * @param {!proto.mruv.OwnerType} value
- * @return {!proto.mruv.GetOwnerResponse} returns this
+ * @param {!proto.mruv.groups.OwnerType} value
+ * @return {!proto.mruv.groups.GetOwnerResponse} returns this
  */
-proto.mruv.GetOwnerResponse.prototype.setOwnerType = function(value) {
+proto.mruv.groups.GetOwnerResponse.prototype.setOwnerType = function(value) {
   return jspb.Message.setProto3EnumField(this, 2, value);
 };
 
@@ -3019,8 +3019,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.AddMemberRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.AddMemberRequest.toObject(opt_includeInstance, this);
+proto.mruv.groups.AddMemberRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.groups.AddMemberRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -3029,11 +3029,11 @@ proto.mruv.AddMemberRequest.prototype.toObject = function(opt_includeInstance) {
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.AddMemberRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.groups.AddMemberRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.AddMemberRequest.toObject = function(includeInstance, msg) {
+proto.mruv.groups.AddMemberRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     groupId: jspb.Message.getFieldWithDefault(msg, 1, 0),
     memberId: jspb.Message.getFieldWithDefault(msg, 2, 0)
@@ -3050,23 +3050,23 @@ proto.mruv.AddMemberRequest.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.AddMemberRequest}
+ * @return {!proto.mruv.groups.AddMemberRequest}
  */
-proto.mruv.AddMemberRequest.deserializeBinary = function(bytes) {
+proto.mruv.groups.AddMemberRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.AddMemberRequest;
-  return proto.mruv.AddMemberRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.groups.AddMemberRequest;
+  return proto.mruv.groups.AddMemberRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.AddMemberRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.groups.AddMemberRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.AddMemberRequest}
+ * @return {!proto.mruv.groups.AddMemberRequest}
  */
-proto.mruv.AddMemberRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.groups.AddMemberRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -3094,9 +3094,9 @@ proto.mruv.AddMemberRequest.deserializeBinaryFromReader = function(msg, reader) 
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.AddMemberRequest.prototype.serializeBinary = function() {
+proto.mruv.groups.AddMemberRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.AddMemberRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.groups.AddMemberRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -3104,11 +3104,11 @@ proto.mruv.AddMemberRequest.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.AddMemberRequest} message
+ * @param {!proto.mruv.groups.AddMemberRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.AddMemberRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.groups.AddMemberRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getGroupId();
   if (f !== 0) {
@@ -3131,16 +3131,16 @@ proto.mruv.AddMemberRequest.serializeBinaryToWriter = function(message, writer) 
  * optional uint32 group_id = 1;
  * @return {number}
  */
-proto.mruv.AddMemberRequest.prototype.getGroupId = function() {
+proto.mruv.groups.AddMemberRequest.prototype.getGroupId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.mruv.AddMemberRequest} returns this
+ * @return {!proto.mruv.groups.AddMemberRequest} returns this
  */
-proto.mruv.AddMemberRequest.prototype.setGroupId = function(value) {
+proto.mruv.groups.AddMemberRequest.prototype.setGroupId = function(value) {
   return jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -3149,16 +3149,16 @@ proto.mruv.AddMemberRequest.prototype.setGroupId = function(value) {
  * optional uint32 member_id = 2;
  * @return {number}
  */
-proto.mruv.AddMemberRequest.prototype.getMemberId = function() {
+proto.mruv.groups.AddMemberRequest.prototype.getMemberId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.mruv.AddMemberRequest} returns this
+ * @return {!proto.mruv.groups.AddMemberRequest} returns this
  */
-proto.mruv.AddMemberRequest.prototype.setMemberId = function(value) {
+proto.mruv.groups.AddMemberRequest.prototype.setMemberId = function(value) {
   return jspb.Message.setProto3IntField(this, 2, value);
 };
 
@@ -3179,8 +3179,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.AddMemberResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.AddMemberResponse.toObject(opt_includeInstance, this);
+proto.mruv.groups.AddMemberResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.groups.AddMemberResponse.toObject(opt_includeInstance, this);
 };
 
 
@@ -3189,11 +3189,11 @@ proto.mruv.AddMemberResponse.prototype.toObject = function(opt_includeInstance) 
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.AddMemberResponse} msg The msg instance to transform.
+ * @param {!proto.mruv.groups.AddMemberResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.AddMemberResponse.toObject = function(includeInstance, msg) {
+proto.mruv.groups.AddMemberResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
 
   };
@@ -3209,23 +3209,23 @@ proto.mruv.AddMemberResponse.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.AddMemberResponse}
+ * @return {!proto.mruv.groups.AddMemberResponse}
  */
-proto.mruv.AddMemberResponse.deserializeBinary = function(bytes) {
+proto.mruv.groups.AddMemberResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.AddMemberResponse;
-  return proto.mruv.AddMemberResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.groups.AddMemberResponse;
+  return proto.mruv.groups.AddMemberResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.AddMemberResponse} msg The message object to deserialize into.
+ * @param {!proto.mruv.groups.AddMemberResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.AddMemberResponse}
+ * @return {!proto.mruv.groups.AddMemberResponse}
  */
-proto.mruv.AddMemberResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.groups.AddMemberResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -3245,9 +3245,9 @@ proto.mruv.AddMemberResponse.deserializeBinaryFromReader = function(msg, reader)
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.AddMemberResponse.prototype.serializeBinary = function() {
+proto.mruv.groups.AddMemberResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.AddMemberResponse.serializeBinaryToWriter(this, writer);
+  proto.mruv.groups.AddMemberResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -3255,11 +3255,11 @@ proto.mruv.AddMemberResponse.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.AddMemberResponse} message
+ * @param {!proto.mruv.groups.AddMemberResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.AddMemberResponse.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.groups.AddMemberResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
 };
 
@@ -3280,8 +3280,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.GetMembersRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.GetMembersRequest.toObject(opt_includeInstance, this);
+proto.mruv.groups.GetMembersRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.groups.GetMembersRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -3290,11 +3290,11 @@ proto.mruv.GetMembersRequest.prototype.toObject = function(opt_includeInstance) 
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.GetMembersRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.groups.GetMembersRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.GetMembersRequest.toObject = function(includeInstance, msg) {
+proto.mruv.groups.GetMembersRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     groupId: jspb.Message.getFieldWithDefault(msg, 1, 0)
   };
@@ -3310,23 +3310,23 @@ proto.mruv.GetMembersRequest.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.GetMembersRequest}
+ * @return {!proto.mruv.groups.GetMembersRequest}
  */
-proto.mruv.GetMembersRequest.deserializeBinary = function(bytes) {
+proto.mruv.groups.GetMembersRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.GetMembersRequest;
-  return proto.mruv.GetMembersRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.groups.GetMembersRequest;
+  return proto.mruv.groups.GetMembersRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.GetMembersRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.groups.GetMembersRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.GetMembersRequest}
+ * @return {!proto.mruv.groups.GetMembersRequest}
  */
-proto.mruv.GetMembersRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.groups.GetMembersRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -3350,9 +3350,9 @@ proto.mruv.GetMembersRequest.deserializeBinaryFromReader = function(msg, reader)
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.GetMembersRequest.prototype.serializeBinary = function() {
+proto.mruv.groups.GetMembersRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.GetMembersRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.groups.GetMembersRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -3360,11 +3360,11 @@ proto.mruv.GetMembersRequest.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.GetMembersRequest} message
+ * @param {!proto.mruv.groups.GetMembersRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.GetMembersRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.groups.GetMembersRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getGroupId();
   if (f !== 0) {
@@ -3380,16 +3380,16 @@ proto.mruv.GetMembersRequest.serializeBinaryToWriter = function(message, writer)
  * optional uint32 group_id = 1;
  * @return {number}
  */
-proto.mruv.GetMembersRequest.prototype.getGroupId = function() {
+proto.mruv.groups.GetMembersRequest.prototype.getGroupId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.mruv.GetMembersRequest} returns this
+ * @return {!proto.mruv.groups.GetMembersRequest} returns this
  */
-proto.mruv.GetMembersRequest.prototype.setGroupId = function(value) {
+proto.mruv.groups.GetMembersRequest.prototype.setGroupId = function(value) {
   return jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -3400,7 +3400,7 @@ proto.mruv.GetMembersRequest.prototype.setGroupId = function(value) {
  * @private {!Array<number>}
  * @const
  */
-proto.mruv.GetMembersResponse.repeatedFields_ = [2];
+proto.mruv.groups.GetMembersResponse.repeatedFields_ = [2];
 
 
 
@@ -3417,8 +3417,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.GetMembersResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.GetMembersResponse.toObject(opt_includeInstance, this);
+proto.mruv.groups.GetMembersResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.groups.GetMembersResponse.toObject(opt_includeInstance, this);
 };
 
 
@@ -3427,11 +3427,11 @@ proto.mruv.GetMembersResponse.prototype.toObject = function(opt_includeInstance)
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.GetMembersResponse} msg The msg instance to transform.
+ * @param {!proto.mruv.groups.GetMembersResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.GetMembersResponse.toObject = function(includeInstance, msg) {
+proto.mruv.groups.GetMembersResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
     memberType: jspb.Message.getFieldWithDefault(msg, 1, 0),
     memberIdsList: (f = jspb.Message.getRepeatedField(msg, 2)) == null ? undefined : f
@@ -3448,23 +3448,23 @@ proto.mruv.GetMembersResponse.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.GetMembersResponse}
+ * @return {!proto.mruv.groups.GetMembersResponse}
  */
-proto.mruv.GetMembersResponse.deserializeBinary = function(bytes) {
+proto.mruv.groups.GetMembersResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.GetMembersResponse;
-  return proto.mruv.GetMembersResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.groups.GetMembersResponse;
+  return proto.mruv.groups.GetMembersResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.GetMembersResponse} msg The message object to deserialize into.
+ * @param {!proto.mruv.groups.GetMembersResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.GetMembersResponse}
+ * @return {!proto.mruv.groups.GetMembersResponse}
  */
-proto.mruv.GetMembersResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.groups.GetMembersResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -3472,7 +3472,7 @@ proto.mruv.GetMembersResponse.deserializeBinaryFromReader = function(msg, reader
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = /** @type {!proto.mruv.MemberType} */ (reader.readEnum());
+      var value = /** @type {!proto.mruv.groups.MemberType} */ (reader.readEnum());
       msg.setMemberType(value);
       break;
     case 2:
@@ -3492,9 +3492,9 @@ proto.mruv.GetMembersResponse.deserializeBinaryFromReader = function(msg, reader
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.GetMembersResponse.prototype.serializeBinary = function() {
+proto.mruv.groups.GetMembersResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.GetMembersResponse.serializeBinaryToWriter(this, writer);
+  proto.mruv.groups.GetMembersResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -3502,11 +3502,11 @@ proto.mruv.GetMembersResponse.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.GetMembersResponse} message
+ * @param {!proto.mruv.groups.GetMembersResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.GetMembersResponse.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.groups.GetMembersResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getMemberType();
   if (f !== 0.0) {
@@ -3527,18 +3527,18 @@ proto.mruv.GetMembersResponse.serializeBinaryToWriter = function(message, writer
 
 /**
  * optional MemberType member_type = 1;
- * @return {!proto.mruv.MemberType}
+ * @return {!proto.mruv.groups.MemberType}
  */
-proto.mruv.GetMembersResponse.prototype.getMemberType = function() {
-  return /** @type {!proto.mruv.MemberType} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
+proto.mruv.groups.GetMembersResponse.prototype.getMemberType = function() {
+  return /** @type {!proto.mruv.groups.MemberType} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /**
- * @param {!proto.mruv.MemberType} value
- * @return {!proto.mruv.GetMembersResponse} returns this
+ * @param {!proto.mruv.groups.MemberType} value
+ * @return {!proto.mruv.groups.GetMembersResponse} returns this
  */
-proto.mruv.GetMembersResponse.prototype.setMemberType = function(value) {
+proto.mruv.groups.GetMembersResponse.prototype.setMemberType = function(value) {
   return jspb.Message.setProto3EnumField(this, 1, value);
 };
 
@@ -3547,16 +3547,16 @@ proto.mruv.GetMembersResponse.prototype.setMemberType = function(value) {
  * repeated uint32 member_ids = 2;
  * @return {!Array<number>}
  */
-proto.mruv.GetMembersResponse.prototype.getMemberIdsList = function() {
+proto.mruv.groups.GetMembersResponse.prototype.getMemberIdsList = function() {
   return /** @type {!Array<number>} */ (jspb.Message.getRepeatedField(this, 2));
 };
 
 
 /**
  * @param {!Array<number>} value
- * @return {!proto.mruv.GetMembersResponse} returns this
+ * @return {!proto.mruv.groups.GetMembersResponse} returns this
  */
-proto.mruv.GetMembersResponse.prototype.setMemberIdsList = function(value) {
+proto.mruv.groups.GetMembersResponse.prototype.setMemberIdsList = function(value) {
   return jspb.Message.setField(this, 2, value || []);
 };
 
@@ -3564,18 +3564,18 @@ proto.mruv.GetMembersResponse.prototype.setMemberIdsList = function(value) {
 /**
  * @param {number} value
  * @param {number=} opt_index
- * @return {!proto.mruv.GetMembersResponse} returns this
+ * @return {!proto.mruv.groups.GetMembersResponse} returns this
  */
-proto.mruv.GetMembersResponse.prototype.addMemberIds = function(value, opt_index) {
+proto.mruv.groups.GetMembersResponse.prototype.addMemberIds = function(value, opt_index) {
   return jspb.Message.addToRepeatedField(this, 2, value, opt_index);
 };
 
 
 /**
  * Clears the list making it empty but non-null.
- * @return {!proto.mruv.GetMembersResponse} returns this
+ * @return {!proto.mruv.groups.GetMembersResponse} returns this
  */
-proto.mruv.GetMembersResponse.prototype.clearMemberIdsList = function() {
+proto.mruv.groups.GetMembersResponse.prototype.clearMemberIdsList = function() {
   return this.setMemberIdsList([]);
 };
 
@@ -3596,8 +3596,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.RemoveMemberRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.RemoveMemberRequest.toObject(opt_includeInstance, this);
+proto.mruv.groups.RemoveMemberRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.groups.RemoveMemberRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -3606,11 +3606,11 @@ proto.mruv.RemoveMemberRequest.prototype.toObject = function(opt_includeInstance
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.RemoveMemberRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.groups.RemoveMemberRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.RemoveMemberRequest.toObject = function(includeInstance, msg) {
+proto.mruv.groups.RemoveMemberRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     groupId: jspb.Message.getFieldWithDefault(msg, 1, 0),
     memberId: jspb.Message.getFieldWithDefault(msg, 2, 0)
@@ -3627,23 +3627,23 @@ proto.mruv.RemoveMemberRequest.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.RemoveMemberRequest}
+ * @return {!proto.mruv.groups.RemoveMemberRequest}
  */
-proto.mruv.RemoveMemberRequest.deserializeBinary = function(bytes) {
+proto.mruv.groups.RemoveMemberRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.RemoveMemberRequest;
-  return proto.mruv.RemoveMemberRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.groups.RemoveMemberRequest;
+  return proto.mruv.groups.RemoveMemberRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.RemoveMemberRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.groups.RemoveMemberRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.RemoveMemberRequest}
+ * @return {!proto.mruv.groups.RemoveMemberRequest}
  */
-proto.mruv.RemoveMemberRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.groups.RemoveMemberRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -3671,9 +3671,9 @@ proto.mruv.RemoveMemberRequest.deserializeBinaryFromReader = function(msg, reade
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.RemoveMemberRequest.prototype.serializeBinary = function() {
+proto.mruv.groups.RemoveMemberRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.RemoveMemberRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.groups.RemoveMemberRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -3681,11 +3681,11 @@ proto.mruv.RemoveMemberRequest.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.RemoveMemberRequest} message
+ * @param {!proto.mruv.groups.RemoveMemberRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.RemoveMemberRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.groups.RemoveMemberRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getGroupId();
   if (f !== 0) {
@@ -3708,16 +3708,16 @@ proto.mruv.RemoveMemberRequest.serializeBinaryToWriter = function(message, write
  * optional uint32 group_id = 1;
  * @return {number}
  */
-proto.mruv.RemoveMemberRequest.prototype.getGroupId = function() {
+proto.mruv.groups.RemoveMemberRequest.prototype.getGroupId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.mruv.RemoveMemberRequest} returns this
+ * @return {!proto.mruv.groups.RemoveMemberRequest} returns this
  */
-proto.mruv.RemoveMemberRequest.prototype.setGroupId = function(value) {
+proto.mruv.groups.RemoveMemberRequest.prototype.setGroupId = function(value) {
   return jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -3726,16 +3726,16 @@ proto.mruv.RemoveMemberRequest.prototype.setGroupId = function(value) {
  * optional uint32 member_id = 2;
  * @return {number}
  */
-proto.mruv.RemoveMemberRequest.prototype.getMemberId = function() {
+proto.mruv.groups.RemoveMemberRequest.prototype.getMemberId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.mruv.RemoveMemberRequest} returns this
+ * @return {!proto.mruv.groups.RemoveMemberRequest} returns this
  */
-proto.mruv.RemoveMemberRequest.prototype.setMemberId = function(value) {
+proto.mruv.groups.RemoveMemberRequest.prototype.setMemberId = function(value) {
   return jspb.Message.setProto3IntField(this, 2, value);
 };
 
@@ -3756,8 +3756,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.RemoveMemberResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.RemoveMemberResponse.toObject(opt_includeInstance, this);
+proto.mruv.groups.RemoveMemberResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.groups.RemoveMemberResponse.toObject(opt_includeInstance, this);
 };
 
 
@@ -3766,11 +3766,11 @@ proto.mruv.RemoveMemberResponse.prototype.toObject = function(opt_includeInstanc
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.RemoveMemberResponse} msg The msg instance to transform.
+ * @param {!proto.mruv.groups.RemoveMemberResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.RemoveMemberResponse.toObject = function(includeInstance, msg) {
+proto.mruv.groups.RemoveMemberResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
 
   };
@@ -3786,23 +3786,23 @@ proto.mruv.RemoveMemberResponse.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.RemoveMemberResponse}
+ * @return {!proto.mruv.groups.RemoveMemberResponse}
  */
-proto.mruv.RemoveMemberResponse.deserializeBinary = function(bytes) {
+proto.mruv.groups.RemoveMemberResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.RemoveMemberResponse;
-  return proto.mruv.RemoveMemberResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.groups.RemoveMemberResponse;
+  return proto.mruv.groups.RemoveMemberResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.RemoveMemberResponse} msg The message object to deserialize into.
+ * @param {!proto.mruv.groups.RemoveMemberResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.RemoveMemberResponse}
+ * @return {!proto.mruv.groups.RemoveMemberResponse}
  */
-proto.mruv.RemoveMemberResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.groups.RemoveMemberResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -3822,9 +3822,9 @@ proto.mruv.RemoveMemberResponse.deserializeBinaryFromReader = function(msg, read
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.RemoveMemberResponse.prototype.serializeBinary = function() {
+proto.mruv.groups.RemoveMemberResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.RemoveMemberResponse.serializeBinaryToWriter(this, writer);
+  proto.mruv.groups.RemoveMemberResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -3832,11 +3832,11 @@ proto.mruv.RemoveMemberResponse.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.RemoveMemberResponse} message
+ * @param {!proto.mruv.groups.RemoveMemberResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.RemoveMemberResponse.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.groups.RemoveMemberResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
 };
 
@@ -3857,8 +3857,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.AddPermissionRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.AddPermissionRequest.toObject(opt_includeInstance, this);
+proto.mruv.groups.AddPermissionRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.groups.AddPermissionRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -3867,11 +3867,11 @@ proto.mruv.AddPermissionRequest.prototype.toObject = function(opt_includeInstanc
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.AddPermissionRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.groups.AddPermissionRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.AddPermissionRequest.toObject = function(includeInstance, msg) {
+proto.mruv.groups.AddPermissionRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     groupId: jspb.Message.getFieldWithDefault(msg, 1, 0),
     name: jspb.Message.getFieldWithDefault(msg, 2, ""),
@@ -3889,23 +3889,23 @@ proto.mruv.AddPermissionRequest.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.AddPermissionRequest}
+ * @return {!proto.mruv.groups.AddPermissionRequest}
  */
-proto.mruv.AddPermissionRequest.deserializeBinary = function(bytes) {
+proto.mruv.groups.AddPermissionRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.AddPermissionRequest;
-  return proto.mruv.AddPermissionRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.groups.AddPermissionRequest;
+  return proto.mruv.groups.AddPermissionRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.AddPermissionRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.groups.AddPermissionRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.AddPermissionRequest}
+ * @return {!proto.mruv.groups.AddPermissionRequest}
  */
-proto.mruv.AddPermissionRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.groups.AddPermissionRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -3937,9 +3937,9 @@ proto.mruv.AddPermissionRequest.deserializeBinaryFromReader = function(msg, read
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.AddPermissionRequest.prototype.serializeBinary = function() {
+proto.mruv.groups.AddPermissionRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.AddPermissionRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.groups.AddPermissionRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -3947,11 +3947,11 @@ proto.mruv.AddPermissionRequest.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.AddPermissionRequest} message
+ * @param {!proto.mruv.groups.AddPermissionRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.AddPermissionRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.groups.AddPermissionRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getGroupId();
   if (f !== 0) {
@@ -3981,16 +3981,16 @@ proto.mruv.AddPermissionRequest.serializeBinaryToWriter = function(message, writ
  * optional uint32 group_id = 1;
  * @return {number}
  */
-proto.mruv.AddPermissionRequest.prototype.getGroupId = function() {
+proto.mruv.groups.AddPermissionRequest.prototype.getGroupId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.mruv.AddPermissionRequest} returns this
+ * @return {!proto.mruv.groups.AddPermissionRequest} returns this
  */
-proto.mruv.AddPermissionRequest.prototype.setGroupId = function(value) {
+proto.mruv.groups.AddPermissionRequest.prototype.setGroupId = function(value) {
   return jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -3999,16 +3999,16 @@ proto.mruv.AddPermissionRequest.prototype.setGroupId = function(value) {
  * optional string name = 2;
  * @return {string}
  */
-proto.mruv.AddPermissionRequest.prototype.getName = function() {
+proto.mruv.groups.AddPermissionRequest.prototype.getName = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
 
 
 /**
  * @param {string} value
- * @return {!proto.mruv.AddPermissionRequest} returns this
+ * @return {!proto.mruv.groups.AddPermissionRequest} returns this
  */
-proto.mruv.AddPermissionRequest.prototype.setName = function(value) {
+proto.mruv.groups.AddPermissionRequest.prototype.setName = function(value) {
   return jspb.Message.setProto3StringField(this, 2, value);
 };
 
@@ -4017,16 +4017,16 @@ proto.mruv.AddPermissionRequest.prototype.setName = function(value) {
  * optional string definition = 3;
  * @return {string}
  */
-proto.mruv.AddPermissionRequest.prototype.getDefinition = function() {
+proto.mruv.groups.AddPermissionRequest.prototype.getDefinition = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
 };
 
 
 /**
  * @param {string} value
- * @return {!proto.mruv.AddPermissionRequest} returns this
+ * @return {!proto.mruv.groups.AddPermissionRequest} returns this
  */
-proto.mruv.AddPermissionRequest.prototype.setDefinition = function(value) {
+proto.mruv.groups.AddPermissionRequest.prototype.setDefinition = function(value) {
   return jspb.Message.setProto3StringField(this, 3, value);
 };
 
@@ -4047,8 +4047,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.AddPermissionResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.AddPermissionResponse.toObject(opt_includeInstance, this);
+proto.mruv.groups.AddPermissionResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.groups.AddPermissionResponse.toObject(opt_includeInstance, this);
 };
 
 
@@ -4057,11 +4057,11 @@ proto.mruv.AddPermissionResponse.prototype.toObject = function(opt_includeInstan
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.AddPermissionResponse} msg The msg instance to transform.
+ * @param {!proto.mruv.groups.AddPermissionResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.AddPermissionResponse.toObject = function(includeInstance, msg) {
+proto.mruv.groups.AddPermissionResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
     permissionId: jspb.Message.getFieldWithDefault(msg, 1, 0)
   };
@@ -4077,23 +4077,23 @@ proto.mruv.AddPermissionResponse.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.AddPermissionResponse}
+ * @return {!proto.mruv.groups.AddPermissionResponse}
  */
-proto.mruv.AddPermissionResponse.deserializeBinary = function(bytes) {
+proto.mruv.groups.AddPermissionResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.AddPermissionResponse;
-  return proto.mruv.AddPermissionResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.groups.AddPermissionResponse;
+  return proto.mruv.groups.AddPermissionResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.AddPermissionResponse} msg The message object to deserialize into.
+ * @param {!proto.mruv.groups.AddPermissionResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.AddPermissionResponse}
+ * @return {!proto.mruv.groups.AddPermissionResponse}
  */
-proto.mruv.AddPermissionResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.groups.AddPermissionResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -4117,9 +4117,9 @@ proto.mruv.AddPermissionResponse.deserializeBinaryFromReader = function(msg, rea
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.AddPermissionResponse.prototype.serializeBinary = function() {
+proto.mruv.groups.AddPermissionResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.AddPermissionResponse.serializeBinaryToWriter(this, writer);
+  proto.mruv.groups.AddPermissionResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -4127,11 +4127,11 @@ proto.mruv.AddPermissionResponse.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.AddPermissionResponse} message
+ * @param {!proto.mruv.groups.AddPermissionResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.AddPermissionResponse.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.groups.AddPermissionResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getPermissionId();
   if (f !== 0) {
@@ -4147,16 +4147,16 @@ proto.mruv.AddPermissionResponse.serializeBinaryToWriter = function(message, wri
  * optional uint32 permission_id = 1;
  * @return {number}
  */
-proto.mruv.AddPermissionResponse.prototype.getPermissionId = function() {
+proto.mruv.groups.AddPermissionResponse.prototype.getPermissionId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.mruv.AddPermissionResponse} returns this
+ * @return {!proto.mruv.groups.AddPermissionResponse} returns this
  */
-proto.mruv.AddPermissionResponse.prototype.setPermissionId = function(value) {
+proto.mruv.groups.AddPermissionResponse.prototype.setPermissionId = function(value) {
   return jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -4177,8 +4177,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.GetPermissionsRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.GetPermissionsRequest.toObject(opt_includeInstance, this);
+proto.mruv.groups.GetPermissionsRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.groups.GetPermissionsRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -4187,11 +4187,11 @@ proto.mruv.GetPermissionsRequest.prototype.toObject = function(opt_includeInstan
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.GetPermissionsRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.groups.GetPermissionsRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.GetPermissionsRequest.toObject = function(includeInstance, msg) {
+proto.mruv.groups.GetPermissionsRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     groupId: jspb.Message.getFieldWithDefault(msg, 1, 0)
   };
@@ -4207,23 +4207,23 @@ proto.mruv.GetPermissionsRequest.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.GetPermissionsRequest}
+ * @return {!proto.mruv.groups.GetPermissionsRequest}
  */
-proto.mruv.GetPermissionsRequest.deserializeBinary = function(bytes) {
+proto.mruv.groups.GetPermissionsRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.GetPermissionsRequest;
-  return proto.mruv.GetPermissionsRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.groups.GetPermissionsRequest;
+  return proto.mruv.groups.GetPermissionsRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.GetPermissionsRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.groups.GetPermissionsRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.GetPermissionsRequest}
+ * @return {!proto.mruv.groups.GetPermissionsRequest}
  */
-proto.mruv.GetPermissionsRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.groups.GetPermissionsRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -4247,9 +4247,9 @@ proto.mruv.GetPermissionsRequest.deserializeBinaryFromReader = function(msg, rea
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.GetPermissionsRequest.prototype.serializeBinary = function() {
+proto.mruv.groups.GetPermissionsRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.GetPermissionsRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.groups.GetPermissionsRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -4257,11 +4257,11 @@ proto.mruv.GetPermissionsRequest.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.GetPermissionsRequest} message
+ * @param {!proto.mruv.groups.GetPermissionsRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.GetPermissionsRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.groups.GetPermissionsRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getGroupId();
   if (f !== 0) {
@@ -4277,16 +4277,16 @@ proto.mruv.GetPermissionsRequest.serializeBinaryToWriter = function(message, wri
  * optional uint32 group_id = 1;
  * @return {number}
  */
-proto.mruv.GetPermissionsRequest.prototype.getGroupId = function() {
+proto.mruv.groups.GetPermissionsRequest.prototype.getGroupId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.mruv.GetPermissionsRequest} returns this
+ * @return {!proto.mruv.groups.GetPermissionsRequest} returns this
  */
-proto.mruv.GetPermissionsRequest.prototype.setGroupId = function(value) {
+proto.mruv.groups.GetPermissionsRequest.prototype.setGroupId = function(value) {
   return jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -4297,7 +4297,7 @@ proto.mruv.GetPermissionsRequest.prototype.setGroupId = function(value) {
  * @private {!Array<number>}
  * @const
  */
-proto.mruv.GetPermissionsResponse.repeatedFields_ = [1];
+proto.mruv.groups.GetPermissionsResponse.repeatedFields_ = [1];
 
 
 
@@ -4314,8 +4314,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.GetPermissionsResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.GetPermissionsResponse.toObject(opt_includeInstance, this);
+proto.mruv.groups.GetPermissionsResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.groups.GetPermissionsResponse.toObject(opt_includeInstance, this);
 };
 
 
@@ -4324,14 +4324,14 @@ proto.mruv.GetPermissionsResponse.prototype.toObject = function(opt_includeInsta
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.GetPermissionsResponse} msg The msg instance to transform.
+ * @param {!proto.mruv.groups.GetPermissionsResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.GetPermissionsResponse.toObject = function(includeInstance, msg) {
+proto.mruv.groups.GetPermissionsResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
     permissionsList: jspb.Message.toObjectList(msg.getPermissionsList(),
-    proto.mruv.GetPermissionsResponse.Permission.toObject, includeInstance)
+    proto.mruv.groups.GetPermissionsResponse.Permission.toObject, includeInstance)
   };
 
   if (includeInstance) {
@@ -4345,23 +4345,23 @@ proto.mruv.GetPermissionsResponse.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.GetPermissionsResponse}
+ * @return {!proto.mruv.groups.GetPermissionsResponse}
  */
-proto.mruv.GetPermissionsResponse.deserializeBinary = function(bytes) {
+proto.mruv.groups.GetPermissionsResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.GetPermissionsResponse;
-  return proto.mruv.GetPermissionsResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.groups.GetPermissionsResponse;
+  return proto.mruv.groups.GetPermissionsResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.GetPermissionsResponse} msg The message object to deserialize into.
+ * @param {!proto.mruv.groups.GetPermissionsResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.GetPermissionsResponse}
+ * @return {!proto.mruv.groups.GetPermissionsResponse}
  */
-proto.mruv.GetPermissionsResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.groups.GetPermissionsResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -4369,8 +4369,8 @@ proto.mruv.GetPermissionsResponse.deserializeBinaryFromReader = function(msg, re
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new proto.mruv.GetPermissionsResponse.Permission;
-      reader.readMessage(value,proto.mruv.GetPermissionsResponse.Permission.deserializeBinaryFromReader);
+      var value = new proto.mruv.groups.GetPermissionsResponse.Permission;
+      reader.readMessage(value,proto.mruv.groups.GetPermissionsResponse.Permission.deserializeBinaryFromReader);
       msg.addPermissions(value);
       break;
     default:
@@ -4386,9 +4386,9 @@ proto.mruv.GetPermissionsResponse.deserializeBinaryFromReader = function(msg, re
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.GetPermissionsResponse.prototype.serializeBinary = function() {
+proto.mruv.groups.GetPermissionsResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.GetPermissionsResponse.serializeBinaryToWriter(this, writer);
+  proto.mruv.groups.GetPermissionsResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -4396,18 +4396,18 @@ proto.mruv.GetPermissionsResponse.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.GetPermissionsResponse} message
+ * @param {!proto.mruv.groups.GetPermissionsResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.GetPermissionsResponse.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.groups.GetPermissionsResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getPermissionsList();
   if (f.length > 0) {
     writer.writeRepeatedMessage(
       1,
       f,
-      proto.mruv.GetPermissionsResponse.Permission.serializeBinaryToWriter
+      proto.mruv.groups.GetPermissionsResponse.Permission.serializeBinaryToWriter
     );
   }
 };
@@ -4429,8 +4429,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.GetPermissionsResponse.Permission.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.GetPermissionsResponse.Permission.toObject(opt_includeInstance, this);
+proto.mruv.groups.GetPermissionsResponse.Permission.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.groups.GetPermissionsResponse.Permission.toObject(opt_includeInstance, this);
 };
 
 
@@ -4439,11 +4439,11 @@ proto.mruv.GetPermissionsResponse.Permission.prototype.toObject = function(opt_i
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.GetPermissionsResponse.Permission} msg The msg instance to transform.
+ * @param {!proto.mruv.groups.GetPermissionsResponse.Permission} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.GetPermissionsResponse.Permission.toObject = function(includeInstance, msg) {
+proto.mruv.groups.GetPermissionsResponse.Permission.toObject = function(includeInstance, msg) {
   var f, obj = {
     id: jspb.Message.getFieldWithDefault(msg, 1, 0),
     name: jspb.Message.getFieldWithDefault(msg, 2, ""),
@@ -4461,23 +4461,23 @@ proto.mruv.GetPermissionsResponse.Permission.toObject = function(includeInstance
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.GetPermissionsResponse.Permission}
+ * @return {!proto.mruv.groups.GetPermissionsResponse.Permission}
  */
-proto.mruv.GetPermissionsResponse.Permission.deserializeBinary = function(bytes) {
+proto.mruv.groups.GetPermissionsResponse.Permission.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.GetPermissionsResponse.Permission;
-  return proto.mruv.GetPermissionsResponse.Permission.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.groups.GetPermissionsResponse.Permission;
+  return proto.mruv.groups.GetPermissionsResponse.Permission.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.GetPermissionsResponse.Permission} msg The message object to deserialize into.
+ * @param {!proto.mruv.groups.GetPermissionsResponse.Permission} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.GetPermissionsResponse.Permission}
+ * @return {!proto.mruv.groups.GetPermissionsResponse.Permission}
  */
-proto.mruv.GetPermissionsResponse.Permission.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.groups.GetPermissionsResponse.Permission.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -4509,9 +4509,9 @@ proto.mruv.GetPermissionsResponse.Permission.deserializeBinaryFromReader = funct
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.GetPermissionsResponse.Permission.prototype.serializeBinary = function() {
+proto.mruv.groups.GetPermissionsResponse.Permission.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.GetPermissionsResponse.Permission.serializeBinaryToWriter(this, writer);
+  proto.mruv.groups.GetPermissionsResponse.Permission.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -4519,11 +4519,11 @@ proto.mruv.GetPermissionsResponse.Permission.prototype.serializeBinary = functio
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.GetPermissionsResponse.Permission} message
+ * @param {!proto.mruv.groups.GetPermissionsResponse.Permission} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.GetPermissionsResponse.Permission.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.groups.GetPermissionsResponse.Permission.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getId();
   if (f !== 0) {
@@ -4553,16 +4553,16 @@ proto.mruv.GetPermissionsResponse.Permission.serializeBinaryToWriter = function(
  * optional uint32 id = 1;
  * @return {number}
  */
-proto.mruv.GetPermissionsResponse.Permission.prototype.getId = function() {
+proto.mruv.groups.GetPermissionsResponse.Permission.prototype.getId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.mruv.GetPermissionsResponse.Permission} returns this
+ * @return {!proto.mruv.groups.GetPermissionsResponse.Permission} returns this
  */
-proto.mruv.GetPermissionsResponse.Permission.prototype.setId = function(value) {
+proto.mruv.groups.GetPermissionsResponse.Permission.prototype.setId = function(value) {
   return jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -4571,16 +4571,16 @@ proto.mruv.GetPermissionsResponse.Permission.prototype.setId = function(value) {
  * optional string name = 2;
  * @return {string}
  */
-proto.mruv.GetPermissionsResponse.Permission.prototype.getName = function() {
+proto.mruv.groups.GetPermissionsResponse.Permission.prototype.getName = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
 
 
 /**
  * @param {string} value
- * @return {!proto.mruv.GetPermissionsResponse.Permission} returns this
+ * @return {!proto.mruv.groups.GetPermissionsResponse.Permission} returns this
  */
-proto.mruv.GetPermissionsResponse.Permission.prototype.setName = function(value) {
+proto.mruv.groups.GetPermissionsResponse.Permission.prototype.setName = function(value) {
   return jspb.Message.setProto3StringField(this, 2, value);
 };
 
@@ -4589,54 +4589,54 @@ proto.mruv.GetPermissionsResponse.Permission.prototype.setName = function(value)
  * optional string definition = 3;
  * @return {string}
  */
-proto.mruv.GetPermissionsResponse.Permission.prototype.getDefinition = function() {
+proto.mruv.groups.GetPermissionsResponse.Permission.prototype.getDefinition = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
 };
 
 
 /**
  * @param {string} value
- * @return {!proto.mruv.GetPermissionsResponse.Permission} returns this
+ * @return {!proto.mruv.groups.GetPermissionsResponse.Permission} returns this
  */
-proto.mruv.GetPermissionsResponse.Permission.prototype.setDefinition = function(value) {
+proto.mruv.groups.GetPermissionsResponse.Permission.prototype.setDefinition = function(value) {
   return jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
 /**
  * repeated Permission permissions = 1;
- * @return {!Array<!proto.mruv.GetPermissionsResponse.Permission>}
+ * @return {!Array<!proto.mruv.groups.GetPermissionsResponse.Permission>}
  */
-proto.mruv.GetPermissionsResponse.prototype.getPermissionsList = function() {
-  return /** @type{!Array<!proto.mruv.GetPermissionsResponse.Permission>} */ (
-    jspb.Message.getRepeatedWrapperField(this, proto.mruv.GetPermissionsResponse.Permission, 1));
+proto.mruv.groups.GetPermissionsResponse.prototype.getPermissionsList = function() {
+  return /** @type{!Array<!proto.mruv.groups.GetPermissionsResponse.Permission>} */ (
+    jspb.Message.getRepeatedWrapperField(this, proto.mruv.groups.GetPermissionsResponse.Permission, 1));
 };
 
 
 /**
- * @param {!Array<!proto.mruv.GetPermissionsResponse.Permission>} value
- * @return {!proto.mruv.GetPermissionsResponse} returns this
+ * @param {!Array<!proto.mruv.groups.GetPermissionsResponse.Permission>} value
+ * @return {!proto.mruv.groups.GetPermissionsResponse} returns this
 */
-proto.mruv.GetPermissionsResponse.prototype.setPermissionsList = function(value) {
+proto.mruv.groups.GetPermissionsResponse.prototype.setPermissionsList = function(value) {
   return jspb.Message.setRepeatedWrapperField(this, 1, value);
 };
 
 
 /**
- * @param {!proto.mruv.GetPermissionsResponse.Permission=} opt_value
+ * @param {!proto.mruv.groups.GetPermissionsResponse.Permission=} opt_value
  * @param {number=} opt_index
- * @return {!proto.mruv.GetPermissionsResponse.Permission}
+ * @return {!proto.mruv.groups.GetPermissionsResponse.Permission}
  */
-proto.mruv.GetPermissionsResponse.prototype.addPermissions = function(opt_value, opt_index) {
-  return jspb.Message.addToRepeatedWrapperField(this, 1, opt_value, proto.mruv.GetPermissionsResponse.Permission, opt_index);
+proto.mruv.groups.GetPermissionsResponse.prototype.addPermissions = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 1, opt_value, proto.mruv.groups.GetPermissionsResponse.Permission, opt_index);
 };
 
 
 /**
  * Clears the list making it empty but non-null.
- * @return {!proto.mruv.GetPermissionsResponse} returns this
+ * @return {!proto.mruv.groups.GetPermissionsResponse} returns this
  */
-proto.mruv.GetPermissionsResponse.prototype.clearPermissionsList = function() {
+proto.mruv.groups.GetPermissionsResponse.prototype.clearPermissionsList = function() {
   return this.setPermissionsList([]);
 };
 
@@ -4657,8 +4657,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.RemovePermissionRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.RemovePermissionRequest.toObject(opt_includeInstance, this);
+proto.mruv.groups.RemovePermissionRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.groups.RemovePermissionRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -4667,11 +4667,11 @@ proto.mruv.RemovePermissionRequest.prototype.toObject = function(opt_includeInst
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.RemovePermissionRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.groups.RemovePermissionRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.RemovePermissionRequest.toObject = function(includeInstance, msg) {
+proto.mruv.groups.RemovePermissionRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     groupId: jspb.Message.getFieldWithDefault(msg, 1, 0),
     permissionId: jspb.Message.getFieldWithDefault(msg, 2, 0)
@@ -4688,23 +4688,23 @@ proto.mruv.RemovePermissionRequest.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.RemovePermissionRequest}
+ * @return {!proto.mruv.groups.RemovePermissionRequest}
  */
-proto.mruv.RemovePermissionRequest.deserializeBinary = function(bytes) {
+proto.mruv.groups.RemovePermissionRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.RemovePermissionRequest;
-  return proto.mruv.RemovePermissionRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.groups.RemovePermissionRequest;
+  return proto.mruv.groups.RemovePermissionRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.RemovePermissionRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.groups.RemovePermissionRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.RemovePermissionRequest}
+ * @return {!proto.mruv.groups.RemovePermissionRequest}
  */
-proto.mruv.RemovePermissionRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.groups.RemovePermissionRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -4732,9 +4732,9 @@ proto.mruv.RemovePermissionRequest.deserializeBinaryFromReader = function(msg, r
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.RemovePermissionRequest.prototype.serializeBinary = function() {
+proto.mruv.groups.RemovePermissionRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.RemovePermissionRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.groups.RemovePermissionRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -4742,11 +4742,11 @@ proto.mruv.RemovePermissionRequest.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.RemovePermissionRequest} message
+ * @param {!proto.mruv.groups.RemovePermissionRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.RemovePermissionRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.groups.RemovePermissionRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getGroupId();
   if (f !== 0) {
@@ -4769,16 +4769,16 @@ proto.mruv.RemovePermissionRequest.serializeBinaryToWriter = function(message, w
  * optional uint32 group_id = 1;
  * @return {number}
  */
-proto.mruv.RemovePermissionRequest.prototype.getGroupId = function() {
+proto.mruv.groups.RemovePermissionRequest.prototype.getGroupId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.mruv.RemovePermissionRequest} returns this
+ * @return {!proto.mruv.groups.RemovePermissionRequest} returns this
  */
-proto.mruv.RemovePermissionRequest.prototype.setGroupId = function(value) {
+proto.mruv.groups.RemovePermissionRequest.prototype.setGroupId = function(value) {
   return jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -4787,16 +4787,16 @@ proto.mruv.RemovePermissionRequest.prototype.setGroupId = function(value) {
  * optional uint32 permission_id = 2;
  * @return {number}
  */
-proto.mruv.RemovePermissionRequest.prototype.getPermissionId = function() {
+proto.mruv.groups.RemovePermissionRequest.prototype.getPermissionId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.mruv.RemovePermissionRequest} returns this
+ * @return {!proto.mruv.groups.RemovePermissionRequest} returns this
  */
-proto.mruv.RemovePermissionRequest.prototype.setPermissionId = function(value) {
+proto.mruv.groups.RemovePermissionRequest.prototype.setPermissionId = function(value) {
   return jspb.Message.setProto3IntField(this, 2, value);
 };
 
@@ -4817,8 +4817,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.RemovePermissionResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.RemovePermissionResponse.toObject(opt_includeInstance, this);
+proto.mruv.groups.RemovePermissionResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.groups.RemovePermissionResponse.toObject(opt_includeInstance, this);
 };
 
 
@@ -4827,11 +4827,11 @@ proto.mruv.RemovePermissionResponse.prototype.toObject = function(opt_includeIns
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.RemovePermissionResponse} msg The msg instance to transform.
+ * @param {!proto.mruv.groups.RemovePermissionResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.RemovePermissionResponse.toObject = function(includeInstance, msg) {
+proto.mruv.groups.RemovePermissionResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
 
   };
@@ -4847,23 +4847,23 @@ proto.mruv.RemovePermissionResponse.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.RemovePermissionResponse}
+ * @return {!proto.mruv.groups.RemovePermissionResponse}
  */
-proto.mruv.RemovePermissionResponse.deserializeBinary = function(bytes) {
+proto.mruv.groups.RemovePermissionResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.RemovePermissionResponse;
-  return proto.mruv.RemovePermissionResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.groups.RemovePermissionResponse;
+  return proto.mruv.groups.RemovePermissionResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.RemovePermissionResponse} msg The message object to deserialize into.
+ * @param {!proto.mruv.groups.RemovePermissionResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.RemovePermissionResponse}
+ * @return {!proto.mruv.groups.RemovePermissionResponse}
  */
-proto.mruv.RemovePermissionResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.groups.RemovePermissionResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -4883,9 +4883,9 @@ proto.mruv.RemovePermissionResponse.deserializeBinaryFromReader = function(msg, 
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.RemovePermissionResponse.prototype.serializeBinary = function() {
+proto.mruv.groups.RemovePermissionResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.RemovePermissionResponse.serializeBinaryToWriter(this, writer);
+  proto.mruv.groups.RemovePermissionResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -4893,11 +4893,11 @@ proto.mruv.RemovePermissionResponse.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.RemovePermissionResponse} message
+ * @param {!proto.mruv.groups.RemovePermissionResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.RemovePermissionResponse.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.groups.RemovePermissionResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
 };
 
@@ -4918,8 +4918,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.AddSubgroupRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.AddSubgroupRequest.toObject(opt_includeInstance, this);
+proto.mruv.groups.AddSubgroupRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.groups.AddSubgroupRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -4928,11 +4928,11 @@ proto.mruv.AddSubgroupRequest.prototype.toObject = function(opt_includeInstance)
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.AddSubgroupRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.groups.AddSubgroupRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.AddSubgroupRequest.toObject = function(includeInstance, msg) {
+proto.mruv.groups.AddSubgroupRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     groupId: jspb.Message.getFieldWithDefault(msg, 1, 0),
     subgroupId: jspb.Message.getFieldWithDefault(msg, 2, 0)
@@ -4949,23 +4949,23 @@ proto.mruv.AddSubgroupRequest.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.AddSubgroupRequest}
+ * @return {!proto.mruv.groups.AddSubgroupRequest}
  */
-proto.mruv.AddSubgroupRequest.deserializeBinary = function(bytes) {
+proto.mruv.groups.AddSubgroupRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.AddSubgroupRequest;
-  return proto.mruv.AddSubgroupRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.groups.AddSubgroupRequest;
+  return proto.mruv.groups.AddSubgroupRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.AddSubgroupRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.groups.AddSubgroupRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.AddSubgroupRequest}
+ * @return {!proto.mruv.groups.AddSubgroupRequest}
  */
-proto.mruv.AddSubgroupRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.groups.AddSubgroupRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -4993,9 +4993,9 @@ proto.mruv.AddSubgroupRequest.deserializeBinaryFromReader = function(msg, reader
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.AddSubgroupRequest.prototype.serializeBinary = function() {
+proto.mruv.groups.AddSubgroupRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.AddSubgroupRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.groups.AddSubgroupRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -5003,11 +5003,11 @@ proto.mruv.AddSubgroupRequest.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.AddSubgroupRequest} message
+ * @param {!proto.mruv.groups.AddSubgroupRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.AddSubgroupRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.groups.AddSubgroupRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getGroupId();
   if (f !== 0) {
@@ -5030,16 +5030,16 @@ proto.mruv.AddSubgroupRequest.serializeBinaryToWriter = function(message, writer
  * optional uint32 group_id = 1;
  * @return {number}
  */
-proto.mruv.AddSubgroupRequest.prototype.getGroupId = function() {
+proto.mruv.groups.AddSubgroupRequest.prototype.getGroupId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.mruv.AddSubgroupRequest} returns this
+ * @return {!proto.mruv.groups.AddSubgroupRequest} returns this
  */
-proto.mruv.AddSubgroupRequest.prototype.setGroupId = function(value) {
+proto.mruv.groups.AddSubgroupRequest.prototype.setGroupId = function(value) {
   return jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -5048,16 +5048,16 @@ proto.mruv.AddSubgroupRequest.prototype.setGroupId = function(value) {
  * optional uint32 subgroup_id = 2;
  * @return {number}
  */
-proto.mruv.AddSubgroupRequest.prototype.getSubgroupId = function() {
+proto.mruv.groups.AddSubgroupRequest.prototype.getSubgroupId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.mruv.AddSubgroupRequest} returns this
+ * @return {!proto.mruv.groups.AddSubgroupRequest} returns this
  */
-proto.mruv.AddSubgroupRequest.prototype.setSubgroupId = function(value) {
+proto.mruv.groups.AddSubgroupRequest.prototype.setSubgroupId = function(value) {
   return jspb.Message.setProto3IntField(this, 2, value);
 };
 
@@ -5078,8 +5078,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.AddSubgroupResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.AddSubgroupResponse.toObject(opt_includeInstance, this);
+proto.mruv.groups.AddSubgroupResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.groups.AddSubgroupResponse.toObject(opt_includeInstance, this);
 };
 
 
@@ -5088,11 +5088,11 @@ proto.mruv.AddSubgroupResponse.prototype.toObject = function(opt_includeInstance
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.AddSubgroupResponse} msg The msg instance to transform.
+ * @param {!proto.mruv.groups.AddSubgroupResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.AddSubgroupResponse.toObject = function(includeInstance, msg) {
+proto.mruv.groups.AddSubgroupResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
 
   };
@@ -5108,23 +5108,23 @@ proto.mruv.AddSubgroupResponse.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.AddSubgroupResponse}
+ * @return {!proto.mruv.groups.AddSubgroupResponse}
  */
-proto.mruv.AddSubgroupResponse.deserializeBinary = function(bytes) {
+proto.mruv.groups.AddSubgroupResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.AddSubgroupResponse;
-  return proto.mruv.AddSubgroupResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.groups.AddSubgroupResponse;
+  return proto.mruv.groups.AddSubgroupResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.AddSubgroupResponse} msg The message object to deserialize into.
+ * @param {!proto.mruv.groups.AddSubgroupResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.AddSubgroupResponse}
+ * @return {!proto.mruv.groups.AddSubgroupResponse}
  */
-proto.mruv.AddSubgroupResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.groups.AddSubgroupResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -5144,9 +5144,9 @@ proto.mruv.AddSubgroupResponse.deserializeBinaryFromReader = function(msg, reade
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.AddSubgroupResponse.prototype.serializeBinary = function() {
+proto.mruv.groups.AddSubgroupResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.AddSubgroupResponse.serializeBinaryToWriter(this, writer);
+  proto.mruv.groups.AddSubgroupResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -5154,11 +5154,11 @@ proto.mruv.AddSubgroupResponse.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.AddSubgroupResponse} message
+ * @param {!proto.mruv.groups.AddSubgroupResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.AddSubgroupResponse.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.groups.AddSubgroupResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
 };
 
@@ -5179,8 +5179,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.GetSubgroupsRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.GetSubgroupsRequest.toObject(opt_includeInstance, this);
+proto.mruv.groups.GetSubgroupsRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.groups.GetSubgroupsRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -5189,11 +5189,11 @@ proto.mruv.GetSubgroupsRequest.prototype.toObject = function(opt_includeInstance
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.GetSubgroupsRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.groups.GetSubgroupsRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.GetSubgroupsRequest.toObject = function(includeInstance, msg) {
+proto.mruv.groups.GetSubgroupsRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     groupId: jspb.Message.getFieldWithDefault(msg, 1, 0)
   };
@@ -5209,23 +5209,23 @@ proto.mruv.GetSubgroupsRequest.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.GetSubgroupsRequest}
+ * @return {!proto.mruv.groups.GetSubgroupsRequest}
  */
-proto.mruv.GetSubgroupsRequest.deserializeBinary = function(bytes) {
+proto.mruv.groups.GetSubgroupsRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.GetSubgroupsRequest;
-  return proto.mruv.GetSubgroupsRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.groups.GetSubgroupsRequest;
+  return proto.mruv.groups.GetSubgroupsRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.GetSubgroupsRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.groups.GetSubgroupsRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.GetSubgroupsRequest}
+ * @return {!proto.mruv.groups.GetSubgroupsRequest}
  */
-proto.mruv.GetSubgroupsRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.groups.GetSubgroupsRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -5249,9 +5249,9 @@ proto.mruv.GetSubgroupsRequest.deserializeBinaryFromReader = function(msg, reade
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.GetSubgroupsRequest.prototype.serializeBinary = function() {
+proto.mruv.groups.GetSubgroupsRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.GetSubgroupsRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.groups.GetSubgroupsRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -5259,11 +5259,11 @@ proto.mruv.GetSubgroupsRequest.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.GetSubgroupsRequest} message
+ * @param {!proto.mruv.groups.GetSubgroupsRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.GetSubgroupsRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.groups.GetSubgroupsRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getGroupId();
   if (f !== 0) {
@@ -5279,16 +5279,16 @@ proto.mruv.GetSubgroupsRequest.serializeBinaryToWriter = function(message, write
  * optional uint32 group_id = 1;
  * @return {number}
  */
-proto.mruv.GetSubgroupsRequest.prototype.getGroupId = function() {
+proto.mruv.groups.GetSubgroupsRequest.prototype.getGroupId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.mruv.GetSubgroupsRequest} returns this
+ * @return {!proto.mruv.groups.GetSubgroupsRequest} returns this
  */
-proto.mruv.GetSubgroupsRequest.prototype.setGroupId = function(value) {
+proto.mruv.groups.GetSubgroupsRequest.prototype.setGroupId = function(value) {
   return jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -5299,7 +5299,7 @@ proto.mruv.GetSubgroupsRequest.prototype.setGroupId = function(value) {
  * @private {!Array<number>}
  * @const
  */
-proto.mruv.GetSubgroupsResponse.repeatedFields_ = [1];
+proto.mruv.groups.GetSubgroupsResponse.repeatedFields_ = [1];
 
 
 
@@ -5316,8 +5316,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.GetSubgroupsResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.GetSubgroupsResponse.toObject(opt_includeInstance, this);
+proto.mruv.groups.GetSubgroupsResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.groups.GetSubgroupsResponse.toObject(opt_includeInstance, this);
 };
 
 
@@ -5326,11 +5326,11 @@ proto.mruv.GetSubgroupsResponse.prototype.toObject = function(opt_includeInstanc
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.GetSubgroupsResponse} msg The msg instance to transform.
+ * @param {!proto.mruv.groups.GetSubgroupsResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.GetSubgroupsResponse.toObject = function(includeInstance, msg) {
+proto.mruv.groups.GetSubgroupsResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
     subgroupIdsList: (f = jspb.Message.getRepeatedField(msg, 1)) == null ? undefined : f
   };
@@ -5346,23 +5346,23 @@ proto.mruv.GetSubgroupsResponse.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.GetSubgroupsResponse}
+ * @return {!proto.mruv.groups.GetSubgroupsResponse}
  */
-proto.mruv.GetSubgroupsResponse.deserializeBinary = function(bytes) {
+proto.mruv.groups.GetSubgroupsResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.GetSubgroupsResponse;
-  return proto.mruv.GetSubgroupsResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.groups.GetSubgroupsResponse;
+  return proto.mruv.groups.GetSubgroupsResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.GetSubgroupsResponse} msg The message object to deserialize into.
+ * @param {!proto.mruv.groups.GetSubgroupsResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.GetSubgroupsResponse}
+ * @return {!proto.mruv.groups.GetSubgroupsResponse}
  */
-proto.mruv.GetSubgroupsResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.groups.GetSubgroupsResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -5386,9 +5386,9 @@ proto.mruv.GetSubgroupsResponse.deserializeBinaryFromReader = function(msg, read
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.GetSubgroupsResponse.prototype.serializeBinary = function() {
+proto.mruv.groups.GetSubgroupsResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.GetSubgroupsResponse.serializeBinaryToWriter(this, writer);
+  proto.mruv.groups.GetSubgroupsResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -5396,11 +5396,11 @@ proto.mruv.GetSubgroupsResponse.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.GetSubgroupsResponse} message
+ * @param {!proto.mruv.groups.GetSubgroupsResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.GetSubgroupsResponse.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.groups.GetSubgroupsResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getSubgroupIdsList();
   if (f.length > 0) {
@@ -5416,16 +5416,16 @@ proto.mruv.GetSubgroupsResponse.serializeBinaryToWriter = function(message, writ
  * repeated uint32 subgroup_ids = 1;
  * @return {!Array<number>}
  */
-proto.mruv.GetSubgroupsResponse.prototype.getSubgroupIdsList = function() {
+proto.mruv.groups.GetSubgroupsResponse.prototype.getSubgroupIdsList = function() {
   return /** @type {!Array<number>} */ (jspb.Message.getRepeatedField(this, 1));
 };
 
 
 /**
  * @param {!Array<number>} value
- * @return {!proto.mruv.GetSubgroupsResponse} returns this
+ * @return {!proto.mruv.groups.GetSubgroupsResponse} returns this
  */
-proto.mruv.GetSubgroupsResponse.prototype.setSubgroupIdsList = function(value) {
+proto.mruv.groups.GetSubgroupsResponse.prototype.setSubgroupIdsList = function(value) {
   return jspb.Message.setField(this, 1, value || []);
 };
 
@@ -5433,18 +5433,18 @@ proto.mruv.GetSubgroupsResponse.prototype.setSubgroupIdsList = function(value) {
 /**
  * @param {number} value
  * @param {number=} opt_index
- * @return {!proto.mruv.GetSubgroupsResponse} returns this
+ * @return {!proto.mruv.groups.GetSubgroupsResponse} returns this
  */
-proto.mruv.GetSubgroupsResponse.prototype.addSubgroupIds = function(value, opt_index) {
+proto.mruv.groups.GetSubgroupsResponse.prototype.addSubgroupIds = function(value, opt_index) {
   return jspb.Message.addToRepeatedField(this, 1, value, opt_index);
 };
 
 
 /**
  * Clears the list making it empty but non-null.
- * @return {!proto.mruv.GetSubgroupsResponse} returns this
+ * @return {!proto.mruv.groups.GetSubgroupsResponse} returns this
  */
-proto.mruv.GetSubgroupsResponse.prototype.clearSubgroupIdsList = function() {
+proto.mruv.groups.GetSubgroupsResponse.prototype.clearSubgroupIdsList = function() {
   return this.setSubgroupIdsList([]);
 };
 
@@ -5465,8 +5465,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.RemoveSubgroupRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.RemoveSubgroupRequest.toObject(opt_includeInstance, this);
+proto.mruv.groups.RemoveSubgroupRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.groups.RemoveSubgroupRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -5475,11 +5475,11 @@ proto.mruv.RemoveSubgroupRequest.prototype.toObject = function(opt_includeInstan
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.RemoveSubgroupRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.groups.RemoveSubgroupRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.RemoveSubgroupRequest.toObject = function(includeInstance, msg) {
+proto.mruv.groups.RemoveSubgroupRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     groupId: jspb.Message.getFieldWithDefault(msg, 1, 0),
     subgroupId: jspb.Message.getFieldWithDefault(msg, 2, 0)
@@ -5496,23 +5496,23 @@ proto.mruv.RemoveSubgroupRequest.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.RemoveSubgroupRequest}
+ * @return {!proto.mruv.groups.RemoveSubgroupRequest}
  */
-proto.mruv.RemoveSubgroupRequest.deserializeBinary = function(bytes) {
+proto.mruv.groups.RemoveSubgroupRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.RemoveSubgroupRequest;
-  return proto.mruv.RemoveSubgroupRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.groups.RemoveSubgroupRequest;
+  return proto.mruv.groups.RemoveSubgroupRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.RemoveSubgroupRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.groups.RemoveSubgroupRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.RemoveSubgroupRequest}
+ * @return {!proto.mruv.groups.RemoveSubgroupRequest}
  */
-proto.mruv.RemoveSubgroupRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.groups.RemoveSubgroupRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -5540,9 +5540,9 @@ proto.mruv.RemoveSubgroupRequest.deserializeBinaryFromReader = function(msg, rea
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.RemoveSubgroupRequest.prototype.serializeBinary = function() {
+proto.mruv.groups.RemoveSubgroupRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.RemoveSubgroupRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.groups.RemoveSubgroupRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -5550,11 +5550,11 @@ proto.mruv.RemoveSubgroupRequest.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.RemoveSubgroupRequest} message
+ * @param {!proto.mruv.groups.RemoveSubgroupRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.RemoveSubgroupRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.groups.RemoveSubgroupRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getGroupId();
   if (f !== 0) {
@@ -5577,16 +5577,16 @@ proto.mruv.RemoveSubgroupRequest.serializeBinaryToWriter = function(message, wri
  * optional uint32 group_id = 1;
  * @return {number}
  */
-proto.mruv.RemoveSubgroupRequest.prototype.getGroupId = function() {
+proto.mruv.groups.RemoveSubgroupRequest.prototype.getGroupId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.mruv.RemoveSubgroupRequest} returns this
+ * @return {!proto.mruv.groups.RemoveSubgroupRequest} returns this
  */
-proto.mruv.RemoveSubgroupRequest.prototype.setGroupId = function(value) {
+proto.mruv.groups.RemoveSubgroupRequest.prototype.setGroupId = function(value) {
   return jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -5595,16 +5595,16 @@ proto.mruv.RemoveSubgroupRequest.prototype.setGroupId = function(value) {
  * optional uint32 subgroup_id = 2;
  * @return {number}
  */
-proto.mruv.RemoveSubgroupRequest.prototype.getSubgroupId = function() {
+proto.mruv.groups.RemoveSubgroupRequest.prototype.getSubgroupId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.mruv.RemoveSubgroupRequest} returns this
+ * @return {!proto.mruv.groups.RemoveSubgroupRequest} returns this
  */
-proto.mruv.RemoveSubgroupRequest.prototype.setSubgroupId = function(value) {
+proto.mruv.groups.RemoveSubgroupRequest.prototype.setSubgroupId = function(value) {
   return jspb.Message.setProto3IntField(this, 2, value);
 };
 
@@ -5625,8 +5625,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.RemoveSubgroupResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.RemoveSubgroupResponse.toObject(opt_includeInstance, this);
+proto.mruv.groups.RemoveSubgroupResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.groups.RemoveSubgroupResponse.toObject(opt_includeInstance, this);
 };
 
 
@@ -5635,11 +5635,11 @@ proto.mruv.RemoveSubgroupResponse.prototype.toObject = function(opt_includeInsta
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.RemoveSubgroupResponse} msg The msg instance to transform.
+ * @param {!proto.mruv.groups.RemoveSubgroupResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.RemoveSubgroupResponse.toObject = function(includeInstance, msg) {
+proto.mruv.groups.RemoveSubgroupResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
 
   };
@@ -5655,23 +5655,23 @@ proto.mruv.RemoveSubgroupResponse.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.RemoveSubgroupResponse}
+ * @return {!proto.mruv.groups.RemoveSubgroupResponse}
  */
-proto.mruv.RemoveSubgroupResponse.deserializeBinary = function(bytes) {
+proto.mruv.groups.RemoveSubgroupResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.RemoveSubgroupResponse;
-  return proto.mruv.RemoveSubgroupResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.groups.RemoveSubgroupResponse;
+  return proto.mruv.groups.RemoveSubgroupResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.RemoveSubgroupResponse} msg The message object to deserialize into.
+ * @param {!proto.mruv.groups.RemoveSubgroupResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.RemoveSubgroupResponse}
+ * @return {!proto.mruv.groups.RemoveSubgroupResponse}
  */
-proto.mruv.RemoveSubgroupResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.groups.RemoveSubgroupResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -5691,9 +5691,9 @@ proto.mruv.RemoveSubgroupResponse.deserializeBinaryFromReader = function(msg, re
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.RemoveSubgroupResponse.prototype.serializeBinary = function() {
+proto.mruv.groups.RemoveSubgroupResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.RemoveSubgroupResponse.serializeBinaryToWriter(this, writer);
+  proto.mruv.groups.RemoveSubgroupResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -5701,11 +5701,11 @@ proto.mruv.RemoveSubgroupResponse.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.RemoveSubgroupResponse} message
+ * @param {!proto.mruv.groups.RemoveSubgroupResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.RemoveSubgroupResponse.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.groups.RemoveSubgroupResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
 };
 
@@ -5726,8 +5726,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.IsPermittedRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.IsPermittedRequest.toObject(opt_includeInstance, this);
+proto.mruv.groups.IsPermittedRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.groups.IsPermittedRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -5736,11 +5736,11 @@ proto.mruv.IsPermittedRequest.prototype.toObject = function(opt_includeInstance)
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.IsPermittedRequest} msg The msg instance to transform.
+ * @param {!proto.mruv.groups.IsPermittedRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.IsPermittedRequest.toObject = function(includeInstance, msg) {
+proto.mruv.groups.IsPermittedRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     memberId: jspb.Message.getFieldWithDefault(msg, 1, 0),
     memberType: jspb.Message.getFieldWithDefault(msg, 2, 0),
@@ -5758,23 +5758,23 @@ proto.mruv.IsPermittedRequest.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.IsPermittedRequest}
+ * @return {!proto.mruv.groups.IsPermittedRequest}
  */
-proto.mruv.IsPermittedRequest.deserializeBinary = function(bytes) {
+proto.mruv.groups.IsPermittedRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.IsPermittedRequest;
-  return proto.mruv.IsPermittedRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.groups.IsPermittedRequest;
+  return proto.mruv.groups.IsPermittedRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.IsPermittedRequest} msg The message object to deserialize into.
+ * @param {!proto.mruv.groups.IsPermittedRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.IsPermittedRequest}
+ * @return {!proto.mruv.groups.IsPermittedRequest}
  */
-proto.mruv.IsPermittedRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.groups.IsPermittedRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -5786,7 +5786,7 @@ proto.mruv.IsPermittedRequest.deserializeBinaryFromReader = function(msg, reader
       msg.setMemberId(value);
       break;
     case 2:
-      var value = /** @type {!proto.mruv.MemberType} */ (reader.readEnum());
+      var value = /** @type {!proto.mruv.groups.MemberType} */ (reader.readEnum());
       msg.setMemberType(value);
       break;
     case 3:
@@ -5806,9 +5806,9 @@ proto.mruv.IsPermittedRequest.deserializeBinaryFromReader = function(msg, reader
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.IsPermittedRequest.prototype.serializeBinary = function() {
+proto.mruv.groups.IsPermittedRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.IsPermittedRequest.serializeBinaryToWriter(this, writer);
+  proto.mruv.groups.IsPermittedRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -5816,11 +5816,11 @@ proto.mruv.IsPermittedRequest.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.IsPermittedRequest} message
+ * @param {!proto.mruv.groups.IsPermittedRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.IsPermittedRequest.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.groups.IsPermittedRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getMemberId();
   if (f !== 0) {
@@ -5850,34 +5850,34 @@ proto.mruv.IsPermittedRequest.serializeBinaryToWriter = function(message, writer
  * optional uint32 member_id = 1;
  * @return {number}
  */
-proto.mruv.IsPermittedRequest.prototype.getMemberId = function() {
+proto.mruv.groups.IsPermittedRequest.prototype.getMemberId = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.mruv.IsPermittedRequest} returns this
+ * @return {!proto.mruv.groups.IsPermittedRequest} returns this
  */
-proto.mruv.IsPermittedRequest.prototype.setMemberId = function(value) {
+proto.mruv.groups.IsPermittedRequest.prototype.setMemberId = function(value) {
   return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
 /**
  * optional MemberType member_type = 2;
- * @return {!proto.mruv.MemberType}
+ * @return {!proto.mruv.groups.MemberType}
  */
-proto.mruv.IsPermittedRequest.prototype.getMemberType = function() {
-  return /** @type {!proto.mruv.MemberType} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
+proto.mruv.groups.IsPermittedRequest.prototype.getMemberType = function() {
+  return /** @type {!proto.mruv.groups.MemberType} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
 /**
- * @param {!proto.mruv.MemberType} value
- * @return {!proto.mruv.IsPermittedRequest} returns this
+ * @param {!proto.mruv.groups.MemberType} value
+ * @return {!proto.mruv.groups.IsPermittedRequest} returns this
  */
-proto.mruv.IsPermittedRequest.prototype.setMemberType = function(value) {
+proto.mruv.groups.IsPermittedRequest.prototype.setMemberType = function(value) {
   return jspb.Message.setProto3EnumField(this, 2, value);
 };
 
@@ -5886,16 +5886,16 @@ proto.mruv.IsPermittedRequest.prototype.setMemberType = function(value) {
  * optional string action = 3;
  * @return {string}
  */
-proto.mruv.IsPermittedRequest.prototype.getAction = function() {
+proto.mruv.groups.IsPermittedRequest.prototype.getAction = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
 };
 
 
 /**
  * @param {string} value
- * @return {!proto.mruv.IsPermittedRequest} returns this
+ * @return {!proto.mruv.groups.IsPermittedRequest} returns this
  */
-proto.mruv.IsPermittedRequest.prototype.setAction = function(value) {
+proto.mruv.groups.IsPermittedRequest.prototype.setAction = function(value) {
   return jspb.Message.setProto3StringField(this, 3, value);
 };
 
@@ -5916,8 +5916,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.mruv.IsPermittedResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.mruv.IsPermittedResponse.toObject(opt_includeInstance, this);
+proto.mruv.groups.IsPermittedResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mruv.groups.IsPermittedResponse.toObject(opt_includeInstance, this);
 };
 
 
@@ -5926,11 +5926,11 @@ proto.mruv.IsPermittedResponse.prototype.toObject = function(opt_includeInstance
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.mruv.IsPermittedResponse} msg The msg instance to transform.
+ * @param {!proto.mruv.groups.IsPermittedResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.IsPermittedResponse.toObject = function(includeInstance, msg) {
+proto.mruv.groups.IsPermittedResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
     permitted: jspb.Message.getBooleanFieldWithDefault(msg, 1, false)
   };
@@ -5946,23 +5946,23 @@ proto.mruv.IsPermittedResponse.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.mruv.IsPermittedResponse}
+ * @return {!proto.mruv.groups.IsPermittedResponse}
  */
-proto.mruv.IsPermittedResponse.deserializeBinary = function(bytes) {
+proto.mruv.groups.IsPermittedResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mruv.IsPermittedResponse;
-  return proto.mruv.IsPermittedResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.mruv.groups.IsPermittedResponse;
+  return proto.mruv.groups.IsPermittedResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.mruv.IsPermittedResponse} msg The message object to deserialize into.
+ * @param {!proto.mruv.groups.IsPermittedResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.mruv.IsPermittedResponse}
+ * @return {!proto.mruv.groups.IsPermittedResponse}
  */
-proto.mruv.IsPermittedResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.mruv.groups.IsPermittedResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -5986,9 +5986,9 @@ proto.mruv.IsPermittedResponse.deserializeBinaryFromReader = function(msg, reade
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mruv.IsPermittedResponse.prototype.serializeBinary = function() {
+proto.mruv.groups.IsPermittedResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.mruv.IsPermittedResponse.serializeBinaryToWriter(this, writer);
+  proto.mruv.groups.IsPermittedResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -5996,11 +5996,11 @@ proto.mruv.IsPermittedResponse.prototype.serializeBinary = function() {
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.mruv.IsPermittedResponse} message
+ * @param {!proto.mruv.groups.IsPermittedResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mruv.IsPermittedResponse.serializeBinaryToWriter = function(message, writer) {
+proto.mruv.groups.IsPermittedResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getPermitted();
   if (f) {
@@ -6016,16 +6016,16 @@ proto.mruv.IsPermittedResponse.serializeBinaryToWriter = function(message, write
  * optional bool permitted = 1;
  * @return {boolean}
  */
-proto.mruv.IsPermittedResponse.prototype.getPermitted = function() {
+proto.mruv.groups.IsPermittedResponse.prototype.getPermitted = function() {
   return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 1, false));
 };
 
 
 /**
  * @param {boolean} value
- * @return {!proto.mruv.IsPermittedResponse} returns this
+ * @return {!proto.mruv.groups.IsPermittedResponse} returns this
  */
-proto.mruv.IsPermittedResponse.prototype.setPermitted = function(value) {
+proto.mruv.groups.IsPermittedResponse.prototype.setPermitted = function(value) {
   return jspb.Message.setProto3BooleanField(this, 1, value);
 };
 
@@ -6033,7 +6033,7 @@ proto.mruv.IsPermittedResponse.prototype.setPermitted = function(value) {
 /**
  * @enum {number}
  */
-proto.mruv.OwnerType = {
+proto.mruv.groups.OwnerType = {
   OWNER_TYPE_UNKNOWN: 0,
   OWNER_TYPE_ACCOUNT: 1,
   OWNER_TYPE_CHARACTER: 2,
@@ -6043,10 +6043,10 @@ proto.mruv.OwnerType = {
 /**
  * @enum {number}
  */
-proto.mruv.MemberType = {
+proto.mruv.groups.MemberType = {
   MEMBER_TYPE_UNKNOWN: 0,
   MEMBER_TYPE_ACCOUNT: 1,
   MEMBER_TYPE_CHARACTER: 2
 };
 
-goog.object.extend(exports, proto.mruv);
+goog.object.extend(exports, proto.mruv.groups);

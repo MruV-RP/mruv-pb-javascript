@@ -1,4 +1,4 @@
-// package: mruv
+// package: mruv.common
 // file: common/spatial.proto
 
 import * as jspb from "google-protobuf";

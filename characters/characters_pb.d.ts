@@ -1,4 +1,4 @@
-// package: mruv
+// package: mruv.characters
 // file: characters/characters.proto
 
 import * as jspb from "google-protobuf";
