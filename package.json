@@ -3,13 +3,9 @@
   "version": "0.9.1",
   "description": "MruV Protobuf & gRPC files for MruV API",
   "dependencies": {
-    "@grpc/proto-loader": "^0.1.0",
-    "@types/google-protobuf": "^3.7.2",
-    "async": "^1.5.2",
-    "google-protobuf": "^3.0.0",
-    "grpc": "^1.11.0",
-    "lodash": "^4.17.19",
-    "minimist": "^1.2.3"
+    "@types/google-protobuf": "^3.7.4",
+    "google-protobuf": "^3.6.1",
+    "grpc": "^1.11.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\""
