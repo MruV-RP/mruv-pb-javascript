@@ -8,6 +8,7 @@
     "grpc": "^1.11.0"
   },
   "scripts": {
+    "build": "echo ok",
     "test": "echo \"Error: no test specified\""
   },
   "repository": {
